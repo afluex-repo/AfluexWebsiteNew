@@ -1,0 +1,168 @@
+﻿@model Afluex.Models.Ad
+@using CaptchaMvc.HtmlHelpers
+@{
+    ViewBag.Title = "contactus";
+    Layout = "~/Views/Shared/Ad_LayoutPage.cshtml";
+}
+
+    <!-- Page Title -->
+<section class="page-title text-center" style="background-image:url(../../afluexad/images/background/page_title.jpg);">
+    <div class="container">
+        <h1>Contact Us</h1>
+    </div>
+    <!--Page Info-->
+    <div class="page-info">
+        <div class="container clearfix">
+            <ul class="bread-crumb clearfix">
+                <li><a href="/Home/Advertising">Home</a> </li>
+                <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- End Page Title -->
+@using (Html.BeginForm("contactus", "Home", FormMethod.Post, new { @id = "form1", enctype = "multipart/form-data" }))
+{
+  
+   <section class="contactus_page">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 m-b30">
+                @Html.AntiForgeryToken()
+                <form class="contact-box dzForm p-a30 border-1" action="">
+                    <h3 class="title-box">Write us a few words about your project and we’ll prepare a proposal for you within 24 hours</h3>
+                    <div class="dzFormMsg m-b20"></div>
+                    <input type="hidden" value="Contact" name="dzToDo">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group mb-4">
+                                <div class="input-group">
+                                    @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @Placeholder = "Name", @required= "required" })
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group mb-4">
+                                <div class="input-group">
+                                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @Placeholder = "Email", @required = "required" })
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group mb-4">
+                                <div class="input-group">
+                                  @Html.TextBoxFor(m => m.Mobile, new { @class = "form-control", @Placeholder = "Mobile", @onkeypress = "return isNumberKey(event);", @maxlength = "10", @required = "required" })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group mb-4">
+                                <div class="input-group">
+
+                                    @Html.TextBoxFor(m => m.About, new { @class = "form-control", @Placeholder = "About", @required = "required" })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12">
+                            <div class="form-group mb-4">
+                                <div class="input-group">
+                                    @Html.TextAreaFor(m => m.Message, new { @class = "form-control", @cols = "80", @rows = "3", @Placeholder = "Message", @required = "required" })
+                                </div>
+                            </div>
+                            @Html.MathCaptcha()
+                        </div>
+                        <div class="col-lg-12 col-md-12">
+                            <div class="contact_btn">
+                                <input type="submit" class="btn btn-primary" value="Submit" name="btnSave" onclick="validateform()"/>
+                                <p style="color:red">@TempData["ContactMsg"]</p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="section-head m-b30">
+                    <h2 class="title">Do You Have Any Question?</h2>
+                </div>
+                <ul class="contact-question">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4 class="title">Address</h4>
+                        <p>D-54, 2nd Floor Arjun Tower Near Ola Office, Vibhuti Khand, Lucknow, Uttar Pradesh 226010</p>
+                    </li>
+                    <li>
+                        <i class="far fa-envelope"></i>
+                        <h4 class="title">Email</h4>
+                        <p>
+                            <a href="mailto:supportnow@afluex.com">supportnow@afluex.com</a>
+                        </p>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <h4 class="title">Phone</h4>
+                        <p>
+                            +91<a href="tel:5223550791">5223550791</a>, +91<a href="tel:7310000413">731-0000-413</a> / <a href="tel:7310000412">412</a>/ <a href="tel:7310000414">414</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+}
+<script>
+    $(document).ready(function () {
+        $("#divload").css({ 'display': 'none' });
+        setTimeout(function(){
+            $('.captcha').html($('.captcha').html().replace('The answer is', ''))
+    },200)
+
+    });
+
+    function validateform() {
+        $(".errortext").removeClass("errortext");
+        if ($('#Name').val() == '') {
+            $("#Name").addClass('errortext');
+            $('#Name').focus();
+            return false;
+        }
+        if ($('#About').val() == '') {
+            $("#About").addClass('errortext');
+            $('#About').focus();
+            return false;
+        }
+        if ($('#Email').val() == '') {
+            $("#Email").addClass('errortext');
+            $('#Email').focus();
+            return false;
+        }
+
+        if ($('#Mobile').val() == '') {
+            $("#Mobile").addClass('errortext');
+            $('#Mobile').focus();
+            return false;
+        }
+
+        if ($('#Message').val() == '') {
+            $("#Message").addClass('errortext');
+            $('#Message').focus();
+            return false;
+        }
+        $("#divload").css({ 'display': '' });
+
+    }
+
+
+    function isNumberKey(evt) {
+        var charCode = (evt.which) ? evt.which : event.keyCode;
+        if (charCode != 46 && charCode > 31
+        && (charCode < 48 || charCode > 57))
+            return false;
+
+        return true;
+    }
+</script>

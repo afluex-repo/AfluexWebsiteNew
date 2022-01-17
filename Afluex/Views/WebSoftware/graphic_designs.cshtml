@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewBag.Title = "graphic_designs";
+    Layout = "~/Views/Shared/Web_Layout.cshtml";
+}
+
+<section class="page-title text-center" style="background-image:url(../../afluexit/images/background/page_title.jpg);">
+    <div class="container">
+        <h1>Graphic Design</h1>
+    </div>
+    <!--Page Info-->
+    <div class="page-info">
+        <div class="container clearfix">
+            <ul class="bread-crumb clearfix">
+                <li><a href="/WebSoftware/index">Home</a> </li>
+                <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
+                <li>Graphic Design</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- End Page Title -->
+
+<section class="services_page">
+    <div class="container">
+        <div class="row">
+            <!-- Info Column -->
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                <div class="services_inner_column">
+                    <div class="ser_title">
+                        <span class="title">THE BEST PLACE TO FIND THE Graphic Design YOU WANT</span>
+                        <h2>Graphic Design Company In Lucknow, India</h2>
+                    </div>
+                    <div class="services_content_details">
+                        <h5 class="green">We Are a Full-Service Graphic Design Company To Boost Your Brand Awareness with Our Graphic & Web Design Services.</h5>
+                        <p class="text-justify">
+                            Afluex Multiservices LLP is a full-service interactive graphic design company offering creative solutions for digital epubs, logo design, web design, print design and more! We perceive the requirements and objectives of our clients, and provide fresh
+                            ideas, thinking outside parameters to deliver wonderful results — continuously on time and inside budget.
+                        </p>
+                        <p class="text-justify">
+                            Afluex Multiservices LLP, a graphic design team based in Lucknow, India, and surrounding areas invests its creativity, imagination, and technology at the helm of its graphic designers which are aimed towards achieving clients’
+                            graphic design outsourcing objectives.
+                        </p>
+                        <p class="text-justify">
+                            As a top graphic design company, Afluex understands the big picture and what it should look like. We know that graphic design ideas ought to simply carry over from your logo into email templates, brochures, and social media pages
+                            seamlessly and that we will create that happen for your brand.
+                        </p>
+                        <p class="text-justify">Our graphic designs are visually compelling and move your customers to action. We begin with understanding your customers: identifying their purpose of reading and serving up the foremost relevant, engaging visual imagination.</p>
+                        <p class="text-justify">We’ve worked with a good range of businesses—which means that we’ve most likely got some insight into what your customers got to see.</p>
+                        <h5 class="green">We Specialize In All Aspects Of Graphic Design Including:</h5>
+                        <div class="about-list">
+                            <ul class="list-unstyled">
+                                <li><i class="far fa-circle"></i> Corporate Identity And Brand Identity Design.</li>
+                                <li><i class="far fa-circle"></i> Logo Design.</li>
+                                <li><i class="far fa-circle"></i> Web Design.</li>
+                                <li><i class="far fa-circle"></i> Promotional Design</li>
+                                <li><i class="far fa-circle"></i> Business Card Design.</li>
+                                <li><i class="far fa-circle"></i> Letterhead Design.</li>
+                                <li><i class="far fa-circle"></i> Brochure Design.</li>
+                                <li><i class="far fa-circle"></i> Leaflet Design.</li>
+                                <li><i class="far fa-circle"></i> Advertisement Design.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Column -->
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                <div class="services_inner_column">
+                    <div class="ser_title">
+                        <span class="title">Enquiry Here</span>
+                        <h2>For Quick Demo</h2>
+                    </div>
+                 @{Html.RenderAction("DemoContact", "WebSoftware", new { area = "" });}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
