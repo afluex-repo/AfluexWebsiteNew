@@ -1,0 +1,1292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4F95D759-7BF9-4935-AEA1-9B73B159D9F1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Afluex</RootNamespace>
+    <AssemblyName>Afluex</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BotDetect, Version=4.4.2.0, Culture=neutral, PublicKeyToken=74616036388b765f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Captcha.4.4.2\lib\net35\BotDetect.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="BotDetect.Web.Mvc, Version=4.4.2.0, Culture=neutral, PublicKeyToken=74616036388b765f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Captcha.4.4.2\lib\net35\BotDetect.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CaptchaMvc, Version=2.5.0.0, Culture=neutral, PublicKeyToken=fe46ad421dd3b0e6, processorArchitecture=MSIL">
+      <HintPath>..\packages\CaptchaMvc.Mvc5.1.5.0\lib\net45-full\CaptchaMvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net46\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.115.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.0\lib\net46\System.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.2.3\lib\net45\System.Web.Http.Owin.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
+    <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
+    <Compile Include="Areas\HelpPage\Controllers\HelpController.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageAreaRegistration.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageConfigurationExtensions.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\CollectionModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\DictionaryModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumValueDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\IModelDocumentationProvider.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\KeyValuePairModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameAttribute.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterAnnotation.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\Models\HelpPageApiModel.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ImageSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\InvalidSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ObjectGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
+    <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\WebSoftwareController.cs" />
+    <Compile Include="Filters\SimpleAttribute.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountBindingModels.cs" />
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Ad.cs" />
+    <Compile Include="Models\AddMetaModels.cs" />
+    <Compile Include="Models\Admin.cs" />
+    <Compile Include="Models\Blog.cs" />
+    <Compile Include="Models\BLSMS.cs" />
+    <Compile Include="Models\Common.cs" />
+    <Compile Include="Models\Connection.cs" />
+    <Compile Include="Models\Crypto.cs" />
+    <Compile Include="Models\Home.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\PageMetaModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\ApplicationOAuthProvider.cs" />
+    <Compile Include="Results\ChallengeResult.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="afluexad\css\bootstrap-grid.css" />
+    <Content Include="afluexad\css\bootstrap-grid.min.css" />
+    <Content Include="afluexad\css\bootstrap.css" />
+    <Content Include="afluexad\css\bootstrap.min.css" />
+    <Content Include="afluexad\css\fontawesome.min.css" />
+    <Content Include="afluexad\css\owl.carousel.css" />
+    <Content Include="afluexad\css\owl.carousel.min.css" />
+    <Content Include="afluexad\css\responsive.css" />
+    <Content Include="afluexad\css\style.css" />
+    <Content Include="afluexad\images\about_company.jpg" />
+    <Content Include="afluexad\images\Afluex-logo\favicon.png" />
+    <Content Include="afluexad\images\Afluex-logo\footer_logo.png" />
+    <Content Include="afluexad\images\Afluex-logo\loader.png" />
+    <Content Include="afluexad\images\Afluex-logo\logo-black.png" />
+    <Content Include="afluexad\images\background\3.jpg" />
+    <Content Include="afluexad\images\background\4.jpg" />
+    <Content Include="afluexad\images\background\6.jpg" />
+    <Content Include="afluexad\images\background\ad1.gif" />
+    <Content Include="afluexad\images\background\ad2.gif" />
+    <Content Include="afluexad\images\background\ad3.gif" />
+    <Content Include="afluexad\images\background\ad4.gif" />
+    <Content Include="afluexad\images\background\ad5.gif" />
+    <Content Include="afluexad\images\background\ad6.gif" />
+    <Content Include="afluexad\images\background\page_title.jpg" />
+    <Content Include="afluexad\images\background\sw0.gif" />
+    <Content Include="afluexad\images\background\sw2.gif" />
+    <Content Include="afluexad\images\background\sw3.gif" />
+    <Content Include="afluexad\images\blog\blog_detail.jpg" />
+    <Content Include="afluexad\images\blog\search-operator-featured.png" />
+    <Content Include="afluexad\images\career.png" />
+    <Content Include="afluexad\images\career1.png" />
+    <Content Include="afluexad\images\client\1.png" />
+    <Content Include="afluexad\images\client\10.png" />
+    <Content Include="afluexad\images\client\11.png" />
+    <Content Include="afluexad\images\client\12.png" />
+    <Content Include="afluexad\images\client\13.png" />
+    <Content Include="afluexad\images\client\14.png" />
+    <Content Include="afluexad\images\client\15.png" />
+    <Content Include="afluexad\images\client\16.png" />
+    <Content Include="afluexad\images\client\17.png" />
+    <Content Include="afluexad\images\client\2.png" />
+    <Content Include="afluexad\images\client\3.png" />
+    <Content Include="afluexad\images\client\4.png" />
+    <Content Include="afluexad\images\client\5.png" />
+    <Content Include="afluexad\images\client\6.png" />
+    <Content Include="afluexad\images\client\7.png" />
+    <Content Include="afluexad\images\client\8.png" />
+    <Content Include="afluexad\images\client\9.png" />
+    <Content Include="afluexad\images\client\a1.png" />
+    <Content Include="afluexad\images\client\a2.png" />
+    <Content Include="afluexad\images\client\a3.png" />
+    <Content Include="afluexad\images\client\a4.png" />
+    <Content Include="afluexad\images\client\a5.png" />
+    <Content Include="afluexad\images\client\a6.png" />
+    <Content Include="afluexad\images\favicon.png" />
+    <Content Include="afluexad\images\footer_logo.png" />
+    <Content Include="afluexad\images\gallery\birthday\1.jpg" />
+    <Content Include="afluexad\images\gallery\birthday\2.jpg" />
+    <Content Include="afluexad\images\gallery\birthday\3.jpg" />
+    <Content Include="afluexad\images\gallery\birthday\4.jpg" />
+    <Content Include="afluexad\images\gallery\birthday\5.jpg" />
+    <Content Include="afluexad\images\gallery\birthday\6.jpg" />
+    <Content Include="afluexad\images\gallery\birthday\7.jpg" />
+    <Content Include="afluexad\images\gallery\birthday\8.jpg" />
+    <Content Include="afluexad\images\gallery\birthday\9.jpg" />
+    <Content Include="afluexad\images\gallery\diwali\1.jpg" />
+    <Content Include="afluexad\images\gallery\diwali\10.jpg" />
+    <Content Include="afluexad\images\gallery\diwali\11.jpg" />
+    <Content Include="afluexad\images\gallery\diwali\12.jpg" />
+    <Content Include="afluexad\images\gallery\diwali\13.jpg" />
+    <Content Include="afluexad\images\gallery\diwali\14.jpg" />
+    <Content Include="afluexad\images\gallery\diwali\15.jpg" />
+    <Content Include="afluexad\images\gallery\diwali\16.jpg" />
+    <Content Include="afluexad\images\gallery\diwali\17.jpg" />
+    <Content Include="afluexad\images\gallery\diwali\18.jpg" />
+    <Content Include="afluexad\images\gallery\diwali\2.jpg" />
+    <Content Include="afluexad\images\gallery\diwali\3.jpg" />
+    <Content Include="afluexad\images\gallery\diwali\4.jpg" />
+    <Content Include="afluexad\images\gallery\diwali\5.jpg" />
+    <Content Include="afluexad\images\gallery\diwali\6.jpg" />
+    <Content Include="afluexad\images\gallery\diwali\7.jpg" />
+    <Content Include="afluexad\images\gallery\diwali\8.jpg" />
+    <Content Include="afluexad\images\gallery\diwali\9.jpg" />
+    <Content Include="afluexad\images\gallery\newyear_21\h1.jpg" />
+    <Content Include="afluexad\images\gallery\newyear_21\h10.jpg" />
+    <Content Include="afluexad\images\gallery\newyear_21\h11.jpg" />
+    <Content Include="afluexad\images\gallery\newyear_21\h12.jpg" />
+    <Content Include="afluexad\images\gallery\newyear_21\h13.jpg" />
+    <Content Include="afluexad\images\gallery\newyear_21\h14.jpg" />
+    <Content Include="afluexad\images\gallery\newyear_21\h15.jpg" />
+    <Content Include="afluexad\images\gallery\newyear_21\h16.jpg" />
+    <Content Include="afluexad\images\gallery\newyear_21\h17.jpg" />
+    <Content Include="afluexad\images\gallery\newyear_21\h18.jpg" />
+    <Content Include="afluexad\images\gallery\newyear_21\h19.jpg" />
+    <Content Include="afluexad\images\gallery\newyear_21\h20.jpg" />
+    <Content Include="afluexad\images\gallery\newyear_21\h21.jpg" />
+    <Content Include="afluexad\images\gallery\newyear_21\h22.jpg" />
+    <Content Include="afluexad\images\gallery\newyear_21\h23.jpg" />
+    <Content Include="afluexad\images\gallery\newyear_21\h24.jpg" />
+    <Content Include="afluexad\images\gallery\newyear_21\h25.jpg" />
+    <Content Include="afluexad\images\gallery\newyear_21\h26.jpg" />
+    <Content Include="afluexad\images\gallery\newyear_21\h27.jpg" />
+    <Content Include="afluexad\images\gallery\newyear_21\h4.jpg" />
+    <Content Include="afluexad\images\gallery\newyear_21\h5.jpg" />
+    <Content Include="afluexad\images\gallery\newyear_21\h6.jpg" />
+    <Content Include="afluexad\images\gallery\newyear_21\h7.jpg" />
+    <Content Include="afluexad\images\gallery\newyear_21\h8.jpg" />
+    <Content Include="afluexad\images\gallery\newyear_21\h9.jpg" />
+    <Content Include="afluexad\images\gallery\office\1.jpg" />
+    <Content Include="afluexad\images\gallery\office\10.jpg" />
+    <Content Include="afluexad\images\gallery\office\2.jpg" />
+    <Content Include="afluexad\images\gallery\office\3.jpg" />
+    <Content Include="afluexad\images\gallery\office\4.jpg" />
+    <Content Include="afluexad\images\gallery\office\5.jpg" />
+    <Content Include="afluexad\images\gallery\office\6.jpg" />
+    <Content Include="afluexad\images\gallery\office\7.jpg" />
+    <Content Include="afluexad\images\gallery\office\8.jpg" />
+    <Content Include="afluexad\images\gallery\office\9.jpg" />
+    <Content Include="afluexad\images\loader.png" />
+    <Content Include="afluexad\images\logo-black.png" />
+    <Content Include="afluexad\images\logo.png" />
+    <Content Include="afluexad\images\our_mission.jpg" />
+    <Content Include="afluexad\images\our_vision.jpg" />
+    <Content Include="afluexad\images\portfolio\broadcast_advertising\1.jpg" />
+    <Content Include="afluexad\images\portfolio\broadcast_advertising\2.jpg" />
+    <Content Include="afluexad\images\portfolio\broadcast_advertising\3.jpg" />
+    <Content Include="afluexad\images\portfolio\broadcast_advertising\4.jpg" />
+    <Content Include="afluexad\images\portfolio\event_management\1.jpg" />
+    <Content Include="afluexad\images\portfolio\event_management\2.jpg" />
+    <Content Include="afluexad\images\portfolio\event_management\3.jpg" />
+    <Content Include="afluexad\images\portfolio\event_management\4.jpg" />
+    <Content Include="afluexad\images\portfolio\event_management\5.jpg" />
+    <Content Include="afluexad\images\portfolio\event_management\6.jpg" />
+    <Content Include="afluexad\images\portfolio\event_management\7.jpg" />
+    <Content Include="afluexad\images\portfolio\event_management\8.jpg" />
+    <Content Include="afluexad\images\portfolio\event_management\9.jpg" />
+    <Content Include="afluexad\images\portfolio\img1.jpg" />
+    <Content Include="afluexad\images\portfolio\img2.jpg" />
+    <Content Include="afluexad\images\portfolio\img3.jpg" />
+    <Content Include="afluexad\images\portfolio\img4.jpg" />
+    <Content Include="afluexad\images\portfolio\img5.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\1.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\10.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\11.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\111.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\12.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\13.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\14.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\15.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\16.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\18.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\19.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\2.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\20.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\21.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\22.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\23.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\24.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\25.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\26.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\27.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\28.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\29.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\3.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\30.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\31.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\32.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\33.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\34.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\35.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\36.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\37.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\38.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\39.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\4.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\5.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\6.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\7.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\8.jpg" />
+    <Content Include="afluexad\images\portfolio\other_advertising_snaps\9.gif" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\1.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\10.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\11.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\12.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\13.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\14.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\15.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\16.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\17.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\18.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\19.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\2.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\20.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\21.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\22.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\23.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\24.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\25.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\26.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\27.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\28.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\29.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\3.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\31.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\32.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\33.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\34.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\35.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\36.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\37.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\39.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\4.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\40.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\41.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\42.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\43.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\44.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\5.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\6.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\7.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\8.jpg" />
+    <Content Include="afluexad\images\portfolio\outdoor_advertising\9.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\1.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\10.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\11.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\12.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\13.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\14.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\15.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\16.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\17.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\18.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\19.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\2.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\20.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\21.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\22.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\23.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\24.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\25.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\26.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\27.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\28.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\29.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\3.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\30.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\31.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\32.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\33.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\34.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\35.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\36.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\37.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\38.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\39.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\4.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\40.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\41.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\5.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\6.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\7.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\8.jpg" />
+    <Content Include="afluexad\images\portfolio\retail_branding_fabrication\9.jpg" />
+    <Content Include="afluexad\images\services\fabri1.png" />
+    <Content Include="afluexad\images\services\fabri2.jpg" />
+    <Content Include="afluexad\images\services\fabri3.jpg" />
+    <Content Include="afluexad\images\services\fabri4.jpg" />
+    <Content Include="afluexad\images\services\fabri5.jpg" />
+    <Content Include="afluexad\images\services\fabri6.jpg" />
+    <Content Include="afluexad\images\services\fabri7.jpg" />
+    <Content Include="afluexad\images\services\fabri8.jpg" />
+    <Content Include="afluexad\images\services\fabrication-ser.jpg" />
+    <Content Include="afluexad\images\services\img-1.jpg" />
+    <Content Include="afluexad\images\services\img-2.jpg" />
+    <Content Include="afluexad\images\services\img-3.jpg" />
+    <Content Include="afluexad\images\services\img-4.jpg" />
+    <Content Include="afluexad\images\services\img-5.jpg" />
+    <Content Include="afluexad\images\services\img-6.jpg" />
+    <Content Include="afluexad\images\slider\img-1.jpg" />
+    <Content Include="afluexad\images\slider\img-2.jpg" />
+    <Content Include="afluexad\images\slider\img-3.jpg" />
+    <Content Include="afluexad\images\slider\img-4.jpg" />
+    <Content Include="afluexad\images\slider\img-5.jpg" />
+    <Content Include="afluexad\images\team\ajmal.jpg" />
+    <Content Include="afluexad\images\team\alok.jpg" />
+    <Content Include="afluexad\images\team\anshuman.jpg" />
+    <Content Include="afluexad\images\team\arpit.jpg" />
+    <Content Include="afluexad\images\team\avinash.jpg" />
+    <Content Include="afluexad\images\team\dhruv.jpg" />
+    <Content Include="afluexad\images\team\divya.jpg" />
+    <Content Include="afluexad\images\team\garav.jpg" />
+    <Content Include="afluexad\images\team\hemvant.jpg" />
+    <Content Include="afluexad\images\team\himanshu.jpg" />
+    <Content Include="afluexad\images\team\krishna.jpg" />
+    <Content Include="afluexad\images\team\krishna1.jpg" />
+    <Content Include="afluexad\images\team\madhulika.jpg" />
+    <Content Include="afluexad\images\team\mona.jpg" />
+    <Content Include="afluexad\images\team\prabhakar.jpg" />
+    <Content Include="afluexad\images\team\ravi.jpg" />
+    <Content Include="afluexad\images\team\reena.jpg" />
+    <Content Include="afluexad\images\team\sachin.jpg" />
+    <Content Include="afluexad\images\team\sandeep.jpg" />
+    <Content Include="afluexad\images\team\sanjeev.jpg" />
+    <Content Include="afluexad\images\team\shudhir.jpg" />
+    <Content Include="afluexad\images\team\shyamu.jpg" />
+    <Content Include="afluexad\images\team\sudhakar.jpg" />
+    <Content Include="afluexad\images\team\sujeet.jpg" />
+    <Content Include="afluexad\images\team\sujeet.png" />
+    <Content Include="afluexad\images\team\team.jpg" />
+    <Content Include="afluexad\images\team\ved.jpg" />
+    <Content Include="afluexad\images\team\vikram.png" />
+    <Content Include="afluexad\images\thank-you-page.png" />
+    <Content Include="afluexit\css\bootstrap-grid.css" />
+    <Content Include="afluexit\css\bootstrap-grid.min.css" />
+    <Content Include="afluexit\css\bootstrap.css" />
+    <Content Include="afluexit\css\bootstrap.min.css" />
+    <Content Include="afluexit\css\fontawesome.min.css" />
+    <Content Include="afluexit\css\glightbox.css" />
+    <Content Include="afluexit\css\owl.carousel.css" />
+    <Content Include="afluexit\css\owl.carousel.min.css" />
+    <Content Include="afluexit\css\responsive.css" />
+    <Content Include="afluexit\css\style - Copy.css" />
+    <Content Include="afluexit\css\style.css" />
+    <Content Include="afluexit\edu_tech\css\ajax-loader.gif" />
+    <Content Include="afluexit\edu_tech\css\animate.css" />
+    <Content Include="afluexit\edu_tech\css\aos.css" />
+    <Content Include="afluexit\edu_tech\css\bootstrap.min.css" />
+    <Content Include="afluexit\edu_tech\css\bootstrap\bootstrap-grid.css" />
+    <Content Include="afluexit\edu_tech\css\bootstrap\bootstrap-reboot.css" />
+    <Content Include="afluexit\edu_tech\css\css\bootstrap-reboot.css" />
+    <Content Include="afluexit\edu_tech\css\css\mixins\_text-hide.css" />
+    <Content Include="afluexit\edu_tech\css\flaticon.css" />
+    <Content Include="afluexit\edu_tech\css\icomoon.css" />
+    <Content Include="afluexit\edu_tech\css\ionicons.min.css" />
+    <Content Include="afluexit\edu_tech\css\magnific-popup.css" />
+    <Content Include="afluexit\edu_tech\css\open-iconic-bootstrap.min.css" />
+    <Content Include="afluexit\edu_tech\css\owl.carousel.min.css" />
+    <Content Include="afluexit\edu_tech\css\owl.theme.default.min.css" />
+    <Content Include="afluexit\edu_tech\css\style.css" />
+    <Content Include="afluexit\edu_tech\fonts\flaticon\backup.txt" />
+    <Content Include="afluexit\edu_tech\fonts\flaticon\font\flaticon.css" />
+    <Content Include="afluexit\edu_tech\fonts\flaticon\font\flaticon.html" />
+    <Content Include="afluexit\edu_tech\fonts\flaticon\font\Flaticon.svg" />
+    <Content Include="afluexit\edu_tech\fonts\icomoon\icomoon.svg" />
+    <Content Include="afluexit\edu_tech\fonts\ionicons\css\ionicons.min.css" />
+    <Content Include="afluexit\edu_tech\fonts\ionicons\fonts\ionicons.svg" />
+    <Content Include="afluexit\edu_tech\fonts\open-iconic\open-iconic.svg" />
+    <Content Include="afluexit\edu_tech\images\02.jpg" />
+    <Content Include="afluexit\edu_tech\images\03.jpg" />
+    <Content Include="afluexit\edu_tech\images\04.jpg" />
+    <Content Include="afluexit\edu_tech\images\05.jpg" />
+    <Content Include="afluexit\edu_tech\images\06.jpg" />
+    <Content Include="afluexit\edu_tech\images\Admission.png" />
+    <Content Include="afluexit\edu_tech\images\afluex.png" />
+    <Content Include="afluexit\edu_tech\images\AI-powered.png" />
+    <Content Include="afluexit\edu_tech\images\analyst.jpg" />
+    <Content Include="afluexit\edu_tech\images\Analytics.png" />
+    <Content Include="afluexit\edu_tech\images\bg_001.jpg" />
+    <Content Include="afluexit\edu_tech\images\bg_002.jpg" />
+    <Content Include="afluexit\edu_tech\images\bg_01.jpg" />
+    <Content Include="afluexit\edu_tech\images\bg_01.png" />
+    <Content Include="afluexit\edu_tech\images\bg_1.jpg" />
+    <Content Include="afluexit\edu_tech\images\bg_2.jpg" />
+    <Content Include="afluexit\edu_tech\images\bg_3.jpg" />
+    <Content Include="afluexit\edu_tech\images\bg_4.jpg" />
+    <Content Include="afluexit\edu_tech\images\bg_5.jpg" />
+    <Content Include="afluexit\edu_tech\images\Business.png" />
+    <Content Include="afluexit\edu_tech\images\Calendar.png" />
+    <Content Include="afluexit\edu_tech\images\Campus.png" />
+    <Content Include="afluexit\edu_tech\images\Certificate.png" />
+    <Content Include="afluexit\edu_tech\images\client1.png" />
+    <Content Include="afluexit\edu_tech\images\client2.png" />
+    <Content Include="afluexit\edu_tech\images\confi.jpg" />
+    <Content Include="afluexit\edu_tech\images\Control panel.png" />
+    <Content Include="afluexit\edu_tech\images\course-1.jpg" />
+    <Content Include="afluexit\edu_tech\images\course-2.jpg" />
+    <Content Include="afluexit\edu_tech\images\course-3.jpg" />
+    <Content Include="afluexit\edu_tech\images\course-4.jpg" />
+    <Content Include="afluexit\edu_tech\images\course-5.jpg" />
+    <Content Include="afluexit\edu_tech\images\course-6.jpg" />
+    <Content Include="afluexit\edu_tech\images\dept-5.jpg" />
+    <Content Include="afluexit\edu_tech\images\edu_logo.png" />
+    <Content Include="afluexit\edu_tech\images\Enquiries.png" />
+    <Content Include="afluexit\edu_tech\images\External Exams.png" />
+    <Content Include="afluexit\edu_tech\images\Fee Billing.png" />
+    <Content Include="afluexit\edu_tech\images\g2.jpg" />
+    <Content Include="afluexit\edu_tech\images\g3.png" />
+    <Content Include="afluexit\edu_tech\images\g4.jpeg" />
+    <Content Include="afluexit\edu_tech\images\g5.jpg" />
+    <Content Include="afluexit\edu_tech\images\HR.png" />
+    <Content Include="afluexit\edu_tech\images\image_1.jpg" />
+    <Content Include="afluexit\edu_tech\images\image_2.jpg" />
+    <Content Include="afluexit\edu_tech\images\image_3.jpg" />
+    <Content Include="afluexit\edu_tech\images\image_4.jpg" />
+    <Content Include="afluexit\edu_tech\images\image_5.jpg" />
+    <Content Include="afluexit\edu_tech\images\image_6.jpg" />
+    <Content Include="afluexit\edu_tech\images\Internal Exams.png" />
+    <Content Include="afluexit\edu_tech\images\intero.jpeg" />
+    <Content Include="afluexit\edu_tech\images\loc.png" />
+    <Content Include="afluexit\edu_tech\images\Messaging.png" />
+    <Content Include="afluexit\edu_tech\images\mobile.jpeg" />
+    <Content Include="afluexit\edu_tech\images\multi.jpg" />
+    <Content Include="afluexit\edu_tech\images\person_1.jpg" />
+    <Content Include="afluexit\edu_tech\images\person_2.jpg" />
+    <Content Include="afluexit\edu_tech\images\person_3.jpg" />
+    <Content Include="afluexit\edu_tech\images\person_4.jpg" />
+    <Content Include="afluexit\edu_tech\images\planning.jpg" />
+    <Content Include="afluexit\edu_tech\images\Program &amp; Course.png" />
+    <Content Include="afluexit\edu_tech\images\staff-1.jpg" />
+    <Content Include="afluexit\edu_tech\images\staff-2.jpg" />
+    <Content Include="afluexit\edu_tech\images\staff-3.jpg" />
+    <Content Include="afluexit\edu_tech\images\staff-4.jpg" />
+    <Content Include="afluexit\edu_tech\images\Student Portal.png" />
+    <Content Include="afluexit\edu_tech\images\Student.png" />
+    <Content Include="afluexit\edu_tech\images\Subject.png" />
+    <Content Include="afluexit\edu_tech\images\teacher-1.jpg" />
+    <Content Include="afluexit\edu_tech\images\teacher-2.jpg" />
+    <Content Include="afluexit\edu_tech\images\teacher-3.jpg" />
+    <Content Include="afluexit\edu_tech\images\teacher-4.jpg" />
+    <Content Include="afluexit\edu_tech\images\teacher-5.jpg" />
+    <Content Include="afluexit\edu_tech\images\teacher-6.jpg" />
+    <Content Include="afluexit\edu_tech\images\teacher-7.jpg" />
+    <Content Include="afluexit\edu_tech\images\teacher-8.jpg" />
+    <Content Include="afluexit\edu_tech\images\Timetable.png" />
+    <Content Include="afluexit\edu_tech\images\transport.jpg" />
+    <Content Include="afluexit\edu_tech\index.html" />
+    <Content Include="afluexit\edu_tech\js\aos.js" />
+    <Content Include="afluexit\edu_tech\js\bootstrap.min.js" />
+    <Content Include="afluexit\edu_tech\js\google-map.js" />
+    <Content Include="afluexit\edu_tech\js\jquery-3.2.1.min.js" />
+    <Content Include="afluexit\edu_tech\js\jquery-migrate-3.0.1.min.js" />
+    <Content Include="afluexit\edu_tech\js\jquery.animateNumber.min.js" />
+    <Content Include="afluexit\edu_tech\js\jquery.easing.1.3.js" />
+    <Content Include="afluexit\edu_tech\js\jquery.magnific-popup.min.js" />
+    <Content Include="afluexit\edu_tech\js\jquery.min.js" />
+    <Content Include="afluexit\edu_tech\js\jquery.stellar.min.js" />
+    <Content Include="afluexit\edu_tech\js\jquery.waypoints.min.js" />
+    <Content Include="afluexit\edu_tech\js\main.js" />
+    <Content Include="afluexit\edu_tech\js\owl.carousel.min.js" />
+    <Content Include="afluexit\edu_tech\js\popper.min.js" />
+    <Content Include="afluexit\edu_tech\js\scrollax.min.js" />
+    <Content Include="afluexit\images\about_company.jpg" />
+    <Content Include="afluexit\images\Afluex-logo\favicon.png" />
+    <Content Include="afluexit\images\Afluex-logo\footer_logo.png" />
+    <Content Include="afluexit\images\Afluex-logo\loader.png" />
+    <Content Include="afluexit\images\Afluex-logo\logo-black.png" />
+    <Content Include="afluexit\images\background\3.jpg" />
+    <Content Include="afluexit\images\background\4.jpg" />
+    <Content Include="afluexit\images\background\6.jpg" />
+    <Content Include="afluexit\images\background\ad1.gif" />
+    <Content Include="afluexit\images\background\ad2.gif" />
+    <Content Include="afluexit\images\background\ad3.gif" />
+    <Content Include="afluexit\images\background\ad4.gif" />
+    <Content Include="afluexit\images\background\ad5.gif" />
+    <Content Include="afluexit\images\background\ad6.gif" />
+    <Content Include="afluexit\images\background\page_title.jpg" />
+    <Content Include="afluexit\images\background\sw0.gif" />
+    <Content Include="afluexit\images\background\sw2.gif" />
+    <Content Include="afluexit\images\background\sw3.gif" />
+    <Content Include="afluexit\images\blog\blog_detail.jpg" />
+    <Content Include="afluexit\images\blog\search-operator-featured.png" />
+    <Content Include="afluexit\images\border-style.png" />
+    <Content Include="afluexit\images\business_res.jpg" />
+    <Content Include="afluexit\images\career-form-1.png" />
+    <Content Include="afluexit\images\career.png" />
+    <Content Include="afluexit\images\career1.png" />
+    <Content Include="afluexit\images\clean_icon.png" />
+    <Content Include="afluexit\images\client\1.png" />
+    <Content Include="afluexit\images\client\10.png" />
+    <Content Include="afluexit\images\client\11.png" />
+    <Content Include="afluexit\images\client\12.png" />
+    <Content Include="afluexit\images\client\13.png" />
+    <Content Include="afluexit\images\client\14.png" />
+    <Content Include="afluexit\images\client\15.png" />
+    <Content Include="afluexit\images\client\16.png" />
+    <Content Include="afluexit\images\client\17.png" />
+    <Content Include="afluexit\images\client\2.png" />
+    <Content Include="afluexit\images\client\3.png" />
+    <Content Include="afluexit\images\client\4.png" />
+    <Content Include="afluexit\images\client\5.png" />
+    <Content Include="afluexit\images\client\6.png" />
+    <Content Include="afluexit\images\client\7.png" />
+    <Content Include="afluexit\images\client\8.png" />
+    <Content Include="afluexit\images\client\9.png" />
+    <Content Include="afluexit\images\client\a1.png" />
+    <Content Include="afluexit\images\client\a2.png" />
+    <Content Include="afluexit\images\client\a3.png" />
+    <Content Include="afluexit\images\client\a4.png" />
+    <Content Include="afluexit\images\client\a5.png" />
+    <Content Include="afluexit\images\client\a6.png" />
+    <Content Include="afluexit\images\creativity_icon.png" />
+    <Content Include="afluexit\images\divider.png" />
+    <Content Include="afluexit\images\dividert.png" />
+    <Content Include="afluexit\images\effective_icon.png" />
+    <Content Include="afluexit\images\favicon.png" />
+    <Content Include="afluexit\images\footer_bg.jpg" />
+    <Content Include="afluexit\images\footer_logo.png" />
+    <Content Include="afluexit\images\friendly_support_icon.png" />
+    <Content Include="afluexit\images\fully_responsive_icon.png" />
+    <Content Include="afluexit\images\gallery\birthday\1.jpg" />
+    <Content Include="afluexit\images\gallery\birthday\2.jpg" />
+    <Content Include="afluexit\images\gallery\birthday\3.jpg" />
+    <Content Include="afluexit\images\gallery\birthday\4.jpg" />
+    <Content Include="afluexit\images\gallery\birthday\5.jpg" />
+    <Content Include="afluexit\images\gallery\birthday\6.jpg" />
+    <Content Include="afluexit\images\gallery\birthday\7.jpg" />
+    <Content Include="afluexit\images\gallery\birthday\8.jpg" />
+    <Content Include="afluexit\images\gallery\birthday\9.jpg" />
+    <Content Include="afluexit\images\gallery\diwali\1.jpg" />
+    <Content Include="afluexit\images\gallery\diwali\10.jpg" />
+    <Content Include="afluexit\images\gallery\diwali\11.jpg" />
+    <Content Include="afluexit\images\gallery\diwali\12.jpg" />
+    <Content Include="afluexit\images\gallery\diwali\13.jpg" />
+    <Content Include="afluexit\images\gallery\diwali\14.jpg" />
+    <Content Include="afluexit\images\gallery\diwali\15.jpg" />
+    <Content Include="afluexit\images\gallery\diwali\16.jpg" />
+    <Content Include="afluexit\images\gallery\diwali\17.jpg" />
+    <Content Include="afluexit\images\gallery\diwali\18.jpg" />
+    <Content Include="afluexit\images\gallery\diwali\2.jpg" />
+    <Content Include="afluexit\images\gallery\diwali\3.jpg" />
+    <Content Include="afluexit\images\gallery\diwali\4.jpg" />
+    <Content Include="afluexit\images\gallery\diwali\5.jpg" />
+    <Content Include="afluexit\images\gallery\diwali\6.jpg" />
+    <Content Include="afluexit\images\gallery\diwali\7.jpg" />
+    <Content Include="afluexit\images\gallery\diwali\8.jpg" />
+    <Content Include="afluexit\images\gallery\diwali\9.jpg" />
+    <Content Include="afluexit\images\gallery\newyear_21\h1.jpg" />
+    <Content Include="afluexit\images\gallery\newyear_21\h10.jpg" />
+    <Content Include="afluexit\images\gallery\newyear_21\h11.jpg" />
+    <Content Include="afluexit\images\gallery\newyear_21\h12.jpg" />
+    <Content Include="afluexit\images\gallery\newyear_21\h13.jpg" />
+    <Content Include="afluexit\images\gallery\newyear_21\h14.jpg" />
+    <Content Include="afluexit\images\gallery\newyear_21\h15.jpg" />
+    <Content Include="afluexit\images\gallery\newyear_21\h16.jpg" />
+    <Content Include="afluexit\images\gallery\newyear_21\h17.jpg" />
+    <Content Include="afluexit\images\gallery\newyear_21\h18.jpg" />
+    <Content Include="afluexit\images\gallery\newyear_21\h19.jpg" />
+    <Content Include="afluexit\images\gallery\newyear_21\h20.jpg" />
+    <Content Include="afluexit\images\gallery\newyear_21\h21.jpg" />
+    <Content Include="afluexit\images\gallery\newyear_21\h22.jpg" />
+    <Content Include="afluexit\images\gallery\newyear_21\h23.jpg" />
+    <Content Include="afluexit\images\gallery\newyear_21\h24.jpg" />
+    <Content Include="afluexit\images\gallery\newyear_21\h25.jpg" />
+    <Content Include="afluexit\images\gallery\newyear_21\h26.jpg" />
+    <Content Include="afluexit\images\gallery\newyear_21\h27.jpg" />
+    <Content Include="afluexit\images\gallery\newyear_21\h4.jpg" />
+    <Content Include="afluexit\images\gallery\newyear_21\h5.jpg" />
+    <Content Include="afluexit\images\gallery\newyear_21\h6.jpg" />
+    <Content Include="afluexit\images\gallery\newyear_21\h7.jpg" />
+    <Content Include="afluexit\images\gallery\newyear_21\h8.jpg" />
+    <Content Include="afluexit\images\gallery\newyear_21\h9.jpg" />
+    <Content Include="afluexit\images\gallery\office\1.jpg" />
+    <Content Include="afluexit\images\gallery\office\10.jpg" />
+    <Content Include="afluexit\images\gallery\office\2.jpg" />
+    <Content Include="afluexit\images\gallery\office\3.jpg" />
+    <Content Include="afluexit\images\gallery\office\4.jpg" />
+    <Content Include="afluexit\images\gallery\office\5.jpg" />
+    <Content Include="afluexit\images\gallery\office\6.jpg" />
+    <Content Include="afluexit\images\gallery\office\7.jpg" />
+    <Content Include="afluexit\images\gallery\office\8.jpg" />
+    <Content Include="afluexit\images\gallery\office\9.jpg" />
+    <Content Include="afluexit\images\how-we-work-top.png" />
+    <Content Include="afluexit\images\loader.png" />
+    <Content Include="afluexit\images\logo-black.png" />
+    <Content Include="afluexit\images\logo.png" />
+    <Content Include="afluexit\images\our_mission.jpg" />
+    <Content Include="afluexit\images\our_vision.jpg" />
+    <Content Include="afluexit\images\portfolio\1.jpg" />
+    <Content Include="afluexit\images\portfolio\2.jpg" />
+    <Content Include="afluexit\images\portfolio\3.jpg" />
+    <Content Include="afluexit\images\portfolio\4.jpg" />
+    <Content Include="afluexit\images\portfolio\5.jpg" />
+    <Content Include="afluexit\images\portfolio\6.jpg" />
+    <Content Include="afluexit\images\portfolio\7.jpg" />
+    <Content Include="afluexit\images\portfolio\img1.jpg" />
+    <Content Include="afluexit\images\portfolio\img2.jpg" />
+    <Content Include="afluexit\images\portfolio\img3.jpg" />
+    <Content Include="afluexit\images\portfolio\img4.jpg" />
+    <Content Include="afluexit\images\portfolio\img5.jpg" />
+    <Content Include="afluexit\images\portfolio\layout.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\1.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\10.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\11.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\12.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\13.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\14.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\15.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\16.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\18.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\19.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\2.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\20.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\21.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\22.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\23.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\24.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\25.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\26.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\27.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\28.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\29.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\3.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\30.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\31.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\32.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\33.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\34.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\35.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\36.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\37.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\38.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\39.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\4.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\5.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\6.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\7.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\8.jpg" />
+    <Content Include="afluexit\images\portfolio\other_advertising_snaps\9.gif" />
+    <Content Include="afluexit\images\portfolio\portfolio-1.jpg" />
+    <Content Include="afluexit\images\portfolio\portfolio-2.jpg" />
+    <Content Include="afluexit\images\portfolio\portfolio-3.jpg" />
+    <Content Include="afluexit\images\portfolio\portfolio-4.jpg" />
+    <Content Include="afluexit\images\portfolio\portfolio-5.jpg" />
+    <Content Include="afluexit\images\portfolio\portfolio-6.jpg" />
+    <Content Include="afluexit\images\portfolio\portfolio-7.jpg" />
+    <Content Include="afluexit\images\portfolio\portfolio-8.jpg" />
+    <Content Include="afluexit\images\portfolio\portfolio-9.jpg" />
+    <Content Include="afluexit\images\portfolio\portfolio-details-1.jpg" />
+    <Content Include="afluexit\images\portfolio\portfolio-details-2.jpg" />
+    <Content Include="afluexit\images\portfolio\portfolio-details-3.jpg" />
+    <Content Include="afluexit\images\product\business_insights.png" />
+    <Content Include="afluexit\images\product\cost_reduction.png" />
+    <Content Include="afluexit\images\product\crm-software.png" />
+    <Content Include="afluexit\images\product\dots.png" />
+    <Content Include="afluexit\images\product\ecommerce-high-quality.png" />
+    <Content Include="afluexit\images\product\ecommerce.png" />
+    <Content Include="afluexit\images\product\ecommerce_icon.png" />
+    <Content Include="afluexit\images\product\flight_booking_icon.png" />
+    <Content Include="afluexit\images\product\hospital_management_icon.png" />
+    <Content Include="afluexit\images\product\mlm-business.jpg" />
+    <Content Include="afluexit\images\product\mlm-con.jpg" />
+    <Content Include="afluexit\images\product\mlm_icon.png" />
+    <Content Include="afluexit\images\product\mobile_recharge_icon.png" />
+    <Content Include="afluexit\images\product\optimal_workflows.png" />
+    <Content Include="afluexit\images\product\realesate_house.png" />
+    <Content Include="afluexit\images\product\realestate_icon.png" />
+    <Content Include="afluexit\images\product\real_time_data.png" />
+    <Content Include="afluexit\images\product\school_management_icon.png" />
+    <Content Include="afluexit\images\product\travel_icon.png" />
+    <Content Include="afluexit\images\product\world-cup.jpg" />
+    <Content Include="afluexit\images\services\android_development.png" />
+    <Content Include="afluexit\images\services\budget.png" />
+    <Content Include="afluexit\images\services\business-plan-pana.png" />
+    <Content Include="afluexit\images\services\connected-mlm.png" />
+    <Content Include="afluexit\images\services\connect_telecommuting.png" />
+    <Content Include="afluexit\images\services\customer_dedline.png" />
+    <Content Include="afluexit\images\services\devices-bro.png" />
+    <Content Include="afluexit\images\services\devices-pana.png" />
+    <Content Include="afluexit\images\services\digital_marketing.png" />
+    <Content Include="afluexit\images\services\domain_hosting.png" />
+    <Content Include="afluexit\images\services\fabri1.png" />
+    <Content Include="afluexit\images\services\fabri2.jpg" />
+    <Content Include="afluexit\images\services\fabri3.jpg" />
+    <Content Include="afluexit\images\services\fabri4.jpg" />
+    <Content Include="afluexit\images\services\fabri5.jpg" />
+    <Content Include="afluexit\images\services\fabri6.jpg" />
+    <Content Include="afluexit\images\services\fabri7.jpg" />
+    <Content Include="afluexit\images\services\fabri8.jpg" />
+    <Content Include="afluexit\images\services\fabrication-ser.jpg" />
+    <Content Include="afluexit\images\services\graphic_design.png" />
+    <Content Include="afluexit\images\services\img-1.jpg" />
+    <Content Include="afluexit\images\services\img-2.jpg" />
+    <Content Include="afluexit\images\services\img-3.jpg" />
+    <Content Include="afluexit\images\services\img-4.jpg" />
+    <Content Include="afluexit\images\services\img-5.jpg" />
+    <Content Include="afluexit\images\services\img-6.jpg" />
+    <Content Include="afluexit\images\services\infographic_image.jpg" />
+    <Content Include="afluexit\images\services\mobile-login-bro.png" />
+    <Content Include="afluexit\images\services\mobile-work-process.png" />
+    <Content Include="afluexit\images\services\online-shopping.png" />
+    <Content Include="afluexit\images\services\our_experience.png" />
+    <Content Include="afluexit\images\services\profitability.png" />
+    <Content Include="afluexit\images\services\seo-services.jpg" />
+    <Content Include="afluexit\images\services\seo.png" />
+    <Content Include="afluexit\images\services\ser-inventry.png" />
+    <Content Include="afluexit\images\services\ser-realestate.png" />
+    <Content Include="afluexit\images\services\ser-school.png" />
+    <Content Include="afluexit\images\services\soft_programming.png" />
+    <Content Include="afluexit\images\services\system-integration.png" />
+    <Content Include="afluexit\images\services\talented.png" />
+    <Content Include="afluexit\images\services\targeted-audience.png" />
+    <Content Include="afluexit\images\services\training.png" />
+    <Content Include="afluexit\images\services\usability-testing-bro.png" />
+    <Content Include="afluexit\images\services\web-design-process.png" />
+    <Content Include="afluexit\images\services\website_development.png" />
+    <Content Include="afluexit\images\services\web_development.png" />
+    <Content Include="afluexit\images\services\web_devices.png" />
+    <Content Include="afluexit\images\services\we_give.png" />
+    <Content Include="afluexit\images\slider\1.jpg" />
+    <Content Include="afluexit\images\slider\2.jpg" />
+    <Content Include="afluexit\images\slider\3.jpg" />
+    <Content Include="afluexit\images\slider\and-1.jpg" />
+    <Content Include="afluexit\images\slider\and-2.jpg" />
+    <Content Include="afluexit\images\slider\img-1.jpg" />
+    <Content Include="afluexit\images\slider\img-2.jpg" />
+    <Content Include="afluexit\images\slider\img-3.jpg" />
+    <Content Include="afluexit\images\slider\img-4.jpg" />
+    <Content Include="afluexit\images\slider\img-5.jpg" />
+    <Content Include="afluexit\images\slider\soft-1.jpg" />
+    <Content Include="afluexit\images\slider\soft-2.jpg" />
+    <Content Include="afluexit\images\slider\web-1.jpg" />
+    <Content Include="afluexit\images\slider\web-2.jpg" />
+    <Content Include="afluexit\images\slider\web-development.png" />
+    <Content Include="afluexit\images\team\ajmal.jpg" />
+    <Content Include="afluexit\images\team\alok.jpg" />
+    <Content Include="afluexit\images\team\anshuman.jpg" />
+    <Content Include="afluexit\images\team\arpit.jpg" />
+    <Content Include="afluexit\images\team\avinash.jpg" />
+    <Content Include="afluexit\images\team\dhruv.jpg" />
+    <Content Include="afluexit\images\team\divya.jpg" />
+    <Content Include="afluexit\images\team\garav.jpg" />
+    <Content Include="afluexit\images\team\hemvant.jpg" />
+    <Content Include="afluexit\images\team\himanshu.jpg" />
+    <Content Include="afluexit\images\team\krishna.jpg" />
+    <Content Include="afluexit\images\team\krishna1.jpg" />
+    <Content Include="afluexit\images\team\madhulika.jpg" />
+    <Content Include="afluexit\images\team\mona.jpg" />
+    <Content Include="afluexit\images\team\prabhakar.jpg" />
+    <Content Include="afluexit\images\team\ravi.jpg" />
+    <Content Include="afluexit\images\team\reena.jpg" />
+    <Content Include="afluexit\images\team\sachin.jpg" />
+    <Content Include="afluexit\images\team\sandeep.jpg" />
+    <Content Include="afluexit\images\team\sanjeev.jpg" />
+    <Content Include="afluexit\images\team\shudhir.jpg" />
+    <Content Include="afluexit\images\team\shyamu.jpg" />
+    <Content Include="afluexit\images\team\sudhakar.jpg" />
+    <Content Include="afluexit\images\team\sujeet.jpg" />
+    <Content Include="afluexit\images\team\sujeet.png" />
+    <Content Include="afluexit\images\team\team.jpg" />
+    <Content Include="afluexit\images\team\ved.jpg" />
+    <Content Include="afluexit\images\team\vikram.png" />
+    <Content Include="afluexit\images\why.jpg" />
+    <Content Include="afluexit\images\why1.png" />
+    <Content Include="afluexit\images\why2.png" />
+    <Content Include="afluexit\images\work_strategic\design_icon.png" />
+    <Content Include="afluexit\images\work_strategic\development.png" />
+    <Content Include="afluexit\images\work_strategic\research_icon.png" />
+    <Content Include="afluexit\images\work_strategic\think_icon.png" />
+    <Content Include="afluexit\js\bootstrap.bundle.js" />
+    <Content Include="afluexit\js\bootstrap.bundle.min.js" />
+    <Content Include="afluexit\js\bootstrap.esm.js" />
+    <Content Include="afluexit\js\bootstrap.esm.min.js" />
+    <Content Include="afluexit\js\bootstrap.js" />
+    <Content Include="afluexit\js\bootstrap.min.js" />
+    <Content Include="afluexit\js\fontawesome-kit.js" />
+    <Content Include="afluexit\js\fontawesome.min.js" />
+    <Content Include="afluexit\js\footer.js" />
+    <Content Include="afluexit\js\gallery.js" />
+    <Content Include="afluexit\js\glightbox.min.js" />
+    <Content Include="afluexit\js\header.js" />
+    <Content Include="afluexit\js\jquery-3.6.0.js" />
+    <Content Include="afluexit\js\owl.carousel.js" />
+    <Content Include="afluexit\js\owl.carousel.min.js" />
+    <Content Include="afluexit\js\script.js" />
+    <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="CareerFileUpload\d74a0f53-ab63-44d3-a26c-2ed68937be89.jpg" />
+    <Content Include="CareerFileUpload\d9d36952-ffe9-4202-993d-fd001c671f82.jpg" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fscss\css\custom.css" />
+    <Content Include="fscss\css\normalize.css" />
+    <Content Include="fscss\css\Style.css" />
+    <Content Include="fscss\images\01.jpg" />
+    <Content Include="fscss\images\02.jpg" />
+    <Content Include="fscss\images\1.jpg" />
+    <Content Include="fscss\images\11.jpg" />
+    <Content Include="fscss\images\12.jpg" />
+    <Content Include="fscss\images\2.jpg" />
+    <Content Include="fscss\images\3.jpg" />
+    <Content Include="fscss\images\ad1.gif" />
+    <Content Include="fscss\images\advr_img.jpg" />
+    <Content Include="fscss\images\background.jpg" />
+    <Content Include="fscss\images\devlopment.jpg" />
+    <Content Include="fscss\images\dot.mp4" />
+    <Content Include="fscss\images\ezgif.com-gif-maker.gif" />
+    <Content Include="fscss\images\favicon.png" />
+    <Content Include="fscss\images\footer_logo.png" />
+    <Content Include="fscss\images\logo-black.png" />
+    <Content Include="fscss\images\star.gif" />
+    <Content Include="fscss\images\sw3.gif" />
+    <Content Include="fscss\images\training.png" />
+    <Content Include="fscss\js\jquery.js" />
+    <Content Include="fscss\js\modernizr.custom.js" />
+    <Content Include="Global.asax" />
+    <Content Include="obj\Release\Afluex.dll" />
+    <Content Include="Scripts\ai.0.22.9-build00167.js" />
+    <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\HelpPage\Views\Web.config" />
+    <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fscss\images\adver.webp" />
+    <Content Include="fscss\images\sw.webp" />
+    <Content Include="afluexit\edu_tech\css\.DS_Store" />
+    <Content Include="afluexit\edu_tech\css\bootstrap\.DS_Store" />
+    <Content Include="afluexit\edu_tech\css\css\.DS_Store" />
+    <Content Include="afluexit\edu_tech\fonts\.DS_Store" />
+    <Content Include="afluexit\edu_tech\fonts\flaticon\.DS_Store" />
+    <Content Include="afluexit\edu_tech\fonts\flaticon\font\.DS_Store" />
+    <Content Include="afluexit\edu_tech\fonts\flaticon\font\Flaticon.eot" />
+    <Content Include="afluexit\edu_tech\fonts\flaticon\font\Flaticon.ttf" />
+    <Content Include="afluexit\edu_tech\fonts\flaticon\font\Flaticon.woff" />
+    <Content Include="afluexit\edu_tech\fonts\flaticon\font\Flaticon.woff2" />
+    <Content Include="afluexit\edu_tech\fonts\flaticon\font\_flaticon.scss" />
+    <Content Include="afluexit\edu_tech\fonts\flaticon\license\license.pdf" />
+    <Content Include="afluexit\edu_tech\fonts\icomoon\icomoon.eot" />
+    <Content Include="afluexit\edu_tech\fonts\icomoon\icomoon.ttf" />
+    <Content Include="afluexit\edu_tech\fonts\icomoon\icomoon.woff" />
+    <Content Include="afluexit\edu_tech\fonts\ionicons\css\_ionicons.scss" />
+    <Content Include="afluexit\edu_tech\fonts\ionicons\fonts\.DS_Store" />
+    <Content Include="afluexit\edu_tech\fonts\ionicons\fonts\ionicons.eot" />
+    <Content Include="afluexit\edu_tech\fonts\ionicons\fonts\ionicons.ttf" />
+    <Content Include="afluexit\edu_tech\fonts\ionicons\fonts\ionicons.woff" />
+    <Content Include="afluexit\edu_tech\fonts\ionicons\fonts\ionicons.woff2" />
+    <Content Include="afluexit\edu_tech\fonts\open-iconic\open-iconic.eot" />
+    <Content Include="afluexit\edu_tech\fonts\open-iconic\open-iconic.otf" />
+    <Content Include="afluexit\edu_tech\fonts\open-iconic\open-iconic.ttf" />
+    <Content Include="afluexit\edu_tech\fonts\open-iconic\open-iconic.woff" />
+    <Content Include="afluexit\edu_tech\js\.DS_Store" />
+    <Content Include="afluexit\js\bootstrap.bundle.js.map" />
+    <Content Include="afluexit\js\bootstrap.bundle.min.js.map" />
+    <Content Include="afluexit\js\bootstrap.esm.js.map" />
+    <Content Include="afluexit\js\bootstrap.esm.min.js.map" />
+    <Content Include="afluexit\js\bootstrap.js.map" />
+    <Content Include="afluexit\js\bootstrap.min.js.map" />
+    <Content Include="afluexit\images\background\ad.webp" />
+    <Content Include="afluexit\images\background\sw.webp" />
+    <Content Include="afluexad\images\background\ad.webp" />
+    <Content Include="afluexad\images\background\sw.webp" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\Ad_LayoutPage.cshtml" />
+    <Content Include="Views\Home\companyoverview.cshtml" />
+    <Content Include="Views\Home\visionandmission.cshtml" />
+    <Content Include="Views\Home\OurTeam.cshtml" />
+    <Content Include="Views\Home\airportmedia.cshtml" />
+    <Content Include="Views\Home\autobranding.cshtml" />
+    <Content Include="Views\Home\wallwrapads.cshtml" />
+    <Content Include="Views\Home\inshopoutdoorbranding.cshtml" />
+    <Content Include="Views\Home\cinemaadvertising.cshtml" />
+    <Content Include="Views\Home\outdooradvertising.cshtml" />
+    <Content Include="Views\Home\mobilevanpromotion.cshtml" />
+    <Content Include="Views\Home\printingservices.cshtml" />
+    <Content Include="Views\Home\radioadvertising.cshtml" />
+    <Content Include="Views\Home\tvadvertising.cshtml" />
+    <Content Include="Views\Home\fabricationservices.cshtml" />
+    <Content Include="Views\Home\eventmanagement.cshtml" />
+    <Content Include="Views\Home\onlinemarketing.cshtml" />
+    <Content Include="Views\Home\portfolio.cshtml" />
+    <Content Include="Views\Home\gallery.cshtml" />
+    <Content Include="Views\Home\career.cshtml" />
+    <Content Include="Views\Home\blog.cshtml" />
+    <Content Include="Views\Home\blogdetails.cshtml" />
+    <Content Include="Views\Home\contactus.cshtml" />
+    <Content Include="Views\Home\Advertising.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Web_Layout.cshtml" />
+    <Content Include="Views\WebSoftware\Index.cshtml" />
+    <Content Include="Views\WebSoftware\vision_and_mission.cshtml" />
+    <Content Include="Views\WebSoftware\company_overview.cshtml" />
+    <Content Include="Views\WebSoftware\our_team.cshtml" />
+    <Content Include="Views\WebSoftware\website_development_services.cshtml" />
+    <Content Include="Views\WebSoftware\Mobile_Development.cshtml" />
+    <Content Include="Views\WebSoftware\software_development_services.cshtml" />
+    <Content Include="Views\WebSoftware\mvc_training_services.cshtml" />
+    <Content Include="Views\WebSoftware\digital_marketing_services.cshtml" />
+    <Content Include="Views\WebSoftware\domain_hosting_services.cshtml" />
+    <Content Include="Views\WebSoftware\seo_services.cshtml" />
+    <Content Include="Views\WebSoftware\graphic_designs.cshtml" />
+    <Content Include="Views\WebSoftware\mlm_software.cshtml" />
+    <Content Include="Views\WebSoftware\real_estate_software.cshtml" />
+    <Content Include="Views\WebSoftware\ecommerce_software.cshtml" />
+    <Content Include="Views\WebSoftware\School_Management.cshtml" />
+    <Content Include="Views\WebSoftware\travel_portal_software.cshtml" />
+    <Content Include="Views\WebSoftware\flight_booking_software.cshtml" />
+    <Content Include="Views\WebSoftware\hospital_management_software.cshtml" />
+    <Content Include="Views\WebSoftware\mobile_recharge_software.cshtml" />
+    <Content Include="Views\WebSoftware\news_portal_software.cshtml" />
+    <Content Include="Views\WebSoftware\crm_software.cshtml" />
+    <Content Include="Views\WebSoftware\hrms_software.cshtml" />
+    <Content Include="Views\WebSoftware\erp_software.cshtml" />
+    <Content Include="Views\WebSoftware\followup_software.cshtml" />
+    <Content Include="Views\WebSoftware\daily_expenses_software.cshtml" />
+    <Content Include="Views\WebSoftware\nidhi_software.cshtml" />
+    <Content Include="Views\WebSoftware\helping_software.cshtml" />
+    <Content Include="Views\WebSoftware\restaurant_billing_software.cshtml" />
+    <Content Include="Views\WebSoftware\loan_management_software.cshtml" />
+    <Content Include="Views\WebSoftware\mart_billing_software.cshtml" />
+    <Content Include="Views\WebSoftware\inventry_management_software.cshtml" />
+    <Content Include="Views\WebSoftware\portfolio.cshtml" />
+    <Content Include="Views\WebSoftware\gallery.cshtml" />
+    <Content Include="Views\WebSoftware\blog.cshtml" />
+    <Content Include="Views\WebSoftware\career.cshtml" />
+    <Content Include="Views\WebSoftware\contactus.cshtml" />
+    <Content Include="Views\WebSoftware\DemoContact.cshtml" />
+    <Content Include="Views\WebSoftware\thankyou.cshtml" />
+    <Content Include="Views\WebSoftware\blogDetails.cshtml" />
+    <Content Include="Views\Home\thankyou.cshtml" />
+    <Content Include="Views\Home\DemoContact.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="afluexad\fontawesome\" />
+    <Folder Include="afluexad\js\" />
+    <Folder Include="afluexit\images\portfolio\broadcast_advertising\" />
+    <Folder Include="afluexit\images\portfolio\event_management\" />
+    <Folder Include="afluexit\images\portfolio\outdoor_advertising\" />
+    <Folder Include="afluexit\images\portfolio\retail_branding_fabrication\" />
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59831</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59832/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

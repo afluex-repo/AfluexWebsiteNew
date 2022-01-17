@@ -1,0 +1,129 @@
+﻿@model Afluex.Models.Home
+@{
+    Layout = null;
+}
+
+@using (Html.BeginForm("democontact", "WebSoftware", FormMethod.Post, new { @id = "form1", enctype = "multipart/form-data" }))
+{
+
+<div class="enquiry_form">
+    <div class="mb-3">
+      
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @Placeholder = "Name", @required = "required" })
+    </div>
+    <div class="mb-3">
+        @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @Placeholder = "User Email", @required = "required" })
+    </div>
+    <div class="mb-3">
+        @Html.TextBoxFor(m => m.Mobile, new { @class = "form-control", @Placeholder = "Mobile Number", @required = "required", @maxlength = "10", @onkeypress = "return isNumberKey(event) ;" })
+    </div>
+    <div class="mb-3">
+        @Html.TextAreaFor(m => m.Message, new { @class = "form-control", @Placeholder = "Message", @required = "required" })
+    </div>
+</div>
+<div class="col-md-12 col-sm-12 col-xs-12 form-group">
+    <input type="submit" value="Submit" name="btnSaveOTP" class="btn btn-primary"
+           onclick="return ShowOtp();" />
+
+</div>
+<div class="row clearfix" id="otp" style="display:none">
+    <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+        <input type="hidden" id="hdOTP" />
+        @Html.TextBoxFor(m => m.Otppin, new { @class = "form-control", @Placeholder = " Enter OTP", @required = "required", @maxlength = "6", @onkeypress = "return isNumberKey(event) ;" })
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+
+        <input type="submit" name="btnSave" class="btn btn-primary" onclick="return validot();" />
+    </div>
+
+</div>
+}
+<script src="~/MainPagecss/js/jquery-1.11.3.min.js"></script>
+<script>
+
+    function RestrictSpace() {
+        if (event.keyCode == 32) { return false; }
+    }
+
+
+    function ShowOtp() {
+        debugger
+        $(".errortext").removeClass("errortext");
+        if ($("#Name").val() == "") {
+            $("#Name").addClass('errortext');
+            $('#Name').focus();
+            return false;
+        }
+        if ($("#Email").val() == "") {
+            $("#Email").addClass('errortext');
+            $('#Email').focus();
+            return false;
+        }
+        if ($("#Mobile").val() == "") {
+            $("#Mobile").addClass('errortext');
+            $('#Mobile').focus();
+            return false;
+        }
+
+
+        if ($("#Message").val() == "") {
+            $("#Message").addClass('errortext');
+            $('#Message').focus();
+            return false;
+        }
+        $("#divload").css({ 'display': '' });
+
+        $.ajax({
+           
+            url: "/WebSoftware/ValidateData",
+            Type: "Get",
+            DataType: "JSON",
+            data: { MemberName: $("#Name").val(), Contact: $("#Mobile").val(), Email: $("#Email").val(), Message: $("#Message") },
+            success: function (data) {
+                debugger
+                $("#divload").css({ 'display': 'none' });
+
+                if (data.Result == "1") {
+                    // alert(data.OTP);
+                    $("#Name").val(data.Name);
+                    $("#Mobile").val(data.Mobile);
+                    $("#hdOTP").val(data.Otppin);
+                    //   alert(data.Otppin);
+                    $("#otp").show();
+                    $("#frm").hide();
+                }
+                else {
+                    //$("#divOTP").hide();
+                    //$("#divSubmit").hide();
+                }
+            }
+        });
+    }
+    function validot() {
+        if ($('#Otppin').val() == "") {
+            $("#Otppin").addClass('errortext');
+            $('#Otppin').focus();
+
+            return false;
+        }
+        var msg = document.getElementById('hdOTP').value;
+        if (msg != $("#Otppin").val()) {
+            $("#Otppin").addClass('errortext');
+            $("#Otppin").val('');
+            $("#Otppin").focus();
+            return false;
+        }
+        $("#divload").css({ 'display': '' });
+
+    }
+    function isNumberKey(evt) {
+
+        var charCode = (evt.which) ? evt.which : event.keyCode;
+        if (charCode != 46 && charCode > 31
+          && (charCode < 48 || charCode > 57))
+            return false;
+
+        return true;
+    }
+</script>
