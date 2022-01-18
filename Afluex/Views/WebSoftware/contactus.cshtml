@@ -66,7 +66,7 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group mb-4">
                                 <div class="input-group">
-                                    @Html.TextBoxFor(m => m.Name, new { @Placeholder = "Name",@class="form-control" , @required = "required" })
+                                 @Html.TextBoxFor(m => m.Name, new { @Placeholder = "Name",@class="form-control" , @required = "required" })
                                    
                                 </div>
                             </div>
@@ -156,8 +156,6 @@
         $("#divload").css({ 'display': '' });
 
     }
-
-
     function isNumberKey(evt) {
         var charCode = (evt.which) ? evt.which : event.keyCode;
         if (charCode != 46 && charCode > 31
