@@ -596,7 +596,6 @@
     <Content Include="afluexit\css\owl.carousel.css" />
     <Content Include="afluexit\css\owl.carousel.min.css" />
     <Content Include="afluexit\css\responsive.css" />
-    <Content Include="afluexit\css\style - Copy.css" />
     <Content Include="afluexit\css\style.css" />
     <Content Include="afluexit\edu_tech\css\ajax-loader.gif" />
     <Content Include="afluexit\edu_tech\css\animate.css" />
@@ -1228,6 +1227,7 @@
     <Content Include="Views\WebSoftware\blogDetails.cshtml" />
     <Content Include="Views\Home\thankyou.cshtml" />
     <Content Include="Views\Home\DemoContact.cshtml" />
+    <Content Include="Views\WebSoftware\jobs.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="afluexad\fontawesome\" />
