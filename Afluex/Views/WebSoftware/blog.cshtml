@@ -110,7 +110,7 @@
                         </p>
                         <div class="blog_time_eye clearfix">
                             <ul class="list-unsyled p-0">
-                                <li class="list-inline-item"><span class="blog_icon"><i class="fa fa-user" aria-hidden="true"></i></span><a href="/Web/BlogDetails?id=@item.Pk_BlogId">@item.AddedOn</a></li>
+                                <li class="list-inline-item"><span class="blog_icon"><i class="fa fa-calendar" aria-hidden="true"></i></span><a href="/Web/BlogDetails?id=@item.Pk_BlogId">@item.AddedOn</a></li>
                                 <li class="list-inline-item"><span class="blog_icon"><i class="fa fa-user"></i> By</span> <a href="/WebSoftware/BlogDetails?id=@item.Pk_BlogId">:@item.AddedBy</a></li>
                                 @*<li class="list-inline-item"><span class="blog_icon"><i class="fa fa-eye" aria-hidden="true"></i></span> 112K Reads</li>*@
                                 @if (Model.lstcategory != null)
@@ -119,7 +119,7 @@
                                     {
                                         if (item.Pk_BlogId == item1.Pk_BlogId)
                                         {
-                                            <li class="list-inline-item"><span class="blog_icon"><i class="fa fa-calendar"></i></span>  @item1.Fk_CategoryId</li>
+                                            <li class="list-inline-item"><span class="blog_icon"><i class="fa fa-pencil-square-o"></i></span>  @item1.Fk_CategoryId</li>
 
                                         }
                                     }
