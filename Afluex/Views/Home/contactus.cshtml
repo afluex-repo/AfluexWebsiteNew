@@ -6,7 +6,7 @@
 }
 
     <!-- Page Title -->
-<section class="page-title text-center" style="background-image:url(../../afluexad/images/background/page_title.jpg);">
+<section class="page-title text-center" style="background-image:url(../../afluexad/images/background/page_contact.jpeg);">
     <div class="container">
         <h1>Contact Us</h1>
     </div>
@@ -30,7 +30,7 @@
             <div class="col-lg-8 col-md-8 col-sm-12 m-b30">
                 @Html.AntiForgeryToken()
              
-                    <h3 class="title-box">Write us a few words about your project and we’ll prepare a proposal for you within 24 hours</h3>
+                    <h3 class="title-box" style="margin: 0px 0px 30px 0px; padding: 20px 30px; background: #418fb2;font-size: 24px;font-weight: 600;color: #fff;line-height: 35px;">Write us a few words about your project and we’ll prepare a proposal for you within 24 hours</h3>
                     <div class="dzFormMsg m-b20"></div>
                     <input type="hidden" value="Contact" name="dzToDo">
                     <div class="row">
@@ -116,7 +116,7 @@
 
 <script>
     $(document).ready(function () {
-        $("#divload").css({ 'display': 'show' });
+        $("#divload").css({ 'display': 'none' });
         setTimeout(function(){
             $('.captcha').html($('.captcha').html().replace('The answer is', ''))
     },200)
@@ -164,3 +164,27 @@
         return true;
     }
 </script>
+<style>
+    .captcha a {
+    display: block !important;
+    position: relative;
+    top: -5px;
+}
+
+#CaptchaInputText {
+    border: 1px solid #c0c0c0;
+    width: 132px;
+    margin-bottom: 10px;
+    padding: 4px 4px;
+}
+
+img#CaptchaImage {
+    border: 3px solid #306065;
+    border-radius: 5px;
+    /* margin-top: -103px; */
+    margin-bottom: 0px !important;
+    height: 50px;
+    float: left;
+    margin-right: 7px;
+}
+</style>
