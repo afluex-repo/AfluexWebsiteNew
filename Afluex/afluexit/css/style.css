@@ -1042,7 +1042,15 @@ ul.user-links1 li a {
     line-height: 28px;
     margin-bottom: 5px;
 }
-
+.contact-box .title-box {
+    margin: 0px 0px 30px 0px;
+    padding: 20px 30px;
+    background: #418fb2;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 35px;
+}
 .contact-question li p {
     margin: 0;
     font-size: 16px;
