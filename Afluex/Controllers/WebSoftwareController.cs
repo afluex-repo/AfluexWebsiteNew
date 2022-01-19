@@ -20,144 +20,177 @@ namespace Afluex.Controllers
         {
             return View();
         }
+        [ActionName("company-overview")]
         public ActionResult company_overview()
         {
-            return View();
+            return View("company_overview");
         }
+        [ActionName("vision-and-mission")]
         public ActionResult vision_and_mission()
         {
-            return View();
+            return View("vision_and_mission");
         }
+        [ActionName("our-team")]
         public ActionResult our_team()
         {
-            return View();
+            return View("our_team");
         }
+        [ActionName("website-development-services")]
         public ActionResult website_development_services()
         {
-            return View();
+            return View("website_development_services");
 
         }
+        [ActionName("app-development-services")]
         public ActionResult Mobile_Development()
         {
-            return View();
+            return View("Mobile_Development");
         }
+        [ActionName("software-development-services")]
         public ActionResult software_development_services()
         {
-            return View();
+            return View("software_development_services");
         }
+        [ActionName("mvc-training-services")]
         public ActionResult mvc_training_services()
         {
-            return View();
+            return View("mvc_training_services");
         }
+        [ActionName("digital-marketing-services")]
         public ActionResult digital_marketing_services()
         {
-            return View();
+            return View("digital_marketing_services");
         }
+        [ActionName("domain-and-hosting-services")]
         public ActionResult domain_hosting_services()
         {
-            return View();
+            return View("domain_hosting_services");
         }
+        [ActionName("seo-services")]
         public ActionResult seo_services()
         {
-            return View();
+            return View("seo_services");
         }
+        [ActionName("graphic-designs")]
         public ActionResult graphic_designs()
         {
-            return View();
+            return View("graphic_designs");
         }
+        [ActionName("mlm-software")]
         public ActionResult mlm_software()
         {
-            return View();
+            return View("mlm_software");
         }
+        [ActionName("real-estate-software")]
         public ActionResult real_estate_software()
         {
-            return View();
+            return View("real_estate_software");
         }
+        [ActionName("ecommerce-software")]
         public ActionResult ecommerce_software()
         {
-            return View();
+            return View("ecommerce_software");
         }
+        [ActionName("School-Management")]
         public ActionResult School_Management()
         {
-            return View();
+            return View("School_Management");
         }
+        [ActionName("travel-portal-software")]
         public ActionResult travel_portal_software()
         {
-            return View();
+            return View("travel_portal_software");
         }
+        [ActionName("flight-booking-software")]
         public ActionResult flight_booking_software()
         {
-            return View();
+            return View("flight_booking_software");
         }
+        [ActionName("hospital-management-software")]
         public ActionResult hospital_management_software()
         {
-            return View();
+            return View("hospital_management_software");
         }
-        //new
+        [ActionName("mobile-recharge-software")]
         public ActionResult mobile_recharge_software()
         {
-            return View();
+            return View("mobile_recharge_software");
         }
+        [ActionName("news-portal-software")]
         public ActionResult news_portal_software()
         {
-            return View();
+            return View("news_portal_software");
         }
+        [ActionName("crm-software")]
         public ActionResult crm_software()
         {
-            return View();
+            return View("crm_software");
         }
+        [ActionName("hrms-software")]
         public ActionResult hrms_software()
         {
-            return View();
+            return View("hrms_software");
         }
+        [ActionName("erp-software")]
         public ActionResult erp_software()
         {
-            return View();
+            return View("erp_software");
         }
+        [ActionName("followup-software")]
         public ActionResult followup_software()
         {
-            return View();
+            return View("followup_software");
         }
+        [ActionName("daily-expenses-software")]
         public ActionResult daily_expenses_software()
         {
-            return View();
+            return View("daily_expenses_software");
         }
+        [ActionName("nidhi-software")]
         public ActionResult nidhi_software()
         {
-            return View();
+            return View("nidhi_software");
         }
+        [ActionName("helping-software")]
         public ActionResult helping_software()
         {
-            return View();
+            return View("helping_software");
         }
+        [ActionName("restaurant-billing-software")]
         public ActionResult restaurant_billing_software()
         {
-            return View();
+            return View("restaurant_billing_software");
         }
+        [ActionName("loan-management-software")]
         public ActionResult loan_management_software()
         {
-            return View();
+            return View("loan_management_software");
         }
+        [ActionName("mart-billing-software")]
         public ActionResult mart_billing_software()
         {
-            return View();
+            return View("mart_billing_software");
         }
+        [ActionName("inventry-management-software")]
         public ActionResult inventry_management_software()
         {
-            return View();
+            return View("inventry_management_software");
         }
+        
         public ActionResult portfolio()
         {
-            return View();
+            return View("portfolio");
         }
+       
         public ActionResult gallery()
         {
-            return View();
+            return View("gallery");
         }
-        //public ActionResult blog()
-        //{
-        //    return View();
-        //}
+        [ActionName("Edu-tech")]
+        public ActionResult Edu_tech()
+        {
+            return View("Edu_tech");
+        }
 
         #region blog
         public ActionResult blog(string id)
@@ -284,7 +317,7 @@ namespace Afluex.Controllers
         #endregion blog
 
 
-
+        [ActionName("career")]
         public ActionResult career()
         {
             return View();
@@ -423,6 +456,7 @@ namespace Afluex.Controllers
 
             return RedirectToAction(FormName, Controller);
         }
+        [ActionName("contactus")]
         public ActionResult contactus()
         {
             return View();
@@ -586,8 +620,6 @@ namespace Afluex.Controllers
             return PartialView("DemoContact");
         }
         [HttpPost]
-        [ActionName("DemoContact")]
-        [OnAction(ButtonName = "btnSave")]
         public ActionResult saveDemoinquiry(Home model)
         {
             Session["Type"] = null;
@@ -974,12 +1006,8 @@ namespace Afluex.Controllers
                 Controller = "WebSoftware";
             }
             return RedirectToAction(FormName, Controller);
-
-
-
         }
-
-        public ActionResult ValidateData(string MemberName, string Contact, string Email)
+        public ActionResult ValidateData(string MemberName, string Contact, string Email,string Message)
         {
             Home model = new Home();
             model.Mobile = Contact;
@@ -1174,11 +1202,8 @@ namespace Afluex.Controllers
                            BLSMS.SendSMS(mobval, strval);
                         }
                         catch { }
-
-
-
-
                         obj.Result = "Inquiry send successfully";
+                        //obj.Result = 'yes';
                     }
                     else
                     {
@@ -1193,13 +1218,13 @@ namespace Afluex.Controllers
             return Json(obj, JsonRequestBehavior.AllowGet);
         }
         #endregion Quotation
-
+    
         public ActionResult thankyou()
         {
 
             return View();
         }
-
+       
         public ActionResult jobs()
         {
             return View();

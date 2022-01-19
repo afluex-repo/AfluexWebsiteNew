@@ -1229,6 +1229,7 @@
     <Content Include="Views\Home\thankyou.cshtml" />
     <Content Include="Views\Home\DemoContact.cshtml" />
     <Content Include="Views\WebSoftware\jobs.cshtml" />
+    <Content Include="Views\WebSoftware\Edu_tech.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="afluexad\fontawesome\" />

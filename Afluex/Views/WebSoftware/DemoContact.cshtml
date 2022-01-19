@@ -3,7 +3,7 @@
     Layout = null;
 }
 
-@using (Html.BeginForm("democontact", "WebSoftware", FormMethod.Post, new { @id = "form1", enctype = "multipart/form-data" }))
+@using (Html.BeginForm("saveDemoinquiry", "WebSoftware", FormMethod.Post, new { @id = "form1", enctype = "multipart/form-data" }))
 {
 
 <div class="enquiry_form">
@@ -22,31 +22,26 @@
     </div>
 </div>
 <div class="col-md-12 col-sm-12 col-xs-12 form-group">
-    <input type="submit" value="Submit" name="btnSaveOTP" class="btn btn-primary"
+    <input type="button" value="Submit" name="btnSaveOTP" class="btn btn-primary"
            onclick="return ShowOtp();" />
-
 </div>
 <div class="row clearfix" id="otp" style="display:none">
     <div class="col-md-12 col-sm-12 col-xs-12 form-group">
         <input type="hidden" id="hdOTP" />
         @Html.TextBoxFor(m => m.Otppin, new { @class = "form-control", @Placeholder = " Enter OTP", @required = "required", @maxlength = "6", @onkeypress = "return isNumberKey(event) ;" })
     </div>
-
     <div class="col-md-12 col-sm-12 col-xs-12 form-group">
-
         <input type="submit" name="btnSave" class="btn btn-primary" onclick="return validot();" />
     </div>
-
 </div>
 }
 <script src="~/MainPagecss/js/jquery-1.11.3.min.js"></script>
 <script>
 
-    function RestrictSpace() {
-        if (event.keyCode == 32) { return false; }
+    function RestrictSpace()
+    {
+   if (event.keyCode == 32) { return false; }
     }
-
-
     function ShowOtp() {
         debugger
         $(".errortext").removeClass("errortext");
@@ -65,21 +60,14 @@
             $('#Mobile').focus();
             return false;
         }
-
-
-        if ($("#Message").val() == "") {
-            $("#Message").addClass('errortext');
-            $('#Message').focus();
-            return false;
-        }
+       
         $("#divload").css({ 'display': '' });
 
         $.ajax({
-           
             url: "/WebSoftware/ValidateData",
-            Type: "Get",
+            Type: "GET",
             DataType: "JSON",
-            data: { MemberName: $("#Name").val(), Contact: $("#Mobile").val(), Email: $("#Email").val(), Message: $("#Message") },
+            data: { MemberName: $("#Name").val(), Contact: $("#Mobile").val(), Email: $("#Email").val(), Message: $("#Message").text()},
             success: function (data) {
                 debugger
                 $("#divload").css({ 'display': 'none' });
@@ -101,19 +89,18 @@
         });
     }
     function validot() {
-        if ($('#Otppin').val() == "") {
-            $("#Otppin").addClass('errortext');
-            $('#Otppin').focus();
-
-            return false;
-        }
-        var msg = document.getElementById('hdOTP').value;
-        if (msg != $("#Otppin").val()) {
-            $("#Otppin").addClass('errortext');
-            $("#Otppin").val('');
-            $("#Otppin").focus();
-            return false;
-        }
+        //if ($('#Otppin').val() == "") {
+        //    $("#Otppin").addClass('errortext');
+        //    $('#Otppin').focus();
+        //    return false;
+        //}
+        //var msg = document.getElementById('hdOTP').value;
+        //if (msg != $("#Otppin").val()) {
+        //    $("#Otppin").addClass('errortext');
+        //    $("#Otppin").val('');
+        //    $("#Otppin").focus();
+        //    return false;
+        //}
         $("#divload").css({ 'display': '' });
 
     }
