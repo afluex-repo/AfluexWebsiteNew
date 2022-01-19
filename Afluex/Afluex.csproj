@@ -284,6 +284,7 @@
     <Content Include="afluexad\css\owl.carousel.min.css" />
     <Content Include="afluexad\css\responsive.css" />
     <Content Include="afluexad\css\style.css" />
+    <Content Include="afluexad\images\about-img.jpg" />
     <Content Include="afluexad\images\about_company.jpg" />
     <Content Include="afluexad\images\Afluex-logo\favicon.png" />
     <Content Include="afluexad\images\Afluex-logo\footer_logo.png" />
