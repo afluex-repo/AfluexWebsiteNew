@@ -189,6 +189,6 @@ E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Google.x
 E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Twitter.xml
 E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
 E:\Divya\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 E:\Divya\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
+E:\Divya\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
