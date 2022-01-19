@@ -244,15 +244,9 @@ namespace Afluex.Controllers
         {
             return View();
         }
-        //public ActionResult blogdetails()
-        //{
-        //    return View();
-        //}
+       
         #region contactus
-        //public ActionResult contactus()
-        //{
-        //    return View();
-        //}
+      
         [HttpPost]
         [ActionName("contactus")]
         [OnAction(ButtonName = "btnSave")]
@@ -450,8 +444,6 @@ namespace Afluex.Controllers
                 else if (model.ContactusType == "Outdoor Advertising" || model.ContactusType == "Wall Wrap Ads" || model.ContactusType == "Inshop & Outdoor Branding" ||
                          model.ContactusType == "Mobile Van Promotion" || model.ContactusType == "Cinema Or Multiplex Advertising" || model.ContactusType == "Auto Branding"
                          || model.ContactusType == "Printing Services" || model.ContactusType == "Printing Services" || model.ContactusType == "TV Advertising")
-
-
                 {
                     Session["Name"] = ds.Tables[0].Rows[0]["Name"].ToString();
                     Session["ContactusType"] = ds.Tables[0].Rows[0]["Type"].ToString();
@@ -460,12 +452,10 @@ namespace Afluex.Controllers
                     Session["AdminID"] = ds.Tables[0].Rows[0]["AdminLogin"].ToString();
                     Session["AdminPass"] = ds.Tables[0].Rows[0]["AdminPass"].ToString();
                 }
-
                 else
                 {
                     TempData["Type"] = "NoDemo";
                 }
-
                 if (ds != null && ds.Tables.Count > 0)
                 {
                     if (ds.Tables[0].Rows[0][0].ToString() == "1")
@@ -473,7 +463,6 @@ namespace Afluex.Controllers
                         string mailbody = "";
                         try
                         {
-
                             if (model.ContactusType == "Radio Advertising" || model.ContactusType == "Fabrication Services" || model.ContactusType == "Online Marketing" || model.ContactusType == ">Event Management")
                             {
                                 subject = "Thank You,For Requesting Demo.";
@@ -500,15 +489,10 @@ namespace Afluex.Controllers
 + "<h4 style = 'color:#fff;font-weight:normal'> 'Our Expertise in : Advertising / IT Services' </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 414/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow @afluex.com</i></h4>"
 + "<h4 style = 'color:white' ><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i>https://www.afluex.com/</i></h4>"
 + "</div></div></td></tr><tr><td><p style = 'color:#888;font-size:11px;margin-bottom:20px' >© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
-
-
-
-
                             }
                             else if (model.ContactusType == "Outdoor Advertising" || model.ContactusType == "Wall Wrap Ads" || model.ContactusType == "Inshop & Outdoor Branding" ||
                          model.ContactusType == "Mobile Van Promotion" || model.ContactusType == "Cinema Or Multiplex Advertising" || model.ContactusType == "Auto Branding"
                          || model.ContactusType == "Printing Services" || model.ContactusType == "Printing Services" || model.ContactusType == "TV Advertising")
-
                             {
                                 subject = "Thank You,For Requesting Demo.";
                                 mailbody = "<div style='width:100%;background:#fff;font-size:12px;font-family:Verdana,Geneva,sans-serif'><table style = 'width:640px;border:none;font-size:12px;margin:0 auto' cellpadding = '0' cellspacing = '0'><tbody><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:15px 0'><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div><a><img style = 'width:180px' src = 'https://afluex.com/Softwarecss/images/logo-load.png'></a></div><h1 style = 'color:#fff;font-weight:normal'></h1></div></div></td></tr>"
@@ -539,25 +523,18 @@ namespace Afluex.Controllers
  + "<h4 style = 'color:#fff;font-weight:normal'> 'Our Expertise in : Advertising / IT Services' </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 414/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow@afluex.com</i></h4>"
  + "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i>https://www.afluex.com/</i></h4>"
  + "</div></div></td></tr><tr><td><p style='color:#888;font-size:11px;margin-bottom:20px'>© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
-
                             }
-
-                            //  var fromAddress = new MailAddress("supportnow@afluex.com", "Afluex Multiservices LLP");
-                            var fromAddress = new MailAddress("developer5.afluex@gmail.com", "Afluex Multiservices LLP");
+                            var fromAddress = new MailAddress("supportnow@afluex.com", "Afluex Multiservices LLP");
                             var toAddress = new MailAddress(model.Email);
-
                             System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient
                             {
-
                                 Host = "smtp.gmail.com",
                                 Port = 587,
                                 EnableSsl = true,
                                 DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                                 UseDefaultCredentials = false,
-                                Credentials = new NetworkCredential(fromAddress.Address, "Afluex@123") //"afluex@731")
-
+                                Credentials = new NetworkCredential(fromAddress.Address, "afluex@731")
                             };
-
                             using (var message = new MailMessage(fromAddress, toAddress)
                             {
                                 IsBodyHtml = true,
@@ -565,23 +542,17 @@ namespace Afluex.Controllers
                                 Body = mailbody
                             })
                                 smtp.Send(message);
-
                         }
-
                         catch (Exception ex)
                         {
-
                         }
                         string mob = model.Mobile;
                         string str = "Dear " + model.Name + " thank you for shwoing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,414,412 or Mail us on supportnow@afluex.com";
-
                         try
                         {
-                            // BLSMS.SendSMS(mob, str);
+                            BLSMS.SendSMS(mob, str);
                         }
                         catch { }
-
-
                         string messagelbody = "";
                         try
                         {
@@ -603,9 +574,9 @@ namespace Afluex.Controllers
 
                             mailbody += @"</ul></div></div></body></html>";
 
-                            //  var fromAddress = new MailAddress("contact.afluex@gmail.com");
-                            var fromAddress = new MailAddress("developer5.afluex@gmail.com");
-                            var toAddress = new MailAddress("developer5.afluex@gmail.com");
+                          
+                            var fromAddress = new MailAddress("contact.afluex@gmail.com");
+                            var toAddress = new MailAddress("contact.afluex@gmail.com");
 
                             System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient
                             {
@@ -614,7 +585,7 @@ namespace Afluex.Controllers
                                 EnableSsl = true,
                                 DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                                 UseDefaultCredentials = false,
-                                Credentials = new NetworkCredential(fromAddress.Address, "Afluex@123")//"afluex@7310")
+                                Credentials = new NetworkCredential(fromAddress.Address, "afluex@7310")
 
                             };
 
@@ -640,7 +611,7 @@ namespace Afluex.Controllers
 
                         try
                         {
-                            // BLSMS.SendSMS(mobs, str2);
+                             BLSMS.SendSMS(mobs, str2);
                         }
                         catch { }
 
@@ -685,7 +656,7 @@ namespace Afluex.Controllers
      + "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i>https://www.afluex.com/</i></h4>"
      + "</div></div></td></tr><tr><td><p style='color:#888;font-size:11px;margin-bottom:20px'>© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
                         }
-                        var fromAddress = new MailAddress("developer5.afluex@gmail.com", "Afluex Multiservices LLP");
+                        var fromAddress = new MailAddress("contact.afluex@gmail.com", "Afluex Multiservices LLP");
                         var toAddress = new MailAddress(model.Email);
 
                         System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient
@@ -695,7 +666,7 @@ namespace Afluex.Controllers
                             EnableSsl = true,
                             DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                             UseDefaultCredentials = false,
-                            Credentials = new NetworkCredential(fromAddress.Address, "Afluex@123") //"afluex@7310")
+                            Credentials = new NetworkCredential(fromAddress.Address, "afluex@7310") //"afluex@7310")
 
                         };
 
@@ -721,7 +692,7 @@ namespace Afluex.Controllers
 
                     try
                     {
-                        //  BLSMS.SendSMS(mob, str);
+                         BLSMS.SendSMS(mob, str);
                     }
                     catch { }
 
@@ -746,8 +717,8 @@ namespace Afluex.Controllers
 
                         mailbody += @"</ul></div></div></body></html>";
 
-                        var fromAddress = new MailAddress("developer5.afluex@gmail.com");
-                        var toAddress = new MailAddress("developer5.afluex@gmail.com");
+                        var fromAddress = new MailAddress("contact.afluex@gmail.com");
+                        var toAddress = new MailAddress("contact.afluex@gmail.com");
 
                         System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient
                         {
@@ -756,7 +727,7 @@ namespace Afluex.Controllers
                             EnableSsl = true,
                             DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                             UseDefaultCredentials = false,
-                            Credentials = new NetworkCredential(fromAddress.Address, "Afluex@123")
+                            Credentials = new NetworkCredential(fromAddress.Address, "afluex@7310")
 
                         };
 
@@ -783,7 +754,7 @@ namespace Afluex.Controllers
 
                     try
                     {
-                        // BLSMS.SendSMS(mobs, str2);
+                      BLSMS.SendSMS(mobs, str2);
                     }
                     catch { }
 
@@ -967,7 +938,7 @@ namespace Afluex.Controllers
         + "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i>https://www.afluex.com/</i></h4>"
         + "</div></div></td></tr><tr><td><p style='color:#888;font-size:11px;margin-bottom:20px'>© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
 
-                            var fromAddress = new MailAddress("developer5.afluex@gmail.com", "Afluex Mutiserices LLP");
+                            var fromAddress = new MailAddress("contact.afluex@gmail.com", "Afluex Mutiserices LLP");
                             var toAddress = new MailAddress(obj.Email = Email);
 
                             System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient
@@ -977,7 +948,7 @@ namespace Afluex.Controllers
                                 EnableSsl = true,
                                 DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                                 UseDefaultCredentials = false,
-                                Credentials = new NetworkCredential(fromAddress.Address, "Afluex@123")
+                                Credentials = new NetworkCredential(fromAddress.Address, "afluex@7310")
 
                             };
 
@@ -1005,7 +976,7 @@ namespace Afluex.Controllers
 
                         try
                         {
-                            // BLSMS.SendSMS(mobs, str2);
+                           BLSMS.SendSMS(mobs, str2);
                         }
                         catch { }
 
@@ -1016,8 +987,8 @@ namespace Afluex.Controllers
                         {
                             messagelbody = "<b>Dear team</b>" + "<br/>" + "You got a quote Rquest from" + "<br/>" + "Name : " + Name + "<br/>" + "Mobile : " + Mobile + "<br/>" + " ProjectType : " + ProjectType + "<br/>" + " YourBudget : " + YourBudget + " <br/>" + " Message : " + Message;
 
-                            var fromAddress = new MailAddress("developer5.afluex@gmail.com");
-                            var toAddress = new MailAddress("developer5.afluex@gmail.com");
+                            var fromAddress = new MailAddress("contact.afluex@gmail.com");
+                            var toAddress = new MailAddress("contact.afluex@gmail.com");
 
                             System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient
                             {
@@ -1026,7 +997,7 @@ namespace Afluex.Controllers
                                 EnableSsl = true,
                                 DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                                 UseDefaultCredentials = false,
-                                Credentials = new NetworkCredential(fromAddress.Address, "Afluex@123")//"afluex@7310")
+                                Credentials = new NetworkCredential(fromAddress.Address, "afluex@7310")
 
                             };
 
@@ -1050,11 +1021,11 @@ namespace Afluex.Controllers
 
 
                         string mobval = "7310000413";
-                        string strval = "You got a quote Rquest from " + Name + " , Mob-" + Mobile + ", Project-" + ProjectType + " , Budget-" + YourBudget + ", Msg-" + Message;
+                        string strval = "You got a quote Rquest from " + Name + " , Mob-" + Mobile + ", Project-" + ProjectType + " ,Budget-" + YourBudget + ", Msg-" + Message;
 
                         try
                         {
-                            //  BLSMS.SendSMS(mobval, strval);
+                             BLSMS.SendSMS(mobval, strval);
                         }
                         catch { }
 
