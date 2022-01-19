@@ -75,15 +75,13 @@
         $("#divload").css({ 'display': '' });
 
         $.ajax({
-
             url: "/Home/ValidateData",
             Type: "Get",
             DataType: "JSON",
-            data: { MemberName: $("#Name").val(), Contact: $("#Mobile").val(), Email: $("#Email").val(), Message: $("#Message") },
+            data: { MemberName: $("#Name").val(), Contact: $("#Mobile").val(), Email: $("#Email").val(), Message: $("#Message").text() },
             success: function (data) {
                 debugger
                 $("#divload").css({ 'display': 'none' });
-
                 if (data.Result == "1") {
                     // alert(data.OTP);
                     $("#Name").val(data.Name);

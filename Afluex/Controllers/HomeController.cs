@@ -19,78 +19,97 @@ namespace Afluex.Controllers
         {
              return View();
         }
+        [ActionName("advertising-agency")]
         public ActionResult Advertising()
         {
 
-            return View();
+            return View("Advertising");
         }
+        [ActionName("company-overview")]
         public ActionResult companyoverview()
         {
-            return View();
+            return View("companyoverview");
         }
+        [ActionName("vision-and-mission")]
         public ActionResult visionandmission()
         {
-            return View();
+            return View("visionandmission");
         }
+        [ActionName("our-team")]
         public ActionResult OurTeam()
         {
-            return View();
+            return View("OurTeam");
 
         }
+        [ActionName("outdoor-advertising")]
         public ActionResult outdooradvertising()
         {
-            return View();
+            return View("outdooradvertising");
         }
+        [ActionName("wall-wrap-ads")]
         public ActionResult wallwrapads()
         {
-            return View();
+            return View("wallwrapads");
 
         }
+        [ActionName("inshop-outdoor-branding")]
         public ActionResult inshopoutdoorbranding()
         {
-            return View();
+            return View("inshopoutdoorbranding");
         }
+        [ActionName("mobile-van-promotion")]
         public ActionResult mobilevanpromotion()
         {
-            return View();
+            return View("mobilevanpromotion");
         }
+        [ActionName("cinema-advertising")]
         public ActionResult cinemaadvertising()
         {
-            return View();
+            return View("cinemaadvertising");
         }
+        [ActionName("auto-branding")]
         public ActionResult autobranding()
         {
-            return View();
+            return View("autobranding");
         }
+        [ActionName("printing-services")]
         public ActionResult printingservices()
         {
-            return View();
+            return View("printingservices");
         }
+        [ActionName("tv-advertising")]
         public ActionResult tvadvertising()
         {
-            return View();
+            return View("tvadvertising");
 
         }
+        [ActionName("radio-advertising")]
+
         public ActionResult radioadvertising()
         {
-            return View();
+            return View("radioadvertising");
         }
+        [ActionName("fabrication-services")]
         public ActionResult fabricationservices()
         {
-            return View();
+            return View("fabricationservices");
         }
+        [ActionName("event-management")]
         public ActionResult eventmanagement()
         {
-            return View();
+            return View("eventmanagement");
         }
+        [ActionName("online-marketing")]
         public ActionResult onlinemarketing()
         {
-            return View();
+            return View("onlinemarketing");
         }
+        [ActionName("airport-media")]
         public ActionResult airportmedia()
         {
-            return View();
+            return View("airportmedia");
         }
+
         public ActionResult portfolio()
         {
             return View();
@@ -776,6 +795,70 @@ namespace Afluex.Controllers
 
 
         }
+        public ActionResult ValidateData(string MemberName, string Contact, string Email, string Message)
+        {
+            Home model = new Home();
+            model.Mobile = Contact;
+            model.Name = MemberName;
+            try
+            {
+                Random rnd = new Random();
+                string ctrOTP = rnd.Next(111111, 999999).ToString();
+                string strotp = "Dear " + model.Name + ", Your OTP for Demo request is :" + ctrOTP;
+                string mobotp = model.Mobile;
+                string mailbody = "";
+                try
+                {
+                    mailbody = "<div style='width:100%;background:#fff;font-size:12px;font-family:Verdana,Geneva,sans-serif'><table style = 'width:640px;border:none;font-size:12px;margin:0 auto' cellpadding = '0' cellspacing = '0'><tbody><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:15px 0'><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div><a><img style = 'width:180px' src = 'https://afluex.com/Softwarecss/images/logo-load.png'></a></div><h1 style = 'color:#fff;font-weight:normal'></h1></div></div></td></tr>"
+                + "<tr><td><div style='background:#fff;vertical-align:top;padding:1px 0;border-bottom-right-radius:5px;border-bottom-left-radius:5px;border-left:1px solid #ddd;border-right:1px solid #ddd'><h4 style = 'font-size:14px;padding:10px 8px'>"
+                 + "Dear " + MemberName + ",<br/> Your OTP(One Time Password is) " + ctrOTP + ".<br/>"
+                  + "</h4></div></td></tr><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:1px 0'>"
++ "<div style= 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div></div><h1 style= 'color:#fff;font-weight:normal'> Afluex Mutiservices LLP</h1>"
++ "<h4 style = 'color:#fff;font-weight:normal'> 'Our Expertise in : Advertising / IT Services' </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 414/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow@afluex.com</i></h4>"
++ "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i>https://www.afluex.com/</i></h4>"
++ "</div></div></td></tr><tr><td><p style='color:#888;font-size:11px;margin-bottom:20px'>© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
+
+                    var fromAddress = new MailAddress("contact.afluex@gmail.com", "Afluex Mutiserices LLP");
+                    var toAddress = new MailAddress(Email);
+
+                    System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient
+                    {
+                        Host = "smtp.gmail.com",
+                        Port = 587,
+                        EnableSsl = true,
+                        DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
+                        UseDefaultCredentials = false,
+                        Credentials = new NetworkCredential(fromAddress.Address, "afluex@7310")
+
+                    };
+
+                    using (var message = new MailMessage(fromAddress, toAddress)
+                    {
+                        IsBodyHtml = true,
+                        Subject = "OTP(One Time Password)",
+                        Body = mailbody
+                    })
+                        smtp.Send(message);
+                }
+                catch (Exception ex)
+                {
+                }
+                try
+                {
+                    BLSMS.SendSMS(mobotp, strotp);
+                }
+                catch { }
+                model.Otppin = ctrOTP;
+                model.Result = "1";
+            }
+
+            catch (Exception ex)
+            {
+
+            }
+            return Json(model, JsonRequestBehavior.AllowGet);
+        }
+
         public ActionResult thankyou()
         {
 
@@ -918,9 +1001,6 @@ namespace Afluex.Controllers
                 obj.YourBudget = YourBudget;
                 obj.Message = Message;
                 obj.InquiryType = InquiryType;
-
-
-
                 DataSet ds = obj.SaveInquiry();
                 if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
                 {
@@ -959,18 +1039,12 @@ namespace Afluex.Controllers
                                 Body = mailbody
                             })
                                 smtp.Send(message);
-
-
-
                         }
 
                         catch (Exception ex)
                         {
 
                         }
-
-
-
                         string mobs = Mobile;
                         string str2 = "Dear " + Name + " thank you for shwoing your interest in our IT Field. Our Team will contact you soon For Enquiry call us on 7310000413,414,412 or Mail us on supportnow@afluex.com";
 
@@ -1017,9 +1091,6 @@ namespace Afluex.Controllers
                         {
 
                         }
-
-
-
                         string mobval = "7310000413";
                         string strval = "You got a quote Rquest from " + Name + " , Mob-" + Mobile + ", Project-" + ProjectType + " ,Budget-" + YourBudget + ", Msg-" + Message;
 
@@ -1028,11 +1099,7 @@ namespace Afluex.Controllers
                              BLSMS.SendSMS(mobval, strval);
                         }
                         catch { }
-
-
-
-
-                        obj.Result = "Inquiry send successfully";
+                        obj.Result = "Yes";
                     }
                     else
                     {
