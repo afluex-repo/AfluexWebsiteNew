@@ -286,6 +286,5 @@ G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Google.xml
 G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Twitter.xml
 G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
-G:\reenapro\Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
 G:\reenapro\Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 G:\reenapro\Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
