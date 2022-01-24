@@ -432,13 +432,13 @@ namespace Afluex.Controllers
                         Session["Email"] = dsRegistration.Tables[0].Rows[0]["Email"].ToString();
                         Session["Mobile"] = dsRegistration.Tables[0].Rows[0]["Mobile"].ToString();
                         Session["Description"] = dsRegistration.Tables[0].Rows[0]["Description"].ToString();
-                        TempData["Career"] = " Career Details  Saved successfully !";
+                        TempData["Career"] = "Career Details  Saved successfully !";
 
                         string mob = dsRegistration.Tables[0].Rows[0]["Mobile"].ToString();
                         string str = "Dear " + dsRegistration.Tables[0].Rows[0]["Name"].ToString() + " thank you for shwoing your interest in Afluex. Our HR Team will contact you soon. For Direct Enquiry call on 7310000413,414,412 or Mail us on supportnow@afluex.com";
                         try
                         {
-                           // BLSMS.SendSMS(mob, str);
+                           BLSMS.SendSMS(mob, str);
                         }
                         catch { }
                     }
@@ -535,7 +535,7 @@ namespace Afluex.Controllers
 
                         try
                         {
-                          //  BLSMS.SendSMS(mob, str);
+                            BLSMS.SendSMS(mob, str);
                         }
                         catch { }
 
@@ -568,7 +568,7 @@ namespace Afluex.Controllers
                                 Body = messagelbody
                             })
                                 smtp.Send(message);
-                            //TempData["ContactMsg"] = "message has been sent. ";
+                            TempData["ContactMsg"] = "message has been sent. ";
 
 
                         }
@@ -584,7 +584,7 @@ namespace Afluex.Controllers
 
                         try
                         {
-                          //  BLSMS.SendSMS(mobs, str2);
+                           BLSMS.SendSMS(mobs, str2);
                         }
                         catch { }
 

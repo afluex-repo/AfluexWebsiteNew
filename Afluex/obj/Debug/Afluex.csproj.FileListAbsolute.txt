@@ -237,6 +237,8 @@ G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Twitter.dll
 G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\Microsoft.Web.Infrastructure.dll
 G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\Newtonsoft.Json.dll
 G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\Owin.dll
+G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\PagedList.dll
+G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\PagedList.Mvc.dll
 G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\System.Data.SQLite.dll
 G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\System.Net.Http.Formatting.dll
 G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\System.Web.Helpers.dll
@@ -259,6 +261,8 @@ G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.WindowsServer.xml
 G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\Microsoft.ApplicationInsights.xml
 G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\Newtonsoft.Json.xml
+G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\PagedList.xml
+G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\PagedList.Mvc.xml
 G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\System.Data.SQLite.xml
 G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\System.Web.Helpers.xml
 G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\System.Web.Mvc.xml
@@ -288,8 +292,3 @@ G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.MicrosoftAc
 G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
 G:\reenapro\Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 G:\reenapro\Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
-G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\PagedList.dll
-G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\PagedList.Mvc.dll
-G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\PagedList.xml
-G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\PagedList.Mvc.xml
-G:\reenapro\Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache

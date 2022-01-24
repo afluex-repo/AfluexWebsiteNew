@@ -14,7 +14,7 @@
     <div class="page-info">
         <div class="container clearfix">
             <ul class="bread-crumb clearfix">
-                <li><a href="/Home/Advertising">Home</a> </li>
+                <li><a href="/Home/advertising-agency">Home</a> </li>
                 <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
                 <li>Career</li>
             </ul>
@@ -33,7 +33,8 @@
             <div class="col-lg-6 col-md-6 col-sm-12 m-b30 mt-5">
                 @TempData["Career"]
                 <form class="contact-box dzForm p-a30 border-1" action="">
-                    <h3 class="title-box">New Journey Start With Afluex</h3>
+                    <h3 class="title-box" style="background: #418fb2;margin: 0px 0px 30px 0px;
+    padding: 20px 30px;color: #fff;line-height: 35px;margin: 0px 0px 30px 0px;">New Journey Start With Afluex</h3>
                     <div class="dzFormMsg m-b20"></div>
                     <input type="hidden" value="Contact" name="dzToDo">
                     <div class="row">
@@ -48,7 +49,6 @@
                             <div class="form-group mb-4">
                                 <div class="input-group">
                                     @Html.TextBoxFor(m => m.Mobile, new { @class = "form-control", @Placeholder = "Mobile", @maxlength = "10", @onkeypress = "return isNumberKey(event);", @required = "required" })
-                                   
                                 </div>
                             </div>
                         </div>

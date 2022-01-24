@@ -746,6 +746,8 @@
     <Content Include="afluexit\images\blog\search-operator-featured.png" />
     <Content Include="afluexit\images\border-style.png" />
     <Content Include="afluexit\images\business_res.jpg" />
+    <Content Include="afluexit\images\business_res.png" />
+    <Content Include="afluexit\images\business_res1.jpg" />
     <Content Include="afluexit\images\career-form-1.png" />
     <Content Include="afluexit\images\career.png" />
     <Content Include="afluexit\images\career1.png" />
