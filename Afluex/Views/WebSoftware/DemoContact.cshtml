@@ -67,7 +67,7 @@
             url: "/WebSoftware/ValidateData",
             Type: "GET",
             DataType: "JSON",
-            data: { MemberName: $("#Name").val(), Contact: $("#Mobile").val(), Email: $("#Email").val(), Message: $("#Message").text()},
+            data: { MemberName: $("#Name").val(), Contact: $("#Mobile").val(), Email: $("#Email").val(), Message: $("#Message").text() },
             success: function (data) {
                 debugger
                 $("#divload").css({ 'display': 'none' });
