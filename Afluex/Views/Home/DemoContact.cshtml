@@ -66,19 +66,13 @@
             return false;
         }
 
-
-        if ($("#Message").val() == "") {
-            $("#Message").addClass('errortext');
-            $('#Message').focus();
-            return false;
-        }
         $("#divload").css({ 'display': '' });
 
         $.ajax({
             url: "/Home/ValidateData",
             Type: "Get",
             DataType: "JSON",
-            data: { MemberName: $("#Name").val(), Contact: $("#Mobile").val(), Email: $("#Email").val(), Message: $("#Message").text() },
+            data: { MemberName: $("#Name").val(), Contact: $("#Mobile").val(), Email: $("#Email").val(), Message:$("#Message").text() },
             success: function (data) {
                 debugger
                 $("#divload").css({ 'display': 'none' });

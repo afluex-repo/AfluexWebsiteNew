@@ -288,3 +288,8 @@ G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.MicrosoftAc
 G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
 G:\reenapro\Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 G:\reenapro\Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
+G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\PagedList.dll
+G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\PagedList.Mvc.dll
+G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\PagedList.xml
+G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\PagedList.Mvc.xml
+G:\reenapro\Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache

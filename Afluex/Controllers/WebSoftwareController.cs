@@ -9,6 +9,7 @@ using System.Web.Mvc;
 using Afluex.Models;
 using System.Data;
 using Afluex.Filter;
+using PagedList;
 using System.IO;
 
 namespace Afluex.Controllers
