@@ -4,8 +4,9 @@
     ViewBag.Title = "contactus";
     Layout = "~/Views/Shared/Web_Layout.cshtml";
 }
-
-<section class="page-title text-center" style="background-image:url(../../afluexit/images/background/page_title.jpg);">
+@using (Html.BeginForm("contactus", "WebSoftware", FormMethod.Post, new { @id = "form1", enctype = "multipart/form-data" }))
+{
+<section class="page-title text-center" style="background-image:url(../../afluexit/images/background/page_contact.jpeg);">
     <div class="container">
         <h1>Contact Us</h1>
     </div>
@@ -21,17 +22,14 @@
     </div>
 </section>
 <!-- End Page Title -->
-@using (Html.BeginForm("contactus", "WebSoftware", FormMethod.Post, new { @id = "form1", enctype = "multipart/form-data" }))
-{
+    @Html.AntiForgeryToken()
 <section class="contactus_page">
     <div class="container">
-       
-      
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="section-head m-b30">
-                    @Html.AntiForgeryToken()
-                    <h2 class="title">Do You Have Any Question?</h2>
+                  
+                    <h2 class="title" style="font-size: 42px;">Do You Have Any Questions ?</h2>
                     <h5 class="title-small">CONTACT US</h5>
                 </div>
                 <ul class="contact-question">
@@ -56,18 +54,21 @@
                     </li>
                 </ul>
             </div>
-
-            <div class="col-lg-8 col-md-8 col-sm-12 m-b30">
+           
+             <div class="col-lg-8 col-md-8 col-sm-12 m-b30">
                 <form class="contact-box dzForm p-a30 border-1" action="">
-                    <h3 class="title-box">Write us a few words about your project and we’ll prepare a proposal for you within 24 hours</h3>
+                    <h3 class="title-box" style="background: #418fb2;margin: 0px 0px 30px 0px;
+    padding: 20px 30px;color: #fff;line-height: 35px;margin: 0px 0px 30px 0px;">Write us a few words about your project and we’ll prepare a proposal for you within 24 hours</h3>
+
+                    <p style="color:teal">@TempData["ContactMsg"]</p>
                     <div class="dzFormMsg m-b20"></div>
                     <input type="hidden" value="Contact" name="dzToDo">
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group mb-4">
                                 <div class="input-group">
-                                 @Html.TextBoxFor(m => m.Name, new { @Placeholder = "Name",@class="form-control" , @required = "required" })
-                                   
+                                    @Html.TextBoxFor(m => m.Name, new { @Placeholder = "Name", @class = "form-control", @required = "required" })
+
                                 </div>
                             </div>
                         </div>
@@ -81,7 +82,7 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group mb-4">
                                 <div class="input-group">
-                                   @Html.TextBoxFor(m => m.Mobile, new { @Placeholder = "Mobile", @onkeypress = "return isNumberKey(event);", @maxlength = "10", @class = "form-control", @required = "required" })
+                                    @Html.TextBoxFor(m => m.Mobile, new { @Placeholder = "Mobile", @onkeypress = "return isNumberKey(event);", @maxlength = "10", @class = "form-control", @required = "required" })
                                 </div>
                             </div>
                         </div>
@@ -103,8 +104,8 @@
                         <div class="col-lg-12 col-md-12">
                             <div class="contact_btn">
                                 @*<button name="submit" type="submit" value="Submit" class="btn btn-primary btn-lg">Get A Free Quote!</button>*@
-                                <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="btnSave"/>
-                                <p style="color:red">@TempData["ContactMsg"]</p>
+                                <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="btnSave" onclick="return validateform();" />
+                              
                             </div>
                         </div>
                     </div>
@@ -131,28 +132,22 @@
             $('#Name').focus();
             return false;
         }
-        if ($('#About').val() == '') {
-            $("#About").addClass('errortext');
-            $('#About').focus();
-            return false;
-        }
         if ($('#Email').val() == '') {
             $("#Email").addClass('errortext');
             $('#Email').focus();
             return false;
         }
-
         if ($('#Mobile').val() == '') {
             $("#Mobile").addClass('errortext');
             $('#Mobile').focus();
             return false;
         }
 
-        if ($('#Message').val() == '') {
-            $("#Message").addClass('errortext');
-            $('#Message').focus();
-            return false;
-        }
+        //if ($('#Message').text() == ''){
+        //    $("#Message").addClass('errortext');
+        //    $('#Message').focus();
+        //    return false;
+        //}
         $("#divload").css({ 'display': '' });
 
     }
@@ -165,3 +160,9 @@
         return true;
     }
 </script>
+<style>
+     .errortext {
+        border: 1px solid red !important;
+        background-color: #fff0f0 !important;
+    }
+</style>

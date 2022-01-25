@@ -1042,7 +1042,15 @@ ul.user-links1 li a {
     line-height: 28px;
     margin-bottom: 5px;
 }
-
+.contact-box .title-box {
+    margin: 0px 0px 30px 0px;
+    padding: 20px 30px;
+    background: #418fb2;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 35px;
+}
 .contact-question li p {
     margin: 0;
     font-size: 16px;
@@ -1444,7 +1452,8 @@ section#counter-stats {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(69, 80, 91, 0.8);
+  border: 3px solid #418fb2;
+  /*background: rgba(69, 80, 91, 0.8);*/
 }
 .portfolio .portfolio-wrap::before {
   content: "";
@@ -1546,7 +1555,7 @@ section#counter-stats {
 .portfolio-wrap img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 /*--------------------------------------------------------------

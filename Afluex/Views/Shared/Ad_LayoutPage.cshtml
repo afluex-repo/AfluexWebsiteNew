@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <!--Bootstrap CSS-->
+    <script src="~/afluexit/js/jquery-3.6.0.js"></script>
     <link href="~/afluexad/images/favicon.png" rel="shortcut icon">
     <link href="~/afluexad/css/bootstrap.min.css" rel="stylesheet">
     <link href="~/afluexad/css/style.css" rel="stylesheet">
@@ -112,7 +113,7 @@
                                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 profile-menu">
                                             <li class="nav-item">
-                                                <a class="nav-link active" aria-current="page" href="/Home/Advertising">Home</a>
+                                                <a class="nav-link active" aria-current="page" href="/Home/advertising-agency">Home</a>
                                             </li>
                                             <!-- <li class ="nav-item dropdown">
                                                   <a class ="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -132,9 +133,9 @@
                                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                                     <div class="pro_mega">
                                                         <ul class="list-unstyled">
-                                                            <li><a class="dropdown-item" href="/Home/companyoverview/">Company Overview</a></li>
-                                                            <li><a class="dropdown-item" href="/Home/visionandmission/">Mission & Vision</a></li>
-                                                            <li><a class="dropdown-item" href="/Home/OurTeam/">Our Team</a></li>
+                                                            <li><a class="dropdown-item" href="/Home/company-overview">Company Overview</a></li>
+                                                            <li><a class="dropdown-item" href="/Home/vision-and-mission">Mission & Vision</a></li>
+                                                            <li><a class="dropdown-item" href="/Home/our-team">Our Team</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -148,31 +149,31 @@
                                                         <div class="col-lg-4 col-md-4">
                                                             <div class="pro_mega">
                                                                 <ul class="list-unstyled">
-                                                                    <li><a class="dropdown-item" href="/Home/outdooradvertising/">Outdoor Advertising</a></li>
-                                                                    <li><a class="dropdown-item" href="/Home/wallwrapads/">Wall Wrap Ads</a></li>
-                                                                    <li><a class="dropdown-item" href="/Home/inshopoutdoorbranding/">Inshop & Outdoor Branding</a></li>
-                                                                    <li><a class="dropdown-item" href="/Home/mobilevanpromotion/">Mobile Van Promotion</a></li>
-                                                                    <li><a class="dropdown-item" href="/Home/cinemaadvertising/">Cinema Or Multiplex Advertising</a></li>
+                                                                    <li><a class="dropdown-item" href="/Home/outdoor-advertising">Outdoor Advertising</a></li>
+                                                                    <li><a class="dropdown-item" href="/Home/wall-wrap-ads">Wall Wrap Ads</a></li>
+                                                                    <li><a class="dropdown-item" href="/Home/inshop-outdoor-branding">Inshop & Outdoor Branding</a></li>
+                                                                    <li><a class="dropdown-item" href="/Home/mobile-van-promotion">Mobile Van Promotion</a></li>
+                                                                    <li><a class="dropdown-item" href="/Home/cinema-advertising">Cinema Or Multiplex Advertising</a></li>
                                                                 </ul>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-4 col-md-4">
                                                             <div class="pro_mega">
                                                                 <ul class="list-unstyled">
-                                                                    <li><a class="dropdown-item" href="/Home/autobranding/">Auto Branding</a></li>
-                                                                    <li><a class="dropdown-item" href="/Home/printingservices/">Printing Services</a></li>
-                                                                    <li><a class="dropdown-item" href="/Home/tvadvertising/">TV Advertising</a></li>
-                                                                    <li><a class="dropdown-item" href="/Home/radioadvertising/">Radio Advertising</a></li>
+                                                                    <li><a class="dropdown-item" href="/Home/auto-branding">Auto Branding</a></li>
+                                                                    <li><a class="dropdown-item" href="/Home/printing-services">Printing Services</a></li>
+                                                                    <li><a class="dropdown-item" href="/Home/tv-advertising">TV Advertising</a></li>
+                                                                    <li><a class="dropdown-item" href="/Home/radio-advertising">Radio Advertising</a></li>
                                                                 </ul>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-4 col-md-4">
                                                             <div class="pro_mega">
                                                                 <ul class="list-unstyled">
-                                                                    <li><a class="dropdown-item" href="/Home/fabricationservices/">Fabrication Services</a></li>
-                                                                    <li><a class="dropdown-item" href="/Home/eventmanagement/">Event Management</a></li>
-                                                                    <li><a class="dropdown-item" href="/Home/onlinemarketing/">Online Marketing</a></li>
-                                                                    <li><a class="dropdown-item" href="/Home/airportmedia/">Airport Media</a></li>
+                                                                    <li><a class="dropdown-item" href="/Home/fabrication-services">Fabrication Services</a></li>
+                                                                    <li><a class="dropdown-item" href="/Home/event-management">Event Management</a></li>
+                                                                    <li><a class="dropdown-item" href="/Home/online-marketing">Online Marketing</a></li>
+                                                                    <li><a class="dropdown-item" href="/Home/airport-media">Airport Media</a></li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -180,22 +181,22 @@
                                                 </div>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="/Home/portfolio/">Portfolio</a>
+                                                <a class="nav-link" href="/Home/portfolio">Portfolio</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="/Home/blog/">Blog</a>
+                                                <a class="nav-link" href="/Home/blog">Blog</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="/Home/gallery/">Gallery</a>
+                                                <a class="nav-link" href="/Home/gallery">Gallery</a>
                                             </li>
                                             <!--<li class ="nav-item">
                                                 <a class ="nav-link" href="client.html">Clients</a>
                                             </li>-->
                                             <li class="nav-item">
-                                                <a class="nav-link" href="/Home/career/">Career</a>
+                                                <a class="nav-link" href="/Home/career">Career</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="/Home/contactus/">Contact Us</a>
+                                                <a class="nav-link" href="/Home/contactus">Contact Us</a>
                                             </li>
                                         </ul>
 
@@ -245,7 +246,7 @@
                             <div class="col-lg-6 col-md-6">
                                 <div class="form-group mb-4">
                                     <div class="input-group">
-                                        <input name="email" id="email" type="email" class="form-control" required="" placeholder="E-mail">
+                                        <input name="email" id="email" type="email" class="form-control" required="" placeholder="E-mail" onchange="return ValidateEmail();">
                                     </div>
                                 </div>
                             </div>
@@ -374,7 +375,7 @@
                                 <div class="footer-column col-xl-8 col-lg-6 col-md-6 col-sm-12">
                                     <div class="footer-widget about-widget">
                                         <div class="logo">
-                                            <a href="#"><img src="~/afluexad/images/footer_logo.png" alt="logo"></a>
+                                            <a href="/Home/index"><img src="~/afluexad/images/footer_logo.png" alt="logo"></a>
                                         </div>
                                         <div class="text mt-4 text-white">
                                             <p>
@@ -389,11 +390,11 @@
                                     <div class="footer-widget about-widget">
                                         <h2 class="widget-title">Quick Links</h2>
                                         <ul class="list-unstyled user-links1">
-                                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="company-overview.html">Company Profile</a></li>
-                                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="vision-and-mission.html">Mission And Vision</a></li>
-                                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="our-team.html">Our team</a></li>
-                                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="portfolio.html">Portfolio</a></li>
-                                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="contactus.html">Contact Us</a></li>
+                                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="/Home/company-overview">Company Profile</a></li>
+                                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="/Home/vision-and-mission">Mission And Vision</a></li>
+                                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="/Home/Our-Team">Our team</a></li>
+                                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="/Home/portfolio">Portfolio</a></li>
+                                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="/Home/contactus">Contact Us</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -405,11 +406,11 @@
                                     <div class="footer-widget about-widget">
                                         <h2 class="widget-title">Our Services</h2>
                                         <ul class="list-unstyled user-links1">
-                                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="outdoor-advertising.html">Outdoor Advertising </a></li>
-                                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="wall-wrap-ads.html">Wall Wrap Ads </a></li>
-                                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="mobile-van-promotion.html">Mobile Van Promotion </a></li>
-                                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="tv-advertising.html">TV Advertising </a></li>
-                                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="auto-branding.html">Auto Branding </a></li>
+                                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="/Home/outdoor-advertising">Outdoor Advertising </a></li>
+                                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="/Home/wall-wrap-ads">Wall Wrap Ads </a></li>
+                                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="/Home/mobile-van-promotion">Mobile Van Promotion </a></li>
+                                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="/Home/tv-advertising">TV Advertising </a></li>
+                                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="/Home/auto-branding">Auto Branding </a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -535,6 +536,18 @@
                     window.location.href = '@Url.Action("thankyou", "Home")';
                 }
             });
+        }
+        function ValidateEmail() {
+            debugger;
+            var email = $("#email").val();
+            var regx =/^([\w-\.]+)@@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+
+            if (regx.test(email)) {
+                return true;
+            }
+            else {
+                alert("Invalid email address.");
+            }
         }
         function isNumberKey(evt) {
             var charCode = (evt.which) ? evt.which : event.keyCode;

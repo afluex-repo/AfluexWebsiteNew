@@ -7,32 +7,11 @@
 			background-attachment:fixed;
 			background-repeat:no-repeat;
 		}
-		/*ul.ch-grid:before {
-    position: absolute;
-    content: '';
-    top: 80px;
-    bottom: 0;
-    left: 45%;
-    width: 100%;
-    background-size: 15% 75%;
-    background-size: center;
-    background-image: url(https://media1.giphy.com/media/hKhCVEtTOs0bNHsKXu/200w.webp?cid=ecf05e47d5k3gqyulo4wd347gev2xbuj0udcxuvvmuyetitf&rid=200w.webp&ct=s);
-    background-repeat: no-repeat;
-}
-	*/	body:before {
-			/*position: absolute;
-			content: '';
-		    background-image:url('~/css/images/star.gif');
-		    top: 0;
-		    right: 0;
-		    left: 0;
-		    bottom: 0;
-		    width: 100%;
-		    z-index: 9;*/
-		    /*background-size:100% 100%;
-			background-attachment:fixed;
-			background-repeat:no-repeat;*/
-		}
+		@media only screen and (min-width: 768px) { 
+            body {
+                height: 100vh !important;
+            }
+        }
 		.logo_img{
 			width: 300px;
 		}

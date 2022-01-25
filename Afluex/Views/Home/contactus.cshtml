@@ -6,7 +6,7 @@
 }
 
     <!-- Page Title -->
-<section class="page-title text-center" style="background-image:url(../../afluexad/images/background/page_title.jpg);">
+<section class="page-title text-center" style="background-image:url(../../afluexad/images/background/page_contact.jpeg);">
     <div class="container">
         <h1>Contact Us</h1>
     </div>
@@ -14,7 +14,7 @@
     <div class="page-info">
         <div class="container clearfix">
             <ul class="bread-crumb clearfix">
-                <li><a href="/Home/Advertising">Home</a> </li>
+                <li><a href="/Home/advertising-agency-agency">Home</a> </li>
                 <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
                 <li>Contact Us</li>
             </ul>
@@ -28,17 +28,18 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-12 m-b30">
-                @Html.AntiForgeryToken()
-             
-                    <h3 class="title-box">Write us a few words about your project and we’ll prepare a proposal for you within 24 hours</h3>
+                <form class="contact-box dzForm p-a30 border-1" action="">
+                    @Html.AntiForgeryToken()
+
+                    <h3 class="title-box" style="margin: 0px 0px 30px 0px; padding: 20px 30px; background: #418fb2;font-size: 24px;font-weight: 600;color: #fff;line-height: 35px;">Write us a few words about your project and we’ll prepare a proposal for you within 24 hours</h3>
                     <div class="dzFormMsg m-b20"></div>
                     <input type="hidden" value="Contact" name="dzToDo">
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group mb-4">
                                 <div class="input-group">
-                                    @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @Placeholder = "Name", @required= "required" })
-                                  
+                                    @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @Placeholder = "Name", @required = "required" })
+
                                 </div>
                             </div>
                         </div>
@@ -46,14 +47,14 @@
                             <div class="form-group mb-4">
                                 <div class="input-group">
                                     @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @Placeholder = "Email", @required = "required" })
-                                   
+
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group mb-4">
                                 <div class="input-group">
-                                  @Html.TextBoxFor(m => m.Mobile, new { @class = "form-control", @Placeholder = "Mobile", @onkeypress = "return isNumberKey(event);", @maxlength = "10", @required = "required" })
+                                    @Html.TextBoxFor(m => m.Mobile, new { @class = "form-control", @Placeholder = "Mobile", @onkeypress = "return isNumberKey(event);", @maxlength = "10", @required = "required" })
                                 </div>
                             </div>
                         </div>
@@ -75,13 +76,13 @@
                         </div>
                         <div class="col-lg-12 col-md-12">
                             <div class="contact_btn">
-                                <input type="submit" class="btn btn-primary" value="Submit" name="btnSave"/>
+                                <input type="submit" class="btn btn-primary" value="Submit" name="btnSave" />
                                 @*<p style="color:red">@TempData["ContactMsg"]</p>*@
                             </div>
                         </div>
                     </div>
-                
-            </div>
+</form>
+</div>
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="section-head m-b30">
                     <h2 class="title">Do You Have Any Question?</h2>
@@ -116,7 +117,7 @@
 
 <script>
     $(document).ready(function () {
-        $("#divload").css({ 'display': 'show' });
+        $("#divload").css({ 'display': 'none' });
         setTimeout(function(){
             $('.captcha').html($('.captcha').html().replace('The answer is', ''))
     },200)
@@ -164,3 +165,11 @@
         return true;
     }
 </script>
+<style>
+  .errortext {
+        border: 1px solid red !important;
+        background-color: #fff0f0 !important;
+    }
+ 
+
+</style>
