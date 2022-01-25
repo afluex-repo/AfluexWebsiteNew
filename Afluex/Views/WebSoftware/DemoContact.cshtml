@@ -60,14 +60,13 @@
             $('#Mobile').focus();
             return false;
         }
-       
         $("#divload").css({ 'display': '' });
 
         $.ajax({
             url: "/WebSoftware/ValidateData",
             Type: "GET",
             DataType: "JSON",
-            data: { MemberName: $("#Name").val(), Contact: $("#Mobile").val(), Email: $("#Email").val(), Message: $("#Message").text() },
+            data: { MemberName: $("#Name").val(), Contact: $("#Mobile").val(), Email: $("#Email").val(), Message: $("#Message").val() },
             success: function (data) {
                 debugger
                 $("#divload").css({ 'display': 'none' });
@@ -89,18 +88,19 @@
         });
     }
     function validot() {
-        //if ($('#Otppin').val() == "") {
-        //    $("#Otppin").addClass('errortext');
-        //    $('#Otppin').focus();
-        //    return false;
-        //}
-        //var msg = document.getElementById('hdOTP').value;
-        //if (msg != $("#Otppin").val()) {
-        //    $("#Otppin").addClass('errortext');
-        //    $("#Otppin").val('');
-        //    $("#Otppin").focus();
-        //    return false;
-        //}
+        debugger;
+        if ($('#Otppin').val() == "") {
+            $("#Otppin").addClass('errortext');
+            $('#Otppin').focus();
+            return false;
+        }
+        var msg = document.getElementById('hdOTP').value;
+        if (msg != $("#Otppin").val()) {
+            $("#Otppin").addClass('errortext');
+            $("#Otppin").val('');
+            $("#Otppin").focus();
+            return false;
+        }
         $("#divload").css({ 'display': '' });
 
     }
