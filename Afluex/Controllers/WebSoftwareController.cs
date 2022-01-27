@@ -707,10 +707,6 @@ namespace Afluex.Controllers
 + "<h4 style = 'color:#fff;font-weight:normal'> 'Our Expertise in : Advertising / IT Services' </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 414/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow @afluex.com</i></h4>"
 + "<h4 style = 'color:white' ><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i>https://www.afluex.com/</i></h4>"
 + "</div></div></td></tr><tr><td><p style = 'color:#888;font-size:11px;margin-bottom:20px' >© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
-
-
-
-
                             }
                             else if (model.ContactusType == "ecommerce-software" || model.ContactusType == "school-management-software" || model.ContactusType == "travel-portal-software" ||
                          model.ContactusType == "flight-booking-software" || model.ContactusType == "hospital-management-software" || model.ContactusType == "daily-expenses-software"
@@ -746,16 +742,11 @@ namespace Afluex.Controllers
  + "<h4 style = 'color:#fff;font-weight:normal'> 'Our Expertise in : Advertising / IT Services' </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 414/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow@afluex.com</i></h4>"
  + "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i>https://www.afluex.com/</i></h4>"
  + "</div></div></td></tr><tr><td><p style='color:#888;font-size:11px;margin-bottom:20px'>© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
-
                             }
-
-                             var fromAddress = new MailAddress("supportnow@afluex.com", "Afluex Multiservices LLP");
-                           
+                            var fromAddress = new MailAddress("supportnow@afluex.com", "Afluex Multiservices LLP");
                             var toAddress = new MailAddress(model.Email);
-
                             System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient
                             {
-
                                 Host = "smtp.gmail.com",
                                 Port = 587,
                                 EnableSsl = true,
@@ -764,7 +755,6 @@ namespace Afluex.Controllers
                                 Credentials = new NetworkCredential(fromAddress.Address,"Krishna@412") //"afluex@731")
 
                             };
-
                             using (var message = new MailMessage(fromAddress, toAddress)
                             {
                                 IsBodyHtml = true,
@@ -772,29 +762,22 @@ namespace Afluex.Controllers
                                 Body = mailbody
                             })
                                 smtp.Send(message);
-
                         }
-
                         catch (Exception ex)
                         {
 
                         }
                         string mob = model.Mobile;
                         string str = "Dear " + model.Name + " thank you for showing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,414,412 or Mail us on supportnow@afluex.com";
-
                         try
                         {
                            //BLSMS.SendSMS(mob, str);
                         }
                         catch { }
-
-
                         string messagelbody = "";
                         try
                         {
-
                             //messagelbody = "<b>Dear team</b>" + "<br/>" + "You got a contact whose " + "<br/>" + " Name : " + model.Name + "<br/>" + " Mobile : " + model.Mobile + "<br/>" + " Message : " + model.Message + " , regarding" + model.ContactusType;
-
                             mailbody = @"<html><body><div style='margin:0 auto; padding:0px; height:420px; width:600px; background:linear-gradient(146deg, rgba(150, 167, 177, 0.9),rgba(176, 196, 208, 0.9), rgb(220, 230, 235), rgba(232,243,249,6), rgb(182, 200, 210), rgb(135, 147, 153) 100.71%);'>";
                             mailbody += @"<div style='height:90px; width:100%; position:relative; background:rgba(5, 11, 27, 0.92); padding-top:0px'>";
                             mailbody += @"<img src ='https://www.afluex.com/images/tklogo.png' class='img-responsive' alt='logo' style='width:222px;padding-top:4px;padding-left: 188px;position: absolute;'></div>";
@@ -807,12 +790,9 @@ namespace Afluex.Controllers
 
                             mailbody += @"<li style='font-size:14.5px; padding:0px -1px 0px 35px; color:#fff'><span style='color:#c09727'>Website :</span><span style='color:#fff'> <a href='https://www.afluex.com' style='color:#dcf1c5' target='_blank'>www.afluex.com</a></span></li>";
                             mailbody += @"<li style='font-size:14.5px; padding:0px -1px 0px 35px;color:#fff; font-style:italic;'> 'Our Expertise in : Advertising & IT Services' </li >";
-
                             mailbody += @"</ul></div></div></body></html>";
-
                             var fromAddress = new MailAddress("contact.afluex@gmail.com");
                             var toAddress = new MailAddress("contact.afluex@gmail.com");
-
                             System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient
                             {
                                 Host = "smtp.gmail.com",
@@ -823,7 +803,6 @@ namespace Afluex.Controllers
                                 Credentials = new NetworkCredential(fromAddress.Address, "Krishna@412")//"Krishna@412")
 
                             };
-
                             using (var message = new MailMessage(fromAddress, toAddress)
                             {
                                 IsBodyHtml = true,
@@ -832,18 +811,14 @@ namespace Afluex.Controllers
                             })
                                 smtp.Send(message);
                             //TempData["ContactMsg"] = "message has been sent. ";
-
                         }
 
                         catch (Exception ex)
                         {
 
                         }
-
-
                         string mobs = "7310000413";
                         string str2 = "You got a contact whose name-" + model.Name + " , mob-" + model.Mobile + ", msg-" + model.Message + " , regarding " + model.ContactusType;
-
                         try
                         {
                            //BLSMS.SendSMS(mobs, str2);
@@ -862,7 +837,6 @@ namespace Afluex.Controllers
                 }
                 else
                 {
-
                     string mailbody = "";
                     try
                     {
@@ -893,7 +867,6 @@ namespace Afluex.Controllers
                         }
                         var fromAddress = new MailAddress("contact.afluex@gmail.com", "Afluex Multiservices LLP");
                         var toAddress = new MailAddress(model.Email);
-
                         System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient
                         {
                             Host = "smtp.gmail.com",
@@ -904,7 +877,6 @@ namespace Afluex.Controllers
                             Credentials = new NetworkCredential(fromAddress.Address,"Krishna@412") //"Krishna@412")
 
                         };
-
                         using (var message = new MailMessage(fromAddress, toAddress)
                         {
                             IsBodyHtml = true,
@@ -913,15 +885,11 @@ namespace Afluex.Controllers
                             Body = mailbody
                         })
                             smtp.Send(message);
-
-
                     }
-
                     catch (Exception ex)
                     {
 
                     }
-
                     string mob = model.Mobile;
                     string str = "Dear " + model.Name + " thank you for showing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,414,412 or Mail us on supportnow@afluex.com";
 
