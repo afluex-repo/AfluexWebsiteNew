@@ -93,6 +93,14 @@
       <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.SQLite, Version=1.0.115.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
@@ -738,6 +746,8 @@
     <Content Include="afluexit\images\blog\search-operator-featured.png" />
     <Content Include="afluexit\images\border-style.png" />
     <Content Include="afluexit\images\business_res.jpg" />
+    <Content Include="afluexit\images\business_res.png" />
+    <Content Include="afluexit\images\business_res1.jpg" />
     <Content Include="afluexit\images\career-form-1.png" />
     <Content Include="afluexit\images\career.png" />
     <Content Include="afluexit\images\career1.png" />
@@ -985,6 +995,8 @@
     <Content Include="afluexit\images\slider\img-5.jpg" />
     <Content Include="afluexit\images\slider\soft-1.jpg" />
     <Content Include="afluexit\images\slider\soft-2.jpg" />
+    <Content Include="afluexit\images\slider\thankyou.jpg" />
+    <Content Include="afluexit\images\slider\thankyoucolor.jpg" />
     <Content Include="afluexit\images\slider\web-1.jpg" />
     <Content Include="afluexit\images\slider\web-2.jpg" />
     <Content Include="afluexit\images\slider\web-development.png" />
@@ -1044,6 +1056,7 @@
     <Content Include="CareerFileUpload\d9d36952-ffe9-4202-993d-fd001c671f82.jpg" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\PagedList.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fscss\css\custom.css" />
@@ -1230,6 +1243,7 @@
     <Content Include="Views\Home\DemoContact.cshtml" />
     <Content Include="Views\WebSoftware\jobs.cshtml" />
     <Content Include="Views\WebSoftware\Edu_tech.cshtml" />
+    <Content Include="Views\Home\thankyou2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="afluexad\fontawesome\" />

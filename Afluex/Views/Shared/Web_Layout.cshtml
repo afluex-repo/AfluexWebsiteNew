@@ -201,21 +201,22 @@
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form-group mb-4">
                                         <div class="input-group">
-                                            <input name="mobile" id="mobile" type="text" required="" class="form-control" placeholder="Phone"  maxlength="10" onkeypress="return isNumberKey(event)">
+                                            <input name="mobile" id="mobile" type="text" required="" class="form-control" placeholder="Phone" maxlength="10" onkeypress="return isNumberKey(event)">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form-group mb-4">
                                         <div class="input-group">
-                                            <input name="email" id="email" type="email" class="form-control" required="" placeholder="E-mail">
+                                            <input name="email" id="email" type="email" class="form-control" required="" placeholder="E-mail" onchange="return ValidateEmail();"/>
+                                            @*<span id="lblError" style="color:red"></span>*@
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form-group mb-4">
                                         <div class="input-group">
-                                            <input name="ProjectType"  id="ProjectType" type="text" required="" class="form-control" placeholder="Project Type">
+                                            <input name="ProjectType" id="ProjectType" type="text" required="" class="form-control" placeholder="Project Type">
                                         </div>
                                     </div>
                                 </div>
@@ -509,6 +510,20 @@
             }
             });
         }
+        function ValidateEmail() {
+            debugger;
+            var email = $("#email").val();
+            var regx = /^([\w-\.]+)@@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+
+            if (regx.test(email)) {
+                return true;
+            }
+            else {
+                alert("Invalid email address.");
+            }
+        }
+
+
         function isNumberKey(evt) {
             var charCode = (evt.which) ? evt.which : event.keyCode;
             if (charCode != 46 && charCode > 31

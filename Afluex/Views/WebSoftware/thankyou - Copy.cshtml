@@ -1,0 +1,332 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <title>Thank you </title>
+    <style>
+        .logo {
+            background-color: #173D79;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .thanku-section h5 {
+            padding: 60px 0px;
+            margin-bottom: 0;
+        }
+
+        .thanku-footer {
+            background-color: #173D79;
+            padding: 10px 0px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+            .thanku-footer h5 {
+                color: #fff;
+            }
+
+        .main-header {
+            margin: 0 auto;
+            width: 60%;
+        }
+
+        .logo img {
+            max-width: 180px;
+            padding: 10px 0px;
+        }
+
+        .thanku img {
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .thanku-section {
+            background-color: #fff;
+        }
+
+        .main-page1 {
+            margin-bottom: 151px !important;
+        }
+
+        @@media (min-width: 1200px) {
+            .main-page1 {
+                margin-bottom: 62px;
+            }
+        }
+
+        @@media (min-width: 992px) {
+            .main-page1 {
+                margin-bottom: 62px;
+            }
+        }
+
+        @@media only screen and (max-width: 667px) {
+            .main-header {
+                margin: 0 auto;
+                width: 100%;
+            }
+
+            .main-page1 {
+                margin-bottom: 62px;
+            }
+        }
+    </style>
+    <style>
+        .thanku-section h4 {
+            padding-left: 20px;
+            font-size: 20px;
+        }
+
+        .thanku-section button {
+            margin-left: 20px;
+        }
+
+        .loginfor {
+            margin: 0px 20px;
+        }
+
+        .thanku-footer {
+            background-color: #173D79;
+            padding: 10px 0px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+            .thanku-footer h5 {
+                color: #fff;
+            }
+
+        .main-header {
+            margin: 0 auto;
+            width: 60%;
+        }
+
+
+        .thanku-section {
+            background-color: #fff;
+        }
+
+        .main-page2 {
+            margin-bottom: 20px !important;
+        }
+
+        @@media (min-width: 1200px) {
+            .main-page2 {
+                margin-bottom: 62px;
+            }
+        }
+
+        @@media (min-width: 992px) {
+            .main-page2 {
+                margin-bottom: 62px;
+            }
+        }
+
+        @@media only screen and (max-width: 667px) {
+            .main-header {
+                margin: 0 auto;
+                width: 100%;
+            }
+
+            .main-page2 {
+                margin-bottom: 62px;
+            }
+        }
+    </style>
+    <link href="../../afluexad/css/bootstrap.css" rel="stylesheet" />
+</head>
+<html>
+<body>
+    @if (Session["Type"] == null)
+    {
+        <div class="thankyou-page" style="background-image: url('../../afluexad/images/thank-you-page1.jpg');background-size: cover;background-repeat: no-repeat;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-xl-12 col-xs-12 col-sm-12">
+                        <div class="main-page1">
+                            <div class="main-header">
+                                <div class="logo text-center">
+                                    <a href="/WebSoftware/index">
+                                        <img src="~/afluexit/images/loader.png" class="img-responsive" alt="logo" />
+                                    </a>
+                                </div>
+                                <div class="thanku-section text-center">
+                                    <h5>Thank you! <br>For Enquiry.Our team will contact you soon !</h5>
+                                </div>
+                                <div class="thanku-footer text-center">
+                                    <h5>Afluex Mutiservices LLP</h5>
+                                    <h5>'Our Expertise in : Advertising / IT Services'</h5>
+                                    <h5>Phone No : +91 731-0000-413 / 414/05223550791 Email : supportnow@afluex.comrkljgvioerdjgvioe</h5>
+                                    <h5>Website : https://www.afluex.com/</h5>
+                                </div>
+                                <h5>© Copyright 2017 All Rights Reserved</h5>
+                                <div class="thanku">
+                                    <img src="../../afluexad/images/thank-you-page.png" class="img-responsive" alt="thank you">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    else if (Session["Type"] == "contact")
+    {
+        <div class="thankyou-page" style="background-image: url('../../afluexad/images/thank-you-page1.jpg');background-size: cover;background-repeat: no-repeat;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-xl-12 col-xs-12 col-sm-12">
+                        <div class="main-page1">
+                            <div class="main-header">
+                                <div class="logo text-center">
+                                    <img src="../../afluexad/images/logo-load.png" class="img-responsive" alt="logo" />
+                                </div>
+                                <div class="thanku-section text-center">
+                                    <h5>Thank you! <br>For contacting us. Our team will contact you soon !</h5>
+                                </div>
+                                <div class="thanku-footer text-center">
+                                    <h5>Afluex Mutiservices LLP</h5>
+                                    <h5>'Our Expertise in : Advertising / IT Services'</h5>
+                                    <h5>Phone No : +91 731-0000-413 / 414/05223550791 Email : supportnow@afluex.com</h5>
+                                    <h5>Website : https://www.afluex.com/</h5>
+                                </div>
+                                <h5>© Copyright 2017 All Rights Reserved</h5>
+                                <div class="thanku">
+                                    <img src="../../afluexad/images/thank-you-page.png" class="img-responsive" alt="thank you">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="thankyou-page" style="background-image: url('../../afluexad/images/thank-you-page1.jpg');background-size: cover;background-repeat: no-repeat;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-xl-12 col-xs-12 col-sm-12">
+                        <div class="main-page2">
+                            <div class="main-header">
+                                <div class="logo text-center">
+                                    <img src="~/afluexit/images/loader.png" class="img-responsive" alt="logo" />
+                                </div>
+                                <div class="thanku-section">
+
+
+                                    @if (Session["Type"].ToString() == "mlm-software" || Session["Type"].ToString() == "real-estate-software" || Session["Type"].ToString() == "nidhi-software" || Session["Type"].ToString() == "helping-software")
+                                    {
+                                        <h5 class="text-center">Thank you! For Requesting Demo!</h5>
+                                        <h4>Dear @Session["Name"]</h4>
+                                        <h4>Below is your login Creditentials :-</h4>
+                                        <a href='http://@Session["URL"]' target="_blank" class="btn btn-primary">Click Here For Open Demo</a>
+                                        <div class="clearfix"></div>
+                                        <br />
+                                        <div class="loginfor">
+                                            <h4><strong>Admin Panel</strong></h4>
+                                            <br />
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Login Id</label>
+                                                        <input readonly="readonly" class="form-control" value="@Session["AdminID"]" id="exampleInputEmail1" placeholder="Enter Login Id">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Password</label>
+                                                        <input readonly="readonly" class="form-control" id="pass" value="@Session["AdminPass"]" placeholder="Enter Password">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <h4><strong>Associate Panel</strong></h4>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Login Id</label>
+                                                        <input readonly="readonly" class="form-control" value="@Session["UserName"]" id="exampleInputEmail1" placeholder="Enter Login Id">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Password</label>
+                                                        <input readonly="readonly" class="form-control" value="@Session["Password"]" id="exampleInputEmail1" placeholder="Enter Login Id">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    }
+                                    else if (Session["Type"].ToString() == "ecommerce-software" || Session["Type"].ToString() == "school-management-software" ||
+                                                   Session["Type"].ToString() == "travel-portal-software" ||
+                                                   Session["Type"].ToString() == "flight-booking-software" || Session["Type"].ToString() == "hospital-management-software" ||
+                                                   Session["Type"].ToString() == "daily-expenses-software" ||
+                                                   Session["Type"].ToString() == "hrms-software" || Session["Type"].ToString() == "mobile-recharge-software" || Session["Type"].ToString() == "news-portal-software")
+                                    {
+                                        <h5 class="text-center">Thank you! For Requesting Demo!</h5>
+                                        <h4>Dear @Session["Name"]</h4>
+                                        <h4>Below is your login Creditentials :-</h4>
+                                        <a href='http://@Session["URL"]' target="_blank" class="btn btn-primary">Click Here For Open Demo</a>
+                                        <div class="clearfix"></div>
+                                        <br />
+                                        <div class="loginfor">
+                                            <h4><strong>Admin Panel</strong></h4>
+                                            <br />
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Login Id</label>
+                                                        <input readonly="readonly" class="form-control" value="@Session["AdminID"]" id="exampleInputEmail1" placeholder="Enter Login Id">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Password</label>
+                                                        <input readonly="readonly" class="form-control" id="pass" value="@Session["AdminPass"]" placeholder="Enter Password">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <h5 class="text-center">Dear @Session["Name"] For Enquiry.Our team will contact you soon !</h5>
+                                    }
+                                </div>
+                                <div class="thanku-footer text-center ">
+                                    <h5>Afluex Mutiservices LLP</h5>
+                                    <h5>'Our Expertise in : Advertising / IT Services'</h5>
+                                    <h5>Phone No : +91 731-0000-413 / 414/05223550791 Email : supportnow@afluex.com</h5>
+                                    <h5>Website : https://www.afluex.com/</h5>
+                                </div>
+                                <h5>© Copyright 2017 All Rights Reserved</h5>
+                                <div class="thanku ">
+                                    <img src="../../afluexad/images/thank-you-page.png " class="img-responsive " alt="thank you ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="../../afluexad/js/bootstrap.min.js"></script>
+</body>
+
+</html>

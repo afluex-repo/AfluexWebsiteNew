@@ -114,6 +114,10 @@ namespace Afluex.Controllers
         {
             return View();
         }
+        public ActionResult thankyou2()
+        {
+            return View();
+        }
         //public ActionResult blog()
         //{
         //    return View();
@@ -434,11 +438,8 @@ namespace Afluex.Controllers
             string subject = "";
             try
             {
-
                 string currenturl = Request.UrlReferrer.OriginalString;
                 string[] strTemp = currenturl.Split('/');
-
-
                 model.ContactusType = strTemp[4].ToString();
                 Random rnd = new Random();
                 string password = Common.GenerateRandom();
@@ -446,9 +447,6 @@ namespace Afluex.Controllers
                 model.EncryptPassword = Crypto.Encrypt(password);
 
                 DataSet ds = model.SaveDemoDetails();
-
-
-
                 if (model.ContactusType == "Online Marketing" || model.ContactusType == "Advertising" || model.ContactusType == "nidhi-software" || model.ContactusType == "Promotion")
                 {
                     Session["Name"] = ds.Tables[0].Rows[0]["Name"].ToString();
