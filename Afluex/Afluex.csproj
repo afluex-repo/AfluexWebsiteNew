@@ -1244,6 +1244,7 @@
     <Content Include="Views\WebSoftware\jobs.cshtml" />
     <Content Include="Views\WebSoftware\Edu_tech.cshtml" />
     <Content Include="Views\Home\thankyou2.cshtml" />
+    <Content Include="Views\WebSoftware\thankyou2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="afluexad\fontawesome\" />
@@ -1280,7 +1281,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>59831</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:59831/</IISUrl>
+          <IISUrl>http://localhost:59832/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

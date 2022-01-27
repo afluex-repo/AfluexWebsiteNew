@@ -189,7 +189,6 @@ E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Google.x
 E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Twitter.xml
 E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
 E:\Divya\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 E:\Divya\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
 G:\reenapro\Repo\AfluexWebsiteNew\Afluex\bin\ApplicationInsights.config
@@ -392,3 +391,7 @@ D:\reena Pro\Repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Micr
 D:\reena Pro\Repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
 D:\reena Pro\Repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 D:\reena Pro\Repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\PagedList.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\PagedList.Mvc.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\PagedList.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\PagedList.Mvc.xml
