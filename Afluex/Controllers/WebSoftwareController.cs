@@ -1223,5 +1223,9 @@ namespace Afluex.Controllers
         {
             return View();
         }
+        public ActionResult thankyou2()
+        {
+            return View();
+        }
     }
 }
