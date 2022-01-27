@@ -995,6 +995,8 @@
     <Content Include="afluexit\images\slider\img-5.jpg" />
     <Content Include="afluexit\images\slider\soft-1.jpg" />
     <Content Include="afluexit\images\slider\soft-2.jpg" />
+    <Content Include="afluexit\images\slider\thankyou.jpg" />
+    <Content Include="afluexit\images\slider\thankyoucolor.jpg" />
     <Content Include="afluexit\images\slider\web-1.jpg" />
     <Content Include="afluexit\images\slider\web-2.jpg" />
     <Content Include="afluexit\images\slider\web-development.png" />
@@ -1241,6 +1243,7 @@
     <Content Include="Views\Home\DemoContact.cshtml" />
     <Content Include="Views\WebSoftware\jobs.cshtml" />
     <Content Include="Views\WebSoftware\Edu_tech.cshtml" />
+    <Content Include="Views\Home\thankyou2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="afluexad\fontawesome\" />
