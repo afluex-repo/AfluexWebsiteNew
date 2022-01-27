@@ -395,3 +395,4 @@ E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\PagedList.dll
 E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\PagedList.Mvc.dll
 E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\PagedList.xml
 E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\PagedList.Mvc.xml
+D:\reena Pro\Repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache

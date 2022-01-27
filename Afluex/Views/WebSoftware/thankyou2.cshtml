@@ -11,42 +11,44 @@
 <link href="../../afluexad/css/bootstrap.css" rel="stylesheet" />
 <title>Thank You</title>
 <style>
-    body {
+
+    body{
         margin: 0px;
     }
+    .logo img{
+            padding: 30px;
+        }
+        .thanku-footer.text-white.text-center {
+            position: absolute;
+           left: 0;
+           right: 0;
+            bottom: 0;
+        }
+        p.msg-content {
+            font-size: 18px;
+            font-style: italic;
+        }
+        .thankyou-box {
+            border: 2px solid #1e5d6796;
+            border-radius: 10px;
+            margin: 35px;
+            padding: 5%;
+            background-color: #3fa4ad4d;
+            box-shadow: 5px 5px 7px 1px #25636dc4;
+        }
+        .client-detail p {
+            margin: 5px;
+        }
+        span.p {
+            font-weight: 500;
+        }
+        label.panel {
+    font-size: 12px;
+    margin-left: 5px;
+    margin-top: 10px;
+    font-style: italic;
+}
 
-    .logo img {
-        padding: 30px;
-    }
-
-    .thanku-footer.text-white.text-center {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
-
-    p.msg-content {
-        font-size: 18px;
-        font-style: italic;
-    }
-
-    .thankyou-box {
-        border: 2px solid #1e5d6796;
-        border-radius: 10px;
-        margin: 50px;
-        padding: 5%;
-        background-color: #3fa4ad4d;
-        box-shadow: 5px 5px 7px 1px #25636dc4;
-    }
-
-    .client-detail p {
-        margin: 5px;
-    }
-
-    span.p {
-        font-weight: 500;
-    }
 </style>
 
 <body class="thankyou-page" style="background-image: url('../afluexit/images/slider/tbg.jpg'); background-size: cover; background-repeat: no-repeat;">
@@ -65,21 +67,29 @@
                                 <h1><em>Thank You!</em></h1>
                                 <p class="msg-content">For Enquiry. Our Team Will Contact You Soon !</p>
                             </div>
-                            <div class="client-detail mt-5">
-                                <p><span class="p">Demo URL : </span><span><em>gbfjhbkf@gmail.com</em></span></p>
+                            <div class="client-detail mt-3">
+                                <h6>
+                                    Dear XYZ,
+                                    <br />This is credentials for Demo.
+                                </h6>
+                                <div class="text-center"><a href='http://@Session["URL"]' target="_blank" class="btn btn-primary">Click Here For Open Demo</a></div><br />
+                                <label class="panel">Admin Panel</label>
                                 <div class="d-flex">
-                                    <p><span class="p">Login Id : </span><span><em>Sachin Tiwari</em></span></p>
+                                    <p><span class="p">Login Id : </span><span><em>Sachin Tiwari</em></span></p>&nbsp;&nbsp;
+                                    <p><span class="p">Password : </span><span><em>123456</em></span></p>
+                                </div>
+                                <label class="panel">Associate Panel</label>
+                                <div class="d-flex">
+                                    <p><span class="p">Login Id : </span><span><em>Sachin Tiwari</em></span></p>&nbsp;&nbsp;
                                     <p><span class="p">Password : </span><span><em>123456</em></span></p>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <div class="thanku-footer text-white text-center">
                         <h6 class="mt-5">© Copyright 2017 All Rights Reserved</h6>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
