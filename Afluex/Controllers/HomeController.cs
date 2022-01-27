@@ -218,7 +218,7 @@ namespace Afluex.Controllers
                             string str = "You got a career inquiry from- " + "Name-" + dsRegistration.Tables[0].Rows[0]["Name"].ToString() + " , Mob-" + dsRegistration.Tables[0].Rows[0]["Mobile"].ToString() + " , Email-" + dsRegistration.Tables[0].Rows[0]["Email"].ToString() + " , Description-" + dsRegistration.Tables[0].Rows[0]["Description"].ToString();
                             try
                             {
-                                //BLSMS.SendSMS(mob, str);
+                                BLSMS.SendSMS(mob, str);
                             }
                             catch { }
                             TempData["Career"] = "Data Submission Successfull !";
@@ -321,7 +321,6 @@ namespace Afluex.Controllers
                         }
                         string mob = model.Mobile;
                         string str = "Dear " + model.Name + " thank you for showing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,414,412 or Mail us on supportnow@afluex.com";
-
                         try
                         {
                             //BLSMS.SendSMS(mob, str);
@@ -719,7 +718,7 @@ namespace Afluex.Controllers
             }
             return RedirectToAction(FormName, Controller);
         }
-        public ActionResult ValidateData(string MemberName, string Contact, string Email, string Message)
+        public ActionResult ValidateData(string MemberName, string Contact, string Email, string CustMessage)
         {
             Home model = new Home();
             model.Mobile = Contact;

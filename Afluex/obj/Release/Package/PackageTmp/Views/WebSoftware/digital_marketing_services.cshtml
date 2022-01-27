@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "digital_marketing_services";
+    Layout = "~/Views/Shared/Web_Layout.cshtml";
+}
+
+<section class="page-title text-center" style="background-image:url(../../afluexit/images/background/page_services.jpeg);">
+    <div class="container">
+        <h1>Digital Marketing</h1>
+    </div>
+    <!--Page Info-->
+    <div class="page-info">
+        <div class="container clearfix">
+            <ul class="bread-crumb clearfix">
+                <li><a href="/WebSoftware/index">Home</a> </li>
+                <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
+                <li>Digital Marketing</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- End Page Title -->
+
+<section class="services_page">
+    <div class="container">
+        <div class="row">
+            <!-- Info Column -->
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                <div class="services_inner_column">
+                    <div class="ser_title">
+                        <span class="title">THE BEST PLACE TO FIND THE Digital Marketing YOU WANT</span>
+                        <h2>Best Digital Marketing Services In Lucknow</h2>
+                    </div>
+                    <div class="services_content_details">
+                        <p class="text-justify pad-t-20">
+                            Afluex is a recognized Digital Marketing Company and a leader in providing Most Useful Search Engine Optimization Services and full Internet Advertising and Marketing Service to Clients All over, India.
+                        </p>
+                        <p class="text-justify">
+                            Our Professional analysis, practice and up to date the most recent technologies &amp; provide support to find out your strengths, weaknesses and strategize for improvements to your business. We're a creative innovation Business that uses insights, design,
+                            and growth strategy to drive business value. Afluex is a complete service digital-marketing Company in Lucknow, India that takes the time to understand your company. Afluex Solutions is a complete service Digital Marketing
+                            Company that offers affordable SEO, Email Marketing, SEM, SMO, social media marketing and Website Designing services in Lucknow for the organizations and offer a high level of service experience in your budget.
+
+                        </p>
+                        <p class="text-justify">
+                            We are a search engine optimization Service Provider &amp; help you to handle your organization's reputation in social networking Platforms.
+                        </p>
+                        <p class="text-justify">
+                            We Also Offer SMO, Bulk SMS &amp; Website Designing Services in Lucknow, India. We Care for Every Single Client, Support Customer in Order to Find Fulfillment From The Work We Do And The Positive Results. We Offer Search Engine Optimization, SMO, Online
+                            Marketing, Website Designing &amp; Graphics Designing Services. We're delivering what Our Clients expect. We Help Brands Resolve Their Digital Confusions. We're Ready 24/7 Hours to Support.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Column -->
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                <div class="services_inner_column">
+                    <div class="ser_title">
+                        <span class="title">Enquiry Here</span>
+                        <h2>For Quick Demo</h2>
+                    </div>
+                  @{Html.RenderAction("DemoContact", "WebSoftware", new { area = "" });}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

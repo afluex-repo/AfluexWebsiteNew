@@ -295,18 +295,18 @@ D:\reena Pro\Repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Micr
 D:\reena Pro\Repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
 D:\reena Pro\Repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 D:\reena Pro\Repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\System.Reflection.Metadata.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\VBCSCompiler.exe
 E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\ApplicationInsights.config
 E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\csc.exe
 E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.CodeAnalysis.dll
 E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.CSharp.Core.targets
 E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.VisualBasic.Core.targets
 E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\System.Collections.Immutable.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\System.Reflection.Metadata.dll
 E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\vbc.exe
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\VBCSCompiler.exe
 E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\VBCSCompiler.exe.config
 E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Afluex.dll.config
 E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Afluex.dll
@@ -395,4 +395,3 @@ E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Microsof
 E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
 E:\Divya\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 E:\Divya\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
-E:\Divya\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache

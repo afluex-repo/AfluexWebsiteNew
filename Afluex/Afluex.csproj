@@ -293,7 +293,7 @@
     <Content Include="afluexad\css\responsive.css" />
     <Content Include="afluexad\css\style.css" />
     <Content Include="afluexad\images\about-img.jpg" />
-    <Content Include="afluexad\images\about_company.jpg" />
+    <Content Include="afluexad\images\about_company1.jpg" />
     <Content Include="afluexad\images\Afluex-logo\favicon.png" />
     <Content Include="afluexad\images\Afluex-logo\footer_logo.png" />
     <Content Include="afluexad\images\Afluex-logo\loader.png" />
@@ -595,7 +595,6 @@
     <Content Include="afluexad\images\team\team.jpg" />
     <Content Include="afluexad\images\team\ved.jpg" />
     <Content Include="afluexad\images\team\vikram.png" />
-    <Content Include="afluexad\images\thank-you-page.png" />
     <Content Include="afluexit\css\bootstrap-grid.css" />
     <Content Include="afluexit\css\bootstrap-grid.min.css" />
     <Content Include="afluexit\css\bootstrap.css" />
@@ -725,6 +724,7 @@
     <Content Include="afluexit\edu_tech\js\popper.min.js" />
     <Content Include="afluexit\edu_tech\js\scrollax.min.js" />
     <Content Include="afluexit\images\about_company.jpg" />
+    <Content Include="afluexit\images\about_company1.jpg" />
     <Content Include="afluexit\images\Afluex-logo\favicon.png" />
     <Content Include="afluexit\images\Afluex-logo\footer_logo.png" />
     <Content Include="afluexit\images\Afluex-logo\loader.png" />
@@ -745,7 +745,6 @@
     <Content Include="afluexit\images\blog\blog_detail.jpg" />
     <Content Include="afluexit\images\blog\search-operator-featured.png" />
     <Content Include="afluexit\images\border-style.png" />
-    <Content Include="afluexit\images\business_res.jpg" />
     <Content Include="afluexit\images\business_res.png" />
     <Content Include="afluexit\images\business_res1.jpg" />
     <Content Include="afluexit\images\career-form-1.png" />
@@ -903,18 +902,6 @@
     <Content Include="afluexit\images\portfolio\other_advertising_snaps\7.jpg" />
     <Content Include="afluexit\images\portfolio\other_advertising_snaps\8.jpg" />
     <Content Include="afluexit\images\portfolio\other_advertising_snaps\9.gif" />
-    <Content Include="afluexit\images\portfolio\portfolio-1.jpg" />
-    <Content Include="afluexit\images\portfolio\portfolio-2.jpg" />
-    <Content Include="afluexit\images\portfolio\portfolio-3.jpg" />
-    <Content Include="afluexit\images\portfolio\portfolio-4.jpg" />
-    <Content Include="afluexit\images\portfolio\portfolio-5.jpg" />
-    <Content Include="afluexit\images\portfolio\portfolio-6.jpg" />
-    <Content Include="afluexit\images\portfolio\portfolio-7.jpg" />
-    <Content Include="afluexit\images\portfolio\portfolio-8.jpg" />
-    <Content Include="afluexit\images\portfolio\portfolio-9.jpg" />
-    <Content Include="afluexit\images\portfolio\portfolio-details-1.jpg" />
-    <Content Include="afluexit\images\portfolio\portfolio-details-2.jpg" />
-    <Content Include="afluexit\images\portfolio\portfolio-details-3.jpg" />
     <Content Include="afluexit\images\product\business_insights.png" />
     <Content Include="afluexit\images\product\cost_reduction.png" />
     <Content Include="afluexit\images\product\crm-software.png" />
@@ -986,6 +973,8 @@
     <Content Include="afluexit\images\slider\1.jpg" />
     <Content Include="afluexit\images\slider\2.jpg" />
     <Content Include="afluexit\images\slider\3.jpg" />
+    <Content Include="afluexit\images\slider\adbg.jpg" />
+    <Content Include="afluexit\images\slider\adbg1.jpg" />
     <Content Include="afluexit\images\slider\and-1.jpg" />
     <Content Include="afluexit\images\slider\and-2.jpg" />
     <Content Include="afluexit\images\slider\img-1.jpg" />
@@ -995,8 +984,7 @@
     <Content Include="afluexit\images\slider\img-5.jpg" />
     <Content Include="afluexit\images\slider\soft-1.jpg" />
     <Content Include="afluexit\images\slider\soft-2.jpg" />
-    <Content Include="afluexit\images\slider\thankyou.jpg" />
-    <Content Include="afluexit\images\slider\thankyoucolor.jpg" />
+    <Content Include="afluexit\images\slider\tbg.jpg" />
     <Content Include="afluexit\images\slider\web-1.jpg" />
     <Content Include="afluexit\images\slider\web-2.jpg" />
     <Content Include="afluexit\images\slider\web-development.png" />

@@ -16,7 +16,7 @@ namespace Afluex.Models
         public string Description { get; set; }
       //  public string FileUpload { get; set; }
         public string About { get; set; }
-
+        public string CustMessage { get; set; }
         public string Message { get; set; }
         public string ProjectType { get; set; }
         public string YourBudget { get; set; }
