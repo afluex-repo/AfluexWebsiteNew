@@ -1138,6 +1138,7 @@
     <Content Include="afluexad\images\background\ad.webp" />
     <Content Include="afluexad\images\background\sw.webp" />
     <None Include="Properties\PublishProfiles\Afluex.pubxml" />
+    <None Include="Properties\PublishProfiles\newafluex.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

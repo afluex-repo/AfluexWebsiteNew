@@ -623,8 +623,7 @@ namespace Afluex.Controllers
         [HttpPost]
         [ActionName("DemoContact")]
         [OnAction(ButtonName = "btnSave")]
-
-        public ActionResult saveDemoinquiry(Home model)
+         public ActionResult saveDemoinquiry(Home model)
         {
             Session["Type"] = null;
             string FormName = "";
@@ -763,7 +762,7 @@ namespace Afluex.Controllers
                                 EnableSsl = true,
                                 DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                                 UseDefaultCredentials = false,
-                                Credentials = new NetworkCredential(fromAddress.Address, "afluex@731")
+                                Credentials = new NetworkCredential(fromAddress.Address, "Krishna@414")
 
                             };
 
@@ -1416,16 +1415,10 @@ namespace Afluex.Controllers
                         Body = mailbody
                     })
                         smtp.Send(message);
-
-
-
                 }
-
                 catch (Exception ex)
                 {
-
                 }
-
                 try
                 {
                     BLSMS.SendSMS(mobotp, strotp);

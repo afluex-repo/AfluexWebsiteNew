@@ -66,7 +66,7 @@ namespace Afluex.Models
                                         new SqlParameter("@Type",ContactusType),
                                         new SqlParameter("@Password",Password),
                                         new SqlParameter("@EncrptPassword", EncryptPassword),
-                                        new SqlParameter("@Message",Message),
+                                        new SqlParameter("@Message",CustMessage),
                                     
                             };
             DataSet ds = Connection.ExecuteQuery("Registration", para);
@@ -81,7 +81,7 @@ namespace Afluex.Models
                                         new SqlParameter("@MobileNo",Mobile),
                                          new SqlParameter("@EmailId",Email),
                                   
-                                        new SqlParameter("@Message",Message),
+                                        new SqlParameter("@Message",CustMessage),
 
                             };
             DataSet ds = Connection.ExecuteQuery("SaveEnquiry", para);
@@ -122,7 +122,7 @@ namespace Afluex.Models
                                          new SqlParameter("@Email",Email),
                                          new SqlParameter("@FromDate",FromDate),
                                           new SqlParameter("@ToDate",ToDate),
-                                        new SqlParameter("@Message",Message),
+                                        new SqlParameter("@Message",CustMessage),
 
                             };
             DataSet ds = Connection.ExecuteQuery("InsertMessage", para);
