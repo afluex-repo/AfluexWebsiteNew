@@ -1,0 +1,3025 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\publish_file\newafluex</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="afluexad/css/bootstrap-grid.css">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/css/bootstrap-grid.min.css">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/css/bootstrap.css">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/css/bootstrap.min.css">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/css/fontawesome.min.css">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/css/owl.carousel.css">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/css/owl.carousel.min.css">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/css/responsive.css">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/css/style.css">
+      <publishTime>01/19/2022 13:41:53</publishTime>
+    </File>
+    <File Include="afluexad/images/about-img.jpg">
+      <publishTime>01/18/2022 13:03:07</publishTime>
+    </File>
+    <File Include="afluexad/images/about_company1.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/Afluex-logo/favicon.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/Afluex-logo/footer_logo.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/Afluex-logo/loader.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/Afluex-logo/logo-black.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/background/3.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/background/4.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/background/6.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/background/ad.webp">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/background/ad1.gif">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/background/ad2.gif">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/background/ad3.gif">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/background/ad4.gif">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/background/ad5.gif">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/background/ad6.gif">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/background/page_title.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/background/sw.webp">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/background/sw0.gif">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/background/sw2.gif">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/background/sw3.gif">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/blog/blog_detail.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/blog/search-operator-featured.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/career.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/career1.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/client/1.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/client/10.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/client/11.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/client/12.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/client/13.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/client/14.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/client/15.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/client/16.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/client/17.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/client/2.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/client/3.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/client/4.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/client/5.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/client/6.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/client/7.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/client/8.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/client/9.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/client/a1.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/client/a2.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/client/a3.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/client/a4.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/client/a5.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/client/a6.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/favicon.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/footer_logo.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/birthday/1.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/birthday/2.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/birthday/3.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/birthday/4.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/birthday/5.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/birthday/6.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/birthday/7.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/birthday/8.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/birthday/9.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/diwali/1.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/diwali/10.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/diwali/11.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/diwali/12.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/diwali/13.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/diwali/14.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/diwali/15.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/diwali/16.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/diwali/17.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/diwali/18.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/diwali/2.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/diwali/3.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/diwali/4.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/diwali/5.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/diwali/6.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/diwali/7.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/diwali/8.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/diwali/9.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/newyear_21/h1.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/newyear_21/h10.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/newyear_21/h11.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/newyear_21/h12.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/newyear_21/h13.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/newyear_21/h14.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/newyear_21/h15.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/newyear_21/h16.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/newyear_21/h17.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/newyear_21/h18.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/newyear_21/h19.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/newyear_21/h20.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/newyear_21/h21.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/newyear_21/h22.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/newyear_21/h23.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/newyear_21/h24.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/newyear_21/h25.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/newyear_21/h26.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/newyear_21/h27.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/newyear_21/h4.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/newyear_21/h5.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/newyear_21/h6.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/newyear_21/h7.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/newyear_21/h8.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/newyear_21/h9.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/office/1.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/office/10.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/office/2.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/office/3.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/office/4.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/office/5.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/office/6.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/office/7.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/office/8.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/gallery/office/9.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/loader.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/logo-black.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/logo.png">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/our_mission.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/our_vision.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/broadcast_advertising/1.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/broadcast_advertising/2.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/broadcast_advertising/3.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/broadcast_advertising/4.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/event_management/1.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/event_management/2.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/event_management/3.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/event_management/4.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/event_management/5.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/event_management/6.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/event_management/7.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/event_management/8.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/event_management/9.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/img1.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/img2.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/img3.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/img4.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/img5.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/1.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/10.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/11.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/111.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/12.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/13.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/14.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/15.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/16.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/18.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/19.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/2.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/20.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/21.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/22.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/23.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/24.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/25.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/26.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/27.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/28.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/29.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/3.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/30.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/31.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/32.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/33.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/34.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/35.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/36.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/37.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/38.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/39.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/4.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/5.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/6.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/7.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/8.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/other_advertising_snaps/9.gif">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/1.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/10.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/11.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/12.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/13.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/14.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/15.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/16.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/17.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/18.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/19.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/2.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/20.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/21.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/22.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/23.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/24.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/25.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/26.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/27.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/28.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/29.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/3.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/31.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/32.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/33.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/34.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/35.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/36.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/37.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/39.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/4.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/40.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/41.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/42.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/43.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/44.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/5.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/6.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/7.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/8.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/outdoor_advertising/9.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/1.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/10.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/11.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/12.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/13.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/14.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/15.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/16.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/17.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/18.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/19.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/2.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/20.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/21.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/22.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/23.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/24.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/25.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/26.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/27.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/28.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/29.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/3.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/30.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/31.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/32.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/33.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/34.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/35.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/36.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/37.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/38.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/39.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/4.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/40.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/41.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/5.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/6.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/7.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/8.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/portfolio/retail_branding_fabrication/9.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/services/fabri1.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/services/fabri2.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/services/fabri3.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/services/fabri4.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/services/fabri5.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/services/fabri6.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/services/fabri7.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/services/fabri8.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/services/fabrication-ser.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/services/img-1.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/services/img-2.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/services/img-3.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/services/img-4.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/services/img-5.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/services/img-6.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/slider/img-1.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/slider/img-2.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/slider/img-3.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/slider/img-4.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/slider/img-5.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/ajmal.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/alok.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/anshuman.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/arpit.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/avinash.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/dhruv.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/divya.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/garav.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/hemvant.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/himanshu.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/krishna.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/krishna1.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/madhulika.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/mona.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/prabhakar.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/ravi.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/reena.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/sachin.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/sandeep.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/sanjeev.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/shudhir.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/shyamu.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/sudhakar.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/sujeet.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/sujeet.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/team.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/ved.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexad/images/team/vikram.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/css/bootstrap-grid.css">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/css/bootstrap-grid.min.css">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/css/bootstrap.css">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/css/bootstrap.min.css">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/css/fontawesome.min.css">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/css/glightbox.css">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/css/owl.carousel.css">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/css/owl.carousel.min.css">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/css/responsive.css">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/css/style.css">
+      <publishTime>01/20/2022 17:15:40</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/css/.DS_Store">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/css/ajax-loader.gif">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/css/animate.css">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/css/aos.css">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/css/bootstrap.min.css">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/css/bootstrap/.DS_Store">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/css/bootstrap/bootstrap-grid.css">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/css/bootstrap/bootstrap-reboot.css">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/css/css/.DS_Store">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/css/css/bootstrap-reboot.css">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/css/css/mixins/_text-hide.css">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/css/flaticon.css">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/css/icomoon.css">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/css/ionicons.min.css">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/css/magnific-popup.css">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/css/open-iconic-bootstrap.min.css">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/css/owl.carousel.min.css">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/css/owl.theme.default.min.css">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/css/style.css">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/.DS_Store">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/flaticon/.DS_Store">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/flaticon/backup.txt">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/flaticon/font/.DS_Store">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/flaticon/font/flaticon.css">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/flaticon/font/Flaticon.eot">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/flaticon/font/flaticon.html">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/flaticon/font/Flaticon.svg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/flaticon/font/Flaticon.ttf">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/flaticon/font/Flaticon.woff">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/flaticon/font/Flaticon.woff2">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/flaticon/font/_flaticon.scss">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/flaticon/license/license.pdf">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/icomoon/icomoon.eot">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/icomoon/icomoon.svg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/icomoon/icomoon.ttf">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/icomoon/icomoon.woff">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/ionicons/css/ionicons.min.css">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/ionicons/css/_ionicons.scss">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/ionicons/fonts/.DS_Store">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/ionicons/fonts/ionicons.eot">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/ionicons/fonts/ionicons.svg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/ionicons/fonts/ionicons.ttf">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/ionicons/fonts/ionicons.woff">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/ionicons/fonts/ionicons.woff2">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/open-iconic/open-iconic.eot">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/open-iconic/open-iconic.otf">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/open-iconic/open-iconic.svg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/open-iconic/open-iconic.ttf">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/fonts/open-iconic/open-iconic.woff">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/02.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/03.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/04.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/05.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/06.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/Admission.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/afluex.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/AI-powered.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/analyst.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/Analytics.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/bg_001.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/bg_002.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/bg_01.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/bg_01.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/bg_1.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/bg_2.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/bg_3.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/bg_4.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/bg_5.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/Business.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/Calendar.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/Campus.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/Certificate.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/client1.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/client2.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/confi.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/Control panel.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/course-1.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/course-2.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/course-3.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/course-4.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/course-5.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/course-6.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/dept-5.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/edu_logo.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/Enquiries.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/External Exams.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/Fee Billing.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/g2.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/g3.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/g4.jpeg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/g5.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/HR.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/image_1.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/image_2.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/image_3.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/image_4.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/image_5.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/image_6.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/Internal Exams.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/intero.jpeg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/loc.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/Messaging.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/mobile.jpeg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/multi.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/person_1.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/person_2.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/person_3.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/person_4.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/planning.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/Program &amp; Course.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/staff-1.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/staff-2.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/staff-3.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/staff-4.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/Student Portal.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/Student.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/Subject.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/teacher-1.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/teacher-2.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/teacher-3.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/teacher-4.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/teacher-5.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/teacher-6.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/teacher-7.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/teacher-8.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/Timetable.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/images/transport.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/index.html">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/js/.DS_Store">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/js/aos.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/js/bootstrap.min.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/js/google-map.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/js/jquery-3.2.1.min.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/js/jquery-migrate-3.0.1.min.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/js/jquery.animateNumber.min.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/js/jquery.easing.1.3.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/js/jquery.magnific-popup.min.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/js/jquery.min.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/js/jquery.stellar.min.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/js/jquery.waypoints.min.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/js/main.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/js/owl.carousel.min.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/js/popper.min.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/edu_tech/js/scrollax.min.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/about_company.jpg">
+      <publishTime>01/17/2022 13:50:34</publishTime>
+    </File>
+    <File Include="afluexit/images/about_company1.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/Afluex-logo/favicon.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/Afluex-logo/footer_logo.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/Afluex-logo/loader.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/Afluex-logo/logo-black.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/background/3.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/background/4.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/background/6.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/background/ad.webp">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/background/ad1.gif">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/background/ad2.gif">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/background/ad3.gif">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/background/ad4.gif">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/background/ad5.gif">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/background/ad6.gif">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/background/page_title.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/background/sw.webp">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/background/sw0.gif">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/background/sw2.gif">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/background/sw3.gif">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/blog/blog_detail.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/blog/search-operator-featured.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/border-style.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/business_res.png">
+      <publishTime>01/17/2022 15:10:16</publishTime>
+    </File>
+    <File Include="afluexit/images/business_res1.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/career-form-1.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/career.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/career1.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/clean_icon.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/client/1.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/client/10.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/client/11.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/client/12.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/client/13.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/client/14.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/client/15.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/client/16.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/client/17.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/client/2.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/client/3.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/client/4.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/client/5.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/client/6.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/client/7.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/client/8.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/client/9.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/client/a1.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/client/a2.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/client/a3.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/client/a4.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/client/a5.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/client/a6.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/creativity_icon.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/divider.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/dividert.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/effective_icon.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/favicon.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/footer_bg.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/footer_logo.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/friendly_support_icon.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/fully_responsive_icon.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/birthday/1.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/birthday/2.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/birthday/3.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/birthday/4.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/birthday/5.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/birthday/6.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/birthday/7.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/birthday/8.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/birthday/9.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/diwali/1.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/diwali/10.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/diwali/11.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/diwali/12.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/diwali/13.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/diwali/14.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/diwali/15.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/diwali/16.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/diwali/17.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/diwali/18.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/diwali/2.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/diwali/3.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/diwali/4.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/diwali/5.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/diwali/6.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/diwali/7.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/diwali/8.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/diwali/9.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/newyear_21/h1.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/newyear_21/h10.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/newyear_21/h11.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/newyear_21/h12.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/newyear_21/h13.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/newyear_21/h14.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/newyear_21/h15.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/newyear_21/h16.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/newyear_21/h17.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/newyear_21/h18.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/newyear_21/h19.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/newyear_21/h20.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/newyear_21/h21.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/newyear_21/h22.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/newyear_21/h23.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/newyear_21/h24.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/newyear_21/h25.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/newyear_21/h26.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/newyear_21/h27.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/newyear_21/h4.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/newyear_21/h5.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/newyear_21/h6.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/newyear_21/h7.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/newyear_21/h8.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/newyear_21/h9.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/office/1.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/office/10.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/office/2.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/office/3.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/office/4.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/office/5.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/office/6.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/office/7.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/office/8.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/gallery/office/9.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/how-we-work-top.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/loader.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/logo-black.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/logo.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/our_mission.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/our_vision.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/1.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/2.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/3.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/4.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/5.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/6.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/7.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/img1.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/img2.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/img3.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/img4.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/img5.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/layout.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/1.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/10.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/11.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/12.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/13.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/14.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/15.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/16.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/18.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/19.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/2.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/20.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/21.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/22.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/23.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/24.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/25.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/26.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/27.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/28.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/29.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/3.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/30.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/31.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/32.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/33.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/34.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/35.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/36.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/37.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/38.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/39.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/4.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/5.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/6.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/7.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/8.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/portfolio/other_advertising_snaps/9.gif">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/product/business_insights.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/product/cost_reduction.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/product/crm-software.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/product/dots.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/product/ecommerce-high-quality.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/product/ecommerce.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/product/ecommerce_icon.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/product/flight_booking_icon.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/product/hospital_management_icon.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/product/mlm-business.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/product/mlm-con.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/product/mlm_icon.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/product/mobile_recharge_icon.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/product/optimal_workflows.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/product/realesate_house.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/product/realestate_icon.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/product/real_time_data.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/product/school_management_icon.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/product/travel_icon.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/product/world-cup.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/android_development.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/budget.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/business-plan-pana.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/connected-mlm.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/connect_telecommuting.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/customer_dedline.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/devices-bro.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/devices-pana.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/digital_marketing.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/domain_hosting.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/fabri1.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/fabri2.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/fabri3.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/fabri4.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/fabri5.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/fabri6.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/fabri7.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/fabri8.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/fabrication-ser.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/graphic_design.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/img-1.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/img-2.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/img-3.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/img-4.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/img-5.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/img-6.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/infographic_image.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/mobile-login-bro.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/mobile-work-process.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/online-shopping.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/our_experience.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/profitability.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/seo-services.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/seo.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/ser-inventry.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/ser-realestate.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/ser-school.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/soft_programming.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/system-integration.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/talented.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/targeted-audience.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/training.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/usability-testing-bro.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/web-design-process.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/website_development.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/web_development.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/web_devices.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/services/we_give.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/slider/1.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/slider/2.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/slider/3.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/slider/adbg.jpg">
+      <publishTime>01/27/2022 16:04:09</publishTime>
+    </File>
+    <File Include="afluexit/images/slider/adbg1.jpg">
+      <publishTime>01/27/2022 15:57:17</publishTime>
+    </File>
+    <File Include="afluexit/images/slider/and-1.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/slider/and-2.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/slider/img-1.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/slider/img-2.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/slider/img-3.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/slider/img-4.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/slider/img-5.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/slider/soft-1.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/slider/soft-2.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/slider/tbg.jpg">
+      <publishTime>01/27/2022 11:54:13</publishTime>
+    </File>
+    <File Include="afluexit/images/slider/web-1.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/slider/web-2.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/slider/web-development.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/ajmal.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/alok.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/anshuman.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/arpit.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/avinash.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/dhruv.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/divya.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/garav.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/hemvant.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/himanshu.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/krishna.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/krishna1.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/madhulika.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/mona.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/prabhakar.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/ravi.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/reena.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/sachin.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/sandeep.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/sanjeev.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/shudhir.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/shyamu.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/sudhakar.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/sujeet.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/sujeet.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/team.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/ved.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/team/vikram.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/why.jpg">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/why1.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/why2.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/work_strategic/design_icon.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/work_strategic/development.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/work_strategic/research_icon.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/images/work_strategic/think_icon.png">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/js/bootstrap.bundle.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/js/bootstrap.bundle.js.map">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/js/bootstrap.bundle.min.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/js/bootstrap.bundle.min.js.map">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/js/bootstrap.esm.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/js/bootstrap.esm.js.map">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/js/bootstrap.esm.min.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/js/bootstrap.esm.min.js.map">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/js/bootstrap.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/js/bootstrap.js.map">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/js/bootstrap.min.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/js/bootstrap.min.js.map">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/js/fontawesome-kit.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/js/fontawesome.min.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/js/footer.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/js/gallery.js">
+      <publishTime>01/19/2022 13:09:43</publishTime>
+    </File>
+    <File Include="afluexit/js/glightbox.min.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/js/header.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/js/jquery-3.6.0.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/js/owl.carousel.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/js/owl.carousel.min.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="afluexit/js/script.js">
+      <publishTime>01/17/2022 13:52:17</publishTime>
+    </File>
+    <File Include="ApplicationInsights.config">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/HelpPage.css">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/Api.cshtml">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ApiGroup.cshtml">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/CollectionModelDescription.cshtml">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ComplexTypeModelDescription.cshtml">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/DictionaryModelDescription.cshtml">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/EnumTypeModelDescription.cshtml">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/HelpPageApiModel.cshtml">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ImageSample.cshtml">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/InvalidSample.cshtml">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/KeyValuePairModelDescription.cshtml">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ModelDescriptionLink.cshtml">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Parameters.cshtml">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Samples.cshtml">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/SimpleTypeModelDescription.cshtml">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/TextSample.cshtml">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/Index.cshtml">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/ResourceModel.cshtml">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Shared/_Layout.cshtml">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Web.config">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/_ViewStart.cshtml">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="bin/Afluex.dll">
+      <publishTime>01/27/2022 17:23:57</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="bin/BotDetect.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/BotDetect.Web.Mvc.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/CaptchaMvc.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/PagedList.dll">
+      <publishTime>01/25/2022 11:55:21</publishTime>
+    </File>
+    <File Include="bin/PagedList.Mvc.dll">
+      <publishTime>01/25/2022 11:55:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/System.Data.SQLite.dll">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.Owin.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/x64/SQLite.Interop.dll">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="bin/x86/SQLite.Interop.dll">
+      <publishTime>01/17/2022 13:52:19</publishTime>
+    </File>
+    <File Include="CareerFileUpload/d74a0f53-ab63-44d3-a26c-2ed68937be89.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="CareerFileUpload/d9d36952-ffe9-4202-993d-fd001c671f82.jpg">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Content/PagedList.css">
+      <publishTime>01/25/2022 11:55:21</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fscss/css/custom.css">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fscss/css/normalize.css">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fscss/css/Style.css">
+      <publishTime>01/18/2022 13:19:25</publishTime>
+    </File>
+    <File Include="fscss/images/01.jpg">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fscss/images/02.jpg">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fscss/images/1.jpg">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fscss/images/11.jpg">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fscss/images/12.jpg">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fscss/images/2.jpg">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fscss/images/3.jpg">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fscss/images/ad1.gif">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fscss/images/adver.webp">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fscss/images/advr_img.jpg">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fscss/images/background.jpg">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fscss/images/devlopment.jpg">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fscss/images/dot.mp4">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fscss/images/ezgif.com-gif-maker.gif">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fscss/images/favicon.png">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fscss/images/footer_logo.png">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fscss/images/logo-black.png">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fscss/images/star.gif">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fscss/images/sw.webp">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fscss/images/sw3.gif">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fscss/images/training.png">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fscss/js/jquery.js">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="fscss/js/modernizr.custom.js">
+      <publishTime>01/17/2022 13:52:18</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>01/25/2022 11:55:21</publishTime>
+    </File>
+    <File Include="Scripts/ai.0.22.9-build00167.js">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Scripts/ai.0.22.9-build00167.min.js">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Views/Home/Advertising.cshtml">
+      <publishTime>01/19/2022 16:01:02</publishTime>
+    </File>
+    <File Include="Views/Home/airportmedia.cshtml">
+      <publishTime>01/25/2022 11:55:21</publishTime>
+    </File>
+    <File Include="Views/Home/autobranding.cshtml">
+      <publishTime>01/25/2022 11:55:21</publishTime>
+    </File>
+    <File Include="Views/Home/blog.cshtml">
+      <publishTime>01/25/2022 11:55:21</publishTime>
+    </File>
+    <File Include="Views/Home/blogdetails.cshtml">
+      <publishTime>01/25/2022 11:55:21</publishTime>
+    </File>
+    <File Include="Views/Home/career.cshtml">
+      <publishTime>01/27/2022 18:16:32</publishTime>
+    </File>
+    <File Include="Views/Home/cinemaadvertising.cshtml">
+      <publishTime>01/25/2022 11:55:21</publishTime>
+    </File>
+    <File Include="Views/Home/companyoverview.cshtml">
+      <publishTime>01/25/2022 11:55:21</publishTime>
+    </File>
+    <File Include="Views/Home/contactus.cshtml">
+      <publishTime>01/27/2022 18:15:59</publishTime>
+    </File>
+    <File Include="Views/Home/DemoContact.cshtml">
+      <publishTime>01/27/2022 18:37:33</publishTime>
+    </File>
+    <File Include="Views/Home/eventmanagement.cshtml">
+      <publishTime>01/25/2022 11:55:21</publishTime>
+    </File>
+    <File Include="Views/Home/fabricationservices.cshtml">
+      <publishTime>01/25/2022 11:55:21</publishTime>
+    </File>
+    <File Include="Views/Home/gallery.cshtml">
+      <publishTime>01/25/2022 11:55:21</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>01/19/2022 16:01:02</publishTime>
+    </File>
+    <File Include="Views/Home/inshopoutdoorbranding.cshtml">
+      <publishTime>01/19/2022 13:50:39</publishTime>
+    </File>
+    <File Include="Views/Home/mobilevanpromotion.cshtml">
+      <publishTime>01/25/2022 11:55:21</publishTime>
+    </File>
+    <File Include="Views/Home/onlinemarketing.cshtml">
+      <publishTime>01/25/2022 11:55:21</publishTime>
+    </File>
+    <File Include="Views/Home/OurTeam.cshtml">
+      <publishTime>01/19/2022 13:40:56</publishTime>
+    </File>
+    <File Include="Views/Home/outdooradvertising.cshtml">
+      <publishTime>01/25/2022 11:55:21</publishTime>
+    </File>
+    <File Include="Views/Home/portfolio.cshtml">
+      <publishTime>01/27/2022 13:50:29</publishTime>
+    </File>
+    <File Include="Views/Home/printingservices.cshtml">
+      <publishTime>01/25/2022 11:55:21</publishTime>
+    </File>
+    <File Include="Views/Home/radioadvertising.cshtml">
+      <publishTime>01/25/2022 11:55:21</publishTime>
+    </File>
+    <File Include="Views/Home/thankyou.cshtml">
+      <publishTime>01/27/2022 16:06:18</publishTime>
+    </File>
+    <File Include="Views/Home/thankyou2.cshtml">
+      <publishTime>01/27/2022 16:51:54</publishTime>
+    </File>
+    <File Include="Views/Home/tvadvertising.cshtml">
+      <publishTime>01/25/2022 11:55:21</publishTime>
+    </File>
+    <File Include="Views/Home/visionandmission.cshtml">
+      <publishTime>01/25/2022 11:55:21</publishTime>
+    </File>
+    <File Include="Views/Home/wallwrapads.cshtml">
+      <publishTime>01/25/2022 11:55:21</publishTime>
+    </File>
+    <File Include="Views/Shared/Ad_LayoutPage.cshtml">
+      <publishTime>01/25/2022 11:55:21</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Views/Shared/Web_Layout.cshtml">
+      <publishTime>01/25/2022 11:55:21</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/blog.cshtml">
+      <publishTime>01/27/2022 13:59:16</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/blogDetails.cshtml">
+      <publishTime>01/19/2022 14:01:13</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/career.cshtml">
+      <publishTime>01/27/2022 18:16:11</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/company_overview.cshtml">
+      <publishTime>01/17/2022 17:16:58</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/contactus.cshtml">
+      <publishTime>01/27/2022 18:15:45</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/crm_software.cshtml">
+      <publishTime>01/17/2022 18:54:36</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/daily_expenses_software.cshtml">
+      <publishTime>01/17/2022 18:57:31</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/DemoContact.cshtml">
+      <publishTime>01/27/2022 18:39:18</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/digital_marketing_services.cshtml">
+      <publishTime>01/17/2022 18:36:53</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/domain_hosting_services.cshtml">
+      <publishTime>01/17/2022 18:36:47</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/ecommerce_software.cshtml">
+      <publishTime>01/17/2022 18:51:49</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/Edu_tech.cshtml">
+      <publishTime>01/19/2022 16:01:02</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/erp_software.cshtml">
+      <publishTime>01/17/2022 18:54:24</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/flight_booking_software.cshtml">
+      <publishTime>01/17/2022 18:51:31</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/followup_software.cshtml">
+      <publishTime>01/19/2022 14:04:59</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/gallery.cshtml">
+      <publishTime>01/19/2022 13:27:52</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/graphic_designs.cshtml">
+      <publishTime>01/17/2022 18:35:38</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/helping_software.cshtml">
+      <publishTime>01/17/2022 18:57:10</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/hospital_management_software.cshtml">
+      <publishTime>01/19/2022 11:18:28</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/hrms_software.cshtml">
+      <publishTime>01/17/2022 18:54:30</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/Index.cshtml">
+      <publishTime>01/19/2022 16:01:02</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/inventry_management_software.cshtml">
+      <publishTime>01/17/2022 18:56:47</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/jobs.cshtml">
+      <publishTime>01/19/2022 15:35:43</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/loan_management_software.cshtml">
+      <publishTime>01/17/2022 18:56:57</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/mart_billing_software.cshtml">
+      <publishTime>01/19/2022 18:07:44</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/mlm_software.cshtml">
+      <publishTime>01/19/2022 15:31:11</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/Mobile_Development.cshtml">
+      <publishTime>01/17/2022 18:55:01</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/mobile_recharge_software.cshtml">
+      <publishTime>01/17/2022 18:54:50</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/mvc_training_services.cshtml">
+      <publishTime>01/17/2022 18:37:05</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/news_portal_software.cshtml">
+      <publishTime>01/17/2022 18:54:44</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/nidhi_software.cshtml">
+      <publishTime>01/17/2022 18:57:21</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/our_team.cshtml">
+      <publishTime>01/20/2022 13:41:39</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/portfolio.cshtml">
+      <publishTime>01/20/2022 17:33:32</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/real_estate_software.cshtml">
+      <publishTime>01/19/2022 15:19:14</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/restaurant_billing_software.cshtml">
+      <publishTime>01/17/2022 18:57:03</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/School_Management.cshtml">
+      <publishTime>01/17/2022 18:51:44</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/seo_services.cshtml">
+      <publishTime>01/17/2022 18:36:25</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/software_development_services.cshtml">
+      <publishTime>01/17/2022 18:37:59</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/thankyou.cshtml">
+      <publishTime>01/27/2022 17:40:46</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/thankyou2.cshtml">
+      <publishTime>01/27/2022 17:17:39</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/travel_portal_software.cshtml">
+      <publishTime>01/17/2022 18:51:37</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/vision_and_mission.cshtml">
+      <publishTime>01/17/2022 17:17:12</publishTime>
+    </File>
+    <File Include="Views/WebSoftware/website_development_services.cshtml">
+      <publishTime>01/17/2022 18:38:06</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>01/17/2022 13:52:16</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/27/2022 17:23:58</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

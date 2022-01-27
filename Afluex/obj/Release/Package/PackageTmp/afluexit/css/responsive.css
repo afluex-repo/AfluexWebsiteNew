@@ -1,0 +1,102 @@
+@media screen and (max-width: 768px) {}
+
+@media (min-width: 320px) and (max-width: 568px) {
+    .loader_inner {
+        text-align: center;
+        position: absolute;
+        left: 10%;
+        top: 20%;
+    }
+    .loader .face:nth-child(1) {
+        width: 60%;
+        height: 60%;
+        color: #3ea5ae;
+        border-color: currentColor transparent transparent currentColor;
+        border-width: 0.2em 0.2em 0em 0em;
+        --deg: -45deg;
+        animation-direction: normal;
+    }
+    .loader .face:nth-child(2) {
+        width: 50%;
+        height: 50%;
+        color: #418fb2;
+        border-color: currentColor currentColor transparent transparent;
+        border-width: 0.2em 0em 0em 0.2em;
+        --deg: -135deg;
+        animation-direction: reverse;
+    }
+    .loader_inner img {
+        max-width: 30%;
+    }
+    .fully_responsive_content_icon {
+        background-color: #fff;
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        padding: 17px 16px;
+        z-index: 99;
+    }
+    .fully_responsive_border {
+        display: none;
+    }
+    .main_slider .slider_content_box .content h2 {
+        position: relative;
+        display: block;
+        font-size: 20px;
+        line-height: 1.2em;
+        color: #fff;
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+    .main_slider .slider_content_box {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+    }
+    .main_slider .slider_content_box .content .title {
+        position: relative;
+        display: inline-block;
+        font-size: 13px;
+        line-height: 1.2em;
+        color: #fff;
+        margin-bottom: 5px;
+    }
+    .main_slider .slider_content_box .content .text {
+        position: relative;
+        display: block;
+        font-size: 10px;
+        line-height: 15px;
+        color: #fff;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    .main_slider .owl-dots {
+        display: none;
+    }
+    .abt_btn .btn-skyblue {
+        padding: 0.4rem 2rem;
+        font-size: 13px;
+        margin-bottom: 1rem;
+    }
+    .services_btn .btn-skyblue {
+        padding: 0.4rem 2rem;
+        font-size: 13px;
+    }
+    .product_btn .btn-skyblue {
+        padding: 0.4rem 2rem;
+        font-size: 13px;
+    }
+    .glimpses_work_section .filter-btns li {
+        position: relative;
+        padding: 0.3rem 2rem;
+    }
+    .testimonial_carousel_item {
+        padding: 0rem 0rem;
+    }
+    .testimonial_section .owl-carousel .owl-nav .owl-prev {
+        display: none;
+    }
+    .testimonial_section .owl-carousel .owl-nav .owl-next {
+        display: none;
+    }
+}
