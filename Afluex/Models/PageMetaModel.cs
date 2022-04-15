@@ -241,7 +241,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<title>Digital Marketing Services In Lucknow| Afluex</title>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta name='description' content='Gain your business online presence using digital marketing services with Afluex. We can help improve your Digital Strategy through SEO, Paid Search, and Social Media Advertising with our team of experts. Call +91 731-0000-413 / 414'/>");
+                sbMetaTags.Append("<meta name='description' content='Gain your business online presence using digital marketing services with Afluex. We can help improve your Digital Strategy through SEO, Paid Search, and Social Media Advertising with our team of experts. Call +91 731-0000-413'/>");
 
                 sbMetaTags.Append(Environment.NewLine);
 
@@ -255,7 +255,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<title>Domain & Hosting Provider In Lucknow| Afluex</title>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta name='description' content='Afluex is a powerful domain and hosting provider, 24x7 Support, Easy to Use Dashboard, 1-Click CMS Installation! Buy in INR. Single Domain Hosting,  Windows Hosting, Linux Hosting. Fast servers, Very strong security. Are you need a new web hosting or domain provider? Call +91 731-0000-413/414'/>");
+                sbMetaTags.Append("<meta name='description' content='Afluex is a powerful domain and hosting provider, 24x7 Support, Easy to Use Dashboard, 1-Click CMS Installation! Buy in INR. Single Domain Hosting,  Windows Hosting, Linux Hosting. Fast servers, Very strong security. Are you need a new web hosting or domain provider? Call +91 731-0000-413'/>");
 
                 sbMetaTags.Append(Environment.NewLine);
 
@@ -284,7 +284,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<title>MLM Software & Web Development Company In Lucknow| Afluex</title>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta name='description' content='Afluex is a big name in the MLM industry for MLM software and website development services. Get MLM software and binary, matrix MLM software at an affordable cost. Develop any kind of MLM Software within your Budget. If you interested MLM Software demo. Call us at +91 731-0000-413 / 414'/>");
+                sbMetaTags.Append("<meta name='description' content='Afluex is a big name in the MLM industry for MLM software and website development services. Get MLM software and binary, matrix MLM software at an affordable cost. Develop any kind of MLM Software within your Budget. If you interested MLM Software demo. Call us at +91 731-0000-413'/>");
 
                 sbMetaTags.Append(Environment.NewLine);
 
@@ -305,7 +305,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta property='og:url' content='https://www.Afluex.com/web/mlm-software'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta property='og:description' content='Get MLM software and binary, matrix MLM software at an affordable cost for more Inquiry call +91 731-0000-414'>");
+                sbMetaTags.Append("<meta property='og:description' content='Get MLM software and binary, matrix MLM software at an affordable cost for more Inquiry call +91 731-0000-413'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta property='og:type' content='website'>");
@@ -327,7 +327,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta name='twitter:title' content='MLM Software & Web Development Company In Lucknow| Afluex''>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta name='twitter:description' content='Get MLM software and binary, matrix MLM software at an affordable cost for more Inquiry call +91 731-0000-414'>");
+                sbMetaTags.Append("<meta name='twitter:description' content='Get MLM software and binary, matrix MLM software at an affordable cost for more Inquiry call +91 731-0000-413'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta name='twitter:image' content='https://Afluex.com/images/Afluexog.png'>");
@@ -504,7 +504,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<title>News Portal Software & Website Design| Afluex</title>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta name='description' content='Afluex offers to customize user-friendly news portal website portal development services in Lucknow, India and surrounding areas. We provide customized news portal design, development, news portal website, and application. To discuss your project Contact Us +91 731-0000-413/414.'/>");
+                sbMetaTags.Append("<meta name='description' content='Afluex offers to customize user-friendly news portal website portal development services in Lucknow, India and surrounding areas. We provide customized news portal design, development, news portal website, and application. To discuss your project Contact Us +91 731-0000-413.'/>");
 
                 sbMetaTags.Append(Environment.NewLine);
 
@@ -561,7 +561,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<title>Best Nidhi Software & Website Development Company| RD FD MIS Software</title>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta name='description' content='Afluex is a Nidhi software development and website designing company in Lucknow, India, surrounding areas. Manage RD, FD, MIS online with powerful features. Contact at +91 731-0000-413/ 414 for best Price and free demo.'/>");
+                sbMetaTags.Append("<meta name='description' content='Afluex is a Nidhi software development and website designing company in Lucknow, India, surrounding areas. Manage RD, FD, MIS online with powerful features. Contact at +91 731-0000-413 for best Price and free demo.'/>");
 
                 sbMetaTags.Append(Environment.NewLine);
 
@@ -574,7 +574,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<title>Helping Plan| Donation Plan & Crowd Funding Software Company| Afluex</title>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta name='description' content='Get high secured &  fully automated helping plan software design & development company. Afluex provides gift plan mlm software, helping plan mlm software, Crowdfunding software, donation plan MLM software at best price. It also provide free demo for services. Call at +91 731-0000-413 / 414.'/>");
+                sbMetaTags.Append("<meta name='description' content='Get high secured &  fully automated helping plan software design & development company. Afluex provides gift plan mlm software, helping plan mlm software, Crowdfunding software, donation plan MLM software at best price. It also provide free demo for services. Call at +91 731-0000-413.'/>");
 
                 sbMetaTags.Append(Environment.NewLine);
 
