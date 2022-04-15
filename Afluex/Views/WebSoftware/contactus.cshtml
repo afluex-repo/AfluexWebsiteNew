@@ -6,124 +6,130 @@
 }
 @using (Html.BeginForm("contactus", "WebSoftware", FormMethod.Post, new { @id = "form1", enctype = "multipart/form-data" }))
 {
-<section class="page-title text-center" style="background-image:url(../../afluexit/images/background/page_contact.jpeg);">
-    <div class="container">
-        <h1>Contact Us</h1>
-    </div>
-    <!--Page Info-->
-    <div class="page-info">
-        <div class="container clearfix">
-            <ul class="bread-crumb clearfix">
-                <li><a href="/WebSoftware/index">Home</a> </li>
-                <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
-                <li>Contact Us</li>
-            </ul>
+    <section class="page-title text-center" style="background-image:url(../../afluexit/images/background/page_contact.jpeg);">
+        <div class="container">
+            <h1>Contact Us</h1>
         </div>
-    </div>
-</section>
-<!-- End Page Title -->
-    @Html.AntiForgeryToken()
-<section class="contactus_page">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="section-head m-b30">
-                  
-                    <h2 class="title" style="font-size: 42px;">Do You Have Any Questions ?</h2>
-                    <h5 class="title-small">CONTACT US</h5>
-                </div>
-                <ul class="contact-question">
-                    <li>
-                        <i class="fa fa-map-marker"></i>
-                        <h4 class="title">Address</h4>
-                        <p>D-54, 2nd Floor Arjun Tower Near Ola Office, Vibhuti Khand, Lucknow, Uttar Pradesh 226010</p>
-                    </li>
-                    <li>
-                        <i class="fa fa-envelope-o"></i>
-                        <h4 class="title">Email</h4>
-                        <p>
-                            <a href="mailto:supportnow@afluex.com">supportnow@afluex.com</a>
-                        </p>
-                    </li>
-                    <li>
-                        <i class="fa fa-phone"></i>
-                        <h4 class="title">Phone</h4>
-                        <p>
-                            +91<a href="tel:5223550791">5223550791</a> , +91<a href="tel:7310000413">731-0000-413</a> / <a href="tel:7310000412">412</a>/ <a href="tel:7310000414">414</a>
-                        </p>
-                    </li>
+        <!--Page Info-->
+        <div class="page-info">
+            <div class="container clearfix">
+                <ul class="bread-crumb clearfix">
+                    <li><a href="/WebSoftware/index">Home</a> </li>
+                    <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
+                    <li>Contact Us</li>
                 </ul>
             </div>
-           
-             <div class="col-lg-8 col-md-8 col-sm-12 m-b30">
-                <form class="contact-box dzForm p-a30 border-1" action="">
-                    <h3 class="title-box" style="background: #418fb2;margin: 0px 0px 30px 0px;
-    padding: 20px 30px;color: #fff;line-height: 35px;margin: 0px 0px 30px 0px;">Write us a few words about your project and we’ll prepare a proposal for you within 24 hours</h3>
+        </div>
+    </section>
+    <!-- End Page Title -->
+    @Html.AntiForgeryToken()
+    <section class="contactus_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="section-head m-b30">
 
-                    <p style="color:teal">@TempData["ContactMsg"]</p>
-                    <div class="dzFormMsg m-b20"></div>
-                    <input type="hidden" value="Contact" name="dzToDo">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="form-group mb-4">
-                                <div class="input-group">
-                                    @Html.TextBoxFor(m => m.Name, new { @Placeholder = "Name*", @class = "form-control", @required = "required" })
+                        <h2 class="title" style="font-size: 42px;">Do You Have Any Questions ?</h2>
+                        <h5 class="title-small">CONTACT US</h5>
+                    </div>
+                    <ul class="contact-question">
+                        <li>
+                            <i class="fa fa-map-marker"></i>
+                            <h4 class="title">Address</h4>
+                            <p>D-54, 2nd Floor Arjun Tower Near Ola Office, Vibhuti Khand, Lucknow, Uttar Pradesh 226010</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope-o"></i>
+                            <h4 class="title">Email</h4>
+                            <p>
+                                <a href="mailto:supportnow@afluex.com">supportnow@afluex.com</a>
+                            </p>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <h4 class="title">Phone</h4>
+                            <p>
+                                +91<a href="tel:5223550791">5223550791</a> , +91<a href="tel:7310000413">731-0000-413</a> / <a href="tel:7310000412">412</a>/ <a href="tel:7310000414">414</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
 
+                <div class="col-lg-8 col-md-8 col-sm-12 m-b30">
+                    <form class="contact-box dzForm p-a30 border-1" action="">
+                        <h3 class="title-box" style="background: #418fb2;margin: 0px 0px 30px 0px;
+    padding: 20px 30px;color: #fff;line-height: 35px;margin: 0px 0px 30px 0px;">
+                            Write us a few words about your project and we’ll prepare a proposal for you within 24 hours
+                        </h3>
+
+                        <p style="color:teal">@TempData["ContactMsg"]</p>
+                        <div class="dzFormMsg m-b20"></div>
+                        <input type="hidden" value="Contact" name="dzToDo">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group mb-4">
+                                    <div class="input-group">
+                                        @Html.TextBoxFor(m => m.Name, new { @Placeholder = "Name*", @class = "form-control", @required = "required" })
+
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="form-group mb-4">
-                                <div class="input-group">
-                                    @Html.TextBoxFor(m => m.Email, new { @Placeholder = "Email*", @class = "form-control", @required = "required",
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group mb-4">
+                                    <div class="input-group">
+                                        @Html.TextBoxFor(m => m.Email, new
+                               {
+                                   @Placeholder = "Email*",
+                                   @class = "form-control",
+                                   @required = "required",
                                    @onchange = "return ValidateEmail();"
                                })
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="form-group mb-4">
-                                <div class="input-group">
-                                    @Html.TextBoxFor(m => m.Mobile, new { @Placeholder = "Mobile*", @onkeypress = "return isNumberKey(event);", @maxlength = "10", @class = "form-control", @required = "required" })
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group mb-4">
+                                    <div class="input-group">
+                                        @Html.TextBoxFor(m => m.Mobile, new { @Placeholder = "Mobile*", @onkeypress = "return isNumberKey(event);", @maxlength = "10", @class = "form-control", @required = "required" })
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="form-group mb-4">
-                                <div class="input-group">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group mb-4">
+                                    <div class="input-group">
 
-                                    @Html.TextAreaFor(m => m.Message, new { @cols = "80", @rows = "3", @Placeholder = "Message*", @class = "form-control", @required = "required" })
+                                        @Html.TextAreaFor(m => m.Message, new { @cols = "80", @rows = "3", @Placeholder = "Message*", @class = "form-control", @required = "required" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group mb-4">
+                                    <div class="col-lg-6 col-md-12 col-sm-12 captcha">
+                                        @Html.MathCaptcha()
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="contact_btn">
+                                    @*<button name="submit" type="submit" value="Submit" class="btn btn-primary btn-lg">Get A Free Quote!</button>*@
+                                    <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="btnSave" onclick="return validateform();" />
+
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-12 col-md-12">
-                            <div class="form-group mb-4">
-                                <div class="col-lg-6 col-md-12 col-sm-12 captcha">
-                                    @Html.MathCaptcha()
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-md-12">
-                            <div class="contact_btn">
-                                @*<button name="submit" type="submit" value="Submit" class="btn btn-primary btn-lg">Get A Free Quote!</button>*@
-                                <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="btnSave" onclick="return validateform();" />
-                              
-                            </div>
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 }
 <script>
     $(document).ready(function () {
         $("#divload").css({ 'display': 'none' });
-        setTimeout(function(){
+        setTimeout(function () {
             $('.captcha').html($('.captcha').html().replace('The answer is', ''))
-    },200)
+        }, 200)
 
     });
 
@@ -175,7 +181,7 @@
     }
 </script>
 <style>
-     .errortext {
+    .errortext {
         border: 1px solid red !important;
         background-color: #fff0f0 !important;
     }
