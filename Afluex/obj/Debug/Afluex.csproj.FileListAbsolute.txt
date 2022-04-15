@@ -385,3 +385,7 @@ D:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Ow
 D:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
 D:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 D:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
+D:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\bin\PagedList.dll
+D:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\bin\PagedList.Mvc.dll
+D:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\bin\PagedList.xml
+D:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\bin\PagedList.Mvc.xml
