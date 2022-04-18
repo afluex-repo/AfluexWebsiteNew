@@ -293,7 +293,7 @@
     <Content Include="afluexad\css\responsive.css" />
     <Content Include="afluexad\css\style.css" />
     <Content Include="afluexad\images\about-img.jpg" />
-    <Content Include="afluexad\images\about_company.jpg" />
+    <Content Include="afluexad\images\about_company1.jpg" />
     <Content Include="afluexad\images\Afluex-logo\favicon.png" />
     <Content Include="afluexad\images\Afluex-logo\footer_logo.png" />
     <Content Include="afluexad\images\Afluex-logo\loader.png" />
@@ -307,6 +307,14 @@
     <Content Include="afluexad\images\background\ad4.gif" />
     <Content Include="afluexad\images\background\ad5.gif" />
     <Content Include="afluexad\images\background\ad6.gif" />
+    <Content Include="afluexad\images\background\page_about.jpeg" />
+    <Content Include="afluexad\images\background\page_blog.jpeg" />
+    <Content Include="afluexad\images\background\page_career.jpeg" />
+    <Content Include="afluexad\images\background\page_career1.jpeg" />
+    <Content Include="afluexad\images\background\page_contact.jpeg" />
+    <Content Include="afluexad\images\background\page_gallery.jpeg" />
+    <Content Include="afluexad\images\background\page_portfolio.jpeg" />
+    <Content Include="afluexad\images\background\page_services.jpeg" />
     <Content Include="afluexad\images\background\page_title.jpg" />
     <Content Include="afluexad\images\background\sw0.gif" />
     <Content Include="afluexad\images\background\sw2.gif" />
@@ -585,6 +593,7 @@
     <Content Include="afluexad\images\team\ravi.jpg" />
     <Content Include="afluexad\images\team\reena.jpg" />
     <Content Include="afluexad\images\team\sachin.jpg" />
+    <Content Include="afluexad\images\team\sachin1.jpg" />
     <Content Include="afluexad\images\team\sandeep.jpg" />
     <Content Include="afluexad\images\team\sanjeev.jpg" />
     <Content Include="afluexad\images\team\shudhir.jpg" />
@@ -595,7 +604,15 @@
     <Content Include="afluexad\images\team\team.jpg" />
     <Content Include="afluexad\images\team\ved.jpg" />
     <Content Include="afluexad\images\team\vikram.png" />
-    <Content Include="afluexad\images\thank-you-page.png" />
+    <Content Include="afluexad\js\bootstrap.bundle.js" />
+    <Content Include="afluexad\js\bootstrap.bundle.min.js" />
+    <Content Include="afluexad\js\bootstrap.js" />
+    <Content Include="afluexad\js\bootstrap.min.js" />
+    <Content Include="afluexad\js\footer.js" />
+    <Content Include="afluexad\js\header.js" />
+    <Content Include="afluexad\js\owl.carousel.js" />
+    <Content Include="afluexad\js\owl.carousel.min.js" />
+    <Content Include="afluexad\js\script.js" />
     <Content Include="afluexit\css\bootstrap-grid.css" />
     <Content Include="afluexit\css\bootstrap-grid.min.css" />
     <Content Include="afluexit\css\bootstrap.css" />
@@ -725,6 +742,7 @@
     <Content Include="afluexit\edu_tech\js\popper.min.js" />
     <Content Include="afluexit\edu_tech\js\scrollax.min.js" />
     <Content Include="afluexit\images\about_company.jpg" />
+    <Content Include="afluexit\images\about_company1.jpg" />
     <Content Include="afluexit\images\Afluex-logo\favicon.png" />
     <Content Include="afluexit\images\Afluex-logo\footer_logo.png" />
     <Content Include="afluexit\images\Afluex-logo\loader.png" />
@@ -738,6 +756,15 @@
     <Content Include="afluexit\images\background\ad4.gif" />
     <Content Include="afluexit\images\background\ad5.gif" />
     <Content Include="afluexit\images\background\ad6.gif" />
+    <Content Include="afluexit\images\background\page_about.jpeg" />
+    <Content Include="afluexit\images\background\page_blog.jpeg" />
+    <Content Include="afluexit\images\background\page_career.jpeg" />
+    <Content Include="afluexit\images\background\page_career1.jpeg" />
+    <Content Include="afluexit\images\background\page_contact.jpeg" />
+    <Content Include="afluexit\images\background\page_gallery.jpeg" />
+    <Content Include="afluexit\images\background\page_portfolio.jpeg" />
+    <Content Include="afluexit\images\background\page_product.jpeg" />
+    <Content Include="afluexit\images\background\page_services.jpeg" />
     <Content Include="afluexit\images\background\page_title.jpg" />
     <Content Include="afluexit\images\background\sw0.gif" />
     <Content Include="afluexit\images\background\sw2.gif" />
@@ -745,7 +772,6 @@
     <Content Include="afluexit\images\blog\blog_detail.jpg" />
     <Content Include="afluexit\images\blog\search-operator-featured.png" />
     <Content Include="afluexit\images\border-style.png" />
-    <Content Include="afluexit\images\business_res.jpg" />
     <Content Include="afluexit\images\business_res.png" />
     <Content Include="afluexit\images\business_res1.jpg" />
     <Content Include="afluexit\images\career-form-1.png" />
@@ -859,12 +885,20 @@
     <Content Include="afluexit\images\portfolio\5.jpg" />
     <Content Include="afluexit\images\portfolio\6.jpg" />
     <Content Include="afluexit\images\portfolio\7.jpg" />
+    <Content Include="afluexit\images\portfolio\Acer-Aspire_C24-1651_modelpreview.png" />
+    <Content Include="afluexit\images\portfolio\bharti.jpg" />
+    <Content Include="afluexit\images\portfolio\crm.jpg" />
+    <Content Include="afluexit\images\portfolio\dolph.jpg" />
+    <Content Include="afluexit\images\portfolio\dost.jpg" />
     <Content Include="afluexit\images\portfolio\img1.jpg" />
     <Content Include="afluexit\images\portfolio\img2.jpg" />
     <Content Include="afluexit\images\portfolio\img3.jpg" />
     <Content Include="afluexit\images\portfolio\img4.jpg" />
     <Content Include="afluexit\images\portfolio\img5.jpg" />
+    <Content Include="afluexit\images\portfolio\infra.jpg" />
     <Content Include="afluexit\images\portfolio\layout.jpg" />
+    <Content Include="afluexit\images\portfolio\mkt.jpg" />
+    <Content Include="afluexit\images\portfolio\moonlite.jpg" />
     <Content Include="afluexit\images\portfolio\other_advertising_snaps\1.jpg" />
     <Content Include="afluexit\images\portfolio\other_advertising_snaps\10.jpg" />
     <Content Include="afluexit\images\portfolio\other_advertising_snaps\11.jpg" />
@@ -903,18 +937,7 @@
     <Content Include="afluexit\images\portfolio\other_advertising_snaps\7.jpg" />
     <Content Include="afluexit\images\portfolio\other_advertising_snaps\8.jpg" />
     <Content Include="afluexit\images\portfolio\other_advertising_snaps\9.gif" />
-    <Content Include="afluexit\images\portfolio\portfolio-1.jpg" />
-    <Content Include="afluexit\images\portfolio\portfolio-2.jpg" />
-    <Content Include="afluexit\images\portfolio\portfolio-3.jpg" />
-    <Content Include="afluexit\images\portfolio\portfolio-4.jpg" />
-    <Content Include="afluexit\images\portfolio\portfolio-5.jpg" />
-    <Content Include="afluexit\images\portfolio\portfolio-6.jpg" />
-    <Content Include="afluexit\images\portfolio\portfolio-7.jpg" />
-    <Content Include="afluexit\images\portfolio\portfolio-8.jpg" />
-    <Content Include="afluexit\images\portfolio\portfolio-9.jpg" />
-    <Content Include="afluexit\images\portfolio\portfolio-details-1.jpg" />
-    <Content Include="afluexit\images\portfolio\portfolio-details-2.jpg" />
-    <Content Include="afluexit\images\portfolio\portfolio-details-3.jpg" />
+    <Content Include="afluexit\images\portfolio\shree.jpg" />
     <Content Include="afluexit\images\product\business_insights.png" />
     <Content Include="afluexit\images\product\cost_reduction.png" />
     <Content Include="afluexit\images\product\crm-software.png" />
@@ -986,6 +1009,8 @@
     <Content Include="afluexit\images\slider\1.jpg" />
     <Content Include="afluexit\images\slider\2.jpg" />
     <Content Include="afluexit\images\slider\3.jpg" />
+    <Content Include="afluexit\images\slider\adbg.jpg" />
+    <Content Include="afluexit\images\slider\adbg1.jpg" />
     <Content Include="afluexit\images\slider\and-1.jpg" />
     <Content Include="afluexit\images\slider\and-2.jpg" />
     <Content Include="afluexit\images\slider\img-1.jpg" />
@@ -995,6 +1020,7 @@
     <Content Include="afluexit\images\slider\img-5.jpg" />
     <Content Include="afluexit\images\slider\soft-1.jpg" />
     <Content Include="afluexit\images\slider\soft-2.jpg" />
+    <Content Include="afluexit\images\slider\tbg.jpg" />
     <Content Include="afluexit\images\slider\web-1.jpg" />
     <Content Include="afluexit\images\slider\web-2.jpg" />
     <Content Include="afluexit\images\slider\web-development.png" />
@@ -1016,6 +1042,7 @@
     <Content Include="afluexit\images\team\ravi.jpg" />
     <Content Include="afluexit\images\team\reena.jpg" />
     <Content Include="afluexit\images\team\sachin.jpg" />
+    <Content Include="afluexit\images\team\sachin1.jpg" />
     <Content Include="afluexit\images\team\sandeep.jpg" />
     <Content Include="afluexit\images\team\sanjeev.jpg" />
     <Content Include="afluexit\images\team\shudhir.jpg" />
@@ -1147,6 +1174,8 @@
     <Content Include="afluexit\images\background\sw.webp" />
     <Content Include="afluexad\images\background\ad.webp" />
     <Content Include="afluexad\images\background\sw.webp" />
+    <None Include="Properties\PublishProfiles\Afluex.pubxml" />
+    <None Include="Properties\PublishProfiles\newafluex.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -1241,10 +1270,11 @@
     <Content Include="Views\Home\DemoContact.cshtml" />
     <Content Include="Views\WebSoftware\jobs.cshtml" />
     <Content Include="Views\WebSoftware\Edu_tech.cshtml" />
+    <Content Include="Views\Home\thankyou2.cshtml" />
+    <Content Include="Views\WebSoftware\thankyou2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="afluexad\fontawesome\" />
-    <Folder Include="afluexad\js\" />
     <Folder Include="afluexit\images\portfolio\broadcast_advertising\" />
     <Folder Include="afluexit\images\portfolio\event_management\" />
     <Folder Include="afluexit\images\portfolio\outdoor_advertising\" />
@@ -1277,7 +1307,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>59831</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:59831/</IISUrl>
+          <IISUrl>http://localhost:59832/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
