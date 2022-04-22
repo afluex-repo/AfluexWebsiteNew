@@ -512,7 +512,7 @@ namespace Afluex.Controllers
                                 EnableSsl = true,
                                 DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                                 UseDefaultCredentials = false,
-                                Credentials = new NetworkCredential(fromAddress.Address, "Krishna@412")//"Krishna@412")
+                                Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437")//"Krishna@412")
 
                             };
 

@@ -80,8 +80,7 @@ namespace Afluex.Models
                                         new SqlParameter("@About",About),
                                         new SqlParameter("@MobileNo",Mobile),
                                          new SqlParameter("@EmailId",Email),
-                                  
-                                        new SqlParameter("@Message",CustMessage),
+                                        new SqlParameter("@Message",Message),
 
                             };
             DataSet ds = Connection.ExecuteQuery("SaveEnquiry", para);

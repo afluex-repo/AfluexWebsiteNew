@@ -84,7 +84,6 @@ namespace Afluex.Controllers
 
         }
         [ActionName("radio-advertising")]
-
         public ActionResult radioadvertising()
         {
             return View("radioadvertising");
@@ -262,12 +261,10 @@ namespace Afluex.Controllers
 
             return RedirectToAction(FormName, Controller);
         }
-
         public ActionResult contactus()
         {
             return View();
         }
-       
         #region contactus
       
         [HttpPost]
