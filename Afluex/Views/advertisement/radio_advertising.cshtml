@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "radioadvertising";
+    Layout = "~/Views/Shared/Ad_LayoutPage.cshtml";
+}
+
+<section class="page-title text-center" style="background-image:url(../../afluexad/images/background/page_services.jpeg);">
+    <div class="container">
+        <h1>Radio Advertising</h1>
+    </div>
+    <!--Page Info-->
+    <div class="page-info">
+        <div class="container clearfix">
+            <ul class="bread-crumb clearfix">
+                <li><a href="~/advertisement/advertising-agency"><i class="fa fa-home"></i></a> </li>
+                <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
+                <li>Our Services</li>
+                <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
+                <li>Radio Advertising</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- End Page Title -->
+
+<section class="our_services">
+    <div class="container">
+        <div class="row">
+            <!-- Info Column -->
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                <div class="services_inner_column">
+                    <div class="ser_title">
+                        <h2>Radio Advertising</h2>
+                        <h5>RADIO ADVERISEMENT Agency in Lucknow </h5>
+                    </div>
+                    <div class="services_content_details">
+                        <p>
+                            <strong>
+                                “Television contracts the imagination and radio expands it.”
+                            </strong>
+                        </p>
+                        <p>
+                            Afluex Multiservices LLP is operated by Radio Works, the independent, impartial and informed agency that aims to give all businesses – regardless of size – the information they need to make advertising on the radio a success.
+                            It is a traditional yet highly effective advertising medium that allows you to capitalize on the unique relationship between the station and the listener. Our experienced team can put together highly successful tactical
+                            and strategic campaigns for our clients. By knowing and understanding your target market we can create a message that cuts through the clutter and allows you to talk directly to them in a language they will understand.
+                            To many people new to radio advertising, it can be a daunting prospect dealing directly with each station. That is where we come in and make it easy for you! We handle the full method from initial temporary to writing and
+                            producing the industrial and booking the campaign with the relevant station. First, we understand your business AND your target market in India. Then we create the right messages to cut through the clutter - with tactical
+                            and strategic campaigns planned – precisely – to run on the right radio stations. Reaching the right people the right number of times and for the right results. This saves you money and reduces costs through our highly
+                            discounted volume rates. From initial brief to writing and production, to planning and booking – Afluex Multiservices LLP make radio advertising easy.
+                        </p>
+                        <p>
+                            Need a radio ad creating in Lucknow, India and surrounding areas? No problem! At Afluex Multiservices LLP, we can deliver for you whether your budget is huge or small. We’ve created high-quality radio adverts to travel out
+                            nationwide for large clients, also as smaller-scale campaigns for local and regional customers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Column -->
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                <div class="services_inner_column">
+                    <div class="ser_title">
+                        <h2>For Quick Demo</h2>
+                    </div>
+                    @{Html.RenderAction("DemoContact", "web", new { area = "" });}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

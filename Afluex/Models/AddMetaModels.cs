@@ -21,7 +21,7 @@ namespace Afluex.Models
 
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta name='description' content=' Afluex is a fully integrated advertising agency in India. We bring together brilliant people to build a better future for our clients. Afluex is the most preferred hoarding, branding, outdoor advertising agency in India. For more Inquiry call +91 731-0000-414/ 413/ 412.'/>");
+                sbMetaTags.Append("<meta name='description' content=' Afluex is a fully integrated advertising agency in India. We bring together brilliant people to build a better future for our clients. Afluex is the most preferred hoarding, branding, outdoor advertising agency in India. For more Inquiry call +91 731-0000-413/ 412.'/>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<link rel='canonical' href='https://www.Afluex.com/advertisement/ advertising-agency'/>");
@@ -94,7 +94,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta property='og:url' content='https://www.Afluex.com/advertisement/company-overview'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta property='og:description' content='We are offering all types of advertising services in Lucknow, India & surrounding areas. it is the one-stop agency for all your advertising needs. For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta property='og:description' content='We are offering all types of advertising services in Lucknow, India & surrounding areas. it is the one-stop agency for all your advertising needs. For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta property='og:type' content='website'>");
@@ -112,7 +112,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta name='twitter:title' content='Company Overview| Advertising Agency| Afluex'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta name='twitter:description' content='We are offering all types of advertising services in Lucknow, India & surrounding areas. it is the one-stop agency for all your advertising needs. For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta name='twitter:description' content='We are offering all types of advertising services in Lucknow, India & surrounding areas. it is the one-stop agency for all your advertising needs. For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta name='twitter:image' content='https://Afluex.com/images/Afluexog.png'>");
@@ -149,7 +149,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta property='og:url' content='https://www.Afluex.com/advertisement/vision-and-mission'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta property='og:description' content='We are offering all types of advertising services in Lucknow. It is the one-stop agency for all your advertising needs. For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta property='og:description' content='We are offering all types of advertising services in Lucknow. It is the one-stop agency for all your advertising needs. For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta property='og:type' content='website'>");
@@ -167,7 +167,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta name='twitter:title' content='Our Mission & Vision| Advertising Agency| Afluex'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta name='twitter:description' content='We are offering all types of advertising services in Lucknow. It is the one-stop agency for all your advertising needs. For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta name='twitter:description' content='We are offering all types of advertising services in Lucknow. It is the one-stop agency for all your advertising needs. For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta name='twitter:image' content='https://Afluex.com/images/Afluexog.png'>");
@@ -204,7 +204,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta property='og:url' content='https://www.Afluex.com/advertisement/our-team'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta property='og:description' content='Our team is expert in the field of advertising services-tv, radio, news, cinema advertising, auto branding, printing services, wall wrap ads. For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta property='og:description' content='Our team is expert in the field of advertising services-tv, radio, news, cinema advertising, auto branding, printing services, wall wrap ads. For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta property='og:type' content='website'>");
@@ -222,7 +222,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta name='twitter:title' content='Our Advertisement Team| Afluex'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta name='twitter:description' content='Our team is expert in the field of advertising services-tv, radio, news, cinema advertising, auto branding, printing services, wall wrap ads. For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta name='twitter:description' content='Our team is expert in the field of advertising services-tv, radio, news, cinema advertising, auto branding, printing services, wall wrap ads. For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta name='twitter:image' content='https://Afluex.com/images/Afluexog.png'>");
@@ -258,7 +258,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta property='og:url' content='https://www.Afluex.com/advertisement/tv-advertising'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta property='og:description' content='We are offering tv advertising services in Lucknow, India and surrounding areas. it is the one-stop agency for all your TV advertising needs. For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta property='og:description' content='We are offering tv advertising services in Lucknow, India and surrounding areas. it is the one-stop agency for all your TV advertising needs. For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta property='og:type' content='website'>");
@@ -279,7 +279,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta name='twitter:title' content='TV Advertising Agency In India| Lucknow| Afluex'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta name='twitter:description' content='We are offering tv advertising services in Lucknow, India and surrounding areas. it is the one-stop agency for all your TV advertising needs. For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta name='twitter:description' content='We are offering tv advertising services in Lucknow, India and surrounding areas. it is the one-stop agency for all your TV advertising needs. For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta name='twitter:image' content='https://Afluex.com/images/Afluexog.png'>");
@@ -315,7 +315,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta property='og:url' content='https://www.Afluex.com/advertisement/news-advertising'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta property='og:description' content='We are offering news advertising services in Lucknow, India and surrounding areas. Book News ads online and display it at the lowest rates.For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta property='og:description' content='We are offering news advertising services in Lucknow, India and surrounding areas. Book News ads online and display it at the lowest rates.For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta property='og:type' content='website'>");
@@ -333,7 +333,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta name='twitter:title' content='News Advertising Agency In India| Lucknow| Afluex'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta name='twitter:description' content='We are offering news advertising services in Lucknow, India and surrounding areas. Book News ads online and display it at the lowest rates.For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta name='twitter:description' content='We are offering news advertising services in Lucknow, India and surrounding areas. Book News ads online and display it at the lowest rates.For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta name='twitter:image' content='https://Afluex.com/images/Afluexog.png'>");
@@ -369,7 +369,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta property='og:url' content='https://www.Afluex.com/advertisement/outdoor-advertising'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta property='og:description' content='We offer a variety of outdoor advertising in Lucknow, India and surround areas. For more Inquiry call +91 731-0000-414/ 413/ 412'>");
+                sbMetaTags.Append("<meta property='og:description' content='We offer a variety of outdoor advertising in Lucknow, India and surround areas. For more Inquiry call +91 731-0000-413/ 412'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta property='og:type' content='website'>");
@@ -387,7 +387,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta name='twitter:title' content='Outdoor Advertising Agency In India| Lucknow| Afluex'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta name='twitter:description' content='Afluex is a fully integrated advertising agency in India. We bring together brilliant people to build a better future for our clients. For more Inquiry call +91 731-0000-414/ 413/ 412'>");
+                sbMetaTags.Append("<meta name='twitter:description' content='Afluex is a fully integrated advertising agency in India. We bring together brilliant people to build a better future for our clients. For more Inquiry call +91 731-0000-413/ 412'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta name='twitter:image' content='https://Afluex.com/images/Afluexog.png'>");
@@ -424,7 +424,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta property='og:url' content='https://www.Afluex.com/advertisement/mobile-van-promotion'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta property='og:description' content='Get all types of Mobile van advertising in Lucknow, India and surrounding areas at Best Rates. For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta property='og:description' content='Get all types of Mobile van advertising in Lucknow, India and surrounding areas at Best Rates. For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta property='og:type' content='website'>");
@@ -442,7 +442,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta name='twitter:title' content='Mobile Van Advertising Agency In Lucknow| Afluex'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta name='twitter:description' content='Get all types of Mobile van advertising in Lucknow, India and surrounding areas at Best Rates. For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta name='twitter:description' content='Get all types of Mobile van advertising in Lucknow, India and surrounding areas at Best Rates. For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta name='twitter:image' content='https://Afluex.com/images/Afluexog.png'>");
@@ -478,7 +478,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta property='og:url' content='https://www.Afluex.com/advertisement/wall-wrap-ads'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta property='og:description' content='As a leading advertising agency in Lucknow, We offering wall wraps advertising services in all over India. For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta property='og:description' content='As a leading advertising agency in Lucknow, We offering wall wraps advertising services in all over India. For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta property='og:type' content='website'>");
@@ -496,7 +496,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta name='twitter:title' content='Wall Wrap Advertising Agency In Lucknow| Afluex'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta name='twitter:description' content='As a leading advertising agency in Lucknow, We offering wall wraps advertising services in all over India. For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta name='twitter:description' content='As a leading advertising agency in Lucknow, We offering wall wraps advertising services in all over India. For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta name='twitter:image' content='https://Afluex.com/images/Afluexog.png'>");
@@ -533,7 +533,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta property='og:url' content='https://www.Afluex.com/advertisement/auto-branding'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta property='og:description' content='Increase your brand visibility by regularly utilized mode of transport, We offering highly cost-effective Auto Ad Agency, Auto Hood Branding. For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta property='og:description' content='Increase your brand visibility by regularly utilized mode of transport, We offering highly cost-effective Auto Ad Agency, Auto Hood Branding. For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta property='og:type' content='website'>");
@@ -551,7 +551,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta name='twitter:title' content='Auto Branding Agency In Lucknow| Afluex'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta name='twitter:description' content='Increase your brand visibility by regularly utilized mode of transport, We offering highly cost-effective Auto Ad Agency, Auto Hood Branding. For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta name='twitter:description' content='Increase your brand visibility by regularly utilized mode of transport, We offering highly cost-effective Auto Ad Agency, Auto Hood Branding. For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta name='twitter:image' content='https://Afluex.com/images/Afluexog.png'>");
@@ -588,7 +588,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta property='og:url' content='https://www.Afluex.com/advertisement/cinema-advertising'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta property='og:description' content='Get the best cinema advertising agency in Lucknow at best rates. Multiplex advertising is a proven way to increase your product brand awareness. For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta property='og:description' content='Get the best cinema advertising agency in Lucknow at best rates. Multiplex advertising is a proven way to increase your product brand awareness. For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta property='og:type' content='website'>");
@@ -606,7 +606,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta name='twitter:title' content='Cinema Advertising Agency| Afluex'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta name='twitter:description' content='Get the best cinema advertising agency in Lucknow at best rates. Multiplex advertising is a proven way to increase your product brand awareness. For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta name='twitter:description' content='Get the best cinema advertising agency in Lucknow at best rates. Multiplex advertising is a proven way to increase your product brand awareness. For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta name='twitter:image' content='https://Afluex.com/images/Afluexog.png'>");
@@ -644,7 +644,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta property='og:url' content='https://www.Afluex.com/advertisement/radio-advertising'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta property='og:description' content='Get the best radio advertising agency in Lucknow at best rates. For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta property='og:description' content='Get the best radio advertising agency in Lucknow at best rates. For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta property='og:type' content='website'>");
@@ -662,7 +662,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta name='twitter:title' content='Radio Advertising Agency In Lucknow| Afluex'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta name='twitter:description' content='Get the best radio advertising agency in Lucknow at best rates. For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta name='twitter:description' content='Get the best radio advertising agency in Lucknow at best rates. For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta name='twitter:image' content='https://Afluex.com/images/Afluexog.png'>");
@@ -699,7 +699,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta property='og:url' content='https://www.Afluex.com/advertisement/printing-services'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta property='og:description' content='Afluex printing service provides a full range of digital printing services. There are many types of professional printing services for your business. For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta property='og:description' content='Afluex printing service provides a full range of digital printing services. There are many types of professional printing services for your business. For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta property='og:type' content='website'>");
@@ -717,7 +717,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta name='twitter:title' content='Printing Services Company & Advertising Agency| Afluex'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta name='twitter:description' content='Afluex printing service provides a full range of digital printing services. There are many types of professional printing services for your business. For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta name='twitter:description' content='Afluex printing service provides a full range of digital printing services. There are many types of professional printing services for your business. For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta name='twitter:image' content='https://Afluex.com/images/Afluexog.png'>");
@@ -809,7 +809,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta property='og:url' content='https://www.Afluex.com/advertisement/fabrication-services'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta property='og:description' content='We offer fabrication services that deliver the highest quality of workmanship and innovative designs. For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta property='og:description' content='We offer fabrication services that deliver the highest quality of workmanship and innovative designs. For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta property='og:type' content='website'>");
@@ -827,7 +827,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta name='twitter:title' content='Fabrication Services In Lucknow| Afluex'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta name='twitter:description' content='We offer fabrication services that deliver the highest quality of workmanship and innovative designs. For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta name='twitter:description' content='We offer fabrication services that deliver the highest quality of workmanship and innovative designs. For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta name='twitter:image' content='https://Afluex.com/images/Afluexog.png'>");
@@ -864,7 +864,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta property='og:url' content='https://www.Afluex.com/advertisement/portfolio'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta property='og:description' content='Gain a global perspective with Afluex portfolio. We give you the insight to make better-informed decisions for better results. For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta property='og:description' content='Gain a global perspective with Afluex portfolio. We give you the insight to make better-informed decisions for better results. For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta property='og:type' content='website'>");
@@ -882,7 +882,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta name='twitter:title' content='Our Advertisement Portfolio & Creation| Afluex'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta name='twitter:description' content='Gain a global perspective with Afluex portfolio. We give you the insight to make better-informed decisions for better results. For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta name='twitter:description' content='Gain a global perspective with Afluex portfolio. We give you the insight to make better-informed decisions for better results. For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta name='twitter:image' content='https://Afluex.com/images/Afluexog.png'>");
@@ -919,7 +919,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta property='og:url' content='https://www.Afluex.com/advertisement/career'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta property='og:description' content='if you are passionate about an advertisement, we are looking for you. Join us and future-forward your career today. For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta property='og:description' content='if you are passionate about an advertisement, we are looking for you. Join us and future-forward your career today. For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta property='og:type' content='website'>");
@@ -937,7 +937,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta name='twitter:title' content='Job Vacancy & Opportunity| Advertising Agency| Career| Afluex'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta name='twitter:description' content='if you are passionate about an advertisement, we are looking for you. Join us and future-forward your career today. For more Inquiry call +91 731-0000-414/ 413/ 412.'>");
+                sbMetaTags.Append("<meta name='twitter:description' content='if you are passionate about an advertisement, we are looking for you. Join us and future-forward your career today. For more Inquiry call +91 731-0000-413/ 412.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta name='twitter:image' content='https://Afluex.com/images/Afluexog.png'>");
@@ -1061,7 +1061,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<title>Contact Us| Advertising Agency| Afluex</title>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta name='description' content='D-54, 2nd Floor Arjun Fower Near Ola Office, Vibhuti Khand, Lucknow, Uttar Pradesh 226010. Phone No: +91 731-0000-414/ 413/ 412  Email: supportnow@Afluex.com.'/>");
+                sbMetaTags.Append("<meta name='description' content='D-54, 2nd Floor Arjun Fower Near Ola Office, Vibhuti Khand, Lucknow, Uttar Pradesh 226010. Phone No: +91 731-0000-413/ 412  Email: supportnow@Afluex.com.'/>");
 
                 sbMetaTags.Append(Environment.NewLine);
 
@@ -1084,7 +1084,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta property='og:url' content='https://www.Afluex.com/advertisement/contactus'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta property='og:description' content='D-54, 2nd Floor Arjun Fower Near Ola Office, Vibhuti Khand, Lucknow, Uttar Pradesh 226010. Phone No: +91 731-0000-414/ 413/ 412 Email: supportnow@Afluex.com.'>");
+                sbMetaTags.Append("<meta property='og:description' content='D-54, 2nd Floor Arjun Fower Near Ola Office, Vibhuti Khand, Lucknow, Uttar Pradesh 226010. Phone No: +91 731-0000-413/ 412 Email: supportnow@Afluex.com.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta property='og:type' content='website'>");
@@ -1102,7 +1102,7 @@ namespace Afluex.Models
                 sbMetaTags.Append("<meta name='twitter:title' content='Contact Us| Advertising Agency| Afluex'>");
                 sbMetaTags.Append(Environment.NewLine);
 
-                sbMetaTags.Append("<meta name='twitter:description' content='D-54, 2nd Floor Arjun Fower Near Ola Office, Vibhuti Khand, Lucknow, Uttar Pradesh 226010. Phone No: +91 731-0000-414/ 413/ 412  Email: supportnow@Afluex.com.'>");
+                sbMetaTags.Append("<meta name='twitter:description' content='D-54, 2nd Floor Arjun Fower Near Ola Office, Vibhuti Khand, Lucknow, Uttar Pradesh 226010. Phone No: +91 731-0000-413/ 412  Email: supportnow@Afluex.com.'>");
                 sbMetaTags.Append(Environment.NewLine);
 
                 sbMetaTags.Append("<meta name='twitter:image' content='https://Afluex.com/images/Afluexog.png'>");

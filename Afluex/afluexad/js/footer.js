@@ -154,7 +154,7 @@ document.write(`
                                             <li>
                                                 <span class ="icon fas fa-mobile-alt text-white" aria-hidden="true"></span>
                                                 <div class ="text">
-                                                    +91 <a href="tel:7310000413">731-0000-413</a>/ <a href="tel:7310000412">412</a>/ <a href="tel:7310000414">414</a>
+                                                    +91 <a href="tel:7310000413">731-0000-413</a>/ <a href="tel:7310000412">412</a>
                                                 </div>
                                             </li>
                                         </ul>
