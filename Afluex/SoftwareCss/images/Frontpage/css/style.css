@@ -1,0 +1,1010 @@
+.header-background {
+    /*background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgb(71, 144, 179) 0%, rgb(20, 73, 78) 35%, rgb(71, 144, 179) 100%);*/
+    background-image: url('../blur-close-up-code.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100% !important;
+}
+
+.afluex-header {
+    padding: 5px 0px;
+}
+
+.afluex-title {
+    position: relative;
+    width: 100%;
+    z-index: 3;
+    margin: 20px auto 20px auto;
+}
+
+.afluex-content {
+    padding: 20px 20px;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 0 4px 0 4px;
+    border-color: #fffafa;
+    box-shadow: 0px 4px 10px 2px rgb(69, 165, 174);
+    background-color: #194f57;
+}
+
+.afluex-software {
+    position: relative;
+}
+
+    .afluex-software img {
+        position: absolute;
+        top: -132px;
+        left: 150px;
+    }
+
+.afluex-advertisement {
+    position: relative;
+}
+
+    .afluex-advertisement img {
+        position: absolute;
+        right: 70px;
+        top: -128px;
+    }
+
+.afluex-fun-facts {
+    position: relative;
+    width: 100%;
+    z-index: 4;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.afluex-title h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-shadow: 2px 1px 2px #4790b3;
+}
+
+.de_count {
+    text-align: center;
+    padding: 0px 0 0 0;
+    background: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #000;
+}
+
+    .de_count h3 {
+        font-family: "cabin", Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        color: #fff;
+        font-weight: bold;
+    }
+
+.service-fact-area {
+    /* -webkit-box-shadow: 0px 0px 25px 0px rgba(254, 1, 9, 0.2); */
+    /* box-shadow: 0px 0px 25px 0px rgba(254, 1, 9, 0.2); */
+    background-color: #FFFFFF;
+    margin-right: 40px;
+    position: relative;
+}
+
+    .campaign-fact-list,
+    .service-fact-area .campaign-fact-list li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .campaign-fact-list,
+    .service-fact-area .campaign-fact-list li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+.single-fact {
+    padding: 43.4px 60px;
+}
+
+.single-fact {
+    /* background: #fff2f3; */
+    /* background: -webkit-gradient(linear, left bottom, left top, from(#fff2f3), to(white)); */
+    /* background: linear-gradient(0deg, #fff2f3 0%, white 100%); */
+    padding: 20px 0px 20px 0px;
+}
+
+    .single-fact .campaign-fact-icon {
+        -webkit-box-shadow: 0px 7px 15px 0px rgba(88, 86, 214, 0.3);
+        box-shadow: 0px 7px 15px 0px rgba(88, 86, 214, 0.3);
+        background: #c644fc;
+        background: linear-gradient(-35deg, #022b2f 0%, #3284ac 100%);
+        width: 60px;
+        height: 60px;
+        line-height: 55px;
+        border-radius: 50%;
+        text-align: center;
+        margin-right: 20px;
+        font-size: 30px;
+        color: #fff;
+    }
+
+    .single-fact .fact {
+        font-size: 1.4666666667rem;
+        margin-bottom: 5px;
+        color: #fff;
+    }
+
+    .single-fact .fact-title {
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: 0px;
+        color: #fff;
+    }
+
+.getintouch {
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+/**************** navigation Start *********/
+
+.afluex-navigation {
+    /* position: relative; */
+    /* width: 100%; */
+    /* z-index: 3; */
+    /* margin: 0px auto; */
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.ore {
+    position: absolute;
+    top: -10px;
+    left: 60px;
+    width: 80px;
+    height: 80px;
+    border: 5px solid #1a5159;
+    z-index: 10;
+    border-radius: 100%;
+    background: #fff;
+    color: #292929;
+    text-align: center;
+    font-family: Oswald, sans-serif;
+    font-size: 1.2em;
+    letter-spacing: .1em;
+    line-height: 65px;
+}
+
+.personal {
+    width: 275px;
+    height: 58px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgb(56, 123, 149) 0%, rgb(26, 81, 90) 40%, rgb(27, 83, 92) 100%);
+    color: #fff;
+    text-align: right;
+    padding-right: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.navigation a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/**************** navigation End *********/
+
+
+/**************** navigation Start *********/
+
+.afluex-software-heading {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgb(22, 75, 81) 0%, rgb(25, 80, 88) 40%, rgb(64, 134, 165) 100%);
+    padding: 15px 103px;
+    border-top-left-radius: 20px;
+    border-left: 5px solid #fff;
+    border-right: 5px solid #fff;
+    border-top: 5px solid #fff;
+}
+
+    .afluex-software-heading h4 {
+        font-size: 22px;
+    }
+
+        .afluex-software-heading h4 a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+.afluex-Advertising-heading {
+    padding: 15px 120px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgb(22, 75, 81) 0%, rgb(25, 80, 88) 40%, rgb(64, 134, 165) 100%);
+    border-top-right-radius: 20px;
+    border-left: 5px solid #fff;
+    border-right: 5px solid #fff;
+    border-top: 5px solid #fff;
+}
+
+    .afluex-Advertising-heading h4 {
+        font-size: 22px;
+    }
+
+        .afluex-Advertising-heading h4 a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+
+/**************** navigation End *********/
+
+
+/**************** footer Start *********/
+
+.main-footer {
+    padding-top: 15px;
+    background-color: #093943;
+}
+
+.social ul li a {
+    color: #fff;
+}
+
+.location-map {
+    border-top: 30px solid #093943;
+}
+
+/**************** footer End *********/
+
+.line {
+    width: 5px;
+    height: 280px;
+    position: absolute;
+    top: 94px;
+    left: 50%;
+    z-index: 6;
+    background: #fff;
+}
+
+.top {
+    position: absolute;
+    width: 5px;
+    height: 50px;
+    background: #194f57;
+    top: 105px;
+    left: 0;
+}
+
+
+/********************************************** Responsive Start ***********************************************************/
+
+@media (min-width: 320px) and (max-width: 568px) {
+    .front-logo img {
+        padding: 10px 0px;
+    }
+
+    .afluex-title {
+        padding-top: 100px;
+    }
+
+    .single-fact .campaign-fact-icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 25px;
+        font-size: 22px;
+        color: #fff;
+    }
+
+    .single-fact .fact {
+        font-size: 18px;
+        margin-bottom: 5px;
+        color: #fff;
+    }
+
+    .single-fact .fact-title {
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 0px;
+        color: #fff;
+    }
+
+    .afluex-software img {
+        position: absolute;
+        top: -132px;
+        left: -64px;
+    }
+
+    .afluex-advertisement img {
+        position: absolute;
+        right: -38px;
+        top: -128px;
+    }
+
+    .afluex-title h1 {
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+        letter-spacing: 1px;
+        font-weight: 400;
+        text-shadow: 2px 1px 2px #4790b3;
+        padding-right: 70px;
+        padding-top: 60px;
+    }
+
+    .box.left-box {
+        margin-bottom: 30px;
+    }
+
+    .afluex-Advertising-heading {
+        margin-top: 90px;
+        padding: 15px 40px 15px 45px;
+    }
+
+    .afluex-software-heading {
+        padding: 15px 25px 15px 26px;
+    }
+
+    .ore {
+        position: absolute;
+        top: -10px;
+        left: 120px;
+        width: 80px;
+        height: 80px;
+        border: 5px solid #1a5159;
+        z-index: 10;
+        border-radius: 100%;
+        background: #fff;
+        color: #292929;
+        text-align: center;
+        font-family: Oswald, sans-serif;
+        font-size: 1.2em;
+        letter-spacing: .1em;
+        line-height: 65px;
+    }
+
+    .line {
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 568px) and (orientation: landscape) {
+    .afluex-Advertising-heading {
+        margin-top: 90px !important;
+        padding: 10px 50px 10px 90px !important;
+    }
+
+    .afluex-software-heading h4 {
+        font-size: 15px !important;
+        text-align: center;
+    }
+
+    .afluex-Advertising-heading h4 {
+        font-size: 15px !important;
+        text-align: center;
+    }
+
+    .ore {
+        position: absolute;
+        top: -10px;
+        left: 230px !important;
+        width: 80px;
+        height: 80px;
+        border: 5px solid #1a5159;
+        z-index: 10;
+        border-radius: 100%;
+        background: #fff;
+        color: #292929;
+        text-align: center;
+        font-family: Oswald, sans-serif;
+        font-size: 1.2em;
+        letter-spacing: .1em;
+        line-height: 65px;
+    }
+}
+
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .afluex-title h1 {
+        font-size: 19px !important;
+    }
+
+    .afluex-software-heading {
+        padding: 15px 50px 15px 41px !important;
+    }
+
+    .afluex-Advertising-heading {
+        margin-top: 90px;
+        padding: 15px 65px 15px 60px !important;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 667px) {
+    .front-logo img {
+        padding: 10px 0px;
+    }
+
+    .afluex-title {
+        padding-top: 100px;
+    }
+
+    .afluex-software img {
+        position: absolute;
+        top: -132px;
+        left: -64px;
+    }
+
+    .afluex-advertisement img {
+        position: absolute;
+        right: -38px;
+        top: -140px;
+    }
+
+    .afluex-title h1 {
+        text-align: center;
+        font-size: 22px !important;
+        color: #fff;
+        letter-spacing: 1px;
+        font-weight: 400;
+        text-shadow: 2px 1px 2px #4790b3;
+        padding-right: 58px;
+        padding-top: 45px;
+    }
+
+    .box.left-box {
+        margin-bottom: 30px;
+    }
+
+    .afluex-Advertising-heading {
+        margin-top: 90px;
+        padding: 10px 70px 10px 70px !important;
+    }
+
+    .afluex-software-heading {
+        padding: 10px 56px 10px 50px !important;
+    }
+
+    .ore {
+        position: absolute;
+        top: -10px;
+        left: 140px;
+        width: 80px;
+        height: 80px;
+        border: 5px solid #1a5159;
+        z-index: 10;
+        border-radius: 100%;
+        background: #fff;
+        color: #292929;
+        text-align: center;
+        font-family: Oswald, sans-serif;
+        font-size: 1.2em;
+        letter-spacing: .1em;
+        line-height: 65px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .main-footer {
+        padding-top: 15px;
+        background-color: #093943;
+        padding-bottom: 0px !important;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 667px) and (orientation: landscape) {
+    .afluex-title {
+        position: relative;
+        width: 100%;
+        z-index: 3;
+        margin: 10px auto 20px auto !important;
+    }
+
+    .afluex-software-heading {
+        padding: 10px 5px 10px 15px !important;
+    }
+
+        .afluex-software-heading h4 {
+            font-size: 15px !important;
+        }
+
+    .afluex-Advertising-heading {
+        margin-top: 0px;
+        padding: 10px 30px 10px 70px !important;
+    }
+
+        .afluex-Advertising-heading h4 {
+            font-size: 15px !important;
+        }
+
+    .pull-left {
+        float: none !important;
+    }
+
+    .pull-right {
+        float: none !important;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 736px) {
+    .afluex-title h1 {
+        text-align: center;
+        font-size: 23px !important;
+        color: #fff;
+        letter-spacing: 1px;
+        font-weight: 400;
+        text-shadow: 2px 1px 2px #4790b3;
+        padding-right: 76px;
+        padding-top: 45px;
+        padding-left: 10px;
+    }
+
+    .afluex-software-heading {
+        padding: 10px 70px 10px 75px !important;
+    }
+
+    .afluex-Advertising-heading {
+        margin-top: 90px;
+        padding: 10px 89px 10px 90px !important;
+    }
+
+    .main-footer {
+        padding-top: 15px;
+        background-color: #093943;
+        padding-bottom: 50px !important;
+    }
+
+    .afluex-advertisement img {
+        position: absolute;
+        left: 170px;
+        top: -111px;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 736px) and (orientation: landscape) {
+    .afluex-software img {
+        position: absolute;
+        top: -132px;
+        left: -51px;
+    }
+
+    .afluex-advertisement img {
+        position: absolute;
+        left: 297px;
+        top: -111px;
+    }
+
+    .afluex-title {
+        position: relative;
+        width: 100%;
+        z-index: 3;
+        margin: 90px auto 20px auto;
+    }
+
+    .ore {
+        position: absolute;
+        top: -10px;
+        left: 7px;
+        width: 80px;
+        height: 80px;
+        border: 5px solid #1a5159;
+        z-index: 10;
+        border-radius: 100%;
+        background: #fff;
+        color: #292929;
+        text-align: center;
+        font-family: Oswald, sans-serif;
+        font-size: 1.2em;
+        letter-spacing: .1em;
+        line-height: 65px;
+    }
+
+    .line {
+        width: 5px;
+        height: 146px !important;
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        z-index: 6;
+        background: #fff;
+    }
+
+
+    .afluex-software-heading h4 {
+        font-size: 15px;
+    }
+
+    .afluex-software-heading {
+        padding: 10px 10px 10px 18px !important;
+    }
+
+    .afluex-Advertising-heading {
+        margin-top: 0px;
+        padding: 10px 27px 10px 25px !important;
+    }
+
+        .afluex-Advertising-heading h4 {
+            font-size: 15px;
+        }
+
+    .line {
+        width: 5px;
+        height: 180px;
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        z-index: 6;
+        background: #fff;
+    }
+
+    .top {
+        position: absolute;
+        width: 5px;
+        height: 50px;
+        background: #194f57;
+        top: 65px;
+        left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-md-6.popim {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+    .afluex-software img {
+        position: absolute;
+        top: -142px;
+        left: -60px;
+    }
+
+    .afluex-advertisement img {
+        position: absolute;
+        right: -40px;
+        top: -146px;
+    }
+
+    .afluex-title h1 {
+        font-size: 25px;
+        color: #fff;
+        letter-spacing: 1px;
+        font-weight: 400;
+        text-shadow: 2px 1px 2px #4790b3;
+        margin-left: -55px;
+    }
+
+    .ore {
+        position: absolute;
+        top: -10px;
+        left: 20px;
+        width: 80px;
+        height: 80px;
+        border: 5px solid #1a5159;
+        z-index: 10;
+        border-radius: 100%;
+        background: #fff;
+        color: #292929;
+        text-align: center;
+        font-family: Oswald, sans-serif;
+        font-size: 1.2em;
+        letter-spacing: .1em;
+        line-height: 65px;
+    }
+
+    .line {
+        width: 5px;
+        height: 150px;
+        position: absolute;
+        top: 94px;
+        left: 50%;
+        z-index: 6;
+        background: #fff;
+    }
+
+    .top {
+        position: absolute;
+        width: 5px;
+        height: 50px;
+        background: #194f57;
+        top: 49px;
+        left: 0;
+    }
+
+    .main-footer {
+        padding-top: 15px;
+        background-color: #093943;
+        padding-bottom: 135px;
+        margin-bottom: 200px;
+    }
+
+    .single-fact .campaign-fact-icon {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        margin-right: 15px;
+        font-size: 15px;
+        color: #fff;
+    }
+
+    .single-fact .fact {
+        font-size: 15px;
+        margin-bottom: 5px;
+        color: #fff;
+    }
+
+    .single-fact .fact-title {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 0px;
+        color: #fff;
+    }
+
+    .afluex-software-heading {
+        padding: 10px 28px 10px 24px;
+    }
+
+        .afluex-software-heading h4 {
+            font-size: 20px;
+        }
+
+    .afluex-Advertising-heading {
+        padding: 10px 40px 10px 43px;
+    }
+
+        .afluex-Advertising-heading h4 {
+            font-size: 20px;
+        }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .afluex-header {
+        padding: 10px 0px !important;
+    }
+
+    .front-logo img {
+        width: 30% !important;
+    }
+
+    .afluex-title {
+        margin: 25px auto 20px auto !important;
+    }
+
+    .afluex-software img {
+        left: 40px;
+    }
+
+    .afluex-advertisement img {
+        right: 0px !important;
+    }
+
+    .afluex-contact {
+        margin: 35px 0px !important;
+    }
+
+    .afluex-software-heading {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgb(22, 75, 81) 0%, rgb(25, 80, 88) 40%, rgb(64, 134, 165) 100%);
+        padding: 15px 65px !important;
+        border-top-left-radius: 20px;
+        border-left: 5px solid #fff;
+        border-right: 5px solid #fff;
+        border-top: 5px solid #fff;
+    }
+
+    .afluex-Advertising-heading {
+        padding: 15px 82px !important;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgb(22, 75, 81) 0%, rgb(25, 80, 88) 40%, rgb(64, 134, 165) 100%);
+        border-top-right-radius: 20px;
+        border-left: 5px solid #fff;
+        border-right: 5px solid #fff;
+        border-top: 5px solid #fff;
+    }
+
+    .single-fact .fact-title {
+        font-size: 16px !important;
+    }
+
+    .main-footer {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1366px) {
+}
+
+@media (min-width: 1367px) and (max-width: 1441px) {
+    /*.afluex-header {
+        padding: 80px 0px !important;
+    }
+
+    .front-logo img {
+        width: 50% !important;
+    }
+
+    .afluex-title {
+        margin: 113px auto 20px auto !important;
+    }
+
+    .afluex-software img {
+        left: 40px;
+    }
+
+    .afluex-advertisement img {
+        right: 0px !important;
+    }
+
+    .afluex-contact {
+        margin: 87px 0px !important;
+    }
+
+    .main-footer {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+
+    .afluex-software-heading {
+        padding: 37px 103px !important;
+    }
+
+    .afluex-Advertising-heading {
+        padding: 37px 120px !important;
+    }*/
+}
+
+@media (min-width: 1442px) and (max-width: 1680px) {
+}
+
+@media (min-width: 1681px) and (max-width: 1920px) {
+    .afluex-header {
+        padding: 150px 0px !important;
+    }
+
+    .front-logo img {
+        width: 50% !important;
+    }
+
+    .afluex-title {
+        margin: 113px auto 20px auto !important;
+    }
+
+    .afluex-software img {
+        left: 40px;
+    }
+
+    .afluex-advertisement img {
+        right: 0px !important;
+    }
+
+    .afluex-contact {
+        margin: 150px 0px !important;
+    }
+
+    .main-footer {
+        padding-top: 70px !important;
+        padding-bottom: 70px !important;
+    }
+
+    .afluex-software-heading {
+        padding: 88px 103px !important;
+    }
+
+    .afluex-Advertising-heading {
+        padding: 88px 120px !important;
+    }
+
+    .afluex-title h1 {
+        font-size: 40px !important;
+    }
+
+    .line {
+        height: 380px !important;
+    }
+}
+
+/********************************************** Responsive End ***********************************************************/
+
+
+
+.frontmap {
+    width: 100%;
+    height: 300px;
+}
+
+.modal-header.afluexpop {
+    padding: 0px 15px;
+    border: none;
+}
+
+.modalres {
+    position: relative;
+    border-radius: 10px;
+}
+
+    .modalres .modal-body {
+        padding: 0px;
+    }
+
+    .modalres .modal-header .close {
+        padding: 5px 7px;
+        position: absolute;
+        right: 17px;
+        top: -16px;
+        z-index: 99;
+        opacity: 1;
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        font-size: 14px;
+    }
+
+.modal-dialog.main_modal-dialog {
+    max-width: 800px;
+}
+
+.homepop {
+    background-color: #e8e8e8;
+    padding: 1rem 0rem;
+    outline: none;
+    box-shadow: 0px 0px 10px #afafafcf;
+    border-radius: 10px;
+}
+
+.text-black {
+    color: #194f57 !important;
+    font-weight: 600;
+}
+
+    .text-black:active {
+        color: #194f57 !important;
+        font-weight: 600;
+    }
+
+.popup-banner-left {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#popupForm .form-group .form-control {
+    border: 1px solid #091c1e !important;
+    display: initial !important;
+}
+
+    #popupForm .form-group .form-control:focus {
+        box-shadow: 0 0 0 0.1rem rgb(0 123 255 / 25%) !important;
+    }
+
+#popupForm button {
+    background: #fff !important;
+    color: #000 !important;
+    transition: all 1s ease;
+}
+
+    #popupForm button:hover {
+        background: rgb(2,0,36) !important;
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(44,70,79,1) 35%, rgba(0,176,212,1) 100%) !important;
+        color: #fff !important;
+    }
+    h4.fact-title a {
+    text-decoration: none;
+    color: #fff;
+}
