@@ -395,7 +395,6 @@ E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Microsof
 E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
 E:\Divya\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 E:\Divya\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
-E:\Divya\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
 D:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\bin\ApplicationInsights.config
 D:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\bin\roslyn\csc.exe
 D:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -595,6 +594,7 @@ E:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Sec
 E:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Twitter.xml
 E:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 E:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
+E:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
 E:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 E:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
-E:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
+E:\Divya\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
