@@ -12,7 +12,7 @@
     <div class="page-info">
         <div class="container clearfix">
             <ul class="bread-crumb clearfix">
-                <li><a href="/Home/advertising-agency-agency">Home</a> </li>
+                <li><a href="~/advertisement/advertising-agency"><i class="fa fa-home"></i></a> </li>
                 <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
                 <li>Blog</li>
             </ul>
@@ -33,13 +33,13 @@
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="blog_featured text-center">
-                    <a href="/Home/blogdetails?id=@item.Pk_BlogId"><img src="https://afluex.com/@item.FileName" alt="" class="img-fluid"/></a>
+                    <a href="/advertisement/blogdetails?id=@item.Pk_BlogId"><img src="https://afluex.com/@item.FileName" alt="" class="img-fluid"/></a>
                 </div>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-12">
                 <div class="blog_details">
                     <div class="blog_title">
-                        <h2><a href="/Home/blogdetails?id=@item.Pk_BlogId">@item.Title</a> </h2>
+                        <h2><a href="/advertisement/blogdetails?id=@item.Pk_BlogId">@item.Title</a> </h2>
                     </div>
                     <div class="blog_inner">
                         <p>
@@ -49,12 +49,12 @@
                             <ul class="list-unsyled p-0">
                                 @*<li class="list-inline-item"><span class="blog_icon"><i class="fa fa-user" aria-hidden="true"></i></span> By : Afluex Mutiservices LLP</li>*@
                                 <li class="list-inline-item"><span class="blog_icon"><i class="fa fa-user" aria-hidden="true"></i></span>By: @item.AddedBy</li>
-                                <li class="list-inline-item"><span class="blog_icon"><a href="/Home/blogdetails?id=@item.Pk_BlogId"><i class="fa fa-eye" aria-hidden="true"></i></span> @item.AddedOn</li>
+                                <li class="list-inline-item"><span class="blog_icon"><a href="/advertisement/blogdetails?id=@item.Pk_BlogId"><i class="fa fa-eye" aria-hidden="true"></i></span> @item.AddedOn</li>
                                
                             </ul>
                         </div>
                         <div class="blog_btn">
-                            <h5><a href="/Home/blogdetails?id=@item.Pk_BlogId">Read More</a></h5>
+                            <h5><a href="/advertisement/blogdetails?id=@item.Pk_BlogId">Read More</a></h5>
                         </div>
                     </div>
                 </div>

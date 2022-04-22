@@ -1274,6 +1274,11 @@
     <Content Include="Views\advertisement\thankyou2.cshtml" />
     <Content Include="Views\web\thankyou2.cshtml" />
     <Content Include="Views\Home\NewIndex.cshtml" />
+    <Content Include="Views\Admin\BlogList.cshtml" />
+    <Content Include="Views\Admin\CareerList.cshtml" />
+    <Content Include="Views\Admin\ContactUs.cshtml" />
+    <Content Include="Views\Admin\DashBoard.cshtml" />
+    <Content Include="Views\Admin\PostBlog.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="afluexad\fontawesome\" />
