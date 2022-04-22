@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "mvc_training_services";
+    Layout = "~/Views/Shared/Web_Layout.cshtml";
+}
+
+<section class="page-title text-center" style="background-image:url(../../afluexit/images/background/page_services.jpeg);">
+    <div class="container">
+        <h1>Asp.Net MVC Training</h1>
+    </div>
+    <!--Page Info-->
+    <div class="page-info">
+        <div class="container clearfix">
+            <ul class="bread-crumb clearfix">
+                <li><a href="/web/index">Home</a> </li>
+                <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
+                <li>Asp.Net MVC Training</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- End Page Title -->
+
+<section class="services_page">
+    <div class="container">
+        <div class="row">
+            <!-- Info Column -->
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                <div class="services_inner_column">
+                    <div class="ser_title">
+                        <span class="title">THE BEST PLACE TO FIND THE Asp.Net MVC Training YOU WANT</span>
+                        <h2>Asp.Net MVC Training In Lucknow</h2>
+                    </div>
+                    <div class="services_content_details">
+                        <p class="text-justify">
+                            Afluex delivers a comprehensive MVC training in Lucknow. The extensive practical training offered by the MVC training institute in Lucknow equips live projects and simulations. Such step by step MVC class has helped our students secure a job in numerous.
+                            The trainers at Afluex are specialist corporate professionals providing in-depth study in the MVC. Participants completing the MVC certification have lots of job opportunities in the industry. Further, we've maintained the
+                            MVC course duration flexible. From the too fast track one-on-one classroom MVC training is offered during weekdays and weekends to the attendees.
+                        </p>
+                        <p class="text-justify">
+                            Our modern lab is equipped with the latest technologies helping students avail of a successful MVC certification and training from the institute. Afluex recognized among the top MVC training institute in Lucknow, has a training module for beginners, intermediates,
+                            and experts. Whether you're a college student, I.T professional or perhaps a project manager, the ideal MVC training institute in Lucknow offers the best training environment, veteran MVC trainers, and adaptive training schedules
+                            for entire modules. Additionally, the best training institute for MVC training asks for a value to money fee from the students. The pocket-friendly MVC course fee structure can be afforded by students coming from all walks
+                            of life.
+                        </p>
+                        <p class="text-justify">
+                            Afluex has a modern laboratory equipped with the latest devices that facilitate participants in having a thorough hands-on experience through live projects. Such training in Lucknow boosts the confidence level in participants to face the real-time challenges
+                            successfully in a job. The MVC syllabus includes for MVC course module on real-time projects along with placement support.
+                        </p>
+                        <p class="text-justify">
+                            MVC topics covered are Introduction to MVC, Overview of ASP.NET MVC, MVC and its Action Result type, Creating an application in MVC using Razor View Engine, Using AJAX and jQuery with ASP.NET MVC, Entity Framework and its approaches, EF Approaches Code
+                            First, Model First, Database First, Convert web grid into PDF file in MVC a Lot More.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Column -->
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                <div class="services_inner_column">
+                    <div class="ser_title">
+                        <span class="title">Enquiry Here</span>
+                        <h2>For Quick Demo</h2>
+                    </div>
+                 @{Html.RenderAction("DemoContact", "web", new { area = "" });}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

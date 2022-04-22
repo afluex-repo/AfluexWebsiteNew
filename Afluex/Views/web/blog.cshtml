@@ -1,0 +1,88 @@
+﻿
+@model Afluex.Models.Blog
+@{
+    ViewBag.Title = "blog";
+    Layout = "~/Views/Shared/Web_Layout.cshtml";
+}
+<section class="page-title text-center" style="background-image:url(../../afluexit/images/background/page_blog.jpeg);">
+    <div class="container">
+        <h1>Blog</h1>
+    </div>
+    <!--Page Info-->
+    <div class="page-info">
+        <div class="container clearfix">
+            <ul class="bread-crumb clearfix">
+                <li><a href="/web/index">Home</a> </li>
+                <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
+                <li>Blog</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="blog_page">
+    <div class="container">
+        <div class="row" id="">
+            @if (Model != null)
+            {
+                if (Model.List != null)
+                {
+                    foreach (var item in Model.List)
+                    {
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="blog_featured text-center">
+                                 <figure class="image">
+                                      <a href="/web/BlogDetails?id=@item.Pk_BlogId">
+                                           <img src="https://afluex.com/@item.FileName" alt="" class="img-fluid">
+                                       </a>
+                                  </figure>
+                             </div>
+                         </div>
+                          <div class="col-lg-9 col-md-9 col-sm-12">
+                               <div class="blog_details">
+                                   <div class="blog_title">
+                                        <h2><a href="/web/BlogDetails?id=@item.Pk_BlogId">@item.Title</a> </h2>
+                                    </div>
+                                   <div class="blog_inner">
+                                        <p>
+                                             @(new HtmlString(item.ShortDecription))
+                                         </p>
+                                       <div class="blog_time_eye clearfix">
+                                           <ul class="list-unsyled p-0">
+                                               <li class="list-inline-item"><span class="blog_icon"><i class="fa fa-calendar" aria-hidden="true"></i></span><a href="/Web/BlogDetails?id=@item.Pk_BlogId">@item.AddedOn</a></li>
+                                                <li class="list-inline-item"><span class="blog_icon"><i class="fa fa-user"></i> By</span> <a href="/web/BlogDetails?id=@item.Pk_BlogId">:@item.AddedBy</a></li>
+                                                @if (Model.lstcategory != null)
+                                                {
+                                                    foreach (var item1 in Model.lstcategory)
+                                                    {
+                                                        if (item.Pk_BlogId == item1.Pk_BlogId)
+                                                        {
+                                                             <li class="list-inline-item"><span class="blog_icon"><i class="fa fa-pencil-square-o"></i></span>
+                                               @item1.Fk_CategoryId</li>
+                                                        }
+                                                    }
+                                                }
+                                            </ul>
+                                        </div>
+                                       <div class="blog_btn">
+                                           <h5><a href="/web/BlogDetails?id=@item.Pk_BlogId">
+                                                Read More <i class="fas fa-long-arrow-alt-right"></i>
+                                                </a></h5>
+                                        </div>
+                                    </div>
+                               </div>
+                           </div>
+                    }
+                }
+            }
+
+            <input type="hidden" id="hfCurrentPageIndex" name="currentPageIndex" />
+        </div>
+     </div>
+</section>
+@*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />*@
+<script type="text/javascript">
+            function PagerClick(index) {
+                document.getElementById("hfCurrentPageIndex").value = index;
+                document.forms[0].submit();
+            }
+</script>
