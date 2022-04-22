@@ -619,6 +619,7 @@
     <Content Include="afluexit\css\bootstrap.min.css" />
     <Content Include="afluexit\css\fontawesome.min.css" />
     <Content Include="afluexit\css\glightbox.css" />
+    <Content Include="afluexit\css\home-style.css" />
     <Content Include="afluexit\css\owl.carousel.css" />
     <Content Include="afluexit\css\owl.carousel.min.css" />
     <Content Include="afluexit\css\responsive.css" />
@@ -1272,9 +1273,11 @@
     <Content Include="Views\WebSoftware\Edu_tech.cshtml" />
     <Content Include="Views\Home\thankyou2.cshtml" />
     <Content Include="Views\WebSoftware\thankyou2.cshtml" />
+    <Content Include="Views\Home\NewIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="afluexad\fontawesome\" />
+    <Folder Include="afluexit\images\home-img\" />
     <Folder Include="afluexit\images\portfolio\broadcast_advertising\" />
     <Folder Include="afluexit\images\portfolio\event_management\" />
     <Folder Include="afluexit\images\portfolio\outdoor_advertising\" />
