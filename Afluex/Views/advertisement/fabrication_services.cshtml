@@ -1,0 +1,92 @@
+﻿
+@{
+    ViewBag.Title = "fabricationservices";
+    Layout = "~/Views/Shared/Ad_LayoutPage.cshtml";
+}
+
+<section class="page-title text-center" style="background-image:url(../../afluexad/images/background/page_services.jpeg);">
+    <div class="container">
+        <h1>Fabrication Services In Lucknow</h1>
+    </div>
+    <!--Page Info-->
+    <div class="page-info">
+        <div class="container clearfix">
+            <ul class="bread-crumb clearfix">
+                <li><a href="/Home/advertising-agency">Home</a> </li>
+                <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
+                <li>Fabrication Services</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- End Page Title -->
+
+<section class="our_services">
+    <div class="container">
+        <div class="row">
+            <!-- Info Column -->
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                <div class="services_inner_column">
+                    <div class="ser_title">
+                        <h2>Fabrication Services</h2>
+                        <h5>Fabrication Services Agency in Lucknow, India </h5>
+                        <div class="mt-4 mb-4">
+                            <img src="~/afluexad/images/services/fabrication-ser.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="services_content_details">
+                        <p><strong>For a friendly, dedicated and flexible metal fabrication service, get in touch with us today</strong></p>
+                        <p>
+                            Afluex Multiservices LLP is offering Advertisement Sign Board Fabrication Service that is undertaken by our team of skilled professionals; closely interact with the clients according to their requirements. Apart from this,
+                            it is imparted using the latest techniques in such a way to provides maximum efficiency, reliability, and promptness. This service is rendered in complete compliance with business quality standards. Clients can avail this
+                            service at a market-leading price.
+                        </p>
+                        <p>
+                            We also collaborate with the brand identity as well as concentrates on the drawings and specifications through the process of creating a fabrication for your brand. Afluex has gained substantial experience and success in a
+                            multitude of fabrication designs such as – exhibition stands, kiosk, promotional stands, metal works, signages, and other branding material.
+                        </p>
+                        <div class="row">
+                            <div class="col-md-3 col-lg-3 col-sm-12">
+                                <img src="~/afluexad/images/services/fabri1.png" class="img-fluid">
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-12">
+                                <img src="~/afluexad/images/services/fabri2.jpg" class="img-fluid">
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-12">
+                                <img src="~/afluexad/images/services/fabri3.jpg" class="img-fluid">
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-12">
+                                <img src="~/afluexad/images/services/fabri4.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-3 col-lg-3 col-sm-12">
+                                <img src="~/afluexad/images/services/fabri5.jpg" class="img-fluid">
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-12">
+                                <img src="~/afluexad/images/services/fabri6.jpg" class="img-fluid">
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-12">
+                                <img src="~/afluexad/images/services/fabri7.jpg" class="img-fluid">
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-sm-12">
+                                <img src="~/afluexad/images/services/fabri8.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Column -->
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                <div class="services_inner_column">
+                    <div class="ser_title">
+                        <h2>For Quick Demo</h2>
+                    </div>
+                    @{Html.RenderAction("DemoContact", "web", new { area = "" });}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
