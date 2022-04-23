@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>@ViewBag.Title</title>
+    <link rel="icon" type="png/jpg" href="~/AdminCss/images/logo-load1.png"/>
     <link href="../../AdminCss/css/lib/amchart/export.css" rel="stylesheet" />
     <link href="../../AdminCss/css/lib/owl.carousel.min.css" rel="stylesheet" />
     <link href="../../AdminCss/css/lib/owl.theme.default.min.css" rel="stylesheet" />
@@ -20,32 +21,45 @@
             <nav class="navbar top-navbar navbar-expand-md navbar-light">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#">
-                        <span>
-                            <img src="../../MainPagecss/images/logo-black.png" alt="homepage" class="dark-logo" style="width: 213px" />
+                        <b><img src="~/AdminCss/images/logo-load1.png" alt="homepage" class="dark-logo" style="height:60px;width:120px;"></b>
+                        <span style="display: none;">
+                          <img src="~/AdminCss/images/logo-black1.png" alt="homepage" class="dark-logo" style="height:70px;"/>
+                        </span>
                     </a>
+                  
                 </div>
 
                 <div class="navbar-collapse">
                     <ul class="navbar-nav mr-auto mt-md-0">
                         <li class="nav-item"><a class="nav-link toggle-nav hidden-md-up text-muted" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a></li>
                         <li class="nav-item m-l-10"><a class="nav-link sidebartoggle hidden-sm-down text-muted" href="javascript:void(0)"><i class="ti-menu"></i></a></li>
-                       
-
+              
                     </ul>
 
                     <ul class="navbar-nav my-lg-0">
-                        
-                        <li class="nav-item dropdown">
+                        <li class="dropdown dropdown-user nav-item">
+                            <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown" aria-expanded="false">
+                               <span class="mr-1 user-name text-bold-700 text-white">Welcome @Session["FullName"] (User ID : @Session["LoginID"])</span>
+                              <span class="avatar avatar-online"><img src="~/afluexad/images/Afluex-logo/favicon.png" alt="avatar" style="border-radius:50%;background:#fff;height:50px;"><i></i></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                               
+                                <a class="dropdown-item" href="/Home/Login">
+                                <i class="fa fa-power-off"></i> Logout
+                                </a>
+                            </div>
+                        </li>
+                        @*<li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>Welcome @Session["FullName"] (User ID : @Session["LoginID"])</b> &nbsp;<i class="fa fa-user"></i></a>
                             <div class="dropdown-menu dropdown-menu-right animated slideInRight">
                                 <ul class="dropdown-user">
                                     @*<li><a href="/User/ChangePassword">Change Password</a></li>
-                                    <li><a href="/User/ViewProfile">View Profile</a></li>*@
+                                    <li><a href="/User/ViewProfile">View Profile</a></li>
                                     <li role="separator" class="divider"></li>
                                     <li><a href="/Home/Login">Logout</a></li>
                                 </ul>
                             </div>
-                        </li>
+                        </li>*@
                     </ul>
                 </div>
             </nav>
@@ -74,10 +88,6 @@
                                
                             </ul>
                         </li>
-                        
-
-                        
-                       
                         <li><a class="" href="/Home/Login" aria-expanded="false"><i class="fa fa-sign-out"></i><span class="hide-menu">Logout</span></a>
                     </ul>
                 </nav>
@@ -127,7 +137,14 @@
     <script src="./../AdminCss/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
     <script src="./../AdminCss/js/lib/datatables/datatables-init.js"></script>
 
-
+    <script>
+        $(document).ready(function () {
+            $(".sidebar-mini")(function () {
+                alert("ok");
+                $(".logo").css("display", "block");
+            });
+        });
+    </script>
 
     <style>
         .blink-box-1 {

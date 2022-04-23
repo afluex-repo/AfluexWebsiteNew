@@ -479,7 +479,7 @@ h6 {
 .header {
     position: relative;
     z-index: 50;
-    background: #fff;
+    background-image: linear-gradient(to right, #3fa4ad , #418fb2);
     box-shadow: 1px 0 5px rgba(0,0,0,.1);
     z-index: 999;
 }
@@ -512,7 +512,7 @@ h6 {
                 .header .top-navbar .navbar-header .navbar-brand b {
                     line-height: 60px;
                     display: inline-block;
-                    width: 24px;
+                    width: 40px;
                 }
 
                     .header .top-navbar .navbar-header .navbar-brand b img {
@@ -1109,6 +1109,7 @@ textarea {
 
     .sidebar-nav > ul > li {
         margin-bottom: 5px;
+        margin-top:10px;
     }
 
         .sidebar-nav > ul > li > a {
@@ -1203,10 +1204,10 @@ textarea {
     height: 100%;
     top: 0;
     z-index: 20;
-    padding-top: 60px;
+    padding-top: 40px;
     background: #fff;
-    -webkit-box-shadow: 1px 0 20px rgba(0,0,0,.08);
-    box-shadow: 1px 0 20px rgba(0,0,0,.08);
+    box-shadow: 0 5px 20px rgb(0 0 0 / 26%);
+    -webkit-box-shadow: 0 5px 20px rgb(0 0 0 / 26%);
 }
 
 .fix-sidebar .left-sidebar {
