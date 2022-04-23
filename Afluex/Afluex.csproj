@@ -597,10 +597,6 @@
     <Content Include="AdminCss\images\avatar\4.jpg" />
     <Content Include="AdminCss\images\c1.jpg" />
     <Content Include="AdminCss\images\favicon.png" />
-    <Content Include="AdminCss\images\logo-black.png" />
-    <Content Include="AdminCss\images\logo-black1.png" />
-    <Content Include="AdminCss\images\logo-load.png" />
-    <Content Include="AdminCss\images\logo-load1.png" />
     <Content Include="AdminCss\images\paypal.png" />
     <Content Include="AdminCss\js\custom.min.js" />
     <Content Include="AdminCss\js\dashboard-1.js" />
@@ -2108,7 +2104,6 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Home\thankyou.cshtml" />
-    <Content Include="Views\Shared\_AdminLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="afluexad\fontawesome\" />
@@ -2146,7 +2141,9 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>59831</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:59832/</IISUrl>
+          <IISUrl>http://localhost:59834/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:59834/</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
