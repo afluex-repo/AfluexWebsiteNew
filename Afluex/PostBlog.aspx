@@ -116,7 +116,7 @@
 
                                 <asp:TemplateField HeaderText="Action" HeaderStyle-CssClass="orange">
                                     <ItemTemplate>
-                                        <asp:ImageButton ID="imgDelete" CommandName="Delete" OnClientClick="return confirm('Do you want to delete this Image ?') " runat="server" ImageUrl="~/images/delete.png" Height="18" Width="18" />
+                                        <asp:ImageButton ID="imgDelete" CommandName="Delete" OnClientClick="return confirm('Do you want to delete this Image ?') " runat="server" ImageUrl="afluexit/images/delete.png" Height="18" Width="18" />
                                     </ItemTemplate>
                                     <HeaderStyle CssClass="orange"></HeaderStyle>
                                 </asp:TemplateField>
