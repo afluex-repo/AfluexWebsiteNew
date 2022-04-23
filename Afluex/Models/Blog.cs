@@ -13,7 +13,7 @@ namespace Afluex.Models
         public string CategoryName { get; set; }
         public string Fk_CategoryId { get; set; }
         public string Pk_BlogId { get; set; }
-
+        public string Pk_BlogImageId { get; set; }
         public string Title { get; set; }
         [AllowHtml]
         public string ShortDecription { get; set; }
@@ -48,6 +48,21 @@ namespace Afluex.Models
             DataSet ds = Connection.ExecuteQuery("SaveBlog", para);
             return ds;
         }
+        public DataSet UpdateBlog()
+        {
+            SqlParameter[] para = {
+                                    new SqlParameter("@BlogCategory", Fk_CategoryId),
+                                    new SqlParameter("@BlogImages", dtimages),
+                                    new SqlParameter("@Title", Title),
+                                    new SqlParameter("@ShortDescription", ShortDecription),
+                                    new SqlParameter("@Description", Decription),
+                                    new SqlParameter("@AddedBy", AddedBy),
+                                    new SqlParameter("@Pk_BlogId",Pk_BlogId),
+
+                                  };
+            DataSet ds = Connection.ExecuteQuery("UpdateBlog", para);
+            return ds;
+        }
         public DataSet GetBlog()
         {
             SqlParameter[] para = {
@@ -76,9 +91,41 @@ namespace Afluex.Models
             return ds;
         }
 
+        public DataSet GetBlogListByid()
+        {
+            SqlParameter[] para = {
+                                    new SqlParameter("@PK_BlogId", Pk_BlogId),
+
+                                  };
+            DataSet ds = Connection.ExecuteQuery("GetBlogList", para);
+            return ds;
+        }
+
         public DataSet GetCareerList()
         {
             DataSet ds = Connection.ExecuteQuery("GetCareerList");
+            return ds;
+        }
+        public DataSet Deleteblog()
+        {
+            SqlParameter[] para = {
+                                    new SqlParameter("@DeletedBy",AddedBy),
+                                    new SqlParameter("@PK_BlogID", Pk_BlogId),
+
+
+                                  };
+            DataSet ds = Connection.ExecuteQuery("DeleteBlog", para);
+            return ds;
+        }
+        public DataSet DeleteBlogImage()
+        {
+            SqlParameter[] para = {
+                                    new SqlParameter("@DeletedBy",AddedBy),
+                                    new SqlParameter("@Pk_BlogImageId",Pk_BlogImageId),
+
+
+                                  };
+            DataSet ds = Connection.ExecuteQuery("DeleteBlogImage", para);
             return ds;
         }
     }

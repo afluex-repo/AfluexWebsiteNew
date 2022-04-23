@@ -1,0 +1,50 @@
+.sticky-container {
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    right: -170px;
+    top: 150px;
+    width: 210px;
+    z-index: 1100;
+}
+
+.sticky1 li {
+    list-style-type: none;
+    background-color: #fff;
+    color: #efefef;
+    border-radius: 50px;
+    height: 43px;
+    padding: 0px;
+    margin: 0px 0px 1px 0px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+    .sticky1 li:hover {
+        margin-left: -115px;
+    }
+
+    .sticky1 li img {
+        float: left;
+        margin: 5px 4px;
+        margin-right: 5px;
+    }
+
+    .sticky1 li p {
+        padding-top: 5px;
+        margin: 0px;
+        line-height: 16px;
+        font-size: 11px;
+    }
+
+        .sticky1 li p a {
+            text-decoration: none;
+            color: #2C3539;
+        }
+
+            .sticky1 li p a:hover {
+                text-decoration: underline;
+            }
