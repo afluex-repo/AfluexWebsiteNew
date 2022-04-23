@@ -44,6 +44,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="0Harmony, Version=1.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lib.Harmony.1.2.0.1\lib\net45\0Harmony.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="BotDetect, Version=4.4.2.0, Culture=neutral, PublicKeyToken=74616036388b765f, processorArchitecture=MSIL">
       <HintPath>..\packages\Captcha.4.4.2\lib\net35\BotDetect.dll</HintPath>
       <Private>True</Private>
@@ -99,6 +103,10 @@
     </Reference>
     <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
       <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Solid.Extensions.System.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Solid.Extensions.System.Web.1.0.0\lib\net461\Solid.Extensions.System.Web.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -280,6 +288,13 @@
     <Compile Include="Models\Home.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\PageMetaModel.cs" />
+    <Compile Include="PostBlog.aspx.cs">
+      <DependentUpon>PostBlog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PostBlog.aspx.designer.cs">
+      <DependentUpon>PostBlog.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
@@ -582,6 +597,10 @@
     <Content Include="AdminCss\images\avatar\4.jpg" />
     <Content Include="AdminCss\images\c1.jpg" />
     <Content Include="AdminCss\images\favicon.png" />
+    <Content Include="AdminCss\images\logo-black.png" />
+    <Content Include="AdminCss\images\logo-black1.png" />
+    <Content Include="AdminCss\images\logo-load.png" />
+    <Content Include="AdminCss\images\logo-load1.png" />
     <Content Include="AdminCss\images\paypal.png" />
     <Content Include="AdminCss\js\custom.min.js" />
     <Content Include="AdminCss\js\dashboard-1.js" />
@@ -1194,6 +1213,7 @@
     <Content Include="afluexit\images\client\a5.png" />
     <Content Include="afluexit\images\client\a6.png" />
     <Content Include="afluexit\images\creativity_icon.png" />
+    <Content Include="afluexit\images\delete.png" />
     <Content Include="afluexit\images\divider.png" />
     <Content Include="afluexit\images\dividert.png" />
     <Content Include="afluexit\images\effective_icon.png" />
@@ -1502,6 +1522,7 @@
     <Content Include="fscss\js\modernizr.custom.js" />
     <Content Include="Global.asax" />
     <Content Include="obj\Release\Afluex.dll" />
+    <Content Include="PostBlog.aspx" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -2084,6 +2105,10 @@
     <Content Include="SoftwareCss\fonts\Flaticon.woff" />
     <Content Include="SoftwareCss\fonts\Flaticon.woff2" />
     <Content Include="SoftwareCss\fonts\Flaticond41d.eot" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\thankyou.cshtml" />
+    <Content Include="Views\Shared\_AdminLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="afluexad\fontawesome\" />

@@ -94,10 +94,10 @@ namespace Afluex.Models
         public DataSet GetBlogListByid()
         {
             SqlParameter[] para = {
-                                    new SqlParameter("@Pk_BlogId", Pk_BlogId),
+                                    new SqlParameter("@PK_BlogId", Pk_BlogId),
 
                                   };
-            DataSet ds = Connection.ExecuteQuery("GetBlogListbyid", para);
+            DataSet ds = Connection.ExecuteQuery("GetBlogList", para);
             return ds;
         }
 

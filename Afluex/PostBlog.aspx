@@ -1,90 +1,102 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PostBlog.aspx.cs" Inherits="Afluex.PostBlog" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PostBlog.aspx.cs" Inherits="Afluex.PostBlog" ValidateRequest="false" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Post Blog</title>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet" />
+    <style>
+        .container-fluid {
+            padding: 0 30px 25px;
+        }
+       label{
+           color:#607d8b;
+           font-weight:500;
+       }
+        .card
+        {
+        background: #fff;
+        margin: 15px 0;
+        padding: 12px;
+        border: 0 solid rgba(120,130,140,.13);
+        border-radius: 5px;
+        box-shadow: 0 5px 20px rgb(0 0 0 / 26%);
+        }
+    </style>
 </head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  
+
+  <%@ Register TagPrefix="asp" Namespace="System.Web.UI" Assembly="System.Web"%>
 <body>
 
     <form id="form1" runat="server">
-        <asp:ScriptManager ID="scrip" runat="server"></asp:ScriptManager>
+     <%--   <asp:ScriptManager ID="scrip" runat="server"></asp:ScriptManager>--%>
 
-
+        <div class="container-fluid">
         <div class="card">
             <div class="card-body">
-                <h1 class="card-title">
-                    <center>Post Blog</center>
-                </h1>
+                <h3 class="card-title">Post Blog
+                </h3>
                 <br />
-                <asp:UpdatePanel ID="udp" runat="server">
-                    <ContentTemplate>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="col-md-6">
-                                    Select Category
-                    <asp:DropDownList ID="ddlcategory" runat="server" CssClass="form-control" OnSelectedIndexChanged="ddlcategory_SelectedIndexChanged" AutoPostBack="true"></asp:DropDownList>
-                                    <asp:Button ID="btnclear" runat="server" Text="Clear All" CssClass="btn btn-info btn-sm" OnClick="btnclear_Click"/>
-                                </div>
-                                <div class="col-md-6">
-                                    Selected Category
-                    <asp:TextBox ID="ddlcategorname" runat="server" ForeColor="Blue" Enabled="false" CssClass="form-control"></asp:TextBox>
-                                    <asp:Label ID="ddlcategoryid" runat="server" Visible="false"></asp:Label>
-                                </div>
-                            </div>
+                <%--  <asp:UpdatePanel ID="udp" runat="server">
+                    <ContentTemplate>--%>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-6">
+                            <label>Select Category</label>
+                            <asp:DropDownList ID="ddlcategory" runat="server" CssClass="form-control" OnSelectedIndexChanged="ddlcategory_SelectedIndexChanged" AutoPostBack="true"></asp:DropDownList><br />
+                            <asp:Button ID="btnclear" runat="server" Text="Clear All" CssClass="btn btn-info btn-sm" OnClick="btnclear_Click" />
                         </div>
-                    </ContentTemplate>
-                </asp:UpdatePanel>
+                        <div class="col-md-6">
+                            <label>Selected Category</label>
+                            <asp:TextBox ID="ddlcategorname" runat="server" ForeColor="Blue" Enabled="false" CssClass="form-control"></asp:TextBox>
+                            <asp:Label ID="ddlcategoryid" runat="server" Visible="false"></asp:Label>
+                        </div>
+                        <div class="col-md-12">
+                            <label>Title</label>
+                            <asp:TextBox ID="txttitle" runat="server" CssClass="form-control"></asp:TextBox>
+                        </div>
+                    </div>
+
+                </div>
+                <%-- </ContentTemplate>
+                </asp:UpdatePanel>--%>
+                <div class="row mt-3">
+                </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="col-md-12">
-                            Title
-                    <asp:TextBox ID="txttitle" runat="server" CssClass="form-control"></asp:TextBox>
-                        </div>
+                            <label>Short Description</label>
+                            <div id="txtshortdecription" class="click2edit"></div>
 
+                        </div>
+                        <asp:TextBox ID="hdnshortdescription" runat="server" CssClass="hidden"></asp:TextBox>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="col-md-12">
-                            Short Description
-                     <div id="txtshortdecription" class="click2edit"></div>
+                            <label>Description</label>
+                            <div id="txtdescription" class="click2edit"></div>
 
                         </div>
-                       <asp:TextBox ID="hdnshortdescription" runat="server" CssClass="hidden"></asp:TextBox>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="col-md-12">
-                            Description
-                     <div id="txtdescription" class="click2edit"></div>
-
-                        </div>
-                         <asp:TextBox ID="hdndescription" runat="server" CssClass="hidden" ></asp:TextBox>
+                        <asp:TextBox ID="hdndescription" runat="server" CssClass="hidden"></asp:TextBox>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="col-md-6">
-                            Upload Multiple File
-                        <asp:FileUpload ID="flpimages" runat="server" AllowMultiple="true" />
+                            <label>Upload Multiple File</label>
+                            <asp:FileUpload ID="flpimages" runat="server" AllowMultiple="true" />
 
                         </div>
-                          <div class="col-md-6">
-                        <asp:GridView ID="gredimages" runat="server" OnRowDeleting="gredimages_RowDeleting" AutoGenerateColumns="False" EmptyDataText="No Record Found"
-                            CssClass="display nowrap table table-hover table-striped table-bordered dataTable no-footer" Width="100%">
-                            <Columns>
+                        <div class="col-md-6">
+                            <asp:GridView ID="gredimages" runat="server" OnRowDeleting="gredimages_RowDeleting" AutoGenerateColumns="False" EmptyDataText="No Record Found"
+                                CssClass="display nowrap table table-hover table-striped table-bordered dataTable no-footer" Width="100%">
+                                <columns>
                                 <asp:TemplateField HeaderText="S.No." HeaderStyle-CssClass="orange">
                                     <ItemTemplate>
                                         <%# Container.DataItemIndex + 1 %>
@@ -104,36 +116,38 @@
 
                                 <asp:TemplateField HeaderText="Action" HeaderStyle-CssClass="orange">
                                     <ItemTemplate>
-                                        <asp:ImageButton ID="imgDelete" CommandName="Delete" OnClientClick="return confirm('Do you want to delete this Image ?') " runat="server" ImageUrl="~/images/delete.png" Height="18" Width="18" />
+                                        <asp:ImageButton ID="imgDelete" CommandName="Delete" OnClientClick="return confirm('Do you want to delete this Image ?') " runat="server" ImageUrl="afluexit/images/delete.png" Height="18" Width="18" />
                                     </ItemTemplate>
                                     <HeaderStyle CssClass="orange"></HeaderStyle>
                                 </asp:TemplateField>
-                            </Columns>
+                            </columns>
 
-                        </asp:GridView>
-                    </div>
+                            </asp:GridView>
                         </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-12">
+                        <div class="col-md-6">
                             <br />
                             <asp:Button ID="btnpost" runat="server" Text="Post Blog" CssClass="btn btn-primary" OnClick="btnpost_Click" OnClientClick="return falidate();" />
-                          <asp:Button ID="btnUpdate" runat="server" Text="Update Blog" OnClick="btnUpdate_Click" CssClass="btn btn-primary" OnClientClick="return falidate();" Visible="false" />
+                            <asp:Button ID="btnUpdate" runat="server" Text="Update Blog" OnClick="btnUpdate_Click" CssClass="btn btn-primary" OnClientClick="return falidate();" Visible="false" />
                             <asp:HiddenField ID="shortdecription" runat="server" />
                             <asp:HiddenField ID="description" runat="server" />
                         </div>
+                    </div>
                 </div>
+
             </div>
         </div>
-
+        </div>
 
     </form>
-</body>
-</html>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js" defer></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet" />
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js"></script>
+    <script>
 
     $(document).ready(function () {
        
@@ -203,4 +217,10 @@
        
     }
 </script>
+
+</body>
+</html>
+
+
+
 
