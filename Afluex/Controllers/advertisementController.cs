@@ -260,23 +260,18 @@ namespace Afluex.Controllers
             {
                 ViewBag.Message = "Captcha validation failed";
                 TempData["ContactMsg"] = "Captcha validation failed";
-                return RedirectToAction("contactus", "web");
+                return RedirectToAction("contactus", "advertisement");
             }
-
             string FormName = "";
             string Controller = "";
             try
             {
                 model.ContactusType = "AD";
-
-                DataSet ds = model.SaveContactUs();
+                DataSet ds = model.SaveContactus();
                 if (ds != null && ds.Tables.Count > 0)
                 {
                     if (ds.Tables[0].Rows[0][0].ToString() == "1")
                     {
-
-
-
                         string mailbody = "";
                         try
                         {
@@ -293,9 +288,7 @@ namespace Afluex.Controllers
                                 DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                                 UseDefaultCredentials = false,
                                 Credentials = new NetworkCredential(fromAddress.Address, "afluex@7310")
-
                             };
-
                             using (var message = new MailMessage(fromAddress, toAddress)
                             {
                                 IsBodyHtml = true,
@@ -303,14 +296,7 @@ namespace Afluex.Controllers
                                 Body = mailbody
                             })
                                 smtp.Send(message);
-
-
-
                         }
-
-
-
-
                         catch (Exception ex)
                         {
                             //throw ex;
@@ -331,13 +317,9 @@ namespace Afluex.Controllers
                         string messagelbody = "";
                         try
                         {
-
-
                             messagelbody = "<b>Dear team</b>" + "<br/>" + "You got a contact whose " + "<br/>" + " Name : " + model.Name + "<br/>" + " Mobile : " + model.Mobile + "<br/>" + " Message : " + model.Message;
-
                             var fromAddress = new MailAddress("contact.afluex@gmail.com");
                             var toAddress = new MailAddress("contact.afluex@gmail.com");
-
                             System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient
                             {
                                 Host = "smtp.gmail.com",
@@ -348,7 +330,6 @@ namespace Afluex.Controllers
                                 Credentials = new NetworkCredential(fromAddress.Address, "afluex@7310")
 
                             };
-
                             using (var message = new MailMessage(fromAddress, toAddress)
                             {
                                 IsBodyHtml = true,
@@ -357,19 +338,13 @@ namespace Afluex.Controllers
                             })
                                 smtp.Send(message);
                             //TempData["ContactMsg"] = "message has been sent. ";
-
-
                         }
-
                         catch (Exception ex)
                         {
                             //throw ex;
                         }
-
-
                         string mobs = "7310000413";
                         string str2 = "You got a contact whose name-" + model.Name + " , mob-" + model.Mobile + ", msg-" + model.Message;
-
                         try
                         {
                             BLSMS.SendSMS(mobs, str2);
@@ -386,7 +361,7 @@ namespace Afluex.Controllers
                     else
                     {
                         TempData["ContactMsg"] = ds.Tables[0].Rows[0]["ErrorMessage"].ToString();
-                        FormName = "Contactus";
+                        FormName = "contactus";
                         Controller = "advertisement";
                     }
                 }
@@ -394,22 +369,16 @@ namespace Afluex.Controllers
             catch (Exception ex)
             {
                 TempData["ContactMsg"] = ex.Message;
-                FormName = "Contactus";
+                FormName = "contactus";
                 Controller = "advertisement";
             }
             return RedirectToAction(FormName, Controller);
-
-
-
-
         }
 
         public ActionResult thankyou()
         {
-
             return View();
         }
-
         #endregion contactus
 
         #region Blog

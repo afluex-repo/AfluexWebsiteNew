@@ -284,7 +284,7 @@ namespace Afluex.Controllers
             try
             {
                 model.ContactusType = "AD";
-                DataSet ds = model.SaveContactUs();
+                DataSet ds = model.SaveContactus();
                 if (ds != null && ds.Tables.Count > 0)
                 {
                     if (ds.Tables[0].Rows[0][0].ToString() == "1")
