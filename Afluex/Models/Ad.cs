@@ -35,37 +35,37 @@ namespace Afluex.Models
 
 
 
-        //public DataSet SaveContactus()
-        //{
-        //    SqlParameter[] para =
-        //                    {
-        //                                new SqlParameter("@Name",Name),
-        //                                new SqlParameter("@Mobile",Mobile),
-        //                                new SqlParameter("@Email",Email),
-        //                                new SqlParameter("@Message",Message),
-        //                                new SqlParameter("@About",About),
-        //                                new SqlParameter("@ContactusType",ContactusType)
-
-        //                    };
-        //    DataSet ds = Connection.ExecuteQuery("InsertContactUsDetails", para);
-        //    return ds;
-        //}
-
-        public DataSet SaveContactUs()
+        public DataSet SaveContactus()
         {
             SqlParameter[] para =
-                           {
+                            {
                                         new SqlParameter("@Name",Name),
-                                        new SqlParameter("@About",About),
-                                        new SqlParameter("@MobileNo",Mobile),
-                                         new SqlParameter("@EmailId",Email),
-
+                                        new SqlParameter("@Mobile",Mobile),
+                                        new SqlParameter("@Email",Email),
                                         new SqlParameter("@Message",Message),
+                                        new SqlParameter("@About",About),
+                                        new SqlParameter("@ContactusType",ContactusType)
 
                             };
-            DataSet ds = Connection.ExecuteQuery("SaveEnquiryAD", para);
+            DataSet ds = Connection.ExecuteQuery("InsertContactUsDetails", para);
             return ds;
         }
+
+        //public DataSet SaveContactUs()
+        //{
+        //    SqlParameter[] para =
+        //                   {
+        //                                new SqlParameter("@Name",Name),
+        //                                new SqlParameter("@About",About),
+        //                                new SqlParameter("@MobileNo",Mobile),
+        //                                 new SqlParameter("@EmailId",Email),
+
+        //                                new SqlParameter("@Message",Message),
+
+        //                    };
+        //    DataSet ds = Connection.ExecuteQuery("SaveEnquiryAD", para);
+        //    return ds;
+        //}
 
 
         public DataSet SaveCareer()

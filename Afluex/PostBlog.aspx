@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PostBlog.aspx.cs" Inherits="Afluex.PostBlog" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PostBlog.aspx.cs" Inherits="Afluex.PostBlog" ValidateRequest="false" %>
 
 <!DOCTYPE html>
 
@@ -14,21 +14,21 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  
+  <%@ Register TagPrefix="asp" Namespace="System.Web.UI" Assembly="System.Web"%>
 <body>
 
     <form id="form1" runat="server">
-        <asp:ScriptManager ID="scrip" runat="server"></asp:ScriptManager>
+     <%--   <asp:ScriptManager ID="scrip" runat="server"></asp:ScriptManager>--%>
 
 
         <div class="card">
             <div class="card-body">
                 <h1 class="card-title">
-                    <center>Post Blog</center>
+                    <h3>Post Blog</h3>
                 </h1>
                 <br />
-                <asp:UpdatePanel ID="udp" runat="server">
-                    <ContentTemplate>
+              <%--  <asp:UpdatePanel ID="udp" runat="server">
+                    <ContentTemplate>--%>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="col-md-6">
@@ -43,8 +43,8 @@
                                 </div>
                             </div>
                         </div>
-                    </ContentTemplate>
-                </asp:UpdatePanel>
+                   <%-- </ContentTemplate>
+                </asp:UpdatePanel>--%>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="col-md-12">

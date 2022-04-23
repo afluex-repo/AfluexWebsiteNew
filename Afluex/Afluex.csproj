@@ -280,6 +280,13 @@
     <Compile Include="Models\Home.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\PageMetaModel.cs" />
+    <Compile Include="PostBlog.aspx.cs">
+      <DependentUpon>PostBlog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PostBlog.aspx.designer.cs">
+      <DependentUpon>PostBlog.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
@@ -1502,6 +1509,7 @@
     <Content Include="fscss\js\modernizr.custom.js" />
     <Content Include="Global.asax" />
     <Content Include="obj\Release\Afluex.dll" />
+    <Content Include="PostBlog.aspx" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -2084,6 +2092,9 @@
     <Content Include="SoftwareCss\fonts\Flaticon.woff" />
     <Content Include="SoftwareCss\fonts\Flaticon.woff2" />
     <Content Include="SoftwareCss\fonts\Flaticond41d.eot" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\thankyou.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="afluexad\fontawesome\" />

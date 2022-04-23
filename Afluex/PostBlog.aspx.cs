@@ -57,7 +57,7 @@ namespace Afluex
                 ddlcategorname.Text = ds.Tables[0].Rows[0]["CategoryName"].ToString();
                 shortdecription.Value = ds.Tables[0].Rows[0]["ShortDecription"].ToString();
                 description.Value = ds.Tables[0].Rows[0]["Description"].ToString();
-                gredimages.DataSource = ds.Tables[1];
+                gredimages.DataSource = ds.Tables[0];
                 gredimages.DataBind();
                 gredimages.Visible = true;
                 btnUpdate.Visible = true;
@@ -244,7 +244,7 @@ namespace Afluex
                 {
                     foreach (HttpPostedFile uploadedFile in flpimages.PostedFiles)
                     {
-                        String path = HttpContext.Current.Request.PhysicalApplicationPath + "images\\blog\\";
+                        String path = HttpContext.Current.Request.PhysicalApplicationPath + "afluexit\\images\\blog\\";
                         string filename = DateTime.Now.ToString("ddMMyyyyHHmmsss") + uploadedFile.FileName;
 
                         //uploadedFile.SaveAs(System.IO.Path.Combine(Server.MapPath("~/Images/NewsSecondaryImage"), filename));
@@ -294,104 +294,7 @@ namespace Afluex
                     }
                 }
                 #endregion ImageEn
-                //#region Images
-                //if (flpimages.HasFiles)
-                //{
-                //    foreach (HttpPostedFile uploadedFile in flpimages.PostedFiles)
-                //    {
-                //        String path = HttpContext.Current.Request.PhysicalApplicationPath + "Blog\\";
-                //        string filename = DateTime.Now.ToString("ddMMyyyyHHmmsss") + uploadedFile.FileName;
-
-                //        //uploadedFile.SaveAs(System.IO.Path.Combine(Server.MapPath("~/Images/ProdSecondaryImage"), filename));
-                //        Stream strm = uploadedFile.InputStream;
-                //        using (var image = System.Drawing.Image.FromStream(strm))
-                //        {
-                //            #region 377*200
-                //            int newWidth = Convert.ToInt32(377);
-                //            int newHeight = Convert.ToInt32(200);
-
-                //            var thumbImg = new SD.Bitmap(newWidth, newHeight);
-                //            var thumbGraph = SD.Graphics.FromImage(thumbImg);
-                //            thumbGraph.CompositingQuality = CompositingQuality.HighQuality;
-                //            thumbGraph.SmoothingMode = SmoothingMode.HighQuality;
-                //            thumbGraph.InterpolationMode = InterpolationMode.HighQualityBicubic;
-                //            var imgRectangle = new SD.Rectangle(0, 0, newWidth, newHeight);
-                //            thumbGraph.DrawImage(image, imgRectangle);
-
-                //            string targetPath = Server.MapPath("~/Blog/") + filename;
-                //            thumbImg.Save(targetPath, image.RawFormat);
-                //            #endregion 377*200
-
-                //            #region 150*150
-                //            newWidth = Convert.ToInt32(150);
-                //            newHeight = Convert.ToInt32(150);
-
-                //            thumbImg = new SD.Bitmap(newWidth, newHeight);
-                //            thumbGraph = SD.Graphics.FromImage(thumbImg);
-                //            thumbGraph.CompositingQuality = CompositingQuality.HighQuality;
-                //            thumbGraph.SmoothingMode = SmoothingMode.HighQuality;
-                //            thumbGraph.InterpolationMode = InterpolationMode.HighQualityBicubic;
-                //            imgRectangle = new SD.Rectangle(0, 0, newWidth, newHeight);
-                //            thumbGraph.DrawImage(image, imgRectangle);
-
-                //            targetPath = Server.MapPath("~/Blog/small/") + filename;
-                //            thumbImg.Save(targetPath, image.RawFormat);
-                //            #endregion 150*150
-
-
-
-
-                //        }
-                //        if (Session["dtSecImages"] != null)
-                //        {
-                //            dtImages = (DataTable)Session["dtSecImages"];
-                //            DataRow dr = null;
-
-                //            if (dtImages.Rows.Count > 0)
-                //            {
-
-                //                dr = dtImages.NewRow();
-
-                //                dr["ImagePath"] = "../../Blog/" + filename;
-
-
-                //                dtImages.Rows.Add(dr);
-
-
-
-                //                Session["dtSecImages"] = dtImages;
-                //            }
-                //        }
-                //        else
-                //        {
-
-
-                //            dtImages.Columns.Add("ImagePath", typeof(string));
-
-                //            DataRow dr = dtImages.NewRow();
-
-                //            dr["ImagePath"] = "../../Blog/Small/" + filename;
-
-                //            dtImages.Rows.Add(dr);
-                //            DataRow dr1 = null;
-                //            dr1 = dtImages.NewRow();
-
-                //            dr1["ImagePath"] = "../../Blog/" + filename;
-                //            dtImages.Rows.Add(dr1);
-                //            Session["dtSecImages"] = dtImages;
-
-
-                //        }
-                //    }
-                //}
-                //else
-                //{
-                //    dtImages.Columns.Add("ImageType", typeof(string));
-                //    dtImages.Columns.Add("ImagePath", typeof(string));
-
-
-                //}
-                //#endregion Images
+               
                 dtImages = (DataTable)Session["dtSecImages"];
                 objpost.dtimages = dtImages;
                 DataSet ds = objpost.UpdateBlog();
