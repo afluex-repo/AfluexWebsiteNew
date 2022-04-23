@@ -51,13 +51,15 @@ namespace Afluex
             DataSet ds = objpost.GetBlogListByid();
             if (ds != null && ds.Tables[0].Rows.Count > 0)
             {
+                ddlcategory.SelectedValue= ds.Tables[0].Rows[0]["PK_CategoryID"].ToString();
+                ddlcategorname.Text=ds.Tables[0].Rows[0]["CategoryName"].ToString();
                 txttitle.Text = ds.Tables[0].Rows[0]["Title"].ToString();
                 hdnshortdescription.Text = ds.Tables[0].Rows[0]["ShortDecription"].ToString();
                 hdndescription.Text = ds.Tables[0].Rows[0]["Description"].ToString();
                 ddlcategorname.Text = ds.Tables[0].Rows[0]["CategoryName"].ToString();
                 shortdecription.Value = ds.Tables[0].Rows[0]["ShortDecription"].ToString();
                 description.Value = ds.Tables[0].Rows[0]["Description"].ToString();
-                gredimages.DataSource = ds.Tables[0];
+                gredimages.DataSource = ds.Tables[1];
                 gredimages.DataBind();
                 gredimages.Visible = true;
                 btnUpdate.Visible = true;
