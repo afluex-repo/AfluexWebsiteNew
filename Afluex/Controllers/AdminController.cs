@@ -19,7 +19,6 @@ namespace Afluex.Controllers
       
         public ActionResult PostBlog(string ID)
         {
-         
             if (ID != null)
             {
                 Session["Pk_BlogId"] = ID;
