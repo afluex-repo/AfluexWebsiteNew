@@ -613,6 +613,7 @@ D:\Reena\Repo\AfluexWebsiteNew\Afluex\bin\roslyn\VBCSCompiler.exe.config
 D:\Reena\Repo\AfluexWebsiteNew\Afluex\bin\Afluex.dll.config
 D:\Reena\Repo\AfluexWebsiteNew\Afluex\bin\Afluex.dll
 D:\Reena\Repo\AfluexWebsiteNew\Afluex\bin\Afluex.pdb
+D:\Reena\Repo\AfluexWebsiteNew\Afluex\bin\0Harmony.dll
 D:\Reena\Repo\AfluexWebsiteNew\Afluex\bin\Antlr3.Runtime.dll
 D:\Reena\Repo\AfluexWebsiteNew\Afluex\bin\BotDetect.dll
 D:\Reena\Repo\AfluexWebsiteNew\Afluex\bin\BotDetect.Web.Mvc.dll
@@ -644,6 +645,7 @@ D:\Reena\Repo\AfluexWebsiteNew\Afluex\bin\Newtonsoft.Json.dll
 D:\Reena\Repo\AfluexWebsiteNew\Afluex\bin\Owin.dll
 D:\Reena\Repo\AfluexWebsiteNew\Afluex\bin\PagedList.dll
 D:\Reena\Repo\AfluexWebsiteNew\Afluex\bin\PagedList.Mvc.dll
+D:\Reena\Repo\AfluexWebsiteNew\Afluex\bin\Solid.Extensions.System.Web.dll
 D:\Reena\Repo\AfluexWebsiteNew\Afluex\bin\System.Data.SQLite.dll
 D:\Reena\Repo\AfluexWebsiteNew\Afluex\bin\System.Net.Http.Formatting.dll
 D:\Reena\Repo\AfluexWebsiteNew\Afluex\bin\System.Web.Helpers.dll
