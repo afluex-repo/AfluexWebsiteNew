@@ -701,4 +701,3 @@ E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Microsof
 E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
 E:\Divya\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 E:\Divya\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
-E:\Divya\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
