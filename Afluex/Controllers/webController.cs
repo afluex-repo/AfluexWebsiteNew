@@ -1552,14 +1552,14 @@ namespace Afluex.Controllers
 
                         string mobval = "7310000413";
                         string strval = "You got a quote Rquest from " + Name + " , Mob-" + Mobile + ", Project-" + ProjectType + " , Budget-" + YourBudget + ", Msg-" + Message;
-
+                        obj.Result = "Yes";
                         try
                         {
                            //BLSMS.SendSMS(mobval, strval);
                         }
                         catch { }
                         obj.Result = "Inquiry send successfully";
-                        //obj.Result = 'yes';
+                        obj.Result = "Yes";
                     }
                     else
                     {
