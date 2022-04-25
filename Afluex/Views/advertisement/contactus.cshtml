@@ -71,7 +71,7 @@
                         <div class="col-lg-12 col-md-12">
                             <div class="form-group mb-4">
                                 <div class="input-group">
-                                    @Html.TextAreaFor(m => m.Message, new { @class = "form-control", @cols = "80", @rows = "3", @Placeholder = "Message", @required = "required" })
+                                    @Html.TextAreaFor(m => m.CusMessage, new { @class = "form-control", @cols = "80", @rows = "3", @Placeholder = "Message", @required = "required" })
                                 </div>
                             </div>
                             @Html.MathCaptcha()
@@ -151,9 +151,9 @@
             return false;
         }
 
-        if ($('#Message').val() == '') {
-            $("#Message").addClass('errortext');
-            $('#Message').focus();
+        if ($('#CusMessage').val() == '') {
+            $("#CusMessage").addClass('errortext');
+            $('#CusMessage').focus();
             return false;
         }
         $("#divload").css({ 'display': 'show' });

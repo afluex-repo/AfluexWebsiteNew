@@ -14,7 +14,7 @@ namespace Afluex.Models
 
         public string FileUpload { get; set; }
         public string About { get; set; }
-
+        public string CusMessage { get; set; }
         public string Message { get; set; }
         public string ProjectType { get; set; }
         public string YourBudget { get; set; }
@@ -42,7 +42,7 @@ namespace Afluex.Models
                                         new SqlParameter("@Name",Name),
                                         new SqlParameter("@Mobile",Mobile),
                                         new SqlParameter("@Email",Email),
-                                        new SqlParameter("@Message",Message),
+                                        new SqlParameter("@Message",CusMessage),
                                         new SqlParameter("@About",About),
                                         new SqlParameter("@ContactusType",ContactusType)
 

@@ -501,7 +501,10 @@
                 DataType: "JSON",
                 data: { Name: $("#name").val(), Email: $("#email").val(), Mobile: $("#mobile").val(), ProjectType: $("#ProjectType").val(), YourBudget: $("#YourBudget").val(), Message: $("#Message").val(), InquiryType: InquiryType },
                 success: function (data) {
+                    debugger;
                     if (data.Result == "Yes") {
+                        debugger;
+
                         alert("Inquiry send successfully");
                         window.location.href = '@Url.Action("thankyou", "web")';
                     }
