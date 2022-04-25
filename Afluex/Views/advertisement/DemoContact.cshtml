@@ -32,7 +32,7 @@
             </div>
             <div class="mb-3">
                 @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @Placeholder = "User Email", @required = "required",
-               @onchange = "return ValidateEmail();"
+               @onchange = "return ValidateEmailIDCheck();"
            })
             </div>
             <div class="mb-3">
@@ -141,18 +141,17 @@
             }
 
 
-            function ValidateEmail() {
-                debugger;
-                var email = $("#Email").val();
-                var regx = /^([\w-\.]+)@@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+            function ValidateEmailIDCheck(event) {
+                debugger
+                var panVal = $('#Email').val();
+                var regpan = /^([\w-\.]+)@@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
 
-                if (regx.test(email)) {
-                    return true;
-                }
-                else {
-                    return false;
-                    //alert("Invalid email address.");
+                if (regpan.test(panVal)) {
+                    $("#Email").removeClass('errortext');
+                } else {
+                    alert("Invalid Email ID");
                     $("#Email").val('');
+                    $("#Email").addClass('errortext');
                 }
             }
         </script>

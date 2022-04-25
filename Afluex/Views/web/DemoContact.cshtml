@@ -29,17 +29,18 @@
     <div class="row clearfix" id="frm">
         <div class="enquiry_form">
             <div class="mb-3">
-                @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @Placeholder = "Name", @required = "required" })
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @Placeholder = "Name" })
             </div>
             <div class="mb-3">
-                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @Placeholder = "User Email", @required = "required",
-               @onchange = "return ValidateEmail();"})
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @Placeholder = "User Email",
+               @onchange = "return ValidateEmailIDCheck();"
+           })
             </div>
             <div class="mb-3">
-                @Html.TextBoxFor(m => m.Mobile, new {@class = "form-control", @Placeholder = "Mobile Number", @required = "required", @maxlength = "10", @onkeypress = "return isNumberKey(event) ;" })
+                @Html.TextBoxFor(m => m.Mobile, new { @class = "form-control", @Placeholder = "Mobile Number", @maxlength = "10", @onkeypress = "return isNumberKey(event) ;" })
             </div>
             <div class="mb-3">
-                @Html.TextAreaFor(m => m.CustMessage, new { @class = "form-control", @Placeholder = "Message", @required = "required" })
+                @Html.TextAreaFor(m => m.CustMessage, new { @class = "form-control", @Placeholder = "Message" })
             </div>
         </div>
 
@@ -58,7 +59,10 @@
             </div>
         </div>
         }
-        <script src="~/MainPagecss/js/jquery-1.11.3.min.js"></script>
+
+        @*<script src="~/MainPagecss/js/jquery-1.11.3.min.js"></script>*@
+
+<script src="../../AdminCss/js/lib/jquery/jquery.min.js"></script>
         <script>
 
             function RestrictSpace() {
@@ -140,18 +144,17 @@
                 return true;
             }
 
+            function ValidateEmailIDCheck(event) {
+                debugger
+                var panVal = $('#Email').val();
+                var regpan = /^([\w-\.]+)@@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
 
-            function ValidateEmail() {
-                debugger;
-                var email = $("#Email").val();
-                var regx = /^([\w-\.]+)@@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-                if (regx.test(email)) {
-                    return true;
-                }
-                else {
-                    return false;
-                    //alert("Invalid email address.");
+                if (regpan.test(panVal)) {
+                    $("#Email").removeClass('errortext');
+                } else {
+                    alert("Invalid Email ID");
                     $("#Email").val('');
+                    $("#Email").addClass('errortext');
                 }
             }
         </script>
