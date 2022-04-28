@@ -710,8 +710,6 @@ namespace Afluex.Controllers
                             //TempData["ContactMsg"] = "message has been sent. ";
                         }
                         catch (Exception ex)
-
-
                         {
 
                         }
@@ -854,7 +852,7 @@ namespace Afluex.Controllers
             return RedirectToAction(FormName, Controller);
         }
 
-        public ActionResult ValidateData(string MemberName, string Contact, string Email, string CustMessage)
+        public ActionResult ValidateData(string MemberName, string Contact, string Email, string CusMessage)
         {
             Home model = new Home();
             model.Mobile = Contact;
