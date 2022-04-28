@@ -90,10 +90,11 @@
             else {
                 $(".main_loader").css({ 'display': '' });
                 $.ajax({
+                    
                     url: "/advertisement/ValidateData",
                     Type: "Get",
                     DataType: "JSON",
-                    data: { MemberName: $("#Name").val(), Contact: $("#Mobile").val(), Email: $("#Email").val(), CustMessage: $("#CustMessage").text() },
+                    data: { MemberName: $("#Name").val(), Contact: $("#Mobile").val(), Email: $(".EmailID").val(), CustMessage: $("#CustMessage").text() },
                     success: function (data) {
                         debugger
                         $(".main_loader").css({ 'display': 'none' });
