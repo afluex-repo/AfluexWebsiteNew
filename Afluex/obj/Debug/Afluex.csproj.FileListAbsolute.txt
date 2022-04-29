@@ -496,109 +496,6 @@ E:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Sec
 E:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
 E:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 E:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\ApplicationInsights.config
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\csc.exe
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.CodeAnalysis.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.CSharp.Core.targets
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.VisualBasic.Core.targets
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\System.Collections.Immutable.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\System.Reflection.Metadata.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\vbc.exe
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\VBCSCompiler.exe
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\VBCSCompiler.exe.config
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Afluex.dll.config
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Afluex.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Afluex.pdb
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\0Harmony.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Antlr3.Runtime.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\BotDetect.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\BotDetect.Web.Mvc.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\CaptchaMvc.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\EntityFramework.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\EntityFramework.SqlServer.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.Agent.Intercept.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.DependencyCollector.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.PerfCounterCollector.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.ServerTelemetryChannel.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.Web.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.WindowsServer.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.ApplicationInsights.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AspNet.Identity.Core.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AspNet.Identity.Owin.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Host.SystemWeb.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Cookies.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Facebook.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Google.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.OAuth.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Twitter.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Web.Infrastructure.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Newtonsoft.Json.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Owin.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\PagedList.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\PagedList.Mvc.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Solid.Extensions.System.Web.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Data.SQLite.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Net.Http.Formatting.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Helpers.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.WebHost.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Mvc.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Optimization.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Razor.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.WebPages.Deployment.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.WebPages.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.WebPages.Razor.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\WebGrease.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\CaptchaMvc.pdb
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\CaptchaMvc.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.DependencyCollector.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.ServerTelemetryChannel.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.Web.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.WindowsServer.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.ApplicationInsights.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Newtonsoft.Json.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\PagedList.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\PagedList.Mvc.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Data.SQLite.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Helpers.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Mvc.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Razor.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.WebPages.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.WebPages.Deployment.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.WebPages.Razor.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Net.Http.Formatting.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.WebHost.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Optimization.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Antlr3.Runtime.pdb
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\EntityFramework.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\EntityFramework.SqlServer.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AspNet.Identity.Core.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AspNet.Identity.Owin.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Host.SystemWeb.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Facebook.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Cookies.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.OAuth.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Google.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Twitter.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
-E:\Divya\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
-E:\Divya\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
-E:\Divya\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
 D:\Reena\Repo\AfluexWebsiteNew\Afluex\bin\ApplicationInsights.config
 D:\Reena\Repo\AfluexWebsiteNew\Afluex\bin\roslyn\csc.exe
 D:\Reena\Repo\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -699,8 +596,212 @@ D:\Reena\Repo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Google.xml
 D:\Reena\Repo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Twitter.xml
 D:\Reena\Repo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\Reena\Repo\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
+D:\Reena\Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
 D:\Reena\Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 D:\Reena\Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
-D:\Reena\Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
-E:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\bin\0Harmony.dll
-E:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\bin\Solid.Extensions.System.Web.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\ApplicationInsights.config
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\csc.exe
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\System.Collections.Immutable.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\System.Reflection.Metadata.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\vbc.exe
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\VBCSCompiler.exe
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\roslyn\VBCSCompiler.exe.config
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Afluex.dll.config
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Afluex.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Afluex.pdb
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\0Harmony.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Antlr3.Runtime.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\BotDetect.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\BotDetect.Web.Mvc.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\CaptchaMvc.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\EntityFramework.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\EntityFramework.SqlServer.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.DependencyCollector.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.Web.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.WindowsServer.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.ApplicationInsights.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Google.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Web.Infrastructure.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Newtonsoft.Json.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Owin.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\PagedList.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\PagedList.Mvc.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Solid.Extensions.System.Web.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Data.SQLite.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Net.Http.Formatting.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Helpers.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.WebHost.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Mvc.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Optimization.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Razor.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.WebPages.Deployment.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.WebPages.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.WebPages.Razor.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\WebGrease.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\CaptchaMvc.pdb
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\CaptchaMvc.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.DependencyCollector.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.Web.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.WindowsServer.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.ApplicationInsights.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Newtonsoft.Json.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\PagedList.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\PagedList.Mvc.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Data.SQLite.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Helpers.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Mvc.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Razor.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.WebPages.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.WebPages.Deployment.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.WebPages.Razor.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Net.Http.Formatting.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.WebHost.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Optimization.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Antlr3.Runtime.pdb
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\EntityFramework.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\EntityFramework.SqlServer.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Google.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
+E:\Divya\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
+E:\Divya\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
+E:\Divya\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\ApplicationInsights.config
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\roslyn\csc.exe
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\roslyn\System.Collections.Immutable.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\roslyn\System.Reflection.Metadata.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\roslyn\vbc.exe
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\roslyn\VBCSCompiler.exe
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\roslyn\VBCSCompiler.exe.config
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Afluex.dll.config
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Afluex.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Afluex.pdb
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\0Harmony.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Antlr3.Runtime.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\BotDetect.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\BotDetect.Web.Mvc.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\CaptchaMvc.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\EntityFramework.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\EntityFramework.SqlServer.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.Agent.Intercept.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.DependencyCollector.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.Web.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.WindowsServer.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.ApplicationInsights.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.AspNet.Identity.Core.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Cookies.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Facebook.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Google.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.OAuth.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Twitter.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.Web.Infrastructure.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Newtonsoft.Json.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Owin.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\PagedList.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\PagedList.Mvc.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Solid.Extensions.System.Web.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\System.Data.SQLite.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\System.Net.Http.Formatting.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\System.Web.Helpers.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\System.Web.Http.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\System.Web.Http.WebHost.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\System.Web.Mvc.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\System.Web.Optimization.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\System.Web.Razor.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\System.Web.WebPages.Deployment.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\System.Web.WebPages.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\System.Web.WebPages.Razor.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\WebGrease.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\CaptchaMvc.pdb
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\CaptchaMvc.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.DependencyCollector.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.Web.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.WindowsServer.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.ApplicationInsights.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Newtonsoft.Json.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\PagedList.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\PagedList.Mvc.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\System.Data.SQLite.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\System.Web.Helpers.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\System.Web.Mvc.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\System.Web.Razor.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\System.Web.WebPages.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\System.Web.WebPages.Deployment.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\System.Web.WebPages.Razor.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\System.Net.Http.Formatting.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\System.Web.Http.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\System.Web.Http.WebHost.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\System.Web.Optimization.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Antlr3.Runtime.pdb
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\EntityFramework.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\EntityFramework.SqlServer.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.AspNet.Identity.Core.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Facebook.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Cookies.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.OAuth.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Google.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Twitter.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
+D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
