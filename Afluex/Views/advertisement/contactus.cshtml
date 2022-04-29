@@ -46,8 +46,8 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group mb-4">
                                 <div class="input-group">
-                                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @Placeholder = "Email",
-                                   @onchange = "return ValidateEmailIDCheck();"
+                                    @Html.TextBoxFor(m => m.Email, new { @class = "EmailID form-control", @Placeholder = "Email",
+                                   @onchange = "return ValidateEmailChecked();"
                                })
 
                                 </div>
@@ -139,9 +139,9 @@
             $('#About').focus();
             return false;
         }
-        if ($('#Email').val() == '') {
-            $("#Email").addClass('errortext');
-            $('#Email').focus();
+        if ($('.EmailID').val() == '') {
+            $(".EmailID").addClass('errortext');
+            $('.EmailID').focus();
             return false;
         }
 
@@ -159,13 +159,13 @@
         $("#divload").css({ 'display': 'show' });
 
     }
-    function ValidateEmailIDCheck(event) {
+    function ValidateEmailChecked(event) {
         debugger
-        var panVal = $('#Email').val();
+        var panVal = $('.EmailID').val();
         var regpan = /^([\w-\.]+)@@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
 
         if (regpan.test(panVal)) {
-            $("#Email").removeClass('errortext');
+            $(".EmailID").removeClass('errortext');
         } else {
             alert("Invalid Email ID");
             $("#Email").val('');

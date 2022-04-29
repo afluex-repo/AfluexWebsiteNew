@@ -21,8 +21,6 @@ namespace Afluex.Models
             try
             {
                  connectionString = "Data Source=23.111.171.42;Initial Catalog= AfluexWebDB; User Id= AfluexWebUser; Password=afluex@123!@#; Integrated Security=false;";
-                
-
             }
             catch (Exception)
             {

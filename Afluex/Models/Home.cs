@@ -28,7 +28,7 @@ namespace Afluex.Models
         public string ConfirmPassword { get; set; }
 
         public string DemoType { get; set; }
-
+        public string CusMessage { get; set; }
         public string Otppin { get; set; }
         public string ProductId { get; set; }
         public string ProductName { get; set; }
@@ -66,7 +66,7 @@ namespace Afluex.Models
                                         new SqlParameter("@Type",ContactusType),
                                         new SqlParameter("@Password",Password),
                                         new SqlParameter("@EncrptPassword", EncryptPassword),
-                                        new SqlParameter("@Message",CustMessage),
+                                        new SqlParameter("@Message",CusMessage),
                                     
                             };
             DataSet ds = Connection.ExecuteQuery("Registration", para);
