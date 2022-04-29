@@ -278,7 +278,7 @@ namespace Afluex.Controllers
                         obj1.Title = r["Title"].ToString();
                         obj1.ShortDecription = r["ShortDecription"].ToString();
                         obj1.Decription = r["Description"].ToString();
-                        obj1.FileUpload = r["AddedOn"].ToString();
+                        obj1.FileName = r["images"].ToString();
 
                         obj1.AddedBy = r["Name"].ToString();
                         lst.Add(obj1);
@@ -1357,7 +1357,7 @@ namespace Afluex.Controllers
 //            }
 //            return RedirectToAction(FormName, Controller);
 //        }
-        public ActionResult ValidateData(string MemberName, string Contact, string Email, string CustMessage)
+        public ActionResult ValidateData(string MemberName, string Contact, string Email, string CusMessage)
         {
             Home model = new Home();
             model.Mobile = Contact;
