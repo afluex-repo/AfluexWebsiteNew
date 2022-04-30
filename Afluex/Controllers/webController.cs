@@ -355,8 +355,6 @@ namespace Afluex.Controllers
                         try
                         {
 
-
-
                             #region SendEmailToAdmin
                             SmtpClient mailServer = new SmtpClient("smtp.gmail.com", 587);
                             mailServer.EnableSsl = true;
@@ -389,7 +387,7 @@ namespace Afluex.Controllers
                             SmtpClient mailServer1 = new SmtpClient("smtp.gmail.com", 587);
                             mailServer.EnableSsl = true;
                             //mailServer.Credentials = new System.Net.NetworkCredential(model.SenderEmail, model.SenderPassword);
-                            mailServer.Credentials = new System.Net.NetworkCredential("contact.afluex@gmail.com", "Krishna@412");
+                            mailServer.Credentials = new System.Net.NetworkCredential("contact.afluex@gmail.com", "Multiservices@437");
 
                             MailMessage myMail1 = new MailMessage();
                             myMail1.IsBodyHtml = true;
@@ -397,10 +395,10 @@ namespace Afluex.Controllers
                             mailbody = "<div style='width:100%;background:#fff;font-size:12px;font-family:Verdana,Geneva,sans-serif'><table style = 'width:640px;border:none;font-size:12px;margin:0 auto' cellpadding = '0' cellspacing = '0'><tbody><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:15px 0'><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div><a><img style = 'width:180px' src = 'https://afluex.com/Softwarecss/images/logo-load.png'></a></div><h1 style = 'color:#fff;font-weight:normal'></h1></div></div></td></tr>"
                         + "<tr><td><div style='background:#fff;vertical-align:top;padding:1px 0;border-bottom-right-radius:5px;border-bottom-left-radius:5px;border-left:1px solid #ddd;border-right:1px solid #ddd'><h4 style = 'font-size:14px;padding:10px 8px'>"
                          + "Dear " + dsRegistration.Tables[0].Rows[0]["Name"].ToString() + ",<br/> Thank you ! for showing your interest in Afluex.<br/>Our HR Team will contact you soon.For Enquiry call us on 7310000413,412 or Mail us on -"
-                          + "<a href = 'mailto:supportnow@afluex.com' target= '_blank'>supportnow@afluex.com</a>.</h4></div></td></tr><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:1px 0'>"
+                          + "<a href = 'mailto:supportnow@afluex.com' target= '_blank' style='color:#fff'>supportnow@afluex.com</a>.</h4></div></td></tr><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:1px 0'>"
         + "<div style= 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div></div><h1 style= 'color:#fff;font-weight:normal'> Afluex Multiservices LLP</h1>"
-        + "<h4 style = 'color:#fff;font-weight:normal'> Our Expertise in : Advertising / IT Services </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 414/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow@afluex.com</i></h4>"
-        + "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i>https://www.afluex.com/</i></h4>"
+        + "<h4 style = 'color:#fff;font-weight:normal'> Our Expertise in : Advertising / IT Services </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 412/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i class='text-white' style='color:#fff'> supportnow@afluex.com</i></h4>"
+        + "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i><span style='color:#fff'>https://www.afluex.com/</span></i></h4>"
         + "</div></div></td></tr><tr><td><p style='color:#888;font-size:11px;margin-bottom:20px'>© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
 
                             myMail1.Body = mailbody;
@@ -414,7 +412,7 @@ namespace Afluex.Controllers
                             string str = "You got a career inquiry from- " + "Name-" + dsRegistration.Tables[0].Rows[0]["Name"].ToString() + " , Mob-" + dsRegistration.Tables[0].Rows[0]["Mobile"].ToString() + " , Email-" + dsRegistration.Tables[0].Rows[0]["Email"].ToString() + " , Description-" + dsRegistration.Tables[0].Rows[0]["Description"].ToString();
                             try
                             {
-                               // //BLSMS.SendSMS(mob, str);
+                                BLSMS.SendSMS(mob, str);
                             }
                             catch { }
                             TempData["Career"] = "Data Submission Successfull !";
@@ -439,7 +437,7 @@ namespace Afluex.Controllers
                         string str = "Dear " + dsRegistration.Tables[0].Rows[0]["Name"].ToString() + " thank you for showing your interest in Afluex. Our HR Team will contact you soon. For Direct Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
                         try
                         {
-                           //BLSMS.SendSMS(mob, str);
+                         BLSMS.SendSMS(mob, str);
                         }
                         catch { }
                     }
@@ -497,10 +495,10 @@ namespace Afluex.Controllers
                             mailbody = "<div style='width:100%;background:#fff;font-size:12px;font-family:Verdana,Geneva,sans-serif'><table style = 'width:640px;border:none;font-size:12px;margin:0 auto' cellpadding = '0' cellspacing = '0'><tbody><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:15px 0'><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div><a><img style = 'width:180px' src = 'https://afluex.com/Softwarecss/images/logo-load.png'></a></div><h1 style = 'color:#fff;font-weight:normal'></h1></div></div></td></tr>"
                           + "<tr><td><div style='background:#fff;vertical-align:top;padding:1px 0;border-bottom-right-radius:5px;border-bottom-left-radius:5px;border-left:1px solid #ddd;border-right:1px solid #ddd'><h4 style = 'font-size:14px;padding:10px 8px'>"
                            + "Dear " + model.Name + ",<br/> Thank you for showing your interest.<br/>Our Team will contact you soon.For Enquiry call us on 7310000413,412 or Mail us on -"
-                            + "<a href = 'mailto:supportnow@afluex.com' target= '_blank'>supportnow@afluex.com</a>.</h4></div></td></tr><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:1px 0'>"
+                            + "<a href = 'mailto:supportnow@afluex.com' target= '_blank' style='clor:#fff'>supportnow@afluex.com</a>.</h4></div></td></tr><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:1px 0'>"
 + "<div style= 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div></div><h1 style= 'color:#fff;font-weight:normal'> Afluex Multiservices LLP</h1>"
-+ "<h4 style = 'color:#fff;font-weight:normal'> Our Expertise in : Advertising / IT Services </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 414/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow@afluex.com</i></h4>"
-+ "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i>https://www.afluex.com/</i></h4>"
++ "<h4 style = 'color:#fff;font-weight:normal'> Our Expertise in : Advertising / IT Services </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 412/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow@afluex.com</i></h4>"
++ "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i style='color:#fff'>https://www.afluex.com/</i></h4>"
 + "</div></div></td></tr><tr><td><p style='color:#888;font-size:11px;margin-bottom:20px'>© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
 
                             var fromAddress = new MailAddress("contact.afluex@gmail.com", "Afluex Mutiserices LLP");
@@ -536,7 +534,7 @@ namespace Afluex.Controllers
 
                         try
                         {
-                            //BLSMS.SendSMS(mob, str);
+                             BLSMS.SendSMS(mob, str);
                         }
                         catch { }
 
@@ -558,7 +556,7 @@ namespace Afluex.Controllers
                                 EnableSsl = true,
                                 DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                                 UseDefaultCredentials = false,
-                                Credentials = new NetworkCredential(fromAddress.Address, "Krishna@412")
+                                Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437")
 
                             };
 
@@ -585,7 +583,7 @@ namespace Afluex.Controllers
 
                         try
                         {
-                           //BLSMS.SendSMS(mobs, str2);
+                            BLSMS.SendSMS(mobs, str2);
                         }
                         catch { }
 
@@ -614,8 +612,6 @@ namespace Afluex.Controllers
             }
             return RedirectToAction(FormName, Controller);
         }
-
-      
 
         public virtual PartialViewResult DemoContact()
         {
@@ -706,9 +702,9 @@ namespace Afluex.Controllers
 + "<td style = 'text-align:left;vertical-align: middle;border: 1px solid #ddd;padding: 8px;line-height: 1.42857143;'>"
 + "" + ds.Tables[0].Rows[0]["AssotId"].ToString() + "</td><td style = 'text-align:left;vertical-align: middle;border: 1px solid #ddd;padding: 8px;line-height: 1.42857143;'>" + Crypto.Decrypt(ds.Tables[0].Rows[0]["AssotPwd"].ToString()) + ""
 + "</td></tr></tbody></table></div></td></tr><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:1px 0'>"
-+ "<div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div></div><h1 style = 'color:#fff;font-weight:normal'> Afluex Mutiservices LLP</h1>"
-+ "<h4 style = 'color:#fff;font-weight:normal'> Our Expertise in : Advertising / IT Services </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 414/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow @afluex.com</i></h4>"
-+ "<h4 style = 'color:white' ><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i>https://www.afluex.com/</i></h4>"
++ "<div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div></div><h1 style = 'color:#fff;font-weight:normal'> Demmmmmmmmmm---Afluex Mutiservices LLP</h1>"
++ "<h4 style = 'color:#fff;font-weight:normal'> Our Expertise in : Advertising / IT Services </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 412/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email US== : <i style='color:#fff'> <span style='color:#fff'>supportnow@afluex.com</span></i></h4>"
++ "<h4 style = 'color:white' ><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i style='color:#fff'><span style='color:#fff'>https://www.afluex.com/</span></i></h4>"
 + "</div></div></td></tr><tr><td><p style = 'color:#888;font-size:11px;margin-bottom:20px' >© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
                             }
                             else if (model.ContactusType == "ecommerce-software" || model.ContactusType == "school-management-software" || model.ContactusType == "travel-portal-software" ||
@@ -730,8 +726,8 @@ namespace Afluex.Controllers
 + "" + ds.Tables[0].Rows[0]["AdminLogin"].ToString() + "</td><td style = 'text-align:left;vertical-align: middle;border: 1px solid #ddd;padding: 8px;line-height: 1.42857143;'>" + ds.Tables[0].Rows[0]["AdminPass"].ToString() + "</td></tr></tbody>"
 + "</table></div></td></tr><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:1px 0'>"
 + "<div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div></div><h1 style = 'color:#fff;font-weight:normal'> Afluex Mutiservices LLP</h1>"
-+ "<h4 style = 'color:#fff;font-weight:normal'> Our Expertise in : Advertising / IT Services </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 414/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow @afluex.com</i></h4>"
-+ "<h4 style = 'color:white' ><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i>https://www.afluex.com/</i></h4>"
++ "<h4 style = 'color:#fff;font-weight:normal'> Our Expertise in : Advertising / IT Services </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 412/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow @afluex.com</i></h4>"
++ "<h4 style = 'color:white' ><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i><span style='color:#fff'>https://www.afluex.com/</span></i></h4>"
 + "</div></div></td></tr><tr><td><p style = 'color:#888;font-size:11px;margin-bottom:20px' >© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
                             }
                             else
@@ -740,15 +736,16 @@ namespace Afluex.Controllers
                                 mailbody = "<div style='width:100%;background:#fff;font-size:12px;font-family:Verdana,Geneva,sans-serif'><table style = 'width:640px;border:none;font-size:12px;margin:0 auto' cellpadding = '0' cellspacing = '0'><tbody><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:15px 0'><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div><a><img style = 'width:180px' src = 'https://afluex.com/Softwarecss/images/logo-load.png'></a></div><h1 style = 'color:#fff;font-weight:normal'></h1></div></div></td></tr>"
                            + "<tr><td><div style='background:#fff;vertical-align:top;padding:1px 0;border-bottom-right-radius:5px;border-bottom-left-radius:5px;border-left:1px solid #ddd;border-right:1px solid #ddd'><h4 style = 'font-size:14px;padding:10px 8px'>"
                             + "Dear " + ds.Tables[0].Rows[0]["Name"].ToString() + ",<br/> Thank you ! for Requesting Demo.<br/>Our Team will contact you soon.For Enquiry call us on 7310000413,412 or Mail us on -"
-                             + "<a href = 'mailto:supportnow@afluex.com' target= '_blank'>supportnow@afluex.com</a>.</h4></div></td></tr><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:1px 0'>"
+                             + "<a href = 'mailto:supportnow@afluex.com' target= '_blank' style='color:#fff'>supportnow@afluex.com</a>.</h4></div></td></tr><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:1px 0'>"
  + "<div style= 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div></div><h1 style= 'color:#fff;font-weight:normal'> Afluex Mutiservices LLP</h1>"
- + "<h4 style = 'color:#fff;font-weight:normal'> Our Expertise in : Advertising / IT Services </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 414/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow@afluex.com</i></h4>"
- + "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i>https://www.afluex.com/</i></h4>"
+ + "<h4 style = 'color:#fff;font-weight:normal'> Our Expertise in : Advertising / IT Services </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 412/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow@afluex.com</i></h4>"
+ + "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i><span style='color:#fff'>https://www.afluex.com/</span></i></h4>"
  + "</div></div></td></tr><tr><td><p style='color:#888;font-size:11px;margin-bottom:20px'>© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
 
                             }
 
-                            var fromAddress = new MailAddress("supportnow@afluex.com", "Afluex Multiservices LLP");
+                            // var fromAddress = new MailAddress("supportnow@afluex.com", "Afluex Multiservices LLP");
+                            var fromAddress = new MailAddress("contact.afluex@gmail.com", "Afluex Multiservices LLP");
                             var toAddress = new MailAddress(model.Email);
 
                             System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient
@@ -759,7 +756,7 @@ namespace Afluex.Controllers
                                 EnableSsl = true,
                                 DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                                 UseDefaultCredentials = false,
-                                Credentials = new NetworkCredential(fromAddress.Address, "Krishna@414")
+                                Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437")
 
                             };
 
@@ -778,11 +775,11 @@ namespace Afluex.Controllers
 
                         }
                         string mob = model.Mobile;
-                        string str = "Dear " + model.Name + " thank you for showing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
+                        string str = model.Name + " thank you for showing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
 
                         try
                         {
-                            BLSMS.SendSMS(mob, str);
+                           BLSMS.SendSMS(mob, str);
                         }
                         catch { }
 
@@ -795,15 +792,15 @@ namespace Afluex.Controllers
 
                             mailbody = @"<html><body><div style='margin:0 auto; padding:0px; height:420px; width:600px; background:linear-gradient(146deg, rgba(150, 167, 177, 0.9),rgba(176, 196, 208, 0.9), rgb(220, 230, 235), rgba(232,243,249,6), rgb(182, 200, 210), rgb(135, 147, 153) 100.71%);'>";
                             mailbody += @"<div style='height:90px; width:100%; position:relative; background:rgba(5, 11, 27, 0.92); padding-top:0px'>";
-                            mailbody += @"<img src ='https://www.afluex.com/images/tklogo.png' class='img-responsive' alt='logo' style='width:222px;padding-top:4px;padding-left: 188px;position: absolute;'></div>";
+                            mailbody += @"<img src ='https://afluex.com/Softwarecss/images/logo-load.png' class='img-responsive' alt='logo' style='width:222px;padding-top:4px;padding-left: 188px;position: absolute;'></div>";
                             mailbody += @"<h1 style='color:#c09727; text-transform:capitalize;font-weight:700; padding-left:25px; position:relative;font-size:40px;'> Dear <span style='color:#c09727;font-weight:700;text-transform:capitalize;'>Team,</span></h1>";
                             mailbody += @"<p style='color: #7a7a77;padding-left: 20px;'> You got a contact with " + "<br/>" + "<b> Name :</b> " + model.Name + "<br/>" + " <b>Mobile :</b> " + model.Mobile + "<br/>" + "<b> Message :</b> " + model.Message + " <br/> <b>regarding :</b>  " + model.ContactusType + " <p>";
                             mailbody += @"<div style='height:125px;width:100%;position:relative;background:rgba(5, 11, 27, 0.95);'>";
                             mailbody += @"<b style='text-align:center;padding-left:200px;padding-top: 4px;color: #b8881c;box-sizing:border-box;'>Afluex Multiservices LLP</b>";
                             mailbody += @"<ul style='list-style-type:none;'>";
-                            mailbody += @"<li style='font-size:14.5px;padding:0px -1px 0px 35px;color:#dcf1c5'><span style='color:#c09727'>Email :</span><a href='mailto:supportnow@afluex.com' style='color:#dcf1c5' target='_blank'>supportnow@afluex.com</a> <span style='color:#c09727'>Contact No:</span> +91 731-0000-413 / 412 </li>";
+                            mailbody += @"<li style='font-size:14.5px;padding:0px -1px 0px 35px;color:#dcf1c5'><span style='color:#c09727'>Email :</span><a href='mailto:supportnow@afluex.com' style='color:#fff' target='_blank' >supportnow@afluex.com</a> <span style='color:#c09727'>Contact No:</span> +91 731-0000-413 / 412 </li>";
 
-                            mailbody += @"<li style='font-size:14.5px; padding:0px -1px 0px 35px; color:#fff'><span style='color:#c09727'>Website :</span><span style='color:#fff'> <a href='https://www.afluex.com' style='color:#dcf1c5' target='_blank'>www.afluex.com</a></span></li>";
+                            mailbody += @"<li style='font-size:14.5px; padding:0px -1px 0px 35px; color:#fff'><span style='color:#c09727'>Website :</span><span style='color:#fff'> <a href='https://www.afluex.com' style='color:#fff' target='_blank'>www.afluex.com</a></span></li>";
                             mailbody += @"<li style='font-size:14.5px; padding:0px -1px 0px 35px;color:#fff; font-style:italic;'> Our Expertise in : Advertising & IT Services </li >";
 
                             mailbody += @"</ul></div></div></body></html>";
@@ -818,7 +815,7 @@ namespace Afluex.Controllers
                                 EnableSsl = true,
                                 DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                                 UseDefaultCredentials = false,
-                                Credentials = new NetworkCredential(fromAddress.Address, "Krishna@4120")
+                                Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437")
 
                             };
 
@@ -844,7 +841,7 @@ namespace Afluex.Controllers
 
                         try
                         {
-                            BLSMS.SendSMS(mobs, str2);
+                           BLSMS.SendSMS(mobs, str2);
                         }
                         catch { }
 
@@ -870,10 +867,10 @@ namespace Afluex.Controllers
                             mailbody = "<div style='width:100%;background:#fff;font-size:12px;font-family:Verdana,Geneva,sans-serif'><table style = 'width:640px;border:none;font-size:12px;margin:0 auto' cellpadding = '0' cellspacing = '0'><tbody><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:15px 0'><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div><a><img style = 'width:180px' src = 'https://afluex.com/Softwarecss/images/logo-load.png'></a></div><h1 style = 'color:#fff;font-weight:normal'></h1></div></div></td></tr>"
                               + "<tr><td><div style='background:#fff;vertical-align:top;padding:1px 0;border-bottom-right-radius:5px;border-bottom-left-radius:5px;border-left:1px solid #ddd;border-right:1px solid #ddd'><h4 style = 'font-size:14px;padding:10px 8px'>"
                                + "Dear " + model.Name + ",<br/> Thank you ! for showing interest in advertising field.<br/>Our Team will contact you soon.For Enquiry call us on 7310000413,412 or Mail us on -"
-                                + "<a href = 'mailto:supportnow@afluex.com' target= '_blank'>supportnow@afluex.com</a>.</h4></div></td></tr><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:1px 0'>"
+                                + "<a href = 'mailto:supportnow@afluex.com' target= '_blank' style='color:#fff'>supportnow@afluex.com</a>.</h4></div></td></tr><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:1px 0'>"
     + "<div style= 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div></div><h1 style= 'color:#fff;font-weight:normal'> Afluex Mutiservices LLP</h1>"
-    + "<h4 style = 'color:#fff;font-weight:normal'> Our Expertise in : Advertising / IT Services </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 414/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow@afluex.com</i></h4>"
-    + "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i>https://www.afluex.com/</i></h4>"
+    + "<h4 style = 'color:#fff;font-weight:normal'> Our Expertise in : Advertising / IT Services </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 412/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow@afluex.com</i></h4>"
+    + "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i><span style='color:#fff'>https://www.afluex.com/</span></i></h4>"
     + "</div></div></td></tr><tr><td><p style='color:#888;font-size:11px;margin-bottom:20px'>© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
 
                         }
@@ -883,10 +880,10 @@ namespace Afluex.Controllers
                             mailbody = "<div style='width:100%;background:#fff;font-size:12px;font-family:Verdana,Geneva,sans-serif'><table style = 'width:640px;border:none;font-size:12px;margin:0 auto' cellpadding = '0' cellspacing = '0'><tbody><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:15px 0'><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div><a><img style = 'width:180px' src = 'https://afluex.com/Softwarecss/images/logo-load.png'></a></div><h1 style = 'color:#fff;font-weight:normal'></h1></div></div></td></tr>"
                                + "<tr><td><div style='background:#fff;vertical-align:top;padding:1px 0;border-bottom-right-radius:5px;border-bottom-left-radius:5px;border-left:1px solid #ddd;border-right:1px solid #ddd'><h4 style = 'font-size:14px;padding:10px 8px'>"
                                 + "Dear " + model.Name + ",<br/> Thank you ! for Requesting Demo.<br/>Our Team will contact you soon.For Enquiry call us on 7310000413,412 or Mail us on -"
-                                 + "<a href = 'mailto:supportnow@afluex.com' target= '_blank'>supportnow@afluex.com</a>.</h4></div></td></tr><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:1px 0'>"
+                                 + "<a href = 'mailto:supportnow@afluex.com' target= '_blank' style='color:#fff'>supportnow@afluex.com</a>.</h4></div></td></tr><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:1px 0'>"
      + "<div style= 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div></div><h1 style= 'color:#fff;font-weight:normal'> Afluex Mutiservices LLP</h1>"
-     + "<h4 style = 'color:#fff;font-weight:normal'> Our Expertise in : Advertising / IT Services </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 414/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow@afluex.com</i></h4>"
-     + "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i>https://www.afluex.com/</i></h4>"
+     + "<h4 style = 'color:#fff;font-weight:normal'> Our Expertise in : Advertising / IT Services </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 412/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow@afluex.com</i></h4>"
+     + "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i><span style='color:#fff'>https://www.afluex.com/</span></i></h4>"
      + "</div></div></td></tr><tr><td><p style='color:#888;font-size:11px;margin-bottom:20px'>© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
                         }
                         var fromAddress = new MailAddress("contact.afluex@gmail.com", "Afluex Multiservices LLP");
@@ -899,7 +896,7 @@ namespace Afluex.Controllers
                             EnableSsl = true,
                             DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                             UseDefaultCredentials = false,
-                            Credentials = new NetworkCredential(fromAddress.Address, "Krishna@412")
+                            Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437")
 
                         };
 
@@ -921,11 +918,11 @@ namespace Afluex.Controllers
                     }
 
                     string mob = model.Mobile;
-                    string str = "Dear " + model.Name + " thank you for showing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
+                    string str =  model.Name + " thank you for showing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
 
                     try
                     {
-                        BLSMS.SendSMS(mob, str);
+                       BLSMS.SendSMS(mob, str);
                     }
                     catch { }
 
@@ -943,13 +940,15 @@ namespace Afluex.Controllers
                         mailbody += @"<div style='height:125px;width:100%;position:relative;background:rgba(5, 11, 27, 0.95);'>";
                         mailbody += @"<b style='text-align:center;padding-left:200px;padding-top: 4px;color: #b8881c;box-sizing:border-box;'>Afluex Multiservices LLP</b>";
                         mailbody += @"<ul style='list-style-type:none;'>";
-                        mailbody += @"<li style='font-size:14.5px;padding:0px -1px 0px 35px;color:#dcf1c5'><span style='color:#c09727'>Email :</span><a href='mailto:supportnow@afluex.com' style='color:#dcf1c5' target='_blank'>supportnow@afluex.com</a> <span style='color:#c09727'>Contact No:</span> +91 731-0000-413 / 412 </li>";
+                        mailbody += @"<li style='font-size:14.5px;padding:0px -1px 0px 35px;color:#dcf1c5'><span style='color:#c09727'>Email :</span><a href='mailto:supportnow@afluex.com' style='color:#fff' target='_blank'>supportnow@afluex.com</a> <span style='color:#c09727'>Contact No:</span> +91 731-0000-413 / 412 </li>";
 
-                        mailbody += @"<li style='font-size:14.5px; padding:0px -1px 0px 35px; color:#fff'><span style='color:#c09727'>Website :</span><span style='color:#fff'> <a href='https://www.afluex.com' style='color:#dcf1c5' target='_blank'>www.afluex.com</a></span></li>";
+                        mailbody += @"<li style='font-size:14.5px; padding:0px -1px 0px 35px; color:#fff'><span style='color:#c09727'>Website :</span><span style='color:#fff'> <a href='https://www.afluex.com' style='color:#fff' target='_blank'>www.afluex.com</a></span></li>";
                         mailbody += @"<li style='font-size:14.5px; padding:0px -1px 0px 35px;color:#fff; font-style:italic;'> Our Expertise in : Advertising & IT Services </li >";
 
                         mailbody += @"</ul></div></div></body></html>";
 
+                        //var fromAddress = new MailAddress("contact.afluex@gmail.com");
+                        //var toAddress = new MailAddress("contact.afluex@gmail.com");
                         var fromAddress = new MailAddress("contact.afluex@gmail.com");
                         var toAddress = new MailAddress("contact.afluex@gmail.com");
 
@@ -960,7 +959,7 @@ namespace Afluex.Controllers
                             EnableSsl = true,
                             DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                             UseDefaultCredentials = false,
-                            Credentials = new NetworkCredential(fromAddress.Address, "Krishna@4120")
+                            Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437")
 
                         };
 
@@ -984,7 +983,7 @@ namespace Afluex.Controllers
 
                     try
                     {
-                        BLSMS.SendSMS(mobs, str2);
+                       BLSMS.SendSMS(mobs, str2);
                     }
                     catch { }
 
@@ -1001,363 +1000,7 @@ namespace Afluex.Controllers
             }
             return RedirectToAction(FormName, Controller);
         }
-
-//        public ActionResult saveDemoinquiry(Home model)
-//        {
-//            Session["Type"] = null;
-//            string FormName = "";
-//            string Controller = "";
-//            string subject = "";
-//            try
-//            {
-
-//                string currenturl = Request.UrlReferrer.OriginalString;
-//                string[] strTemp = currenturl.Split('/');
-
-
-//                model.ContactusType = strTemp[4].ToString();
-//                Random rnd = new Random();
-//                string password = Common.GenerateRandom();
-//                model.Password = (password);
-//                model.EncryptPassword = Crypto.Encrypt(password);
-
-//                DataSet ds = model.SaveDemoDetails();
-
-
-
-//                if (model.ContactusType == "mlm-software" || model.ContactusType == "real-estate-software" || model.ContactusType == "nidhi-software" || model.ContactusType == "helping-software")
-//                {
-//                    Session["Name"] = ds.Tables[0].Rows[0]["Name"].ToString();
-//                    Session["ContactusType"] = ds.Tables[0].Rows[0]["Type"].ToString();
-//                    Session["Url"] = ds.Tables[0].Rows[0]["Url"].ToString();
-//                    Session["Type"] = ds.Tables[0].Rows[0]["Type"].ToString();
-//                    Session["UserName"] = ds.Tables[0].Rows[0]["AssotId"].ToString();
-//                    Session["Password"] = Crypto.Decrypt(ds.Tables[0].Rows[0]["AssotPwd"].ToString());
-//                    Session["AdminID"] = ds.Tables[0].Rows[0]["AdminLogin"].ToString();
-//                    Session["AdminPass"] = ds.Tables[0].Rows[0]["AdminPass"].ToString();
-//                }
-//                else if (model.ContactusType == "ecommerce-software" || model.ContactusType == "school-management-software" || model.ContactusType == "travel-portal-software" ||
-//                         model.ContactusType == "flight-booking-software" || model.ContactusType == "hospital-management-software" || model.ContactusType == "daily-expenses-software"
-//                         || model.ContactusType == "hrms-software" || model.ContactusType == "mobile-recharge-software" || model.ContactusType == "news-portal-software")
-
-//                {
-//                    Session["Name"] = ds.Tables[0].Rows[0]["Name"].ToString();
-//                    Session["ContactusType"] = ds.Tables[0].Rows[0]["Type"].ToString();
-//                    Session["Url"] = ds.Tables[0].Rows[0]["Url"].ToString();
-//                    Session["Type"] = ds.Tables[0].Rows[0]["Type"].ToString();
-//                    Session["AdminID"] = ds.Tables[0].Rows[0]["AdminLogin"].ToString();
-//                    Session["AdminPass"] = ds.Tables[0].Rows[0]["AdminPass"].ToString();
-//                }
-
-//                else
-//                {
-//                    TempData["Type"] = "NoDemo";
-//                }
-
-//                if (ds != null && ds.Tables.Count > 0)
-//                {
-//                    if (ds.Tables[0].Rows[0][0].ToString() == "1")
-//                    {
-//                        string mailbody = "";
-//                        try
-//                        {
-
-//                            if (model.ContactusType == "mlm-software" || model.ContactusType == "real-estate-software" || model.ContactusType == "nidhi-software" || model.ContactusType == "helping-software")
-//                            {
-//                                subject = "Thank You,For Requesting Demo.";
-//                                mailbody = "<div style='width:100%;background:#fff;font-size:12px;font-family:Verdana,Geneva,sans-serif'><table style = 'width:640px;border:none;font-size:12px;margin:0 auto' cellpadding = '0' cellspacing = '0'><tbody><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:15px 0'><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div><a><img style = 'width:180px' src = 'https://afluex.com/Softwarecss/images/logo-load.png'></a></div><h1 style = 'color:#fff;font-weight:normal'></h1></div></div></td></tr>"
-//+ "<tr><td><div style = 'background:#fff;vertical-align:top;padding:1px 0;text-align:center;border-bottom-right-radius:5px;border-bottom-left-radius:5px;border-left:1px solid #ddd;border-right:1px solid #ddd'>"
-//+ "<h4 style = 'font-size:20px;padding:10px 8px'>Thank you!<br/> For Requesting Demo.<br/></h4><p style = 'text-align: left;padding-left: 15px;font-size:20px'>"
-//+ "Dear " + ds.Tables[0].Rows[0]["Name"].ToString() + ",Below is your Login Creditentials :-<br/></p><p style = 'text-align: left;padding-left: 15px;font-size:17px'><a style = 'color: #fff;background-color: #337ab7;border-color: #2e6da4;display: inline-block;padding: 6px 12px;margin-bottom: 0;font-size: 14px;font-weight: 400;line-height: 1.42857143;"
-//+ "text - align: center; white - space: nowrap; vertical - align: middle; touch - action: manipulation; user - select: none; background - image: none;"
-//+ "border: 1px solid transparent; border - radius: 4px; ' href='" + ds.Tables[0].Rows[0]["Url"].ToString() + "'>Click Here For Open Demo</a></p>"
-//+ "<p style = 'text-align: left;padding-left: 15px;font-size:17px'><b> Admin Panel </b></p><table style = 'margin-left: 15px;width: 95%;border: 1px solid #ddd;max-width: 100%;margin-bottom: 20px;background-color: transparent;border-spacing: 0;border-collapse: collapse;ox-sizing: border-box;' cellpadding = '0' cellspacing = '0'>"
-//+ "<thead><tr style = 'color: #707070;font-weight: 400;box-sizing: border-box;'><th style = 'border-top: 0;vertical-align: middle;border-bottom-width: 2px;border: 1px solid #ddd;padding: 8px;line-height: 1.42857143;text-align: left;'>"
-//+ "Login Id</th><th style = 'border-top: 0;vertical-align: middle;border-bottom-width: 2px;border: 1px solid #ddd;padding: 8px;line-height: 1.42857143;text-align: left;'>"
-//+ "Password</th></tr></thead><tbody><tr style = 'background-color: #f9f9f9;box-sizing: border-box;'><td style = 'text-align:left;vertical-align: middle;border: 1px solid #ddd;padding: 8px;line-height: 1.42857143;'>"
-//+ "" + ds.Tables[0].Rows[0]["AdminLogin"].ToString() + "</td><td style = 'text-align:left;vertical-align: middle;border: 1px solid #ddd;padding: 8px;line-height: 1.42857143;'>" + ds.Tables[0].Rows[0]["AdminPass"].ToString() + "</td></tr></tbody>"
-//+ "</table><p style = 'text-align: left;padding-left: 15px;font-size:17px'><b> Associate Panel </b></p><br/><table style = 'margin-left: 15px;width: 95%;border: 1px solid #ddd;max-width: 100%;margin-bottom: 20px;background-color: transparent;border-spacing: 0;border-collapse: collapse;ox-sizing: border-box;' cellpadding = '0' cellspacing = '0'>"
-//+ "<thead><tr style = 'color: #707070;font-weight: 400;box-sizing: border-box;'>"
-//+ "<th style = 'border-top: 0;vertical-align: middle;border-bottom-width: 2px;border: 1px solid #ddd;padding: 8px;line-height: 1.42857143;text-align: left;'>"
-//+ "Login Id</th><th style = 'border-top: 0;vertical-align: middle;border-bottom-width: 2px;border: 1px solid #ddd;padding: 8px;line-height: 1.42857143;text-align: left;'>"
-//+ "Password</th></tr></thead><tbody><tr style = 'background-color: #f9f9f9;box-sizing: border-box;'>"
-//+ "<td style = 'text-align:left;vertical-align: middle;border: 1px solid #ddd;padding: 8px;line-height: 1.42857143;'>"
-//+ "" + ds.Tables[0].Rows[0]["AssotId"].ToString() + "</td><td style = 'text-align:left;vertical-align: middle;border: 1px solid #ddd;padding: 8px;line-height: 1.42857143;'>" + Crypto.Decrypt(ds.Tables[0].Rows[0]["AssotPwd"].ToString()) + ""
-//+ "</td></tr></tbody></table></div></td></tr><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:1px 0'>"
-//+ "<div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div></div><h1 style = 'color:#fff;font-weight:normal'> Afluex Multiservices LLP</h1>"
-//+ "<h4 style = 'color:#fff;font-weight:normal'> 'Our Expertise in : Advertising / IT Services' </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 414/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow @afluex.com</i></h4>"
-//+ "<h4 style = 'color:white' ><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i>https://www.afluex.com/</i></h4>"
-//+ "</div></div></td></tr><tr><td><p style = 'color:#888;font-size:11px;margin-bottom:20px' >© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
-//                            }
-//                            else if (model.ContactusType == "ecommerce-software" || model.ContactusType == "school-management-software" || model.ContactusType == "travel-portal-software" ||
-//                         model.ContactusType == "flight-booking-software" || model.ContactusType == "hospital-management-software" || model.ContactusType == "daily-expenses-software"
-//                         || model.ContactusType == "hrms-software" || model.ContactusType == "mobile-recharge-software" || model.ContactusType == "news-portal-software")
-
-//                            {
-//                                subject = "Thank You,For Requesting Demo.";
-//                                mailbody = "<div style='width:100%;background:#fff;font-size:12px;font-family:Verdana,Geneva,sans-serif'><table style = 'width:640px;border:none;font-size:12px;margin:0 auto' cellpadding = '0' cellspacing = '0'><tbody><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:15px 0'><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div><a><img style = 'width:180px' src = 'https://afluex.com/Softwarecss/images/logo-load.png'></a></div><h1 style = 'color:#fff;font-weight:normal'></h1></div></div></td></tr>"
-//+ "<tr><td><div style = 'background:#fff;vertical-align:top;padding:1px 0;text-align:center;border-bottom-right-radius:5px;border-bottom-left-radius:5px;border-left:1px solid #ddd;border-right:1px solid #ddd'>"
-//+ "<h4 style = 'font-size:20px;padding:10px 8px'>Thank you!<br/> For Requesting Demo.<br/></h4><p style = 'text-align: left;padding-left: 15px;font-size:20px'>"
-//+ "Dear " + ds.Tables[0].Rows[0]["Name"].ToString() + ",Below is your Login Creditentials :-<br/></p><p style = 'text-align: left;padding-left: 15px;font-size:17px'><a style = 'color: #fff;background-color: #337ab7;border-color: #2e6da4;display: inline-block;padding: 6px 12px;margin-bottom: 0;font-size: 14px;font-weight: 400;line-height: 1.42857143;"
-//+ "text - align: center; white - space: nowrap; vertical - align: middle; touch - action: manipulation; user - select: none; background - image: none;"
-//+ "border: 1px solid transparent; border - radius: 4px; ' href='" + ds.Tables[0].Rows[0]["Url"].ToString() + "'>Click Here For Open Demo</a></p>"
-//+ "<p style = 'text-align: left;padding-left: 15px;font-size:17px'><b> Admin Panel </b></p><table style = 'margin-left: 15px;width: 95%;border: 1px solid #ddd;max-width: 100%;margin-bottom: 20px;background-color: transparent;border-spacing: 0;border-collapse: collapse;ox-sizing: border-box;' cellpadding = '0' cellspacing = '0'>"
-//+ "<thead><tr style = 'color: #707070;font-weight: 400;box-sizing: border-box;'><th style = 'border-top: 0;vertical-align: middle;border-bottom-width: 2px;border: 1px solid #ddd;padding: 8px;line-height: 1.42857143;text-align: left;'>"
-//+ "Login Id</th><th style = 'border-top: 0;vertical-align: middle;border-bottom-width: 2px;border: 1px solid #ddd;padding: 8px;line-height: 1.42857143;text-align: left;'>"
-//+ "Password</th></tr></thead><tbody><tr style = 'background-color: #f9f9f9;box-sizing: border-box;'><td style = 'text-align:left;vertical-align: middle;border: 1px solid #ddd;padding: 8px;line-height: 1.42857143;'>"
-//+ "" + ds.Tables[0].Rows[0]["AdminLogin"].ToString() + "</td><td style = 'text-align:left;vertical-align: middle;border: 1px solid #ddd;padding: 8px;line-height: 1.42857143;'>" + ds.Tables[0].Rows[0]["AdminPass"].ToString() + "</td></tr></tbody>"
-//+ "</table></div></td></tr><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:1px 0'>"
-//+ "<div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div></div><h1 style = 'color:#fff;font-weight:normal'> Afluex Multiservices LLP</h1>"
-//+ "<h4 style = 'color:#fff;font-weight:normal'> 'Our Expertise in : Advertising / IT Services' </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 414/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow @afluex.com</i></h4>"
-//+ "<h4 style = 'color:white' ><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i>https://www.afluex.com/</i></h4>"
-//+ "</div></div></td></tr><tr><td><p style = 'color:#888;font-size:11px;margin-bottom:20px' >© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
-//                            }
-//                            else
-//                            {
-//                                subject = "Thank You,For Requesting Demo.";
-//                                mailbody = "<div style='width:100%;background:#fff;font-size:12px;font-family:Verdana,Geneva,sans-serif'><table style = 'width:640px;border:none;font-size:12px;margin:0 auto' cellpadding = '0' cellspacing = '0'><tbody><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:15px 0'><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div><a><img style = 'width:180px' src = 'https://afluex.com/Softwarecss/images/logo-load.png'></a></div><h1 style = 'color:#fff;font-weight:normal'></h1></div></div></td></tr>"
-//                           + "<tr><td><div style='background:#fff;vertical-align:top;padding:1px 0;border-bottom-right-radius:5px;border-bottom-left-radius:5px;border-left:1px solid #ddd;border-right:1px solid #ddd'><h4 style = 'font-size:14px;padding:10px 8px'>"
-//                            + "Dear " + ds.Tables[0].Rows[0]["Name"].ToString() + ",<br/> Thank you ! for Requesting Demo.<br/>Our Team will contact you soon.For Enquiry call us on 7310000413,412 or Mail us on -"
-//                             + "<a href = 'mailto:supportnow@afluex.com' target= '_blank'>supportnow@afluex.com</a>.</h4></div></td></tr><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:1px 0'>"
-// + "<div style= 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div></div><h1 style= 'color:#fff;font-weight:normal'> Afluex Multiservices LLP</h1>"
-// + "<h4 style = 'color:#fff;font-weight:normal'> 'Our Expertise in : Advertising / IT Services' </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 414/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow@afluex.com</i></h4>"
-// + "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i>https://www.afluex.com/</i></h4>"
-// + "</div></div></td></tr><tr><td><p style='color:#888;font-size:11px;margin-bottom:20px'>© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
-//                            }
-//                            var fromAddress = new MailAddress("supportnow@afluex.com", "Afluex Multiservices LLP");
-//                            var toAddress = new MailAddress(model.Email);
-//                            System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient
-//                            {
-//                                Host = "smtp.gmail.com",
-//                                Port = 587,
-//                                EnableSsl = true,
-//                                DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
-//                                UseDefaultCredentials = false,
-//                                Credentials = new NetworkCredential(fromAddress.Address,"Krishna@412") //"Krishna@412")
-
-//                            };
-//                            using (var message = new MailMessage(fromAddress, toAddress)
-//                            {
-//                                IsBodyHtml = true,
-//                                Subject = subject,
-//                                Body = mailbody
-//                            })
-//                                smtp.Send(message);
-//                        }
-//                        catch (Exception ex)
-//                        {
-
-//                        }
-//                        string mob = model.Mobile;
-//                        string str = "Dear " + model.Name + " thank you for showing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
-//                        try
-//                        {
-//                           //BLSMS.SendSMS(mob, str);
-//                        }
-//                        catch { }
-//                        string messagelbody = "";
-//                        try
-//                        {
-//                            //messagelbody = "<b>Dear team</b>" + "<br/>" + "You got a contact whose " + "<br/>" + " Name : " + model.Name + "<br/>" + " Mobile : " + model.Mobile + "<br/>" + " Message : " + model.Message + " , regarding" + model.ContactusType;
-//                            mailbody = @"<html><body><div style='margin:0 auto; padding:0px; height:420px; width:600px; background:linear-gradient(146deg, rgba(150, 167, 177, 0.9),rgba(176, 196, 208, 0.9), rgb(220, 230, 235), rgba(232,243,249,6), rgb(182, 200, 210), rgb(135, 147, 153) 100.71%);'>";
-//                            mailbody += @"<div style='height:90px; width:100%; position:relative; background:rgba(5, 11, 27, 0.92); padding-top:0px'>";
-//                            mailbody += @"<img src ='https://www.afluex.com/images/tklogo.png' class='img-responsive' alt='logo' style='width:222px;padding-top:4px;padding-left: 188px;position: absolute;'></div>";
-//                            mailbody += @"<h1 style='color:#c09727; text-transform:capitalize;font-weight:700; padding-left:25px; position:relative;font-size:40px;'> Dear <span style='color:#c09727;font-weight:700;text-transform:capitalize;'>Team,</span></h1>";
-//                            mailbody += @"<p style='color: #7a7a77;padding-left: 20px;'> You got a contact with " + "<br/>" + "<b> Name :</b> " + model.Name + "<br/>" + " <b>Mobile :</b> " + model.Mobile + "<br/>" + "<b> Message :</b> " + model.Message + " <br/> <b>regarding :</b>  " + model.ContactusType + " <p>";
-//                            mailbody += @"<div style='height:125px;width:100%;position:relative;background:rgba(5, 11, 27, 0.95);'>";
-//                            mailbody += @"<b style='text-align:center;padding-left:200px;padding-top: 4px;color: #b8881c;box-sizing:border-box;'>Afluex Multiservices LLP</b>";
-//                            mailbody += @"<ul style='list-style-type:none;'>";
-//                            mailbody += @"<li style='font-size:14.5px;padding:0px -1px 0px 35px;color:#dcf1c5'><span style='color:#c09727'>Email :</span><a href='mailto:supportnow@afluex.com' style='color:#dcf1c5' target='_blank'>supportnow@afluex.com</a> <span style='color:#c09727'>Contact No:</span> +91 731-0000-413 / 412 </li>";
-
-//                            mailbody += @"<li style='font-size:14.5px; padding:0px -1px 0px 35px; color:#fff'><span style='color:#c09727'>Website :</span><span style='color:#fff'> <a href='https://www.afluex.com' style='color:#dcf1c5' target='_blank'>www.afluex.com</a></span></li>";
-//                            mailbody += @"<li style='font-size:14.5px; padding:0px -1px 0px 35px;color:#fff; font-style:italic;'> 'Our Expertise in : Advertising & IT Services' </li >";
-//                            mailbody += @"</ul></div></div></body></html>";
-//                            var fromAddress = new MailAddress("contact.afluex@gmail.com");
-//                            var toAddress = new MailAddress("contact.afluex@gmail.com");
-//                            System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient
-//                            {
-//                                Host = "smtp.gmail.com",
-//                                Port = 587,
-//                                EnableSsl = true,
-//                                DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
-//                                UseDefaultCredentials = false,
-//                                Credentials = new NetworkCredential(fromAddress.Address, "Krishna@412")//"Krishna@412")
-
-//                            };
-//                            using (var message = new MailMessage(fromAddress, toAddress)
-//                            {
-//                                IsBodyHtml = true,
-//                                Subject = subject,
-//                                Body = mailbody
-//                            })
-//                                smtp.Send(message);
-//                            //TempData["ContactMsg"] = "message has been sent. ";
-//                        }
-
-//                        catch (Exception ex)
-//                        {
-
-//                        }
-//                        string mobs = "7310000413";
-//                        string str2 = "You got a contact whose name-" + model.Name + " , mob-" + model.Mobile + ", msg-" + model.Message + " , regarding " + model.ContactusType;
-//                        try
-//                        {
-//                           //BLSMS.SendSMS(mobs, str2);
-//                        }
-//                        catch { }
-
-//                        TempData["ContactMsg"] = "message has been sent.";
-//                        FormName = "thankyou";
-//                        Controller = "web";
-//                    }
-//                    else
-//                    {
-//                        TempData["ContactMsg"] = ds.Tables[0].Rows[0]["ErrorMessage"].ToString();
-
-//                    }
-//                }
-//                else
-//                {
-//                    string mailbody = "";
-//                    try
-//                    {
-//                        if (strTemp[3].ToString() == "advertisement")
-//                        {
-//                            subject = "Thank You,for showing interest in advertising field.";
-//                            mailbody = "<div style='width:100%;background:#fff;font-size:12px;font-family:Verdana,Geneva,sans-serif'><table style = 'width:640px;border:none;font-size:12px;margin:0 auto' cellpadding = '0' cellspacing = '0'><tbody><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:15px 0'><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div><a><img style = 'width:180px' src = 'https://afluex.com/Softwarecss/images/logo-load.png'></a></div><h1 style = 'color:#fff;font-weight:normal'></h1></div></div></td></tr>"
-//                              + "<tr><td><div style='background:#fff;vertical-align:top;padding:1px 0;border-bottom-right-radius:5px;border-bottom-left-radius:5px;border-left:1px solid #ddd;border-right:1px solid #ddd'><h4 style = 'font-size:14px;padding:10px 8px'>"
-//                               + "Dear " + model.Name + ",<br/> Thank you ! for showing interest in advertising field.<br/>Our Team will contact you soon.For Enquiry call us on 7310000413,412 or Mail us on -"
-//                                + "<a href = 'mailto:supportnow@afluex.com' target= '_blank'>supportnow@afluex.com</a>.</h4></div></td></tr><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:1px 0'>"
-//    + "<div style= 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div></div><h1 style= 'color:#fff;font-weight:normal'> Afluex Multiservices LLP</h1>"
-//    + "<h4 style = 'color:#fff;font-weight:normal'> 'Our Expertise in : Advertising / IT Services' </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 414/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow@afluex.com</i></h4>"
-//    + "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i>https://www.afluex.com/</i></h4>"
-//    + "</div></div></td></tr><tr><td><p style='color:#888;font-size:11px;margin-bottom:20px'>© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
-
-//                        }
-//                        else
-//                        {
-//                            subject = "Thank you ! for Requesting Demo.";
-//                            mailbody = "<div style='width:100%;background:#fff;font-size:12px;font-family:Verdana,Geneva,sans-serif'><table style = 'width:640px;border:none;font-size:12px;margin:0 auto' cellpadding = '0' cellspacing = '0'><tbody><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:15px 0'><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div><a><img style = 'width:180px' src = 'https://afluex.com/Softwarecss/images/logo-load.png'></a></div><h1 style = 'color:#fff;font-weight:normal'></h1></div></div></td></tr>"
-//                               + "<tr><td><div style='background:#fff;vertical-align:top;padding:1px 0;border-bottom-right-radius:5px;border-bottom-left-radius:5px;border-left:1px solid #ddd;border-right:1px solid #ddd'><h4 style = 'font-size:14px;padding:10px 8px'>"
-//                                + "Dear " + model.Name + ",<br/> Thank you ! for Requesting Demo.<br/>Our Team will contact you soon.For Enquiry call us on 7310000413,412 or Mail us on -"
-//                                 + "<a href = 'mailto:supportnow@afluex.com' target= '_blank'>supportnow@afluex.com</a>.</h4></div></td></tr><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:1px 0'>"
-//     + "<div style= 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div></div><h1 style= 'color:#fff;font-weight:normal'> Afluex Multiservices LLP</h1>"
-//     + "<h4 style = 'color:#fff;font-weight:normal'> 'Our Expertise in : Advertising / IT Services' </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 414/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow@afluex.com</i></h4>"
-//     + "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i>https://www.afluex.com/</i></h4>"
-//     + "</div></div></td></tr><tr><td><p style='color:#888;font-size:11px;margin-bottom:20px'>© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
-//                        }
-//                        var fromAddress = new MailAddress("contact.afluex@gmail.com", "Afluex Multiservices LLP");
-//                        var toAddress = new MailAddress(model.Email);
-//                        System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient
-//                        {
-//                            Host = "smtp.gmail.com",
-//                            Port = 587,
-//                            EnableSsl = true,
-//                            DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
-//                            UseDefaultCredentials = false,
-//                            Credentials = new NetworkCredential(fromAddress.Address,"Krishna@412") //"Krishna@412")
-
-//                        };
-//                        using (var message = new MailMessage(fromAddress, toAddress)
-//                        {
-//                            IsBodyHtml = true,
-
-//                            Subject = subject,
-//                            Body = mailbody
-//                        })
-//                            smtp.Send(message);
-//                    }
-//                    catch (Exception ex)
-//                    {
-
-//                    }
-//                    string mob = model.Mobile;
-//                    string str = "Dear " + model.Name + " thank you for showing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
-
-//                    try
-//                    {
-//                        //BLSMS.SendSMS(mob, str);
-//                    }
-//                    catch { }
-
-
-//                    string messagelbody = "";
-//                    try
-//                    {
-
-//                        mailbody = @"<html><body><div style='margin:0 auto; padding:0px; height:420px; width:600px; background:linear-gradient(146deg, rgba(150, 167, 177, 0.9),rgba(176, 196, 208, 0.9), rgb(220, 230, 235), rgba(232,243,249,6), rgb(182, 200, 210), rgb(135, 147, 153) 100.71%);'>";
-//                        mailbody += @"<div style='height:90px; width:100%; position:relative; background:rgba(5, 11, 27, 0.92); padding-top:0px'>";
-//                        mailbody += @"<img src ='https://www.afluex.com/images/tklogo.png' class='img-responsive' alt='logo' style='width:222px;padding-top:4px;padding-left: 188px;position: absolute;'></div>";
-//                        mailbody += @"<h1 style='color:#c09727; text-transform:capitalize;font-weight:700; padding-left:25px; position:relative;font-size:40px;'> Dear <span style='color:#c09727;font-weight:700;text-transform:capitalize;'>Team,</span></h1>";
-//                        mailbody += @"<p style='color: #7a7a77;padding-left: 20px;'> You got a contact with " + "<br/>" + "<b> Name :</b> " + model.Name + "<br/>" + " <b>Mobile :</b> " + model.Mobile + "<br/>" + "<b> Message :</b> " + model.Message + " <br/> <b>regarding :</b>  " + model.ContactusType + " <p>";
-
-//                        mailbody += @"<div style='height:125px;width:100%;position:relative;background:rgba(5, 11, 27, 0.95);'>";
-//                        mailbody += @"<b style='text-align:center;padding-left:200px;padding-top: 4px;color: #b8881c;box-sizing:border-box;'>Afluex Multiservices LLP</b>";
-//                        mailbody += @"<ul style='list-style-type:none;'>";
-//                        mailbody += @"<li style='font-size:14.5px;padding:0px -1px 0px 35px;color:#dcf1c5'><span style='color:#c09727'>Email :</span><a href='mailto:supportnow@afluex.com' style='color:#dcf1c5' target='_blank'>supportnow@afluex.com</a> <span style='color:#c09727'>Contact No:</span> +91 731-0000-413 / 412 </li>";
-
-//                        mailbody += @"<li style='font-size:14.5px; padding:0px -1px 0px 35px; color:#fff'><span style='color:#c09727'>Website :</span><span style='color:#fff'> <a href='https://www.afluex.com' style='color:#dcf1c5' target='_blank'>www.afluex.com</a></span></li>";
-//                        mailbody += @"<li style='font-size:14.5px; padding:0px -1px 0px 35px;color:#fff; font-style:italic;'> 'Our Expertise in : Advertising & IT Services' </li >";
-
-//                        mailbody += @"</ul></div></div></body></html>";
-
-//                        var fromAddress = new MailAddress("contact.afluex@gmail.com");
-//                        var toAddress = new MailAddress("contact.afluex@gmail.com");
-
-//                        System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient
-//                        {
-//                            Host = "smtp.gmail.com",
-//                            Port = 587,
-//                            EnableSsl = true,
-//                            DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
-//                            UseDefaultCredentials = false,
-//                            Credentials = new NetworkCredential(fromAddress.Address, "Krishna@412")
-
-//                        };
-
-//                        using (var message = new MailMessage(fromAddress, toAddress)
-//                        {
-//                            IsBodyHtml = true,
-//                            Subject = "Request For Demo " + DateTime.Now.ToString(),
-//                            Body = messagelbody
-//                        })
-//                            smtp.Send(message);
-//                        TempData["ContactMsg"] = "message has been sent. ";
-
-
-//                    }
-
-//                    catch (Exception ex)
-//                    {
-
-//                    }
-
-
-//                    string mobs = "7310000413";
-//                    string str2 = "You got a contact whose name-" + model.Name + " , mob-" + model.Mobile + ", msg-" + model.Message + " , regarding" + model.ContactusType;
-
-//                    try
-//                    {
-//                       //BLSMS.SendSMS(mobs, str2);
-//                    }
-//                    catch { }
-
-//                    TempData["ContactMsg"] = "message has been sent.";
-//                    FormName = "thankyou";
-//                    Controller = "web";
-//                }
-
-
-//            }
-//            catch (Exception ex)
-//            {
-//                TempData["ContactMsg"] = ex.Message;
-//                FormName = "thankyou";
-//                Controller = "web";
-//            }
-//            return RedirectToAction(FormName, Controller);
-//        }
-        public ActionResult ValidateData(string MemberName, string Contact, string Email, string CusMessage)
+    public ActionResult ValidateData(string MemberName, string Contact, string Email, string CusMessage)
         {
             Home model = new Home();
             model.Mobile = Contact;
@@ -1373,13 +1016,13 @@ namespace Afluex.Controllers
                 {
                     mailbody = "<div style='width:100%;background:#fff;font-size:12px;font-family:Verdana,Geneva,sans-serif'><table style = 'width:640px;border:none;font-size:12px;margin:0 auto' cellpadding = '0' cellspacing = '0'><tbody><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:15px 0'><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div><a><img style = 'width:180px' src = 'https://afluex.com/Softwarecss/images/logo-load.png'></a></div><h1 style = 'color:#fff;font-weight:normal'></h1></div></div></td></tr>"
                 + "<tr><td><div style='background:#fff;vertical-align:top;padding:1px 0;border-bottom-right-radius:5px;border-bottom-left-radius:5px;border-left:1px solid #ddd;border-right:1px solid #ddd'><h4 style = 'font-size:14px;padding:10px 8px'>"
-                 + "Dear " + MemberName + ",<br/> Your OTP(One Time Password is) " + ctrOTP + "<br/>"
+                 + "Dear " + MemberName + ",<br/> Your OTP(One Time Password) is" + ctrOTP + "<br/>"
                   + "</h4></div></td></tr><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:1px 0'>"
 + "<div style= 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div></div><h1 style= 'color:#fff;font-weight:normal'> Afluex Multiservices LLP</h1>"
-+ "<h4 style = 'color:#fff;font-weight:normal'> Our Expertise in : Advertising / IT Services </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 414/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow@afluex.com</i></h4>"
-+ "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i>https://www.afluex.com/</i></h4>"
++ "<h4 style = 'color:#fff;font-weight:normal'> Our Expertise in : Advertising / IT Services </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 412/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow@afluex.com</i></h4>"
++ "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i><span style='color:#fff'>https://www.afluex.com/</span></i></h4>"
 + "</div></div></td></tr><tr><td><p style='color:#888;font-size:11px;margin-bottom:20px'>© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
-                    var fromAddress = new MailAddress("developer5.afluex@gmail.com", "Afluex Mutiserices LLP");
+                    var fromAddress = new MailAddress("contact.afluex@gmail.com", "Afluex Mutiserices LLP");
                     //var fromAddress = new MailAddress("contact.afluex@gmail.com", "Afluex Mutiserices LLP");
                     var toAddress = new MailAddress(Email);
 
@@ -1390,7 +1033,7 @@ namespace Afluex.Controllers
                         EnableSsl = true,
                         DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                         UseDefaultCredentials = false,
-                        Credentials = new NetworkCredential(fromAddress.Address, "Afluex@123")
+                        Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437")
                          //Credentials = new NetworkCredential(fromAddress.Address, "Krishna@412")
 
                     };
@@ -1408,7 +1051,7 @@ namespace Afluex.Controllers
                 }
                 try
                 {
-                    BLSMS.SendSMS(mobotp, strotp);
+                   BLSMS.SendSMS(mobotp, strotp);
                 }
                 catch { }
 
@@ -1448,10 +1091,10 @@ namespace Afluex.Controllers
                             mailbody = "<div style='width:100%;background:#fff;font-size:12px;font-family:Verdana,Geneva,sans-serif'><table style = 'width:640px;border:none;font-size:12px;margin:0 auto' cellpadding = '0' cellspacing = '0'><tbody><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:15px 0'><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div><a><img style = 'width:180px' src = 'https://www.afluex.com/Softwarecss/images/logo-load.png'></a></div><h1 style = 'color:#fff;font-weight:normal'></h1></div></div></td></tr>"
                         + "<tr><td><div style='background:#fff;vertical-align:top;padding:1px 0;border-bottom-right-radius:5px;border-bottom-left-radius:5px;border-left:1px solid #ddd;border-right:1px solid #ddd'><h4 style = 'font-size:14px;padding:10px 8px'>"
                          + "Dear " + Name + ",<br/> Thank you for showing your interest.<br/>Our Team will contact you soon.For Enquiry call us on 7310000413,412 or Mail us on -"
-                          + "<a href = 'mailto:supportnow@afluex.com' target= '_blank'>supportnow@afluex.com</a>.</h4></div></td></tr><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:1px 0'>"
+                          + "<a href = 'mailto:supportnow@afluex.com' target= '_blank' style='color:#fff'>supportnow@afluex.com</a>.</h4></div></td></tr><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:1px 0'>"
         + "<div style= 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div></div><h1 style= 'color:#fff;font-weight:normal'> Afluex Multiservices LLP</h1>"
-        + "<h4 style = 'color:#fff;font-weight:normal'> Our Expertise in : Advertising / IT Services </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 414</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow@afluex.com</i></h4>"
-        + "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i>https://www.afluex.com/</i></h4>"
+        + "<h4 style = 'color:#fff;font-weight:normal'> Our Expertise in : Advertising / IT Services </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 412</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow@afluex.com</i></h4>"
+        + "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i><span style='color:#fff'>https://www.afluex.com/</span></i></h4>"
         + "</div></div></td></tr><tr><td><p style='color:#888;font-size:11px;margin-bottom:20px'>© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
 
                             var fromAddress = new MailAddress("contact.afluex@gmail.com", "Afluex Mutiserices LLP");    //("contact.afluex@gmail.com", "Afluex Mutiserices LLP");
@@ -1464,7 +1107,7 @@ namespace Afluex.Controllers
                                 EnableSsl = true,
                                 DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                                 UseDefaultCredentials = false,
-                                Credentials = new NetworkCredential(fromAddress.Address,"Krishna@412")// "Krishna@412")
+                                Credentials = new NetworkCredential(fromAddress.Address,"Multiservices@437")// "Krishna@412")
 
                             };
 
@@ -1475,9 +1118,6 @@ namespace Afluex.Controllers
                                 Body = mailbody
                             })
                                 smtp.Send(message);
-
-
-
                         }
 
                         catch (Exception ex)
@@ -1488,11 +1128,11 @@ namespace Afluex.Controllers
 
 
                         string mobs = Mobile;
-                        string str2 = "Dear " + Name + " thank you for showing your interest in our IT Field. Our Team will contact you soon For Enquiry call us on 7310000413,412 or Mail us on supportnow@afluex.com";
+                        string str2 =  Name + " thank you for showing your interest in our IT Field. Our Team will contact you soon For Enquiry call us on 7310000413,412 or Mail us on supportnow@afluex.com";
 
                         try
                         {
-                            //BLSMS.SendSMS(mobs, str2);
+                            BLSMS.SendSMS(mobs, str2);
                         }
                         catch { }
 
@@ -1513,7 +1153,7 @@ namespace Afluex.Controllers
                                 EnableSsl = true,
                                 DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                                 UseDefaultCredentials = false,
-                                Credentials = new NetworkCredential(fromAddress.Address,"Krishna@412" )//"Krishna@412")
+                                Credentials = new NetworkCredential(fromAddress.Address,"Multiservices@437" )//"Krishna@412")
 
                             };
 
@@ -1534,14 +1174,12 @@ namespace Afluex.Controllers
 
                         }
 
-
-
                         string mobval = "7310000413";
                         string strval = "You got a quote Rquest from " + Name + " , Mob-" + Mobile + ", Project-" + ProjectType + " , Budget-" + YourBudget + ", Msg-" + Message;
                         obj.Result = "Yes";
                         try
                         {
-                           //BLSMS.SendSMS(mobval, strval);
+                           BLSMS.SendSMS(mobval, strval);
                         }
                         catch { }
                         obj.Result = "Inquiry send successfully";
