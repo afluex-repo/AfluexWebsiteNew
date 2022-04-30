@@ -118,11 +118,9 @@ namespace Afluex
                     Session["ddlCategoryId"] = Session["ddlCategoryId"].ToString().Replace(',' + ddlcategory.SelectedValue + ',', ",");
 
                     Session["ddlCategoryName"] = Session["ddlCategoryName"].ToString().Replace(',' + ddlcategory.SelectedItem.Text + ',', ",");
-
                 }
                 else
                 {
-
                     Session["ddlCategoryId"] = ',' + ddlcategory.SelectedValue + Session["ddlCategoryId"].ToString();
                     Session["ddlCategoryName"] = ',' + ddlcategory.SelectedItem.Text + Session["ddlCategoryName"].ToString();
 
@@ -270,15 +268,14 @@ namespace Afluex
                             #endregion 270x205
 
                         }
+
                         if (Session["dtSecImages"] != null)
                         {
                             dtImages = (DataTable)Session["dtSecImages"];
                             DataRow dr = null;
-
                             if (dtImages.Rows.Count > 0)
                             {
                                 dr = dtImages.NewRow();
-
                                 dr["ImagePath"] = "/SoftwareCss/images/blog/" + filename;
                                 dtImages.Rows.Add(dr);
                                 Session["dtSecImages"] = dtImages;
@@ -296,7 +293,6 @@ namespace Afluex
                     }
                 }
                 #endregion ImageEn
-               
                 dtImages = (DataTable)Session["dtSecImages"];
                 objpost.dtimages = dtImages;
                 DataSet ds = objpost.UpdateBlog();
@@ -314,7 +310,6 @@ namespace Afluex
                         hdnshortdescription.Text = "";
                         hdndescription.Text = "";
                         return;
-
                     }
                     else
                     {
