@@ -118,11 +118,9 @@ namespace Afluex
                     Session["ddlCategoryId"] = Session["ddlCategoryId"].ToString().Replace(',' + ddlcategory.SelectedValue + ',', ",");
 
                     Session["ddlCategoryName"] = Session["ddlCategoryName"].ToString().Replace(',' + ddlcategory.SelectedItem.Text + ',', ",");
-
                 }
                 else
                 {
-
                     Session["ddlCategoryId"] = ',' + ddlcategory.SelectedValue + Session["ddlCategoryId"].ToString();
                     Session["ddlCategoryName"] = ',' + ddlcategory.SelectedItem.Text + Session["ddlCategoryName"].ToString();
 
@@ -154,7 +152,7 @@ namespace Afluex
                 {
                     foreach (HttpPostedFile uploadedFile in flpimages.PostedFiles)
                     {
-                        String path = HttpContext.Current.Request.PhysicalApplicationPath + "images\\blog\\";
+                        String path = HttpContext.Current.Request.PhysicalApplicationPath + "SoftwareCss\\images\\blog\\";
                         string filename = DateTime.Now.ToString("ddMMyyyyHHmmsss") + uploadedFile.FileName;
 
                         //uploadedFile.SaveAs(System.IO.Path.Combine(Server.MapPath("~/Images/NewsSecondaryImage"), filename));
@@ -173,7 +171,7 @@ namespace Afluex
                             var imgRectangle = new SD.Rectangle(0, 0, newWidth, newHeight);
                             thumbGraph.DrawImage(image, imgRectangle);
 
-                            string targetPath = Server.MapPath("~/SoftwareCss/images/blog/") + filename;
+                            string targetPath = Server.MapPath("SoftwareCss/images/blog/") + filename;
                             thumbImg.Save(targetPath, image.RawFormat);
                             #endregion 270x205
 
@@ -187,7 +185,7 @@ namespace Afluex
                             {
                                 dr = dtImages.NewRow();
 
-                                dr["ImagePath"] = "~/SoftwareCss/images/blog/" + filename;
+                                dr["ImagePath"] = "SoftwareCss/images/blog/" + filename;
                                 dtImages.Rows.Add(dr);
                                 Session["dtSecImages"] = dtImages;
                             }
@@ -196,7 +194,7 @@ namespace Afluex
                         {
                             dtImages.Columns.Add("ImagePath", typeof(string));
                             DataRow dr = dtImages.NewRow();
-                            dr["ImagePath"] = "~/SoftwareCss/images/blog/" + filename;
+                            dr["ImagePath"] = "SoftwareCss/images/blog/" + filename;
                             dtImages.Rows.Add(dr);
                             Session["dtSecImages"] = dtImages;
                         }
@@ -246,7 +244,7 @@ namespace Afluex
                 {
                     foreach (HttpPostedFile uploadedFile in flpimages.PostedFiles)
                     {
-                        String path = HttpContext.Current.Request.PhysicalApplicationPath + "afluexit\\images\\blog\\";
+                        String path = HttpContext.Current.Request.PhysicalApplicationPath + "SoftwareCss\\images\\blog\\";
                         string filename = DateTime.Now.ToString("ddMMyyyyHHmmsss") + uploadedFile.FileName;
 
                         //uploadedFile.SaveAs(System.IO.Path.Combine(Server.MapPath("~/Images/NewsSecondaryImage"), filename));
@@ -265,21 +263,20 @@ namespace Afluex
                             var imgRectangle = new SD.Rectangle(0, 0, newWidth, newHeight);
                             thumbGraph.DrawImage(image, imgRectangle);
 
-                            string targetPath = Server.MapPath("~/SoftwareCss/images/blog/") + filename;
+                            string targetPath = Server.MapPath("SoftwareCss/images/blog/") + filename;
                             thumbImg.Save(targetPath, image.RawFormat);
                             #endregion 270x205
 
                         }
+
                         if (Session["dtSecImages"] != null)
                         {
                             dtImages = (DataTable)Session["dtSecImages"];
                             DataRow dr = null;
-
                             if (dtImages.Rows.Count > 0)
                             {
                                 dr = dtImages.NewRow();
-
-                                dr["ImagePath"] = "~/SoftwareCss/images/blog/" + filename;
+                                dr["ImagePath"] = "/SoftwareCss/images/blog/" + filename;
                                 dtImages.Rows.Add(dr);
                                 Session["dtSecImages"] = dtImages;
                             }
@@ -288,7 +285,7 @@ namespace Afluex
                         {
                             dtImages.Columns.Add("ImagePath", typeof(string));
                             DataRow dr = dtImages.NewRow();
-                            dr["ImagePath"] = "~/SoftwareCss/images/blog/" + filename;
+                            dr["ImagePath"] = "/SoftwareCss/images/blog/" + filename;
                             dtImages.Rows.Add(dr);
                             Session["dtSecImages"] = dtImages;
                         }
@@ -296,7 +293,6 @@ namespace Afluex
                     }
                 }
                 #endregion ImageEn
-               
                 dtImages = (DataTable)Session["dtSecImages"];
                 objpost.dtimages = dtImages;
                 DataSet ds = objpost.UpdateBlog();
@@ -314,7 +310,6 @@ namespace Afluex
                         hdnshortdescription.Text = "";
                         hdndescription.Text = "";
                         return;
-
                     }
                     else
                     {

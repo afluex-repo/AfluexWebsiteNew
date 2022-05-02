@@ -81,7 +81,7 @@ namespace Afluex.Controllers
                             SmtpClient mailServer = new SmtpClient("smtp.gmail.com", 587);
                             mailServer.EnableSsl = true;
                             //mailServer.Credentials = new System.Net.NetworkCredential(model.SenderEmail, model.SenderPassword);
-                            mailServer.Credentials = new System.Net.NetworkCredential("contact.afluex@gmail.com", "afluex@7310");
+                            mailServer.Credentials = new System.Net.NetworkCredential("contact.afluex@gmail.com", "Multiservices@437");
 
                             MailMessage myMail = new MailMessage();
                             myMail.IsBodyHtml = true;
@@ -109,7 +109,7 @@ namespace Afluex.Controllers
                             SmtpClient mailServer1 = new SmtpClient("smtp.gmail.com", 587);
                             mailServer.EnableSsl = true;
                             //mailServer.Credentials = new System.Net.NetworkCredential(model.SenderEmail, model.SenderPassword);
-                            mailServer.Credentials = new System.Net.NetworkCredential("contact.afluex@gmail.com", "afluex@7310");
+                            mailServer.Credentials = new System.Net.NetworkCredential("contact.afluex@gmail.com", "Multiservices@437");
 
                             MailMessage myMail1 = new MailMessage();
                             myMail1.IsBodyHtml = true;
@@ -158,7 +158,7 @@ namespace Afluex.Controllers
                         TempData["Career"] = "Thank you ! for shwoing your interest in Afluex.Our HR Team will contact you soon.For Enquiry call us on 7310000413,412 or Mail us on -supportnow@afluex.com.";
 
                         string mob = dsRegistration.Tables[0].Rows[0]["Mobile"].ToString();
-                        string str = "Dear " + dsRegistration.Tables[0].Rows[0]["Name"].ToString() + " thank you for shwoing your interest in Afluex. Our HR Team will contact you soon. For Direct Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
+                        string str =  dsRegistration.Tables[0].Rows[0]["Name"].ToString() + " thank you for shwoing your interest in Afluex. Our HR Team will contact you soon. For Direct Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
                         try
                         {
                             BLSMS.SendSMS(mob, str);
@@ -287,7 +287,7 @@ namespace Afluex.Controllers
                                 EnableSsl = true,
                                 DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                                 UseDefaultCredentials = false,
-                                Credentials = new NetworkCredential(fromAddress.Address, "afluex@7310")
+                                Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437")
                             };
                             using (var message = new MailMessage(fromAddress, toAddress)
                             {
@@ -302,7 +302,7 @@ namespace Afluex.Controllers
                             //throw ex;
                         }
                         string mob = model.Mobile;
-                        string str = "Dear " + model.Name + " thank you for shwoing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
+                        string str =  model.Name + " thank you for shwoing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
 
                         try
                         {
@@ -327,7 +327,7 @@ namespace Afluex.Controllers
                                 EnableSsl = true,
                                 DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                                 UseDefaultCredentials = false,
-                                Credentials = new NetworkCredential(fromAddress.Address, "afluex@7310")
+                                Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437")
 
                             };
                             using (var message = new MailMessage(fromAddress, toAddress)
@@ -666,7 +666,7 @@ namespace Afluex.Controllers
                         string str = "Dear " + model.Name + " thank you for showing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
                         try
                         {
-                            //BLSMS.SendSMS(mob, str);
+                            BLSMS.SendSMS(mob, str);
                         }
                         catch { }
                         string messagelbody = "";
@@ -710,8 +710,6 @@ namespace Afluex.Controllers
                             //TempData["ContactMsg"] = "message has been sent. ";
                         }
                         catch (Exception ex)
-
-
                         {
 
                         }
@@ -719,7 +717,7 @@ namespace Afluex.Controllers
                         string str2 = "You got a contact whose name-" + model.Name + " , mob-" + model.Mobile + ", msg-" + model.Message + " , regarding " + model.ContactusType;
                         try
                         {
-                            //BLSMS.SendSMS(mobs, str2);
+                            BLSMS.SendSMS(mobs, str2);
                         }
                         catch { }
                         TempData["ContactMsg"] = "message has been sent.";
@@ -786,10 +784,10 @@ namespace Afluex.Controllers
 
                     }
                     string mob = model.Mobile;
-                    string str = "Dear " + model.Name + " thank you for showing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
+                    string str =  model.Name + " thank you for showing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
                     try
                     {
-                        //BLSMS.SendSMS(mob, str);
+                        BLSMS.SendSMS(mob, str);
                     }
                     catch { }
                     string messagelbody = "";
@@ -837,7 +835,7 @@ namespace Afluex.Controllers
                     string str2 = "You got a contact whose name-" + model.Name + " , mob-" + model.Mobile + ", msg-" + model.Message + " , regarding" + model.ContactusType;
                     try
                     {
-                        //BLSMS.SendSMS(mobs, str2);
+                       BLSMS.SendSMS(mobs, str2);
                     }
                     catch { }
                     TempData["ContactMsg"] = "message has been sent.";
@@ -854,7 +852,7 @@ namespace Afluex.Controllers
             return RedirectToAction(FormName, Controller);
         }
 
-        public ActionResult ValidateData(string MemberName, string Contact, string Email, string CustMessage)
+        public ActionResult ValidateData(string MemberName, string Contact, string Email, string CusMessage)
         {
             Home model = new Home();
             model.Mobile = Contact;
@@ -870,7 +868,7 @@ namespace Afluex.Controllers
                 {
                     mailbody = "<div style='width:100%;background:#fff;font-size:12px;font-family:Verdana,Geneva,sans-serif'><table style = 'width:640px;border:none;font-size:12px;margin:0 auto' cellpadding = '0' cellspacing = '0'><tbody><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:15px 0'><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div><a><img style = 'width:180px' src = 'https://afluex.com/Softwarecss/images/logo-load.png'></a></div><h1 style = 'color:#fff;font-weight:normal'></h1></div></div></td></tr>"
                 + "<tr><td><div style='background:#fff;vertical-align:top;padding:1px 0;border-bottom-right-radius:5px;border-bottom-left-radius:5px;border-left:1px solid #ddd;border-right:1px solid #ddd'><h4 style = 'font-size:14px;padding:10px 8px'>"
-                 + "Dear " + MemberName + ",<br/> Your OTP(One Time Password is) " + ctrOTP + "<br/>"
+                 + "Dear " + MemberName + ",<br/> Your OTP(One Time Password) is" + ctrOTP + "<br/>"
                   + "</h4></div></td></tr><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:1px 0'>"
 + "<div style= 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div></div><h1 style= 'color:#fff;font-weight:normal'> Afluex Multiservices  LLP</h1>"
 + "<h4 style = 'color:#fff;font-weight:normal'> Our Expertise in : Advertising / IT Services </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow@afluex.com</i></h4>"
@@ -901,7 +899,7 @@ namespace Afluex.Controllers
                 }
                 try
                 {
-                    //BLSMS.SendSMS(mobotp, strotp);
+                    BLSMS.SendSMS(mobotp, strotp);
                 }
                 catch { }
                 model.Otppin = ctrOTP;

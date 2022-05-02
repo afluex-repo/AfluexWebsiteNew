@@ -14,7 +14,6 @@ namespace Afluex.Models
         public string Mobile { get; set; }
         public string Email { get; set; }
         public string Description { get; set; }
-      //  public string FileUpload { get; set; }
         public string About { get; set; }
         public string CustMessage { get; set; }
         public string Message { get; set; }
@@ -23,18 +22,17 @@ namespace Afluex.Models
         public string ContactusType { get; set; }
         public string CareerType { get; set; }
         public string InquiryType { get; set; }
-        public string Password { get; set; } public string LoginId { get; set; }
+        public string Password { get; set; }
+        public string LoginId { get; set; }
         public string EncryptPassword { get; set; }
         public string ConfirmPassword { get; set; }
-
         public string DemoType { get; set; }
-
+        public string CusMessage { get; set; }
         public string Otppin { get; set; }
         public string ProductId { get; set; }
         public string ProductName { get; set; }
         public string ProductUrl { get; set; }
         public string SponsorId { get; set; }
-
         public string FromDate { get; set; }
         public string ToDate { get; set; }
         public DataSet SaveCareer()
@@ -42,18 +40,16 @@ namespace Afluex.Models
             SqlParameter[] para =
                             {
                                         new SqlParameter("@Name",Name),
-
-                                         new SqlParameter("@Mobile",Mobile),
+                                        new SqlParameter("@Mobile",Mobile),
                                         new SqlParameter("@Email",Email),
                                         new SqlParameter("@Description",Description),
-                                         new SqlParameter("@FileUpload",FileUpload),
-                                         new SqlParameter("@CareerType",CareerType)
+                                        new SqlParameter("@FileUpload",FileUpload),
+                                        new SqlParameter("@CareerType",CareerType)
 
                             };
             DataSet ds = Connection.ExecuteQuery("InsertCareerDetails", para);
             return ds;
         }
-
 
         public DataSet SaveDemoDetails()
         {
@@ -66,7 +62,7 @@ namespace Afluex.Models
                                         new SqlParameter("@Type",ContactusType),
                                         new SqlParameter("@Password",Password),
                                         new SqlParameter("@EncrptPassword", EncryptPassword),
-                                        new SqlParameter("@Message",CustMessage),
+                                        new SqlParameter("@Message",CusMessage),
                                     
                             };
             DataSet ds = Connection.ExecuteQuery("Registration", para);
@@ -79,9 +75,9 @@ namespace Afluex.Models
                                         new SqlParameter("@Name",Name),
                                         new SqlParameter("@About",About),
                                         new SqlParameter("@MobileNo",Mobile),
-                                         new SqlParameter("@EmailId",Email),
+                                        new SqlParameter("@EmailId",Email),
                                         new SqlParameter("@Message",Message),
-                                         new SqlParameter("@ContactusType",ContactusType),
+                                        new SqlParameter("@ContactusType",ContactusType),
 
                             };
             DataSet ds = Connection.ExecuteQuery("SaveEnquiry", para);
@@ -121,7 +117,7 @@ namespace Afluex.Models
                                         new SqlParameter("@MobileNo",Mobile),
                                          new SqlParameter("@Email",Email),
                                          new SqlParameter("@FromDate",FromDate),
-                                          new SqlParameter("@ToDate",ToDate),
+                                         new SqlParameter("@ToDate",ToDate),
                                         new SqlParameter("@Message",CustMessage),
 
                             };

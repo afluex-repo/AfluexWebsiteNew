@@ -39,18 +39,16 @@ namespace Afluex.Controllers
         public ActionResult OurTeam()
         {
             return View("OurTeam");
-
         }
         [ActionName("outdoor-advertising")]
         public ActionResult outdooradvertising()
         {
-            return View("outdooradvertising");
+           return View("outdooradvertising");
         }
         [ActionName("wall-wrap-ads")]
         public ActionResult wallwrapads()
         {
             return View("wallwrapads");
-
         }
         [ActionName("inshop-outdoor-branding")]
         public ActionResult inshopoutdoorbranding()
