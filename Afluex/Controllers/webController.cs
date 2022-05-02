@@ -359,7 +359,7 @@ namespace Afluex.Controllers
                             SmtpClient mailServer = new SmtpClient("smtp.gmail.com", 587);
                             mailServer.EnableSsl = true;
                             //mailServer.Credentials = new System.Net.NetworkCredential(model.SenderEmail, model.SenderPassword);
-                            mailServer.Credentials = new System.Net.NetworkCredential("contact.afluex@gmail.com", "Krishna@412");
+                            mailServer.Credentials = new System.Net.NetworkCredential("contact.afluex@gmail.com", "Multiservices@437");
 
                             MailMessage myMail = new MailMessage();
                             myMail.IsBodyHtml = true;
@@ -511,7 +511,7 @@ namespace Afluex.Controllers
                                 EnableSsl = true,
                                 DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                                 UseDefaultCredentials = false,
-                                Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437")//"Krishna@412")
+                                Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437")//"Multiservices@437")
 
                             };
 
@@ -756,7 +756,7 @@ namespace Afluex.Controllers
                                 EnableSsl = true,
                                 DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                                 UseDefaultCredentials = false,
-                                Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437")
+                                Credentials = new NetworkCredential(fromAddress.Address, "bright4wheel@123")
 
                             };
 
@@ -815,7 +815,7 @@ namespace Afluex.Controllers
                                 EnableSsl = true,
                                 DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                                 UseDefaultCredentials = false,
-                                Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437")
+                                Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@4370")
 
                             };
 
@@ -959,7 +959,7 @@ namespace Afluex.Controllers
                             EnableSsl = true,
                             DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                             UseDefaultCredentials = false,
-                            Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437")
+                            Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@4370")
 
                         };
 
@@ -1034,7 +1034,7 @@ namespace Afluex.Controllers
                         DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                         UseDefaultCredentials = false,
                         Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437")
-                         //Credentials = new NetworkCredential(fromAddress.Address, "Krishna@412")
+                         //Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437")
 
                     };
 
@@ -1107,7 +1107,7 @@ namespace Afluex.Controllers
                                 EnableSsl = true,
                                 DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                                 UseDefaultCredentials = false,
-                                Credentials = new NetworkCredential(fromAddress.Address,"Multiservices@437")// "Krishna@412")
+                                Credentials = new NetworkCredential(fromAddress.Address,"Multiservices@437")// "Multiservices@437")
 
                             };
 
@@ -1153,7 +1153,7 @@ namespace Afluex.Controllers
                                 EnableSsl = true,
                                 DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                                 UseDefaultCredentials = false,
-                                Credentials = new NetworkCredential(fromAddress.Address,"Multiservices@437" )//"Krishna@412")
+                                Credentials = new NetworkCredential(fromAddress.Address,"Multiservices@437" )//"Multiservices@437")
 
                             };
 

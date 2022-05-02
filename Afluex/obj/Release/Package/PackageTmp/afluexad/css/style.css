@@ -288,7 +288,7 @@ img.img-fluid.af-logo {
     line-height: 28px;
     color: #fff;
     font-weight: 600;
-    padding-right: 17px;
+    /*padding-right: 17px;*/
     margin-right: 10px;
 }
 
@@ -1233,7 +1233,7 @@ span.blog_icon i {
 
 .scrollBarHolder #scrollBar {
     height: 8px;
-    background: #418fb2;
+    background: #0e0c0e;
 }
 /*/ start count stats /*/
 

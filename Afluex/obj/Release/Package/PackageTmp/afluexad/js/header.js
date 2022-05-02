@@ -50,7 +50,7 @@ document.write(`
                     <div class ="col-lg-6">
                         <div class ="t-left-side text-white">
                             <ul class ="list-unstyled mb-0">
-                                <li class ="list-inline-item"><i class ="fas fa-phone-alt"></i> +91 <a href="tel:7310000414" class="text-decoration-none text-white">731-0000-414</a>/ <a href="tel:7310000413" class="text-decoration-none text-white">413</a>/ <a href="tel:7310000412"
+                                <li class ="list-inline-item"><i class ="fas fa-phone-alt"></i> +91 <a href="tel:7310000413" class="text-decoration-none text-white">731-0000-413</a>/ <a href="tel:7310000412"
                                         class ="text-decoration-none text-white">412</a></li>
                                 <li class ="list-inline-item"><i class ="far fa-envelope"></i> <a href="mailto:supportnow@afluex.com" class="text-decoration-none text-white">supportnow@afluex.com</a></li>
                             </ul>

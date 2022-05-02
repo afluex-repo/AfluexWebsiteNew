@@ -640,7 +640,7 @@ namespace Afluex.Controllers
  + "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i>https://www.afluex.com/</i></h4>"
  + "</div></div></td></tr><tr><td><p style='color:#888;font-size:11px;margin-bottom:20px'>© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
                             }
-                            var fromAddress = new MailAddress("developer5.afluex@gmail.com", "Afluex Multiservices LLP");
+                            var fromAddress = new MailAddress("contact.afluex@gmail.com", "Afluex Mutiserices LLP");
                             var toAddress = new MailAddress(model.Email);
                             System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient
                             {
@@ -697,7 +697,7 @@ namespace Afluex.Controllers
                                 EnableSsl = true,
                                 DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                                 UseDefaultCredentials = false,
-                                Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437")//"Krishna@412")
+                                Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437")//"Multiservices@437")
 
                             };
                             using (var message = new MailMessage(fromAddress, toAddress)
@@ -768,7 +768,7 @@ namespace Afluex.Controllers
                             EnableSsl = true,
                             DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                             UseDefaultCredentials = false,
-                            Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437") //"Krishna@412")
+                            Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437") //"Multiservices@437")
 
                         };
                         using (var message = new MailMessage(fromAddress, toAddress)
@@ -874,7 +874,7 @@ namespace Afluex.Controllers
 + "<h4 style = 'color:#fff;font-weight:normal'> Our Expertise in : Advertising / IT Services </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow@afluex.com</i></h4>"
 + "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i>https://www.afluex.com/</i></h4>"
 + "</div></div></td></tr><tr><td><p style='color:#888;font-size:11px;margin-bottom:20px'>© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
-                    var fromAddress = new MailAddress("developer5.afluex@gmail.com", "Afluex Mutiserices LLP");
+                    var fromAddress = new MailAddress("contact.afluex@gmail.com", "Afluex Mutiserices LLP");
                     var toAddress = new MailAddress(Email);
                     System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient
                     {
@@ -883,7 +883,7 @@ namespace Afluex.Controllers
                         EnableSsl = true,
                         DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                         UseDefaultCredentials = false,
-                        Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437")// "Krishna@412")
+                        Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437")// "Multiservices@437")
 
                     };
                     using (var message = new MailMessage(fromAddress, toAddress)

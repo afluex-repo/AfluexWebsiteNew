@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>@ViewBag.Title</title>
+    <link rel="icon" type="png/jpg" href="~/AdminCss/images/logo-load1.png"/>
+    <link href="../../AdminCss/css/lib/amchart/export.css" rel="stylesheet" />
+    <link href="../../AdminCss/css/lib/owl.carousel.min.css" rel="stylesheet" />
+    <link href="../../AdminCss/css/lib/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="../../AdminCss/css/style.css" rel="stylesheet">
+    <style>
+        .errortext {
+            border: 1px solid red !important;
+            background-color: #fff0f0 !important;
+        }
+    </style>
+
+</head>
+
+
+<body class="header-fix fix-sidebar">
+    <div id="main-wrapper">
+        <div class="header">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <b><img src="~/AdminCss/images/logo-load1.png" alt="homepage" class="dark-logo" style="height:60px;width:120px;"></b>
+                        <span style="display: none;">
+                          <img src="~/AdminCss/images/logo-black1.png" alt="homepage" class="dark-logo" style="height:70px;"/>
+                        </span>
+                    </a>
+                  
+                </div>
+
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav mr-auto mt-md-0">
+                        <li class="nav-item"><a class="nav-link toggle-nav hidden-md-up text-muted" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a></li>
+                        <li class="nav-item m-l-10"><a class="nav-link sidebartoggle hidden-sm-down text-muted" href="javascript:void(0)"><i class="ti-menu"></i></a></li>
+              
+                    </ul>
+
+                    <ul class="navbar-nav my-lg-0">
+                        <li class="dropdown dropdown-user nav-item">
+                            <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown" aria-expanded="false">
+                               <span class="mr-1 user-name text-bold-700 text-white">Welcome @Session["FullName"] (User ID : @Session["LoginID"])</span>
+                              <span class="avatar avatar-online"><img src="~/afluexad/images/Afluex-logo/favicon.png" alt="avatar" style="border-radius:50%;background:#fff;height:50px;"><i></i></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                               
+                                <a class="dropdown-item" href="/Home/Login">
+                                <i class="fa fa-power-off"></i> Logout
+                                </a>
+                            </div>
+                        </li>
+                        @*<li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>Welcome @Session["FullName"] (User ID : @Session["LoginID"])</b> &nbsp;<i class="fa fa-user"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right animated slideInRight">
+                                <ul class="dropdown-user">
+                                    @*<li><a href="/User/ChangePassword">Change Password</a></li>
+                                    <li><a href="/User/ViewProfile">View Profile</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="/Home/Login">Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>*@
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="left-sidebar">
+            <div class="scroll-sidebar">
+                <nav class="sidebar-nav">
+                    <ul id="sidebar-menu">
+                        <br />
+                        <li class="nav-devider"></li>
+                        <li><a class="" href="/Admin/DashBoard" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Dashboard</span></a></li>
+                        <li>
+                            <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-users"></i><span class="hide-menu">Blog</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                
+                                <li><a href="/Admin/PostBlog">Post</a></li>
+                                <li><a href="/Admin/BlogList">List</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-money"></i><span class="hide-menu">Enquiry</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="/Admin/CareerList">Career </a></li>
+                                <li><a href="/Admin/ContactUs">Contact Us </a></li>
+                               
+                            </ul>
+                        </li>
+                        <li><a class="" href="/Home/Login" aria-expanded="false"><i class="fa fa-sign-out"></i><span class="hide-menu">Logout</span></a>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+
+
+        <div class="page-wrapper">
+            @RenderBody()
+        </div>
+
+        <footer class="footer">© 2019 Happy To Help. All Right Reserved.</footer>
+
+    </div>
+
+
+
+    <script src="../../AdminCss/js/lib/jquery/jquery.min.js"></script>
+
+
+    <script src="../../AdminCss/js/lib/bootstrap/js/popper.min.js"></script>
+
+    <script src="../../AdminCss/js/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../AdminCss/js/jquery.slimscroll.js"></script>
+
+    <script src="../../AdminCss/js/sidebarmenu.js"></script>
+
+    <script src="../../AdminCss/js/lib/sticky-kit-master/dist/sticky-kit.min.js"></script>
+
+
+    <script src="../../AdminCss/js/lib/owl-carousel/owl.carousel.min.js"></script>
+    <script src="../../AdminCss/js/lib/owl-carousel/owl.carousel-init.js"></script>
+
+
+    <script src="../../AdminCss/js/lib/toastr/toastr.min.js"></script>
+
+    <script src="../../AdminCss/js/custom.min.js"></script>
+    <script src="./../AdminCss/js/lib/datatables/datatables.min.js"></script>
+    <script src="./../AdminCss/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+    <script src="./../AdminCss/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
+    <script src="./../AdminCss/js/lib/datatables/cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+    <script src="./../AdminCss/js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+    <script src="./../AdminCss/js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+    <script src="./../AdminCss/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+    <script src="./../AdminCss/js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
+    <script src="./../AdminCss/js/lib/datatables/datatables-init.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".sidebar-mini")(function () {
+                alert("ok");
+                $(".logo").css("display", "block");
+            });
+        });
+    </script>
+
+    <style>
+        .blink-box-1 {
+            width: 100%;
+            height: auto;
+            padding: 5px 10px;
+            -webkit-animation: blink1 1s infinite; /* Safari 4+ */
+            -moz-animation: blink1 1s infinite; /* Fx 5+ */
+            -o-animation: blink1 1s infinite; /* Opera 12+ */
+            animation: blink1 1s infinite; /* IE 10+, Fx 29+ */
+            color: #fff;
+            text-align: center;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        @@-webkit-keyframes blink1 {
+            0%, 49% {
+                background-color: #dc3912;
+            }
+
+            50%, 100% {
+                background-color: #070713;
+            }
+        }
+    </style>
+</body>
+
+<!-- Mirrored from demo.web3canvas.com/themeforest/coindash/admin/dark/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Feb 2019 04:19:04 GMT -->
+</html>

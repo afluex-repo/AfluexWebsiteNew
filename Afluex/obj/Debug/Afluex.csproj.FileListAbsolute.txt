@@ -805,3 +805,5 @@ D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
 D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
 D:\reena Pro\NewRapo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
+E:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\bin\0Harmony.dll
+E:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\bin\Solid.Extensions.System.Web.dll
