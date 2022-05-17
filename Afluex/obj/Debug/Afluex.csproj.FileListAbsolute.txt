@@ -909,3 +909,4 @@ E:\Repository-Projects\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Sec
 E:\Repository-Projects\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
 E:\Repository-Projects\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 E:\Repository-Projects\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
+E:\Repository-Projects\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
