@@ -115,7 +115,13 @@ body:before {
 		height: 80px !important;
 	}
 }
-
+@media(max-width:768px)
+{
+     .map_h
+    {
+        height:300px !important;
+    }
+}
 .service-img {
 	height: 320px !important;
 	width: 320px;
@@ -134,6 +140,10 @@ body:before {
 	.services-item h2 {
 		font-size: 24pt;
 	}
+    .map_h
+    {
+        height:300px !important;
+    }
 }
 
 .services-item p {
