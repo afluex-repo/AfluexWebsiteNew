@@ -69,6 +69,14 @@ body:before {
 	}
 }
 
+
+@media screen and (min-width: 1650px) and (max-width:1920px) {
+	.services-list-container {
+		max-width: 85% !important;
+	}
+}
+
+
 @media screen and (max-width: 960px) {
 	.services-list {
 		/* flex-direction: column; */

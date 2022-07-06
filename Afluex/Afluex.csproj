@@ -1023,6 +1023,7 @@
     <Content Include="afluexad\js\script.js" />
     <Content Include="afluexit\css\bootstrap-grid.css" />
     <Content Include="afluexit\css\bootstrap-grid.min.css" />
+    <Content Include="afluexit\css\bootstrap-min-home.css" />
     <Content Include="afluexit\css\bootstrap.css" />
     <Content Include="afluexit\css\bootstrap.min.css" />
     <Content Include="afluexit\css\fontawesome.min.css" />
