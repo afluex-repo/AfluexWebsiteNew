@@ -72,7 +72,7 @@ body:before {
 
 @media screen and (min-width: 1650px) and (max-width:1920px) {
 	.services-list-container {
-		max-width: 85% !important;
+		max-width: 80% !important;
 	}
 }
 

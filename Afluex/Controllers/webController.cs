@@ -178,7 +178,13 @@ namespace Afluex.Controllers
         {
             return View("inventry_management_software");
         }
-        
+
+        [ActionName("privacy-policy")]
+        public ActionResult privacy_policy()
+        {
+            return View("privacy_policy");
+        }
+
         public ActionResult portfolio()
         {
             return View("portfolio");
