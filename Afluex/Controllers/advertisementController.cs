@@ -522,6 +522,13 @@ namespace Afluex.Controllers
         {
             return View("airportmedia");
         }
+
+        [ActionName("privacy-policy")]
+        public ActionResult privacy_policy()
+        {
+            return View("privacy_policy");
+        }
+
         public virtual PartialViewResult DemoContact()
         {
             return PartialView("DemoContact");
