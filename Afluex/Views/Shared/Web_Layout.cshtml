@@ -47,7 +47,7 @@
             <title>Our Mission And Vision| Web Development| Afluex</title>
             <meta name="description" content="Afluex is an IT company. We expert in software development, web design, real estate & mlm software. Founded in 2017 & listed on all over India. We deliver deeper relationships through better customer engagement while lowering costs, increasing efficiencies and driving revenue growth." />
             <meta name="keywords" content="xyz" />
-                <link rel='canonical' href='https://www.afluex.com/web/vision-and-mission' />
+            <link rel='canonical' href='https://www.afluex.com/web/vision-and-mission' />
                 <meta name="robots" content="index, follow">
 
                 <meta property="og:title" content="Our Mission And Vision| Web Development| Afluex">
@@ -83,7 +83,7 @@
             <title>Web Development Team| Afluex</title>
             <meta name="description" content="Afluex is a  information technology company. Founded in 2017 & listed on all over India. Our team is expert in the field of software development, Advertising services, Web development, Digital marketing services." />
             <meta name="keywords" content="xyz" />
-                <link rel='canonical' href='https://www.afluex.com/web/our-team' />
+            <link rel='canonical' href='https://www.afluex.com/web/our-team' />
                 <meta name="robots" content="index, follow">
 
                 <meta property="og:title" content="Web Development Team| Afluex">
@@ -119,7 +119,7 @@
         {
             <title>Responsive Website & Software Development Company In India| Afluex</title>
             <meta name="description" content="We are among the best software development company with having a global presence. Afluex specializing in software and website development, MLM software development. Get The Best customized ERP & CRM Software. Are you looking for software and website development company in India, Call us." />
-                <meta name="keywords" content="software development company India software development company  in Lucknow, mlm software company custom software development website development, real estate software development company" />
+            <meta name="keywords" content="software development company India software development company  in Lucknow, mlm software company custom software development website development, real estate software development company" />
                 <link rel="canonical" href="https://www.Afluex.com/web/it-services" />
                 <meta property="og:title" content="Responsive Website & Software Development Company In India| Afluex">
                 <meta property="og:site_name" content="Afluex Multiservices LLP">
@@ -1283,7 +1283,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-     <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
     <link href="~/afluexit/images/favicon.png" rel="shortcut icon">
     <link href="~/afluexit/css/bootstrap.min.css" rel="stylesheet">
     <link href="~/afluexit/css/style.css" rel="stylesheet">
@@ -1304,7 +1304,21 @@
 
 </head>
 <body>
-    <div class="main_loader">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="loader">
+                <div class="face">
+                    <div class="circle"></div>
+                </div>
+                <div class="face">
+                    <div class="circle"></div>
+                </div>
+                <img src="~/afluexit/images/loader.png" class="img-fluid af-logo" style="width:40%" alt="logo">
+            </div>
+        </div>
+    </div>
+    @*<div class="main_loader">
             <div class="loader_inner" style="z-index:99999">
                 <div class="loader">
                     <div class="face">
@@ -1316,414 +1330,415 @@
                     <img src="~/afluexit/images/loader.png" class="img-fluid af-logo" alt="logo">
                 </div>
             </div>
+        </div>*@
+
+    <div class="top_header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="container-fluid nav-container">
+                            <div class="logo">
+                                <a href="/web/it-services"><img src="~/afluexit/images/logo-black.png" class="img-fluid af-logo" alt="logo"></a>
+                            </div>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 profile-menu">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="/web/it-services">Home</a>
+                                    </li>
+                                    <!-- <li class ="nav-item dropdown">
+                                          <a class ="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Dropdown
+                                        </a>
+                                        <ul class ="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class ="dropdown-item" href="#">Action</a></li>
+                                            <li><a class ="dropdown-item" href="#">Another action</a></li>
+                                            <li><hr class ="dropdown-divider"></li>
+                                            <li><a class ="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li> -->
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            About Us <span class="dropdown_icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <div class="pro_mega">
+                                                <ul class="list-unstyled">
+                                                    <li><a class="dropdown-item" href="/web/company-overview">Company Overview</a></li>
+
+                                                    <li><a class="dropdown-item" href="/web/vision-and-mission">Mission & Vision</a></li>
+                                                    <li><a class="dropdown-item" href="/web/our-team">Our Team</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Services <span class="dropdown_icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <div class="pro_mega">
+                                                <ul class="list-unstyled">
+                                                    <li><a class="dropdown-item" href="/web/website-development-services">Website Development</a></li>
+                                                    <li><a class="dropdown-item" href="/web/software-development-services">Software Development</a></li>
+                                                    <li><a class="dropdown-item" href="/web/app-development-services">Mobile App Development</a></li>
+                                                    <li><a class="dropdown-item" href="/web/mvc-training-services">Asp.net / MVC Training</a></li>
+                                                    <li><a class="dropdown-item" href="/web/digital-marketing-services">Digital Marketing</a></li>
+                                                    <li><a class="dropdown-item" href="/web/domain-and-hosting-services">Domain &amp;Hosting</a></li>
+                                                    <li><a class="dropdown-item" href="/web/seo-services">SEO Services</a></li>
+                                                    <li><a class="dropdown-item" href="/web/graphic-designs">Graphic Design</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown menu_area">
+                                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Product <span class="dropdown_icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                        </a>
+                                        <div class="dropdown-menu mega_area" aria-labelledby="navbarDropdown">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4">
+                                                    <div class="pro_mega">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="/web/mlm-software">MLM Software</a></li>
+                                                            <li><a class="dropdown-item" href="/web/real-estate-software">Real Estate Software </a></li>
+                                                            <li><a class="dropdown-item" href="/web/ecommerce-software">E-commerce Software</a></li>
+                                                            <li><a class="dropdown-item" href="/web/Edu-tech">School Management Software</a></li>
+                                                            <li><a class="dropdown-item" href="/web/travel-portal-software">Travel Portal Software</a></li>
+                                                            <li><a class="dropdown-item" href="/web/flight-booking-software">Flight Booking Software</a></li>
+                                                            <li><a class="dropdown-item" href="/web/hospital-management-software">Hospital Management Software</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4">
+                                                    <div class="pro_mega">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="/web/mobile-recharge-software">Mobile Recharge Software</a></li>
+                                                            <li><a class="dropdown-item" href="/web/news-portal-software">News Portal Software</a></li>
+                                                            <li><a class="dropdown-item" href="/web/crm-software">CRM Software</a></li>
+                                                            <li><a class="dropdown-item" href="/web/hrms-software">HRMS Software</a></li>
+                                                            <li><a class="dropdown-item" href="/web/erp-software">ERP Software</a></li>
+                                                            <li><a class="dropdown-item" href="/web/followup-software">Followup Software</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-4">
+                                                    <div class="pro_mega">
+                                                        <ul class="list-unstyled">
+                                                            <li><a class="dropdown-item" href="/web/daily-expenses-software">Daily Expenses</a></li>
+                                                            <li><a class="dropdown-item" href="/web/nidhi-software">Nidhi Software</a></li>
+                                                            <li><a class="dropdown-item" href="/web/helping-software">Helping Software</a></li>
+                                                            <li><a class="dropdown-item" href="/web/restaurant-billing-software">Restaurant Billing Software</a></li>
+                                                            <li><a class="dropdown-item" href="/web/loan-management-software">Loan Management Software</a></li>
+                                                            <li><a class="dropdown-item" href="/web/mart-billing-software">Mart Billing Software</a></li>
+                                                            <li><a class="dropdown-item" href="/web/inventry-management-software">Inventory Management Software </a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/web/Portfolio">Portfolio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/web/Gallery">Gallery</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/web/Blog">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/web/career">Career</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/web/contactus">Contact Us</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </div>
 
-        <div class="top_header">
+    </div>
+
+
+    <div class="sidebar-contact">
+        <button type="button" class="btn btn-skyblue" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa fa-envelope"></i> &nbsp; Get Quote
+        </button>
+    </div>
+    <!--Modal-->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Inquiry Form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="contact-box dzForm p-a30 border-1" action="">
+                        <div class="dzFormMsg m-b20"></div>
+                        <input type="hidden" value="Contact" name="dzToDo">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group mb-4">
+                                    <div class="input-group">
+                                        <input name="name" id="name" type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group mb-4">
+                                    <div class="input-group">
+                                        <input name="mobile" id="mobile" type="text" class="form-control" placeholder="Phone" maxlength="10" onkeypress="return isNumberKey(event)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group mb-4">
+                                    <div class="input-group">
+                                        <input name="email" id="email" type="email" class="form-control" placeholder="E-mail" onchange="return ValidateEmailID();" />
+                                        @*<span id="lblError" style="color:red"></span>*@
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group mb-4">
+                                    <div class="input-group">
+                                        <input name="ProjectType" id="ProjectType" type="text" class="form-control" placeholder="Project Type">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group mb-4">
+                                    <div class="input-group">
+                                        <input name="YourBudget" id="YourBudget" type="text" class="form-control" placeholder="Your Budget" onkeypress="return isNumberKey(event)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group mb-4">
+                                    <div class="input-group">
+                                        <textarea name="Message" class="form-control" placeholder="Tell us about your project or idea" id="Message" style="height: 100px"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 text-end">
+                                <div class="contact_btn">
+                                    <input type="submit" name="btnSendInquery" class="btn btn-primary btn-lg" value="Send Inquiry" style="cursor:pointer" onclick="return SaveInquiryDetails();" />
+                                    @*<button name="submit" type="submit" value="Submit" class="btn btn-primary btn-lg">Send Inquiry</button>*@
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    @RenderBody()
+    <div class="client_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="client_carousel owl-carousel owl-theme">
+                        <div class="client_carousel_item">
+                            <img src="~/afluexit/images/client/11.png" class="img-fluid" alt="client">
+                        </div>
+                        <div class="client_carousel_item">
+                            <img src="~/afluexit/images/client/1.png" class="img-fluid" alt="client">
+                        </div>
+                        <div class="client_carousel_item">
+                            <img src="~/afluexit/images/client/13.png" class="img-fluid" alt="client">
+                        </div>
+                        <div class="client_carousel_item">
+                            <img src="~/afluexit/images/client/2.png" class="img-fluid" alt="client">
+                        </div>
+                        <div class="client_carousel_item">
+                            <img src="~/afluexit/images/client/3.png" class="img-fluid" alt="client">
+                        </div>
+                        <div class="client_carousel_item">
+                            <img src="~/afluexit/images/client/a2.png" class="img-fluid" alt="client">
+                        </div>
+                        <div class="client_carousel_item">
+                            <img src="~/afluexit/images/client/4.png" class="img-fluid" alt="client">
+                        </div>
+                        <div class="client_carousel_item">
+                            <img src="~/afluexit/images/client/5.png" class="img-fluid" alt="client">
+                        </div>
+                        <div class="client_carousel_item">
+                            <img src="~/afluexit/images/client/6.png" class="img-fluid" alt="client">
+                        </div>
+                        <div class="client_carousel_item">
+                            <img src="~/afluexit/images/client/7.png" class="img-fluid" alt="client">
+                        </div>
+                        <div class="client_carousel_item">
+                            <img src="~/afluexit/images/client/8.png" class="img-fluid" alt="client">
+                        </div>
+                        <div class="client_carousel_item">
+                            <img src="~/afluexit/images/client/9.png" class="img-fluid" alt="client">
+                        </div>
+                        <div class="client_carousel_item">
+                            <img src="~/afluexit/images/client/10.png" class="img-fluid" alt="client">
+                        </div>
+                        <div class="client_carousel_item">
+                            <img src="~/afluexit/images/client/12.png" class="img-fluid" alt="client">
+                        </div>
+                        <div class="client_carousel_item">
+                            <img src="~/afluexit/images/client/14.png" class="img-fluid" alt="client">
+                        </div>
+                        <div class="client_carousel_item">
+                            <img src="~/afluexit/images/client/15.png" class="img-fluid" alt="client">
+                        </div>
+                        <div class="client_carousel_item">
+                            <img src="~/afluexit/images/client/16.png" class="img-fluid" alt="client">
+                        </div>
+                        <div class="client_carousel_item">
+                            <img src="~/afluexit/images/client/a6.png" class="img-fluid" alt="client">
+                        </div>
+                        <div class="client_carousel_item">
+                            <img src="~/afluexit/images/client/logo1.png" class="img-fluid" alt="client">
+                        </div>
+                        <div class="client_carousel_item">
+                            <img src="~/afluexit/images/client/logo2.png" class="img-fluid" alt="client">
+                        </div>
+                        <div class="client_carousel_item">
+                            <img src="~/afluexit/images/client/logo3.png" class="img-fluid" alt="client">
+                        </div>
+                        <div class="client_carousel_item">
+                            <img src="~/afluexit/images/client/logo6.png" class="img-fluid" alt="client">
+                        </div>
+                        <div class="client_carousel_item">
+                            <img src="~/afluexit/images/client/logo7.png" class="img-fluid" alt="client">
+                        </div>
+                        <div class="client_carousel_item">
+                            <img src="~/afluexit/images/client/logo8.png" class="img-fluid" alt="client">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_section">
+        <div class="footer_inner">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <nav class="navbar navbar-expand-lg navbar-light">
-                            <div class="container-fluid nav-container">
-                                <div class="logo">
-                                    <a href="/web/it-services"><img src="~/afluexit/images/logo-black.png" class="img-fluid af-logo" alt="logo"></a>
+                    <div class="big-column col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                        <div class="row">
+                            <div class="footer-column col-xl-8 col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-widget about-widget">
+                                    <div class="logo">
+                                        <a href="~/web/it-services"><img src="~/afluexit/images/footer_logo.png" alt="logo"></a>
+                                    </div>
+                                    <div class="text mt-4 text-white">
+                                        <p>
+                                            Afluex is a best emerging, comprehensive, full-service marketing Company. Works in two segment Advertising and IT Development Segment and it’s known for their lucrative result n ideas. Afluex has more than 8+ year’s deep experience in all media and aspects
+                                            of marketing.
+                                        </p>
+                                    </div>
+
                                 </div>
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 profile-menu">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" aria-current="page" href="/web/it-services">Home</a>
-                                        </li>
-                                        <!-- <li class ="nav-item dropdown">
-                                              <a class ="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Dropdown
-                                            </a>
-                                            <ul class ="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li><a class ="dropdown-item" href="#">Action</a></li>
-                                                <li><a class ="dropdown-item" href="#">Another action</a></li>
-                                                <li><hr class ="dropdown-divider"></li>
-                                                <li><a class ="dropdown-item" href="#">Something else here</a></li>
-                                            </ul>
-                                        </li> -->
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                About Us <span class="dropdown_icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <div class="pro_mega">
-                                                    <ul class="list-unstyled">
-                                                        <li><a class="dropdown-item" href="/web/company-overview">Company Overview</a></li>
-                                                       
-                                                        <li><a class="dropdown-item" href="/web/vision-and-mission">Mission & Vision</a></li>
-                                                        <li><a class="dropdown-item" href="/web/our-team">Our Team</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Services <span class="dropdown_icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <div class="pro_mega">
-                                                    <ul class="list-unstyled">
-                                                        <li><a class="dropdown-item" href="/web/website-development-services">Website Development</a></li>
-                                                        <li><a class="dropdown-item" href="/web/software-development-services">Software Development</a></li>
-                                                        <li><a class="dropdown-item" href="/web/app-development-services">Mobile App Development</a></li>
-                                                        <li><a class="dropdown-item" href="/web/mvc-training-services">Asp.net / MVC Training</a></li>
-                                                        <li><a class="dropdown-item" href="/web/digital-marketing-services">Digital Marketing</a></li>
-                                                        <li><a class="dropdown-item" href="/web/domain-and-hosting-services">Domain &amp;Hosting</a></li>
-                                                        <li><a class="dropdown-item" href="/web/seo-services">SEO Services</a></li>
-                                                        <li><a class="dropdown-item" href="/web/graphic-designs">Graphic Design</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item dropdown menu_area">
-                                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Product <span class="dropdown_icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
-                                            </a>
-                                            <div class="dropdown-menu mega_area" aria-labelledby="navbarDropdown">
-                                                <div class="row">
-                                                    <div class="col-lg-4 col-md-4">
-                                                        <div class="pro_mega">
-                                                            <ul class="list-unstyled">
-                                                                <li><a class="dropdown-item" href="/web/mlm-software">MLM Software</a></li>
-                                                                <li><a class="dropdown-item" href="/web/real-estate-software">Real Estate Software </a></li>
-                                                                <li><a class="dropdown-item" href="/web/ecommerce-software">E-commerce Software</a></li>
-                                                                <li><a class="dropdown-item" href="/web/Edu-tech">School Management Software</a></li>
-                                                                <li><a class="dropdown-item" href="/web/travel-portal-software">Travel Portal Software</a></li>
-                                                                <li><a class="dropdown-item" href="/web/flight-booking-software">Flight Booking Software</a></li>
-                                                                <li><a class="dropdown-item" href="/web/hospital-management-software">Hospital Management Software</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-4">
-                                                        <div class="pro_mega">
-                                                            <ul class="list-unstyled">
-                                                                <li><a class="dropdown-item" href="/web/mobile-recharge-software">Mobile Recharge Software</a></li>
-                                                                <li><a class="dropdown-item" href="/web/news-portal-software">News Portal Software</a></li>
-                                                                <li><a class="dropdown-item" href="/web/crm-software">CRM Software</a></li>
-                                                                <li><a class="dropdown-item" href="/web/hrms-software">HRMS Software</a></li>
-                                                                <li><a class="dropdown-item" href="/web/erp-software">ERP Software</a></li>
-                                                                <li><a class="dropdown-item" href="/web/followup-software">Followup Software</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-4">
-                                                        <div class="pro_mega">
-                                                            <ul class="list-unstyled">
-                                                                <li><a class="dropdown-item" href="/web/daily-expenses-software">Daily Expenses</a></li>
-                                                                <li><a class="dropdown-item" href="/web/nidhi-software">Nidhi Software</a></li>
-                                                                <li><a class="dropdown-item" href="/web/helping-software">Helping Software</a></li>
-                                                                <li><a class="dropdown-item" href="/web/restaurant-billing-software">Restaurant Billing Software</a></li>
-                                                                <li><a class="dropdown-item" href="/web/loan-management-software">Loan Management Software</a></li>
-                                                                <li><a class="dropdown-item" href="/web/mart-billing-software">Mart Billing Software</a></li>
-                                                                <li><a class="dropdown-item" href="/web/inventry-management-software">Inventory Management Software </a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="/web/Portfolio">Portfolio</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="/web/Gallery">Gallery</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="/web/Blog">Blog</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="/web/career">Career</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="/web/contactus">Contact Us</a>
-                                        </li>
+                            </div>
+                            <div class="footer-column col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-widget about-widget">
+                                    <h2 class="widget-title">Important Links</h2>
+                                    <ul class="list-unstyled user-links1">
+                                        <li><i class="fa fa-angle-right"></i> <a href="/web/company-overview">Company Profile</a></li>
+                                        <li><i class="fa fa-angle-right"></i> <a href="/web/vision-and-mission">Mission And Vision</a></li>
+                                        <li><i class="fa fa-angle-right"></i> <a href="/web/website-development-services">Website Development</a></li>
+                                        <li><i class="fa fa-angle-right"></i> <a href="/web/software-development-services">Software Development</a></li>
+                                        <li><i class="fa fa-angle-right"></i> <a href="/web/contactus">Contact Us</a></li>
+                                        <li><i class="fa fa-angle-right"></i> <a href="/web/privacy-policy">Privacy Policy</a></li>
                                     </ul>
-
                                 </div>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
-        <div class="sidebar-contact">
-            <button type="button" class="btn btn-skyblue" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <i class="fa fa-envelope"></i> &nbsp; Get Quote
-            </button>
-        </div>
-        <!--Modal-->
-
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Inquiry Form</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form class="contact-box dzForm p-a30 border-1" action="">
-                            <div class="dzFormMsg m-b20"></div>
-                            <input type="hidden" value="Contact" name="dzToDo">
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12">
-                                    <div class="form-group mb-4">
-                                        <div class="input-group">
-                                            <input name="name" id="name" type="text"  class="form-control" placeholder="Name">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="form-group mb-4">
-                                        <div class="input-group">
-                                            <input name="mobile" id="mobile" type="text"  class="form-control" placeholder="Phone" maxlength="10" onkeypress="return isNumberKey(event)">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="form-group mb-4">
-                                        <div class="input-group">
-                                            <input name="email" id="email" type="email" class="form-control" placeholder="E-mail" onchange="return ValidateEmailID();"/>
-                                            @*<span id="lblError" style="color:red"></span>*@
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="form-group mb-4">
-                                        <div class="input-group">
-                                            <input name="ProjectType" id="ProjectType" type="text"  class="form-control" placeholder="Project Type">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="form-group mb-4">
-                                        <div class="input-group">
-                                            <input name="YourBudget"  id="YourBudget" type="text" class="form-control" placeholder="Your Budget" onkeypress="return isNumberKey(event)"> 
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-12">
-                                    <div class="form-group mb-4">
-                                        <div class="input-group">
-                                            <textarea name="Message" class="form-control" placeholder="Tell us about your project or idea" id="Message" style="height: 100px"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-12 text-end">
-                                    <div class="contact_btn">
-                                        <input type="submit" name="btnSendInquery" class="btn btn-primary btn-lg" value="Send Inquiry" style="cursor:pointer" onclick="return SaveInquiryDetails();" />
-                                        @*<button name="submit" type="submit" value="Submit" class="btn btn-primary btn-lg">Send Inquiry</button>*@
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        @RenderBody()
-        <div class="client_section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="client_carousel owl-carousel owl-theme">
-                            <div class="client_carousel_item">
-                                <img src="~/afluexit/images/client/11.png" class="img-fluid" alt="client">
-                            </div>
-                            <div class="client_carousel_item">
-                                <img src="~/afluexit/images/client/1.png" class="img-fluid" alt="client">
-                            </div>
-                            <div class="client_carousel_item">
-                                <img src="~/afluexit/images/client/13.png" class="img-fluid" alt="client">
-                            </div>
-                            <div class="client_carousel_item">
-                                <img src="~/afluexit/images/client/2.png" class="img-fluid" alt="client">
-                            </div>
-                            <div class="client_carousel_item">
-                                <img src="~/afluexit/images/client/3.png" class="img-fluid" alt="client">
-                            </div>
-                            <div class="client_carousel_item">
-                                <img src="~/afluexit/images/client/a2.png" class="img-fluid" alt="client">
-                            </div>
-                            <div class="client_carousel_item">
-                                <img src="~/afluexit/images/client/4.png" class="img-fluid" alt="client">
-                            </div>
-                            <div class="client_carousel_item">
-                                <img src="~/afluexit/images/client/5.png" class="img-fluid" alt="client">
-                            </div>
-                            <div class="client_carousel_item">
-                                <img src="~/afluexit/images/client/6.png" class="img-fluid" alt="client">
-                            </div>
-                            <div class="client_carousel_item">
-                                <img src="~/afluexit/images/client/7.png" class="img-fluid" alt="client">
-                            </div>
-                            <div class="client_carousel_item">
-                                <img src="~/afluexit/images/client/8.png" class="img-fluid" alt="client">
-                            </div>
-                            <div class="client_carousel_item">
-                                <img src="~/afluexit/images/client/9.png" class="img-fluid" alt="client">
-                            </div>
-                            <div class="client_carousel_item">
-                                <img src="~/afluexit/images/client/10.png" class="img-fluid" alt="client">
-                            </div>
-                            <div class="client_carousel_item">
-                                <img src="~/afluexit/images/client/12.png" class="img-fluid" alt="client">
-                            </div>
-                            <div class="client_carousel_item">
-                                <img src="~/afluexit/images/client/14.png" class="img-fluid" alt="client">
-                            </div>
-                            <div class="client_carousel_item">
-                                <img src="~/afluexit/images/client/15.png" class="img-fluid" alt="client">
-                            </div>
-                            <div class="client_carousel_item">
-                                <img src="~/afluexit/images/client/16.png" class="img-fluid" alt="client">
-                            </div>
-                            <div class="client_carousel_item">
-                                <img src="~/afluexit/images/client/a6.png" class="img-fluid" alt="client">
-                            </div>
-                            <div class="client_carousel_item">
-                                <img src="~/afluexit/images/client/logo1.png" class="img-fluid" alt="client">
-                            </div>
-                            <div class="client_carousel_item">
-                                <img src="~/afluexit/images/client/logo2.png" class="img-fluid" alt="client">
-                            </div>
-                            <div class="client_carousel_item">
-                                <img src="~/afluexit/images/client/logo3.png" class="img-fluid" alt="client">
-                            </div>
-                            <div class="client_carousel_item">
-                                <img src="~/afluexit/images/client/logo6.png" class="img-fluid" alt="client">
-                            </div>
-                            <div class="client_carousel_item">
-                                <img src="~/afluexit/images/client/logo7.png" class="img-fluid" alt="client">
-                            </div>
-                            <div class="client_carousel_item">
-                                <img src="~/afluexit/images/client/logo8.png" class="img-fluid" alt="client">
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer_section">
-            <div class="footer_inner">
-                <div class="container">
-                    <div class="row">
-                        <div class="big-column col-xl-6 col-lg-12 col-md-12 col-sm-12">
-                            <div class="row">
-                                <div class="footer-column col-xl-8 col-lg-6 col-md-6 col-sm-12">
-                                    <div class="footer-widget about-widget">
-                                        <div class="logo">
-                                            <a href="~/web/it-services"><img src="~/afluexit/images/footer_logo.png" alt="logo"></a>
-                                        </div>
-                                        <div class="text mt-4 text-white">
-                                            <p>
-                                                Afluex is a best emerging, comprehensive, full-service marketing Company. Works in two segment Advertising and IT Development Segment and it’s known for their lucrative result n ideas. Afluex has more than 8+ year’s deep experience in all media and aspects
-                                                of marketing.
-                                            </p>
-                                        </div>
-
-                                    </div>
+                    <div class="big-column col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                        <div class="row">
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-widget about-widget">
+                                    <h2 class="widget-title">Our Products</h2>
+                                    <ul class="list-unstyled user-links1">
+                                        <li><i class="fa fa-angle-right"></i> <a href="/web/mlm-software">MLM Software</a></li>
+                                        <li><i class="fa fa-angle-right"></i> <a href="/web/real-estate-software">Real Estate Software</a></li>
+                                        <li><i class="fa fa-angle-right"></i> <a href="/web/Edu-tech">School Management Software</a></li>
+                                        <li><i class="fa fa-angle-right"></i> <a href="/web/hospital-management-software">Hospital Management Software</a></li>
+                                        <li><i class="fa fa-angle-right"></i> <a href="/web/mobile-recharge-software">Mobile Recharge Software</a></li>
+                                    </ul>
                                 </div>
-                                <div class="footer-column col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                                    <div class="footer-widget about-widget">
-                                        <h2 class="widget-title">Important Links</h2>
-                                        <ul class="list-unstyled user-links1">
-                                            <li><i class="fa fa-angle-right"></i> <a href="/web/company-overview">Company Profile</a></li>
-                                            <li><i class="fa fa-angle-right"></i> <a href="/web/vision-and-mission">Mission And Vision</a></li>
-                                            <li><i class="fa fa-angle-right"></i> <a href="/web/website-development-services">Website Development</a></li>
-                                            <li><i class="fa fa-angle-right"></i> <a href="/web/software-development-services">Software Development</a></li>
-                                            <li><i class="fa fa-angle-right"></i> <a href="/web/contactus">Contact Us</a></li>
+                            </div>
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-widget contact-widget">
+                                    <h2 class="widget-title">Our Location</h2>
+                                    <div class="widget-content">
+                                        <ul class="list-unstyled contact-list text-white">
+                                            <li>
+                                                <span class="icon fa fa-map-marker text-white" aria-hidden="true"></span>
+                                                <div class="text">
+                                                    D-54, 2nd Floor Arjun Tower Near Ola Office, Vibhuti Khand, <br> Lucknow, Uttar Pradesh 226010
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="icon fa fa-envelope text-white" aria-hidden="true"></span>
+                                                <div class="text">
+                                                    <a href="mailto:supportnow@afluex.com">supportnow@afluex.com</a>
+                                                </div>
+                                            </li>
+                                            <!-- <li>
+                                                    <span class="icon fa fa-phone text-white" aria-hidden="true"></span>
+                                                    <div class="text">
+                                                        <a href="tel:5223550791">+91 522-3550-791</a>
+                                                    </div>
+                                                </li> -->
+                                            <li>
+                                                <span class="icon fas fa-mobile-alt text-white" aria-hidden="true"></span>
+                                                <div class="text">
+                                                    +91 <a href="tel:7310000413">731-0000-413</a>/ <a href="tel:7310000412">412</a>
+                                                </div>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="big-column col-xl-6 col-lg-12 col-md-12 col-sm-12">
-                            <div class="row">
-                                <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-                                    <div class="footer-widget about-widget">
-                                        <h2 class="widget-title">Our Products</h2>
-                                        <ul class="list-unstyled user-links1">
-                                            <li><i class="fa fa-angle-right"></i> <a href="/web/mlm-software">MLM Software</a></li>
-                                            <li><i class="fa fa-angle-right"></i> <a href="/web/real-estate-software">Real Estate Software</a></li>
-                                            <li><i class="fa fa-angle-right"></i> <a href="/web/Edu-tech">School Management Software</a></li>
-                                            <li><i class="fa fa-angle-right"></i> <a href="/web/hospital-management-software">Hospital Management Software</a></li>
-                                            <li><i class="fa fa-angle-right"></i> <a href="/web/mobile-recharge-software">Mobile Recharge Software</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-                                    <div class="footer-widget contact-widget">
-                                        <h2 class="widget-title">Our Location</h2>
-                                        <div class="widget-content">
-                                            <ul class="list-unstyled contact-list text-white">
-                                                <li>
-                                                    <span class="icon fa fa-map-marker text-white" aria-hidden="true"></span>
-                                                    <div class="text">
-                                                        D-54, 2nd Floor Arjun Tower Near Ola Office, Vibhuti Khand, <br> Lucknow, Uttar Pradesh 226010
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <span class="icon fa fa-envelope text-white" aria-hidden="true"></span>
-                                                    <div class="text">
-                                                        <a href="mailto:supportnow@afluex.com">supportnow@afluex.com</a>
-                                                    </div>
-                                                </li>
-                                                <!-- <li>
-                                                        <span class="icon fa fa-phone text-white" aria-hidden="true"></span>
-                                                        <div class="text">
-                                                            <a href="tel:5223550791">+91 522-3550-791</a>
-                                                        </div>
-                                                    </li> -->
-                                                <li>
-                                                    <span class="icon fas fa-mobile-alt text-white" aria-hidden="true"></span>
-                                                    <div class="text">
-                                                        +91 <a href="tel:7310000413">731-0000-413</a>/ <a href="tel:7310000412">412</a>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
-            <div class="footer_bottom text-center m-4">
-                <p class="mb-0">2021 © All Rights Reserved by Afluex Multiservices LLP</p>
-            </div>
         </div>
-        <!-- go to top -->
-        <a href="#" id="gotop"><i class="fas fa-arrow-alt-circle-up"></i></a>
-        <!-- horizontal scroll bar -->
-        <div class="scrollBarHolder">
-            <div id="scrollBar" style="width: 0"></div>
+        <div class="footer_bottom text-center m-4">
+            <p class="mb-0">2021 © All Rights Reserved by Afluex Multiservices LLP</p>
         </div>
-        <!-- Optional JavaScript; choose one of the two! -->
-        @*<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>*@
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="~/afluexit/js/jquery-3.6.0.js"></script>
-        <script src="~/afluexit/js/bootstrap.bundle.min.js"></script>
-        <script src="~/afluexit/js/fontawesome-kit.js"></script>
-        @*<script src="https://kit.fontawesome.com/a254157e44.js" crossorigin="anonymous"></script>*@
-         <script src="js/fontawesome.min.js"></script>
-        @*<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"></script>*@
-        <script src="~/afluexit/js/owl.carousel.js"></script>
-        <script src="~/afluexit/js/owl.carousel.min.js"></script>
-        <script src="~/afluexit/js/script.js"></script>
+    </div>
+    <!-- go to top -->
+    <a href="#" id="gotop"><i class="fas fa-arrow-alt-circle-up"></i></a>
+    <!-- horizontal scroll bar -->
+    <div class="scrollBarHolder">
+        <div id="scrollBar" style="width: 0"></div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    @*<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>*@
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="~/afluexit/js/jquery-3.6.0.js"></script>
+    <script src="~/afluexit/js/bootstrap.bundle.min.js"></script>
+    <script src="~/afluexit/js/fontawesome-kit.js"></script>
+    @*<script src="https://kit.fontawesome.com/a254157e44.js" crossorigin="anonymous"></script>*@
+    <script src="js/fontawesome.min.js"></script>
+    @*<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/fontawesome.min.js"></script>*@
+    <script src="~/afluexit/js/owl.carousel.js"></script>
+    <script src="~/afluexit/js/owl.carousel.min.js"></script>
+    <script src="~/afluexit/js/script.js"></script>
 
-        <!---Gallery---->
-        <script src="~/afluexit/js/glightbox.min.js"></script>
-        <script src="~/afluexit/js/gallery.js"></script>
+    <!---Gallery---->
+    <script src="~/afluexit/js/glightbox.min.js"></script>
+    <script src="~/afluexit/js/gallery.js"></script>
     <script>
         $(document).ready(function () {
             $('.leftmenutrigger').on('click', function (e) {
@@ -1786,17 +1801,16 @@
                         alert("Inquiry send successfully");
                         window.location.href = '@Url.Action("thankyou", "web")';
                     }
-                    else
-                    {
-                    $("#name").val('');
-                    $("#email").val('');
-                    $("#mobile").val('');
-                    $("#projecttype").val('');
-                    $("#yourbudget").val('');
-                    $("#message").val('');
-                    window.location.href = '@Url.Action("it-services", "web")';
+                    else {
+                        $("#name").val('');
+                        $("#email").val('');
+                        $("#mobile").val('');
+                        $("#projecttype").val('');
+                        $("#yourbudget").val('');
+                        $("#message").val('');
+                        window.location.href = '@Url.Action("it-services", "web")';
+                    }
                 }
-            }
             });
         }
         function ValidateEmailID(event) {
@@ -1840,5 +1854,13 @@
             clearTimeout(timer);
         }
     </script>
-    </body>
+
+    <script>
+        $(window).on('load', function () { // makes sure the whole site is loaded
+            $('#status').fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(350).css({ 'overflow': 'visible' });
+        })
+    </script>
+</body>
 </html>

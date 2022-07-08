@@ -1023,6 +1023,7 @@
     <Content Include="afluexad\js\script.js" />
     <Content Include="afluexit\css\bootstrap-grid.css" />
     <Content Include="afluexit\css\bootstrap-grid.min.css" />
+    <Content Include="afluexit\css\bootstrap-min-home.css" />
     <Content Include="afluexit\css\bootstrap.css" />
     <Content Include="afluexit\css\bootstrap.min.css" />
     <Content Include="afluexit\css\fontawesome.min.css" />
@@ -2197,6 +2198,8 @@
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Home\thankyou.cshtml" />
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
+    <Content Include="Views\web\privacy_policy.cshtml" />
+    <Content Include="Views\advertisement\privacy_policy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="afluexad\fontawesome\" />

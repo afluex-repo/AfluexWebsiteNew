@@ -1399,8 +1399,21 @@
 </head>
 
 <body>
-
-    <div class="main_loader">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="loader">
+                <div class="face">
+                    <div class="circle"></div>
+                </div>
+                <div class="face">
+                    <div class="circle"></div>
+                </div>
+                <img src="~/afluexit/images/loader.png" class="img-fluid af-logo" style="width:40%" alt="logo">
+            </div>
+        </div>
+    </div>
+    @*<div class="main_loader">
         <div class="loader_inner" style="z-index:99999">
             <div class="loader">
                 <div class="face">
@@ -1412,7 +1425,7 @@
                 <img src="~/afluexit/images/loader.png" class="img-fluid" alt="logo">
             </div>
         </div>
-    </div>
+    </div>*@
 
     <div class="top_header">
         <div class="top_header_inner">
@@ -1768,7 +1781,8 @@
                                             <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="/advertisement/Our-Team">Our team</a></li>
                                             <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="/advertisement/portfolio">Portfolio</a></li>
                                             <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="/advertisement/contactus">Contact Us</a></li>
-                                        </ul>
+                                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="/advertisement/privacy-policy">Privacy Policy</a></li>
+                                         </ul>
                                     </div>
                                 </div>
                             </div>
@@ -1951,6 +1965,13 @@
         function stoptimer() {
             clearTimeout(timer);
         }
+    </script>
+    <script>
+        $(window).on('load', function () { // makes sure the whole site is loaded
+            $('#status').fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(350).css({ 'overflow': 'visible' });
+        })
     </script>
     </body>
     </html>
