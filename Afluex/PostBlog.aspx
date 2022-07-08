@@ -161,9 +161,14 @@
               ['font', ['strikethrough', 'superscript', 'subscript']],
               ['fontsize', ['fontsize']],
               ['para', ['ul', 'ol', 'paragraph']],
-              ['insert', ['link', 'video']],
+              ['insert', ['link', 'video', 'picture']],
               ['height', ['height']]
-            ]
+            ],
+            callbacks: {
+                onImageUpload: function (files, editor, welEditable) {
+                    sendFile(files[0], editor, welEditable);
+                }
+            }
         });
         $('#txtshortdecription').summernote(
        {
@@ -174,7 +179,7 @@
              ['font', ['strikethrough', 'superscript', 'subscript']],
              ['fontsize', ['fontsize']],
              ['para', ['ul', 'ol', 'paragraph']],
-             ['insert', ['link', 'video']],
+             ['insert', ['link', 'video', 'picture']],
              ['height', ['height']]
            ]
        });
