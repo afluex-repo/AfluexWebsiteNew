@@ -918,5 +918,10 @@ namespace Afluex.Controllers
             }
             return Json(model, JsonRequestBehavior.AllowGet);
         }
+        [ActionName("term_conditions")]
+        public ActionResult term_conditions()
+        {
+            return View();
+        }
     }
 }
