@@ -1218,5 +1218,10 @@ namespace Afluex.Controllers
         {
             return View();
         }
+        [ActionName("term_conditions")]
+        public ActionResult term_conditions()
+        {
+            return View();
+        }
     }
 }
