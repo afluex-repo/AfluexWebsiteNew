@@ -909,8 +909,8 @@ E:\Repository-Projects\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Sec
 E:\Repository-Projects\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
 E:\Repository-Projects\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 E:\Repository-Projects\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
-E:\Repository-Projects\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
 E:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
+E:\Repository-Projects\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
 F:\Ashwani Afluex\repository\AfluexWebsiteNew\Afluex\bin\ApplicationInsights.config
 F:\Ashwani Afluex\repository\AfluexWebsiteNew\Afluex\bin\roslyn\csc.exe
 F:\Ashwani Afluex\repository\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -1011,6 +1011,6 @@ F:\Ashwani Afluex\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security
 F:\Ashwani Afluex\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Twitter.xml
 F:\Ashwani Afluex\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 F:\Ashwani Afluex\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
+F:\Ashwani Afluex\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
 F:\Ashwani Afluex\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 F:\Ashwani Afluex\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
-F:\Ashwani Afluex\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
