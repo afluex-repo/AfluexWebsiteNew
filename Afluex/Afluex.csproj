@@ -2200,6 +2200,8 @@
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\web\privacy_policy.cshtml" />
     <Content Include="Views\advertisement\privacy_policy.cshtml" />
+    <Content Include="Views\web\term_conditions.cshtml" />
+    <Content Include="Views\advertisement\term_conditions.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="afluexad\fontawesome\" />
@@ -2238,7 +2240,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>59831</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:59832/</IISUrl>
+          <IISUrl>http://localhost:59833/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
