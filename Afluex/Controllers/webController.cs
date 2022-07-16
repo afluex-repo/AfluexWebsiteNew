@@ -37,37 +37,44 @@ namespace Afluex.Controllers
         {
             return View("our_team");
         }
-        [ActionName("website-development-services")]
+       // [ActionName("website-development-services")]
+        [ActionName("website-development")]
         public ActionResult website_development_services()
         {
             return View("website_development_services");
 
         }
-        [ActionName("app-development-services")]
+        //[ActionName("app-development-services")]
+        [ActionName("app-development")]
         public ActionResult Mobile_Development()
         {
             return View("Mobile_Development");
         }
-        [ActionName("software-development-services")]
+        //[ActionName("software-development-services")]
+        [ActionName("software-development")]
         public ActionResult software_development_services()
         {
             return View("software_development_services");
         }
-        [ActionName("mvc-training-services")]
+        //[ActionName("mvc-training-services")]
+        [ActionName("mvc-training")]
         public ActionResult mvc_training_services()
         {
             return View("mvc_training_services");
         }
-        [ActionName("digital-marketing-services")]
+        //[ActionName("digital-marketing-services")]
+        [ActionName("digital-marketing")]
         public ActionResult digital_marketing_services()
         {
             return View("digital_marketing_services");
         }
-        [ActionName("domain-and-hosting-services")]
+        //[ActionName("domain-and-hosting-services")]
+        [ActionName("domain-and-hosting")]
         public ActionResult domain_hosting_services()
         {
             return View("domain_hosting_services");
         }
+        //[ActionName("seo-services")]
         [ActionName("seo-services")]
         public ActionResult seo_services()
         {
