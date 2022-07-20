@@ -8,8 +8,8 @@
         top: 20%;
     }
     .loader .face:nth-child(1) {
-        width: 60%;
-        height: 60%;
+        width: 85%;
+        height: 85%;
         color: #3ea5ae;
         border-color: currentColor transparent transparent currentColor;
         border-width: 0.2em 0.2em 0em 0em;
@@ -17,8 +17,8 @@
         animation-direction: normal;
     }
     .loader .face:nth-child(2) {
-        width: 50%;
-        height: 50%;
+        width: 75%;
+        height: 75%;
         color: #418fb2;
         border-color: currentColor currentColor transparent transparent;
         border-width: 0.2em 0em 0em 0.2em;
