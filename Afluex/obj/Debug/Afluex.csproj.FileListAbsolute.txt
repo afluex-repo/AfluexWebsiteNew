@@ -909,7 +909,6 @@ E:\Repository-Projects\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Sec
 E:\Repository-Projects\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
 E:\Repository-Projects\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 E:\Repository-Projects\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
-E:\Repository-Projects\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
 E:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
 C:\Users\User\Downloads\AfluexWebsiteNew-main\AfluexWebsiteNew-main\Afluex\bin\ApplicationInsights.config
 C:\Users\User\Downloads\AfluexWebsiteNew-main\AfluexWebsiteNew-main\Afluex\bin\roslyn\csc.exe
