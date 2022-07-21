@@ -294,7 +294,11 @@ img {
 a:hover {
 	text-decoration: none !important;
 }
-
+.fact
+{
+    font-size:18px !important;
+    margin-bottom:3px;
+}
 .single-fact .campaign-fact-icon {
 	-webkit-box-shadow: 0px 7px 15px 0px rgb(88 86 214 / 30%);
 	box-shadow: 0px 7px 15px 0px rgb(88 86 214 / 30%);
@@ -333,7 +337,14 @@ a:hover {
 	outline: 1px solid #fff;
 	color: white;
 }
-
+.contact-heading
+{
+    font-size:28px !important;
+}
+.heading
+{
+    font-size:24px !important;
+}
 #contact-sec {
 	width: 85%;
 	height: auto;

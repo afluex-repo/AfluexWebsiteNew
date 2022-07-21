@@ -529,6 +529,11 @@ namespace Afluex.Controllers
             return View("privacy_policy");
         }
 
+        public ActionResult term_conditions()
+        {
+            return View("term_conditions");
+        }
+
         public virtual PartialViewResult DemoContact()
         {
             return PartialView("DemoContact");
