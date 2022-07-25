@@ -1014,6 +1014,7 @@ C:\Users\User\Downloads\AfluexWebsiteNew-main\AfluexWebsiteNew-main\Afluex\bin\S
 C:\Users\User\Downloads\AfluexWebsiteNew-main\AfluexWebsiteNew-main\Afluex\obj\Debug\Afluex.dll
 C:\Users\User\Downloads\AfluexWebsiteNew-main\AfluexWebsiteNew-main\Afluex\obj\Debug\Afluex.pdb
 C:\Users\User\Downloads\AfluexWebsiteNew-main\AfluexWebsiteNew-main\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
 D:\Repo\AfluexWebsiteNew\Afluex\bin\ApplicationInsights.config
 D:\Repo\AfluexWebsiteNew\Afluex\bin\roslyn\csc.exe
 D:\Repo\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -1117,3 +1118,5 @@ D:\Repo\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
 D:\Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
 D:\Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 D:\Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
+=======
+>>>>>>> bc7e2e868e2a79fc9c3cbead420df68a2c106c24
