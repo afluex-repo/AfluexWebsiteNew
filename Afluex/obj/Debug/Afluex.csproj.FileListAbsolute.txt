@@ -1116,3 +1116,7 @@ D:\Repo\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
 D:\Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
 D:\Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 D:\Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
+<<<<<<< HEAD
+=======
+E:\Repository-Projects\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
+>>>>>>> 777c0fc6f5213b4787d312acedcd30770f9869f0
