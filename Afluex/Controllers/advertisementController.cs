@@ -215,12 +215,12 @@ namespace Afluex.Controllers
         {
             return View("mobile_van_promotion");
         }
-        [ActionName("wall-wrap-ads")]
+        [ActionName("wall-wrap")]
         public ActionResult wall_wrap_ads()
         {
             return View("wall_wrap_ads");
         }
-        [ActionName("auto-branding")]
+        [ActionName("auto-rickshaw-advertising")]
         public ActionResult auto_branding()
         {
             return View("auto_branding");
