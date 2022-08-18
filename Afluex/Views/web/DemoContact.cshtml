@@ -45,7 +45,7 @@
         </div>
 
         <div class="col-md-12 col-sm-12 col-xs-12 form-group">
-            <input type="submit" value="Submit" name="btnSaveOTP" class="btn btn-primary"
+            <input type="button" value="Submit" name="btnSaveOTP" class="btn btn-primary"
                    onclick="return ShowOtp();" />
         </div>
     </div>
@@ -91,31 +91,30 @@
                     $('#CustMessage').focus();
                     return false;
                 }
-                //$("#preloader").css({ 'display': 'block' });
-                //$.ajax({
-                //    url: "/web/ValidateData",
-                //    Type: "Get",
-                //    DataType: "JSON",
-                //    data: { MemberName: $("#Name").val(), Contact: $("#Mobile").val(), Email: $("#Email").val(), CusMessage: $("#CusMessage").val() },
-                //    success: function (data) {
-                //        debugger
-                //        $("#preloader").css({ 'display': 'none' });
-                //        if (data.Result == "1") {
-                //            // alert(data.OTP);
-                //            $("#Name").val(data.Name);
-                //            $("#Mobile").val(data.Mobile);
-                //            $("#hdOTP").val(data.Otppin);
-                //            alert('Enquiry send successfully !!');
-                //            location.reload();
-                //            $("#otp").hide();
-                //            $("#frm").show();
-                //        }
-                //        else {
-                //            $("#otp").hide();
-                //            $("#frm").show();
-                //        }
-                //    }
-                //});
+                $(".main_loader").css({ 'display': '' });
+                $.ajax({
+                    url: "/web/ValidateData",
+                    Type: "GET",
+                    DataType: "JSON",
+                    data: { MemberName: $("#Name").val(), Contact: $("#Mobile").val(), Email: $("#Email").val(), CusMessage: $("#CusMessage").val() },
+                    success: function (data) {
+                        debugger
+                        $(".main_loader").css({ 'display': 'none' });
+                        if (data.Result == "1") {
+                            // alert(data.OTP);
+                            $("#Name").val(data.Name);
+                            $("#Mobile").val(data.Mobile);
+                            $("#hdOTP").val(data.Otppin);
+                            //   alert(data.Otppin);
+                            $("#otp").show();
+                            $("#frm").hide();
+                        }
+                        else {
+                            $("#otp").hide();
+                            $("#frm").show();
+                        }
+                    }
+                });
             }
             function validot() {
                 debugger;

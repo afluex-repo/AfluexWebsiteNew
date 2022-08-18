@@ -43,7 +43,10 @@ body:before {
 	content: "";
 	opacity: .30;
 }
-
+.logo
+{
+    height:90px !important;
+}
 .services-list-container {
 	display: flex;
 	flex-direction: column;
@@ -96,6 +99,8 @@ body:before {
 	box-shadow: rgba(50, 50, 93, 0.6) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.6) 0px 18px 36px -18px inset;
 	padding: 30px 45px;
 }
+
+
 
 @media screen and (max-width: 1644px) {
 	.services-item {
@@ -289,7 +294,11 @@ img {
 a:hover {
 	text-decoration: none !important;
 }
-
+.fact
+{
+    font-size:18px !important;
+    margin-bottom:3px;
+}
 .single-fact .campaign-fact-icon {
 	-webkit-box-shadow: 0px 7px 15px 0px rgb(88 86 214 / 30%);
 	box-shadow: 0px 7px 15px 0px rgb(88 86 214 / 30%);
@@ -328,7 +337,14 @@ a:hover {
 	outline: 1px solid #fff;
 	color: white;
 }
-
+.contact-heading
+{
+    font-size:28px !important;
+}
+.heading
+{
+    font-size:24px !important;
+}
 #contact-sec {
 	width: 85%;
 	height: auto;

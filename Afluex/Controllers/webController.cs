@@ -17,7 +17,7 @@ namespace Afluex.Controllers
     public class webController : Controller
     {
         // GET: web
-        [ActionName("it-services")]
+        [ActionName("software-development")]
         public ActionResult it_services()
         {
             return View("it_services");
@@ -38,20 +38,20 @@ namespace Afluex.Controllers
             return View("our_team");
         }
        // [ActionName("website-development-services")]
-        [ActionName("website-development")]
+        [ActionName("website-development-company")]
         public ActionResult website_development_services()
         {
             return View("website_development_services");
 
         }
         //[ActionName("app-development-services")]
-        [ActionName("app-development")]
+        [ActionName("mobile-app-development-company")]
         public ActionResult Mobile_Development()
         {
             return View("Mobile_Development");
         }
         //[ActionName("software-development-services")]
-        [ActionName("software-development")]
+        [ActionName("software-development-company")]
         public ActionResult software_development_services()
         {
             return View("software_development_services");
@@ -63,7 +63,7 @@ namespace Afluex.Controllers
             return View("mvc_training_services");
         }
         //[ActionName("digital-marketing-services")]
-        [ActionName("digital-marketing")]
+        [ActionName("digital-marketing-company")]
         public ActionResult digital_marketing_services()
         {
             return View("digital_marketing_services");
@@ -75,12 +75,12 @@ namespace Afluex.Controllers
             return View("domain_hosting_services");
         }
         //[ActionName("seo-services")]
-        [ActionName("seo-services")]
+        [ActionName("seo-agency")]
         public ActionResult seo_services()
         {
             return View("seo_services");
         }
-        [ActionName("graphic-designs")]
+        [ActionName("graphic-designs-company")]
         public ActionResult graphic_designs()
         {
             return View("graphic_designs");
@@ -90,12 +90,12 @@ namespace Afluex.Controllers
         {
             return View("mlm_software");
         }
-        [ActionName("real-estate-software")]
+        [ActionName("real-estate-software-company")]
         public ActionResult real_estate_software()
         {
             return View("real_estate_software");
         }
-        [ActionName("ecommerce-software")]
+        [ActionName("ecommerce-software-development")]
         public ActionResult ecommerce_software()
         {
             return View("ecommerce_software");
@@ -120,12 +120,12 @@ namespace Afluex.Controllers
         {
             return View("hospital_management_software");
         }
-        [ActionName("mobile-recharge-software")]
+        [ActionName("mobile-recharge-software-development")]
         public ActionResult mobile_recharge_software()
         {
             return View("mobile_recharge_software");
         }
-        [ActionName("news-portal-software")]
+        [ActionName("news-portal-software-development")]
         public ActionResult news_portal_software()
         {
             return View("news_portal_software");
@@ -135,17 +135,17 @@ namespace Afluex.Controllers
         {
             return View("crm_software");
         }
-        [ActionName("hrms-software")]
+        [ActionName("hris-hrms-software-development")]
         public ActionResult hrms_software()
         {
             return View("hrms_software");
         }
-        [ActionName("erp-software")]
+        [ActionName("erp-software-development")]
         public ActionResult erp_software()
         {
             return View("erp_software");
         }
-        [ActionName("followup-software")]
+        [ActionName("followup-software-development")]
         public ActionResult followup_software()
         {
             return View("followup_software");
@@ -155,32 +155,32 @@ namespace Afluex.Controllers
         {
             return View("daily_expenses_software");
         }
-        [ActionName("nidhi-software")]
+        [ActionName("nidhi-software-development")]
         public ActionResult nidhi_software()
         {
             return View("nidhi_software");
         }
-        [ActionName("helping-software")]
+        [ActionName("helping-software-development")]
         public ActionResult helping_software()
         {
             return View("helping_software");
         }
-        [ActionName("restaurant-billing-software")]
+        [ActionName("restaurant-software-development")]
         public ActionResult restaurant_billing_software()
         {
             return View("restaurant_billing_software");
         }
-        [ActionName("loan-management-software")]
+        [ActionName("loan-management-software-development")]
         public ActionResult loan_management_software()
         {
             return View("loan_management_software");
         }
-        [ActionName("mart-billing-software")]
+        [ActionName("mart-billing-software-development")]
         public ActionResult mart_billing_software()
         {
             return View("mart_billing_software");
         }
-        [ActionName("inventry-management-software")]
+        [ActionName("inventry-management-software-developments")]
         public ActionResult inventry_management_software()
         {
             return View("inventry_management_software");
@@ -201,7 +201,7 @@ namespace Afluex.Controllers
         {
             return View("gallery");
         }
-        [ActionName("Edu-tech")]
+        [ActionName("school-management-software")]
         public ActionResult Edu_tech()
         {
             return View("Edu_tech");
@@ -423,11 +423,11 @@ namespace Afluex.Controllers
                             #endregion SendEmailToCandidate
                             string mob = "7310000413";
                             string str = "You got a career inquiry from- " + "Name-" + dsRegistration.Tables[0].Rows[0]["Name"].ToString() + " , Mob-" + dsRegistration.Tables[0].Rows[0]["Mobile"].ToString() + " , Email-" + dsRegistration.Tables[0].Rows[0]["Email"].ToString() + " , Description-" + dsRegistration.Tables[0].Rows[0]["Description"].ToString();
-                            //try
-                            //{
-                            //    BLSMS.SendSMS(mob, str);
-                            //}
-                            //catch { }
+                            try
+                            {
+                                BLSMS.SendSMS(mob, str);
+                            }
+                            catch { }
                             TempData["Career"] = "Data Submission Successfull !";
                         }
                         catch (Exception ex)
@@ -448,11 +448,11 @@ namespace Afluex.Controllers
 
                         string mob = dsRegistration.Tables[0].Rows[0]["Mobile"].ToString();
                         string str = "Dear " + dsRegistration.Tables[0].Rows[0]["Name"].ToString() + " thank you for showing your interest in Afluex. Our HR Team will contact you soon. For Direct Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
-                        //try
-                        //{
-                        // BLSMS.SendSMS(mob, str);
-                        //}
-                        //catch { }
+                        try
+                        {
+                         BLSMS.SendSMS(mob, str);
+                        }
+                        catch { }
                     }
                     else
                     {
@@ -545,11 +545,11 @@ namespace Afluex.Controllers
                         string mob = model.Mobile;
                         string str = "Dear " + model.Name + " thank you for showing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
 
-                        //try
-                        //{
-                        //     BLSMS.SendSMS(mob, str);
-                        //}
-                        //catch { }
+                        try
+                        {
+                             BLSMS.SendSMS(mob, str);
+                        }
+                        catch { }
 
 
                         string messagelbody = "";
@@ -594,11 +594,11 @@ namespace Afluex.Controllers
                         string mobs = "7310000413";
                         string str2 = "You got a contact whose name-" + model.Name + " , mob-" + model.Mobile + ", msg-" + model.Message;
 
-                        //try
-                        //{
-                        //    BLSMS.SendSMS(mobs, str2);
-                        //}
-                        //catch { }
+                        try
+                        {
+                            BLSMS.SendSMS(mobs, str2);
+                        }
+                        catch { }
 
 
 
@@ -632,8 +632,8 @@ namespace Afluex.Controllers
         }
         [HttpPost]
         [ActionName("DemoContact")]
-        [OnAction(ButtonName = "btnSaveOTP")]
-        public ActionResult saveDemoinquiry(Home model)
+        [OnAction(ButtonName = "btnSave")]
+         public ActionResult saveDemoinquiry(Home model)
         {
             Session["Type"] = null;
             string FormName = "";
@@ -790,11 +790,11 @@ namespace Afluex.Controllers
                         string mob = model.Mobile;
                         string str = model.Name + " thank you for showing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
 
-                        //try
-                        //{
-                        //   BLSMS.SendSMS(mob, str);
-                        //}
-                        //catch { }
+                        try
+                        {
+                           BLSMS.SendSMS(mob, str);
+                        }
+                        catch { }
 
 
                         string messagelbody = "";
@@ -852,11 +852,11 @@ namespace Afluex.Controllers
                         string mobs = "7310000413";
                         string str2 = "You got a contact whose name-" + model.Name + " , mob-" + model.Mobile + ", msg-" + model.Message + " , regarding " + model.ContactusType;
 
-                        //try
-                        //{
-                        //   BLSMS.SendSMS(mobs, str2);
-                        //}
-                        //catch { }
+                        try
+                        {
+                           BLSMS.SendSMS(mobs, str2);
+                        }
+                        catch { }
 
                         TempData["ContactMsg"] = "message has been sent.";
                         FormName = "thankyou";
@@ -933,11 +933,11 @@ namespace Afluex.Controllers
                     string mob = model.Mobile;
                     string str =  model.Name + " thank you for showing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
 
-                    //try
-                    //{
-                    //   BLSMS.SendSMS(mob, str);
-                    //}
-                    //catch { }
+                    try
+                    {
+                       BLSMS.SendSMS(mob, str);
+                    }
+                    catch { }
 
 
                     string messagelbody = "";
@@ -994,11 +994,11 @@ namespace Afluex.Controllers
                     string mobs = "7310000413";
                     string str2 = "You got a contact whose name-" + model.Name + " , mob-" + model.Mobile + ", msg-" + model.Message + " , regarding" + model.ContactusType;
 
-                    //try
-                    //{
-                    //   BLSMS.SendSMS(mobs, str2);
-                    //}
-                    //catch { }
+                    try
+                    {
+                       BLSMS.SendSMS(mobs, str2);
+                    }
+                    catch { }
 
                     TempData["ContactMsg"] = "message has been sent.";
                     FormName = "thankyou";
@@ -1062,13 +1062,13 @@ namespace Afluex.Controllers
                 catch (Exception ex)
                 {
                 }
-                //try
-                //{
-                //   BLSMS.SendSMS(mobotp, strotp);
-                //}
-                //catch { }
+                try
+                {
+                   BLSMS.SendSMS(mobotp, strotp);
+                }
+                catch { }
 
-                //model.Otppin = ctrOTP;
+                model.Otppin = ctrOTP;
 
                 model.Result = "1";
             }
@@ -1143,11 +1143,11 @@ namespace Afluex.Controllers
                         string mobs = Mobile;
                         string str2 =  Name + " thank you for showing your interest in our IT Field. Our Team will contact you soon For Enquiry call us on 7310000413,412 or Mail us on supportnow@afluex.com";
 
-                        //try
-                        //{
-                        //    BLSMS.SendSMS(mobs, str2);
-                        //}
-                        //catch { }
+                        try
+                        {
+                            BLSMS.SendSMS(mobs, str2);
+                        }
+                        catch { }
 
 
 
@@ -1190,11 +1190,11 @@ namespace Afluex.Controllers
                         string mobval = "7310000413";
                         string strval = "You got a quote Rquest from " + Name + " , Mob-" + Mobile + ", Project-" + ProjectType + " , Budget-" + YourBudget + ", Msg-" + Message;
                         obj.Result = "Yes";
-                        //try
-                        //{
-                        //   BLSMS.SendSMS(mobval, strval);
-                        //}
-                        //catch { }
+                        try
+                        {
+                           BLSMS.SendSMS(mobval, strval);
+                        }
+                        catch { }
                         obj.Result = "Inquiry send successfully";
                         obj.Result = "Yes";
                     }
