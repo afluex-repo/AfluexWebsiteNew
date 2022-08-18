@@ -44,10 +44,10 @@
                 </div>
             </div>
             <div class="col-md-12 col-sm-12 col-xs-12 form-group">
-                <input type="submit" value="Submit" name="btnSaveOTP" class="btn btn-primary" onclick="return ShowOtp();" />
+                <input type="submit" value="Submit" name="btnSave" class="btn btn-primary" onclick="return ShowOtp();" />
             </div>
         </div>
-        <div class="row otp" id="otp" style="display:none">
+        @*<div class="row otp" id="otp" style="display:none">
             <div class="col-md-8 col-sm-8 col-xs-8 mb-2 form-group">
                 <input type="hidden" id="hdOTP" />
                 @Html.TextBoxFor(m => m.Otppin, new { @class = "form-control", @Placeholder = " Enter OTP", @required = "required", @maxlength = "6", @onkeypress = "return isNumberKey(event) ;" })
@@ -56,7 +56,7 @@
                 <input type="submit" name="btnSave" class="btn btn-primary" onclick="return validot();" />
             </div>
 
-        </div>
+        </div>*@
     }
 
     <script>
@@ -87,33 +87,33 @@
                 $('#CusMessage').focus();
                 return false;
             }
-            else {
-                $(".main_loader").css({ 'display': '' });
-                $.ajax({
+            //else {
+            //    $(".main_loader").css({ 'display': '' });
+            //    $.ajax({
                     
-                    url: "/advertisement/ValidateData",
-                    Type: "Get",
-                    DataType: "JSON",
-                    data: { MemberName: $("#Name").val(), Contact: $("#Mobile").val(), Email: $(".EmailID").val(), CusMessage: $("#CusMessage").val() },
-                    success: function (data) {
-                        debugger
-                        $(".main_loader").css({ 'display': 'none' });
-                        if (data.Result == "1") {
-                            // alert(data.OTP);
-                            $("#Name").val(data.Name);
-                            $("#Mobile").val(data.Mobile);
-                            $("#hdOTP").val(data.Otppin);
-                            //   alert(data.Otppin);
-                            $("#otp").show();
-                            $("#frm").hide();
-                        }
-                        else {
-                            $("#otp").hide();
-                            $("#frm").show();
-                        }
-                    }
-                });
-            }
+            //        url: "/advertisement/ValidateData",
+            //        Type: "Get",
+            //        DataType: "JSON",
+            //        data: { MemberName: $("#Name").val(), Contact: $("#Mobile").val(), Email: $(".EmailID").val(), CusMessage: $("#CusMessage").val() },
+            //        success: function (data) {
+            //            debugger
+            //            $(".main_loader").css({ 'display': 'none' });
+            //            if (data.Result == "1") {
+            //                // alert(data.OTP);
+            //                $("#Name").val(data.Name);
+            //                $("#Mobile").val(data.Mobile);
+            //                $("#hdOTP").val(data.Otppin);
+            //                //   alert(data.Otppin);
+            //                $("#otp").show();
+            //                $("#frm").hide();
+            //            }
+            //            else {
+            //                $("#otp").hide();
+            //                $("#frm").show();
+            //            }
+            //        }
+            //    });
+            //}
         }
         function validot() {
             if ($('#Otppin').val() == "") {

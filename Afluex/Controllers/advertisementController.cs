@@ -136,7 +136,7 @@ namespace Afluex.Controllers
                             string str = "You got a career inquiry from- " + "Name-" + dsRegistration.Tables[0].Rows[0]["Name"].ToString() + " , Mob-" + dsRegistration.Tables[0].Rows[0]["Mobile"].ToString() + " , Email-" + dsRegistration.Tables[0].Rows[0]["Email"].ToString() + " , Description-" + dsRegistration.Tables[0].Rows[0]["Description"].ToString();
                             try
                             {
-                                BLSMS.SendSMS(mob, str);
+                                //BLSMS.SendSMS(mob, str);
                             }
                             catch { }
                             TempData["Career"] = "Data Submission Successfull !";
@@ -161,7 +161,7 @@ namespace Afluex.Controllers
                         string str =  dsRegistration.Tables[0].Rows[0]["Name"].ToString() + " thank you for shwoing your interest in Afluex. Our HR Team will contact you soon. For Direct Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
                         try
                         {
-                            BLSMS.SendSMS(mob, str);
+                            //BLSMS.SendSMS(mob, str);
                         }
                         catch { }
                     }
@@ -306,7 +306,7 @@ namespace Afluex.Controllers
 
                         try
                         {
-                            BLSMS.SendSMS(mob, str);
+                            //BLSMS.SendSMS(mob, str);
                         }
                         catch (Exception ex)
                         {
@@ -678,7 +678,7 @@ namespace Afluex.Controllers
                         string str = "Dear " + model.Name + " thank you for showing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
                         try
                         {
-                            BLSMS.SendSMS(mob, str);
+                            //BLSMS.SendSMS(mob, str);
                         }
                         catch { }
                         string messagelbody = "";
@@ -799,7 +799,7 @@ namespace Afluex.Controllers
                     string str =  model.Name + " thank you for showing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
                     try
                     {
-                        BLSMS.SendSMS(mob, str);
+                        //BLSMS.SendSMS(mob, str);
                     }
                     catch { }
                     string messagelbody = "";
