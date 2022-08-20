@@ -100,7 +100,6 @@ D:\Repo\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\Repo\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
 D:\Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 D:\Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
-D:\Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
 F:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\bin\ApplicationInsights.config
 F:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\bin\roslyn\csc.exe
 F:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
