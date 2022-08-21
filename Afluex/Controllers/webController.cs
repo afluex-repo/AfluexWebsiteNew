@@ -85,7 +85,7 @@ namespace Afluex.Controllers
         {
             return View("graphic_designs");
         }
-        [ActionName("mlm-software")]
+        [ActionName("mlm-software-development-company")]
         public ActionResult mlm_software()
         {
             return View("mlm_software");
@@ -130,7 +130,7 @@ namespace Afluex.Controllers
         {
             return View("news_portal_software");
         }
-        [ActionName("crm-software")]
+        [ActionName("crm-software-development-company")]
         public ActionResult crm_software()
         {
             return View("crm_software");
