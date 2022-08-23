@@ -4,8 +4,6 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-
 <url>
   <loc>https://www.afluex.com/</loc>
   <lastmod>2022-08-18T05:41:04+00:00</lastmod>
@@ -57,7 +55,7 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.afluex.com/web/graphic-designs-company</loc>
+  <loc>https://www.afluex.com/web/graphic-design-company</loc>
   <lastmod>2022-08-18T05:41:04+00:00</lastmod>
   <priority>0.64</priority>
 </url>
