@@ -80,7 +80,7 @@ namespace Afluex.Controllers
         {
             return View("seo_services");
         }
-        [ActionName("graphic-designs-company")]
+        [ActionName("graphic-design-company")]
         public ActionResult graphic_designs()
         {
             return View("graphic_designs");
@@ -180,7 +180,7 @@ namespace Afluex.Controllers
         {
             return View("mart_billing_software");
         }
-        [ActionName("inventry-management-software-developments")]
+        [ActionName("inventory-management-software-development")]
         public ActionResult inventry_management_software()
         {
             return View("inventry_management_software");
