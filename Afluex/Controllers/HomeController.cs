@@ -734,6 +734,258 @@ namespace Afluex.Controllers
 
         }
 
-       
+        public ActionResult ITLandingPage()
+        {
+            return View();
+        }
+
+
+
+   
+        public ActionResult SaveLandingPage(string Name, string Mobile, string Email)
+        {
+            Home model = new Home();
+            model.Name = Name;
+            model.Mobile = Mobile;
+            model.Email = Email;
+            //if (!this.IsCaptchaValid(errorText: "Invalid Captcha"))
+            //{
+            //    ViewBag.Message = "Captcha validation failed";
+            //    TempData["ContactMsg"] = "Captcha validation failed";
+            //    return RedirectToAction("contactus", "Home");
+            //}
+            string FormName = "";
+            string Controller = "";
+            try
+            {
+                model.ContactusType = "AD";
+                model.Message = "Null";
+                model.About = "Null";
+                DataSet ds = model.SaveLandingPageDetails();
+                if (ds != null && ds.Tables.Count > 0)
+                {
+                    if (ds.Tables[0].Rows[0][0].ToString() == "1")
+                    {
+                        string mailbody = "";
+                        try
+                        {
+                            mailbody = "Dear " + model.Name + " thank you for showing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,412 or Mail us on -supportnow@afluex.com";
+                            var fromAddress = new MailAddress("contact.afluex@gmail.com");
+                            var toAddress = new MailAddress(model.Email);
+                            System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient
+                            {
+                                Host = "smtp.gmail.com",
+                                Port = 587,
+                                EnableSsl = true,
+                                DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
+                                UseDefaultCredentials = false,
+                                Credentials = new NetworkCredential(fromAddress.Address, "Krishna@412")
+                            };
+                            using (var message = new MailMessage(fromAddress, toAddress)
+                            {
+                                IsBodyHtml = true,
+                                Subject = "Contact us",
+                                Body = mailbody
+                            })
+                                smtp.Send(message);
+                        }
+                        catch (Exception ex)
+                        {
+                            //throw ex;
+                        }
+                        string mob = model.Mobile;
+                        string str = "Dear " + model.Name + " thank you for showing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
+                        try
+                        {
+                            //BLSMS.SendSMS(mob, str);
+                        }
+                        catch (Exception ex)
+                        {
+                            //throw ex;
+                        }
+                        string messagelbody = "";
+                        try
+                        {
+                            messagelbody = "<b>Dear team</b>" + "<br/>" + "You got a contact whose " + "<br/>" + " Name : " + model.Name + "<br/>" + " Mobile : " + model.Mobile + "<br/>" + " Message : " + model.Message;
+
+                            var fromAddress = new MailAddress("contact.afluex@gmail.com");
+                            var toAddress = new MailAddress("contact.afluex@gmail.com");
+                            System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient
+                            {
+                                Host = "smtp.gmail.com",
+                                Port = 587,
+                                EnableSsl = true,
+                                DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
+                                UseDefaultCredentials = false,
+                                Credentials = new NetworkCredential(fromAddress.Address, "Krishna@412")
+
+                            };
+                            using (var message = new MailMessage(fromAddress, toAddress)
+                            {
+                                IsBodyHtml = true,
+                                Subject = "Contactus",
+                                Body = messagelbody
+                            })
+                                smtp.Send(message);
+                            //TempData["ContactMsg"] = "message has been sent. ";
+                            model.Result = "true";
+                        }
+                        catch (Exception ex)
+                        {
+                            //throw ex;
+                        }
+                        string mobs = "7310000413";
+                        string str2 = "You got a contact whose name-" + model.Name + " , mob-" + model.Mobile + ", msg-" + model.Message;
+                        try
+                        {
+                            //BLSMS.SendSMS(mobs, str2);
+                        }
+                        catch (Exception ex)
+                        {
+                            //throw ex;
+                        }
+                        TempData["ContactMsg"] = "message has been sent.";
+                        FormName = "thankyou";
+                        Controller = "Home";
+                    }
+                    else
+                    {
+                        TempData["ContactMsg"] = ds.Tables[0].Rows[0]["ErrorMessage"].ToString();
+                        FormName = "ITLandingPage";
+                        Controller = "Home";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["ContactMsg"] = ex.Message;
+                FormName = "ITLandingPage";
+                Controller = "Home";
+            }
+            return RedirectToAction(FormName, Controller);
+        }
+
+        public ActionResult SaveLandingPageAction(string Name, string Mobile, string Email)
+        {
+            Home model = new Home();
+            model.Name = Name;
+            model.Mobile = Mobile;
+            model.Email = Email;
+            //if (!this.IsCaptchaValid(errorText: "Invalid Captcha"))
+            //{
+            //    ViewBag.Message = "Captcha validation failed";
+            //    TempData["ContactMsg"] = "Captcha validation failed";
+            //    return RedirectToAction("contactus", "Home");
+            //}
+            string FormName = "";
+            string Controller = "";
+            try
+            {
+                model.ContactusType = "AD";
+                model.Message = "Null";
+                model.About = "Null";
+                DataSet ds = model.SaveLandingPageDetails();
+                if (ds != null && ds.Tables.Count > 0)
+                {
+                    if (ds.Tables[0].Rows[0][0].ToString() == "1")
+                    {
+                        string mailbody = "";
+                        try
+                        {
+                            mailbody = "Dear " + model.Name + " thank you for showing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,412 or Mail us on -supportnow@afluex.com";
+                            var fromAddress = new MailAddress("contact.afluex@gmail.com");
+                            var toAddress = new MailAddress(model.Email);
+                            System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient
+                            {
+                                Host = "smtp.gmail.com",
+                                Port = 587,
+                                EnableSsl = true,
+                                DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
+                                UseDefaultCredentials = false,
+                                Credentials = new NetworkCredential(fromAddress.Address, "Krishna@412")
+                            };
+                            using (var message = new MailMessage(fromAddress, toAddress)
+                            {
+                                IsBodyHtml = true,
+                                Subject = "Contact us",
+                                Body = mailbody
+                            })
+                                smtp.Send(message);
+                        }
+                        catch (Exception ex)
+                        {
+                            //throw ex;
+                        }
+                        string mob = model.Mobile;
+                        string str = "Dear " + model.Name + " thank you for showing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
+                        try
+                        {
+                            //BLSMS.SendSMS(mob, str);
+                        }
+                        catch (Exception ex)
+                        {
+                            //throw ex;
+                        }
+                        string messagelbody = "";
+                        try
+                        {
+                            messagelbody = "<b>Dear team</b>" + "<br/>" + "You got a contact whose " + "<br/>" + " Name : " + model.Name + "<br/>" + " Mobile : " + model.Mobile + "<br/>" + " Message : " + model.Message;
+
+                            var fromAddress = new MailAddress("contact.afluex@gmail.com");
+                            var toAddress = new MailAddress("contact.afluex@gmail.com");
+                            System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient
+                            {
+                                Host = "smtp.gmail.com",
+                                Port = 587,
+                                EnableSsl = true,
+                                DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
+                                UseDefaultCredentials = false,
+                                Credentials = new NetworkCredential(fromAddress.Address, "Krishna@412")
+
+                            };
+                            using (var message = new MailMessage(fromAddress, toAddress)
+                            {
+                                IsBodyHtml = true,
+                                Subject = "Contactus",
+                                Body = messagelbody
+                            })
+                                smtp.Send(message);
+                            //TempData["ContactMsg"] = "message has been sent. ";
+                            model.Result = "true";
+                        }
+                        catch (Exception ex)
+                        {
+                            //throw ex;
+                        }
+                        string mobs = "7310000413";
+                        string str2 = "You got a contact whose name-" + model.Name + " , mob-" + model.Mobile + ", msg-" + model.Message;
+                        try
+                        {
+                            //BLSMS.SendSMS(mobs, str2);
+                        }
+                        catch (Exception ex)
+                        {
+                            //throw ex;
+                        }
+                        TempData["ContactMsg"] = "message has been sent.";
+                        FormName = "thankyou";
+                        Controller = "Home";
+                    }
+                    else
+                    {
+                        TempData["ContactMsg"] = ds.Tables[0].Rows[0]["ErrorMessage"].ToString();
+                        FormName = "ITLandingPage";
+                        Controller = "Home";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["ContactMsg"] = ex.Message;
+                FormName = "ITLandingPage";
+                Controller = "Home";
+            }
+            return RedirectToAction(FormName, Controller);
+        }
     }
 }

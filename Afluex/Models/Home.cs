@@ -124,5 +124,21 @@ namespace Afluex.Models
             DataSet ds = Connection.ExecuteQuery("InsertMessage", para);
             return ds;
         }
+
+        public DataSet SaveLandingPageDetails()
+        {
+            SqlParameter[] para =
+                            {
+                                        new SqlParameter("@Name",Name),
+                                        new SqlParameter("@Mobile",Mobile),
+                                        new SqlParameter("@Email",Email),
+                                        new SqlParameter("@Message",Message),
+                                        new SqlParameter("@About",About),
+                                        new SqlParameter("@ContactusType",ContactusType)
+
+                            };
+            DataSet ds = Connection.ExecuteQuery("InsertContactUsDetails", para);
+            return ds;
+        }
     }
 }
