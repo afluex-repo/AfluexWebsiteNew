@@ -181,8 +181,6 @@ document.write(`
       </div>
     </div>
     <!--end sidebar -->
-
-
 <script type="text/javascript">
    function SaveDetails() {
    debugger;

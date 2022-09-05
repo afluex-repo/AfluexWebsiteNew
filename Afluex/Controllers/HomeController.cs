@@ -734,7 +734,7 @@ namespace Afluex.Controllers
 
         }
 
-        public ActionResult ITLandingPage()
+        public ActionResult crmsoftware()
         {
             return View();
         }
@@ -758,7 +758,7 @@ namespace Afluex.Controllers
             string Controller = "";
             try
             {
-                model.ContactusType = "AD";
+                model.ContactusType = "IT";
                 model.Message = "Null";
                 model.About = "Null";
                 DataSet ds = model.SaveLandingPageDetails();
@@ -845,13 +845,15 @@ namespace Afluex.Controllers
                             //throw ex;
                         }
                         TempData["ContactMsg"] = "message has been sent.";
+                        model.Result = "1";
                         FormName = "thankyou";
                         Controller = "Home";
                     }
                     else
                     {
                         TempData["ContactMsg"] = ds.Tables[0].Rows[0]["ErrorMessage"].ToString();
-                        FormName = "ITLandingPage";
+                        model.Result = ds.Tables[0].Rows[0]["ErrorMessage"].ToString();
+                        FormName = "crmsoftware";
                         Controller = "Home";
                     }
                 }
@@ -859,10 +861,11 @@ namespace Afluex.Controllers
             catch (Exception ex)
             {
                 TempData["ContactMsg"] = ex.Message;
-                FormName = "ITLandingPage";
+                model.Result= ex.Message;
+                FormName = "crmsoftware";
                 Controller = "Home";
             }
-            return RedirectToAction(FormName, Controller);
+            return Json(model, JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult SaveLandingPageAction(string Name, string Mobile, string Email)
@@ -974,18 +977,20 @@ namespace Afluex.Controllers
                     else
                     {
                         TempData["ContactMsg"] = ds.Tables[0].Rows[0]["ErrorMessage"].ToString();
-                        FormName = "ITLandingPage";
+                        FormName = "crmsoftware";
                         Controller = "Home";
+                        model.Result= ds.Tables[0].Rows[0]["ErrorMessage"].ToString();
                     }
                 }
             }
             catch (Exception ex)
             {
                 TempData["ContactMsg"] = ex.Message;
-                FormName = "ITLandingPage";
+                FormName = "crmsoftware";
                 Controller = "Home";
+                model.Result = ex.Message;
             }
-            return RedirectToAction(FormName, Controller);
+            return Json(model, JsonRequestBehavior.AllowGet);
         }
     }
 }

@@ -2265,7 +2265,7 @@
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\web\privacy_policy.cshtml" />
     <Content Include="Views\advertisement\privacy_policy.cshtml" />
-    <Content Include="Views\Home\ITLandingPage.cshtml" />
+    <Content Include="Views\Home\crmsoftware.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="afluexad\fontawesome\" />
