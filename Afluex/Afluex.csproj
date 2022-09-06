@@ -1737,6 +1737,7 @@
     <Content Include="CareerFileUpload\2a10b840-b5f8-4faf-aef6-10d7fc5d50a3.pdf" />
     <Content Include="CareerFileUpload\912bb5ad-5dff-42d4-9c46-9ec299846fb5.pdf" />
     <Content Include="CareerFileUpload\d35d8b1d-f86f-4682-922d-8fc4931b1e6d.xlsx" />
+    <None Include="crmsoftware.cshtml" />
     <None Include="Properties\PublishProfiles\Afluex.pubxml" />
     <None Include="Properties\PublishProfiles\newafluex.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
