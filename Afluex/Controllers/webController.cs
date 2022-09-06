@@ -17,7 +17,7 @@ namespace Afluex.Controllers
     public class webController : Controller
     {
         // GET: web
-        [ActionName("it-services")]
+        [ActionName("software-development")]
         public ActionResult it_services()
         {
             return View("it_services");
@@ -38,20 +38,20 @@ namespace Afluex.Controllers
             return View("our_team");
         }
        // [ActionName("website-development-services")]
-        [ActionName("website-development")]
+        [ActionName("website-development-company")]
         public ActionResult website_development_services()
         {
             return View("website_development_services");
 
         }
         //[ActionName("app-development-services")]
-        [ActionName("app-development")]
+        [ActionName("mobile-app-development-company")]
         public ActionResult Mobile_Development()
         {
             return View("Mobile_Development");
         }
         //[ActionName("software-development-services")]
-        [ActionName("software-development")]
+        [ActionName("software-development-company")]
         public ActionResult software_development_services()
         {
             return View("software_development_services");
@@ -63,7 +63,7 @@ namespace Afluex.Controllers
             return View("mvc_training_services");
         }
         //[ActionName("digital-marketing-services")]
-        [ActionName("digital-marketing")]
+        [ActionName("digital-marketing-company")]
         public ActionResult digital_marketing_services()
         {
             return View("digital_marketing_services");
@@ -75,27 +75,27 @@ namespace Afluex.Controllers
             return View("domain_hosting_services");
         }
         //[ActionName("seo-services")]
-        [ActionName("seo-services")]
+        [ActionName("seo-agency")]
         public ActionResult seo_services()
         {
             return View("seo_services");
         }
-        [ActionName("graphic-designs")]
+        [ActionName("graphic-design-company")]
         public ActionResult graphic_designs()
         {
             return View("graphic_designs");
         }
-        [ActionName("mlm-software")]
+        [ActionName("mlm-software-development-company")]
         public ActionResult mlm_software()
         {
             return View("mlm_software");
         }
-        [ActionName("real-estate-software")]
+        [ActionName("real-estate-software-company")]
         public ActionResult real_estate_software()
         {
             return View("real_estate_software");
         }
-        [ActionName("ecommerce-software")]
+        [ActionName("ecommerce-software-development")]
         public ActionResult ecommerce_software()
         {
             return View("ecommerce_software");
@@ -120,32 +120,32 @@ namespace Afluex.Controllers
         {
             return View("hospital_management_software");
         }
-        [ActionName("mobile-recharge-software")]
+        [ActionName("mobile-recharge-software-development")]
         public ActionResult mobile_recharge_software()
         {
             return View("mobile_recharge_software");
         }
-        [ActionName("news-portal-software")]
+        [ActionName("news-portal-software-development")]
         public ActionResult news_portal_software()
         {
             return View("news_portal_software");
         }
-        [ActionName("crm-software")]
+        [ActionName("crm-software-development-company")]
         public ActionResult crm_software()
         {
             return View("crm_software");
         }
-        [ActionName("hrms-software")]
+        [ActionName("hris-hrms-software-development")]
         public ActionResult hrms_software()
         {
             return View("hrms_software");
         }
-        [ActionName("erp-software")]
+        [ActionName("erp-software-development")]
         public ActionResult erp_software()
         {
             return View("erp_software");
         }
-        [ActionName("followup-software")]
+        [ActionName("followup-software-development")]
         public ActionResult followup_software()
         {
             return View("followup_software");
@@ -155,32 +155,32 @@ namespace Afluex.Controllers
         {
             return View("daily_expenses_software");
         }
-        [ActionName("nidhi-software")]
+        [ActionName("nidhi-software-development")]
         public ActionResult nidhi_software()
         {
             return View("nidhi_software");
         }
-        [ActionName("helping-software")]
+        [ActionName("helping-software-development")]
         public ActionResult helping_software()
         {
             return View("helping_software");
         }
-        [ActionName("restaurant-billing-software")]
+        [ActionName("restaurant-software-development")]
         public ActionResult restaurant_billing_software()
         {
             return View("restaurant_billing_software");
         }
-        [ActionName("loan-management-software")]
+        [ActionName("loan-management-software-development")]
         public ActionResult loan_management_software()
         {
             return View("loan_management_software");
         }
-        [ActionName("mart-billing-software")]
+        [ActionName("mart-billing-software-development")]
         public ActionResult mart_billing_software()
         {
             return View("mart_billing_software");
         }
-        [ActionName("inventry-management-software")]
+        [ActionName("inventory-management-software-development")]
         public ActionResult inventry_management_software()
         {
             return View("inventry_management_software");
@@ -201,7 +201,7 @@ namespace Afluex.Controllers
         {
             return View("gallery");
         }
-        [ActionName("Edu-tech")]
+        [ActionName("school-management-software")]
         public ActionResult Edu_tech()
         {
             return View("Edu_tech");
