@@ -758,9 +758,7 @@ namespace Afluex.Controllers
             string Controller = "";
             try
             {
-                model.ContactusType = "IT";
-                model.Message = "Null";
-                model.About = "Null";
+                model.ContactusType = "Google Add";
                 DataSet ds = model.SaveLandingPageDetails();
                 if (ds != null && ds.Tables.Count > 0)
                 {
@@ -845,7 +843,7 @@ namespace Afluex.Controllers
                             //throw ex;
                         }
                         TempData["ContactMsg"] = "message has been sent.";
-                        model.Result = "1";
+                        model.Result = "true";
                         FormName = "thankyou";
                         Controller = "Home";
                     }
@@ -884,9 +882,7 @@ namespace Afluex.Controllers
             string Controller = "";
             try
             {
-                model.ContactusType = "AD";
-                model.Message = "Null";
-                model.About = "Null";
+                model.ContactusType = "Google Add";
                 DataSet ds = model.SaveLandingPageDetails();
                 if (ds != null && ds.Tables.Count > 0)
                 {
@@ -971,6 +967,7 @@ namespace Afluex.Controllers
                             //throw ex;
                         }
                         TempData["ContactMsg"] = "message has been sent.";
+                        model.Result = "true";
                         FormName = "thankyou";
                         Controller = "Home";
                     }

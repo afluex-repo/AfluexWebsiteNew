@@ -121,11 +121,11 @@ document.write(`
           <form id="form" data-bs-toggle="validator" class ="shake mt20" action="">
             <div class="row">
               <div class="form-group col-sm-12">
-                <input type="text" id="txtname" name="txtname" placeholder="Enter Your Name" required="" data-error="Please fill Out">
+                <input type="text" id="txtname" name="txtname" placeholder="Enter Your Name" data-error="Please fill Out">
                 <div class="help-block with-errors"></div>
               </div>
                <div class="form-group col-sm-12">
-               <input type="text" id="txtmobile" name="txtmobile" placeholder="Enter Your Mobile No." required="" data-error="Please fill Out" maxlength="10" minlength="10" onkeypress = "return isNumberKey(event);">
+               <input type="text" id="txtmobile" name="txtmobile" placeholder="Enter Your Mobile No." data-error="Please fill Out" maxlength="10" minlength="10" onkeypress = "return isNumberKey(event);">
                 <div class="help-block with-errors"></div>
               </div>
 
@@ -207,6 +207,7 @@ document.write(`
 
 else {
 debugger;
+ $("#page_loader").css({ 'display': 'block !important'});
             var Name = $('#txtname').val();
             var Mobile = $('#txtmobile').val();
             var Email = $('#txtemail').val();
@@ -217,10 +218,10 @@ debugger;
                         data: { Name: $('#txtname').val(), Mobile: $('#txtmobile').val(), Email: $('#txtemail').val() },
                         success: function (data) {
                         debugger
-                        $(".main_loader").css({ 'display': 'none' });
+                        $("#page_loader").css({ 'display': 'none' });
                         if (data.Result == "true") {
                         alert('Your Details Save SuccessFully !!');
-                        window.location.reload();
+                        window.location.replace("https://afluex.com/home/crmsoftware");
                     }
                     else {
                           alert(data.Result);

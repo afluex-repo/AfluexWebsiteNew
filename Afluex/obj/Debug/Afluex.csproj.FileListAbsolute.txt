@@ -305,4 +305,3 @@ F:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Sec
 F:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
 F:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 F:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
-D:\Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
