@@ -28,11 +28,11 @@ document.write(`
                	<div class="form-block formcover shadow">
                 <div class="row">
                     <div class="form-group col-sm-6">
-                      <input type="text" id="name" name="name" placeholder="Enter Your Name" required="" data-error="Please fill Out">
+                      <input type="text" id="name" name="name" placeholder="Enter Your Name" data-error="Please fill Out">
                       <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group col-sm-6">
-                      <input type="text" id="mobile" name="mobile" placeholder="Enter Your Mobile No." required="" data-error="Please fill Out" maxlength="10" minlength="10" onkeypress = "return isNumberKey(event);">
+                      <input type="text" id="mobile" name="mobile" placeholder="Enter Your Mobile No."  data-error="Please fill Out" maxlength="10" minlength="10" onkeypress = "return isNumberKey(event);">
                       <div class="help-block with-errors"></div>
                     </div>
                   </div>
