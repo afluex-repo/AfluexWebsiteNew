@@ -202,7 +202,6 @@ F:\Ashwani Afluex\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security
 F:\Ashwani Afluex\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
 F:\Ashwani Afluex\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 F:\Ashwani Afluex\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
-F:\Ashwani Afluex\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
 F:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\bin\ApplicationInsights.config
 F:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\bin\roslyn\csc.exe
 F:\SachinMishraProject\repository\AfluexWebsiteNew\Afluex\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -408,3 +407,4 @@ E:\Repository-Projects\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Ow
 E:\Repository-Projects\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
 E:\Repository-Projects\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 E:\Repository-Projects\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
+F:\Ashwani Afluex\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache

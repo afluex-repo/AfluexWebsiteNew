@@ -752,13 +752,13 @@ namespace Afluex.Controllers
             //{
             //    ViewBag.Message = "Captcha validation failed";
             //    TempData["ContactMsg"] = "Captcha validation failed";
-            //    return RedirectToAction("contactus", "Home");
+            //    return RedirectToAction("crmsoftware", "Home");
             //}
             string FormName = "";
             string Controller = "";
             try
             {
-                model.ContactusType = "Google Add";
+                model.ContactusType = "Google Ad";
                 DataSet ds = model.SaveLandingPageDetails();
                 if (ds != null && ds.Tables.Count > 0)
                 {
@@ -882,7 +882,7 @@ namespace Afluex.Controllers
             string Controller = "";
             try
             {
-                model.ContactusType = "Google Add";
+                model.ContactusType = "Google Ad";
                 DataSet ds = model.SaveLandingPageDetails();
                 if (ds != null && ds.Tables.Count > 0)
                 {
