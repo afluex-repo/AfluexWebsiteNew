@@ -2200,6 +2200,19 @@
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\web\privacy_policy.cshtml" />
     <Content Include="Views\advertisement\privacy_policy.cshtml" />
+    <Content Include="Views\web\pay_per_click.cshtml" />
+    <Content Include="Views\web\social_media_marketing.cshtml" />
+    <Content Include="Views\web\social_media_optimization.cshtml" />
+    <Content Include="Views\web\ecommerce_web_design.cshtml" />
+    <Content Include="Views\web\redesign_website.cshtml" />
+    <Content Include="Views\web\ios_app.cshtml" />
+    <Content Include="Views\web\android_app.cshtml" />
+    <Content Include="Views\web\logo_design.cshtml" />
+    <Content Include="Views\web\custom_website.cshtml" />
+    <Content Include="Views\web\website_maintenance.cshtml" />
+    <Content Include="Views\web\banner_design.cshtml" />
+    <Content Include="Views\web\brochure_design.cshtml" />
+    <Content Include="Views\web\search_engine_marketing.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="afluexad\fontawesome\" />

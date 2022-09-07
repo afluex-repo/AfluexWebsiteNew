@@ -2,28 +2,35 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/Web_Layout.cshtml";
 }
+
+<style>
+    
+</style>
 <div class="main_slider">
     <div class="banner_carousel owl-carousel owl-theme">
-        <a href="/web/website-development">
+        @*<a href="/web/website-development">*@
             <div class="carousel_item">
-                <img src="~/afluexit/images/slider/web-1.jpg" class="img-fluid" alt="slider-1">
+                <img src="~/afluexit/images/slider/slider-1.png" class="img-fluid" alt="slider-1">
                 <div class="slider_content_box">
                     <div class="content">
                         <div class="auto-container">
-                            <span class="title">Welcome to Afluex</span>
-                            <h2>Best Responsive Website Design</h2>
-                            <div class="text">
+                            <h3 class="text-white">Welcome to Afluex</h3>
+                            <h1 class="banner-heading text-white">Software Development</h1>
+                            <div class="text text-white">
                                 Complete website solution for your business or personal website
                                 <br/>superior level of excellence for our customers.
+                            </div>
+                            <div class="abt_btn mt-5">
+                                <a href="/web/company-overview" class="btn btn-lg btn-custom">Know More..</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </a>
-        <a href="/web/software-development">
+        @*</a>*@
+        @*<a href="/web/software-development">
             <div class="carousel_item">
-                <img src="~/afluexit/images/slider/soft-2.jpg" class="img-fluid" alt="slider-2">
+                <img src="~/afluexit/images/slider/develery-soft.jpg" class="img-fluid" alt="slider-2">
                 <div class="slider_content_box">
                     <div class="content">
                         <div class="auto-container">
@@ -37,10 +44,30 @@
                     </div>
                 </div>
             </div>
-        </a>
-        <a href="/web/app-development">
+        </a>*@
+        @*<a href="/web/app-development">*@
             <div class="carousel_item">
-                <img src="~/afluexit/images/slider/app-development.png" class="img-fluid" alt="slider-3">
+                <img src="~/afluexit/images/slider/Delivery-aap.jpg" class="img-fluid" alt="slider-4">
+                <div class="slider_content_box">
+                    <div class="content">
+                        <div class="auto-container">
+                            <h3 class="text-dark">Welcome to Afluex</h3>
+                            <h1 class="banner-heading text-dark">Android Development</h1>
+                            <div class="text text-dark">
+                                Our Company has consistently embraced innovation to provide a
+                                <br>superior level of excellence for our customers.
+                            </div>
+                            <div class="abt_btn mt-5">
+                                <a href="/web/company-overview" class="btn btn-lg btn-custom">Know More..</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @*</a>*@
+        @*<a href="/web/app-development">
+            <div class="carousel_item">
+                <img src="~/afluexit/images/slider/Slider-03.jpg" class="img-fluid" alt="slider-3">
                 <div class="slider_content_box">
                     <div class="content">
                         <div class="auto-container">
@@ -54,7 +81,7 @@
                     </div>
                 </div>
             </div>
-        </a>
+        </a>*@
     </div>
     <div class="owl-dots">
         <button role="button" class="owl-dot active"><span></span></button>
@@ -97,7 +124,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="about_content_pic">
-                    <img src="~/afluexit/images/about_company.jpg" class="img-fluid" alt="Company Overview">
+                    <img src="~/afluexit/images/about_us.jpg" class="img-fluid" alt="Company Overview">
                 </div>
             </div>
         </div>
