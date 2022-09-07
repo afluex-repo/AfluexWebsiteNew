@@ -16,6 +16,7 @@ document.write(`
     <!-- template-style-->
     <link href="../LandingpageCss/css/style.css" rel="stylesheet">
     <link href="../LandingpageCss/css/responsive.css" rel="stylesheet">
+
        <!-- top progress bar start-->
           <div id="progress-bar"></div>
           <!-- top progress bar end -->
@@ -118,7 +119,7 @@ document.write(`
         <div class="form-block sidebarform">
           <h4>Request A Quote</h4>
           <p>Please fill out the form below if you have a plan or project in mind that you'd like to share with us.</p>
-          <form id="form" data-bs-toggle="validator" class ="shake mt20" action="">
+          <form id="form" data-bs-toggle="validator" class ="shake mt20" action="/home/crmsoftware">
             <div class="row">
               <div class="form-group col-sm-12">
                 <input type="text" id="txtname" name="txtname" placeholder="Enter Your Name" data-error="Please fill Out">
@@ -128,15 +129,26 @@ document.write(`
                <input type="text" id="txtmobile" name="txtmobile" placeholder="Enter Your Mobile No." data-error="Please fill Out" maxlength="10" minlength="10" onkeypress = "return isNumberKey(event);">
                 <div class="help-block with-errors"></div>
               </div>
-
             </div>
-
             <div class="row">
              <div class="form-group col-sm-12">
-            <input type="email" id="txtemail"  name="txtemail" name="email" placeholder="Enter Your Email" />
+            <input type="email" id="txtemail"  name="txtemail" placeholder="Enter Your Email" />
               </div>
             </div>
-            <button type="submit"  id="btn_save" name="btn_save" onclick="return SaveDetails();" class ="btn lnk btn-main bg-btn">Submit <span class ="circle"></span></button>
+             <div class ="row">
+                    <div class ="form-group col-sm-6">
+                       <h4 type="text" id="mainCaptcha1" style="margin-left:20px;"></h4>
+                       </div>
+                       <div class ="col-md-6">
+                       <p><i class ="fa fa-refresh" onclick="Captcha1();" style="cursor:pointer"></i></p>
+                       </div>
+                       </div>
+                       <div class ="row">
+                       <div class ="col-sm-12">
+                         <input type="text" id="Inputcaptcha" name="txtInput" placeholder="Enter captcha"/>
+                       </div></div>
+
+            <button type="button"  id="btn_save" name="btn_save" onclick="return SaveDetails();" class ="btn lnk btn-main bg-btn">Submit <span class ="circle"></span></button>
             <div class="clearfix"></div>
           </form>
         </div>
@@ -180,34 +192,45 @@ document.write(`
         </div>
       </div>
     </div>
-    <!--end sidebar -->
 <script type="text/javascript">
    function SaveDetails() {
    debugger;
      $("#divload").css({'display': ''})
      $(".errortext").removeClass("errortext");
 
-            if($("#txtname").val() == "") {
+         if($("#txtname").val() == "") {
             $("#txtname").addClass('errortext');
             $("#txtname").focus();
             return false();
-}
+            }
 
-            if($("#txtmobile").val() == "") {
+         if($("#txtmobile").val() == "") {
             $("#txtmobile").addClass('errortext');
             $("#txtmobile").focus();
             return false();
-}
+            }
 
-            if($("#txtemail").val() == "") {
+         if($("#txtemail").val() == "") {
             $("#txtemail").addClass('errortext');
             $("#txtemail").focus();
             return false();
-}
+            }
+            if($("#Inputcaptcha").val() == "") {
+            $("#Inputcaptcha").addClass('errortext');
+            $("#Inputcaptcha").focus();
+            return false();
+            }
 
-else {
-debugger;
- $("#page_loader").css({ 'display': 'block !important'});
+         if($("#Inputcaptcha").val() != $("#mainCaptcha1").val()) {
+            alert("Invalid Captcha!");
+            $("#Inputcaptcha").addClass('errortext');
+            $("#Inputcaptcha").focus();
+            $("#Inputcaptcha").val("");
+            return false();
+            }
+        else {
+            debugger;
+        $("#page_loader").css({ 'display': 'block !important'});
             var Name = $('#txtname').val();
             var Mobile = $('#txtmobile').val();
             var Email = $('#txtemail').val();
@@ -238,6 +261,33 @@ debugger;
             return false;
         return true;
 }
+
+
+
+
+function Captcha1() {
+     var alpha = new Array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
+	 	'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+ 	    	'0', '1', '2', '3', '4', '5', '6', '7', '8', '9');
+     var i;
+     for (i=0; i<6; i++) {
+         var a = alpha[Math.floor(Math.random() * alpha.length)];
+         var b = alpha[Math.floor(Math.random() * alpha.length)];
+         var c = alpha[Math.floor(Math.random() * alpha.length)];
+         var d = alpha[Math.floor(Math.random() * alpha.length)];
+         var e = alpha[Math.floor(Math.random() * alpha.length)];
+         var f = alpha[Math.floor(Math.random() * alpha.length)];
+         var g = alpha[Math.floor(Math.random() * alpha.length)];
+}
+         var code = a + ' ' +b + ' ' + ' ' +c + ' ' +d + ' ' +e + ' '+f + ' ' +g;
+         document.getElementById("mainCaptcha1").innerHTML = code
+		 document.getElementById("mainCaptcha1").value = code
+}
+
+function removeSpaces(string) {
+     return string.split(' ').join('');
+}
+
     </script>
 
 
