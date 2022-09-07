@@ -181,7 +181,7 @@ display:block !important;
                 <div class="help-block with-errors"></div>
               </div>
                <div class ="form-group col-sm-12">
-                <input type="text" id="mobile" placeholder="Enter Your Mobile No." required="" data-error="Please fill Out">
+                <input type="text" id="txtmobile" name="txtmobile" placeholder="Enter Your Mobile No." data-error="Please fill Out">
                 <div class ="help-block with-errors"></div>
               </div>
             </div>
