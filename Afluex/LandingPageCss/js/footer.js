@@ -28,11 +28,11 @@ document.write(`
                	<div class="form-block formcover shadow">
                 <div class="row">
                     <div class="form-group col-sm-6">
-                      <input type="text" id="name" name="name" placeholder="Enter Your Name" data-error="Please fill Out">
+                      <input type="text" id="name" name="name" placeholder="Enter Your Name" required="" data-error="Please fill Out">
                       <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group col-sm-6">
-                      <input type="text" id="mobile" name="mobile" placeholder="Enter Your Mobile No." data-error="Please fill Out"  onkeypress = "return isNumberKey(event);">
+                      <input type="text" id="mobile" name="mobile" placeholder="Enter Your Mobile No." required="" data-error="Please fill Out" maxlength="10" minlength="10" onkeypress = "return isNumberKey(event);">
                       <div class="help-block with-errors"></div>
                     </div>
                   </div>
@@ -75,6 +75,7 @@ document.write(`
     <!--common script file-->
     <script src="../LandingpageCss/js/main.js"></script>
     <script src="../LandingpageCss/js/progress-bar.js"></script>
+     <script src="../LandingpageCss/js/typer.js"></script>
 
    <script type="text/javascript">
 
@@ -116,7 +117,6 @@ function SaveDetails1() {
         return false();
      }
 else {
- $("#page_loader").css({ 'display': 'block !important'});
             var Name = $('#name').val();
             var Mobile = $('#mobile').val();
             var Email = $('#email').val();
@@ -127,7 +127,7 @@ else {
                         data: { Name: $('#name').val(), Mobile: $('#mobile').val(), Email: $('#email').val()},
                         success: function (data) {
                         debugger
-                        $("#page_loader").css({ 'display': 'none' });
+                        $(".main_loader").css({ 'display': 'none' });
                         if (data.Result == "true") {
                         alert('Your Details Save SuccessFully !!');
                        window.location.replace("https://afluex.com/home/crmsoftware");
