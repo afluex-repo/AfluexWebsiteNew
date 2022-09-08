@@ -35,6 +35,7 @@ namespace Afluex.Models
         public string SponsorId { get; set; }
         public string FromDate { get; set; }
         public string ToDate { get; set; }
+        public string Captcha { get; set; }
         public DataSet SaveCareer()
         {
             SqlParameter[] para =
@@ -122,6 +123,22 @@ namespace Afluex.Models
 
                             };
             DataSet ds = Connection.ExecuteQuery("InsertMessage", para);
+            return ds;
+        }
+
+        public DataSet SaveLandingPageDetails()
+        {
+            SqlParameter[] para =
+                            {
+                                        new SqlParameter("@Name",Name),
+                                        new SqlParameter("@Mobile",Mobile),
+                                        new SqlParameter("@Email",Email),
+                                        new SqlParameter("@Message",Message),
+                                        new SqlParameter("@About",About),
+                                        new SqlParameter("@ContactusType",ContactusType)
+
+                            };
+            DataSet ds = Connection.ExecuteQuery("InsertContactUsDetails", para);
             return ds;
         }
     }
