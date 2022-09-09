@@ -4,30 +4,31 @@
     Layout = "~/Views/Shared/Web_Layout.cshtml";
 }
 
-<section class="page-title text-center" style="background-image:url(../../afluexit/images/background/page_product.jpeg);">
+<section class="bg-dark_skyblue">
     <div class="container">
-        <h1>Nidhi Software</h1>
-    </div>
-    <!--Page Info-->
-    <div class="page-info">
-        <div class="container clearfix">
-            <ul class="bread-crumb clearfix">
-                <li><a href="/web/software-development"><i class="fa fa-home"></i></a> </li>
-                <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
-                <li>Product</li>
-                <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
-                <li>Nidhi Software</li>
-            </ul>
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-white">
+                <h1 class="font_text">Best Nidhi Software Company</h1>
+                <p class="mt-3">
+                    Nidhi along with the common problems faced by these organizations, and on the basis of this analysis and research we have developed this software. Nidhi Software in Lucknow is developed by our vast experienced professionals with full data security. It helps you in concentrating on your marketing and customer management activities.
+                </p>
+                <div class="abt_btn mt-4">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-skyblue border-white">Request A Free Quote</a>
+                </div>
+            </div>
+            <div class="col-lg-5 offset-1 pt-4">
+                <img src="~/afluexit/images/services/nidhi_bg.png" class="img-fluid" />
+            </div>
         </div>
     </div>
 </section>
 <!-- End Page Title -->
 
-<section class="services_page">
+<section class="services_page pb-5">
     <div class="container">
         <div class="row">
             <!-- Info Column -->
-            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
                 <div class="services_inner_column">
                     <div class="ser_title">
                         <span class="title">THE BEST PLACE TO FIND THE Get India’s No.1 Nidhi Software YOU WANT</span>
@@ -48,49 +49,263 @@
                         <p class="text-justify">
                             Our develop software will manage all your branches, employees, operators, withdrawals, loans, saving accounts other different schemes, agents, customers, policies, deposits, Reporting and lots more.
                         </p>
-                        <h5 class="green">
-                            Benefits of Choosing Nidhi Company Software from Afluex Multiservices LLP
-                        </h5>
-                        <p class="text-justify">
-                            Any business which chooses to get the Nidhi Company Software from Afluex would get the best in class services and bug-free flexible software. Some of the important benefits of the same are as follows.
-                        </p>
-                        <div class="about-list">
-                            <ul class="list-unstyled">
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> Automated Reports </li>
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> Automated Balance Sheet, Profit & Loss, and Trial Balance Preparation. </li>
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> Real-Time Calculation. </li>
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> Secure and Efficient. </li>
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> Easy to manage and flexible as per the requirement of the customers & clients. </li>
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> Get the Mobile Application to manage the software. </li>
-                            </ul>
-                        </div>
-                        <h5 class="green">Why choose Afluex Nidhi Software for your Banking needs</h5>
-                        <div class="about-list">
-                            <ul class="list-unstyled">
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> Best GST Support </li>
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> User-Friendly Design </li>
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> Training facility </li>
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> Clear User Interface </li>
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> Best Integration (Tally, Busy) </li>
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> Trusted Brand </li>
-                            </ul>
-                        </div>
+                        @*<h5 class="green">
+                                Benefits of Choosing Nidhi Company Software from Afluex Multiservices LLP
+                            </h5>
+                            <p class="text-justify">
+                                Any business which chooses to get the Nidhi Company Software from Afluex would get the best in class services and bug-free flexible software. Some of the important benefits of the same are as follows.
+                            </p>
+                            <div class="about-list">
+                                <ul class="list-unstyled">
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Automated Reports </li>
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Automated Balance Sheet, Profit & Loss, and Trial Balance Preparation. </li>
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Real-Time Calculation. </li>
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Secure and Efficient. </li>
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Easy to manage and flexible as per the requirement of the customers & clients. </li>
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Get the Mobile Application to manage the software. </li>
+                                </ul>
+                            </div>
+                            <h5 class="green">Why choose Afluex Nidhi Software for your Banking needs</h5>
+                            <div class="about-list">
+                                <ul class="list-unstyled">
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Best GST Support </li>
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> User-Friendly Design </li>
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Training facility </li>
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Clear User Interface </li>
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Best Integration (Tally, Busy) </li>
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Trusted Brand </li>
+                                </ul>
+                            </div>*@
                     </div>
-
                 </div>
             </div>
+            <div class="col-lg-4">
+                <img src="~/afluexit/images/services/nidhi_im3.png" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+</section>
 
-            <!-- Video Column -->
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                <div class="services_inner_column">
-                    <div class="ser_title">
-                        <span class="title">Enquiry Here</span>
-                        <h2>For Quick Demo</h2>
+<section class="services_page bg_blue pb-5">
+    <div class="container">
+        <div class="row text-center">
+            <h2>Advantages of Nidhi Software Development</h2>
+            <p>This software is needed because as by using this all the things will get easy to manage under one roof like, all your branches, employees, operators, <br/> agents, customers, policies, deposits, withdrawals, loans, saving accounts other different schemes, reporting and lots more.</p>
+        </div>
+        <div class="row mt-4">
+            <div class="col-lg-2 col-6 p-2">
+                <div class="card domain_features_box h-100">
+                    <div class="card-body">
+                        <div class="domain_features text-center">
+                            <img src="/afluexit/images/icon/domain-feature-1.png" class="img-fluid">
+                            <p class="mt-3"> Easy installation</p>
+                        </div>
                     </div>
-                    @{Html.RenderAction("DemoContact", "web", new { area = "" });}
+                </div>
+            </div>
+            <div class="col-lg-2 col-6 p-2">
+                <div class="card domain_features_box h-100 bg-yellow">
+                    <div class="card-body">
+                        <div class="domain_features text-center">
+                            <img src="/afluexit/images/icon/domain-feature-2.png" class="img-fluid">
+                            <p class="mt-3">Backup Procedures</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-6 p-2">
+                <div class="card domain_features_box h-100 bg-cyan">
+                    <div class="card-body">
+                        <div class="domain_features text-center">
+                            <img src="/afluexit/images/icon/domain-feature-3.png" class="img-fluid">
+                            <p class="mt-3">Easy Updates from Website</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-6 p-2">
+                <div class="card domain_features_box h-100 bg-orange">
+                    <div class="card-body">
+                        <div class="domain_features text-center">
+                            <img src="/afluexit/images/icon/domain-feature-4.png" class="img-fluid">
+                            <p class="mt-3">Help Line available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-6 p-2">
+                <div class="card domain_features_box h-100 bg-pale_yellow">
+                    <div class="card-body">
+                        <div class="domain_features text-center">
+                            <img src="/afluexit/images/icon/domain-feature-5.png" class="img-fluid">
+                            <p class="mt-3">Simple & Easiest Software Available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-6 p-2">
+                <div class="card domain_features_box h-100 bg-pink">
+                    <div class="card-body">
+                        <div class="domain_features text-center">
+                            <img src="/afluexit/images/icon/domain-feature-6.png" class="img-fluid">
+                            <p class="mt-3">Easy user friendly Billing Formats</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+
+<section class="services_page pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <img src="~/afluexit/images/services/nidhi_img4.jpg" class="img-fluid" />
+            </div>
+            <div class="col-sm-6 offset-1">
+                <h3 class="mb-4">Nidhi Software Will Help in Your Business Like:</h3>
+                <ul>
+                    <li>Manage each and every record with user friendly interface</li>
+                    <li>Hassel free collection procedure for quick entries</li>
+                    <li>Website Integration & Online Access to Members/Subscribers</li>
+                    <li>Document wallet to manage all important documents at one place</li>
+                    <li>History actions</li>
+                    <li>Reports like dues, intimations, account copy, prized subscribers etc.</li>
+                    <li>Fully featured dashboard, which gives you abstract details of your entire financial transaction activities</li>
+                    <li>Multi-User System</li>
+                    <li> Flexibility to work from anywhere</li>
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+</section>
+
+
+<section class="services_page pb-5 bg-dark_skyblue">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center text-white">
+                <h3 class="font_text">Ready To Get Started?</h3>
+                <p>
+                    Stay ahead from Crowd. We have an expert team of application developers who are experienced and proficient. We have good experience <br> in bespoke web and mobile app development and are committed to delivering the best of the class solutions.
+                </p>
+                <div class="abt_btn mt-3">
+                    <a href="/web/contactus" class="btn btn-lg btn-custom">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="services_page pb-5">
+    <div class="container">
+        <div class="row pb-3">
+            <div class="col-sm-12">
+                <h3 class="font_text">Why Afluex Multiservices LLP for Nidhi Software?</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  5+ years of average experience</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  High sealed security</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>   24*7 Support</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  Maintenance Service</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  Integrity &amp; transparency</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  Flexible Engagement Models</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>   On time project delivery guaranteed</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  Dedicated Project Managers</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  Hassle free communication</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  User-Friendly Data Structure</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  Free no-obligation quote</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>   Non-Discloser Agreement</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <img src="/afluexit/images/services/nidhi_img1.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>

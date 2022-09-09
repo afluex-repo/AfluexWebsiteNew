@@ -1342,5 +1342,74 @@ namespace Afluex.Controllers
         {
             return View();
         }
+        [ActionName("pay-per-click")]
+        public ActionResult pay_per_click()
+        {
+            return View("pay_per_click");
+        }
+        [ActionName("social-media-marketing")]
+        public ActionResult social_media_marketing()
+        {
+            return View("social_media_marketing");
+        }
+
+        [ActionName("social-media-optimization")]
+        public ActionResult social_media_optimization()
+        {
+            return View("social_media_optimization");
+        }
+
+        [ActionName("ecommerce-web-design")]
+        public ActionResult ecommerce_web_design()
+        {
+            return View("ecommerce_web_design");
+        }
+
+        [ActionName("redesign-website")]
+        public ActionResult redesign_website()
+        {
+            return View("redesign_website");
+        }
+
+        [ActionName("ios-app")]
+        public ActionResult ios_app()
+        {
+            return View("ios_app");
+        }
+        [ActionName("android-app")]
+        public ActionResult android_app()
+        {
+            return View("android_app");
+        }
+        [ActionName("logo-design")]
+        public ActionResult logo_design()
+        {
+            return View("logo_design");
+        }
+        [ActionName("custom-website")]
+        public ActionResult custom_website()
+        {
+            return View("custom_website");
+        }
+        [ActionName("website-maintenance")]
+        public ActionResult website_maintenance()
+        {
+            return View("website_maintenance");
+        }
+        [ActionName("banner-design")]
+        public ActionResult banner_design()
+        {
+            return View("banner_design");
+        }
+        [ActionName("brochure-design")]
+        public ActionResult brochure_design()
+        {
+            return View("brochure_design");
+        }
+        [ActionName("search-engine-marketing")]
+        public ActionResult search_engine_marketing()
+        {
+            return View("search_engine_marketing");
+        }
     }
 }

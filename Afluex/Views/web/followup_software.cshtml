@@ -4,30 +4,32 @@
     Layout = "~/Views/Shared/Web_Layout.cshtml";
 }
 
-<section class="page-title text-center" style="background-image:url(../../afluexit/images/background/page_product.jpeg);">
+<section class="bg-dark_skyblue">
     <div class="container">
-        <h1>Followup Software</h1>
-    </div>
-    <!--Page Info-->
-    <div class="page-info">
-        <div class="container clearfix">
-            <ul class="bread-crumb clearfix">
-                <li><a href="/web/software-development"><i class="fa fa-home"></i></a> </li>
-                <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
-                <li>Product</li>
-                <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
-                <li>Followup Software</li>
-            </ul>
+        <div class="row align-items-center">
+            <div class="col-lg-7 text-white">
+                <h1 class="font_text">Followup Software Development Company</h1>
+                <p class="text-justify">
+                    Afluex Multiservices LLP offers customer sales tracking software for the construction industry and is suitable for companies of all sizes.
+                    Afluex offers features such as the ability to track, set goals for team members, view reports and coordinate workflow within the organization.
+                    Follow up software integrates with outlook to track customer emails in a dynamic automated way. Other apps that integrate include Quick Books and FCS+.
+                </p>
+                <div class="abt_btn mt-4">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-skyblue border-white">Request A Free Quote</a>
+                </div>
+            </div>
+            <div class="col-lg-4 offset-1">
+                <img src="~/afluexit/images/services/followup_bg.png" class="img-fluid" />
+            </div>
         </div>
     </div>
 </section>
-<!-- End Page Title -->
 
 <section class="services_page">
     <div class="container">
         <div class="row">
             <!-- Info Column -->
-            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                 <div class="services_inner_column">
                     <div class="ser_title">
                         <span class="title">THE BEST PLACE TO FIND THE Followup Software YOU WANT</span>
@@ -35,62 +37,254 @@
                     </div>
                     <div class="services_content_details">
                         <p class="text-justify">
-                            Afluex Multiservices LLP offers customer sales tracking software for the construction industry and is suitable for companies of all sizes. Afluex offers features such as the ability to track, set goals for team members, view reports and coordinate workflow
-                            within the organization. Using the Afluex systems marketing automation tools and sales leads lists you can then create automated marketing follow-up programs that ensure that valuable information is continually sent out to
+                            Using the Afluex systems marketing automation tools and sales leads lists you can then create automated marketing follow-up programs that ensure that valuable information is continually sent out to
                             the sales leads and existing customers base on a pre-determined schedule. Afluex follow up software program is perfect for sales follow-up as well as for marketing automation.
                         </p>
-                        <h5 class="green">Features, Benefits, Product Strengths</h5>
-                        <h5 class="black">Easy-to-use</h5>
-                        <p class="text-justify">
-                            We provide a central online location where users can manage all their contacts and customers. With an easy-to-use interface, they can create new contacts, move them through the sales process, and manage all related notes and communications such as email
-                            and phone calls. The software provides visibility of the pipeline and helps users identify which deals require action. They can measure and track every activity in the sales process. Tools allow quickly checking off an activity
-                            or tagging data with pre-defined dropdowns. Creating a new entry is simple and quick, which can be easily searched throughout the entire sales process.
-                        </p>
-                        <h5 class="black">Easy & Simple Project Management </h5>
-                        <p class="text-justify">
-                            This CRM has a simple project management functionality built right into the software. It is designed for the construction business and includes task management features. Thus, users know precisely what tasks they have to do. It has reminder features so
-                            no information or activity gets ignored or forgotten. It has charts and graphs that visually show what needs to get done today to meet project goals.
-                        </p>
-                        <h5 class="black">Seamless Integration</h5>
-                        <p class="text-justify">
-                            Follow up software integrates with outlook to track customer emails in a dynamic automated way. Other apps that integrate include Quick Books and FCS+.
-                        </p>
-                        <h5 class="black">We are simple and complete, with everything in one place</h5>
-                        <h5 class="green">
-                            Your agents feel comfortable and assured and see their performance improve.
-                        </h5>
-                        <h5 class="black">You get control, better performance, and more sales.</h5>
-                        <div class="about-list">
-                            <ul class="list-unstyled">
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> Automatically pull in your leads from 200+ sources </li>
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> The smart lists to take the guesswork out of who to call next </li>
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> Pre-written drip campaigns and action plans </li>
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> Dedicated on boarding team to make getting started easy </li>
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> Replace your business phone system so everything runs through your follow up software. </li>
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> Automatically route leads to your team. </li>
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> A Full 2-way email sync with Gmail and Office 365. </li>
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> Syncs with your Google Calendar. </li>
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> An intuitive, zero-learning-curve interface. </li>
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> Support 7 days a week. </li>
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> App for Android and iOS. </li>
-                            </ul>
-                        </div>
+                        @*<h5 class="green">Features, Benefits, Product Strengths</h5>
+                            <h5 class="black">Easy-to-use</h5>
+                            <p class="text-justify">
+                                We provide a central online location where users can manage all their contacts and customers. With an easy-to-use interface, they can create new contacts, move them through the sales process, and manage all related notes and communications such as email
+                                and phone calls. The software provides visibility of the pipeline and helps users identify which deals require action. They can measure and track every activity in the sales process. Tools allow quickly checking off an activity
+                                or tagging data with pre-defined dropdowns. Creating a new entry is simple and quick, which can be easily searched throughout the entire sales process.
+                            </p>
+                            <h5 class="black">Easy & Simple Project Management </h5>
+                            <p class="text-justify">
+                                This CRM has a simple project management functionality built right into the software. It is designed for the construction business and includes task management features. Thus, users know precisely what tasks they have to do. It has reminder features so
+                                no information or activity gets ignored or forgotten. It has charts and graphs that visually show what needs to get done today to meet project goals.
+                            </p>
+                            <h5 class="black">Seamless Integration</h5>
+                            <p class="text-justify">
+                                Follow up software integrates with outlook to track customer emails in a dynamic automated way. Other apps that integrate include Quick Books and FCS+.
+                            </p>
+                            <h5 class="black">We are simple and complete, with everything in one place</h5>
+                            <h5 class="green">
+                                Your agents feel comfortable and assured and see their performance improve.
+                            </h5>
+                            <h5 class="black">You get control, better performance, and more sales.</h5>
+                            <div class="about-list">
+                                <ul class="list-unstyled">
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Automatically pull in your leads from 200+ sources </li>
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> The smart lists to take the guesswork out of who to call next </li>
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Pre-written drip campaigns and action plans </li>
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Dedicated on boarding team to make getting started easy </li>
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Replace your business phone system so everything runs through your follow up software. </li>
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Automatically route leads to your team. </li>
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> A Full 2-way email sync with Gmail and Office 365. </li>
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Syncs with your Google Calendar. </li>
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> An intuitive, zero-learning-curve interface. </li>
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Support 7 days a week. </li>
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> App for Android and iOS. </li>
+                                </ul>
+                            </div>*@
                     </div>
-
-                </div>
-            </div>
-
-            <!-- Video Column -->
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                <div class="services_inner_column">
-                    <div class="ser_title">
-                        <span class="title">Enquiry Here</span>
-                        <h2>For Quick Demo</h2>
-                    </div>
-                    @{Html.RenderAction("DemoContact", "web", new { area = "" });}
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<section class="services_page pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h5>You get control, better performance, and more sales.</h5>
+                <p>This CRM has a simple project management functionality built right into the software. It is designed for the construction business and includes task management features. Thus, users know precisely what tasks they have to do. It has reminder features so no information or activity gets ignored or forgotten. It has charts and graphs that visually show what needs to get done today to meet project goals.</p>
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Automatically pull in your leads from 200+ sources </li>
+                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> The smart lists to take the guesswork out of who to call next </li>
+                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Pre-written drip campaigns and action plans </li>
+                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Dedicated on boarding team to make getting started easy </li>
+                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Replace your business phone system so everything runs through your follow up software. </li>
+                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Automatically route leads to your team. </li>
+                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> A Full 2-way email sync with Gmail and Office 365. </li>
+                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Syncs with your Google Calendar. </li>
+                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> An intuitive, zero-learning-curve interface. </li>
+                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Support 7 days a week. </li>
+                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> App for Android and iOS. </li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <img src="~/afluexit/images/services/followup_img.png" class="img-fluid"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services_page mb-5">
+    <div class="container">
+        <div class="row text-center">
+            <h3 class="font_text">Key Features And Benefits Of Followup Software</h3>
+        </div>
+        <div class="row mt-4">
+            <div class="col-sm-4 p-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <center>
+                            <img src="/afluexit/images/icon/Employee-management.png" class="mb-3 img-fluid">
+                        </center>
+                        <h6 class="text-center mb-3">Easy-to-use</h6>
+                        <p>
+                            We provide a central online location where users can manage all their contacts and customers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 p-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <center>
+                            <img src="/afluexit/images/icon/Performance_evolution.png" class="mb-3 img-fluid">
+                        </center>
+                        <h6 class="text-center mb-3">Easy & Simple Project Management</h6>
+                        <p>
+                            This CRM has a simple project management functionality built right into the software. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 p-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <center>
+                            <img src="/afluexit/images/icon/Time_tracking.png" class="mb-3 img-fluid">
+                        </center>
+                        <h6 class="text-center mb-3">Seamless Integration</h6>
+                        <p>
+                            Follow up software integrates with outlook to track customer emails in a dynamic automated way. Other apps that integrate include Quick Books and FCS+.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="services_page pb-5 bg-dark_skyblue">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center text-white">
+                <h1 class="font_text">Ready To Get Started?</h1>
+                <p>
+                    Stay ahead from Crowd. We have an expert team of application developers who are experienced and proficient. We have good experience <br> in bespoke web and mobile app development and are committed to delivering the best of the class solutions.
+                </p>
+                <div class="abt_btn mt-3">
+                    <a href="/web/contactus" class="btn btn-lg btn-custom">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services_page pb-5">
+    <div class="container">
+        <div class="row pb-3">
+            <div class="col-sm-12">
+                <h3 class="font_text">Why Afluex Multiservices LLP for Followup Software?</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  5+ years of average experience</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  High sealed security</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>   24*7 Support</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  Maintenance Service</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  Integrity &amp; transparency</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  Flexible Engagement Models</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>   On time project delivery guaranteed</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  Dedicated Project Managers</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  Hassle free communication</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  User-Friendly Data Structure</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  Free no-obligation quote</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>   Non-Discloser Agreement</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <img src="/afluexit/images/services/team-img.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>

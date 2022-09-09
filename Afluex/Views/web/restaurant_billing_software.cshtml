@@ -4,20 +4,21 @@
     Layout = "~/Views/Shared/Web_Layout.cshtml";
 }
 
-<section class="page-title text-center" style="background-image:url(../../afluexit/images/background/page_product.jpeg);">
+<section class="bg-dark_skyblue pb-2 pt-2">
     <div class="container">
-        <h1>Restaurant Billing Software</h1>
-    </div>
-    <!--Page Info-->
-    <div class="page-info">
-        <div class="container clearfix">
-            <ul class="bread-crumb clearfix">
-                <li><a href="/web/software-development"><i class="fa fa-home"></i></a> </li>
-                <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
-                <li>Product</li>
-                <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
-                <li>Restaurant Billing Software</li>
-            </ul>
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-white">
+                <h1 class="font_text">Restaurant Billing Software Development Company</h1>
+                <p class="text-justify">
+                    We provide the best restaurant management software you can find in India. Our restaurant POS software India ensures that everything works perfectly. It all works like a well-oiled machine. We promise the best restaurant POS software India has to offer, and that is what we deliver.
+                </p>
+                <div class="abt_btn mt-4">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-skyblue border-white">Request A Free Quote</a>
+                </div>
+            </div>
+            <div class="col-lg-5 offset-1">
+                <img src="~/afluexit/images/services/restaurant_bg.png" class="img-fluid" />
+            </div>
         </div>
     </div>
 </section>
@@ -27,24 +28,20 @@
     <div class="container">
         <div class="row">
             <!-- Info Column -->
-            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                 <div class="services_inner_column">
                     <div class="ser_title">
                         <span class="title">THE BEST PLACE TO FIND THE Restaurant Billing Software YOU WANT</span>
                         <h2>Restaurant Billing Software</h2>
                     </div>
                     <div class="services_content_details">
-                        <h3 class="black">
-                            “A restaurant billing software turns your business into a dream”
-                        </h3>
                         <p class="text-justify">
                             Welcome to Afluex! We are a software development company that specialized in restaurant billing software that takes care of all your needs. We provide premium restaurant billing software India to restaurants. So, if you want to manage your billing and
-                            invoices in a better way, Afluex is your answer. We provide the best restaurant management software you can find in India. Our restaurant POS software India ensures that everything works perfectly. It all works like a well-oiled
-                            machine. We promise the best restaurant POS software India has to offer, and that is what we deliver. Moreover, we offer restaurant table management software too. It helps to bring in loyal customers for your business. So,
+                            invoices in a better way, Afluex is your answer. Moreover, we offer restaurant table management software too. It helps to bring in loyal customers for your business. So,
                             you can operate your restaurant business with ease. In addition to that, our software ensures the effortless operation of your business at all times. Also, we tend to believe giving the most effective restaurant billing software
                             India has to offer. Afluex leaves no stones unturned to bring you the best software for all kinds of billing requirements.
                         </p>
-                        <p class="text-justify">
+                        @*<p class="text-justify">
                             Therefore, if you have been Googling restaurant software India, you'll be able to stop now! Afluex is here with a one-stop solution, and we call it Afluex Multiservices LLP!
                         </p>
                         <h5 class="green">Top Restaurant Billing Software Features:</h5>
@@ -58,23 +55,372 @@
                                 <li><i class="fa fa-circle-o" aria-hidden="true"></i> Bill of Material(BOM) </li>
                                 <li><i class="fa fa-circle-o" aria-hidden="true"></i> Month Technical Support Included. </li>
                             </ul>
-                        </div>
+                        </div>*@
                     </div>
-
-                </div>
-            </div>
-
-            <!-- Video Column -->
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                <div class="services_inner_column">
-                    <div class="ser_title">
-                        <span class="title">Enquiry Here</span>
-                        <h2>For Quick Demo</h2>
-                    </div>
-                   @{Html.RenderAction("DemoContact", "web", new { area = "" });}
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<section class="services_page pb-5">
+    <div class="container">
+        <div class="row pb-5">
+            <div class="col-lg-7">
+                <h3>“A restaurant billing software turns your business into a dream”</h3>
+                <p class="text-justify">An extensive Restaurant Management Application is the need of the hour. There are many applications in the market, but most of them are incapable of delivering proficient restaurant management. Afluex Multiservices LLP Restaurant Billing Software is loaded with attributes that will take your restaurant business on the new peaks.</p>
+                <p class="text-justify">Afluex Multiservices LLP takes care of all needs, whether you talk about bringing new customers or retargeting the old ones. Our application will also take care of your inventory by tracking the movement of products. Moreover, we have options that you can utilize to track your transactions. Overall purchase of raw material and sales of dishes, food items, & drinks can be tracked using our software.</p>
+            </div>
+            <div class="col-lg-5">
+                <img src="~/afluexit/images/services/restaurant_img1.png" class="img-fluid"/>
+            </div>
+            </div>
+
+        <div class="row mt-5">
+            <div class="col-lg-5">
+                <img src="~/afluexit/images/services/restaurant_img2.png" class="img-fluid" />
+            </div>
+            <div class="col-lg-7">
+                <h3>Top Restaurant Billing Software Features</h3>
+                <p class="text-justify">If you have been Googling restaurant software India, you'll be able to stop now! Afluex is here with a one-stop solution, and we call it Afluex Multiservices LLP!</p>
+                <ul>
+                    <li>GST Compliance Accounting System (Excel Supported) </li>
+                    <li>KOT/Table Management/Home Delivery/Customer Management </li>
+                    <li>GST Return/Save Invoice in PDF format in just one click. </li>
+                    <li>Create KOT/Add or Remove item to table for KOT/Convert KOT into Invoice/Bill in just one click. </li>
+                    <li>Inventory Management </li>
+                    <li>Bill of Material(BOM) </li>
+                    <li>Month Technical Support Included. </li>
+                </ul>
+             </div>
+        </div>
+        </div>
+    </section>
+
+<section class="services_page pb-5 bg-light_blue">
+    <div class="container">
+        <div class="row text-center">
+            <h3 class="font_text">Key Features of Websys Retail Management Software</h3>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-4 p-4">
+                <div class="card card_box h-100">
+                    <div class="card-body">
+                        <div class="service_box">
+                            <div class="service_icon d-flex mb-3">
+                                <i class="fas fa-poll fa-2x mt-2" aria-hidden="true"></i>
+                                <h5 class="service_heading">Easily Retain Your Customers</h5>
+                            </div>
+                            <p>Through our application, you can run discounts for your dishes, give combo offers, and provide loyalty points to every customer who visits the restaurant.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-4">
+                <div class="card card_box h-100">
+                    <div class="card-body">
+                        <div class="service_box">
+                            <div class="service_icon d-flex mb-3">
+                                <i class="fas fa-chart-line fa-2x mt-2" aria-hidden="true"></i>
+
+                                <h5 class="service_heading">Payroll Processing for Restaurant Staff</h5>
+                            </div>
+                            <p>
+                                You can track the working days of your employees and make the payment accordingly. You can even keep the commission record and advance payment details.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-4">
+                <div class="card card_box h-100">
+                    <div class="card-body">
+                        <div class="service_box">
+                            <div class="service_icon d-flex mb-3">
+                                <i class="fa fa-keyboard fa-2x mt-2" aria-hidden="true"></i>
+                                <h5 class="service_heading">Bulk SMS to Reach Numerous Customers</h5>
+                            </div>
+                            <p>Reach out all your customers by sending a message in bulk. You can even send messages to buyers having their birthdays, anniversaries, or any other special occasion.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-4">
+                <div class="card card_box h-100">
+                    <div class="card-body">
+                        <div class="service_box">
+                            <div class="service_icon d-flex mb-3">
+                                <i class="fas fa-user fa-2x mt-2" aria-hidden="true"></i>
+                                <h5 class="service_heading">Easy to use POS System</h5>
+                            </div>
+                            <p>The POS system we offer can be learned quickly by any staff member. All a cashier needs to do is add the product, check total amount, and print the bill.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-4">
+                <div class="card card_box h-100">
+                    <div class="card-body">
+                        <div class="service_box">
+                            <div class="service_icon d-flex mb-3">
+                                <i class="fas fa-search fa-2x mt-2" aria-hidden="true"></i>
+                                <h5 class="service_heading">Reports related to all your Business Aspects</h5>
+                            </div>
+                            <p>You can find reports related to purchasing, sales, stock, etc. These reports will let you know about the functioning of your business.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-4">
+                <div class="card card_box h-100">
+                    <div class="card-body">
+                        <div class="service_box">
+                            <div class="service_icon d-flex mb-3">
+                                <i class="fas fa-headset fa-2x mt-2" aria-hidden="true"></i>
+                                <h5 class="service_heading">Make Sure your Inventory is always loaded</h5>
+                            </div>
+                            <p>You can keep track of your inventory products through the Dashboard. When the stock goes down, the application will display it precisely.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-4">
+                <div class="card card_box h-100">
+                    <div class="card-body">
+                        <div class="service_box">
+                            <div class="service_icon d-flex mb-3">
+                                <i class="fas fa-headset fa-2x mt-2" aria-hidden="true"></i>
+                                <h5 class="service_heading">Takes Care of your GST filing</h5>
+                            </div>
+                            <p>With just a single click, our restaurant management system will calculate GST for you. All you need to do is to select the period for which you want to calculate the amount.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-4">
+                <div class="card card_box h-100">
+                    <div class="card-body">
+                        <div class="service_box">
+                            <div class="service_icon d-flex mb-3">
+                                <i class="fas fa-headset fa-2x mt-2" aria-hidden="true"></i>
+                                <h5 class="service_heading">Generate Coupons for Customers</h5>
+                            </div>
+                            <p>Customer Relationship Management allows restaurants to create coupons by just adding the coupon number and its cost.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-4">
+                <div class="card card_box h-100">
+                    <div class="card-body">
+                        <div class="service_box">
+                            <div class="service_icon d-flex mb-3">
+                                <i class="fas fa-headset fa-2x mt-2" aria-hidden="true"></i>
+                                <h5 class="service_heading">Keep your Books of Accounts up-to-date</h5>
+                            </div>
+                            <p>You can track various transactions, generate account statements & balance sheets, and even conduct bank reconciliation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services_page pb-5 bg-dark_skyblue">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center text-white">
+                <h3 class="font_text">Ready To Get Started?</h3>
+                <p>
+                    Stay ahead from Crowd. We have an expert team of application developers who are experienced and proficient. We have good experience <br /> in bespoke web and mobile app development and are committed to delivering the best of the class solutions.
+                </p>
+                <div class="abt_btn mt-3">
+                    <a href="/web/contactus" class="btn btn-lg btn-custom">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services_page pb-5">
+    <div class="container">
+        <div class="row pb-3">
+            <div class="col-sm-12">
+                <h3 class="font_text">Why Afluex Multiservices LLP for Restaurant Billing Software?</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  5+ years of average experience</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  High sealed security</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>   24*7 Support</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  Maintenance Service</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  Integrity &amp; transparency</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  Flexible Engagement Models</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>   On time project delivery guaranteed</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  Dedicated Project Managers</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  Hassle free communication</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  User-Friendly Data Structure</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  Free no-obligation quote</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>   Non-Discloser Agreement</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <img src="/afluexit/images/services/restaurant_img3.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services_page pb-5">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <h2 class="font_text">Frequently Asked Questions</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="accordion" id="myAccordion1">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse1">1. Lost effective solution </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#myAccordion1">
+                            <div class="card-body">
+                                <p>
+                                    Websys cafe management system is helpful for eateries that are looking for an inexpensive solution that can manage their restaurant processes effectively.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse2">2. Keep your records organized</button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#myAccordion1">
+                            <div class="card-body">
+                                <p>
+                                    All the data you generate, such as records of people associated with your restaurant, transactions, stock items, etc. are kept organized, making it easy to find one when required.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse3">3. Keep an eye on your business status?</button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#myAccordion1">
+                            <div class="card-body">
+                                <p>
+                                    Our business status readily displays the key takeaways, which are sales, purchase, bank status, outstanding payment, and stock present. This will brief you about functioning of your business from anywhere.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse4">4. Know the outstanding payments</button>
+                        </h2>
+                        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#myAccordion1">
+                            <div class="card-body">
+                                <p>The dashboard gives you the list of payables and receivables along with the account name and net ledger. The feature acts as a constant reminder about making/collecting the outstanding payment.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse5">5. Grow your customer base effortlessly</button>
+                        </h2>
+                        <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#myAccordion1">
+                            <div class="card-body">
+                                <p>With our application features, you will not only be able to retain the present customers but also attract the new ones. You can provide personalized discounts and offers to every buyer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

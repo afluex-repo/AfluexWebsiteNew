@@ -288,6 +288,9 @@
     <Compile Include="Models\Home.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\PageMetaModel.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="PostBlog.aspx.cs">
       <DependentUpon>PostBlog.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1617,7 +1620,12 @@
     <Content Include="LandingPageCss\js\typer.js" />
     <Content Include="LandingPageCss\js\validator.min.js" />
     <Content Include="LandingPageCss\js\vendor\modernizr-3.5.0.min.js" />
+    <Content Include="obj\Debug\Afluex.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Afluex.dll" />
+    <Content Include="obj\Debug\Afluex.pdb" />
+    <Content Include="obj\Release\Afluex.dll" />
     <Content Include="PostBlog.aspx" />
+    <Content Include="robots.txt" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -1737,7 +1745,9 @@
     <Content Include="CareerFileUpload\2a10b840-b5f8-4faf-aef6-10d7fc5d50a3.pdf" />
     <Content Include="CareerFileUpload\912bb5ad-5dff-42d4-9c46-9ec299846fb5.pdf" />
     <Content Include="CareerFileUpload\d35d8b1d-f86f-4682-922d-8fc4931b1e6d.xlsx" />
-    <None Include="crmsoftware.cshtml" />
+    <Content Include="obj\Debug\Afluex.csprojResolveAssemblyReference.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="Properties\PublishProfiles\Afluex.pubxml" />
     <None Include="Properties\PublishProfiles\newafluex.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -2266,7 +2276,20 @@
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\web\privacy_policy.cshtml" />
     <Content Include="Views\advertisement\privacy_policy.cshtml" />
-    <Content Include="Views\Home\crmsoftware.cshtml" />
+    <Content Include="Views\web\pay_per_click.cshtml" />
+    <Content Include="Views\web\social_media_marketing.cshtml" />
+    <Content Include="Views\web\social_media_optimization.cshtml" />
+    <Content Include="Views\web\ecommerce_web_design.cshtml" />
+    <Content Include="Views\web\redesign_website.cshtml" />
+    <Content Include="Views\web\ios_app.cshtml" />
+    <Content Include="Views\web\android_app.cshtml" />
+    <Content Include="Views\web\logo_design.cshtml" />
+    <Content Include="Views\web\custom_website.cshtml" />
+    <Content Include="Views\web\website_maintenance.cshtml" />
+    <Content Include="Views\web\banner_design.cshtml" />
+    <Content Include="Views\web\brochure_design.cshtml" />
+    <Content Include="Views\web\search_engine_marketing.cshtml" />
+    <Content Include="Views\web\term_conditions.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="afluexad\fontawesome\" />
@@ -2276,6 +2299,7 @@
     <Folder Include="afluexit\images\portfolio\outdoor_advertising\" />
     <Folder Include="afluexit\images\portfolio\retail_branding_fabrication\" />
     <Folder Include="App_Data\" />
+    <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="SoftwareCss\images\portfolio\mnkkvgukdjgdfjgikd\" />
   </ItemGroup>
   <ItemGroup>
