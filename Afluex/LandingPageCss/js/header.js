@@ -190,7 +190,7 @@ display:block !important;
             <input type="email" id="txtemail"  name="txtemail" placeholder="Enter Your Email" />
               </div>
             </div>
-             <div class ="row">
+      	       <div class ="row">
                     <div class ="form-group col-sm-6">
                        <h4 type="text" id="mainCaptcha1" style="margin-left:20px;"></h4>
                        </div>
@@ -202,7 +202,6 @@ display:block !important;
                        <div class ="col-sm-12">
                          <input type="text" id="Inputcaptcha" name="txtInput" placeholder="Enter captcha"/>
                        </div></div>
-
             <button type="button"  id="btn_save" name="btn_save" onclick="return SaveDetails();" class ="btn lnk btn-main bg-btn">Submit <span class ="circle"></span></button>
             <div class="clearfix"></div>
           </form>
@@ -270,19 +269,19 @@ display:block !important;
             $("#txtemail").focus();
             return false();
             }
-            if($("#Inputcaptcha").val() == "") {
-            $("#Inputcaptcha").addClass('errortext');
-            $("#Inputcaptcha").focus();
-            return false();
-            }
+            //if($("#Inputcaptcha").val() == "") {
+            //$("#Inputcaptcha").addClass('errortext');
+            //$("#Inputcaptcha").focus();
+            //return false();
+            //}
 
-         if($("#Inputcaptcha").val() != $("#mainCaptcha1").val()) {
-            alert("Invalid Captcha!");
-            $("#Inputcaptcha").addClass('errortext');
-            $("#Inputcaptcha").focus();
-            $("#Inputcaptcha").val("");
-            return false();
-            }
+         //if($("#Inputcaptcha").val() != $("#mainCaptcha1").val()) {
+         //   alert("Invalid Captcha!");
+         //   $("#Inputcaptcha").addClass('errortext');
+         //   $("#Inputcaptcha").focus();
+         //   $("#Inputcaptcha").val("");
+         //   return false();
+         //   }
         else {
             debugger;
         $("#page_loader").css({ 'display': 'block !important'});

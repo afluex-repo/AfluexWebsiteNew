@@ -22,10 +22,7 @@ namespace Afluex.Models
 
             //    HttpWebRequest httpReq = (HttpWebRequest)WebRequest.Create(new Uri(SMSAPI, false));
             //    HttpWebResponse httpResponse = (HttpWebResponse)(httpReq.GetResponse());
-
-
-
-
+            
             //}
             //catch (Exception ex)
             //{
@@ -65,24 +62,20 @@ namespace Afluex.Models
             }
         }
 
-        
 
+        
         static public string Booking(string BookingNo, string BookingAmount, string AssociateName, string Plot)
         {
 
             string Message = ConfigurationSettings.AppSettings["Booking"].ToString();
-
-
+            
             Message = Message.Replace("[AssociateName]", AssociateName);
             Message = Message.Replace("[BookingNo]", BookingNo);
             Message = Message.Replace("[Plot]", Plot);
             Message = Message.Replace("[BookingAmt]", BookingAmount);
             return Message;
-
-
         }
         
-
 
         static public string ForgetPassword(string FirstName, string Password)
         {
