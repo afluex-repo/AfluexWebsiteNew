@@ -2012,3 +2012,9 @@ img.gallery-img:hover {
     height:65px;
     margin-top:10px;
 }
+
+.font_text
+{
+    font-size:35px;
+    font-weight:600;
+}
