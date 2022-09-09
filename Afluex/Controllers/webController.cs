@@ -421,14 +421,32 @@ namespace Afluex.Controllers
                             mailServer.Send(myMail1);
 
                             #endregion SendEmailToCandidate
-                            string mob = "7310000413";
-                            string str = "You got a career inquiry from- " + "Name-" + dsRegistration.Tables[0].Rows[0]["Name"].ToString() + " , Mob-" + dsRegistration.Tables[0].Rows[0]["Mobile"].ToString() + " , Email-" + dsRegistration.Tables[0].Rows[0]["Email"].ToString() + " , Description-" + dsRegistration.Tables[0].Rows[0]["Description"].ToString();
+
+
+                            //string mob = "7310000413";
+                            //string str = "You got a career inquiry from- " + "Name-" + dsRegistration.Tables[0].Rows[0]["Name"].ToString() + " , Mob-" + dsRegistration.Tables[0].Rows[0]["Mobile"].ToString() + " , Email-" + dsRegistration.Tables[0].Rows[0]["Email"].ToString() + " , Description-" + dsRegistration.Tables[0].Rows[0]["Description"].ToString();
+                            //try
+                            //{
+                            //    BLSMS.SendSMS(mob, str);
+                            //}
+                            //catch { }
+
+
+                            string mobs = "7310000413";
+                            string Name2 = dsRegistration.Tables[0].Rows[0]["Name"].ToString();
+                            string Message = dsRegistration.Tables[0].Rows[0]["Description"].ToString();
+                            string Mobile = dsRegistration.Tables[0].Rows[0]["Mobile"].ToString();
+                            string str2 = "Dear team You got a contact whose Name : " + Name2 + ", Mobile : " + Mobile + ", Message : " + Message + ", Team Afluex";
+                            string TempId2 = "1707166203848904315";
+
                             try
                             {
-                                BLSMS.SendSMS(mob, str);
+                                BLSMS.SendSMSS(mobs, str2, TempId2);
                             }
                             catch { }
+
                             TempData["Career"] = "Data Submission Successfull !";
+                            
                         }
                         catch (Exception ex)
                         {
@@ -446,13 +464,16 @@ namespace Afluex.Controllers
                         Session["Description"] = dsRegistration.Tables[0].Rows[0]["Description"].ToString();
                         TempData["Career"] = "Career Details  Saved successfully !";
 
+                        string Name = dsRegistration.Tables[0].Rows[0]["Name"].ToString();
                         string mob = dsRegistration.Tables[0].Rows[0]["Mobile"].ToString();
-                        string str = "Dear " + dsRegistration.Tables[0].Rows[0]["Name"].ToString() + " thank you for showing your interest in Afluex. Our HR Team will contact you soon. For Direct Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
+                        string str = "Dear " + Name + ", Thank You For Showing Your Interest In Afluex. Our HR Team Will Contact You Soon. For Direct Enquiry Call On 7310000413,412 Or Mail Us On Supportnow@Afluex.Com, Team Afluex";
+                        string TempId = "1707166203837277816";
                         try
                         {
-                         BLSMS.SendSMS(mob, str);
+                            BLSMS.SendSMSS(mob, str, TempId);
                         }
                         catch { }
+                        
                     }
                     else
                     {
@@ -542,12 +563,14 @@ namespace Afluex.Controllers
                         {
 
                         }
-                        string mob = model.Mobile;
-                        string str = "Dear " + model.Name + " thank you for showing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
-
+                        
+                        string Name = ds.Tables[0].Rows[0]["Name"].ToString();
+                        string mob = ds.Tables[0].Rows[0]["Mobile"].ToString();
+                        string str = "Dear " + Name + ", thank you for showing your interest in Afluex. Our HR Team will contact you soon. For Direct Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com, Team Afluex";
+                        string TempId = "1707166203818524452";
                         try
                         {
-                             BLSMS.SendSMS(mob, str);
+                             BLSMS.SendSMSS(mob, str, TempId);
                         }
                         catch { }
 
@@ -591,19 +614,23 @@ namespace Afluex.Controllers
                         }
 
 
+                        //string mobs = "7310000413";
+                        //string str2 = "You got a contact whose name-" + model.Name + " , mob-" + model.Mobile + ", msg-" + model.Message;
+
                         string mobs = "7310000413";
-                        string str2 = "You got a contact whose name-" + model.Name + " , mob-" + model.Mobile + ", msg-" + model.Message;
+                        string Name2 = ds.Tables[0].Rows[0]["Name"].ToString();
+                        string Message = ds.Tables[0].Rows[0]["Message"].ToString();
+                        string Mobile = ds.Tables[0].Rows[0]["Mobile"].ToString();
+                        string str2 = "Dear team You got a contact whose Name : "+ Name2 + ", Mobile : "+ Mobile + ", Message : "+ Message + ", Team Afluex";
+                        string TempId2 = "1707166203848904315";
 
                         try
                         {
-                            BLSMS.SendSMS(mobs, str2);
+                            BLSMS.SendSMSS(mobs, str2, TempId2);
                         }
                         catch { }
 
-
-
-
-
+                        
                         TempData["ContactMsg"] = "Thank you for showing your interest.Our Team will contact you soon.For Enquiry call us on 7310000413,412 or Mail us on -supportnow@afluex.com.";
                         FormName = "thankyou";
                         Session["Type"] = "contactus";
@@ -780,21 +807,32 @@ namespace Afluex.Controllers
                                 Body = mailbody
                             })
                                 smtp.Send(message);
-
                         }
 
                         catch (Exception ex)
                         {
 
                         }
-                        string mob = model.Mobile;
-                        string str = model.Name + " thank you for showing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
+                        //string mob = model.Mobile;
+                        //string str = model.Name + " thank you for showing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
 
+                        //try
+                        //{
+                        //    BLSMS.SendSMS(mob, str);
+                        //}
+                        //catch { }
+
+
+                        string Name = ds.Tables[0].Rows[0]["Name"].ToString();
+                        string mob = ds.Tables[0].Rows[0]["Mobile"].ToString();
+                        string str = "Dear " + Name + ", Thank You For Showing Your Interest In Afluex. Our HR Team Will Contact You Soon. For Direct Enquiry Call On 7310000413,412 Or Mail Us On Supportnow@Afluex.Com, Team Afluex";
+                        string TempId = "1707166203837277816";
                         try
                         {
-                           BLSMS.SendSMS(mob, str);
+                            BLSMS.SendSMSS(mob, str, TempId);
                         }
                         catch { }
+
 
 
                         string messagelbody = "";
@@ -849,14 +887,30 @@ namespace Afluex.Controllers
                         }
 
 
+                        //string mobs = "7310000413";
+                        //string str2 = "You got a contact whose name-" + model.Name + " , mob-" + model.Mobile + ", msg-" + model.Message + " , regarding " + model.ContactusType;
+
+                        //try
+                        //{
+                        //   BLSMS.SendSMS(mobs, str2);
+                        //}
+                        //catch { }
+
                         string mobs = "7310000413";
-                        string str2 = "You got a contact whose name-" + model.Name + " , mob-" + model.Mobile + ", msg-" + model.Message + " , regarding " + model.ContactusType;
+                        string Name2 = ds.Tables[0].Rows[0]["Name"].ToString();
+                        string Message = ds.Tables[0].Rows[0]["Message"].ToString();
+                        string Mobile = ds.Tables[0].Rows[0]["Mobile"].ToString();
+                        string str2 = "Dear team You got a contact whose Name : " + Name2 + ", Mobile : " + Mobile + ", Message : " + Message + ", Team Afluex";                      
+                        string TempId2 = "1707166203848904315";
 
                         try
                         {
-                           BLSMS.SendSMS(mobs, str2);
+                            BLSMS.SendSMSS(mobs, str2, TempId2);
                         }
                         catch { }
+
+
+
 
                         TempData["ContactMsg"] = "message has been sent.";
                         FormName = "thankyou";
@@ -930,12 +984,22 @@ namespace Afluex.Controllers
 
                     }
 
-                    string mob = model.Mobile;
-                    string str =  model.Name + " thank you for showing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
+                    //string mob = model.Mobile;
+                    //string str =  model.Name + " thank you for showing your interest. Our Team will contact you soon. For Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com";
 
+                    //try
+                    //{
+                    //   BLSMS.SendSMS(mob, str);
+                    //}
+                    //catch { }
+
+                    string Name = ds.Tables[0].Rows[0]["Name"].ToString();
+                    string mob = ds.Tables[0].Rows[0]["Mobile"].ToString();
+                    string str = "Dear " + Name + ", Thank You For Showing Your Interest In Afluex. Our HR Team Will Contact You Soon. For Direct Enquiry Call On 7310000413,412 Or Mail Us On Supportnow@Afluex.Com, Team Afluex";
+                    string TempId = "1707166203837277816";
                     try
                     {
-                       BLSMS.SendSMS(mob, str);
+                        BLSMS.SendSMSS(mob, str, TempId);
                     }
                     catch { }
 
@@ -991,12 +1055,25 @@ namespace Afluex.Controllers
                     catch (Exception ex)
                     {
                     }
+                    //string mobs = "7310000413";
+                    //string str2 = "You got a contact whose name-" + model.Name + " , mob-" + model.Mobile + ", msg-" + model.Message + " , regarding" + model.ContactusType;
+
+                    //try
+                    //{
+                    //   BLSMS.SendSMS(mobs, str2);
+                    //}
+                    //catch { }
+
                     string mobs = "7310000413";
-                    string str2 = "You got a contact whose name-" + model.Name + " , mob-" + model.Mobile + ", msg-" + model.Message + " , regarding" + model.ContactusType;
+                    string Name2 = ds.Tables[0].Rows[0]["Name"].ToString();
+                    string Message = ds.Tables[0].Rows[0]["Message"].ToString();
+                    string Mobile = ds.Tables[0].Rows[0]["Mobile"].ToString();
+                    string str2 = "Dear team You got a contact whose Name : " + Name2 + ", Mobile : " + Mobile + ", Message : " + Message + ", Team Afluex";
+                    string TempId2 = "1707166203848904315";
 
                     try
                     {
-                       BLSMS.SendSMS(mobs, str2);
+                        BLSMS.SendSMSS(mobs, str2, TempId2);
                     }
                     catch { }
 
@@ -1022,7 +1099,8 @@ namespace Afluex.Controllers
             {
                 Random rnd = new Random();
                 string ctrOTP = rnd.Next(111111, 999999).ToString();
-                string strotp = "Dear " + model.Name + ", Your OTP for Demo request is :" + ctrOTP;
+                //string strotp = "Dear " + model.Name + ", Your OTP for Demo request is :" + ctrOTP;
+                string strotp = "Dear " + model.Name + ", Your OTP for Demo request is " + ctrOTP + ", Team Afluex";
                 string mobotp = model.Mobile;
                 string mailbody = "";
                 try
@@ -1047,7 +1125,7 @@ namespace Afluex.Controllers
                         DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                         UseDefaultCredentials = false,
                         Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437")
-                         //Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437")
+                        //Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437")
 
                     };
 
@@ -1062,12 +1140,21 @@ namespace Afluex.Controllers
                 catch (Exception ex)
                 {
                 }
+
+                //try
+                //{
+                //    BLSMS.SendSMS(mobotp, strotp);
+                //}
+                //catch { }
+
+                string TempId = "1707166203827049342";
                 try
                 {
-                   BLSMS.SendSMS(mobotp, strotp);
+                    BLSMS.SendSMSS(mobotp, strotp, TempId);
                 }
                 catch { }
 
+                
                 model.Otppin = ctrOTP;
 
                 model.Result = "1";
@@ -1120,7 +1207,7 @@ namespace Afluex.Controllers
                                 EnableSsl = true,
                                 DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                                 UseDefaultCredentials = false,
-                                Credentials = new NetworkCredential(fromAddress.Address,"Multiservices@437")// "Multiservices@437")
+                                Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437")// "Multiservices@437")
 
                             };
 
@@ -1137,19 +1224,27 @@ namespace Afluex.Controllers
                         {
 
                         }
+                        
+                        //string mobs = Mobile;
+                        //string str2 =  Name + " thank you for showing your interest in our IT Field. Our Team will contact you soon For Enquiry call us on 7310000413,412 or Mail us on supportnow@afluex.com";
+
+                        //try
+                        //{
+                        //    BLSMS.SendSMS(mobs, str2);
+                        //}
+                        //catch { }
 
 
-
-                        string mobs = Mobile;
-                        string str2 =  Name + " thank you for showing your interest in our IT Field. Our Team will contact you soon For Enquiry call us on 7310000413,412 or Mail us on supportnow@afluex.com";
-
+                        string Name1 = ds.Tables[0].Rows[0]["Name"].ToString();
+                        string mob = ds.Tables[0].Rows[0]["Mobile"].ToString();
+                        string str = "Dear " + Name1 + ", Thank You For Showing Your Interest In Afluex. Our HR Team Will Contact You Soon. For Direct Enquiry Call On 7310000413,412 Or Mail Us On Supportnow@Afluex.Com, Team Afluex";
+                        string TempId = "1707166203837277816";
                         try
                         {
-                            BLSMS.SendSMS(mobs, str2);
+                            BLSMS.SendSMSS(mob, str, TempId);
                         }
                         catch { }
-
-
+                        
 
                         string messagelbody = "";
                         try
@@ -1166,7 +1261,7 @@ namespace Afluex.Controllers
                                 EnableSsl = true,
                                 DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                                 UseDefaultCredentials = false,
-                                Credentials = new NetworkCredential(fromAddress.Address,"Multiservices@437" )//"Multiservices@437")
+                                Credentials = new NetworkCredential(fromAddress.Address, "Multiservices@437")//"Multiservices@437")
 
                             };
 
@@ -1187,14 +1282,31 @@ namespace Afluex.Controllers
 
                         }
 
-                        string mobval = "7310000413";
-                        string strval = "You got a quote Rquest from " + Name + " , Mob-" + Mobile + ", Project-" + ProjectType + " , Budget-" + YourBudget + ", Msg-" + Message;
-                        obj.Result = "Yes";
+                        
+                        //string mobval = "7310000413";
+                        //string strval = "You got a quote Rquest from " + Name + " , Mob-" + Mobile + ", Project-" + ProjectType + " , Budget-" + YourBudget + ", Msg-" + Message;
+                        //obj.Result = "Yes";
+                        //try
+                        //{
+                        //   BLSMS.SendSMS(mobval, strval);
+                        //}
+                        //catch { }
+
+
+                        string mobs = "7310000413";
+                        string Name2 = ds.Tables[0].Rows[0]["Name"].ToString();
+                        string Messages = ds.Tables[0].Rows[0]["Message"].ToString();
+                        string Mobilee = ds.Tables[0].Rows[0]["Mobile"].ToString();
+                        string str2 = "Dear team You got a contact whose Name : " + Name2 + ", Mobile : " + Mobilee + ", Message : " + Messages + ", Team Afluex";
+                        string TempId2 = "1707166203848904315";
+
                         try
                         {
-                           BLSMS.SendSMS(mobval, strval);
+                            BLSMS.SendSMSS(mobs, str2, TempId2);
                         }
                         catch { }
+
+
                         obj.Result = "Inquiry send successfully";
                         obj.Result = "Yes";
                     }
