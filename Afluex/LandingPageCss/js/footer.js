@@ -103,19 +103,19 @@ function SaveDetails1() {
         $("#email").focus();
         return false();
      }
-    if($("#txtInput").val() == "") {
-        $("#txtInput").addClass('errortext');
-        $("#txtInput").focus();
-        return false();
-   }
+   // if($("#txtInput").val() == "") {
+   //     $("#txtInput").addClass('errortext');
+   //     $("#txtInput").focus();
+   //     return false();
+   //}
 
-     if ($("#txtInput").val() != $("#mainCaptcha").val()) {
-        alert("Invalid Captcha!");
-        $("#txtInput").addClass('errortext');
-        $("#txtInput").focus();
-        $("#txtInput").val("");
-        return false();
-     }
+   //  if ($("#txtInput").val() != $("#mainCaptcha").val()) {
+   //     alert("Invalid Captcha!");
+   //     $("#txtInput").addClass('errortext');
+   //     $("#txtInput").focus();
+   //     $("#txtInput").val("");
+   //     return false();
+   //  }
 else {
             var Name = $('#name').val();
             var Mobile = $('#mobile').val();

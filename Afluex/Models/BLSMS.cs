@@ -22,10 +22,7 @@ namespace Afluex.Models
 
             //    HttpWebRequest httpReq = (HttpWebRequest)WebRequest.Create(new Uri(SMSAPI, false));
             //    HttpWebResponse httpResponse = (HttpWebResponse)(httpReq.GetResponse());
-
-
-
-
+            
             //}
             //catch (Exception ex)
             //{
@@ -67,22 +64,39 @@ namespace Afluex.Models
 
         
 
+
+        //static public void SendSMSS(string Mobile, string Message, string TempId)
+        //{
+        //    try
+        //    {
+        //        string SMSAPI = ConfigurationSettings.AppSettings["SMSAPI"].ToString();
+        //        SMSAPI = SMSAPI.Replace("[AND]", "&");
+        //        SMSAPI = SMSAPI.Replace("[MOBILE]", Mobile);
+        //        SMSAPI = SMSAPI.Replace("[MESSAGE]", Message);
+        //        SMSAPI = SMSAPI.Replace("[TempId]", TempId);
+        //        SMSAPI = SMSAPI.Replace("[Date]", DateTime.Now.ToString());
+        //        HttpWebRequest httpReq = (HttpWebRequest)WebRequest.Create(new Uri(SMSAPI, false));
+        //        HttpWebResponse httpResponse = (HttpWebResponse)(httpReq.GetResponse());
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //    }
+        //}
+
+
+        
         static public string Booking(string BookingNo, string BookingAmount, string AssociateName, string Plot)
         {
 
             string Message = ConfigurationSettings.AppSettings["Booking"].ToString();
-
-
+            
             Message = Message.Replace("[AssociateName]", AssociateName);
             Message = Message.Replace("[BookingNo]", BookingNo);
             Message = Message.Replace("[Plot]", Plot);
             Message = Message.Replace("[BookingAmt]", BookingAmount);
             return Message;
-
-
         }
         
-
 
         static public string ForgetPassword(string FirstName, string Password)
         {
