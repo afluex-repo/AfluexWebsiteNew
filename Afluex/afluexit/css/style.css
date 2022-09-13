@@ -1385,8 +1385,9 @@ img.img-fluid.af-logo {
 @media (min-width: 320px) and (max-width: 768px) { 
 .dropdown-menu.show {
     overflow-y: scroll;
-    height: 200px;
+    max-height: 200px;
 }
+
 }
 /*---navbar---*/
 .text-skyblue {
