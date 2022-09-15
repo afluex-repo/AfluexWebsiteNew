@@ -35,6 +35,7 @@ namespace Afluex.Models
         public string SponsorId { get; set; }
         public string FromDate { get; set; }
         public string ToDate { get; set; }
+        public string Captcha { get; set; }
         public DataSet SaveCareer()
         {
             SqlParameter[] para =

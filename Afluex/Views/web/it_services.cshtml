@@ -2,28 +2,35 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/Web_Layout.cshtml";
 }
+
+<style>
+    
+</style>
 <div class="main_slider">
     <div class="banner_carousel owl-carousel owl-theme">
-        <a href="/web/website-development-company">
+        @*<a href="/web/website-development">*@
             <div class="carousel_item">
-                <img src="~/afluexit/images/slider/web-1.jpg" class="img-fluid" alt="slider-1">
+                <img src="~/afluexit/images/slider/slider-1.png" class="img-fluid" alt="slider-1">
                 <div class="slider_content_box">
                     <div class="content">
                         <div class="auto-container">
-                            <span class="title">Welcome to Afluex</span>
-                            <h2>Best Responsive Website Design</h2>
-                            <div class="text">
+                            <h3 class="text-white">Welcome to Afluex</h3>
+                            <h1 class="banner-heading text-white">Software Development</h1>
+                            <div class="text text-white">
                                 Complete website solution for your business or personal website
                                 <br/>superior level of excellence for our customers.
+                            </div>
+                            <div class="abt_btn mt-5">
+                                <a href="/web/company-overview" class="btn btn-lg btn-custom">Know More..</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </a>
-        <a href="/web/software-development-company">
+        @*</a>*@
+        @*<a href="/web/software-development">
             <div class="carousel_item">
-                <img src="~/afluexit/images/slider/soft-2.jpg" class="img-fluid" alt="slider-2">
+                <img src="~/afluexit/images/slider/develery-soft.jpg" class="img-fluid" alt="slider-2">
                 <div class="slider_content_box">
                     <div class="content">
                         <div class="auto-container">
@@ -37,15 +44,35 @@
                     </div>
                 </div>
             </div>
-        </a>
-        <a href="/web//mobile-app-development-company">
+        </a>*@
+        @*<a href="/web/app-development">*@
             <div class="carousel_item">
-                <img src="~/afluexit/images/slider/app-development.png" class="img-fluid" alt="slider-3">
+                <img src="~/afluexit/images/slider/Delivery-aap.jpg" class="img-fluid" alt="slider-4">
+                <div class="slider_content_box">
+                    <div class="content">
+                        <div class="auto-container">
+                            <h3 class="text-dark">Welcome to Afluex</h3>
+                            <h1 class="banner-heading text-dark">Android Development</h1>
+                            <div class="text text-dark">
+                                Our Company has consistently embraced innovation to provide a
+                                <br>superior level of excellence for our customers.
+                            </div>
+                            <div class="abt_btn mt-5">
+                                <a href="/web/company-overview" class="btn btn-lg btn-custom">Know More..</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @*</a>*@
+        @*<a href="/web/app-development">
+            <div class="carousel_item">
+                <img src="~/afluexit/images/slider/Slider-03.jpg" class="img-fluid" alt="slider-3">
                 <div class="slider_content_box">
                     <div class="content">
                         <div class="auto-container">
                             <span class="title">Welcome to Afluex</span>
-                            <h2>Mobile App Development</h2>
+                            <h2>Android Development</h2>
                             <div class="text">
                                 Our Company has consistently embraced innovation to provide a
                                 <br>superior level of excellence for our customers.
@@ -54,7 +81,7 @@
                     </div>
                 </div>
             </div>
-        </a>
+        </a>*@
     </div>
     <div class="owl-dots">
         <button role="button" class="owl-dot active"><span></span></button>
@@ -65,7 +92,7 @@
 <div class="about_section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-8">
                 <div class="about_content_inner">
                     <div class="title">
                         <h5 class="text-skyblue">Software Development Company In Lucknow</h5>
@@ -87,7 +114,7 @@
                             marketing, creative and technical writing. We define strategic plans,
                             Design campaigns and much more and also we focus on making
                             bridges that can provide the client and their requirement on a
-                            single roof and with plenty of convenience and– most importantly –
+                            single roof and with plenty of convenience and– most importantly.
                         </p>
                     </div>
                     <div class="abt_btn">
@@ -95,9 +122,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-4">
                 <div class="about_content_pic">
-                    <img src="~/afluexit/images/about_company.jpg" class="img-fluid" alt="Company Overview">
+                    <img src="~/afluexit/images/about_img2.jpg" class="img-fluid" alt="Company Overview">
                 </div>
             </div>
         </div>
@@ -177,7 +204,7 @@
                         <img src="~/afluexit/images/services/digital_marketing.png" class="img-fluid" alt="services">
                     </div>
                     <div class="services_btn">
-                        <a href="/web//digital-marketing-company" class="btn btn-skyblue">View More</a>
+                        <a href="/web/digital-marketing-company" class="btn btn-skyblue">View More</a>
                     </div>
                 </div>
             </div>
@@ -222,7 +249,7 @@
                         <img src="~/afluexit/images/services/seo.png" class="img-fluid" alt="services">
                     </div>
                     <div class="services_btn">
-                        <a href="/web//seo-agency" class="btn btn-skyblue">View More</a>
+                        <a href="/web/seo-agency" class="btn btn-skyblue">View More</a>
                     </div>
                 </div>
             </div>
@@ -274,7 +301,7 @@
 
 <div class="product_section">
     <div class="services_title text-center">
-        <h2>Special High-quality Product</h2>
+        <h1>Special High-quality Product</h1>
         <img src="~/afluexit/images/divider.png" class="img-fluid" alt="divider">
     </div>
     <div class="container">
@@ -429,7 +456,7 @@
 
 <div class="work_strategic_section">
     <div class="work_strategic_title text-center">
-        <h3>Work Strategic</h3>
+        <h1>Work Strategic</h1>
         <img src="~/afluexit/images/divider.png" class="img-fluid" alt="divider">
     </div>
     <div class="container">
@@ -504,7 +531,7 @@
 
 <div class="team_members_section">
     <div class="team_members_title text-center">
-        <h2>Team Members</h2>
+        <h1>Team Members</h1>
         <img src="~/afluexit/images/divider.png" class="img-fluid" alt="divider">
     </div>
     <div class="container">
@@ -548,7 +575,7 @@
 
 <div class="testimonial_section">
     <div class="testimonial_title text-center text-white">
-        <h3>Testimonial</h3>
+        <h1>Testimonial</h1>
         <img src="~/afluexit/images/dividert.png" class="img-fluid" alt="divider">
     </div>
     <div class="container">

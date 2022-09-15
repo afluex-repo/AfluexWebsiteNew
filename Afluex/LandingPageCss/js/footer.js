@@ -28,11 +28,11 @@ document.write(`
                	<div class="form-block formcover shadow">
                 <div class="row">
                     <div class="form-group col-sm-6">
-                      <input type="text" id="name" name="name" placeholder="Enter Your Name" required="" data-error="Please fill Out">
+                      <input type="text" id="name" name="name" placeholder="Enter Your Name" data-error="Please fill Out">
                       <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group col-sm-6">
-                      <input type="text" id="mobile" name="mobile" placeholder="Enter Your Mobile No." required="" data-error="Please fill Out" maxlength="10" minlength="10" onkeypress = "return isNumberKey(event);">
+                      <input type="text" id="mobile" name="mobile" placeholder="Enter Your Mobile No."  data-error="Please fill Out" maxlength="10" minlength="10" onkeypress = "return isNumberKey(event);">
                       <div class="help-block with-errors"></div>
                     </div>
                   </div>
@@ -41,14 +41,19 @@ document.write(`
 		                <input type="email" id="email" name="email"  placeholder="Enter Your Email" />
 		              </div>
 		            </div>
-
-                 <div class ="row">
-		             <div class ="form-group col-sm-12">
-                    <input id="ans" type="text">
-		              </div>
-		            </div>
-
-                    <button type="submit"  id="save" name="save" onclick="return ActionSaveDetails();" class ="btn lnk btn-main bg-btn">Submit<span class ="circle"></span></button>
+                    <div class ="row">
+                    <div class ="form-group col-sm-5">
+                       <h4 type="text" id="mainCaptcha"></h4>
+                       </div>
+                       <div class ="col-md-7">
+                       <p><i class ="fa fa-refresh" onclick="Captcha();" style="cursor:pointer"></i></p>
+                       </div>
+                       </div>
+                       <div class ="row">
+                       <div class ="col-sm-12">
+                         <input type="text" id="txtInput" name="txtInput" placeholder="Enter captcha"/>
+                       </div></div>
+                     <button type="button"  id="save" name="save" onclick="return SaveDetails1();" class ="btn lnk btn-main bg-btn">Submit<span class ="circle"></span></button>
 		            <div class ="clearfix"></div>
 		      </form>
                </div>
@@ -70,111 +75,103 @@ document.write(`
     <!--common script file-->
     <script src="../LandingpageCss/js/main.js"></script>
     <script src="../LandingpageCss/js/progress-bar.js"></script>
+     <script src="../LandingpageCss/js/typer.js"></script>
 
    <script type="text/javascript">
 
-
-function ActionSaveDetails() {
+$(document).ready(function() {
+Captcha();
+});
+function SaveDetails1() {
     debugger;
     $("#divload").css({'display': ''})
     $(".errortext").removeClass("errortext");
     if($("#name").val() == "") {
         $("#name").addClass('errortext');
         $("#name").focus();
-        return false();
-}
+           return false();
+     }
 
     if($("#mobile").val() == "") {
         $("#mobile").addClass('errortext');
         $("#mobile").focus();
         return false();
-}
+        }
 
     if($("#email").val() == "") {
         $("#email").addClass('errortext');
         $("#email").focus();
         return false();
-}
+     }
+   // if($("#txtInput").val() == "") {
+   //     $("#txtInput").addClass('errortext');
+   //     $("#txtInput").focus();
+   //     return false();
+   //}
 
+   //  if ($("#txtInput").val() != $("#mainCaptcha").val()) {
+   //     alert("Invalid Captcha!");
+   //     $("#txtInput").addClass('errortext');
+   //     $("#txtInput").focus();
+   //     $("#txtInput").val("");
+   //     return false();
+   //  }
 else {
             var Name = $('#name').val();
             var Mobile = $('#mobile').val();
             var Email = $('#email').val();
-             $.ajax({
-    url: "/Home/SaveLandingPage",
-    Type: "Post",
-    DataType: "JSON",
-    data: { Name: $('#name').val(), Mobile: $('#mobile').val(), Email: $('#email').val() },
-    success: function (data) {
+                  $.ajax({
+                        url: "/Home/SaveLandingPage",
+                        Type: "Post",
+                        DataType: "JSON",
+                        data: { Name: $('#name').val(), Mobile: $('#mobile').val(), Email: $('#email').val()},
+                        success: function (data) {
                         debugger
                         $(".main_loader").css({ 'display': 'none' });
                         if (data.Result == "true") {
                         alert('Your Details Save SuccessFully !!');
-                        window.location.reload();
-}
-else {
+                       window.location.replace("https://afluex.com/home/crmsoftware");
+                        }
+                      else {
                           alert(data.Result);
-}
-}
-});
-}
-}
+                          }
+                       }
+                    });
+                  }
+               }
+
   function isNumberKey(evt) {
         var charCode = (evt.which) ? evt.which: event.keyCode;
         if (charCode != 46 && charCode > 31
           && (charCode < 48 || charCode > 57))
             return false;
         return true;
+        }
+
+function Captcha() {
+     var alpha = new Array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
+	 	'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+ 	    	'0', '1', '2', '3', '4', '5', '6', '7', '8', '9');
+     var i;
+     for (i=0; i<6; i++) {
+         var a = alpha[Math.floor(Math.random() * alpha.length)];
+         var b = alpha[Math.floor(Math.random() * alpha.length)];
+         var c = alpha[Math.floor(Math.random() * alpha.length)];
+         var d = alpha[Math.floor(Math.random() * alpha.length)];
+         var e = alpha[Math.floor(Math.random() * alpha.length)];
+         var f = alpha[Math.floor(Math.random() * alpha.length)];
+         var g = alpha[Math.floor(Math.random() * alpha.length)];
+        }
+         var code = a + ' ' +b + ' ' + ' ' +c + ' ' +d + ' ' +e + ' '+f + ' ' +g;
+         document.getElementById("mainCaptcha").innerHTML = code
+		 document.getElementById("mainCaptcha").value = code
+         document.getElementById("mainCaptcha1").innerHTML = code
+		 document.getElementById("mainCaptcha1").value = code
+        }
+
+function removeSpaces(string) {
+     return string.split(' ').join('');
 }
-//$('button[type=submit]').attr('disabled', 'disabled');
-
-//var randomNum1;
-//var randomNum2;
-
-////set the largeest number to display
-
-//var maxNum = 20;
-//var total;
-
-//randomNum1 = Math.ceil(Math.random() * maxNum);
-//randomNum2 = Math.ceil(Math.random() * maxNum);
-//total = randomNum1 +randomNum2;
-
-//$("#question").prepend(randomNum1 + " + " +randomNum2 + "=");
-
-//// When users input the value
-
-//$("#ans").keyup(function() {
-
-//  var input = $(this).val();
-//  var slideSpeed = 200;
-
-//  $('#message').hide();
-
-//  if (input == total) {
-
-//    $('button[type=submit]').removeAttr('disabled');
-//    $('#success').slideDown(slideSpeed);
-//    $('#fail').slideUp(slideSpeed);
-
-//} else {
-
-//    $('button[type=submit]').attr('disabled', 'disabled');
-//    $('#fail').slideDown(slideSpeed);
-//    $('#success').slideUp(slideSpeed);
-
-//}
-
-//});
-
-//// Wheen "reset button" click, generating new randomNum1 & randomNum2
-//$("#reset").on("click", function() {
-//  randomNum1 = Math.ceil(Math.random() * maxNum);
-//  randomNum2 = Math.ceil(Math.random() * maxNum);
-//  total = randomNum1 +randomNum2;
-//  $("#question").empty();
-//  $("#ans").val('');
-//  $("#question").prepend(randomNum1 + " + " +randomNum2 + "=");
-//});
     </script>
 	`);
+
