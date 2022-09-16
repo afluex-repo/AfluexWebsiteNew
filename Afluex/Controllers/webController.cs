@@ -1342,7 +1342,7 @@ namespace Afluex.Controllers
         {
             return View();
         }
-        [ActionName("pay-per-click")]
+        [ActionName("pay-per-click-services")]
         public ActionResult pay_per_click()
         {
             return View("pay_per_click");
@@ -1365,18 +1365,18 @@ namespace Afluex.Controllers
             return View("ecommerce_web_design");
         }
 
-        [ActionName("redesign-website")]
+        [ActionName("website-redesign")]
         public ActionResult redesign_website()
         {
             return View("redesign_website");
         }
 
-        [ActionName("ios-app")]
+        [ActionName("ios-app-development")]
         public ActionResult ios_app()
         {
             return View("ios_app");
         }
-        [ActionName("android-app")]
+        [ActionName("android-app-development")]
         public ActionResult android_app()
         {
             return View("android_app");
