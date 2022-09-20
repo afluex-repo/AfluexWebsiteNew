@@ -108,4 +108,24 @@
     .testimonial_section .owl-carousel .owl-nav .owl-next{
         display:none
     }
+    .abt_btn
+    {
+        display:none;
+    }
+}
+
+@media(max-width:992px)
+{
+    .abt_btn
+    {
+        display:none;
+    }
+}
+@media(max-width:1024px)
+{
+    .main_slider .slider_content_box
+    {
+        top:20%;
+        left:4%;
+    }
 }
