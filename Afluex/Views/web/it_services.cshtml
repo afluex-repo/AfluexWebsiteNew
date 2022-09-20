@@ -3,10 +3,6 @@
     Layout = "~/Views/Shared/Web_Layout.cshtml";
 }
 
-<style>
-   
-
-</style>
 <div class="main_slider">
     <div class="banner_carousel owl-carousel owl-theme">
         @*<a href="/web/website-development">*@
@@ -48,7 +44,7 @@
         </a>*@
         @*<a href="/web/app-development">*@
             <div class="carousel_item">
-                <img src="~/afluexit/images/slider/Delivery-aap.jpg" class="img-fluid" alt="slider-4" alt="android development">
+                <img src="~/afluexit/images/slider/Delivery-app.jpg" class="img-fluid" alt="android development">
                 <div class="slider_content_box">
                     <div class="content">
                         <div class="auto-container">
@@ -147,7 +143,7 @@
                         <img src="~/afluexit/images/services/website_development.png" alt="website development" class="img-fluid">
                     </div>
                     <div class="services_btn">
-                        <a href="/web/website-development-company" class="btn btn-skyblue">View More</a>
+                        <a href="/web/custom-website" class="btn btn-skyblue">View More</a>
                     </div>
                 </div>
             </div>
@@ -160,7 +156,7 @@
                         <img src="~/afluexit/images/services/web_development.png" alt="web development" class="img-fluid">
                     </div>
                     <div class="services_btn">
-                        <a href="/web/software-development-company" class="btn btn-skyblue">View More</a>
+                        <a href="/web/software-development" class="btn btn-skyblue">View More</a>
                     </div>
                 </div>
             </div>
@@ -170,10 +166,10 @@
                         <h3>Android & IOS <br>Development</h3>
                     </div>
                     <div class="services_pic">
-                        <img src="~/afluexit/images/services/android_development.png" atl="android app development"class="img-fluid">
+                        <img src="~/afluexit/images/services/android_development.png" alt="android app development"class="img-fluid">
                     </div>
                     <div class="services_btn">
-                        <a href="/web/mobile-app-development-company" class="btn btn-skyblue">View More</a>
+                        <a href="/web/ios-app-development" class="btn btn-skyblue">View More</a>
                     </div>
                 </div>
             </div>
@@ -215,7 +211,7 @@
                         <h3>Domain & <br>Hosting</h3>
                     </div>
                     <div class="services_pic">
-                        <img src="~/afluexit/images/services/domain_hosting.png" alt="domain and hosting"class="img-fluid" >
+                        <img src="~/afluexit/images/services/domain_hosting.png" alt="domain and hosting" class="img-fluid" >
                     </div>
                     <div class="services_btn">
                         <a href="/web/domain-and-hosting" class="btn btn-skyblue">View More</a>
@@ -234,7 +230,7 @@
                         <img src="~/afluexit/images/services/graphic_design.png" class="img-fluid" alt="graphic design">
                     </div>
                     <div class="services_btn">
-                        <a href="/web/graphic-design-company" class="btn btn-skyblue">View More</a>
+                        <a href="/web/logo-design" class="btn btn-skyblue">View More</a>
                     </div>
                 </div>
             </div>
@@ -303,7 +299,7 @@
 <div class="product_section">
     <div class="services_title text-center">
         <h1>Special High-quality Product</h1>
-        <img src="~/afluexit/images/divider.png" alt="runing project" class="img-fluid">
+        <img src="~/afluexit/images/divider.png" alt="running project" class="img-fluid">
     </div>
     <div class="container">
         <div class="row">
@@ -353,7 +349,7 @@
                             <img src="~/afluexit/images/product/dots.png" class="img-fluid" alt="services">
                         </div>
                         <div class="product_pic">
-                            <img src="~/afluexit/images/product/ecommerce_icon.png" class="img-fluid" alt="ecoomerce software">
+                            <img src="~/afluexit/images/product/ecommerce_icon.png" class="img-fluid" alt="ecommerce software">
                         </div>
                     </div>
                     <div class="product_btn">
@@ -608,36 +604,3 @@
         </div>
     </div>
 </div>
-
-
-<script src="~/afluexit/js/owl.carousel.js"></script>
-<script src="~/afluexit/js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script type="text/javascript">
-        // number count for stats, using jQuery animate
-
-        $('.counting').each(function() {
-          var $this = $(this),
-          countTo = $this.attr('data-count');
-
-          $({ countNum: $this.text()}).animate({
-            countNum: countTo
-        },
-
-        {
-
-            duration: 3000,
-            easing:'linear',
-            step: function() {
-              $this.text(Math.floor(this.countNum));
-          },
-          complete: function() {
-              $this.text(this.countNum);
-      //alert('finished');
-  }
-
-});
-
-
-      });
-</script>

@@ -201,7 +201,7 @@ develop custom software,website developer company,website developer company in i
 software solution companies,best software development companies,erp development company,erp for software development company,custom software development companies,enterprise software development,companies,india software development
 software developers in india,mlm software development company" />
             <meta name="robots" content="index, follow" />
-            <link rel="canonical" href="https://www.Afluex.com/web/mobile-app-development-company/"/>
+            <link rel="canonical" href="https://www.Afluex.com/web/mobile-app-development-company/" />
             <meta property="og:title" content="Best Android and iOS App Development Company In Lucknow ">
             <meta property="og:site_name" content="Afluex Multiservices LLP">
             <meta property="og:url" content="https://afluex.com/web/mobile-app-development-company">
@@ -574,17 +574,17 @@ software developers in india,mlm software development company" />
                 }
             </script>
         }
-        if (currentUrl == "web//brochure-design")
+        if (currentUrl == "web/brochure-design")
         {
             <title>Creative Brochure Design Company India - Afluex Multiservices</title>
-            <meta name="description" content="Afluex Multiservices LLPProvides Services like company brochures, catalogue design, Trifold brochures, pamphlets & more." />
+            <meta name="description" content="Afluex Multiservices LLP Provides Services like company brochures, catalogue design, Trifold brochures, pamphlets & more." />
             <meta name="keywords" content="brochure design,graphic design services,leaflet design,catalogue design,booklet design,graphic design logo,creative logo design,graphic design company" />
            
             <meta name="robots" content="index, follow" />
             <meta property="og:title" content="Creative Brochure Design Company India - Afluex Multiservices">
             <meta property="og:site_name" content="Afluex Multiservices LLP">
             <meta property="og:url" content="https://afluex.com/web//brochure-design">
-            <meta property="og:description" content="Afluex Multiservices LLPProvides Services like company brochures, catalogue design, Trifold brochures, pamphlets & more.">
+            <meta property="og:description" content="Afluex Multiservices LLP Provides Services like company brochures, catalogue design, Trifold brochures, pamphlets & more.">
             <meta property="og:type" content="website">
             <meta property="og:image" content="https://afluex.com/afluexit/images/logo-black.png">
             <meta name="twitter:card" content="summary" />
@@ -1815,7 +1815,7 @@ Hospital management Softwares, ERP Software, Nidhi Cooperative Software, Web Dev
                                     <h2 class="widget-title">Important Links</h2>
                                     <ul class="list-unstyled user-links1">
                                         <li><i class="fa fa-angle-right"></i> <a href="/web/company-overview">Company Profile</a></li>
-                                        <li><i class="fa fa-angle-right"></i> <a href="/web/website-development-company">Website Development</a></li>
+                                        <li><i class="fa fa-angle-right"></i> <a href="/web/custom-website">Website Development</a></li>
                                         <li><i class="fa fa-angle-right"></i> <a href="/web/software-development">Software Development</a></li>
                                         <li><i class="fa fa-angle-right"></i> <a href="/web/contactus">Contact Us</a></li>
                                         <li><i class="fa fa-angle-right"></i> <a href="/web/privacy-policy">Privacy Policy</a></li>
@@ -1892,18 +1892,35 @@ Hospital management Softwares, ERP Software, Nidhi Cooperative Software, Web Dev
     <!---Gallery---->
     <script src="~/afluexit/js/glightbox.min.js"></script>
     <script src="~/afluexit/js/gallery.js"></script>
+    <script type="text/javascript">
+        // number count for stats, using jQuery animate
+
+        $('.counting').each(function() {
+          var $this = $(this),
+          countTo = $this.attr('data-count');
+
+          $({ countNum: $this.text()}).animate({
+            countNum: countTo
+        },
+
+        {
+
+            duration: 3000,
+            easing:'linear',
+            step: function() {
+              $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+              $this.text(this.countNum);
+      //alert('finished');
+  }
+
+});
+
+
+      });
+    </script>
     <script>
-        $(document).ready(function () {
-            $('.leftmenutrigger').on('click', function (e) {
-                $('.side-nav').toggleClass("open");
-                e.preventDefault();
-            });
-            $('.toggle').click(function () {
-                $('.sidebar-contact').toggleClass('active')
-                $('.toggle').toggleClass('active')
-            })
-            blinking_header();
-        });
         function SaveInquiryDetails() {
             debugger;
             $(".errortext").removeClass("errortext");
@@ -1980,23 +1997,6 @@ Hospital management Softwares, ERP Software, Nidhi Cooperative Software, Web Dev
               && (charCode < 48 || charCode > 57))
                 return false;
             return true;
-        }
-    </script>
-    <script>
-        function blinking_header() {
-            if (!document.getElementById('blink').style.color) {
-                document.getElementById('blink').style.color = "red";
-            }
-            if (document.getElementById('blink').style.color == "red") {
-                document.getElementById('blink').style.color = "white";
-            }
-            else {
-                document.getElementById('blink').style.color = "red";
-            }
-            timer = setTimeout("blinking_header()", 1000);
-        }
-        function stoptimer() {
-            clearTimeout(timer);
         }
     </script>
     <script>
