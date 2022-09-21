@@ -2082,3 +2082,12 @@ img.gallery-img:hover {
           position:relative;
           right:-5px !important;
       }
+
+
+      @media screen and (max-width:1024px)
+      {
+          .navbar-expand-lg .navbar-nav .nav-link
+          {
+              padding-right:0rem;
+          }
+      }
