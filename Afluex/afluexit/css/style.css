@@ -2080,5 +2080,5 @@ img.gallery-img:hover {
       .drp_sp
       {
           position:relative;
-          right:-5px;
+          right:-5px !important;
       }
