@@ -181,7 +181,7 @@ display:block !important;
                 <div class="help-block with-errors"></div>
               </div>
                <div class ="form-group col-sm-12">
-                <input type="text" id="txtmobile" name="txtmobile" placeholder="Enter Your Mobile No." data-error="Please fill Out">
+                <input type="text" id="txtmobile" name="txtmobile" placeholder="Enter Your Mobile No." data-error="Please fill Out" maxlength="10" minlength="10" onkeypress = "return isNumberKey(event);">
                 <div class ="help-block with-errors"></div>
               </div>
             </div>
@@ -248,40 +248,47 @@ display:block !important;
       </div>
     </div>
 <script type="text/javascript">
+$(document).ready(function() {
+Captcha1();
+});
+
    function SaveDetails() {
    debugger;
+       var rndcapt = $("#mainCaptcha1").val();
+       var usercapt = $("#Inputcaptcha").val();
+
      $("#divload").css({'display': ''})
      $(".errortext").removeClass("errortext");
 
          if($("#txtname").val() == "") {
             $("#txtname").addClass('errortext');
             $("#txtname").focus();
-            return false();
+            return false;
             }
 
          if($("#txtmobile").val() == "") {
             $("#txtmobile").addClass('errortext');
             $("#txtmobile").focus();
-            return false();
+            return false;
             }
 
          if($("#txtemail").val() == "") {
             $("#txtemail").addClass('errortext');
             $("#txtemail").focus();
-            return false();
+            return false;
             }
             if($("#Inputcaptcha").val() == "") {
             $("#Inputcaptcha").addClass('errortext');
             $("#Inputcaptcha").focus();
-            return false();
+            return false;
             }
 
-         if($("#Inputcaptcha").val() != $("#mainCaptcha1").val()) {
+         if(rndcapt != usercapt) {
             alert("Invalid Captcha!");
             $("#Inputcaptcha").addClass('errortext');
             $("#Inputcaptcha").focus();
             $("#Inputcaptcha").val("");
-            return false();
+            return false;
             }
         else {
             debugger;
@@ -334,15 +341,13 @@ function Captcha1() {
          var f = alpha[Math.floor(Math.random() * alpha.length)];
          var g = alpha[Math.floor(Math.random() * alpha.length)];
 }
-         var code = a + ' ' +b + ' ' + ' ' +c + ' ' +d + ' ' +e + ' '+f + ' ' +g;
+         var code = a+b+c+d+e+f+g;
          document.getElementById("mainCaptcha1").innerHTML = code
 		 document.getElementById("mainCaptcha1").value = code
 }
-
-function removeSpaces(string) {
-     return string.split(' ').join('');
-}
-
+//function removeSpaces(string) {
+//     return string.split(' ').join('');
+//}
     </script>
 
 
