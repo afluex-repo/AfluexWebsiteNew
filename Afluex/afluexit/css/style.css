@@ -2091,3 +2091,17 @@ img.gallery-img:hover {
               padding-right:0rem;
           }
       }
+
+/* blog css */
+
+ .ml-15 {
+        margin-left: 15px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    .text a
+    {
+        color:#418fb2
+    }
