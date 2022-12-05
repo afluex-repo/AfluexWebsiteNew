@@ -4,30 +4,32 @@
     Layout = "~/Views/Shared/Web_Layout.cshtml";
 }
 
-<section class="page-title text-center" style="background-image:url(../../afluexit/images/background/page_product.jpeg);">
+<section class="bg-dark_skyblue pt-5 pb-5">
     <div class="container">
-        <h1>Mobile Recharge Software</h1>
-    </div>
-    <!--Page Info-->
-    <div class="page-info">
-        <div class="container clearfix">
-            <ul class="bread-crumb clearfix">
-                <li><a href="/web/software-development"><i class="fa fa-home"></i></a> </li>
-                <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
-                <li>Product</li>
-                <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
-                <li>Mobile Recharge Software</li>
-            </ul>
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-white">
+                <h1 class="font_text">Mobile Recharge Software Development Company</h1>
+                <p class="text-justify">
+                    Afluex Multiservices LLP provide the best mobile recharge and bill payment application for any business.
+                    We are working on such solutions for several years with our dedicated team of experts. Our members are specialized in catering to the best
+                    online recharge software, bill payment software and mobile recharge API solutions.
+                </p>
+                <div class="abt_btn mt-4">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-skyblue border-white">Request A Free Quote</a>
+                </div>
+            </div>
+            <div class="col-lg-5 offset-lg-1">
+                <img src="~/afluexit/images/services/recharge_bg.png" style="height:350px;" class="img-fluid" />
+            </div>
         </div>
     </div>
 </section>
-<!-- End Page Title -->
 
 <section class="services_page">
     <div class="container">
         <div class="row">
             <!-- Info Column -->
-            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                 <div class="services_inner_column">
                     <div class="ser_title">
                         <span class="title">THE BEST PLACE TO FIND THE Mobile Recharge Software YOU WANT</span>
@@ -35,54 +37,238 @@
                     </div>
                     <div class="services_content_details">
                         <p class="text-justify">
-                            Afluex Multiservices LLP offers Complete Online mobile recharge software and Mobile Recharge API development solutions. We design & Develop one-stop recharge software solutions for B2B/B2C/Reseller Whitelabel mobile recharge companies or agents. You as
-                            a recharge company or agents will with success run a recharge & bill payment business with our website panel and it's android application.Afluex Multiservices LLP offers Complete Online mobile recharge software and Mobile Recharge
-                            API development solutions. We design & Develop one-stop recharge software solutions for B2B/B2C/Reseller Whitelabel mobile recharge companies or agents. You as a recharge company or agents will with success run a recharge &
-                            bill payment business with our website panel and it's android application.
+                            Afluex Multiservices LLP offers complete online mobile recharge software and Mobile Recharge API development solutions. We design & develop one-stop recharge software solutions for B2B/B2C/Reseller Whitelabel mobile recharge companies or agents. You as
+                            a recharge company or agents will with success run a recharge & bill payment business with our website panel and it's android application.
                         </p>
-                        <p class="text-justify">
-                            Our team optimized it accordingly to help businesses attract customers to their business website and generate you higher traffic volume that eventually turns in higher revenues. Our software company working in recharge industry from a long time and producing
-                            reliable, customized and fruitful software for mobile recharge and bill payment services. The mobile recharge software system is customizable as per client requirement; modification are potential to process.
-                        </p>
-                        <p class="text-justify">
-                            Afluex provides the best solution of Recharge Industry with best Mobile Multi Recharge software and API to handle all the business needs. Mobile Recharge API may be a prime necessity of your own mobile recharge software. We provide a best Recharge software
-                            and API solution to start your business with fast and effortless recharge options. We provide all kinds of Mobile Multi Recharge Portal Development Services as per the client's need and budget-oriented. Our Mobile Recharge
-                            Software and Application helpful for distributor, retailers as well as customers, we help to process postpaid/prepaid recharge of mobile, dth, data card, utility bill payment via the website, mobile application, and SMS long
-                            code (offline recharge). The Mobile Recharge software system and it’s android application could be a great tool for distributor, retailers still as customers. Afluex helps you to process postpaid/prepaid recharges of all mobile
-                            carriers, DTH service providers, Data card & utility bill payment services via your own website, you can also manage with its mobile application, and SMS long code. As per Business needs, we provide the most effective online
-                            recharge software package with all essential business modules for B2B & B2C businesses. Afluex also offers reseller recharge software solutions (white label recharge software). We provide All recharge software developed & designed
-                            can be customized according to the clients business needs. So we would encourage you to start your recharge business with our recharge software, get online and start dealing in all SIM mobile recharge and bill payment services
-                            with your distributor, retailer, and customers online or offline.
-                        </p>
-                        <h5 class="green">What is unique at Afluex</h5>
-                        <div class="about-list">
-                            <ul class="list-unstyled">
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> Afluex develops custom recharge software for all customer – We avoid copy and paste technique as like other recharge software provider. </li>
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> We include a payment gateway on your choice like CCAvenue, EBS, PAYU, PayUMoney. </li>
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> Multiple API integration facilities in recharge. </li>
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> It is offering API for recharge, money transfer and travel at free of cost with life time validity. </li>
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> We also manage all these thing by own recharge portal quickrecharge.in </li>
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> Its service charge is affordable from market along with best service. </li>
-                            </ul>
-                        </div>
+                        @*<p class="text-justify">
+                                Our team optimized it accordingly to help businesses attract customers to their business website and generate you higher traffic volume that eventually turns in higher revenues. Our software company working in recharge industry from a long time and producing
+                                reliable, customized and fruitful software for mobile recharge and bill payment services. The mobile recharge software system is customizable as per client requirement; modification are potential to process.
+                            </p>
+                            <p class="text-justify">
+                                Afluex provides the best solution of Recharge Industry with best Mobile Multi Recharge software and API to handle all the business needs. Mobile Recharge API may be a prime necessity of your own mobile recharge software. We provide a best Recharge software
+                                and API solution to start your business with fast and effortless recharge options. We provide all kinds of Mobile Multi Recharge Portal Development Services as per the client's need and budget-oriented. Our Mobile Recharge
+                                Software and Application helpful for distributor, retailers as well as customers, we help to process postpaid/prepaid recharge of mobile, dth, data card, utility bill payment via the website, mobile application, and SMS long
+                                code (offline recharge). The Mobile Recharge software system and it’s android application could be a great tool for distributor, retailers still as customers. Afluex helps you to process postpaid/prepaid recharges of all mobile
+                                carriers, DTH service providers, Data card & utility bill payment services via your own website, you can also manage with its mobile application, and SMS long code. As per Business needs, we provide the most effective online
+                                recharge software package with all essential business modules for B2B & B2C businesses. Afluex also offers reseller recharge software solutions (white label recharge software). We provide All recharge software developed & designed
+                                can be customized according to the clients business needs. So we would encourage you to start your recharge business with our recharge software, get online and start dealing in all SIM mobile recharge and bill payment services
+                                with your distributor, retailer, and customers online or offline.
+                            </p>
+                            <h5 class="green">What is unique at Afluex</h5>
+                            <div class="about-list">
+                                <ul class="list-unstyled">
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Afluex develops custom recharge software for all customer – We avoid copy and paste technique as like other recharge software provider. </li>
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> We include a payment gateway on your choice like CCAvenue, EBS, PAYU, PayUMoney. </li>
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Multiple API integration facilities in recharge. </li>
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> It is offering API for recharge, money transfer and travel at free of cost with life time validity. </li>
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> We also manage all these thing by own recharge portal quickrecharge.in </li>
+                                    <li><i class="fa fa-circle-o" aria-hidden="true"></i> Its service charge is affordable from market along with best service. </li>
+                                </ul>
+                            </div>*@
                     </div>
 
                 </div>
-            </div>
-
-            <!-- Video Column -->
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                <div class="services_inner_column">
-                    <div class="ser_title">
-                        <span class="title">Enquiry Here</span>
-                        <h2>For Quick Demo</h2>
-                    </div>
-                   @{Html.RenderAction("DemoContact", "web", new { area = "" });}
-                   
-                </div>
-
             </div>
         </div>
     </div>
 </section>
 
+<section class="services_page pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 text-justify">
+                <h3 class="mb-3 font_text">Mobile Recharge Website (Software)</h3>
+                <p>Afluex Multiservices LLP is the name of a brand for providing the complete solution of a mobile recharge business including recharge software development, Recharge API, Money Transfer API, Travel API, Payment Gateway, Bulk SMS, Domain and Hosting for your B2B or B2C recharge business. So under one roof you will get everything that you are looking for and you may start earning by first day of journey. Our recharge portal is totally user and familiar with mobile and desktop so it is quite easy to manage for Admin, Distributor and Retailer. We also provide dedicated support to manage this software.</p>
+                <p>Afluex Multiservices LLP offers Complete Online mobile recharge software and Mobile Recharge API development solutions. We design & develop one-stop recharge software solutions for B2B/B2C/Reseller Whitelabel mobile recharge companies or agents. You as a recharge company or agents will with success run a recharge & bill payment business with our website panel and it's android application.
+                    The Mobile Recharge software system and it’s android application could be a great tool for distributor, retailers still as customers. Afluex helps you to process postpaid/prepaid recharges of all mobile
+                    carriers, DTH service providers, Data card & utility bill payment services via your own website, you can also manage with its mobile application, and SMS long code. As per Business needs, we provide the most effective online
+                    recharge software package with all essential business modules for B2B & B2C businesses. Afluex also offers reseller recharge software solutions (white label recharge software). We provide All recharge software developed & designed
+                    can be customized according to the clients business needs.
+                </p>
+            </div>
+            <div class="col-lg-4">
+                <img src="~/afluexit/images/services/recharge_img1.png" class="img-fluid"/>
+            </div>
+            <div class="col-lg-12 mt-5">
+                <h4>Reasons to choose Afluex Multiservices LLP for Recharge Portal Development</h4>
+                <ul class="list-inline">
+                    <li><i class="fa fa-check-circle"></i> We develop custom recharge software for all customer – We avoid copy and paste technique as like other recharge software provider.</li>
+                    <li><i class="fa fa-check-circle"></i> We include a payment gateway on your choice like CCAvenue, EBS, PAYU, PayUMoney.</li>
+                    <li><i class="fa fa-check-circle"></i> Multiple API integration facilities in recharge.</li>
+                    <li><i class="fa fa-check-circle"></i> We are offering API for recharge, money transfer and travel at free of cost with life time validity.</li>
+                    <li><i class="fa fa-check-circle"></i> Our service charge is affordable from market along with best service.</li>
+                    <li><i class="fa fa-check-circle"></i> We offer one year free support for your recharge software and after one year a minimum support charge applicable.</li>
+                    <li><i class="fa fa-check-circle"></i> We offer good customer support service for all retailer, distributor and site owner.</li>
+                    <li><i class="fa fa-check-circle"></i> We provide you global business idea for recharge business.</li>
+                    <li><i class="fa fa-check-circle"></i> We are providing Android Application with publication in google play store.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="services_page pb-5 bg-dark_skyblue">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center text-white">
+                <h1 class="font_text">Ready To Get Started?</h1>
+                <p>
+                    Stay ahead from Crowd. We have an expert team of application developers who are experienced and proficient. We have good experience <br> in bespoke web and mobile app development and are committed to delivering the best of the class solutions.
+                </p>
+                <div class="abt_btn mt-3">
+                    <a href="/web/contactus" class="btn btn-lg btn-custom">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="services_page pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h3>B2C Recharge Software</h3>
+                <p>We have a highly efficient and experienced team of professionals who develop this B2C recharge portal. In today’s age, B2C is considered as the fastest growing sector, which gives a bundle of opportunities to entrepreneurs.</p>
+                <h5 class="mt-2">FEATURES OF B2C RECHARGE SOFTWARE</h5>
+                <ul class="list-inline">
+                    <li><i class="fas fa-check-circle"></i> Secure User Registration & Account Panel</li>
+                    <li><i class="fas fa-check-circle"></i> User friendly admin panel to control your recharge portal.</li>
+                    <li><i class="fas fa-check-circle"></i> User management</li>
+                    <li><i class="fas fa-check-circle"></i> Add wallet facility via payment gateway</li>
+                    <li><i class="fas fa-check-circle"></i> Bonus Points Recharge Facility</li>
+                    <li><i class="fas fa-check-circle"></i> Instant recharge service</li>
+                    <li><i class="fas fa-check-circle"></i> Instant Failure Report</li>
+                    <li><i class="fas fa-check-circle"></i> Block/Unblock Operator</li>
+                    <li><i class="fas fa-check-circle"></i> Automatic Emails Sent</li>
+                    <li><i class="fas fa-check-circle"></i>Support System</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <h3>B2B Recharge Software</h3>
+                <p>We provide the largest B2B recharge portal services where an admin can make unlimited MD, distributors, and retailers. It provides all the rights to the retailers to give out multiple recharge services from one individual panel to all other distributors as well as retailers.</p>
+                <h5 class="mt-2">FEATURES OF B2B RECHARGE SOFTWARE</h5>
+                <ul class="list-inline">
+                    <li><i class="fas fa-check-circle"></i> Secure User Registration & Accounts Panel</li>
+                    <li><i class="fas fa-check-circle"></i> User friendly admin panel to control your recharge portal.</li>
+                    <li><i class="fas fa-check-circle"></i> Manage your API Partner, master distributor, distributor and retailer.</li>
+                    <li><i class="fas fa-check-circle"></i> E-Wallet Recharge Facility (Offline and Online)</li>
+                    <li><i class="fas fa-check-circle"></i> Bonus Points Recharge Facility</li>
+                    <li><i class="fas fa-check-circle"></i> Instant recharge service</li>
+                    <li><i class="fas fa-check-circle"></i> Instant Failure Report</li>
+                    <li><i class="fas fa-check-circle"></i> Block/Unblock Operator</li>
+                    <li><i class="fas fa-check-circle"></i> Automatic Emails Sent</li>
+                    <li><i class="fas fa-check-circle"></i> Member List</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services_page pb-5">
+    <div class="container">
+        <div class="row pb-3">
+            <div class="col-sm-12">
+                <h3 class="font_text">Why Afluex Multiservices LLP for Mobile Recharge Software?</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  5+ years of average experience</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  High sealed security</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>   24*7 Support</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  Maintenance Service</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  Integrity &amp; transparency</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  Flexible Engagement Models</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>   On time project delivery guaranteed</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  Dedicated Project Managers</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  Hassle free communication</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  User-Friendly Data Structure</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>  Free no-obligation quote</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6><i class="fa fa-check" aria-hidden="true"></i>   Non-Discloser Agreement</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <img src="/afluexit/images/services/recharge-2.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>

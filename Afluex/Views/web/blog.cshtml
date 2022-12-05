@@ -21,6 +21,141 @@
 </section>
 <section class="blog_page">
     <div class="container">
+
+        <div class="row mt-5">
+            <div class="col-lg-8 col-md-9 col-sm-12">
+
+                @if (Model != null)
+                {
+                    if (Model.List != null)
+                    {
+                        foreach (var item in Model.List)
+                        {
+                            <div class="blog_content mb-5">
+                                <div class="blog_featured">
+                                    <a href="/advertisement/blogdetails?id=@item.Pk_BlogId">
+                                        <img src="~/afluexad/images/about-img.png" class="img-fluid" style="width:100%" />
+                                        @* <img src="https://afluex.com/@item.FileName" alt="" class="img-fluid"/>*@
+                                    </a>
+                                </div>
+                                <div class="blog_details">
+                                    <div class="blog_title mt-2">
+                                        <h2><a href="/advertisement/blogdetails?id=@item.Pk_BlogId">@item.Title</a> </h2>
+                                    </div>
+                                    <div class="blog_inner">
+                                        <p>Every Advanced Google Search Operator You Need to Know</p>
+                                        @*<p>
+                                                @(new HtmlString(item.ShortDecription))
+                                            </p>*@
+                                        <div class="blog_time_eye clearfix">
+                                            <ul class="list-unsyled p-0">
+                                                @*<li class="list-inline-item"><span class="blog_icon"><i class="fa fa-user" aria-hidden="true"></i></span> By : Afluex Mutiservices LLP</li>*@
+                                                <li class="list-inline-item"><span class="blog_icon"><i class="fa fa-user" aria-hidden="true"></i></span> By: @item.AddedBy</li>
+                                                <li class="list-inline-item">
+                                                    <span class="blog_icon">
+                                                        <a href="/advertisement/blogdetails?id=@item.Pk_BlogId">
+                                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                                        </a>
+                                                    </span> @item.AddedOn
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="blog_btn">
+                                            <h5><a href="/advertisement/blogdetails?id=@item.Pk_BlogId">Read More</a></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                }
+            </div>
+            <div class="col-lg-4 col-md-3 col-sm-12">
+                <div class="sidebar-widget popular-posts">
+                    <div class="widget-content">
+                        <!-- Sidebar Title -->
+                        <div class="sidebar-title mb-4">
+                            <h2>Latest Blogs</h2>
+                        </div>
+
+                        <article class="post d-flex">
+                            <figure class="post-thumb"><img src="~/afluexad/images/about-img.png" style="height:70px;" alt=""><a href="blog-detail.html" class="overlay-box"></a></figure>
+                            <div class="ml-15">
+                                <h6 class="text"><a href="blog-detail.html">Show at the University</a></h6>
+                                <div class="mt-2"><i class="fa fa-calendar"></i> 23 December 2021</div>
+                            </div>
+
+                        </article>
+                        <article class="post d-flex">
+                            <figure class="post-thumb"><img src="~/afluexad/images/about-img.png" style="height:70px;" alt=""><a href="blog-detail.html" class="overlay-box"></a></figure>
+                            <div class="ml-15">
+                                <h6 class="text"><a href="blog-detail.html">Show at the University</a></h6>
+                                <div class="mt-2"><i class="fa fa-calendar"></i> 23 December 2021</div>
+                            </div>
+
+                        </article>
+
+                        <article class="post d-flex">
+                            <figure class="post-thumb"><img src="~/afluexad/images/about-img.png" style="height:70px;" alt=""><a href="blog-detail.html" class="overlay-box"></a></figure>
+                            <div class="ml-15">
+                                <h6 class="text"><a href="blog-detail.html">Show at the University</a></h6>
+                                <div class="mt-2"><i class="fa fa-calendar"></i> 23 December 2021</div>
+                            </div>
+                        </article>
+
+                        <article class="post d-flex">
+                            <figure class="post-thumb"><img src="~/afluexad/images/about-img.png" style="height:70px;" alt=""><a href="blog-detail.html" class="overlay-box"></a></figure>
+                            <div class="ml-15">
+                                <h6 class="text"><a href="blog-detail.html">Show at the University</a></h6>
+                                <div class="mt-2"><i class="fa fa-calendar"></i> 23 December 2021</div>
+                            </div>
+                        </article>
+                        <article class="post d-flex">
+                            <figure class="post-thumb"><img src="~/afluexad/images/about-img.png" style="height:70px;" alt=""><a href="blog-detail.html" class="overlay-box"></a></figure>
+                            <div class="ml-15">
+                                <h6 class="text"><a href="blog-detail.html">Show at the University</a></h6>
+                                <div class="mt-2"><i class="fa fa-calendar"></i> 23 December 2021</div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @*<div class="row mt-4">
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div class="blog_featured text-center">
+                        <a href="blog-details.html"><img src="~/afluexad/images/blog/search-operator-featured.png" class="img-fluid"></a>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-12">
+                    <div class="blog_details">
+                        <div class="blog_title">
+                            <h2><a href="blog-details.html">Every Advanced Google Search Operator You Need to Know</a> </h2>
+                        </div>
+                        <div class="blog_inner">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                                specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            </p>
+                            <div class="blog_time_eye clearfix">
+                                <ul class="list-unsyled p-0">
+                                    <li class="list-inline-item"><span class="blog_icon"><i class="fa fa-user" aria-hidden="true"></i></span> By : Afluex Mutiservices LLP</li>
+                                    <li class="list-inline-item"><span class="blog_icon"><i class="fa fa-clock-o" aria-hidden="true"></i></span> 2/12/2021</li>
+                                    <li class="list-inline-item"><span class="blog_icon"><i class="fa fa-eye" aria-hidden="true"></i></span> 112K Reads</li>
+                                </ul>
+                            </div>
+                            <div class="blog_btn">
+                                <h5><a href="blog-details.html">Read More</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>*@
+    </div>
+</section>
+@*<section class="blog_page">
+    <div class="container">
         <div class="row" id="">
             @if (Model != null)
             {
@@ -78,7 +213,7 @@
             <input type="hidden" id="hfCurrentPageIndex" name="currentPageIndex" />
         </div>
      </div>
-</section>
+</section>*@
 @*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />*@
 <script type="text/javascript">
             function PagerClick(index) {

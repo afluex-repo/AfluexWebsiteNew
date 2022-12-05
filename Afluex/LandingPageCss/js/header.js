@@ -181,7 +181,7 @@ display:block !important;
                 <div class="help-block with-errors"></div>
               </div>
                <div class ="form-group col-sm-12">
-                <input type="text" id="txtmobile" name="txtmobile" placeholder="Enter Your Mobile No." data-error="Please fill Out" maxlength="10" minlength="10" onkeypress = "return isNumberKey(event);">
+                <input type="text" id="txtmobile" name="txtmobile" placeholder="Enter Your Mobile No." data-error="Please fill Out">
                 <div class ="help-block with-errors"></div>
               </div>
             </div>
@@ -190,7 +190,7 @@ display:block !important;
             <input type="email" id="txtemail"  name="txtemail" placeholder="Enter Your Email" />
               </div>
             </div>
-             <div class ="row">
+      	       <div class ="row">
                     <div class ="form-group col-sm-6">
                        <h4 type="text" id="mainCaptcha1" style="margin-left:20px;"></h4>
                        </div>
@@ -202,7 +202,6 @@ display:block !important;
                        <div class ="col-sm-12">
                          <input type="text" id="Inputcaptcha" name="txtInput" placeholder="Enter captcha"/>
                        </div></div>
-
             <button type="button"  id="btn_save" name="btn_save" onclick="return SaveDetails();" class ="btn lnk btn-main bg-btn">Submit <span class ="circle"></span></button>
             <div class="clearfix"></div>
           </form>
@@ -248,48 +247,41 @@ display:block !important;
       </div>
     </div>
 <script type="text/javascript">
-$(document).ready(function() {
-Captcha1();
-});
-
    function SaveDetails() {
    debugger;
-       var rndcapt = $("#mainCaptcha1").val();
-       var usercapt = $("#Inputcaptcha").val();
-
      $("#divload").css({'display': ''})
      $(".errortext").removeClass("errortext");
 
          if($("#txtname").val() == "") {
             $("#txtname").addClass('errortext');
             $("#txtname").focus();
-            return false;
+            return false();
             }
 
          if($("#txtmobile").val() == "") {
             $("#txtmobile").addClass('errortext');
             $("#txtmobile").focus();
-            return false;
+            return false();
             }
 
          if($("#txtemail").val() == "") {
             $("#txtemail").addClass('errortext');
             $("#txtemail").focus();
-            return false;
+            return false();
             }
-            if($("#Inputcaptcha").val() == "") {
-            $("#Inputcaptcha").addClass('errortext');
-            $("#Inputcaptcha").focus();
-            return false;
-            }
+            //if($("#Inputcaptcha").val() == "") {
+            //$("#Inputcaptcha").addClass('errortext');
+            //$("#Inputcaptcha").focus();
+            //return false();
+            //}
 
-         if(rndcapt != usercapt) {
-            alert("Invalid Captcha!");
-            $("#Inputcaptcha").addClass('errortext');
-            $("#Inputcaptcha").focus();
-            $("#Inputcaptcha").val("");
-            return false;
-            }
+         //if($("#Inputcaptcha").val() != $("#mainCaptcha1").val()) {
+         //   alert("Invalid Captcha!");
+         //   $("#Inputcaptcha").addClass('errortext');
+         //   $("#Inputcaptcha").focus();
+         //   $("#Inputcaptcha").val("");
+         //   return false();
+         //   }
         else {
             debugger;
         $("#page_loader").css({ 'display': 'block !important'});
@@ -341,13 +333,15 @@ function Captcha1() {
          var f = alpha[Math.floor(Math.random() * alpha.length)];
          var g = alpha[Math.floor(Math.random() * alpha.length)];
 }
-         var code = a+b+c+d+e+f+g;
+         var code = a + ' ' +b + ' ' + ' ' +c + ' ' +d + ' ' +e + ' '+f + ' ' +g;
          document.getElementById("mainCaptcha1").innerHTML = code
 		 document.getElementById("mainCaptcha1").value = code
 }
-//function removeSpaces(string) {
-//     return string.split(' ').join('');
-//}
+
+function removeSpaces(string) {
+     return string.split(' ').join('');
+}
+
     </script>
 
 

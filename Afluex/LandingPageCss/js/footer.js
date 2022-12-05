@@ -78,46 +78,44 @@ document.write(`
      <script src="../LandingpageCss/js/typer.js"></script>
 
    <script type="text/javascript">
+
 $(document).ready(function() {
 Captcha();
 });
 function SaveDetails1() {
     debugger;
-      var Rndcaptcha = $("#mainCaptcha").val();
-      var Inputcaptcha = $("#txtInput").val();
-
     $("#divload").css({'display': ''})
     $(".errortext").removeClass("errortext");
     if($("#name").val() == "") {
         $("#name").addClass('errortext');
         $("#name").focus();
-           return false;
+           return false();
      }
 
     if($("#mobile").val() == "") {
         $("#mobile").addClass('errortext');
         $("#mobile").focus();
-        return false;
+        return false();
         }
 
     if($("#email").val() == "") {
         $("#email").addClass('errortext');
         $("#email").focus();
-        return false;
+        return false();
      }
-    if($("#txtInput").val() == "") {
-        $("#txtInput").addClass('errortext');
-        $("#txtInput").focus();
-        return false;
-   }
+   // if($("#txtInput").val() == "") {
+   //     $("#txtInput").addClass('errortext');
+   //     $("#txtInput").focus();
+   //     return false();
+   //}
 
-     if (Inputcaptcha != Rndcaptcha) {
-        alert("Invalid Captcha!");
-        $("#txtInput").addClass('errortext');
-        $("#txtInput").focus();
-        $("#txtInput").val("");
-        return false;
-     }
+   //  if ($("#txtInput").val() != $("#mainCaptcha").val()) {
+   //     alert("Invalid Captcha!");
+   //     $("#txtInput").addClass('errortext');
+   //     $("#txtInput").focus();
+   //     $("#txtInput").val("");
+   //     return false();
+   //  }
 else {
             var Name = $('#name').val();
             var Mobile = $('#mobile').val();
@@ -163,16 +161,17 @@ function Captcha() {
          var e = alpha[Math.floor(Math.random() * alpha.length)];
          var f = alpha[Math.floor(Math.random() * alpha.length)];
          var g = alpha[Math.floor(Math.random() * alpha.length)];
-}
-         var code = a+b+c+d+e+f+g;
+        }
+         var code = a + ' ' +b + ' ' + ' ' +c + ' ' +d + ' ' +e + ' '+f + ' ' +g;
          document.getElementById("mainCaptcha").innerHTML = code
 		 document.getElementById("mainCaptcha").value = code
          document.getElementById("mainCaptcha1").innerHTML = code
 		 document.getElementById("mainCaptcha1").value = code
+        }
+
+function removeSpaces(string) {
+     return string.split(' ').join('');
 }
-//function removeSpaces(string) {
-//     return string.split(' ').join('');
-//}
     </script>
 	`);
 

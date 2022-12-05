@@ -1388,3 +1388,17 @@ img.img-fluid.aflogo {
     border-radius: 15px;
     box-shadow: 2px 3px 12px 3px #1a1a18;
 }
+
+/* blog css */
+
+ .ml-15 {
+        margin-left: 15px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    .text a
+    {
+        color:#418fb2
+    }
