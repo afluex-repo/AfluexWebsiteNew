@@ -1151,6 +1151,7 @@
     <Content Include="afluexit\edu_tech\js\owl.carousel.min.js" />
     <Content Include="afluexit\edu_tech\js\popper.min.js" />
     <Content Include="afluexit\edu_tech\js\scrollax.min.js" />
+    <Content Include="afluexit\images\404\oops404.jpg" />
     <Content Include="afluexit\images\about_company.jpg" />
     <Content Include="afluexit\images\about_company1.jpg" />
     <Content Include="afluexit\images\Afluex-logo\favicon.png" />
@@ -2290,6 +2291,7 @@
     <Content Include="Views\web\brochure_design.cshtml" />
     <Content Include="Views\web\search_engine_marketing.cshtml" />
     <Content Include="Views\web\term_conditions.cshtml" />
+    <Content Include="Views\web\CompilationPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="afluexad\fontawesome\" />
