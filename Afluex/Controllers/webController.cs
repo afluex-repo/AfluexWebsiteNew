@@ -37,7 +37,7 @@ namespace Afluex.Controllers
         {
             return View("our_team");
         }
-       // [ActionName("website-development-services")]
+        // [ActionName("website-development-services")]
         [ActionName("website-development-company")]
         public ActionResult website_development_services()
         {
@@ -196,7 +196,7 @@ namespace Afluex.Controllers
         {
             return View("portfolio");
         }
-       
+
         public ActionResult gallery()
         {
             return View("gallery");
@@ -446,7 +446,7 @@ namespace Afluex.Controllers
                             catch { }
 
                             TempData["Career"] = "Data Submission Successfull !";
-                            
+
                         }
                         catch (Exception ex)
                         {
@@ -473,7 +473,7 @@ namespace Afluex.Controllers
                             BLSMS.SendSMSS(mob, str, TempId);
                         }
                         catch { }
-                        
+
                     }
                     else
                     {
@@ -498,7 +498,7 @@ namespace Afluex.Controllers
         [HttpPost]
         [ActionName("contactus")]
         [OnAction(ButtonName = "btnSave")]
-      //  [ValidateAntiForgeryToken]
+        //  [ValidateAntiForgeryToken]
         public ActionResult SaveContactus(Home model)
         {
 
@@ -563,14 +563,14 @@ namespace Afluex.Controllers
                         {
 
                         }
-                        
+
                         string Name = ds.Tables[0].Rows[0]["Name"].ToString();
                         string mob = ds.Tables[0].Rows[0]["Mobile"].ToString();
                         string str = "Dear " + Name + ", thank you for showing your interest in Afluex. Our HR Team will contact you soon. For Direct Enquiry call on 7310000413,412 or Mail us on supportnow@afluex.com, Team Afluex";
                         string TempId = "1707166203818524452";
                         try
                         {
-                             BLSMS.SendSMSS(mob, str, TempId);
+                            BLSMS.SendSMSS(mob, str, TempId);
                         }
                         catch { }
 
@@ -621,7 +621,7 @@ namespace Afluex.Controllers
                         string Name2 = ds.Tables[0].Rows[0]["Name"].ToString();
                         string Message = ds.Tables[0].Rows[0]["Message"].ToString();
                         string Mobile = ds.Tables[0].Rows[0]["Mobile"].ToString();
-                        string str2 = "Dear team You got a contact whose Name : "+ Name2 + ", Mobile : "+ Mobile + ", Message : "+ Message + ", Team Afluex";
+                        string str2 = "Dear team You got a contact whose Name : " + Name2 + ", Mobile : " + Mobile + ", Message : " + Message + ", Team Afluex";
                         string TempId2 = "1707166203848904315";
 
                         try
@@ -630,7 +630,7 @@ namespace Afluex.Controllers
                         }
                         catch { }
 
-                        
+
                         TempData["ContactMsg"] = "Thank you for showing your interest.Our Team will contact you soon.For Enquiry call us on 7310000413,412 or Mail us on -supportnow@afluex.com.";
                         FormName = "thankyou";
                         Session["Type"] = "contactus";
@@ -660,7 +660,7 @@ namespace Afluex.Controllers
         [HttpPost]
         [ActionName("DemoContact")]
         [OnAction(ButtonName = "btnSave")]
-         public ActionResult saveDemoinquiry(Home model)
+        public ActionResult saveDemoinquiry(Home model)
         {
             Session["Type"] = null;
             string FormName = "";
@@ -900,7 +900,7 @@ namespace Afluex.Controllers
                         string Name2 = ds.Tables[0].Rows[0]["Name"].ToString();
                         string Message = ds.Tables[0].Rows[0]["Message"].ToString();
                         string Mobile = ds.Tables[0].Rows[0]["Mobile"].ToString();
-                        string str2 = "Dear team You got a contact whose Name : " + Name2 + ", Mobile : " + Mobile + ", Message : " + Message + ", Team Afluex";                      
+                        string str2 = "Dear team You got a contact whose Name : " + Name2 + ", Mobile : " + Mobile + ", Message : " + Message + ", Team Afluex";
                         string TempId2 = "1707166203848904315";
 
                         try
@@ -1090,7 +1090,7 @@ namespace Afluex.Controllers
             }
             return RedirectToAction(FormName, Controller);
         }
-    public ActionResult ValidateData(string MemberName, string Contact, string Email, string CusMessage)
+        public ActionResult ValidateData(string MemberName, string Contact, string Email, string CusMessage)
         {
             Home model = new Home();
             model.Mobile = Contact;
@@ -1154,7 +1154,7 @@ namespace Afluex.Controllers
                 }
                 catch { }
 
-                
+
                 model.Otppin = ctrOTP;
 
                 model.Result = "1";
@@ -1224,7 +1224,7 @@ namespace Afluex.Controllers
                         {
 
                         }
-                        
+
                         //string mobs = Mobile;
                         //string str2 =  Name + " thank you for showing your interest in our IT Field. Our Team will contact you soon For Enquiry call us on 7310000413,412 or Mail us on supportnow@afluex.com";
 
@@ -1244,7 +1244,7 @@ namespace Afluex.Controllers
                             BLSMS.SendSMSS(mob, str, TempId);
                         }
                         catch { }
-                        
+
 
                         string messagelbody = "";
                         try
@@ -1282,7 +1282,7 @@ namespace Afluex.Controllers
 
                         }
 
-                        
+
                         //string mobval = "7310000413";
                         //string strval = "You got a quote Rquest from " + Name + " , Mob-" + Mobile + ", Project-" + ProjectType + " , Budget-" + YourBudget + ", Msg-" + Message;
                         //obj.Result = "Yes";
@@ -1323,12 +1323,12 @@ namespace Afluex.Controllers
             return Json(obj, JsonRequestBehavior.AllowGet);
         }
         #endregion Quotation
-    
+
         public ActionResult thankyou()
         {
             return View();
         }
-       
+
         public ActionResult jobs()
         {
             return View();
@@ -1411,5 +1411,10 @@ namespace Afluex.Controllers
         {
             return View("search_engine_marketing");
         }
+        public ActionResult CompilationPage()
+        {
+            return View();
+        }
     }
 }
+
