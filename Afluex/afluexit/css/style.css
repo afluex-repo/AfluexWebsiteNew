@@ -2105,3 +2105,22 @@ img.gallery-img:hover {
     {
         color:#418fb2
     }
+
+    /* error page css */
+
+ .error-section {
+    position: relative;
+    text-align: center;
+    padding: 110px 0px 120px;
+}
+    .error-section .error_text {
+    font-size: 27vw;
+    background: -webkit-linear-gradient(#3ea4adad, #34738d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Teko', sans-serif;
+}
+    .error-section h2{
+        font-size:70px;
+       font-family: 'Teko', sans-serif;
+    }
