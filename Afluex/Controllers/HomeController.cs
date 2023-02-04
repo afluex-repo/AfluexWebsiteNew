@@ -770,8 +770,7 @@ namespace Afluex.Controllers
             return View();
         }
 
-
-
+        
    
         public ActionResult SaveLandingPage(string Name, string Mobile, string Email)
         {
