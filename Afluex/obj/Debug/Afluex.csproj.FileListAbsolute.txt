@@ -609,6 +609,5 @@ D:\Repository-Projects\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Googl
 D:\Repository-Projects\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Twitter.xml
 D:\Repository-Projects\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\Repository-Projects\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
-D:\Repository-Projects\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
 D:\Repository-Projects\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 D:\Repository-Projects\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
