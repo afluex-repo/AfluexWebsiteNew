@@ -611,3 +611,4 @@ D:\Repository-Projects\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Micro
 D:\Repository-Projects\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
 D:\Repository-Projects\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 D:\Repository-Projects\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
+D:\Repository-Projects\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache

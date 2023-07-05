@@ -3,191 +3,621 @@
     ViewBag.Title = "gallery";
     Layout = "~/Views/Shared/Ad_LayoutPage.cshtml";
 }
-<style>
-.gallery-img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    overflow: hidden;
-    opacity: 0.8;
-}
-.gallery_product {
-    margin-bottom: 30px;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
-.filter-button
-{
-    display: inline-block;
-    padding: 10px 15px;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-    border: 1px solid #418fb2;
-    border-radius: 5px;
-}
-}
-</style>
-<section class="page-title text-center" style="background-image:url(../../afluexad/images/background/page_gallery.jpeg);">
-    <div class="container">
-        <h1>Our Gallery</h1>
-    </div>
-    <!--Page Info-->
-    <div class="page-info">
-        <div class="container clearfix">
-            <ul class="bread-crumb clearfix">
-                <li><a href="~/advertisement/advertising-agency"><i class="fa fa-home"></i></a> </li>
-                <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
+<!-- CSS links-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css'>
+<div class="page-wrapper">
+
+    <!-- Page Title -->
+    <section class="page-title" style="background-image: url(/assets/images/background/1.jpg)">
+        <div class="auto-container">
+            <h2>Our Gallery</h2>
+            <ul class="bread-crumb clearfix arrow_icon">
+                <li><a href="/advertisement/advertising-agency">Home</a></li>
                 <li>Gallery</li>
             </ul>
         </div>
-    </div>
-</section>
-<!-- End Page Title -->
-
-<section class="contactus_page">
-    <div class="container">
-        <div class="row">
-            <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-5">
-                <div class="text-center">
-                    <button class="btn btn-default filter-button active" id="all" onclick="call(this.id)">All</button>
-                    <button class="btn btn-default filter-button" id="happy_new_year" onclick="call(this.id)">Happy New Year 2021</button>
-                    <button class="btn btn-default filter-button" id="office" onclick="call(this.id)">Office </button>
-                    <button class="btn btn-default filter-button" id="diwali" onclick="call(this.id)">Diwali </button>
-                    <button class="btn btn-default filter-button" id="birthday" onclick="call(this.id)">Birthday</button>
-                </div>
+    </section>
+    <!--End Page Title-->
+    <section class="portfolio-section" id="portfolio">
+        <div class="container">
+            <div class="portfolio-menu mt-5 mb-4">
+                <nav class="controls text-center ">
+                    <button type="button" class="control outline" data-filter="all">All</button>
+                    <button type="button" class="control outline" data-filter=".new_year">Happy New Year 2021</button>
+                    <button type="button" class="control outline" data-filter=".office">Office</button>
+                    <button type="button" class="control outline" data-filter=".diwali">Diwali Celebration</button>
+                    <button type="button" class="control outline" data-filter=".birthday">Birthday Party</button>
+                </nav>
             </div>
-            <a href="~/afluexit/images/gallery/newyear_21/h4.jpg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter happy_new_year">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/newyear_21/h4.jpg">
-            </a>
-            @*<a href="~/afluexit/images/gallery/newyear_21/h10.jpg"
-                   class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter happy_new_year">
-                    <img class="gallery-img" src="~/afluexit/images/gallery/newyear_21/h10.jpg">
-                </a>*@
-            <a href="~/afluexit/images/gallery/newyear_21/h21.jpg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter happy_new_year">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/newyear_21/h21.jpg">
-            </a>
-            <a href="~/afluexit/images/gallery/newyear_21/h23.jpg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter happy_new_year">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/newyear_21/h23.jpg">
-            </a>
-            <a href="~/afluexit/images/gallery/newyear_21/h24.jpg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter happy_new_year">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/newyear_21/h24.jpg">
-            </a>
-            <a href="~/afluexit/images/gallery/newyear_21/h26.jpg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter happy_new_year">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/newyear_21/h26.jpg">
-            </a>
+            <ul class="row portfolio-item">
+                <li class="mix new_year col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/newyear_21/h4.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">New Year Celebration</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/newyear_21/h4.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix new_year col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/newyear_21/h21.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">New Year Celebration</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/newyear_21/h21.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix new_year col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/newyear_21/h23.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">New Year Celebration</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/newyear_21/h23.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix new_year col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/newyear_21/h24.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">New Year Celebration</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/newyear_21/h24.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix new_year col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/newyear_21/h26.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">New Year Celebration</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/newyear_21/h26.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix office col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/office/1.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Our Office</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/office/1.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix office col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/37.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Our Office</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/37.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
 
-            <a href="~/afluexit/images/gallery/office/1.jpg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter office">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/office/1.jpg">
-            </a>
-            <a href="~/afluexit/images/gallery/office/2.jpg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter office">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/office/2.jpg">
-            </a>
-            <a href="~/afluexit/images/gallery/office/5.jpg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter office">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/office/5.jpg">
-            </a>
-            <a href="~/afluexit/images/gallery/office/6.jpg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter office">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/office/6.jpg">
-            </a>
-            <a href="~/afluexit/images/gallery/office/7.jpg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter office">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/office/7.jpg">
-            </a>
-            <a href="~/afluexit/images/gallery/office/8.jpg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter office">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/office/8.jpg">
-            </a>
-            <a href="~/afluexit/images/gallery/office/9.jpg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter office">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/office/9.jpg">
-            </a>
-            <a href="~/afluexit/images/gallery/office/10.jpg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter office">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/office/10.jpg">
-            </a>
+                <!-- wall wrap advertising -->
+                <li class="mix office col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/office/2.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Our Office</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/office/2.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix office col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/office/5.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Our Office</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/office/5.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix office col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/office/6.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Our Office</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/office/6.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix office col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/office/7.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Our Office</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/office/7.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix office col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/office/8.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Our Office</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/office/8.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix office col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/office/9.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Our Office</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/office/9.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix office col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/office/10.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Our Office</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/office/10.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
 
-            <a href="~/afluexit/images/gallery/birthday/birthday_img9.jpeg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter birthday">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/birthday/birthday_img9.jpeg">
-            </a>
-
-            <a href="~/afluexit/images/gallery/birthday/birthday_img1.jpeg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter birthday">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/birthday/birthday_img1.jpeg">
-            </a>
-            <a href="~/afluexit/images/gallery/birthday/birthday_img2.jpeg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter birthday">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/birthday/birthday_img2.jpeg">
-            </a>
-
-            <a href="~/afluexit/images/gallery/birthday/birthday_img3.jpeg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter birthday">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/birthday/birthday_img3.jpeg">
-            </a>
-            <a href="~/afluexit/images/gallery/birthday/birthday_img5.jpeg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter birthday">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/birthday/birthday_img5.jpeg">
-            </a>
-            <a href="~/afluexit/images/gallery/birthday/birthday_img13.jpeg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter birthday">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/birthday/birthday_img13.jpeg">
-            </a>
-            <a href="~/afluexit/images/gallery/birthday/birthday_img6.jpeg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter birthday">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/birthday/birthday_img6.jpeg">
-            </a>
-            <a href="~/afluexit/images/gallery/birthday/birthday_img10.jpeg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter birthday">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/birthday/birthday_img10.jpeg">
-            </a>
-
-            <a href="~/afluexit/images/gallery/birthday/birthday_img11.jpeg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter birthday">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/birthday/birthday_img11.jpeg">
-            </a>
-            <a href="~/afluexit/images/gallery/birthday/birthday_img4.jpeg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter birthday">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/birthday/birthday_img4.jpeg">
-            </a>
-            <a href="~/afluexit/images/gallery/birthday/birthday_img8.jpeg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter birthday">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/birthday/birthday_img8.jpeg">
-            </a>
-            <a href="~/afluexit/images/gallery/birthday/birthday_img14.jpeg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter birthday">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/birthday/birthday_img14.jpeg">
-            </a>
-            <a href="~/afluexit/images/gallery/diwali/1.jpg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter diwali">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/diwali/1.jpg">
-            </a>
-            <a href="~/afluexit/images/gallery/diwali/2.jpg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter diwali">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/diwali/2.jpg">
-            </a>
-            <a href="~/afluexit/images/gallery/diwali/4.jpg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter diwali">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/diwali/4.jpg">
-            </a>
-            <a href="~/afluexit/images/gallery/diwali/5.jpg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter diwali">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/diwali/5.jpg">
-            </a>
-            <a href="~/afluexit/images/gallery/diwali/8.jpg"
-               class="glightbox gallery_product col-6 col-lg-3 col-md-3 col-sm-3 col-xs-6 filter diwali">
-                <img class="gallery-img img-fluid" src="~/afluexit/images/gallery/diwali/8.jpg">
-            </a>
+                <!--  retail branding  -->
+                <li class="mix birthday col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/birthday/birthday_img9.jpeg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Birthday Celebration</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/birthday/birthday_img9.jpeg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix birthday col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/birthday/birthday_img1.jpeg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Birthday Celebration</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/birthday/birthday_img1.jpeg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix birthday col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/birthday/birthday_img2.jpeg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Birthday Celebration</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/birthday/birthday_img2.jpeg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix birthday col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/birthday/birthday_img3.jpeg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Birthday Celebration</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/birthday/birthday_img3.jpeg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix birthday col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/birthday/birthday_img5.jpeg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Birthday Celebration</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/birthday/birthday_img5.jpeg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix birthday col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/birthday/birthday_img13.jpeg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Birthday Celebration</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/birthday/birthday_img13.jpeg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix birthday col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/birthday/birthday_img6.jpeg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Birthday Celebration</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/birthday/birthday_img6.jpeg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix birthday col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/birthday/birthday_img10.jpeg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Birthday Celebration</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/birthday/birthday_img10.jpeg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix birthday col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/birthday/birthday_img11.jpeg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Birthday Celebration</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/birthday/birthday_img11.jpeg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix birthday col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/birthday/birthday_img4.jpeg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Birthday Celebration</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/birthday/birthday_img4.jpeg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix birthday col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/birthday/birthday_img8.jpeg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Birthday Celebration</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/birthday/birthday_img8.jpeg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix birthday col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/birthday/birthday_img14.jpeg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Birthday Celebration</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/birthday/birthday_img14.jpeg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix diwali col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/diwali/1.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Diwali Celebration</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/diwali/1.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix diwali col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/diwali/2.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Diwali Celebration</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/diwali/2.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix diwali col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/diwali/4.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Diwali Celebration</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/diwali/4.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix diwali col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/diwali/5.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Diwali Celebration</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/diwali/5.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix diwali col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/gallery/diwali/8.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Diwali Celebration</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/gallery/diwali/8.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
-    </div>
-</section>
+    </section>
+</div>
+
+<!-- Mixitup -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.2.2/mixitup.min.js'></script>
+<!-- fancybox -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js'></script>
+<script>
+    var containerEl = document.querySelector(".portfolio-item");
+    var mixer = mixitup(containerEl, {
+      animation: {
+        effects: "fade translateZ(-100px)",
+        effectsIn: "fade translateY(-100%)",
+        easing: "cubic-bezier(0.645, 0.045, 0.355, 1)"
+      }
+    });
+    // fancybox insilaze & options //
+    $("[data-fancybox]").fancybox({
+      loop: true,
+      hash: true,
+      transitionEffect: "slide",
+      clickContent: function(current, event) {
+        return current.type === "image" ? "next" : false;
+      }
+    });
+</script>
