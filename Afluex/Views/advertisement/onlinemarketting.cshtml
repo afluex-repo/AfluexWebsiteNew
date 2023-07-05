@@ -4,57 +4,86 @@
     Layout = "~/Views/Shared/Ad_LayoutPage.cshtml";
 }
 
-<section class="page-title text-center" style="background-image:url(../../afluexad/images/background/page_services.jpeg);">
-    <div class="container">
-        <h1>Online Marketing Company In Lucknow</h1>
-    </div>
-    <!--Page Info-->
-    <div class="page-info">
-        <div class="container clearfix">
+<div class="page-wrapper">
+    <!-- Page Title -->
+    <section class="page-title" style="background-image: url(/assets/images/background/1.jpg)">
+        <div class="auto-container">
+            <h2>Online Marketing Company In Lucknow</h2>
             <ul class="bread-crumb clearfix">
-                <li><a href="~/advertisement/advertising-agency"><i class="fa fa-home"></i></a> </li>
-                <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
-                <li>Our Services</li>
-                <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
+                <li><a href="/advertisement/advertising-agency">Home</a></li>
                 <li>Online Marketing</li>
             </ul>
         </div>
-    </div>
-</section>
-<!-- End Page Title -->
+    </section>
+    <!--End Page Title-->
+    <!-- Sidebar Page Container -->
+    <div class="sidebar-page-container">
+        <div class="auto-container">
+            <div class="row clearfix">
 
-<section class="our_services">
-    <div class="container">
-        <div class="row">
-            <!-- Info Column -->
-            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
-                <div class="services_inner_column">
-                    <div class="ser_title">
-                        <h2>Online Marketing</h2>
-                        <h5>Online Marketing Services in Lucknow, India </h5>
-                    </div>
-                    <div class="services_content_details">
-                        <p>Afluex is a recognized Digital Marketing Company and a leader in providing Most Useful Search Engine Optimization Services and full Internet Advertising and Marketing Service to Clients All over, India.</p>
-                        <p>
-                            Our Professional analysis, practice and up to date the most recent technologies & provide support to find out your strengths, weaknesses and strategize for improvements to your business. We're a creative innovation Business
-                            that uses insights, design, and growth strategy to drive business value. Afluex is a complete service digital-marketing Company in Lucknow, India that takes the time to understand your company. Afluex Solutions is a complete
-                            service Digital Marketing Company that offers affordable SEO, Email Marketing, SEM, SMO, social media marketing and Website Designing services in Lucknow for the organizations and offer a high level of service experience
-                            in your budget.
-                        </p>
-                        <p>We are a search engine optimization Service Provider & help you to handle your organization's reputation in social networking Platforms.</p>
+                <!-- Content Side -->
+                <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                    <div class="service-detail">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="/assets/images/resource/online_marketing_ads.jpg" alt="">
+                            </div>
+                            <div class="lower-content">
+                                <h3>Online Marketing Company</h3>
+                                <p>Afluex is a recognized Digital Marketing Company and a leader in providing Most Useful Search Engine Optimization Services and full Internet Advertising and Marketing Service to Clients All over, India.</p>
+                                <p>Our Professional analysis, practice and up to date the most recent technologies & provide support to find out your strengths, weaknesses and strategize for improvements to your business. We're a creative innovation Business that uses insights, design, and growth strategy to drive business value. Afluex is a complete service digital-marketing Company in Lucknow, India that takes the time to understand your company. Afluex Solutions is a complete service Digital Marketing Company that offers affordable SEO, Email Marketing, SEM, SMO, social media marketing and Website Designing services in Lucknow for the organizations and offer a high level of service experience in your budget.</p>
+                                <p>We are a search engine optimization Service Provider & help you to handle your organization's reputation in social networking Platforms.</p>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Video Column -->
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                <div class="services_inner_column">
-                    <div class="ser_title">
-                        <h2>For Quick Demo</h2>
-                    </div>
-                    @{Html.RenderAction("DemoContact", "advertisement", new { area = "" });}
+                <!-- Sidebar Side -->
+                <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+                    <aside class="sidebar sticky-top">
+
+                        <!-- Service Widget -->
+                        <div class="sidebar-widget service-widget">
+                            <div class="widget-content">
+                                <ul class="service-list">
+                                    <li><a href="/advertisement/outdoor-advertising">Outdoor Advertising</a></li>
+                                    <li><a href="/advertisement/wall-wrap">Wall Wrap Ads</a></li>
+                                    <li><a href="/advertisement/inshop-outdoor-branding">Inshop & Outdoor Branding</a></li>
+                                    <li><a href="/advertisement/mobile-van-promotion">Mobile Van Promotion</a></li>
+                                    <li><a href="/advertisement/cinema-advertising">Multiplex Advertising</a></li>
+                                    <li><a href="/advertisement/auto-rickshaw-advertising">Auto Rickshaw Branding</a></li>
+                                    <li><a href="/advertisement/printing-services">Printing Services</a></li>
+                                    <li><a href="/advertisement/tv-advertising">TV Advertising</a></li>
+                                    <li><a href="/advertisement/radio-advertising">Radio Advertising</a></li>
+                                    <li><a href="/advertisement/fabrication-services">Fabrication Services</a></li>
+                                    <li><a href="/advertisement/event-management">Event Management</a></li>
+                                    <li><a href="/advertisement/online-marketing">Online Marketing</a></li>
+                                    <li><a href="/advertisement/airport-media">Airport Media</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Timing Widget -->
+                        <div class="sidebar-widget timing-widget">
+                            <div class="widget-content">
+                                <h3>Opening Hours</h3>
+                                <ul class="time-list">
+                                    <li>Monday - Saturday <span>10.00 am- 07.00 pm</span></li>
+                                    <li>Sunday <span>Closed</span></li>
+                                </ul>
+                                <div class="button-box">
+                                    <a href="/advertisement/contactus" class="theme-btn btn-style-seven">
+                                        <span class="txt">Contact Us<i class="flaticon-next-2"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </aside>
                 </div>
+
             </div>
         </div>
     </div>
-</section>
+</div>

@@ -3,24 +3,163 @@
     ViewBag.Title = "blogdetails";
     Layout = "~/Views/Shared/Ad_LayoutPage.cshtml";
 }
-
-<section class="page-title text-center" style="background-image:url(../../afluexad/images/background/page_blog.jpeg);">
-    <div class="container">
-        <h1>Blog Details</h1>
-    </div>
-    <!--Page Info-->
-    <div class="page-info">
-        <div class="container clearfix">
+<div class="page-wrapper">
+    <!-- Page Title -->
+    <section class="page-title" style="background-image: url(/assets/images/background/1.jpg)">
+        <div class="auto-container">
+            <h2>Blog Details</h2>
             <ul class="bread-crumb clearfix">
-                <li><a href="~/advertisement/advertising-agency"><i class="fa fa-home"></i></a> </li>
-                <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
-                <li>Blog Details</li>
+                <li><a href="/advertisement/advertising-agency">Home</a></li>
+                <li>Blog Detail</li>
             </ul>
         </div>
+    </section>
+    <!--End Page Title-->
+    <!-- Sidebar Page Container -->
+    <div class="sidebar-page-container">
+        <div class="auto-container">
+            <div class="row clearfix">
+
+                <!-- Content Side -->
+                <div class="content-side col-lg-8 col-md-12 col-sm-12">
+@if (Model != null)
+{
+    if (Model.List != null)
+    {
+        foreach (var item in Model.List)
+        {
+                    <div class="blog-detail">
+                        <div class="inner-box">
+
+                                    <div class="image">
+                                       <img src="/assets/images/resource/blog_1.jpg" alt="" class="img-fluid">
+                                    </div>
+                              
+                            <div class="lower-content">
+                                <h3>@item.Title</h3>
+                                <p>@(new HtmlString(item.Decription))</p>
+
+                            </div>
+                        </div>
+                    </div>
+        }
+    }
+}
+                </div>
+
+                <!-- Sidebar Side -->
+                <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+                    <aside class="sidebar sticky-top">
+                        <!-- Sidebar Widget / Popular Posts -->
+                        <div class="sidebar-widget popular-posts">
+                            <div class="widget-content">
+                                <!-- Sidebar Title -->
+                                <div class="sidebar-title">
+                                    <h3>Latest Blogs</h3>
+                                </div>
+
+                                <article class="post">
+                                    <figure class="post-thumb"><img src="/assets/images/resource/post-thumb-1.jpg" alt=""><a href="blog-detail-1.html" class="overlay-box"><span class="icon fa fa-link"></span></a></figure>
+                                    <div class="text"><a href="blog-detail-1.html">Show at the University</a></div>
+                                    <div class="post-info">23 December 2021</div>
+                                </article>
+
+                                <article class="post">
+                                    <figure class="post-thumb"><img src="/assets/images/resource/post-thumb-2.jpg" alt=""><a href="blog-detail-1.html" class="overlay-box"><span class="icon fa fa-link"></span></a></figure>
+                                    <div class="text"><a href="blog-detail-1.html">Show at the University</a></div>
+                                    <div class="post-info">23 December 2021</div>
+                                </article>
+
+                                <article class="post">
+                                    <figure class="post-thumb"><img src="/assets/images/resource/post-thumb-3.jpg" alt=""><a href="blog-detail-1.html" class="overlay-box"><span class="icon fa fa-link"></span></a></figure>
+                                    <div class="text"><a href="blog-detail-1.html">Show at the University</a></div>
+                                    <div class="post-info">23 December 2021</div>
+                                </article>
+
+                                <article class="post">
+                                    <figure class="post-thumb"><img src="/assets/images/resource/post-thumb-4.jpg" alt=""><a href="blog-detail-1.html" class="overlay-box"><span class="icon fa fa-link"></span></a></figure>
+                                    <div class="text"><a href="blog-detail-1.html">Show at the University</a></div>
+                                    <div class="post-info">23 December 2021</div>
+                                </article>
+
+                            </div>
+                        </div>
+                        <!-- End Sidebar Widget / Popular Posts -->
+                        <!-- Sidebar Widget / Contact Widget -->
+                        <div class="sidebar-widget contact-widget">
+                            <div class="widget-content">
+                                <!-- Sidebar Title -->
+                                <div class="sidebar-title">
+                                    <h3>Contact Us</h3>
+                                </div>
+
+                                <!-- Default Form Two -->
+                                <div class="default-form-two">
+                                    <form method="post" action="contact.html">
+
+                                        <!-- Form Group -->
+                                        <div class="form-group">
+                                            <input type="text" name="firstname" value="" placeholder="Enter name*" required="">
+                                        </div>
+
+                                        <!-- Form Group -->
+                                        <div class="form-group">
+                                            <input type="email" name="email" value="" placeholder="Enter your mail*" required="">
+                                        </div>
+
+                                        <!-- Form Group -->
+                                        <div class="form-group">
+                                            <input type="text" name="email" value="" placeholder="Enter your phone no.*" required="">
+                                        </div>
+
+                                        <!-- Form Group -->
+                                        <div class="form-group">
+                                            <textarea name="message" placeholder="Enter your Message*"></textarea>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <button type="submit" class="theme-btn btn-style-seven"><span class="txt">Send Messege <i class="flaticon-next-2"></i></span></button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <!-- End Default Form -->
+
+                            </div>
+                        </div>
+
+
+                        <!-- Sidebar Widget / Social Widget -->
+                        <div class="sidebar-widget sidebar-social-widget">
+                            <div class="widget-content">
+                                <!-- Sidebar Title -->
+                                <div class="sidebar-title">
+                                    <h3>Follow us</h3>
+                                </div>
+
+                                <!-- Social Box -->
+                                <ul class="social-box">
+                                    <li><a href="https://www.facebook.com/afluexllp/" target="blank" class="fa fa-facebook"></a></li>
+                                    <li><a href="https://twitter.com/AfluexLlp?s=17" target="blank" class="fa fa-twitter"></a></li>
+                                    <li><a href="https://www.linkedin.com/in/afluex-multiservices-llp-35a00716b/" target="blank" class="fa fa-linkedin"></a></li>
+                                    <li><a href="https://afluex.tumblr.com/" target="blank" class="fa fa-tumblr"></a></li>
+                                    <li><a href="https://in.pinterest.com/afluex_multiservices_llp/software-development/" target="blank" class="fa fa-pinterest"></a></li>
+                                    <li><a href="https://www.reddit.com/user/afluex/posts/" target="blank" class="fa fa-reddit"></a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </aside>
+                </div>
+
+            </div>
+        </div>
     </div>
-</section>
+
+</div>
 <!-- End Page Title -->
-<section class="blog_page">
+@*<section class="blog_page">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-12">
@@ -61,101 +200,6 @@
                     }
                 }
             </div>
-            <div class="col-lg-4 col-md-3 col-sm-12">
-                <div class="sidebar-widget popular-posts">
-                    <div class="widget-content">
-                        <!-- Sidebar Title -->
-                        <div class="sidebar-title mb-4">
-                            <h2>Latest Blogs</h2>
-                        </div>
-
-                        <article class="post d-flex">
-                            <figure class="post-thumb"><img src="~/afluexad/images/about-img.png" style="height:70px;" alt=""><a href="blog-detail.html" class="overlay-box"></a></figure>
-                            <div class="ml-15">
-                                <h6 class="text"><a href="blog-detail.html">Show at the University</a></h6>
-                                <div class="mt-2"><i class="fa fa-calendar"></i> 23 December 2021</div>
-                            </div>
-
-                        </article>
-                        <article class="post d-flex">
-                            <figure class="post-thumb"><img src="~/afluexad/images/about-img.png" style="height:70px;" alt=""><a href="blog-detail.html" class="overlay-box"></a></figure>
-                            <div class="ml-15">
-                                <h6 class="text"><a href="blog-detail.html">Show at the University</a></h6>
-                                <div class="mt-2"><i class="fa fa-calendar"></i> 23 December 2021</div>
-                            </div>
-
-                        </article>
-
-                        <article class="post d-flex">
-                            <figure class="post-thumb"><img src="~/afluexad/images/about-img.png" style="height:70px;" alt=""><a href="blog-detail.html" class="overlay-box"></a></figure>
-                            <div class="ml-15">
-                                <h6 class="text"><a href="blog-detail.html">Show at the University</a></h6>
-                                <div class="mt-2"><i class="fa fa-calendar"></i> 23 December 2021</div>
-                            </div>
-                        </article>
-
-                        <article class="post d-flex">
-                            <figure class="post-thumb"><img src="~/afluexad/images/about-img.png" style="height:70px;" alt=""><a href="blog-detail.html" class="overlay-box"></a></figure>
-                            <div class="ml-15">
-                                <h6 class="text"><a href="blog-detail.html">Show at the University</a></h6>
-                                <div class="mt-2"><i class="fa fa-calendar"></i> 23 December 2021</div>
-                            </div>
-                        </article>
-                        <article class="post d-flex">
-                            <figure class="post-thumb"><img src="~/afluexad/images/about-img.png" style="height:70px;" alt=""><a href="blog-detail.html" class="overlay-box"></a></figure>
-                            <div class="ml-15">
-                                <h6 class="text"><a href="blog-detail.html">Show at the University</a></h6>
-                                <div class="mt-2"><i class="fa fa-calendar"></i> 23 December 2021</div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
-</section>
-@*<section class="blog_page">
-    <div class="container">
-        @if (Model != null)
-        {
-            if (Model.List != null)
-            {
-                foreach (var item in Model.List)
-                {
-                    <div class="row">
-                        <div class="col-lg-8 col-md-12 col-sm-12">
-                            <div class="blog_title mb-4">
-                                <h2><a href="#">@item.Title</a> </h2>
-                            </div>
-                            <div class="blog_featured">
-
-                                @if (Model.lstimages != null)
-                                {
-                                    foreach (var item1 in Model.lstimages)
-                                    {
-                                        <a href="#"><figure class="image"><img src="https://afluex.com/@item1.FileName" alt="" class="img-fluid"></figure></a>
-                                    }
-                                }
-
-                            </div>
-                            <div class="blog_time_eye clearfix mt-4">
-                                <ul class="list-unsyled p-0">
-                                    <li class="list-inline-item"><span class="blog_icon"><i class="fa fa-user" aria-hidden="true"></i></span> @item.AddedBy</li>
-                                    <li class="list-inline-item"><span class="blog_icon"><i class="fa fa-eye" aria-hidden="true"></i></span> @item.AddedOn</li>
-                                </ul>
-                            </div>
-                            <div class="blog_details">
-                                <div class="blog_inner mt-4">
-                                    <p>
-                                        @(new HtmlString(item.Decription))
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                }
-            }
-        }
     </div>
 </section>*@

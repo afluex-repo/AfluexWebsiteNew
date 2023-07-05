@@ -3,608 +3,2071 @@
     ViewBag.Title = "portfolio";
     Layout = "~/Views/Shared/Ad_LayoutPage.cshtml";
 }
-<!-- Page Title -->
-<section class="page-title text-center" style="background-image:url(../../afluexad/images/background/page_portfolio.jpeg);">
-    <div class="container">
-        <h1>Portfolio</h1>
-    </div>
-    <!--Page Info-->
-    <div class="page-info">
-        <div class="container clearfix">
-            <ul class="bread-crumb clearfix">
-                <li><a href="~/advertisement/advertising-agency"><i class="fa fa-home"></i></a> </li>
-                <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
+<!-- CSS links-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css'>
+
+<div class="page-wrapper">
+    <!-- Page Title -->
+    <section class="page-title" style="background-image: url(/assets/images/background/1.jpg)">
+        <div class="auto-container">
+            <h2>Our Portfolio</h2>
+            <ul class="bread-crumb clearfix arrow_icon">
+                <li><a href="/advertisement/advertising-agency">Home</a></li>
                 <li>Portfolio</li>
             </ul>
         </div>
-    </div>
-</section>
-<!-- End Page Title -->
-
-<div class="portfolio_section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="filters filter-button-group">
-                    <ul>
-                        <li class="active"><a href="javascript:void(0);" data-filter="*">All</a></li>
-                        <li><a href="javascript:void(0);" data-filter="oohoutdoor">OOh Advertising</a></li>
-                        <li><a href="javascript:void(0);" data-filter="wallwrap">Wall Wrap Ads</a></li>
-                        <li><a href="javascript:void(0);" data-filter="retail">Retail Branding &amp; Fabrication</a></li>
-                        <li><a href="javascript:void(0);" data-filter="event">Event Management</a></li>
-                        <li><a href="javascript:void(0);" data-filter="other">Other Advertising Snaps</a></li>
-                    </ul>
-                </div>
+    </section>
+    <!--End Page Title-->
+    <section class="portfolio-section" id="portfolio">
+        <div class="container">
+            <div class="portfolio-menu mt-5 mb-4">
+                <nav class="controls text-center ">
+                    <button type="button" class="control outline" data-filter="all">All</button>
+                    <button type="button" class="control outline" data-filter=".ooh">OOh Advertising</button>
+                    <button type="button" class="control outline" data-filter=".wall_wrap">Wall Wrap Ads</button>
+                    <button type="button" class="control outline" data-filter=".retail">Retail Branding &amp; Fabrication</button>
+                    <button type="button" class="control outline" data-filter=".event">Event Management</button>
+                    <button type="button" class="control outline" data-filter=".other_ads">Other Advertising Snaps</button>
+                </nav>
             </div>
-        </div>
-        <div class="row justify-content-center">
-            <div id="portfolio_con" class="isotope">
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/hoarding-2.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/hoarding-2.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/hoarding-3.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/hoarding-3.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/hoarding-4.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/hoarding-4.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/hoarding-5.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/hoarding-5.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/hoarding-6.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/hoarding-6.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/hoarding-7.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/hoarding-7.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/hoarding-8.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/hoarding-8.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/hoarding-9.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/hoarding-9.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/hoarding-10.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/hoarding-10.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/hoarding-11.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/hoarding-11.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/hoarding-12.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/hoarding-12.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/hoarding-13.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/hoarding-13.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/hoarding-14.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/hoarding-14.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/hoarding-15.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/hoarding-15.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/hoarding-17.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/hoarding-17.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/hoarding-18.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/hoarding-18.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/22.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/22.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/28.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/28.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/29.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/29.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/31.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/31.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/32.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/32.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/33.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/33.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/34.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/34.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/39.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/39.png" class="img-fluid">
-                    </a>
-                </div>
-                
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/2.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/2.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/6.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/6.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/11.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/11.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/14.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/14.png" class="img-fluid">
-                    </a>
-                </div>
-               
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/21.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/21.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/hoarding-1.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/hoarding-1.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/23.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/23.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/24.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/24.png">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/1.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/1.png" class="img-fluid portfolio-img">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/19.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/19.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/25.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/25.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/26.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/26.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/27.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/27.png" class="img-fluid">
-                    </a>
-                </div>
-               
-                
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/35.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/35.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/36.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/36.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="oohoutdoor">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/outdoor_advertising/37.png">
-                        <img src="~/afluexad/images/portfolio/outdoor_advertising/37.png" class="img-fluid">
-                    </a>
-                </div>
-               
-                
-                
-               
+            <ul class="row portfolio-item">
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/hoarding-2.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/hoarding-2.png">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/hoarding-3.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/hoarding-3.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/hoarding-4.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/hoarding-4.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd ">
+                    <img src="/assets/images/portfolio/outdoor_advertising/hoarding-5.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/hoarding-5.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd ">
+                    <img src="/assets/images/portfolio/outdoor_advertising/hoarding-6.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/hoarding-6.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd ">
+                    <img src="/assets/images/portfolio/outdoor_advertising/hoarding-7.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/hoarding-7.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/hoarding-8.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/hoarding-8.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/hoarding-9.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/hoarding-9.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/hoarding-10.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/hoarding-10.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/hoarding-11.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/hoarding-11.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/hoarding-12.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/hoarding-12.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/hoarding-13.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/hoarding-13.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/hoarding-14.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/hoarding-14.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/hoarding-15.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/hoarding-15.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/hoarding-17.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/hoarding-17.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/hoarding-18.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/hoarding-18.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/22.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/22.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/28.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/28.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/29.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/29.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/31.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/31.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/32.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/32.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/33.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/33.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/34.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/34.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/39.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/39.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/2.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/2.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/6.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/6.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/11.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/11.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/14.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/14.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/21.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/21.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/hoarding-1.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/hoarding-1.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/23.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/23.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/24.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/24.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/1.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/1.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/19.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/19.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/25.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/25.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/26.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/26.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/27.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/27.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/35.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/35.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/36.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/36.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix ooh col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/outdoor_advertising/37.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">OOh Advertising</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/outdoor_advertising/37.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
                 <!-- wall wrap advertising -->
+                <li class="mix wall_wrap col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/Wallwrap/gonda-5.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Wall Wrap Ads</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/Wallwrap/gonda-5.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix wall_wrap col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/Wallwrap/wall_wrap-1.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Wall Wrap Ads</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/Wallwrap/wall_wrap-1.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix wall_wrap col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/Wallwrap/wall_wrap-2.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Wall Wrap Ads</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/Wallwrap/wall_wrap-2.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix wall_wrap col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/Wallwrap/wall_wrap-3.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Wall Wrap Ads</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/Wallwrap/wall_wrap-3.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix wall_wrap col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/Wallwrap/wall_wrap-4.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Wall Wrap Ads</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/Wallwrap/wall_wrap-4.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix wall_wrap col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/Wallwrap/wall_wrap-4.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Wall Wrap Ads</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/Wallwrap/wall_wrap-4.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix wall_wrap col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/Wallwrap/wall_wrap-5.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Wall Wrap Ads</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/Wallwrap/wall_wrap-5.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
 
-                <div class="grid-item" data-filter="wallwrap">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/Wallwrap/gonda-5.png">
-                        <img src="~/afluexad/images/portfolio/Wallwrap/gonda-5.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="wallwrap">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/Wallwrap/wall_wrap-1.png">
-                        <img src="~/afluexad/images/portfolio/Wallwrap/wall_wrap-1.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="wallwrap">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/Wallwrap/wall_wrap-2.png">
-                        <img src="~/afluexad/images/portfolio/Wallwrap/wall_wrap-2.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="wallwrap">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/Wallwrap/wall_wrap-3.png">
-                        <img src="~/afluexad/images/portfolio/Wallwrap/wall_wrap-3.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="wallwrap">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/Wallwrap/wall_wrap-4.png">
-                        <img src="~/afluexad/images/portfolio/Wallwrap/wall_wrap-4.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="wallwrap">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/Wallwrap/wall_wrap-5.png">
-                        <img src="~/afluexad/images/portfolio/Wallwrap/wall_wrap-5.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="retail">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/retail_branding_fabrication/branding-1.png">
-                        <img src="~/afluexad/images/portfolio/retail_branding_fabrication/branding-1.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="retail">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/retail_branding_fabrication/branding-2.png">
-                        <img src="~/afluexad/images/portfolio/retail_branding_fabrication/branding-2.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="retail">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/retail_branding_fabrication/branding-3.png">
-                        <img src="~/afluexad/images/portfolio/retail_branding_fabrication/branding-3.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="retail">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/retail_branding_fabrication/branding-4.png">
-                        <img src="~/afluexad/images/portfolio/retail_branding_fabrication/branding-4.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="retail">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/retail_branding_fabrication/branding-5.png">
-                        <img src="~/afluexad/images/portfolio/retail_branding_fabrication/branding-5.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="retail">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/retail_branding_fabrication/branding-6.png">
-                        <img src="~/afluexad/images/portfolio/retail_branding_fabrication/branding-6.png" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="retail">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/retail_branding_fabrication/35.jpg">
-                        <img src="~/afluexad/images/portfolio/retail_branding_fabrication/35.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="retail">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/retail_branding_fabrication/36.jpg">
-                        <img src="~/afluexad/images/portfolio/retail_branding_fabrication/36.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="retail">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/retail_branding_fabrication/37.jpg">
-                        <img src="~/afluexad/images/portfolio/retail_branding_fabrication/37.jpg" class="img-fluid">
-                    </a>
-                </div>
-                 <div class="grid-item" data-filter="retail">
-                     <a class="popupimg" href="~/afluexad/images/portfolio/retail_branding_fabrication/5.jpg">
-                         <img src="~/afluexad/images/portfolio/retail_branding_fabrication/5.jpg" class="img-fluid">
-                     </a>
-                 </div>
-                <div class="grid-item" data-filter="retail">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/retail_branding_fabrication/brand-8.jpeg">
-                        <img src="~/afluexad/images/portfolio/retail_branding_fabrication/brand-8.jpeg" class="img-fluid">
-                    </a>
-                </div>
-                 <div class="grid-item" data-filter="retail">
-                     <a class="popupimg" href="~/afluexad/images/portfolio/retail_branding_fabrication/7.jpg">
-                         <img src="~/afluexad/images/portfolio/retail_branding_fabrication/7.jpg" class="img-fluid">
-                     </a>
-                 </div>
-                 <div class="grid-item" data-filter="retail">
-                     <a class="popupimg" href="~/afluexad/images/portfolio/retail_branding_fabrication/34.jpg">
-                         <img src="~/afluexad/images/portfolio/retail_branding_fabrication/34.jpg" class="img-fluid">
-                     </a>
-                 </div>
-                
-                
-                 <div class="grid-item" data-filter="retail">
-                     <a class="popupimg" href="~/afluexad/images/portfolio/retail_branding_fabrication/40.jpg">
-                         <img src="~/afluexad/images/portfolio/retail_branding_fabrication/40.jpg" class="img-fluid">
-                     </a>
-                 </div>
-                 <div class="grid-item" data-filter="retail">
-                     <a class="popupimg" href="~/afluexad/images/portfolio/retail_branding_fabrication/41.jpg">
-                         <img src="~/afluexad/images/portfolio/retail_branding_fabrication/41.jpg" class="img-fluid">
-                     </a>
-                 </div>
-                 <div class="grid-item" data-filter="retail">
-                     <a class="popupimg" href="~/afluexad/images/portfolio/retail_branding_fabrication/brand-1.jpeg">
-                         <img src="~/afluexad/images/portfolio/retail_branding_fabrication/brand-1.jpeg" class="img-fluid">
-                     </a>
-                 </div>
-                <div class="grid-item" data-filter="retail">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/retail_branding_fabrication/brand-3.jpeg">
-                        <img src="~/afluexad/images/portfolio/retail_branding_fabrication/brand-3.jpeg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="retail">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/retail_branding_fabrication/Dhanbad,Jharkhand.jpeg">
-                        <img src="~/afluexad/images/portfolio/retail_branding_fabrication/Dhanbad,Jharkhand.jpeg" class="img-fluid">
-                    </a>
-                </div>
-               
-                <!-- event -->
+                <!--  retail branding  -->
+                <li class="mix retail col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/retail_branding_fabrication/branding-1.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Retail Branding &amp; Fabrication</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/retail_branding_fabrication/branding-1.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix retail col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/retail_branding_fabrication/branding-2.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Retail Branding &amp; Fabrication</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/retail_branding_fabrication/branding-2.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix retail col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/retail_branding_fabrication/branding-3.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Retail Branding &amp; Fabrication</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/retail_branding_fabrication/branding-3.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix retail col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/retail_branding_fabrication/branding-4.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Retail Branding &amp; Fabrication</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/retail_branding_fabrication/branding-4.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix retail col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/retail_branding_fabrication/branding-5.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Retail Branding &amp; Fabrication</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/retail_branding_fabrication/branding-5.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix retail col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/retail_branding_fabrication/branding-6.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Retail Branding &amp; Fabrication</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/retail_branding_fabrication/branding-6.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix retail col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/retail_branding_fabrication/35.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Retail Branding &amp; Fabrication</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/retail_branding_fabrication/35.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix retail col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/retail_branding_fabrication/36.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Retail Branding &amp; Fabrication</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/retail_branding_fabrication/36.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix retail col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/retail_branding_fabrication/37.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Retail Branding &amp; Fabrication</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/retail_branding_fabrication/37.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix retail col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/retail_branding_fabrication/5.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Retail Branding &amp; Fabrication</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/retail_branding_fabrication/5.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix retail col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/retail_branding_fabrication/brand-8.jpeg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Retail Branding &amp; Fabrication</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/retail_branding_fabrication/brand-8.jpeg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix retail col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/retail_branding_fabrication/7.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Retail Branding &amp; Fabrication</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/retail_branding_fabrication/7.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix retail col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/retail_branding_fabrication/34.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Retail Branding &amp; Fabrication</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/retail_branding_fabrication/34.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix retail col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/retail_branding_fabrication/40.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Retail Branding &amp; Fabrication</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/retail_branding_fabrication/40.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix retail col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/retail_branding_fabrication/41.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Retail Branding &amp; Fabrication</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/retail_branding_fabrication/41.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix retail col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/retail_branding_fabrication/brand-1.jpeg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Retail Branding &amp; Fabrication</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/retail_branding_fabrication/brand-1.jpeg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix retail col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/retail_branding_fabrication/brand-3.jpeg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Retail Branding &amp; Fabrication</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/retail_branding_fabrication/brand-3.jpeg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix retail col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/retail_branding_fabrication/Dhanbad,Jharkhand.jpeg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Retail Branding &amp; Fabrication</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/retail_branding_fabrication/Dhanbad,Jharkhand.jpeg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
 
-                <div class="grid-item" data-filter="event">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/event_management/1.png">
-                        <img src="~/afluexad/images/portfolio/event_management/1.png" class="img-fluid" alt="event-management">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="event">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/event_management/2.png">
-                        <img src="~/afluexad/images/portfolio/event_management/2.png" class="img-fluid" alt="event-management">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="event">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/event_management/3.png">
-                        <img src="~/afluexad/images/portfolio/event_management/3.png" class="img-fluid" alt="event-management">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="event">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/event_management/4.png">
-                        <img src="~/afluexad/images/portfolio/event_management/4.png" class="img-fluid" alt="event-management">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="event">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/event_management/5.png">
-                        <img src="~/afluexad/images/portfolio/event_management/5.png" class="img-fluid" alt="event-management">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="event">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/event_management/6.png">
-                        <img src="~/afluexad/images/portfolio/event_management/6.png" class="img-fluid" alt="event-management">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="event">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/event_management/8.png">
-                        <img src="~/afluexad/images/portfolio/event_management/8.png" class="img-fluid" alt="event-management">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="event">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/event_management/9.jpg">
-                        <img src="~/afluexad/images/portfolio/event_management/9.jpg" class="img-fluid" alt="event-management">
-                    </a>
-                </div>
+                <!-- event management -->
 
-                <!-- // event -->
+                <li class="mix event col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/event_management/1.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Event Management</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/event_management/1.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix event col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/event_management/2.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Event Management</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/event_management/2.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix event col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/event_management/3.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Event Management</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/event_management/3.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix event col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/event_management/4.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Event Management</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/event_management/4.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix event col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/event_management/5.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Event Management</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/event_management/5.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix event col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/event_management/6.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Event Management</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/event_management/6.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix event col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/event_management/8.png" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Event Management</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/event_management/8.png" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix event col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/event_management/9.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Event Management</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/event_management/9.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
                 <!-- other -->
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/1.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/1.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/2.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/2.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/3.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/3.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/4.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/4.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/5.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/5.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/6.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/6.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/7.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/7.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/8.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/8.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/9.gif">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/9.gif" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/10.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/10.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/11.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/11.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/12.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/12.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/13.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/13.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/14.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/14.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/15.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/15.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/16.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/16.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/18.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/18.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/19.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/19.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/20.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/20.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/21.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/21.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/23.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/23.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/24.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/24.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/25.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/25.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/26.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/26.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/27.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/27.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/28.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/28.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/29.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/29.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/30.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/30.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/31.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/31.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/32.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/32.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/33.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/33.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/34.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/34.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/35.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/35.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/36.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/36.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/37.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/37.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/38.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/38.jpg" class="img-fluid">
-                    </a>
-                </div>
-                <div class="grid-item" data-filter="other">
-                    <a class="popupimg" href="~/afluexad/images/portfolio/other_advertising_snaps/39.jpg">
-                        <img src="~/afluexad/images/portfolio/other_advertising_snaps/39.jpg" class="img-fluid">
-                    </a>
-                </div>
-            </div>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/1.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/1.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/2.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/2.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/3.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/3.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/4.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/4.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/5.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/5.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/6.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/6.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/7.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/7.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/8.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/8.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/9.gif" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/9.gif" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/10.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/10.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/11.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/11.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/12.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/12.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/13.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/13.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/14.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/14.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/15.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/15.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/16.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/16.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/18.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/18.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/19.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/19.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/20.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/20.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/21.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/21.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/22.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/22.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/23.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/23.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/24.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/24.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/25.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/25.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/26.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/26.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/27.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/27.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/28.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/28.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/29.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/29.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/30.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/30.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/31.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/31.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/32.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/32.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/33.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/33.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/34.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/34.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/35.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/35.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/36.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/36.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/37.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/37.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/38.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/38.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mix other_ads col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="/assets/images/portfolio/other_advertising_snaps/39.jpg" itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Other Advertising Snaps</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in" href="/assets/images/portfolio/other_advertising_snaps/39.jpg" data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
-    </div>
+    </section>
 </div>
+
+<!-- Mixitup -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.2.2/mixitup.min.js'></script>
+<!-- fancybox -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js'></script>
+<script>
+    var containerEl = document.querySelector(".portfolio-item");
+    var mixer = mixitup(containerEl, {
+      animation: {
+        effects: "fade translateZ(-100px)",
+        effectsIn: "fade translateY(-100%)",
+        easing: "cubic-bezier(0.645, 0.045, 0.355, 1)"
+      }
+    });
+    // fancybox insilaze & options //
+    $("[data-fancybox]").fancybox({
+      loop: true,
+      hash: true,
+      transitionEffect: "slide",
+      clickContent: function(current, event) {
+        return current.type === "image" ? "next" : false;
+      }
+    });
+</script>
+
+
 
 
