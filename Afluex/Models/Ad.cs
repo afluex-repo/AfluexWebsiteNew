@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 
 namespace Afluex.Models
@@ -32,8 +33,16 @@ namespace Afluex.Models
         public string ProductName { get; set; }
         public string ProductUrl { get; set; }
 
+        public List<Ad> lstvacancy { get; set; }
+        public string PK_VacancyID { get; set; }
+        public string Designation { get; set; }
+        public string MinExperience { get; set; }
+        public string SalaryRange { get; set; }
 
+        public string UploadFile { get; set; }
+        public string TotalVacancy { get; set; }
 
+         
 
         public DataSet SaveContactus()
         {
@@ -123,6 +132,17 @@ namespace Afluex.Models
             DataSet ds = Connection.ExecuteQuery("InsertProductDemo", para);
             return ds;
         }
+
+        public DataSet GetOpenVacancyList()
+        {
+            SqlParameter[] para = {
+                                    new SqlParameter("@PK_VacancyID",PK_VacancyID)
+                                  };
+            DataSet ds = Connection.ExecuteQuery("GetOpenVacancyList", para);
+            return ds;
+        }
+
+
 
 
     }

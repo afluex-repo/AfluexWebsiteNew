@@ -1,236 +1,266 @@
 ﻿@model Afluex.Models.Ad
 
 @{
-    ViewBag.Title = "career"; 
-     Layout = "~/Views/Shared/Ad_LayoutPage.cshtml";
+    ViewBag.Title = "career";
+    Layout = "~/Views/Shared/Ad_LayoutPage.cshtml";
 }
 
 @using (Html.BeginForm("career", "advertisement", FormMethod.Post, new { @id = "form1", enctype = "multipart/form-data" }))
 {
-<div class="page-wrapper">
-    <!-- Page Title -->
-    <section class="page-title" style="background-image: url(/assets/images/background/1.jpg)">
+    <div class="page-wrapper">
+        <!-- Page Title -->
+        <section class="page-title" style="background-image: url(/assets/images/background/1.jpg)">
+            <div class="auto-container">
+                <h2>Career</h2>
+                <ul class="bread-crumb clearfix">
+                    <li><a href="/advertisement/advertising-agency">Home</a></li>
+                    <li>Career with us</li>
+                </ul>
+            </div>
+        </section>
+        <!--End Page Title-->
+        <!-- Sidebar Page Container -->
+        <div class="sidebar-page-container">
+            <div class="auto-container">
+                <!-- Sec Title -->
+                <div class="sec-title centered mb-5">
+                    <div class="title style-two">Career with us</div>
+                    <h2>Working at<span> Afluex</span> Multiservices LLP</h2>
+                    <p>
+                        Afluex Multiservices LLP was built on strong values, principles and a vision - to deliver high
+                        value
+                        results to our customers and to create win & win relationships for everyone associated with us,
+                        Be it customers or employees.
+                    </p>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            @*<div class="card-body">
+                                    <div class="post">
+                                        <div class="content d-flex justify-content-between align-items-center">
+                                            <img src="/assets/images/logo-black.png" class="career_logo img-fluid" />
+                                            <h5>EXPERT SEO Content Writer Needed</h5>
+                                            <h5>LUCKNOW</h5>
+                                            <h5>FULL TIME</h5>
+                                        </div>
+                                        <div class="bottom_content d-flex justify-content-between align-items-baseline">
+                                            <h5 class="p-3">Experience: 2 Years Minimum</h5>
+                                            <h5>Vacancies- 2</h5>
+                                            <a class="btn btn-style-three apply_btn">Apply Now</a>
+                                        </div>
+                                    </div>
+                                    <div class="post mt-5">
+                                        <div class="content d-flex justify-content-between align-items-center">
+                                            <img src="/assets/images/logo-black.png" class="career_logo img-fluid" />
+                                            <h5>EXPERT SEO Content Writer Needed</h5>
+                                            <h5>LUCKNOW</h5>
+                                            <h5>FULL TIME</h5>
+                                        </div>
+                                        <div class="bottom_content d-flex justify-content-between align-items-baseline">
+                                            <h5 class="p-3">Experience: 2 Years Minimum</h5>
+                                            <h5>Vacancies- 2</h5>
+                                            <a class="btn btn-style-three apply_btn">Apply Now</a>
+                                        </div>
+                                    </div>
+                                    <div class="post mt-5">
+                                        <div class="content d-flex justify-content-between align-items-center">
+                                            <img src="/assets/images/logo-black.png" class="career_logo img-fluid" />
+                                            <h5>EXPERT SEO Content Writer Needed</h5>
+                                            <h5>LUCKNOW</h5>
+                                            <h5>FULL TIME</h5>
+                                        </div>
+                                        <div class="bottom_content d-flex justify-content-between align-items-baseline">
+                                            <h5 class="p-3">Experience: 2 Years Minimum</h5>
+                                            <h5>Vacancies- 2</h5>
+                                            <a class="btn btn-style-three apply_btn">Apply Now</a>
+                                        </div>
+                                    </div>
+                                </div>*@
+
+                            <div class="card-body">
+                                @if (Model != null)
+                                {
+                                    if (Model.lstvacancy != null)
+                                    {
+                                        foreach (var Item in Model.lstvacancy)
+                                        {
+
+                                            <div class="post">
+                                                <div class="content d-flex justify-content-between align-items-center">
+                                                    @*<img src="/assets/images/logo-black.png" class="career_logo img-fluid" />*@
+                                                    <img src="@Item.UploadFile" class="career_logo img-fluid" style="height:50px;" />
+                                                    @*<h5>EXPERT SEO Content Writer Needed</h5>*@
+                                                    <h5>@Item.Designation</h5>
+                                                    <h5>LUCKNOW</h5>
+                                                    <h5>FULL TIME</h5>
+                                                </div>
+                                                <div class="bottom_content d-flex justify-content-between align-items-baseline">
+                                                    <h5 class="p-3">Experience : @Item.MinExperience</h5>
+                                                    <h5 class="p-3">Vacancies : @Item.TotalVacancy</h5>
+                                                    <h5 class="p-3">Salary : @Item.SalaryRange</h5>
+                                                    <a href="#career_form" class="btn btn-style-three apply_btn">Apply Now</a>
+
+                                                </div>
+                                            </div>
+
+                                        }
+                                    }
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Agency Section -->
+    <section class="agency-section" id="career_form">
         <div class="auto-container">
-            <h2>Career</h2>
-            <ul class="bread-crumb clearfix">
-                <li><a href="/advertisement/advertising-agency">Home</a></li>
-                <li>Career with us</li>
-            </ul>
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <!-- Form Column -->
+                    <div class="form-column col-lg-12 col-md-12 col-sm-12">
+                        <div class="inner-column">
+                            <!-- Sec Title -->
+                            <div class="sec-title">
+                                <h2>Fill out this <span>form</span></h2>
+                            </div>
+                            @TempData["Career"]
+                            <!-- Default Form -->
+                            <div class="default-form">
+                                <form method="post" action="">
+                                    <div class="row clearfix">
+
+                                        <!-- Form Group -->
+                                        <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                                            <label>Enter your name*</label>
+                                            @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @Placeholder = "Name" })
+
+                                        </div>
+
+                                        <!-- Form Group -->
+                                        <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                                            <label>Enter your email address*</label>
+                                            @Html.TextBoxFor(m => m.Email, new
+                                       {
+                                           @class = "EmailID form-control",
+                                           @Placeholder = "Email",
+                                           @onchange = "return ValidateCheckEmailID();"
+                                       })
+                                        </div>
+
+                                        <!-- Form Group -->
+                                        <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                                            <label>Enter your mobile no.*</label>
+                                            @Html.TextBoxFor(m => m.Mobile, new { @class = "form-control", @Placeholder = "Mobile", @maxlength = "10", @onkeypress = "return isNumberKey(event);" })
+                                        </div>
+
+                                        <!-- Form Group -->
+                                        <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                                            <label>Upload your CV/Resume*</label><br />
+                                            <input name="postedFile" type="file" id="postedFile" class="form-control" placeholder="file">
+                                            @*<input type="file" name="subject" value="" placeholder="Weabsite Link*"
+                                                required="">*@
+                                        </div>
+
+                                        <!-- Form Group -->
+                                        <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                                            <label>Description</label><br />
+                                            @Html.TextAreaFor(m => m.Description, new { @class = "form-control", @Placeholder = "Description" })
+                                        </div>
+
+                                        <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                                            <input type="submit" class="theme-btn btn-style-three" value="Submit" name="Save" onclick="return validateform();" />
+                                            @*<button type="submit" class="theme-btn btn-style-three">
+                                                    <span class="txt">
+                                                        Apply Now <i class="flaticon-next-2"></i>
+                                                    </span>
+                                                </button>*@
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- End Default Form -->
+
+                        </div>
+                    </div>
+                    <!-- Image Column -->
+
+                </div>
+            </div>
+            <!-- End Form Section -->
         </div>
     </section>
-    <!--End Page Title-->
-    <!-- Sidebar Page Container -->
-    <div class="sidebar-page-container">
-        <div class="auto-container">
-            <!-- Sec Title -->
-            <div class="sec-title centered mb-5">
-                <div class="title style-two">Career with us</div>
-                <h2>Working at<span> Afluex</span> Multiservices LLP</h2>
-                <p>
-                    Afluex Multiservices LLP was built on strong values, principles and a vision - to deliver high
-                    value
-                    results to our customers and to create win & win relationships for everyone associated with us,
-                    Be it customers or employees.
-                </p>
-            </div>
-            <div class="row clearfix">
-                <div class="col-lg-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="post">
-                                <div class="content d-flex justify-content-between align-items-center">
-                                    <img src="/assets/images/logo-black.png" class="career_logo img-fluid" />
-                                    <h5>EXPERT SEO Content Writer Needed</h5>
-                                    <h5>LUCKNOW</h5>
-                                    <h5>FULL TIME</h5>
-                                </div>
-                                <div class="bottom_content d-flex justify-content-between align-items-baseline">
-                                    <h5 class="p-3">Experience: 2 Years Minimum</h5>
-                                    <h5>Vacancies- 2</h5>
-                                    <a class="btn btn-style-three apply_btn">Apply Now</a>
-                                </div>
-                            </div>
-                            <div class="post mt-5">
-                                <div class="content d-flex justify-content-between align-items-center">
-                                    <img src="/assets/images/logo-black.png" class="career_logo img-fluid" />
-                                    <h5>EXPERT SEO Content Writer Needed</h5>
-                                    <h5>LUCKNOW</h5>
-                                    <h5>FULL TIME</h5>
-                                </div>
-                                <div class="bottom_content d-flex justify-content-between align-items-baseline">
-                                    <h5 class="p-3">Experience: 2 Years Minimum</h5>
-                                    <h5>Vacancies- 2</h5>
-                                    <a class="btn btn-style-three apply_btn">Apply Now</a>
-                                </div>
-                            </div>
-                            <div class="post mt-5">
-                                <div class="content d-flex justify-content-between align-items-center">
-                                    <img src="/assets/images/logo-black.png" class="career_logo img-fluid" />
-                                    <h5>EXPERT SEO Content Writer Needed</h5>
-                                    <h5>LUCKNOW</h5>
-                                    <h5>FULL TIME</h5>
-                                </div>
-                                <div class="bottom_content d-flex justify-content-between align-items-baseline">
-                                    <h5 class="p-3">Experience: 2 Years Minimum</h5>
-                                    <h5>Vacancies- 2</h5>
-                                    <a class="btn btn-style-three apply_btn">Apply Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Agency Section -->
-<section class="agency-section">
-    <div class="auto-container">
-        <div class="auto-container">
-            <div class="row clearfix">
-                <!-- Form Column -->
-                <div class="form-column col-lg-12 col-md-12 col-sm-12">
-                    <div class="inner-column">
-                        <!-- Sec Title -->
-                        <div class="sec-title">
-                            <h2>Fill out this <span>form</span></h2>
-                        </div>
-                        @TempData["Career"]
-                        <!-- Default Form -->
-                        <div class="default-form">
-                            <form method="post" action="">
-                                <div class="row clearfix">
-
-                                    <!-- Form Group -->
-                                    <div class="form-group col-lg-6 col-md-12 col-sm-12">
-                                        <label>Enter your name*</label>
-                                        @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @Placeholder = "Name" })
-                                     
-                                    </div>
-
-                                    <!-- Form Group -->
-                                    <div class="form-group col-lg-6 col-md-12 col-sm-12">
-                                        <label>Enter your email address*</label>
-                                        @Html.TextBoxFor(m => m.Email, new
-                                    {
-                                        @class = "EmailID form-control",
-                                        @Placeholder = "Email",
-                                        @onchange = "return ValidateCheckEmailID();"
-                                    })
-                                    </div>
-
-                                    <!-- Form Group -->
-                                    <div class="form-group col-lg-6 col-md-12 col-sm-12">
-                                        <label>Enter your mobile no.*</label>
-                                      @Html.TextBoxFor(m => m.Mobile, new { @class = "form-control", @Placeholder = "Mobile", @maxlength = "10", @onkeypress = "return isNumberKey(event);" })
-                                    </div>
-
-                                    <!-- Form Group -->
-                                    <div class="form-group col-lg-6 col-md-12 col-sm-12">
-                                        <label>Upload your CV/Resume*</label><br />
-                                        <input name="postedFile" type="file" id="postedFile" class="form-control" placeholder="file">
-                                        @*<input type="file" name="subject" value="" placeholder="Weabsite Link*"
-                                               required="">*@
-                                    </div>
-
-                                    <!-- Form Group -->
-                                    <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                                        <label>Description</label><br />
-                                        @Html.TextAreaFor(m => m.Description, new { @class = "form-control", @Placeholder = "Description" })
-                                    </div>
-
-                                    <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                                        <input type="submit" class="theme-btn btn-style-three" value="Submit" name="Save" onclick="return validateform();" />
-                                        @*<button type="submit" class="theme-btn btn-style-three">
-                                            <span class="txt">
-                                                Apply Now <i class="flaticon-next-2"></i>
-                                            </span>
-                                        </button>*@
-                                    </div>
-
-                                </div>
-                            </form>
-                        </div>
-                        <!-- End Default Form -->
-
-                    </div>
-                </div>
-                <!-- Image Column -->
-
-            </div>
-        </div>
-        <!-- End Form Section -->
-    </div>
-</section>
 }
 <!-- End Agency Section -->
 <!-- End Page Title -->
-
 @*<section class="contactus_page">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 text-center">
-                <img src="~/afluexad/images/career1.png" alt="career">
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 m-b30 mt-5">
-                @TempData["Career"]
-                <form class="contact-box dzForm p-a30 border-1" action="">
-                    <h3 class="title-box" style="background: #418fb2;margin: 0px 0px 30px 0px;
-    padding: 20px 30px;color: #fff;line-height: 35px;margin: 0px 0px 30px 0px;">New Journey Start With Afluex</h3>
-                    <div class="dzFormMsg m-b20"></div>
-                    <input type="hidden" value="Contact" name="dzToDo">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12">
-                            <div class="form-group mb-4">
-                                <div class="input-group">
-                                    @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @Placeholder = "Name"})
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+                    <img src="~/afluexad/images/career1.png" alt="career">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 m-b30 mt-5">
+                    @TempData["Career"]
+                    <form class="contact-box dzForm p-a30 border-1" action="">
+                        <h3 class="title-box" style="background: #418fb2;margin: 0px 0px 30px 0px;
+        padding: 20px 30px;color: #fff;line-height: 35px;margin: 0px 0px 30px 0px;">New Journey Start With Afluex</h3>
+                        <div class="dzFormMsg m-b20"></div>
+                        <input type="hidden" value="Contact" name="dzToDo">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group mb-4">
+                                    <div class="input-group">
+                                        @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @Placeholder = "Name"})
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="form-group mb-4">
-                                <div class="input-group">
-                                    @Html.TextBoxFor(m => m.Mobile, new { @class = "form-control", @Placeholder = "Mobile", @maxlength = "10", @onkeypress = "return isNumberKey(event);"})
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group mb-4">
+                                    <div class="input-group">
+                                        @Html.TextBoxFor(m => m.Mobile, new { @class = "form-control", @Placeholder = "Mobile", @maxlength = "10", @onkeypress = "return isNumberKey(event);"})
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="form-group mb-4">
-                                <div class="input-group">
-                                    @Html.TextBoxFor(m => m.Email, new { @class = "EmailID form-control", @Placeholder = "Email",
-                                   @onchange = "return ValidateCheckEmailID();"
-                               })
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group mb-4">
+                                    <div class="input-group">
+                                        @Html.TextBoxFor(m => m.Email, new { @class = "EmailID form-control", @Placeholder = "Email",
+                                       @onchange = "return ValidateCheckEmailID();"
+                                   })
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-12 col-md-12">
-                            <div class="form-group mb-4">
-                                <div class="input-group">
-                                    <input name="postedFile" type="file" id="postedFile" class="form-control" placeholder="file">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group mb-4">
+                                    <div class="input-group">
+                                        <input name="postedFile" type="file" id="postedFile" class="form-control" placeholder="file">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-12 col-md-12">
-                            <div class="form-group mb-4">
-                                <div class="input-group">
-                                    @Html.TextAreaFor(m => m.Description, new { @class = "form-control", @Placeholder = "Description" })
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group mb-4">
+                                    <div class="input-group">
+                                        @Html.TextAreaFor(m => m.Description, new { @class = "form-control", @Placeholder = "Description" })
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-12 col-md-12">
-                            <div class="contact_btn">
-                                <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="Save" onclick="return validateform();" />
-                               
+                            <div class="col-lg-12 col-md-12">
+                                <div class="contact_btn">
+                                    <input type="submit" class="btn btn-primary btn-lg" value="Submit" name="Save" onclick="return validateform();" />
+
+                                </div>
                             </div>
+
                         </div>
-                       
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-</section>*@
+    </section>*@
 
 <script>
     function validateform() {

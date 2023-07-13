@@ -32,6 +32,24 @@ namespace Afluex.Models
         public string About { get; set; }
         public string Message { get; set; }
         public string ContactusType { get; set; }
+        
+        public string PK_CareerOpporID { get; set; }
+        public string MVCDeveloper { get; set; }
+        public string MobileApplication { get; set; }
+        public string Graphics { get; set; }
+        public string SearchEngine { get; set; }
+        public string Marketing { get; set; }
+
+        public List<Blog> lstcareer { get; set; }
+        public List<Blog> lstvacancy { get; set; }
+
+        public string PK_VacancyID { get; set; }
+        public string Designation { get; set; }
+        public string MinExperience { get; set; }
+        public string SalaryRange { get; set; }
+
+        public string UploadFile { get; set; }
+        public string TotalVacancy { get; set; }
 
         public DataSet SaveBlog()
         {
@@ -128,5 +146,105 @@ namespace Afluex.Models
             DataSet ds = Connection.ExecuteQuery("DeleteBlogImage", para);
             return ds;
         }
+
+        
+        public DataSet CareerOpportunities()
+        {
+            SqlParameter[] para = {
+                                    new SqlParameter("@Description",Description),
+                                    new SqlParameter("@MVCDeveloper",MVCDeveloper),
+                                        new SqlParameter("@MobileApplication",MobileApplication),
+                                    new SqlParameter("@Graphics",Graphics),
+                                        new SqlParameter("@SearchEngine",SearchEngine),
+                                    new SqlParameter("@Marketing",Marketing),
+                                        new SqlParameter("@AddedBy",AddedBy),
+                                  };
+            DataSet ds = Connection.ExecuteQuery("CareerOpportunities", para);
+            return ds;
+        }
+
+
+        public DataSet UpdateCareerOpportunities()
+        {
+            SqlParameter[] para = {
+                     new SqlParameter("@PK_CareerOpporID",PK_CareerOpporID),
+                                    new SqlParameter("@Description",Description),
+                                    new SqlParameter("@MVCDeveloper",MVCDeveloper),
+                                        new SqlParameter("@MobileApplication",MobileApplication),
+                                    new SqlParameter("@Graphics",Graphics),
+                                        new SqlParameter("@SearchEngine",SearchEngine),
+                                    new SqlParameter("@Marketing",Marketing),
+                                        new SqlParameter("@AddedBy",AddedBy),
+                                  };
+            DataSet ds = Connection.ExecuteQuery("UpdateCareerOpportunities", para);
+            return ds;
+        }
+        
+
+        public DataSet GetCareerOpportunitiesList()
+        {
+            SqlParameter[] para =
+            {
+                new SqlParameter("@PK_CareerOpporID",PK_CareerOpporID),
+            };
+            DataSet ds = Connection.ExecuteQuery("GetCareerOpportunitiesList", para);
+            return ds;
+        }
+
+
+        public DataSet SaveOpenVacancy()
+        {
+            SqlParameter[] para = {
+                                    new SqlParameter("@Designation",Designation),
+                                    new SqlParameter("@MinExperience",MinExperience),
+                                        new SqlParameter("@SalaryRange",SalaryRange),
+                                            new SqlParameter("@UploadFile",UploadFile),
+                                        new SqlParameter("@TotalVacancy",TotalVacancy),
+                                        new SqlParameter("@AddedBy",AddedBy)
+                                  };
+            DataSet ds = Connection.ExecuteQuery("SaveOpenVacancy", para);
+            return ds;
+        }
+        
+        public DataSet GetOpenVacancyList()
+        {
+            SqlParameter[] para = {
+                                    new SqlParameter("@PK_VacancyID",PK_VacancyID)
+                                  };
+            DataSet ds = Connection.ExecuteQuery("GetOpenVacancyList", para);
+            return ds;
+        }
+
+        
+
+        public DataSet UpdateOpenVacancy()
+        {
+            SqlParameter[] para = {
+                                 new SqlParameter("@PK_VacancyID",PK_VacancyID),
+                                    new SqlParameter("@Designation",Designation),
+                                    new SqlParameter("@MinExperience",MinExperience),
+                                        new SqlParameter("@SalaryRange",SalaryRange),
+                                                     new SqlParameter("@UploadFile",UploadFile),
+                                        new SqlParameter("@TotalVacancy",TotalVacancy),
+                                        new SqlParameter("@AddedBy",AddedBy)
+                                  };
+            DataSet ds = Connection.ExecuteQuery("UpdateOpenVacancy", para);
+            return ds;
+        }
+
+
+
+        public DataSet DeleteOpenVacancy()
+        {
+            SqlParameter[] para = {
+                                 new SqlParameter("@PK_VacancyID",PK_VacancyID),
+                                        new SqlParameter("@AddedBy",AddedBy)
+                                  };
+            DataSet ds = Connection.ExecuteQuery("DeleteOpenVacancy", para);
+            return ds;
+        }
+
+        
+
     }
 }
