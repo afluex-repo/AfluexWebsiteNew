@@ -2745,6 +2745,10 @@
     <Content Include="Views\web\search_engine_marketing.cshtml" />
     <Content Include="Views\web\term_conditions.cshtml" />
     <Content Include="Views\web\CompilationPage.cshtml" />
+    <Content Include="Views\Admin\CareerOpportunities.cshtml" />
+    <Content Include="Views\Admin\CareerOpportunitiesList.cshtml" />
+    <Content Include="Views\Admin\OpenVacancy.cshtml" />
+    <Content Include="Views\Admin\OpenVacancyList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="afluexad\fontawesome\" />
@@ -2757,6 +2761,7 @@
     <Folder Include="assets\images\portfolio\broadcast_advertising\" />
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="SoftwareCss\images\portfolio\mnkkvgukdjgdfjgikd\" />
+    <Folder Include="UploadFile\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

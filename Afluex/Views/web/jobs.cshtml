@@ -1,4 +1,5 @@
-﻿
+﻿@model Afluex.Models.Home
+
 @{
     ViewBag.Title = "jobs";
     Layout = "~/Views/Shared/Web_Layout.cshtml";
@@ -22,29 +23,62 @@
 <!-- End Page Title -->
 
 <section class="contactus_page">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <h2 class="green">Career Opportunities / Current Openings</h2>
-                <div class="career_inner mt-4">
-                    <p>
-                        Rated amongst one of the fastest growing companies, Afluex Multiservices LLP is built on a strong vision and corporate philosophy well-founded on its core values, With one of the lowest attrition rates in the industry Afluex Multiservices
-                        LLP offers the best opportunity for its employees to innovate, learn and grow. Joining hands with such an organization will put you on a guaranteed growth-path.
-                    </p>
+
+
+    @using (Html.BeginForm("jobs", "web", FormMethod.Post, new { @id = "form1" }))
+    {
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h2 class="green">Career Opportunities / Current Openings</h2>
+                    <div class="career_inner mt-4">
+                        <p>
+                            @*@ViewBag.Description*@
+
+                            Rated amongst one of the fastest growing companies, Afluex Multiservices LLP is built on a strong vision and corporate philosophy well-founded on its core values, With one of the lowest attrition rates in the industry Afluex Multiservices
+                            LLP offers the best opportunity for its employees to innovate, learn and grow. Joining hands with such an organization will put you on a guaranteed growth-path.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="career_apply_job">
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="">.NET MVC Developer Exp 2+</a></li>
-                        <li><a href="#" class="">Mobile Application Developer Exp 3+</a></li>
-                        <li><a href="#" class="">Graphics/Web Designer Exp 2+</a></li>
-                        <li><a href="#" class="">Search Engine Optimization (SEO) Exp 2+</a></li>
-                        <li><a href="#" class="">Sales and Marketing Manager 2+</a></li>
-                    </ul>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    @*<div class="career_apply_job">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="">.NET MVC Developer Exp 2+</a></li>
+                                    <li><a href="#" class="">Mobile Application Developer Exp 3+</a></li>
+                                    <li><a href="#" class="">Graphics/Web Designer Exp 2+</a></li>
+                                    <li><a href="#" class="">Search Engine Optimization (SEO) Exp 2+</a></li>
+                                    <li><a href="#" class="">Sales and Marketing Manager 2+</a></li>
+
+                                <li><a href="#" class="">@ViewBag.MVCDeveloper</a></li>
+                                <li><a href="#" class="">@ViewBag.MobileApplication</a></li>
+                                <li><a href="#" class="">@ViewBag.Graphics</a></li>
+                                <li><a href="#" class="">@ViewBag.SearchEngine</a></li>
+                                <li><a href="#" class="">@ViewBag.Marketing</a></li>
+                            </ul>
+                        </div>*@
+
+                    @if (Model != null)
+                    {
+                        if (Model.lstvacancy != null)
+                        {
+                            foreach (var Item in Model.lstvacancy)
+                            {
+                                <div class="career_apply_job">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="">@Item.Designation    @Item.MinExperience    Vacancies : @Item.TotalVacancy     Salary : @Item.SalaryRange</a></li>
+                                        @*<li><a href="#" class="">.NET MVC Developer Exp 2+</a></li>
+                                        <li><a href="#" class="">Mobile Application Developer Exp 3+</a></li>
+                                        <li><a href="#" class="">Graphics/Web Designer Exp 2+</a></li>
+                                        <li><a href="#" class="">Search Engine Optimization (SEO) Exp 2+</a></li>
+                                        <li><a href="#" class="">Sales and Marketing Manager 2+</a></li>*@
+                                    </ul>
+                                </div>
+                            }
+                        }
+                    }
                 </div>
             </div>
         </div>
-
-    </div>
+    }
 </section>
