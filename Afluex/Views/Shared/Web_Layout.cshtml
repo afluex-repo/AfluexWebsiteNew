@@ -1430,6 +1430,9 @@ Hospital management Softwares, ERP Software, Nidhi Cooperative Software, Web Dev
             background-color: #fff0f0 !important;
         }
     </style>
+    @* whatsapp chat script *@
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-9574dc92-fe1d-4f62-990d-907817dc0987" data-elfsight-app-lazy></div>
 </head>
 <body>
     <!-- Preloader -->
@@ -1682,7 +1685,7 @@ Hospital management Softwares, ERP Software, Nidhi Cooperative Software, Web Dev
     </div>
     <!--Modal-->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Inquiry Form</h5>
@@ -1943,6 +1946,16 @@ Hospital management Softwares, ERP Software, Nidhi Cooperative Software, Web Dev
     <script src="~/afluexit/js/glightbox.min.js"></script>
     <script src="~/afluexit/js/gallery.js"></script>
     <script type="text/javascript">
+
+        $(document).ready(function () {
+            // Delay showing the modal by 10 seconds
+            setTimeout(function () {
+                $("#exampleModal").modal('show');
+            }, 10000); // 10 seconds (10000 milliseconds)
+        });
+
+       
+
         // number count for stats, using jQuery animate
 
         $('.counting').each(function() {
