@@ -368,58 +368,66 @@ namespace Afluex.Controllers
                         try
                         {
 
-                            #region SendEmailToAdmin
-                            SmtpClient mailServer = new SmtpClient("smtp.gmail.com", 587);
-                            mailServer.EnableSsl = true;
-                            //mailServer.Credentials = new System.Net.NetworkCredential(model.SenderEmail, model.SenderPassword);
-                            mailServer.Credentials = new System.Net.NetworkCredential("contact.afluex@gmail.com", "Multiservices@437");
-
-                            MailMessage myMail = new MailMessage();
-                            myMail.IsBodyHtml = true;
-                            myMail.Subject = "Career";
-                            myMail.Body = "<b>Dear team</b>" + "<br/>" + "You got a career inquiry from" + "<br/>" + "Name : " + dsRegistration.Tables[0].Rows[0]["Name"].ToString() + "<br/>" + "Mobile No : " + dsRegistration.Tables[0].Rows[0]["Mobile"].ToString() + "<br/>" + " Email : " + dsRegistration.Tables[0].Rows[0]["Email"].ToString() + "<br/>" + " Description : " + dsRegistration.Tables[0].Rows[0]["Description"].ToString();
-                            myMail.From = new MailAddress("contact.afluex@gmail.com");
-                            myMail.To.Add("contact.afluex@gmail.com");
-                            HttpPostedFileBase file = Request.Files["postedfile"];
-                            if (file != null && file.ContentLength > 0)
+                            try
                             {
-                                if (file.ContentLength < 12288000)
+
+
+                                #region SendEmailToAdmin
+                                SmtpClient mailServer = new SmtpClient("smtp.gmail.com", 587);
+                                mailServer.EnableSsl = true;
+                                //mailServer.Credentials = new System.Net.NetworkCredential(model.SenderEmail, model.SenderPassword);
+                                mailServer.Credentials = new System.Net.NetworkCredential("contact.afluex@gmail.com", "Multiservices@437");
+
+                                MailMessage myMail = new MailMessage();
+                                myMail.IsBodyHtml = true;
+                                myMail.Subject = "Career";
+                                myMail.Body = "<b>Dear team</b>" + "<br/>" + "You got a career inquiry from" + "<br/>" + "Name : " + dsRegistration.Tables[0].Rows[0]["Name"].ToString() + "<br/>" + "Mobile No : " + dsRegistration.Tables[0].Rows[0]["Mobile"].ToString() + "<br/>" + " Email : " + dsRegistration.Tables[0].Rows[0]["Email"].ToString() + "<br/>" + " Description : " + dsRegistration.Tables[0].Rows[0]["Description"].ToString();
+                                myMail.From = new MailAddress("contact.afluex@gmail.com");
+                                myMail.To.Add("contact.afluex@gmail.com");
+                                HttpPostedFileBase file = Request.Files["postedfile"];
+                                if (file != null && file.ContentLength > 0)
                                 {
-                                    string filename = Path.GetFileName(file.FileName);
-                                    var attachment = new Attachment(file.InputStream, filename);
-                                    myMail.Attachments.Add(attachment);
+                                    if (file.ContentLength < 12288000)
+                                    {
+                                        string filename = Path.GetFileName(file.FileName);
+                                        var attachment = new Attachment(file.InputStream, filename);
+                                        myMail.Attachments.Add(attachment);
+                                    }
                                 }
+                                mailServer.Send(myMail);
+
+
+                                #endregion SendEmailToAdmin
+
+
+
+                                #region SendEmailToCandidate
+
+                                SmtpClient mailServer1 = new SmtpClient("smtp.gmail.com", 587);
+                                mailServer.EnableSsl = true;
+                                //mailServer.Credentials = new System.Net.NetworkCredential(model.SenderEmail, model.SenderPassword);
+                                mailServer.Credentials = new System.Net.NetworkCredential("contact.afluex@gmail.com", "Multiservices@437");
+
+                                MailMessage myMail1 = new MailMessage();
+                                myMail1.IsBodyHtml = true;
+                                myMail1.Subject = "Career";
+                                mailbody = "<div style='width:100%;background:#fff;font-size:12px;font-family:Verdana,Geneva,sans-serif'><table style = 'width:640px;border:none;font-size:12px;margin:0 auto' cellpadding = '0' cellspacing = '0'><tbody><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:15px 0'><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div><a><img style = 'width:180px' src = 'https://afluex.com/Softwarecss/images/logo-load.png'></a></div><h1 style = 'color:#fff;font-weight:normal'></h1></div></div></td></tr>"
+                            + "<tr><td><div style='background:#fff;vertical-align:top;padding:1px 0;border-bottom-right-radius:5px;border-bottom-left-radius:5px;border-left:1px solid #ddd;border-right:1px solid #ddd'><h4 style = 'font-size:14px;padding:10px 8px'>"
+                             + "Dear " + dsRegistration.Tables[0].Rows[0]["Name"].ToString() + ",<br/> Thank you ! for showing your interest in Afluex.<br/>Our HR Team will contact you soon.For Enquiry call us on 7310000413,412 or Mail us on -"
+                              + "<a href = 'mailto:supportnow@afluex.com' target= '_blank' style='color:#fff'>supportnow@afluex.com</a>.</h4></div></td></tr><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:1px 0'>"
+            + "<div style= 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div></div><h1 style= 'color:#fff;font-weight:normal'> Afluex Multiservices LLP</h1>"
+            + "<h4 style = 'color:#fff;font-weight:normal'> Our Expertise in : Advertising / IT Services </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 412/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i class='text-white' style='color:#fff'> supportnow@afluex.com</i></h4>"
+            + "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i><span style='color:#fff'>https://www.afluex.com/</span></i></h4>"
+            + "</div></div></td></tr><tr><td><p style='color:#888;font-size:11px;margin-bottom:20px'>© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
+
+                                myMail1.Body = mailbody;
+                                myMail1.From = new MailAddress("contact.afluex@gmail.com", "Afluex Multiservices LLP");
+                                myMail1.To.Add(dsRegistration.Tables[0].Rows[0]["Email"].ToString());
+
+                                mailServer.Send(myMail1);
                             }
-                            mailServer.Send(myMail);
-
-
-                            #endregion SendEmailToAdmin
-
-                            #region SendEmailToCandidate
-
-                            SmtpClient mailServer1 = new SmtpClient("smtp.gmail.com", 587);
-                            mailServer.EnableSsl = true;
-                            //mailServer.Credentials = new System.Net.NetworkCredential(model.SenderEmail, model.SenderPassword);
-                            mailServer.Credentials = new System.Net.NetworkCredential("contact.afluex@gmail.com", "Multiservices@437");
-
-                            MailMessage myMail1 = new MailMessage();
-                            myMail1.IsBodyHtml = true;
-                            myMail1.Subject = "Career";
-                            mailbody = "<div style='width:100%;background:#fff;font-size:12px;font-family:Verdana,Geneva,sans-serif'><table style = 'width:640px;border:none;font-size:12px;margin:0 auto' cellpadding = '0' cellspacing = '0'><tbody><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:15px 0'><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div><a><img style = 'width:180px' src = 'https://afluex.com/Softwarecss/images/logo-load.png'></a></div><h1 style = 'color:#fff;font-weight:normal'></h1></div></div></td></tr>"
-                        + "<tr><td><div style='background:#fff;vertical-align:top;padding:1px 0;border-bottom-right-radius:5px;border-bottom-left-radius:5px;border-left:1px solid #ddd;border-right:1px solid #ddd'><h4 style = 'font-size:14px;padding:10px 8px'>"
-                         + "Dear " + dsRegistration.Tables[0].Rows[0]["Name"].ToString() + ",<br/> Thank you ! for showing your interest in Afluex.<br/>Our HR Team will contact you soon.For Enquiry call us on 7310000413,412 or Mail us on -"
-                          + "<a href = 'mailto:supportnow@afluex.com' target= '_blank' style='color:#fff'>supportnow@afluex.com</a>.</h4></div></td></tr><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:1px 0'>"
-        + "<div style= 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div></div><h1 style= 'color:#fff;font-weight:normal'> Afluex Multiservices LLP</h1>"
-        + "<h4 style = 'color:#fff;font-weight:normal'> Our Expertise in : Advertising / IT Services </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 412/05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i class='text-white' style='color:#fff'> supportnow@afluex.com</i></h4>"
-        + "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i><span style='color:#fff'>https://www.afluex.com/</span></i></h4>"
-        + "</div></div></td></tr><tr><td><p style='color:#888;font-size:11px;margin-bottom:20px'>© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
-
-                            myMail1.Body = mailbody;
-                            myMail1.From = new MailAddress("contact.afluex@gmail.com", "Afluex Multiservices LLP");
-                            myMail1.To.Add(dsRegistration.Tables[0].Rows[0]["Email"].ToString());
-
-                            mailServer.Send(myMail1);
-
+                            catch (Exception ex)
+                            { }
                             #endregion SendEmailToCandidate
 
 
