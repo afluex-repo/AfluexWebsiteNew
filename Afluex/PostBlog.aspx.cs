@@ -152,7 +152,7 @@ namespace Afluex
                 {
                     foreach (HttpPostedFile uploadedFile in flpimages.PostedFiles)
                     {
-                        String path = HttpContext.Current.Request.PhysicalApplicationPath + "SoftwareCss\\images\\blog\\";
+                        String path = HttpContext.Current.Request.PhysicalApplicationPath + "\\SoftwareCss\\images\\blog\\";
                         string filename = DateTime.Now.ToString("ddMMyyyyHHmmsss") + uploadedFile.FileName;
 
                         //uploadedFile.SaveAs(System.IO.Path.Combine(Server.MapPath("~/Images/NewsSecondaryImage"), filename));
@@ -185,7 +185,7 @@ namespace Afluex
                             {
                                 dr = dtImages.NewRow();
 
-                                dr["ImagePath"] = "SoftwareCss/images/blog/" + filename;
+                                dr["ImagePath"] = "\\SoftwareCss/images/blog/" + filename;
                                 dtImages.Rows.Add(dr);
                                 Session["dtSecImages"] = dtImages;
                             }
@@ -194,7 +194,7 @@ namespace Afluex
                         {
                             dtImages.Columns.Add("ImagePath", typeof(string));
                             DataRow dr = dtImages.NewRow();
-                            dr["ImagePath"] = "SoftwareCss/images/blog/" + filename;
+                            dr["ImagePath"] = "\\SoftwareCss/images/blog/" + filename;
                             dtImages.Rows.Add(dr);
                             Session["dtSecImages"] = dtImages;
                         }
