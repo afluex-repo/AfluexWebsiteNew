@@ -36,6 +36,34 @@ namespace Afluex.Models
         public string FromDate { get; set; }
         public string ToDate { get; set; }
         public string Captcha { get; set; }
+        public string PK_CareerOpporID { get; set; }
+        public string MVCDeveloper { get; set; }
+        public string MobileApplication { get; set; }
+        public string Graphics { get; set; }
+        public string SearchEngine { get; set; }
+        public string Marketing { get; set; }
+
+        public List<Home> lstvacancy { get; set; }
+        public string PK_VacancyID { get; set; }
+        public string Designation { get; set; }
+        public string MinExperience { get; set; }
+        public string SalaryRange { get; set; }
+        public string TotalVacancy { get; set; }
+
+
+        public DataSet GetOpenVacancyList()
+        {
+            SqlParameter[] para = {
+                                    new SqlParameter("@PK_VacancyID",PK_VacancyID)
+                                  };
+            DataSet ds = Connection.ExecuteQuery("GetOpenVacancyList", para);
+            return ds;
+        }
+
+
+
+
+
         public DataSet SaveCareer()
         {
             SqlParameter[] para =
@@ -141,5 +169,17 @@ namespace Afluex.Models
             DataSet ds = Connection.ExecuteQuery("InsertContactUsDetails", para);
             return ds;
         }
+
+
+        public DataSet GetCareerOpportunitiesList()
+        {
+            SqlParameter[] para =
+            {
+                new SqlParameter("@PK_CareerOpporID",PK_CareerOpporID),
+            };
+            DataSet ds = Connection.ExecuteQuery("GetCareerOpportunitiesList",para);
+            return ds;
+        }
+
     }
 }

@@ -4,27 +4,162 @@
     ViewBag.Title = "contactus";
     Layout = "~/Views/Shared/Ad_LayoutPage.cshtml";
 }
+<style>
+a{
+    display:block !important;
+}
+#CaptchaInputText {
+    border: 1px solid #c0c0c0;
+    width: 132px;
+    margin-bottom: 10px;
+    padding: 4px 4px;
+}
 
+img#CaptchaImage {
+    border: 3px solid #306065;
+    border-radius: 5px;
+    /* margin-top: -103px; */
+    margin-bottom: 0px !important;
+    height: 50px;
+    max-width:130px;
+    float: left;
+    margin-right: 7px;
+}
+
+</style>
     <!-- Page Title -->
-<section class="page-title text-center" style="background-image:url(../../afluexad/images/background/page_contact.jpeg);">
-    <div class="container">
-        <h1>Contact Us</h1>
-    </div>
-    <!--Page Info-->
-    <div class="page-info">
-        <div class="container clearfix">
+@using (Html.BeginForm("contactus", "advertisement", FormMethod.Post, new { @id = "form1", enctype = "multipart/form-data" }))
+{
+<div class="page-wrapper">
+    <!-- Page Title -->
+    <section class="page-title" style="background-image: url(/assets/images/background/1.jpg)">
+        <div class="auto-container">
+            <h2>Contact Us</h2>
             <ul class="bread-crumb clearfix">
-                <li><a href="~/advertisement/advertising-agency"><i class="fa fa-home"></i></a> </li>
-                <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
+                <li><a href="/advertisement/advertising-agency">Home</a></li>
                 <li>Contact Us</li>
             </ul>
         </div>
-    </div>
-</section>
+    </section>
+    <!--End Page Title-->
+    <!-- Contact Page Section -->
+    <section class="contact-page-section">
+        <div class="auto-container">
+            <div class="row clearfix mt-none-30">
+
+                <!-- Contact Info Block -->
+                <div class="contact-info-block col-lg-4 col-md-5 col-sm-12">
+                    <div class="inner-box mt-30">
+                        <div class="content">
+                            <span class="icon flaticon-email-3"></span>
+                            <h4>Mail address</h4>
+                            <a href="mailto:supportnow@afluex.com">supportnow@afluex.com</a>
+                        </div>
+                    </div>
+                    <div class="inner-box mt-30">
+                        <div class="content">
+                            <span class="icon flaticon-map"></span>
+                            <h4>Office address</h4>
+                            <div class="text">
+                                D-54, 2nd Floor Arjun Tower Near Ola Office, Vibhuti Khand,
+                                Lucknow, Uttar Pradesh 226010
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner-box mt-30">
+                        <div class="content">
+                            <span class="icon flaticon-telephone"></span>
+                            <h4>Phone Number</h4>
+                            <a href="tel:91731-0000-413">+91 731-0000-413 /</a>
+                            <a href="tel:91731-0000-412">731-0000-412</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Map -->
+                <div class="contact-map-section col-lg-8 col-md-7 col-sm-12">
+                    <div class="map-boxed mt-30">
+                        <!--Map Outer-->
+                        <div class="map-outer">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.2835357921967!2d80.99475741488692!3d26.862731368707145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be3ad67cf86c1%3A0xe090e6813b2b28b9!2sAfluex%20Multiservices%20LLP!5e0!3m2!1sen!2sin!4v1649751123656!5m2!1sen!2sin" title="Afluex address tracker" width="100%" class="map_h" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form Box -->
+            <div class="contact-form-box">
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <!-- Title Box -->
+                    <div class="title-box">
+                        <h2>Drop Us a Line</h2>
+                        <div class="text">Your email address will not be published. Required fields are marked *</div>
+                        <p style="color:teal">@TempData["ContactMsg"]</p>
+
+                    </div>
+                    <form method="post" action="" id="contact-form">
+                        @Html.AntiForgeryToken()
+                        <div class="row clearfix">
+                            <!-- Form Group -->
+                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                <span class="icon flaticon-user-3"></span>
+                                @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @Placeholder = "Name" })
+                            </div>
+
+                            <!-- Form Group -->
+                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                <span class="icon flaticon-email-3"></span>
+                                @Html.TextBoxFor(m => m.Email, new
+                             {
+                                 @class = "EmailID form-control",
+                                 @Placeholder = "Email",
+                                 @onchange = "return ValidateEmailChecked();"
+                             })
+                            </div>
+
+                            <!-- Form Group -->
+                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                <span class="icon flaticon-chat-1"></span>
+                                @Html.TextBoxFor(m => m.About, new { @class = "form-control", @Placeholder = "About" })
+                            </div>
+
+                            <!-- Form Group -->
+                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                <span class="icon flaticon-call-2"></span>
+                                @Html.TextBoxFor(m => m.Mobile, new { @class = "form-control", @Placeholder = "Mobile", @onkeypress = "return isNumberKey(event);", @maxlength = "10" })
+                            </div>
+
+                            <!-- Form Group -->
+                            <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                                <span class="icon flaticon-pen"></span>
+                                @Html.TextAreaFor(m => m.CusMessage, new { @class = "form-control", @cols = "80", @rows = "3", @Placeholder = "Message", @required = "required" })
+                                @Html.MathCaptcha()
+                            </div>
+                           
+                            <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                                <input type="submit" class="theme-btn btn-style-seven" value="Submit" name="btnSave" onclick="return validateform()" />
+                                @*<button type="submit" class="theme-btn btn-style-seven"><span class="txt">post a comment</span></button>*@
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
+                <!-- eND Contact Form -->
+
+            </div>
+
+        </div>
+    </section>
+    <!-- End Contact Page Section -->
+
+</div>
+}
 <!-- End Page Title -->
-@using (Html.BeginForm("contactus", "advertisement", FormMethod.Post, new { @id = "form1", enctype = "multipart/form-data" }))
-{
-   <section class="contactus_page">
+
+   @*<section class="contactus_page">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-12 m-b30">
@@ -80,7 +215,7 @@
                         <div class="col-lg-12 col-md-12">
                             <div class="contact_btn">
                                 <input type="submit" class="btn btn-primary" value="Submit" name="btnSave"  onclick="return validateform()"/>
-                                @*<p style="color:red">@TempData["ContactMsg"]</p>*@
+                                @*<p style="color:red">@TempData["ContactMsg"]</p>*
                             </div>
                         </div>
                     </div>
@@ -115,12 +250,10 @@
 
         </div>
     </div>
-</section>
-}
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>*
+</section>*@
+
 <script>
     $(document).ready(function () {
-        $("#divload").css({ 'display': 'none' });
         setTimeout(function(){
             $('.captcha').html($('.captcha').html().replace('The answer is', ''))
     },200)

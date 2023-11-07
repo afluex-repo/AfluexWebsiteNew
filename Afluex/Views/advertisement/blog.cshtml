@@ -3,33 +3,210 @@
     ViewBag.Title = "blog";
     Layout = "~/Views/Shared/Ad_LayoutPage.cshtml";
 }
-<style>
-    .ml-15
-    {
-        margin-left:15px;
-    }
-    a{
-        text-decoration:none;
-    }
-</style>
-<section class="page-title text-center" style="background-image:url(../../afluexad/images/background/page_blog.jpeg);">
-    <div class="container">
-        <h1>Advertisment blog</h1>
-    </div>
-    <!--Page Info-->
-    <div class="page-info">
-        <div class="container clearfix">
+<div class="page-wrapper">
+
+    <!-- Page Title -->
+    <section class="page-title" style="background-image: url(/assets/images/background/1.jpg)">
+        <div class="auto-container">
+            <h2>Our Blog</h2>
             <ul class="bread-crumb clearfix">
-                <li><a href="~/advertisement/advertising-agency"><i class="fa fa-home"></i></a> </li>
-                <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
+                <li><a href="/advertisement/advertising-agency">Home</a></li>
                 <li>Blog</li>
             </ul>
         </div>
+    </section>
+    <!--End Page Title-->
+    <!-- Sidebar Page Container -->
+    <div class="sidebar-page-container">
+        <div class="auto-container">
+            <div class="row clearfix">
+
+                <!-- Content Side -->
+                <div class="content-side col-lg-8 col-md-12 col-sm-12">
+
+
+                    <div class="blog-classic">
+@if (Model != null)
+{
+    if (Model.List != null)
+    {
+        foreach (var item in Model.List)
+        {
+                        <!-- News Block Three -->
+                        <div class="news-block-three">
+                            <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                <div class="image">
+                                    <a href="/advertisement/blogdetails?id=@item.Pk_BlogId"><img src="@item.FileName" alt=""></a>
+                                    <div class="post-date">@item.AddedOn</div>
+                                </div>
+                                <div class="lower-content">
+                                    <h2><a href="/advertisement/blogdetails?id=@item.Pk_BlogId">@item.Title</a></h2>
+                                    <ul class="post-info">
+                                        <li><span class="icon far fa-user"></span> @item.AddedBy</li>
+                                        <li><span class="icon fas fa-comment"></span> 0 Comments</li>
+                                        @*<li><span class="icon fas fa-tag"></span> @item.AddedOn</li>*@
+                                    </ul>
+                                    <div class="text">@(new HtmlString(item.ShortDecription))</div>
+                                    <div class="clearfix">
+                                        <div class="pull-left">
+                                            <a href="/advertisement/blogdetails?id=@item.Pk_BlogId" class="read-more">Read more</a>
+                                        </div>
+                                        <div class="pull-right">
+                                            <ul class="share-options">
+                                                <li><a href="#" class="flaticon-share-1"></a></li>
+                                                <li><a href="#" class="flaticon-heart"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- News Block Three -->
+        }
+    }
+}
+                        <!-- Styled Pagination -->
+                        <ul class="styled-pagination text-center">
+                            <li class="prev"><a href="#"><span class="fa fa-angle-double-left"></span></a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#" class="active">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li class="next"><a href="#"><span class="fa fa-angle-double-right"></span></a></li>
+                        </ul>
+                        <!-- End Styled Pagination -->
+
+                    </div>
+      
+
+                </div>
+
+                <!-- Sidebar Side -->
+                <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+                    <aside class="sidebar sticky-top">
+
+                        <!-- Sidebar Widget / Popular Posts -->
+                        <div class="sidebar-widget popular-posts">
+                            <div class="widget-content">
+                                <!-- Sidebar Title -->
+                                <div class="sidebar-title">
+                                    <h3>Latest Blogs</h3>
+                                </div>
+@if (Model != null)
+{
+    if (Model.lsttop4blog != null)
+    {
+        foreach (var item in Model.lsttop4blog)
+        {
+
+            <article class="post">
+                <figure class="post-thumb"><img src="@item.UploadFile" alt=""><a href="/advertisement/blogdetails?id=@item.Pk_BlogId" class="overlay-box"><span class="icon fa fa-link"></span></a></figure>
+                <div class="text"><a href="blog-detail-1.html">@item.Title</a></div>
+                <div class="post-info">@item.AddedOn</div>
+            </article>
+
+                                @*<article class="post">
+                                        <figure class="post-thumb"><img src="/assets/images/resource/post-thumb-2.jpg" alt=""><a href="blog-detail-1.html" class="overlay-box"><span class="icon fa fa-link"></span></a></figure>
+                                        <div class="text"><a href="blog-detail-1.html">Show at the University</a></div>
+                                        <div class="post-info">23 December 2021</div>
+                                    </article>
+
+                                    <article class="post">
+                                        <figure class="post-thumb"><img src="/assets/images/resource/post-thumb-3.jpg" alt=""><a href="blog-detail-1.html" class="overlay-box"><span class="icon fa fa-link"></span></a></figure>
+                                        <div class="text"><a href="blog-detail-1.html">Show at the University</a></div>
+                                        <div class="post-info">23 December 2021</div>
+                                    </article>
+
+                                    <article class="post">
+                                        <figure class="post-thumb"><img src="/assets/images/resource/post-thumb-4.jpg" alt=""><a href="blog-detail-1.html" class="overlay-box"><span class="icon fa fa-link"></span></a></figure>
+                                        <div class="text"><a href="blog-detail-1.html">Show at the University</a></div>
+                                        <div class="post-info">23 December 2021</div>
+                                    </article>*@
+
+
+
+        }
+    }
+}
+
+                            </div>
+                        </div>
+                        <!-- End Sidebar Widget / Popular Posts -->
+                        <!-- Sidebar Widget / Contact Widget -->
+                        <div class="sidebar-widget contact-widget">
+                            <div class="widget-content">
+                                <!-- Sidebar Title -->
+                                <div class="sidebar-title">
+                                    <h3>Contact Us</h3>
+                                </div>
+
+                                <!-- Default Form Two -->
+                                <div class="default-form-two">
+                                    <form method="post" action="">
+
+                                        <!-- Form Group -->
+                                        <div class="form-group">
+                                            <input type="text" name="firstname" value="" placeholder="Enter name*" required="">
+                                        </div>
+
+                                        <!-- Form Group -->
+                                        <div class="form-group">
+                                            <input type="email" name="email" value="" placeholder="Enter your mail*" required="">
+                                        </div>
+
+                                        <!-- Form Group -->
+                                        <div class="form-group">
+                                            <input type="text" name="number" value="" placeholder="Enter your phone no*" required="">
+                                        </div>
+
+                                        <!-- Form Group -->
+                                        <div class="form-group">
+                                            <textarea name="message" placeholder="Enter your Message*"></textarea>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <button type="submit" class="theme-btn btn-style-seven"><span class="txt">Send messege <i class="flaticon-next-2"></i></span></button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <!-- End Default Form -->
+
+                            </div>
+                        </div>
+
+                        <!-- Sidebar Widget / Social Widget -->
+                        <div class="sidebar-widget sidebar-social-widget">
+                            <div class="widget-content">
+                                <!-- Sidebar Title -->
+                                <div class="sidebar-title">
+                                    <h3>Follow us</h3>
+                                </div>
+
+                                <!-- Social Box -->
+                                <ul class="social-box">
+                                    <li><a href="https://www.facebook.com/afluexllp/" target="blank" class="fa fa-facebook"></a></li>
+                                    <li><a href="https://twitter.com/AfluexLlp?s=17" target="blank" class="fa fa-twitter"></a></li>
+                                    <li><a href="https://www.linkedin.com/in/afluex-multiservices-llp-35a00716b/" target="blank" class="fa fa-linkedin"></a></li>
+                                    <li><a href="https://afluex.tumblr.com/" target="blank" class="fa fa-tumblr"></a></li>
+                                    <li><a href="https://in.pinterest.com/afluex_multiservices_llp/software-development/" target="blank" class="fa fa-pinterest"></a></li>
+                                    <li><a href="https://www.reddit.com/user/afluex/posts/" target="blank" class="fa fa-reddit"></a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </aside>
+                </div>
+
+            </div>
+        </div>
     </div>
-</section>
+
+</div>
 <!-- End Page Title -->
 
-<section class="blog_page">
+<!--<section class="blog_page">
     <div class="container">
 
         <div class="row mt-5">
@@ -77,7 +254,7 @@
             <div class="col-lg-4 col-md-3 col-sm-12">
                 <div class="sidebar-widget popular-posts">
 							<div class="widget-content">
-								<!-- Sidebar Title -->
+								<!-- Sidebar Title --
 								<div class="sidebar-title">
 									<h3>Latest Blogs</h3>
 								</div>
@@ -128,38 +305,9 @@
             </div>
         </div>
        
-        @*<div class="row mt-4">
-            <div class="col-lg-3 col-md-3 col-sm-12">
-                <div class="blog_featured text-center">
-                    <a href="blog-details.html"><img src="~/afluexad/images/blog/search-operator-featured.png" class="img-fluid"></a>
-                </div>
-            </div>
-            <div class="col-lg-9 col-md-9 col-sm-12">
-                <div class="blog_details">
-                    <div class="blog_title">
-                        <h2><a href="blog-details.html">Every Advanced Google Search Operator You Need to Know</a> </h2>
-                    </div>
-                    <div class="blog_inner">
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                            specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                        </p>
-                        <div class="blog_time_eye clearfix">
-                            <ul class="list-unsyled p-0">
-                                <li class="list-inline-item"><span class="blog_icon"><i class="fa fa-user" aria-hidden="true"></i></span> By : Afluex Mutiservices LLP</li>
-                                <li class="list-inline-item"><span class="blog_icon"><i class="fa fa-clock-o" aria-hidden="true"></i></span> 2/12/2021</li>
-                                <li class="list-inline-item"><span class="blog_icon"><i class="fa fa-eye" aria-hidden="true"></i></span> 112K Reads</li>
-                            </ul>
-                        </div>
-                        <div class="blog_btn">
-                            <h5><a href="blog-details.html">Read More</a></h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>*@
+      
     </div>
-</section>
+</section>-->
 
 
 

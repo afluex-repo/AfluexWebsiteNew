@@ -1,0 +1,192 @@
+﻿@model Afluex.Models.Blog
+
+@{
+    ViewBag.Title = "OpenVacancy";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="row page-titles">
+    <div class="col-md-5 align-self-center">
+        <h3 class="text-primary">Open Vacancy</h3>
+    </div>
+    <div class="col-md-7 align-self-center">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0)">Blog</a></li>
+            <li class="breadcrumb-item active">Open Vacancy</li>
+        </ol>
+    </div>
+</div>
+
+@using (Html.BeginForm("OpenVacancy", "Admin", FormMethod.Post, new { @id = "form1", @enctype = "multipart/form-data" }))
+{
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="col-lg-12 col-md-12 col-sm-12 mt-5">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div style="color: green">@TempData["OpenVacancy"]</div>
+                                    <form class="contact-box dzForm p-a30 border-1" action="">
+                                        <div class="dzFormMsg m-b20"></div>
+                                        <input type="hidden" value="Contact" name="dzToDo">
+                                        <div class="row">
+
+                                            <div class="col-lg-6 col-md-6">
+                                                <label>Designation <span style="color:red"> *</span></label>
+                                                <div class="form-group mb-4">
+                                                    <input type="hidden" id="PK_VacancyID" name="PK_VacancyID" value="@Model.PK_VacancyID" />
+                                                    <div class="input-group">
+                                                        
+                                                        @Html.TextBoxFor(m => m.Designation, new { @class = "form-control", @Placeholder = "Designation" })
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6">
+                                                <label>Min Experience <span style="color:red"> *</span></label>
+                                                <div class="form-group mb-4">
+                                                    <div class="input-group">
+                                                        
+                                                        @Html.TextBoxFor(m => m.MinExperience, new { @class = "form-control", @Placeholder = "Min Experience" })
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+                                            <div class="col-lg-6 col-md-6">
+                                                <label>Salary Range <span style="color:red"> *</span></label>
+                                                <div class="form-group mb-4">
+                                                    <div class="input-group">
+                                                     
+                                                        @Html.TextBoxFor(m => m.SalaryRange, new { @class = "form-control", @Placeholder = "Salary Range" })
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <label>Total Vacancy <span style="color:red"> *</span></label>
+                                                <div class="form-group mb-4">
+                                                    <div class="input-group">
+                                                        @Html.TextBoxFor(m => m.TotalVacancy, new { @class = "form-control", @Placeholder = "Total Vacancy" })
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <label>Upload File <span style="color:red"> </span></label>
+                                                <div class="form-group mb-4">
+                                                    <div class="input-group">
+                                                       
+                                                        <input type="file" name="postedFile" class = "form-control"/>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12">
+                                                <div class="contact_btn">
+
+                                                    @if (Model.PK_VacancyID == null)
+                                                    {
+                                                        <input type="submit" class="btn btn-primary btn-sm" value="Submit" id="btnsave" name="btnsave" onclick="return validateform();" />
+                                                    }
+                                                    else
+                                                    {
+                                                        <input type="submit" class="btn btn-primary btn-sm" value="Update" id="btnupdate" name="btnupdate" onclick="return validateform();" />
+                                                    }
+
+                                                    <a href="/Admin/OpenVacancyList" class="btn btn-info btn-sm">Back To List</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<script>
+
+    function validateform() {
+        $(".errortext").removeClass("errortext");
+        if ($('#Designation').val() == '') {
+            $("#Designation").addClass('errortext');
+            $('#Designation').focus();
+            return false;
+        }
+        if ($('#MinExperience').val() == '') {
+            $("#MinExperience").addClass('errortext');
+            $('#MinExperience').focus();
+            return false;
+        }
+        if ($('#SalaryRange').val() == '') {
+            $("#SalaryRange").addClass('errortext');
+            $('#SalaryRange').focus();
+            return false;
+        }
+        if ($('#TotalVacancy').val() == '') {
+            $("#TotalVacancy").addClass('errortext');
+            $('#TotalVacancy').focus();
+            return false;
+        }
+        $("#divload").css({ 'display': '' });
+    }
+
+
+    @*@onkeypress = "return isNumberKey(event);"*@
+    function isNumberKey(evt) {
+
+        var charCode = (evt.which) ? evt.which : event.keyCode;
+        if (charCode != 46 && charCode > 31
+          && (charCode < 48 || charCode > 57))
+            return false;
+
+        return true;
+    }
+
+
+
+
+    function onlyAlphabets(e, t) {
+        try {
+            if (window.event) {
+                var charCode = window.event.keyCode;
+            }
+            else if (e) {
+                var charCode = e.which;
+            }
+            else { return true; }
+            if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123) || (charCode == 32))
+                return true;
+            else
+                return false;
+        }
+        catch (err) {
+            alert(err.Description);
+        }
+    }
+
+
+
+
+
+
+
+
+
+</script>
+<style>
+    .errortext {
+        border: 1px solid red !important;
+        background-color: #fff0f0 !important;
+    }
+</style>

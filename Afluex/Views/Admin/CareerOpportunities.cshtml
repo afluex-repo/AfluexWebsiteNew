@@ -1,0 +1,142 @@
+﻿@model Afluex.Models.Blog
+
+@{
+    ViewBag.Title = "CareerOpportunities";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row page-titles">
+    <div class="col-md-5 align-self-center">
+        <h3 class="text-primary">Career Opportunities / Current Openings</h3>
+    </div>
+    <div class="col-md-7 align-self-center">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0)">Blog</a></li>
+            <li class="breadcrumb-item active"> Career Opportunities / Current Openings</li>
+        </ol>
+    </div>
+</div>
+
+@using (Html.BeginForm("CareerOpportunities", "Admin", FormMethod.Post, new { @id = "form1" }))
+{
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="col-lg-12 col-md-12 col-sm-12 mt-5">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div style="color: green">@TempData["Careermsg"]</div>
+                                    <form class="contact-box dzForm p-a30 border-1" action="">
+                                        <div class="dzFormMsg m-b20"></div>
+                                        <input type="hidden" value="Contact" name="dzToDo">
+                                        <div class="row">
+
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="form-group mb-4">
+                                                    <input type="hidden" id="PK_CareerOpporID" name="PK_CareerOpporID" value="@Model.PK_CareerOpporID" />
+                                                    <div class="input-group">
+                                                        @Html.TextBoxFor(m => m.MVCDeveloper, new { @class = "form-control", @Placeholder = ".NET MVC Developer" })
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="form-group mb-4">
+                                                    <div class="input-group">
+                                                        @Html.TextBoxFor(m => m.MobileApplication, new { @class = "form-control", @Placeholder = "Mobile Application Developer" })
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="form-group mb-4">
+                                                    <div class="input-group">
+                                                        @Html.TextBoxFor(m => m.Graphics, new { @class = "form-control", @Placeholder = "Graphics/Web Designer" })
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="form-group mb-4">
+                                                    <div class="input-group">
+                                                        @Html.TextBoxFor(m => m.SearchEngine, new { @class = "form-control", @Placeholder = "Search Engine Optimization" })
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12">
+                                                <div class="form-group mb-4">
+                                                    <div class="input-group">
+                                                        @Html.TextBoxFor(m => m.Marketing, new { @class = "form-control", @Placeholder = "Sales and Marketing Manager" })
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12">
+                                                <div class="form-group mb-4">
+                                                    <div class="input-group">
+                                                        @Html.TextAreaFor(m => m.Description, new { @class = "form-control py-5", @Placeholder = "Career Opportunities" })
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12">
+                                                <div class="contact_btn">
+
+                                                    @if (Model.PK_CareerOpporID == null)
+                                                    {
+                                                        <input type="submit" class="btn btn-primary btn-sm" value="Submit" id="btnsave" name="btnsave" onclick="return validateform();" />
+                                                    }
+                                                    else
+                                                    {
+                                                        <input type="submit" class="btn btn-primary btn-sm" value="Update" id="btnupdate" name="btnupdate" onclick="return validateform();" />
+                                                    }
+
+                                                    <a href="/Admin/CareerOpportunitiesList" class="btn btn-info btn-sm">Back To List</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<script>
+
+    function validateform() {
+        $(".errortext").removeClass("errortext");
+        if ($('#MVCDeveloper').val() == '') {
+            $("#MVCDeveloper").addClass('errortext');
+            $('#MVCDeveloper').focus();
+            return false;
+        }
+        if ($('#MobileApplication').val() == '') {
+            $("#MobileApplication").addClass('errortext');
+            $('#MobileApplication').focus();
+            return false;
+        }
+        if ($('#Graphics').val() == '') {
+            $("#Graphics").addClass('errortext');
+            $('#Graphics').focus();
+            return false;
+        }
+        $("#divload").css({ 'display': '' });
+    }
+
+</script>
+<style>
+    .errortext {
+        border: 1px solid red !important;
+        background-color: #fff0f0 !important;
+    }
+</style>

@@ -1,0 +1,124 @@
+﻿@model Afluex.Models.Blog
+
+@{
+    ViewBag.Title = "CareerOpportunitiesList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<style>
+    .tblEditBtn :hover {
+        background-color: #0ba83b;
+        color: #fff;
+    }
+
+    .btn > i {
+        /* margin-left: 0 !important; */
+    }
+
+    .tblEditBtn i {
+        font-size: 20px;
+        position: relative;
+        line-height: 1;
+        background-color: #e1fbe2;
+        border-color: transparent;
+        color: #4caf50;
+        padding: 8px;
+        height: 100%;
+        border-radius: 5px;
+    }
+</style>
+<div class="row page-titles">
+    <div class="col-md-5 align-self-center">
+        <h3 class="text-primary">Career Opportunities List</h3>
+    </div>
+    <div class="col-md-7 align-self-center">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0)">Blog</a></li>
+            <li class="breadcrumb-item active"> Career Opportunities List</li>
+        </ol>
+    </div>
+</div>
+
+@using (Html.BeginForm("CareerOpportunitiesList", "Admin", FormMethod.Post, new { @id = "form1" }))
+{
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-sm-5"></div>
+                        <div class="col-sm-5"></div>
+                        <div class="col-sm-2">
+                            <a href="/Admin/CareerOpportunities" class="btn btn-primary btn-sm">Add New</a>
+                        </div>
+                    </div>
+
+
+                   
+                    <div class="card-body">
+                        <p style="color:red">
+
+                            @TempData["Careermsg"]
+                        </p>
+                        <br />
+                        <div class="table-responsive m-t-10">
+                            <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th>Sr No.</th>
+                                        <th>MVC Developer</th>
+                                        <th>Mobile Application</th>
+                                        <th>Graphics</th>
+                                        <th>Search Engine</th>
+                                        <th>Marketing</th>
+                                        <th>Description</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @if (Model != null)
+                                    {
+                                        if (Model.lstcareer != null)
+                                        {
+                                            int i = 1;
+                                            foreach (var Item in Model.lstcareer)
+                                            {
+                                                <tr class="text-left">
+                                                    <td>
+                                                        @i
+                                                    </td>
+                                                    <td>@Item.MVCDeveloper</td>
+                                                    <td>@Item.MobileApplication</td>
+                                                    <td>@Item.Graphics</td>
+                                                    <td>@Item.SearchEngine</td>
+                                                    <td>@Item.Marketing</td>
+                                                    <td>@Item.Description</td>
+                                                    <td><a  href="/Admin/CareerOpportunities?Id=@Item.PK_CareerOpporID" class="btn btn-primary btn-sm">Edit</a></td>
+
+                                                </tr>
+                                                i++;
+                                            }
+                                        }
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+
+
+
+
+
+
+
+

@@ -19,6 +19,7 @@ namespace Afluex.Controllers
         {
             return View("Index");
         }
+        
         [ActionName("company-overview")]
         public ActionResult Overview()
         {
@@ -35,15 +36,31 @@ namespace Afluex.Controllers
             return View("Team");
         }
 
-
         public ActionResult portfolio()
         {
             return View();
         }
         #region career
-        public ActionResult career()
+        public ActionResult career(Ad obj)
         {
-            return View();
+            List<Ad> lst = new List<Ad>();
+            DataSet ds = obj.GetOpenVacancyList();
+            if (ds != null && ds.Tables[0].Rows.Count > 0)
+            {
+                foreach (DataRow r in ds.Tables[0].Rows)
+                {
+                    Ad Obj = new Ad();
+                    Obj.PK_VacancyID = r["PK_VacancyID"].ToString();
+                    Obj.Designation = r["Designation"].ToString();
+                    Obj.MinExperience = r["MinExperience"].ToString();
+                    Obj.SalaryRange = r["SalaryRange"].ToString();
+                    Obj.UploadFile = r["UploadFile"].ToString();
+                    Obj.TotalVacancy = r["TotalVacancy"].ToString();
+                    lst.Add(Obj);
+                }
+                obj.lstvacancy = lst;
+            }
+            return View(obj);
         }
         [HttpPost]
         [ActionName("Career")]
@@ -71,61 +88,61 @@ namespace Afluex.Controllers
 
                         try
                         {
-                            #region SendEmailToAdmin
-                            SmtpClient mailServer = new SmtpClient("smtp.gmail.com", 587);
-                            mailServer.EnableSsl = true;
-                            //mailServer.Credentials = new System.Net.NetworkCredential(model.SenderEmail, model.SenderPassword);
-                            mailServer.Credentials = new System.Net.NetworkCredential("contact.afluex@gmail.com", "Multiservices@437");
+                            //                            #region SendEmailToAdmin
+                            //                            SmtpClient mailServer = new SmtpClient("smtp.gmail.com", 587);
+                            //                            mailServer.EnableSsl = true;
+                            //                            //mailServer.Credentials = new System.Net.NetworkCredential(model.SenderEmail, model.SenderPassword);
+                            //                            mailServer.Credentials = new System.Net.NetworkCredential("contact.afluex@gmail.com", "Multiservices@437");
 
-                            MailMessage myMail = new MailMessage();
-                            myMail.IsBodyHtml = true;
-                            myMail.Subject = "Career";
-                            myMail.Body = "<b>Dear team</b>" + "<br/>" + "You got a career inquiry from" + "<br/>" + "Name : " + dsRegistration.Tables[0].Rows[0]["Name"].ToString() + "<br/>" + "Mobile No : " + dsRegistration.Tables[0].Rows[0]["Mobile"].ToString() + "<br/>" + " Email : " + dsRegistration.Tables[0].Rows[0]["Email"].ToString() + "<br/>" + " Description : " + dsRegistration.Tables[0].Rows[0]["Description"].ToString();
-                            myMail.From = new MailAddress("contact.afluex@gmail.com");
-                            myMail.To.Add("contact.afluex@gmail.com");
-                            HttpPostedFileBase file = Request.Files["postedfile"];
-                            if (file != null && file.ContentLength > 0)
-                            {
-                                if (file.ContentLength < 12288000)
-                                {
-                                    string filename = Path.GetFileName(file.FileName);
-                                    var attachment = new Attachment(file.InputStream, filename);
-                                    myMail.Attachments.Add(attachment);
-                                }
-                            }
-                            mailServer.Send(myMail);
+                            //                            MailMessage myMail = new MailMessage();
+                            //                            myMail.IsBodyHtml = true;
+                            //                            myMail.Subject = "Career";
+                            //                            myMail.Body = "<b>Dear team</b>" + "<br/>" + "You got a career inquiry from" + "<br/>" + "Name : " + dsRegistration.Tables[0].Rows[0]["Name"].ToString() + "<br/>" + "Mobile No : " + dsRegistration.Tables[0].Rows[0]["Mobile"].ToString() + "<br/>" + " Email : " + dsRegistration.Tables[0].Rows[0]["Email"].ToString() + "<br/>" + " Description : " + dsRegistration.Tables[0].Rows[0]["Description"].ToString();
+                            //                            myMail.From = new MailAddress("contact.afluex@gmail.com");
+                            //                            myMail.To.Add("contact.afluex@gmail.com");
+                            //                            HttpPostedFileBase file = Request.Files["postedfile"];
+                            //                            if (file != null && file.ContentLength > 0)
+                            //                            {
+                            //                                if (file.ContentLength < 12288000)
+                            //                                {
+                            //                                    string filename = Path.GetFileName(file.FileName);
+                            //                                    var attachment = new Attachment(file.InputStream, filename);
+                            //                                    myMail.Attachments.Add(attachment);
+                            //                                }
+                            //                            }
+                            //                            mailServer.Send(myMail);
 
 
-                            #endregion SendEmailToAdmin
+                            //                            #endregion SendEmailToAdmin
 
-                            #region SendEmailToCandidate
+                            //                            #region SendEmailToCandidate
 
-                            SmtpClient mailServer1 = new SmtpClient("smtp.gmail.com", 587);
-                            mailServer.EnableSsl = true;
-                            //mailServer.Credentials = new System.Net.NetworkCredential(model.SenderEmail, model.SenderPassword);
-                            mailServer.Credentials = new System.Net.NetworkCredential("contact.afluex@gmail.com", "Multiservices@437");
+                            //                            SmtpClient mailServer1 = new SmtpClient("smtp.gmail.com", 587);
+                            //                            mailServer.EnableSsl = true;
+                            //                            //mailServer.Credentials = new System.Net.NetworkCredential(model.SenderEmail, model.SenderPassword);
+                            //                            mailServer.Credentials = new System.Net.NetworkCredential("contact.afluex@gmail.com", "Multiservices@437");
 
-                            MailMessage myMail1 = new MailMessage();
-                            myMail1.IsBodyHtml = true;
-                            myMail1.Subject = "Career";
-                            myMail1.Subject = "Career";
-                            mailbody = "<div style='width:100%;background:#fff;font-size:12px;font-family:Verdana,Geneva,sans-serif'><table style = 'width:640px;border:none;font-size:12px;margin:0 auto' cellpadding = '0' cellspacing = '0'><tbody><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:15px 0'><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div><a><img style = 'width:180px' src = 'https://afluex.com/Softwarecss/images/logo-load.png'></a></div><h1 style = 'color:#fff;font-weight:normal'></h1></div></div></td></tr>"
-                        + "<tr><td><div style='background:#fff;vertical-align:top;padding:1px 0;border-bottom-right-radius:5px;border-bottom-left-radius:5px;border-left:1px solid #ddd;border-right:1px solid #ddd'><h4 style = 'font-size:14px;padding:10px 8px'>"
-                         + "Dear " + dsRegistration.Tables[0].Rows[0]["Name"].ToString() + ",<br/> Thank you ! for shwoing your interest in Afluex.<br/>Our HR Team will contact you soon.For Enquiry call us on 7310000413,412 or Mail us on -"
-                          + "<a href = 'mailto:supportnow@afluex.com' target= '_blank'>supportnow@afluex.com</a>.</h4></div></td></tr><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:1px 0'>"
-+ "<div style= 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div></div><h1 style= 'color:#fff;font-weight:normal'> Afluex Mutiservices LLP</h1>"
-+ "<h4 style = 'color:#fff;font-weight:normal'> 'Our Expertise in : Advertising / IT Services' </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow@afluex.com</i></h4>"
-+ "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i>https://www.afluex.com/</i></h4>"
-+ "</div></div></td></tr><tr><td><p style='color:#888;font-size:11px;margin-bottom:20px'>© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
+                            //                            MailMessage myMail1 = new MailMessage();
+                            //                            myMail1.IsBodyHtml = true;
+                            //                            myMail1.Subject = "Career";
+                            //                            myMail1.Subject = "Career";
+                            //                            mailbody = "<div style='width:100%;background:#fff;font-size:12px;font-family:Verdana,Geneva,sans-serif'><table style = 'width:640px;border:none;font-size:12px;margin:0 auto' cellpadding = '0' cellspacing = '0'><tbody><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:15px 0'><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div><a><img style = 'width:180px' src = 'https://afluex.com/Softwarecss/images/logo-load.png'></a></div><h1 style = 'color:#fff;font-weight:normal'></h1></div></div></td></tr>"
+                            //                        + "<tr><td><div style='background:#fff;vertical-align:top;padding:1px 0;border-bottom-right-radius:5px;border-bottom-left-radius:5px;border-left:1px solid #ddd;border-right:1px solid #ddd'><h4 style = 'font-size:14px;padding:10px 8px'>"
+                            //                         + "Dear " + dsRegistration.Tables[0].Rows[0]["Name"].ToString() + ",<br/> Thank you ! for shwoing your interest in Afluex.<br/>Our HR Team will contact you soon.For Enquiry call us on 7310000413,412 or Mail us on -"
+                            //                          + "<a href = 'mailto:supportnow@afluex.com' target= '_blank'>supportnow@afluex.com</a>.</h4></div></td></tr><tr><td><div style = 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:1px 0'>"
+                            //+ "<div style= 'background:#173d79;text-align:center;border-top-right-radius:5px;border-top-left-radius:5px;padding:0px 0'><div></div><h1 style= 'color:#fff;font-weight:normal'> Afluex Mutiservices LLP</h1>"
+                            //+ "<h4 style = 'color:#fff;font-weight:normal'> 'Our Expertise in : Advertising / IT Services' </h4><h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Phone No : <i>+91 731-0000-413 / 05223550791</i><i class='fa fa-envelope-o' aria-hidden='true'></i>&nbsp; Email : <i> supportnow@afluex.com</i></h4>"
+                            //+ "<h4 style = 'color:white'><i class='fa fa-volume-control-phone' aria-hidden='true'></i> &nbsp; Website : <i>https://www.afluex.com/</i></h4>"
+                            //+ "</div></div></td></tr><tr><td><p style='color:#888;font-size:11px;margin-bottom:20px'>© Copyright 2017 All Rights Reserved</p></td></tr></tbody></table></div>";
 
-                            myMail1.Body = mailbody;
-                            myMail1.From = new MailAddress("contact.afluex@gmail.com", "Afluex Multiservices LLP");
+                            //                            myMail1.Body = mailbody;
+                            //                            myMail1.From = new MailAddress("contact.afluex@gmail.com", "Afluex Multiservices LLP");
 
-                            myMail1.To.Add(dsRegistration.Tables[0].Rows[0]["Email"].ToString());
+                            //                            myMail1.To.Add(dsRegistration.Tables[0].Rows[0]["Email"].ToString());
 
-                            mailServer.Send(myMail1);
+                            //                            mailServer.Send(myMail1);
 
-                            #endregion SendEmailToCandidate
+                            //                            #endregion SendEmailToCandidate
 
 
                             //string mob = "7310000413";
@@ -136,6 +153,7 @@ namespace Afluex.Controllers
                             //}
 
 
+                            //string mobs = "7310000413";
                             string mobs = "7310000413";
                             string Name2 = dsRegistration.Tables[0].Rows[0]["Name"].ToString();
                             string Message = dsRegistration.Tables[0].Rows[0]["Description"].ToString();
@@ -442,6 +460,7 @@ namespace Afluex.Controllers
             List<Blog> lst1 = new List<Blog>();
             List<Blog> lst2 = new List<Blog>();
             List<Blog> lst3 = new List<Blog>();
+            List<Blog> lst4 = new List<Blog>();
             DataSet ds = obj.GetBlogAdvertisement();
             if (ds != null && ds.Tables[0].Rows.Count > 0)
             {
@@ -453,7 +472,7 @@ namespace Afluex.Controllers
                     obj1.Title = r["Title"].ToString();
                     obj1.ShortDecription = r["ShortDecription"].ToString();
                     obj1.Decription = r["Description"].ToString();
-                    obj1.FileUpload = r["AddedOn"].ToString();
+                    obj1.AddedOn = r["AddedOn"].ToString();
                     obj1.FileName = r["Images"].ToString();
                     obj1.AddedBy = r["Name"].ToString();
                     lst.Add(obj1);
@@ -474,6 +493,20 @@ namespace Afluex.Controllers
 
                 obj.lstcategory = lst2;
 
+
+                foreach (DataRow r in ds.Tables[4].Rows)
+                {
+                    Blog obj1 = new Blog();
+                    obj1.Pk_BlogId = r["Pk_BlogId"].ToString();
+                    obj1.Title = r["Title"].ToString();
+                    obj1.ShortDecription = r["ShortDecription"].ToString();
+                    obj1.Decription = r["Description"].ToString();
+                    obj1.AddedOn = r["AddedOn"].ToString();
+                    obj1.UploadFile = r["Images"].ToString();
+                    obj1.AddedBy = r["Name"].ToString();
+                    lst4.Add(obj1);
+                }
+                obj.lsttop4blog = lst4;
             }
             if (ds != null && ds.Tables[3].Rows.Count > 0)
             {
@@ -488,6 +521,8 @@ namespace Afluex.Controllers
 
                 obj.lstcategoryfull = lst3;
             }
+            
+          
             return View(obj);
         }
         public ActionResult blogDetails(string id)
@@ -499,7 +534,7 @@ namespace Afluex.Controllers
                 List<Blog> lst = new List<Blog>();
                 List<Blog> lst1 = new List<Blog>();
                 List<Blog> lst2 = new List<Blog>();
-
+                List<Blog> lst3 = new List<Blog>();
                 obj.Pk_BlogId = id;
                 DataSet ds = obj.GetBlog();
                 if (ds != null && ds.Tables[0].Rows.Count > 0)
@@ -511,8 +546,8 @@ namespace Afluex.Controllers
                         obj1.Title = r["Title"].ToString();
                         obj1.ShortDecription = r["ShortDecription"].ToString();
                         obj1.Decription = r["Description"].ToString();
-                        obj1.FileUpload = r["AddedOn"].ToString();
-
+                        obj1.AddedOn = r["AddedOn"].ToString();
+                        obj1.UploadFile = r["Images"].ToString();
                         obj1.AddedBy = r["Name"].ToString();
                         lst.Add(obj1);
                     }
@@ -542,7 +577,19 @@ namespace Afluex.Controllers
 
                     obj.lstcategory = lst2;
 
-
+                    foreach (DataRow r in ds.Tables[4].Rows)
+                    {
+                        Blog obj1 = new Blog();
+                        obj1.Pk_BlogId = r["Pk_BlogId"].ToString();
+                        obj1.Title = r["Title"].ToString();
+                        obj1.ShortDecription = r["ShortDecription"].ToString();
+                        obj1.Decription = r["Description"].ToString();
+                        obj1.AddedOn = r["AddedOn"].ToString();
+                        obj1.UploadFile = r["Images"].ToString();
+                        obj1.AddedBy = r["Name"].ToString();
+                        lst3.Add(obj1);
+                    }
+                    obj.lsttop4blog = lst3;
                 }
 
             }
