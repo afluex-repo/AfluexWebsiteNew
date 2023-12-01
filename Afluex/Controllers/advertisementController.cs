@@ -460,6 +460,7 @@ namespace Afluex.Controllers
             List<Blog> lst1 = new List<Blog>();
             List<Blog> lst2 = new List<Blog>();
             List<Blog> lst3 = new List<Blog>();
+            List<Blog> lst4 = new List<Blog>();
             DataSet ds = obj.GetBlogAdvertisement();
             if (ds != null && ds.Tables[0].Rows.Count > 0)
             {
@@ -471,7 +472,7 @@ namespace Afluex.Controllers
                     obj1.Title = r["Title"].ToString();
                     obj1.ShortDecription = r["ShortDecription"].ToString();
                     obj1.Decription = r["Description"].ToString();
-                    obj1.FileUpload = r["AddedOn"].ToString();
+                    obj1.AddedOn = r["AddedOn"].ToString();
                     obj1.FileName = r["Images"].ToString();
                     obj1.AddedBy = r["Name"].ToString();
                     lst.Add(obj1);
@@ -492,6 +493,20 @@ namespace Afluex.Controllers
 
                 obj.lstcategory = lst2;
 
+
+                foreach (DataRow r in ds.Tables[4].Rows)
+                {
+                    Blog obj1 = new Blog();
+                    obj1.Pk_BlogId = r["Pk_BlogId"].ToString();
+                    obj1.Title = r["Title"].ToString();
+                    obj1.ShortDecription = r["ShortDecription"].ToString();
+                    obj1.Decription = r["Description"].ToString();
+                    obj1.AddedOn = r["AddedOn"].ToString();
+                    obj1.UploadFile = r["Images"].ToString();
+                    obj1.AddedBy = r["Name"].ToString();
+                    lst4.Add(obj1);
+                }
+                obj.lsttop4blog = lst4;
             }
             if (ds != null && ds.Tables[3].Rows.Count > 0)
             {
@@ -506,6 +521,8 @@ namespace Afluex.Controllers
 
                 obj.lstcategoryfull = lst3;
             }
+            
+          
             return View(obj);
         }
         public ActionResult blogDetails(string id)
@@ -517,7 +534,7 @@ namespace Afluex.Controllers
                 List<Blog> lst = new List<Blog>();
                 List<Blog> lst1 = new List<Blog>();
                 List<Blog> lst2 = new List<Blog>();
-
+                List<Blog> lst3 = new List<Blog>();
                 obj.Pk_BlogId = id;
                 DataSet ds = obj.GetBlog();
                 if (ds != null && ds.Tables[0].Rows.Count > 0)
@@ -529,8 +546,8 @@ namespace Afluex.Controllers
                         obj1.Title = r["Title"].ToString();
                         obj1.ShortDecription = r["ShortDecription"].ToString();
                         obj1.Decription = r["Description"].ToString();
-                        obj1.FileUpload = r["AddedOn"].ToString();
-
+                        obj1.AddedOn = r["AddedOn"].ToString();
+                        obj1.UploadFile = r["Images"].ToString();
                         obj1.AddedBy = r["Name"].ToString();
                         lst.Add(obj1);
                     }
@@ -560,7 +577,19 @@ namespace Afluex.Controllers
 
                     obj.lstcategory = lst2;
 
-
+                    foreach (DataRow r in ds.Tables[4].Rows)
+                    {
+                        Blog obj1 = new Blog();
+                        obj1.Pk_BlogId = r["Pk_BlogId"].ToString();
+                        obj1.Title = r["Title"].ToString();
+                        obj1.ShortDecription = r["ShortDecription"].ToString();
+                        obj1.Decription = r["Description"].ToString();
+                        obj1.AddedOn = r["AddedOn"].ToString();
+                        obj1.UploadFile = r["Images"].ToString();
+                        obj1.AddedBy = r["Name"].ToString();
+                        lst3.Add(obj1);
+                    }
+                    obj.lsttop4blog = lst3;
                 }
 
             }

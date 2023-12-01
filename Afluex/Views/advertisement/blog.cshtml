@@ -36,8 +36,8 @@
                         <div class="news-block-three">
                             <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
                                 <div class="image">
-                                    <a href="/advertisement/blogdetails?id=@item.Pk_BlogId"><img src="/assets/images/resource/news-4.jpg" alt=""></a>
-                                    <div class="post-date">24 Feb</div>
+                                    <a href="/advertisement/blogdetails?id=@item.Pk_BlogId"><img src="@item.FileName" alt=""></a>
+                                    <div class="post-date">@item.AddedOn</div>
                                 </div>
                                 <div class="lower-content">
                                     <h2><a href="/advertisement/blogdetails?id=@item.Pk_BlogId">@item.Title</a></h2>
@@ -46,7 +46,7 @@
                                         <li><span class="icon fas fa-comment"></span> 0 Comments</li>
                                         @*<li><span class="icon fas fa-tag"></span> @item.AddedOn</li>*@
                                     </ul>
-                                    <div class="text">These cases are perfectly simple and easy to distinguish. In a free hour, when our power of On the other hand, organizations have the need for integrating in IT departments</div>
+                                    <div class="text">@(new HtmlString(item.ShortDecription))</div>
                                     <div class="clearfix">
                                         <div class="pull-left">
                                             <a href="/advertisement/blogdetails?id=@item.Pk_BlogId" class="read-more">Read more</a>
@@ -92,30 +92,42 @@
                                 <div class="sidebar-title">
                                     <h3>Latest Blogs</h3>
                                 </div>
+@if (Model != null)
+{
+    if (Model.lsttop4blog != null)
+    {
+        foreach (var item in Model.lsttop4blog)
+        {
 
-                                <article class="post">
-                                    <figure class="post-thumb"><img src="/assets/images/resource/post-thumb-4.jpg" alt=""><a href="blog-detail.html" class="overlay-box"><span class="icon fa fa-link"></span></a></figure>
-                                    <div class="text"><a href="/Ad/blog_detail">Show at the University</a></div>
-                                    <div class="post-info">23 December 2021</div>
-                                </article>
+            <article class="post">
+                <figure class="post-thumb"><img src="@item.UploadFile" alt=""><a href="/advertisement/blogdetails?id=@item.Pk_BlogId" class="overlay-box"><span class="icon fa fa-link"></span></a></figure>
+                <div class="text"><a href="blog-detail-1.html">@item.Title</a></div>
+                <div class="post-info">@item.AddedOn</div>
+            </article>
 
-                                <article class="post">
-                                    <figure class="post-thumb"><img src="/assets/images/resource/post-thumb-5.jpg" alt=""><a href="blog-detail.html" class="overlay-box"><span class="icon fa fa-link"></span></a></figure>
-                                    <div class="text"><a href="/Ad/blog_detail">Show at the University</a></div>
-                                    <div class="post-info">23 December 2021</div>
-                                </article>
+                                @*<article class="post">
+                                        <figure class="post-thumb"><img src="/assets/images/resource/post-thumb-2.jpg" alt=""><a href="blog-detail-1.html" class="overlay-box"><span class="icon fa fa-link"></span></a></figure>
+                                        <div class="text"><a href="blog-detail-1.html">Show at the University</a></div>
+                                        <div class="post-info">23 December 2021</div>
+                                    </article>
 
-                                <article class="post">
-                                    <figure class="post-thumb"><img src="/assets/images/resource/post-thumb-6.jpg" alt=""><a href="blog-detail.html" class="overlay-box"><span class="icon fa fa-link"></span></a></figure>
-                                    <div class="text"><a href="/Ad/blog_detail">Show at the University</a></div>
-                                    <div class="post-info">23 December 2021</div>
-                                </article>
+                                    <article class="post">
+                                        <figure class="post-thumb"><img src="/assets/images/resource/post-thumb-3.jpg" alt=""><a href="blog-detail-1.html" class="overlay-box"><span class="icon fa fa-link"></span></a></figure>
+                                        <div class="text"><a href="blog-detail-1.html">Show at the University</a></div>
+                                        <div class="post-info">23 December 2021</div>
+                                    </article>
 
-                                <article class="post">
-                                    <figure class="post-thumb"><img src="/assets/images/resource/post-thumb-7.jpg" alt=""><a href="blog-detail.html" class="overlay-box"><span class="icon fa fa-link"></span></a></figure>
-                                    <div class="text"><a href="/Ad/blog_detail">Show at the University</a></div>
-                                    <div class="post-info">23 December 2021</div>
-                                </article>
+                                    <article class="post">
+                                        <figure class="post-thumb"><img src="/assets/images/resource/post-thumb-4.jpg" alt=""><a href="blog-detail-1.html" class="overlay-box"><span class="icon fa fa-link"></span></a></figure>
+                                        <div class="text"><a href="blog-detail-1.html">Show at the University</a></div>
+                                        <div class="post-info">23 December 2021</div>
+                                    </article>*@
+
+
+
+        }
+    }
+}
 
                             </div>
                         </div>

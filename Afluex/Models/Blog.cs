@@ -25,6 +25,7 @@ namespace Afluex.Models
         public List<Blog> lstimages { get; set; }
         public List<Blog> lstcategoryfull { get; set; }
         public List<Blog> lstcategory { get; set; }
+        public List<Blog> lsttop4blog { get; set; }
         public string FullName { get; set; }
         public string Mobile { get; set; }
         public string Email { get; set; }
@@ -92,6 +93,7 @@ namespace Afluex.Models
             DataSet ds = Connection.ExecuteQuery("GetBlog", para);
             return ds;
         }
+       
         public DataSet GetBlogAdvertisement()
         {
             SqlParameter[] para = {
