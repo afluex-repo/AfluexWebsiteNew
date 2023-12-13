@@ -11,7 +11,7 @@ using System.Web.Mvc;
 namespace Afluex.Models 
 {
        public class Connection
-    {
+       {
         private static string connectionString = string.Empty;
       
 
