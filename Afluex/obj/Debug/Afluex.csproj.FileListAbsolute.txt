@@ -887,3 +887,4 @@ F:\Sarfraz Ahmad\repository\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.
 F:\Sarfraz Ahmad\repository\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
 F:\Sarfraz Ahmad\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 F:\Sarfraz Ahmad\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
+F:\Ashwani Afluex\repository\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
