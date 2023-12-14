@@ -716,18 +716,10 @@ D:\Devendra\AfluexWebsiteNew\Afluex\bin\Afluex.dll
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\Afluex.pdb
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\0Harmony.dll
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\Antlr3.Runtime.dll
-D:\Devendra\AfluexWebsiteNew\Afluex\bin\BotDetect.dll
-D:\Devendra\AfluexWebsiteNew\Afluex\bin\BotDetect.Web.Mvc.dll
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\CaptchaMvc.dll
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\EntityFramework.dll
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\EntityFramework.SqlServer.dll
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.Agent.Intercept.dll
-D:\Devendra\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.DependencyCollector.dll
-D:\Devendra\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.PerfCounterCollector.dll
-D:\Devendra\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.ServerTelemetryChannel.dll
-D:\Devendra\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.Web.dll
-D:\Devendra\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.WindowsServer.dll
-D:\Devendra\AfluexWebsiteNew\Afluex\bin\Microsoft.ApplicationInsights.dll
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\Microsoft.AspNet.Identity.Core.dll
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\Microsoft.AspNet.Identity.EntityFramework.dll
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\Microsoft.AspNet.Identity.Owin.dll
@@ -746,8 +738,6 @@ D:\Devendra\AfluexWebsiteNew\Afluex\bin\Newtonsoft.Json.dll
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\Owin.dll
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\PagedList.dll
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\PagedList.Mvc.dll
-D:\Devendra\AfluexWebsiteNew\Afluex\bin\Solid.Extensions.System.Web.dll
-D:\Devendra\AfluexWebsiteNew\Afluex\bin\System.Data.SQLite.dll
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\System.Net.Http.Formatting.dll
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\System.Web.Helpers.dll
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\System.Web.Http.dll
@@ -762,16 +752,10 @@ D:\Devendra\AfluexWebsiteNew\Afluex\bin\System.Web.WebPages.Razor.dll
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\WebGrease.dll
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\CaptchaMvc.pdb
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\CaptchaMvc.xml
-D:\Devendra\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.DependencyCollector.xml
-D:\Devendra\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.ServerTelemetryChannel.xml
-D:\Devendra\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.Web.xml
-D:\Devendra\AfluexWebsiteNew\Afluex\bin\Microsoft.AI.WindowsServer.xml
-D:\Devendra\AfluexWebsiteNew\Afluex\bin\Microsoft.ApplicationInsights.xml
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\Newtonsoft.Json.xml
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\PagedList.xml
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\PagedList.Mvc.xml
-D:\Devendra\AfluexWebsiteNew\Afluex\bin\System.Data.SQLite.xml
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\System.Web.Helpers.xml
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\System.Web.Mvc.xml
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\System.Web.Razor.xml
@@ -798,7 +782,6 @@ D:\Devendra\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Google.xml
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.Twitter.xml
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\Devendra\AfluexWebsiteNew\Afluex\bin\System.Web.Http.Owin.xml
-D:\Devendra\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
 D:\Devendra\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 D:\Devendra\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
 F:\Sarfraz Ahmad\repository\AfluexWebsiteNew\Afluex\bin\ApplicationInsights.config

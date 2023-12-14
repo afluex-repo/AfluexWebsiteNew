@@ -268,10 +268,13 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\AdController.cs" />
     <Compile Include="Controllers\AdminBaseController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\advertisementController.cs" />
+    <Compile Include="Controllers\blogController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ITController.cs" />
     <Compile Include="Controllers\webController.cs" />
     <Compile Include="Filters\SimpleAttribute.cs" />
     <Compile Include="Global.asax.cs">
@@ -2770,6 +2773,7 @@
     <Content Include="Views\Admin\CareerOpportunitiesList.cshtml" />
     <Content Include="Views\Admin\OpenVacancy.cshtml" />
     <Content Include="Views\Admin\OpenVacancyList.cshtml" />
+    <Content Include="Views\blog\outdoor_advertising.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="afluexad\fontawesome\" />
@@ -2783,6 +2787,8 @@
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="SoftwareCss\images\portfolio\mnkkvgukdjgdfjgikd\" />
     <Folder Include="UploadFile\" />
+    <Folder Include="Views\Ad\" />
+    <Folder Include="Views\IT\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
