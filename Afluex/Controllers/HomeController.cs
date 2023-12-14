@@ -142,12 +142,10 @@ namespace Afluex.Controllers
                     postedFile.SaveAs(Path.Combine(Server.MapPath(model.FileUpload)));
 
                 }
-
                 model.CareerType = "AD";
 
                 DataSet dsRegistration = model.SaveCareer();
                 if (dsRegistration.Tables[0].Rows[0][0].ToString() == "1")
-
 
                 {
                     if (model.Email != null)
@@ -761,7 +759,6 @@ namespace Afluex.Controllers
             }
 
             return RedirectToAction(FormName, Controller);
-
 
         }
 
