@@ -2774,6 +2774,7 @@
     <Content Include="Views\Admin\OpenVacancy.cshtml" />
     <Content Include="Views\Admin\OpenVacancyList.cshtml" />
     <Content Include="Views\blog\outdoor_advertising.cshtml" />
+    <Content Include="Views\Admin\InquiryList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="afluexad\fontawesome\" />

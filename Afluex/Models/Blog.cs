@@ -246,7 +246,16 @@ namespace Afluex.Models
             return ds;
         }
 
-        
+
+
+
+
+        public DataSet GetInquiryList()
+        {
+            DataSet ds = Connection.ExecuteQuery("GetInquiryList");
+            return ds;
+        }
+
 
     }
 }

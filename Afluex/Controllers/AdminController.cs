@@ -130,6 +130,19 @@ namespace Afluex.Controllers
             return View(obj);
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
         public ActionResult CareerOpportunities(string Id)
         {
             Blog model = new Blog();
@@ -381,6 +394,30 @@ namespace Afluex.Controllers
 
 
 
+
+        public ActionResult InquiryList(Blog obj)
+        {
+            List<Blog> lst1 = new List<Blog>();
+            DataSet ds = obj.GetInquiryList();
+            if (ds != null && ds.Tables[0].Rows.Count > 0)
+            {
+                foreach (DataRow r in ds.Tables[0].Rows)
+                {
+                    Blog Obj = new Blog();
+                    Obj.FullName = r["Name"].ToString();
+                    //Obj.About = r["About"].ToString();
+                    Obj.Mobile = r["Mobile"].ToString();
+                    Obj.Email = r["Email"].ToString();
+                    Obj.Message = r["Message"].ToString();
+                    Obj.ContactusType = r["InquiryType"].ToString();
+                    Obj.AddedOn = r["AddedOn"].ToString();
+
+                    lst1.Add(Obj);
+                }
+                obj.List = lst1;
+            }
+            return View(obj);
+        }
 
 
 
