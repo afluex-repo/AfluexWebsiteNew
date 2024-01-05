@@ -31,9 +31,11 @@ namespace Afluex.Models
         public string Email { get; set; }
         public string Description { get; set; }
         public string About { get; set; }
+        public string YourBudget { get; set; }
+
         public string Message { get; set; }
         public string ContactusType { get; set; }
-        
+
         public string PK_CareerOpporID { get; set; }
         public string MVCDeveloper { get; set; }
         public string MobileApplication { get; set; }
@@ -51,6 +53,9 @@ namespace Afluex.Models
 
         public string UploadFile { get; set; }
         public string TotalVacancy { get; set; }
+
+        public string FromDate { get; set; }
+        public string ToDate { get; set; }
 
         public DataSet SaveBlog()
         {
@@ -93,7 +98,7 @@ namespace Afluex.Models
             DataSet ds = Connection.ExecuteQuery("GetBlog", para);
             return ds;
         }
-       
+
         public DataSet GetBlogAdvertisement()
         {
             SqlParameter[] para = {
@@ -149,7 +154,7 @@ namespace Afluex.Models
             return ds;
         }
 
-        
+
         public DataSet CareerOpportunities()
         {
             SqlParameter[] para = {
@@ -181,7 +186,7 @@ namespace Afluex.Models
             DataSet ds = Connection.ExecuteQuery("UpdateCareerOpportunities", para);
             return ds;
         }
-        
+
 
         public DataSet GetCareerOpportunitiesList()
         {
@@ -207,7 +212,7 @@ namespace Afluex.Models
             DataSet ds = Connection.ExecuteQuery("SaveOpenVacancy", para);
             return ds;
         }
-        
+
         public DataSet GetOpenVacancyList()
         {
             SqlParameter[] para = {
@@ -217,7 +222,7 @@ namespace Afluex.Models
             return ds;
         }
 
-        
+
 
         public DataSet UpdateOpenVacancy()
         {
@@ -246,13 +251,16 @@ namespace Afluex.Models
             return ds;
         }
 
-
-
-
+        
 
         public DataSet GetInquiryList()
         {
-            DataSet ds = Connection.ExecuteQuery("GetInquiryList");
+
+            SqlParameter[] para = {
+                                 new SqlParameter("@FromDate",FromDate),
+                                        new SqlParameter("@ToDate",ToDate)
+                                  };
+            DataSet ds = Connection.ExecuteQuery("GetInquiryList", para);
             return ds;
         }
 

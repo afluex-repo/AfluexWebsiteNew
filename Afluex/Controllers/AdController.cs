@@ -13,7 +13,11 @@ namespace Afluex.Controllers
         {
             return View();
         }
-    }
-     
-}
 
+        [ActionName("outdoor-advertising")]
+        public ActionResult outdoor_advertising()
+        {
+            return View("outdoor_advertising");
+        }
+    }
+}

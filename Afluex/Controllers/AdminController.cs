@@ -395,8 +395,9 @@ namespace Afluex.Controllers
 
 
 
-        public ActionResult InquiryList(Blog obj)
+        public ActionResult InquiryList()
         {
+            Blog obj = new Blog();
             List<Blog> lst1 = new List<Blog>();
             DataSet ds = obj.GetInquiryList();
             if (ds != null && ds.Tables[0].Rows.Count > 0)
@@ -405,7 +406,7 @@ namespace Afluex.Controllers
                 {
                     Blog Obj = new Blog();
                     Obj.FullName = r["Name"].ToString();
-                    //Obj.About = r["About"].ToString();
+                    Obj.YourBudget = r["YourBudget"].ToString();
                     Obj.Mobile = r["Mobile"].ToString();
                     Obj.Email = r["Email"].ToString();
                     Obj.Message = r["Message"].ToString();
@@ -421,6 +422,32 @@ namespace Afluex.Controllers
 
 
 
+        [HttpPost]
+        public ActionResult InquiryList(Blog obj)
+        {
+            List<Blog> lst1 = new List<Blog>();
+            obj.FromDate = string.IsNullOrEmpty(obj.FromDate) ? null : Common.ConvertToSystemDate(obj.FromDate, "dd/MM/yyyy");
+            obj.ToDate = string.IsNullOrEmpty(obj.ToDate) ? null : Common.ConvertToSystemDate(obj.ToDate, "dd/MM/yyyy");
+            DataSet ds = obj.GetInquiryList();
+            if (ds != null && ds.Tables[0].Rows.Count > 0)
+            {
+                foreach (DataRow r in ds.Tables[0].Rows)
+                {
+                    Blog Obj = new Blog();
+                    Obj.FullName = r["Name"].ToString();
+                    Obj.YourBudget = r["YourBudget"].ToString();
+                    Obj.Mobile = r["Mobile"].ToString();
+                    Obj.Email = r["Email"].ToString();
+                    Obj.Message = r["Message"].ToString();
+                    Obj.ContactusType = r["InquiryType"].ToString();
+                    Obj.AddedOn = r["AddedOn"].ToString();
+
+                    lst1.Add(Obj);
+                }
+                obj.List = lst1;
+            }
+            return View(obj);
+        }
 
 
 
