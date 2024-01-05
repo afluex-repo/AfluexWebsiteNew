@@ -28,7 +28,7 @@ namespace Afluex.Models
             //{
             //}
 
-            string strUrl = "http://smsw.co.in/API/WebSMS/Http/v1.0a/index.php?username=Afluex&password=f6b7c7-970d7&sender=Afluex&to=" + Mobile + "&message=" + Message + "& reqid = 1 & format ={ json}&route_id = 39 & callback =#&unique=0&sendondate='" + DateTime.Now.ToString() + " '";
+            string strUrl = "http://smsw.co.in/API/WebSMS/Http/v1.0a/index.php?username=Afluex&password=f6b7c7-970d7&sender=Afluex&to=" + Mobile + "&message=" + Message + "& reqid = 1 & format ={ json} & callback =#&unique=0&sendondate='" + DateTime.Now.ToString() + " '";
 
             WebRequest request = HttpWebRequest.Create(strUrl);
             // Get the response back  
