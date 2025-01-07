@@ -1,0 +1,124 @@
+﻿@model Afluex.Models.Blog
+
+@{
+    ViewBag.Title = "InquiryList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+@*<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">*@
+@*<script src="https://code.jquery.com/jquery-3.6.0.js"></script>*@
+@*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>*@
+@*<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>*@
+
+
+<div class="row page-titles">
+    <div class="col-md-5 align-self-center">
+        <h3 class="text-primary">Enquiry List</h3>
+    </div>
+    <div class="col-md-7 align-self-center">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0)">Enquiry</a></li>
+            <li class="breadcrumb-item active"> Enquiry List</li>
+        </ol>
+    </div>
+</div>
+
+@using (Html.BeginForm("InquiryList", "Admin", FormMethod.Post, new { @id = "form1" }))
+{
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-3">
+                                <label>From Date</label>
+                                <input type="text" id="FromDate" name="FromDate" class="form-control" autocomplete="off" />
+                            </div>
+                            <div class="col-3">
+                                <label>To Date</label>
+                                <input type="text" id="ToDate" name="ToDate" class="form-control" autocomplete="off" />
+                            </div>
+                            <div class="col-3 mt-4">
+                                <input type="submit" id="btnSearch" name="btnSearch" value="Search" class="btn btn-success" />
+                            </div>
+                        </div>
+                        <br />
+                        <div class="table-responsive m-t-10">
+                            <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th>Sr No.</th>
+                                        <th>Name</th>
+                                        <th>Your Budget</th>
+                                        <th>Mobile</th>
+                                        <th>Email</th>
+                                        <th>Date</th>
+                                        <th>Message</th>
+                                        <th>ContactusType</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @if (Model != null)
+                                    {
+                                        if (Model.List != null)
+                                        {
+                                            int i = 1;
+                                            foreach (var Item in Model.List)
+                                            {
+                                                <tr class="text-left">
+                                                    <td>
+                                                        @i
+                                                    </td>
+                                                    <td>@Item.FullName</td>
+                                                    <td>@Item.YourBudget</td>
+                                                    <td>@Item.Mobile</td>
+                                                    <td>@Item.Email</td>
+                                                    <td>@Item.AddedOn</td>
+                                                    <td>@Item.Message</td>
+                                                    <td>
+                                                        @Item.ContactusType
+                                                    </td>
+
+                                                </tr>
+                                                i++;
+                                            }
+                                        }
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+
+<script src="../../AdminCss/js/lib/jquery/jquery.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+
+<script>
+    $('#FromDate').datepicker({
+        dateFormat: 'dd/mm/yy',
+        //maxDate: 0,
+        //changeYear: true,
+        //changeMonth: true
+    });
+    $('#ToDate').datepicker({
+        dateFormat: 'dd/mm/yy',
+        //changeYear: true,
+        //changeMonth: true,
+        //minDate: new Date(new Date().setMonth(new Date().getMonth() - 2))
+    });
+
+</script>
+
