@@ -1537,6 +1537,22 @@
     <Content Include="assets\images\background\pattern-8-1.png" />
     <Content Include="assets\images\background\pattern-8.png" />
     <Content Include="assets\images\background\pattern-9.png" />
+    <Content Include="assets\images\CantonmentMedia\H 1.jpg" />
+    <Content Include="assets\images\CantonmentMedia\H 10.jpg" />
+    <Content Include="assets\images\CantonmentMedia\H 11.jpg" />
+    <Content Include="assets\images\CantonmentMedia\H 12.jpg" />
+    <Content Include="assets\images\CantonmentMedia\H 13.jpg" />
+    <Content Include="assets\images\CantonmentMedia\H 14.jpg" />
+    <Content Include="assets\images\CantonmentMedia\H 15.jpg" />
+    <Content Include="assets\images\CantonmentMedia\H 16.jpg" />
+    <Content Include="assets\images\CantonmentMedia\H 2.jpg" />
+    <Content Include="assets\images\CantonmentMedia\H 3.jpg" />
+    <Content Include="assets\images\CantonmentMedia\H 4.jpg" />
+    <Content Include="assets\images\CantonmentMedia\H 5.jpg" />
+    <Content Include="assets\images\CantonmentMedia\H 6.jpg" />
+    <Content Include="assets\images\CantonmentMedia\H 7.jpg" />
+    <Content Include="assets\images\CantonmentMedia\H 8.jpg" />
+    <Content Include="assets\images\CantonmentMedia\H 9.jpg" />
     <Content Include="assets\images\client\1.png" />
     <Content Include="assets\images\client\10.png" />
     <Content Include="assets\images\client\11.png" />
@@ -1748,6 +1764,18 @@
     <Content Include="assets\images\portfolio\outdoor_advertising\37.png" />
     <Content Include="assets\images\portfolio\outdoor_advertising\39.png" />
     <Content Include="assets\images\portfolio\outdoor_advertising\6.png" />
+    <Content Include="assets\images\portfolio\outdoor_advertising\cat1.jpg" />
+    <Content Include="assets\images\portfolio\outdoor_advertising\cat10.jpg" />
+    <Content Include="assets\images\portfolio\outdoor_advertising\cat11.jpg" />
+    <Content Include="assets\images\portfolio\outdoor_advertising\cat12.jpg" />
+    <Content Include="assets\images\portfolio\outdoor_advertising\cat2.jpg" />
+    <Content Include="assets\images\portfolio\outdoor_advertising\cat3.jpg" />
+    <Content Include="assets\images\portfolio\outdoor_advertising\cat4.jpg" />
+    <Content Include="assets\images\portfolio\outdoor_advertising\cat5.jpg" />
+    <Content Include="assets\images\portfolio\outdoor_advertising\cat6.jpg" />
+    <Content Include="assets\images\portfolio\outdoor_advertising\cat7.jpg" />
+    <Content Include="assets\images\portfolio\outdoor_advertising\cat8.jpg" />
+    <Content Include="assets\images\portfolio\outdoor_advertising\cat9.jpg" />
     <Content Include="assets\images\portfolio\outdoor_advertising\hoarding-1.png" />
     <Content Include="assets\images\portfolio\outdoor_advertising\hoarding-10.png" />
     <Content Include="assets\images\portfolio\outdoor_advertising\hoarding-11.png" />
@@ -2776,6 +2804,7 @@
     <Content Include="Views\Admin\OpenVacancyList.cshtml" />
     <Content Include="Views\blog\outdoor_advertising.cshtml" />
     <Content Include="Views\Admin\InquiryList.cshtml" />
+    <Content Include="Views\advertisement\CantonmentLkoMedia.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="afluexad\fontawesome\" />
