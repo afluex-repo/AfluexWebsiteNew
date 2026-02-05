@@ -1097,5 +1097,11 @@ namespace Afluex.Controllers
             }
             return Json(model, JsonRequestBehavior.AllowGet);
         }
+
+
+        public ActionResult CantonmentLkoMedia()
+        {
+            return View();
+        }
     }
 }
