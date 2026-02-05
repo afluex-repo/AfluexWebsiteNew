@@ -1098,10 +1098,10 @@ namespace Afluex.Controllers
             return Json(model, JsonRequestBehavior.AllowGet);
         }
 
-
+        [ActionName("CantonmentLko-Media")]
         public ActionResult CantonmentLkoMedia()
         {
-            return View();
+            return View("CantonmentLkoMedia");
         }
     }
 }
