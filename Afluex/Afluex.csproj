@@ -2805,6 +2805,7 @@
     <Content Include="Views\blog\outdoor_advertising.cshtml" />
     <Content Include="Views\Admin\InquiryList.cshtml" />
     <Content Include="Views\advertisement\CantonmentLkoMedia.cshtml" />
+    <Content Include="Views\web\our_achievements.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="afluexad\fontawesome\" />
