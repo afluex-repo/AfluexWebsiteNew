@@ -1,0 +1,266 @@
+﻿
+@{
+    ViewBag.Title = "our_team";
+    Layout = "~/Views/Shared/Web_Layout.cshtml";
+}
+<style>
+    .achievement_row_card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: 0.3s;
+    }
+
+        .achievement_row_card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+        }
+
+    .achievement_img {
+        text-align: center;
+    }
+
+        .achievement_img img {
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+    .achievement_content h4 {
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #418fb2;
+    }
+
+    .achievement_content p {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .achievement_content .status {
+        padding: 5px 12px;
+        font-size: 12px;
+        border-radius: 20px;
+    }
+
+    .achievement_content .completed {
+        background: #e6f4ea;
+        color: green;
+    }
+
+    .achievement_content .ongoing_status {
+        background: #fff3cd;
+        color: #856404;
+    }
+
+    @@edia (max-width: 768px) {
+        .achievement_img {
+            margin-bottom: 15px;
+        }
+    }
+</style>
+<section class="page-title text-center" style="background-image:url(../../afluexit/images/background/page_about.jpeg);">
+    <div class="container">
+        <h1>Our Achievements</h1>
+    </div>
+    <!--Page Info-->
+    <div class="page-info">
+        <div class="container clearfix">
+            <ul class="bread-crumb clearfix">
+                <li><a href="/web/software-development"><i class="fa fa-home"></i></a> </li>
+                <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
+                <li>About Us</li>
+                <li><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></li>
+                <li>Our Achievements</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- End Page Title -->
+<style>
+    .achievement_card_new {
+        border-radius: 14px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: 0.35s ease;
+        height: 100%;
+    }
+
+        .achievement_card_new:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.18);
+        }
+
+    .achievement_img_new {
+        position: relative;
+        overflow: hidden;
+    }
+
+        /* IMAGE */
+        .achievement_img_new img {
+            width: 100%;
+          
+            object-fit: cover;
+            transition: 0.4s;
+        }
+
+    /* OVERLAY */
+    .achievement_overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.55);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 19px;
+        font-weight: 600;
+        opacity: 0;
+        transition: 0.4s ease;
+    }
+    .achievement_card_new:hover .achievement_overlay {
+        opacity: 1;
+    }
+
+    .achievement_card_new:hover img {
+        transform: scale(1.08);
+    }
+    .achievement_body_new {
+        padding: 18px;
+    }
+
+        .achievement_body_new h5 {
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .achievement_body_new p {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+    .visit_btn_new {
+        font-size: 14px;
+        color: #4994b5;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+        .visit_btn_new:hover {
+            text-decoration: underline;
+        }
+
+    .status_new {
+        display: inline-block;
+        font-size: 11px;
+        padding: 4px 10px;
+        border-radius: 20px;
+        margin-top: 6px;
+    }
+
+    .completed_new {
+        background: #e6f7ee;
+        color: #28a745;
+    }
+
+    .ongoing_new {
+        background: #fff4e5;
+        color: #ff9800;
+    }
+</style>
+<section class="our_achievements py-5" style="background:#f5f5f5;">
+    <div class="container">
+
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="achievement_card_new">
+
+                    <div class="achievement_img_new">
+                        <img src="~/afluexit/images/product/moradabad.png">
+                        <div class="achievement_overlay">Smart City Project</div>
+                    </div>
+
+                    <div class="achievement_body_new">
+                        <h5>Moradabad Smart City</h5>
+                        <p>
+                            We contributed to the Moradabad Smart City initiative by delivering advanced digital solutions improving urban efficiency and citizen experience.
+                        </p>
+                        <a href="https://smartcitymoradabad.org/" class="visit_btn_new">Visit Portal →</a><br>
+                        <span class="status_new completed_new">Completed</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="achievement_card_new">
+
+                    <div class="achievement_img_new">
+                        <img src="~/afluexit/images/product/iitPatna.png">
+                        <div class="achievement_overlay">Institutional Project</div>
+                    </div>
+
+                    <div class="achievement_body_new">
+                        <h5>IIT Patna</h5>
+                        <p>
+                            Delivered secure and scalable technical solutions for institutional systems with high performance and reliability standards.
+                        </p>
+                        <a href="https://www.iitp.ac.in/" class="visit_btn_new">Visit Portal →</a><br>
+                        <span class="status_new completed_new">Completed</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="achievement_card_new">
+
+                    <div class="achievement_img_new">
+                        <img src="~/afluexit/images/product/lkwCantonment.png">
+                        <div class="achievement_overlay">Government Project</div>
+                    </div>
+
+                    <div class="achievement_body_new">
+                        <h5>Lucknow Cantonment</h5>
+                        <p>
+                            Executed digital and workflow improvements focusing on transparency, efficiency, and smooth government operations.
+                        </p>
+                        <a href="#" class="visit_btn_new">Visit Portal →</a><br>
+                        <span class="status_new completed_new">Completed</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="achievement_card_new">
+
+                    <div class="achievement_img_new">
+                        <img src="~/afluexit/images/product/DairyDevelopment.png">
+                        <div class="achievement_overlay">Ongoing Project</div>
+                    </div>
+
+                    <div class="achievement_body_new">
+                        <h5>UP Dairy Development</h5>
+                        <p>
+                            Currently working on digital transformation to modernize systems and improve operational efficiency.
+                        </p>
+                        <a href="#" class="visit_btn_new">Visit Portal →</a><br>
+                        <span class="status_new ongoing_new">Ongoing</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
