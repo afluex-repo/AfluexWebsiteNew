@@ -1165,6 +1165,4 @@ E:\Satish\Satish_Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csproj.CoreCompil
 E:\Satish\Satish_Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csproj.Up2Date
 E:\Satish\Satish_Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.dll
 E:\Satish\Satish_Repo\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.pdb
-E:\Devendra\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csproj.AssemblyReference.cache
-E:\Devendra\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csproj.CoreCompileInputs.cache
-E:\Devendra\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csproj.Up2Date
+E:\Devendra\AfluexWebsiteNew\Afluex\obj\Debug\Afluex.csprojResolveAssemblyReference.cache
