@@ -20,7 +20,7 @@ namespace Afluex.Models
             Common model = new Common();
             try
             {
-                 connectionString = "Data Source=23.111.171.42;Initial Catalog= AfluexWebDB; User Id= AfluexWebUser; Password=afluex@123!@#; Integrated Security=false;";
+                connectionString = "Server=101.53.150.222,53389; Initial Catalog=AfluexWebDB; User Id=sa; Password=J2q+NETi78M; TrustServerCertificate=true;";
             }
             catch (Exception)
             {
